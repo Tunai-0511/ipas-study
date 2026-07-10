@@ -263,13 +263,13 @@
       '</div>'
     ) : '';
 
-    var SUBJ_IMG = { J1: "assets/media/subj-j1.jpg?v=1", J2: "assets/media/subj-j2.jpg?v=1" };
+    var SUBJ_IMG = { J1: "assets/media/subj-j1", J2: "assets/media/subj-j2" };
     var subjectsCards = Content.subjects().map(function (s) {
       var acc = subjAcc[s.code];
       var pct = acc ? acc.accuracy : 0;
       var meta = acc ? (acc.correct + "/" + acc.attempted + " 題答對 · 正確率 " + pct + "%") : (Content.chapters(s.code).length + " 章 · " + Content.questions({ subject: s.code }).length + " 題");
       return '<button class="subject-card sc-card" data-subj="' + s.code + '">' +
-        '<div class="sc-media"><img src="' + SUBJ_IMG[s.code] + '" alt="" loading="lazy"><span class="sc-badge">' + s.code + '</span></div>' +
+        '<div class="sc-media"><img class="img-light" src="' + SUBJ_IMG[s.code] + '.jpg?v=2" alt="" loading="lazy"><img class="img-dark" src="' + SUBJ_IMG[s.code] + '-dark.jpg?v=2" alt="" loading="lazy"><span class="sc-badge">' + s.code + '</span></div>' +
         '<div class="sc-body"><div class="sc-name">' + esc(s.name) + '</div>' +
         '<div class="sc-meta">' + esc(meta) + '</div>' +
         '<div class="sc-bar"><i style="width:' + pct + '%"></i></div></div></button>';
