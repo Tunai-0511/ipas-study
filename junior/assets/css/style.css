@@ -815,3 +815,18 @@ body[data-theme="dark"] .sc-media .img-dark{display:block}
 .quiz-anim-img .img-light{display:block}
 body[data-theme="dark"] .quiz-anim-img .img-light{display:none}
 body[data-theme="dark"] .quiz-anim-img .img-dark{display:block}
+
+/* 圖片停留動畫：原地緩慢放大＋微增亮（Apple 式；不位移、不掃光） */
+.sc-media{overflow:hidden}
+.sc-media img,.quiz-anim-img img{
+  transition:transform .65s cubic-bezier(.25,.7,.25,1), filter .65s ease;
+  will-change:transform;
+}
+.subject-card:hover .sc-media img{transform:scale(1.045);filter:brightness(1.05) saturate(1.08)}
+.quiz-anim-img:hover img{transform:scale(1.045);filter:brightness(1.05) saturate(1.08)}
+.lite .sc-media img,.lite .quiz-anim-img img{transition:none}
+.lite .subject-card:hover .sc-media img,.lite .quiz-anim-img:hover img{transform:none;filter:none}
+@media (prefers-reduced-motion: reduce){
+  .sc-media img,.quiz-anim-img img{transition:none}
+  .subject-card:hover .sc-media img,.quiz-anim-img:hover img{transform:none;filter:none}
+}
