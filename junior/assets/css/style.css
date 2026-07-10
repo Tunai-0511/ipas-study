@@ -802,3 +802,16 @@ html:not(.lite) body[data-theme="dark"] .card{ box-shadow: inset 0 1px 0 var(--g
 .sc-media .img-dark{display:none}
 body[data-theme="dark"] .sc-media .img-light{display:none}
 body[data-theme="dark"] .sc-media .img-dark{display:block}
+
+/* 修：使用者頭像改鮮明漸層圓（避免與名字重複的破圖感） */
+.user-avatar{
+  background:linear-gradient(135deg,var(--primary),var(--accent)) !important;
+  color:#fff !important; font-weight:800; font-size:13px;
+  box-shadow:0 2px 8px color-mix(in srgb, var(--primary) 35%, transparent);
+}
+/* 修：測驗摘要動畫圓點 → 主題圖片 */
+.quiz-anim.quiz-anim-img{height:auto;display:block;width:100%;aspect-ratio:16/10;border-radius:16px;overflow:hidden;margin:0 0 14px}
+.quiz-anim-img img{width:100%;height:100%;object-fit:cover;display:none}
+.quiz-anim-img .img-light{display:block}
+body[data-theme="dark"] .quiz-anim-img .img-light{display:none}
+body[data-theme="dark"] .quiz-anim-img .img-dark{display:block}
