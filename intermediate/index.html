@@ -12,7 +12,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-title" content="備考學院" />
-<link rel="stylesheet" href="assets/css/style.css?v=24" />
+<link rel="stylesheet" href="assets/css/style.css?v=25" />
 <script>
   // 低階/行動/減少動態 → 精簡模式（關閉重特效以求流暢）
   window.LITE = (function () { try {
@@ -33,8 +33,11 @@
 <header class="topbar">
   <button class="icon-btn" id="menuToggle" aria-label="選單"><i class="ic-wrap" data-ico="menu"></i></button>
   <span class="topbar-title"><i class="ic-wrap" data-ico="cap"></i> AI應用規劃師 · 中級備考學院</span>
-  <button class="icon-btn" id="themeToggleTop" aria-label="切換深淺色"><i class="ic-wrap" data-ico="moon"></i></button>
 </header>
+<button class="theme-fab" id="themeFab" aria-label="切換深淺色" title="切換深淺色">
+  <svg id="fabMoon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6.5 6.5 0 0 0 9 9 9 9 0 1 1-9-9z"/></svg>
+  <svg id="fabSun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5"/><path d="M12 19.5V22"/><path d="M2 12h2.5"/><path d="M19.5 12H22"/><path d="m4.6 4.6 1.8 1.8"/><path d="m17.6 17.6 1.8 1.8"/><path d="m19.4 4.6-1.8 1.8"/><path d="m6.4 17.6-1.8 1.8"/></svg>
+</button>
 
 <div class="layout">
   <!-- 側邊欄 -->
@@ -144,7 +147,6 @@
     </div>
 
     <div class="side-footer">
-      <button class="btn btn-ghost btn-sm full" id="themeToggle"><i class="ic-wrap" data-ico="moon"></i> 深／淺色</button>
       <div class="side-version">v1.0 · 題庫：官方114-2</div>
     </div>
   </aside>
@@ -165,23 +167,23 @@
 <div class="toast-wrap" id="toastWrap"></div>
 
 <!-- 動畫函式庫（在地化，離線可用） -->
-<script defer src="assets/vendor/gsap.min.js?v=24"></script>
-<script defer src="assets/vendor/lottie.min.js?v=24"></script>
+<script defer src="assets/vendor/gsap.min.js?v=25"></script>
+<script defer src="assets/vendor/lottie.min.js?v=25"></script>
 <!-- 資料（官方題＋教材；擴充題庫 bank.js 由 content-api 按需延遲載入）-->
-<script defer src="data/content.js?v=24"></script>
+<script defer src="data/content.js?v=25"></script>
 <!-- 模組 -->
-<script defer src="assets/js/icons.js?v=24"></script>
-<script defer src="assets/js/content-api.js?v=24"></script>
-<script defer src="assets/js/store.js?v=24"></script>
-<script defer src="assets/js/ai.js?v=24"></script>
-<script defer src="assets/js/charts.js?v=24"></script>
-<script defer src="assets/js/analysis.js?v=24"></script>
-<script defer src="assets/js/quiz.js?v=24"></script>
-<script defer src="assets/js/app.js?v=24"></script>
-<script defer src="assets/js/anim.js?v=24"></script>
-<script defer src="assets/js/interactions.js?v=24"></script>
-<script defer src="assets/vendor/supabase.min.js?v=24"></script>
-<script defer src="assets/js/cloud.js?v=24"></script>
+<script defer src="assets/js/icons.js?v=25"></script>
+<script defer src="assets/js/content-api.js?v=25"></script>
+<script defer src="assets/js/store.js?v=25"></script>
+<script defer src="assets/js/ai.js?v=25"></script>
+<script defer src="assets/js/charts.js?v=25"></script>
+<script defer src="assets/js/analysis.js?v=25"></script>
+<script defer src="assets/js/quiz.js?v=25"></script>
+<script defer src="assets/js/app.js?v=25"></script>
+<script defer src="assets/js/anim.js?v=25"></script>
+<script defer src="assets/js/interactions.js?v=25"></script>
+<script defer src="assets/vendor/supabase.min.js?v=25"></script>
+<script defer src="assets/js/cloud.js?v=25"></script>
 <script>
   // PWA：註冊 Service Worker（離線可用）。file:// 或不支援時略過。
   if ("serviceWorker" in navigator && location.protocol.indexOf("http") === 0) {

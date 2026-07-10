@@ -61,7 +61,8 @@
   });
 
   /* ---------- 主題（跨認證共用 ipas_shared_theme） ---------- */
-  function applyTheme(t) { document.body.setAttribute("data-theme", t); try { localStorage.setItem("aipsc_theme", t); localStorage.setItem("ipas_shared_theme", t); } catch (e) {} }
+  function paintFab(){ var d=document.body.getAttribute("data-theme")==="dark"; var m=document.getElementById("fabMoon"),s=document.getElementById("fabSun"); if(m)m.style.display=d?"none":""; if(s)s.style.display=d?"":"none"; }
+  function applyTheme(t) { document.body.setAttribute("data-theme", t); try { localStorage.setItem("aipsc_theme", t); localStorage.setItem("ipas_shared_theme", t); } catch (e) {} paintFab(); }
   (function () {
     try {
       var t = localStorage.getItem("ipas_shared_theme") || localStorage.getItem("aipsc_theme");
@@ -74,13 +75,13 @@
   })();
   /* 主題即時同步：另一分頁切深淺，這裡不刷新直接變 */
   global.addEventListener("storage", function (ev) {
-    if (ev && ev.key === "ipas_shared_theme" && (ev.newValue === "dark" || ev.newValue === "light")) document.body.setAttribute("data-theme", ev.newValue);
+    if (ev && ev.key === "ipas_shared_theme" && (ev.newValue === "dark" || ev.newValue === "light")) document.body.setAttribute("data-theme", ev.newValue); paintFab();
   });
   /* bfcache 還原（上一頁/認證切換）時重新對齊共用主題與名稱 */
   global.addEventListener("pageshow", function () {
     try {
       var t = localStorage.getItem("ipas_shared_theme");
-      if ((t === "dark" || t === "light") && document.body.getAttribute("data-theme") !== t) document.body.setAttribute("data-theme", t);
+      if ((t === "dark" || t === "light") && document.body.getAttribute("data-theme") !== t) document.body.setAttribute("data-theme", t); paintFab();
       var sn = localStorage.getItem("ipas_shared_name");
       var u = Store.current();
       if (sn && u.name !== sn) { Store.renameProfile(u.id, sn); paintUser(); }
@@ -89,6 +90,8 @@
   function toggleTheme() { applyTheme(document.body.getAttribute("data-theme") === "dark" ? "light" : "dark"); }
   $("#themeToggle") && ($("#themeToggle").onclick = toggleTheme);
   $("#themeToggleTop") && ($("#themeToggleTop").onclick = toggleTheme);
+  $("#themeFab") && ($("#themeFab").onclick = toggleTheme);
+  paintFab();
 
 
   /* ---------- 使用者名稱：預設遷移＋跨認證同步 ---------- */
@@ -476,7 +479,7 @@
 
     var panel =
       '<aside class="quiz-side">' +
-        '<div class="quiz-anim" id="quizAnim"></div>' +
+        '<div class="quiz-anim quiz-anim-img"><img class="img-light" src="assets/media/quiz-target-light.jpg?v=25" alt="" loading="lazy"><img class="img-dark" src="assets/media/quiz-target-dark.jpg?v=25" alt="" loading="lazy"></div>' +
         '<div class="qs-title">測驗摘要</div>' +
         '<div class="qs-list">' + summary + '</div>' +
         '<button class="btn btn-primary full" id="qzStart" ' + (canStart ? "" : "disabled") + '>開始測驗 →</button>' +
