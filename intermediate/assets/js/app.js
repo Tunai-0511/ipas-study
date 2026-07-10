@@ -76,6 +76,16 @@
   global.addEventListener("storage", function (ev) {
     if (ev && ev.key === "ipas_shared_theme" && (ev.newValue === "dark" || ev.newValue === "light")) document.body.setAttribute("data-theme", ev.newValue);
   });
+  /* bfcache 還原（上一頁/認證切換）時重新對齊共用主題與名稱 */
+  global.addEventListener("pageshow", function () {
+    try {
+      var t = localStorage.getItem("ipas_shared_theme");
+      if ((t === "dark" || t === "light") && document.body.getAttribute("data-theme") !== t) document.body.setAttribute("data-theme", t);
+      var sn = localStorage.getItem("ipas_shared_name");
+      var u = Store.current();
+      if (sn && u.name !== sn) { Store.renameProfile(u.id, sn); paintUser(); }
+    } catch (e) {}
+  });
   function toggleTheme() { applyTheme(document.body.getAttribute("data-theme") === "dark" ? "light" : "dark"); }
   $("#themeToggle") && ($("#themeToggle").onclick = toggleTheme);
   $("#themeToggleTop") && ($("#themeToggleTop").onclick = toggleTheme);

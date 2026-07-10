@@ -216,6 +216,10 @@ footer{
   window.addEventListener("storage", function (ev) {
     if (ev && ev.key === "ipas_shared_theme" && (ev.newValue === "dark" || ev.newValue === "light")) { root.setAttribute("data-theme", ev.newValue); paint(); }
   });
+  window.addEventListener("pageshow", function () {
+    try { var t = localStorage.getItem("ipas_shared_theme"); if (t === "dark" || t === "light") root.setAttribute("data-theme", t); } catch (e) {}
+    paint();
+  });
   paint();
 
   // 停留動畫：hover 播放（依目前主題選片）
