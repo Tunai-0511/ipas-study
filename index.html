@@ -120,11 +120,72 @@ footer{
   .hover-vid{display:none}
   .blob-a,.blob-b{animation:none}
 }
+
+/* ===== 登入閘門 ===== */
+#gate{position:fixed;inset:0;z-index:40;display:flex;align-items:center;justify-content:center;padding:24px;
+  background:var(--bg);transition:opacity .45s ease, visibility .45s}
+#gate.gone{opacity:0;visibility:hidden;pointer-events:none}
+#gate::before{content:"";position:absolute;inset:0;background:url("junior/assets/media/bg-light.jpg") center/cover no-repeat;opacity:.55}
+html.dark-on #gate::before{background-image:url("junior/assets/media/bg-dark.jpg");opacity:.65}
+#gate::after{content:"";position:absolute;inset:0;background:color-mix(in srgb, var(--bg) 30%, transparent);backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px)}
+.gate-card{position:relative;z-index:1;width:100%;max-width:400px;border-radius:24px;padding:38px 34px 28px;text-align:center;
+  background:color-mix(in srgb, var(--tile) 74%, transparent);
+  backdrop-filter:blur(30px) saturate(1.9);-webkit-backdrop-filter:blur(30px) saturate(1.9);
+  border:1px solid color-mix(in srgb, var(--text) 10%, transparent);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.25), 0 30px 80px -20px rgba(0,0,0,.35)}
+.gate-logo{width:76px;height:76px;margin:0 auto 14px;display:block;animation:floatY 6s ease-in-out infinite;filter:drop-shadow(0 10px 24px rgba(91,91,214,.35))}
+.gate-logo .draw{stroke-dasharray:240;stroke-dashoffset:240;animation:drawIn 1.3s ease forwards .2s}
+.gate-logo .draw2{stroke-dasharray:120;stroke-dashoffset:120;animation:drawIn 1.1s ease forwards .9s}
+@keyframes drawIn{to{stroke-dashoffset:0}}
+@keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.gate-title{font-size:24px;font-weight:700;letter-spacing:-.01em;margin-bottom:6px}
+.gate-sub{font-size:13.5px;color:var(--mute);line-height:1.6;margin-bottom:20px}
+.gate-field{width:100%;padding:12px 14px;border-radius:12px;border:1px solid color-mix(in srgb, var(--text) 14%, transparent);
+  background:color-mix(in srgb, var(--tile) 82%, transparent);color:var(--text);font-size:15px;margin-bottom:10px;outline:none;transition:border-color .2s, box-shadow .2s}
+.gate-field:focus{border-color:#5b5bd6;box-shadow:0 0 0 4px rgba(91,91,214,.18)}
+.gate-btn{width:100%;padding:12px;border-radius:12px;border:none;cursor:pointer;font-size:15px;font-weight:600;
+  background:linear-gradient(96deg,#5b5bd6,#00b3a4);color:#fff;transition:transform .2s, box-shadow .2s;margin-bottom:6px}
+.gate-btn:hover{transform:translateY(-1px);box-shadow:0 10px 26px -10px rgba(91,91,214,.55)}
+.gate-btn:disabled{opacity:.55;cursor:default;transform:none;box-shadow:none}
+.gate-status{min-height:18px;font-size:12.5px;margin:2px 0 6px;color:var(--mute)}
+.gate-status.err{color:#e5566b}.gate-status.ok{color:#00b3a4}
+.gate-guest{font-size:13px;color:var(--link);background:none;border:none;cursor:pointer;margin-top:4px}
+.gate-note{font-size:11.5px;color:var(--mute);margin-top:14px;line-height:1.6}
+#gateCode{display:none}
+#gate.sent #gateCode{display:block}
+@media (prefers-reduced-motion: reduce){
+  .gate-logo{animation:none}
+  .gate-logo .draw,.gate-logo .draw2{animation:none;stroke-dashoffset:0}
+  #gate{transition:none}
+}
+.gnav .user-chip{display:none;align-items:center;gap:8px;font-size:12px;color:var(--mute)}
+.gnav .user-chip button{font-size:12px;color:var(--link);background:none;border:none;cursor:pointer}
+html.authed .gnav .user-chip{display:inline-flex}
 </style>
 </head>
 <body>
 <div class="blob blob-a" aria-hidden="true"></div>
 <div class="blob blob-b" aria-hidden="true"></div>
+
+<section id="gate" aria-label="登入 iPAS 備考學院">
+  <div class="gate-card">
+    <svg class="gate-logo" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+      <defs><linearGradient id="glg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5b5bd6"/><stop offset="1" stop-color="#00b3a4"/></linearGradient></defs>
+      <rect width="100" height="100" rx="24" fill="url(#glg)"/>
+      <path class="draw" d="M50 28 L76 42 L50 56 L24 42 Z" stroke="#fff" stroke-width="5" stroke-linejoin="round"/>
+      <path class="draw2" d="M33 49 v10 c0 6 8 9 17 9 s17-3 17-9 v-10" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+    </svg>
+    <div class="gate-title">iPAS 備考學院</div>
+    <p class="gate-sub">輸入信箱即可登入，第一次使用會自動完成註冊。<br>成績與收藏將在你的裝置之間同步。</p>
+    <input class="gate-field" id="gateEmail" type="email" placeholder="you@example.com" autocomplete="email" />
+    <div id="gateCode"><input class="gate-field" id="gateToken" inputmode="numeric" placeholder="輸入信中的 6 位數驗證碼" /></div>
+    <div class="gate-status" id="gateStatus"></div>
+    <button class="gate-btn" id="gateGo">寄送驗證碼</button>
+    <button class="gate-guest" id="gateGuest">先以訪客瀏覽 →</button>
+    <p class="gate-note">也可以直接點信件中的登入連結。資料由資料庫層級權限保護，僅你本人可讀取。</p>
+  </div>
+</section>
+
 
 <nav class="gnav">
   <div class="inner">
@@ -132,10 +193,10 @@ footer{
       <svg viewBox="0 0 100 100" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5b5bd6"/><stop offset="1" stop-color="#00b3a4"/></linearGradient></defs><rect width="100" height="100" rx="24" fill="url(#lg)"/><path d="M50 28 L76 42 L50 56 L24 42 Z" fill="#fff"/><path d="M33 49 v10 c0 6 8 9 17 9 s17-3 17-9 v-10" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/></svg>
       iPAS 備考學院
     </a>
-    <button class="theme-btn" id="themeBtn" aria-label="切換深淺色" title="切換深淺色">
+    <div style="display:flex;align-items:center;gap:14px"><span class="user-chip"><span id="chipMail"></span><button id="chipOut">登出</button></span><button class="theme-btn" id="themeBtn" aria-label="切換深淺色" title="切換深淺色">
       <svg id="iconMoon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6.5 6.5 0 0 0 9 9 9 9 0 1 1-9-9z"/></svg>
       <svg id="iconSun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5"/><path d="M12 19.5V22"/><path d="M2 12h2.5"/><path d="M19.5 12H22"/><path d="m4.6 4.6 1.8 1.8"/><path d="m17.6 17.6 1.8 1.8"/><path d="m19.4 4.6-1.8 1.8"/><path d="m6.4 17.6-1.8 1.8"/></svg>
-    </button>
+    </button></div>
   </div>
 </nav>
 
@@ -238,6 +299,72 @@ footer{
     });
   }
 })();
+</script>
+<script defer src="junior/assets/vendor/supabase.min.js"></script>
+<script>
+window.addEventListener("DOMContentLoaded", function () {
+  var gate = document.getElementById("gate");
+  if (!window.supabase) { gate.classList.add("gone"); return; }
+  var sb = window.supabase.createClient(
+    "https://mugrltimxkvlqyksymjq.supabase.co",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im11Z3JsdGlteGt2bHF5a3N5bWpxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODM2NTY0MDgsImV4cCI6MjA5OTIzMjQwOH0.OfJpNubw7WNF4ca56LZT_oWawiJlZm10Fm1l7rbRI8s");
+  var st = document.getElementById("gateStatus");
+  function status(m, k) { st.textContent = m || ""; st.className = "gate-status " + (k || ""); }
+  function authed(on, email) {
+    document.documentElement.classList.toggle("authed", !!on);
+    if (on) {
+      gate.classList.add("gone");
+      var c = document.getElementById("chipMail"); if (c) c.textContent = email || "";
+    }
+  }
+  sb.auth.getSession().then(function (r) {
+    var s = r.data.session;
+    if (s) authed(true, s.user.email);
+    else if (sessionStorage.getItem("ipas_guest") === "1") gate.classList.add("gone");
+  });
+  sb.auth.onAuthStateChange(function (ev, s) {
+    if (ev === "SIGNED_IN" && s) authed(true, s.user.email);
+    if (ev === "SIGNED_OUT") {
+      document.documentElement.classList.remove("authed");
+      sessionStorage.removeItem("ipas_guest");
+      gate.classList.remove("gone", "sent");
+      var b = document.getElementById("gateGo"); b.textContent = "寄送驗證碼"; b.disabled = false;
+      status("");
+    }
+  });
+  var sent = false, email = "";
+  document.getElementById("gateGo").onclick = function () {
+    var btn = this;
+    if (!sent) {
+      email = (document.getElementById("gateEmail").value || "").trim();
+      if (email.indexOf("@") < 1) { status("請輸入有效信箱", "err"); return; }
+      btn.disabled = true; status("寄送中…");
+      sb.auth.signInWithOtp({ email: email, options: { emailRedirectTo: location.origin + location.pathname } })
+        .then(function (r) {
+          btn.disabled = false;
+          if (r.error) { status(r.error.message.slice(0, 60), "err"); return; }
+          sent = true; gate.classList.add("sent"); btn.textContent = "登入";
+          status("驗證碼已寄出，請查收信箱", "ok");
+        });
+    } else {
+      var code = (document.getElementById("gateToken").value || "").trim();
+      if (!code) { status("請輸入驗證碼", "err"); return; }
+      btn.disabled = true; status("驗證中…");
+      sb.auth.verifyOtp({ email: email, token: code, type: "email" })
+        .then(function (r) {
+          btn.disabled = false;
+          if (r.error) { status("驗證碼錯誤或已過期", "err"); return; }
+          status("登入成功", "ok");
+        });
+    }
+  };
+  document.getElementById("gateGuest").onclick = function () {
+    sessionStorage.setItem("ipas_guest", "1");
+    gate.classList.add("gone");
+  };
+  var out = document.getElementById("chipOut");
+  if (out) out.onclick = function () { sb.auth.signOut(); };
+});
 </script>
 </body>
 </html>
