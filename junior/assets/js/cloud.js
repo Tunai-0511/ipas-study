@@ -18,6 +18,12 @@
     box.className = "ai-status " + (kind || "");
     box.textContent = msg || "";
   }
+  function friendlyErr(e) {
+    var m = (e && e.message) || "", s = (e && e.status) || 0;
+    if (s === 429 || /rate|too many|limit/i.test(m)) return "寄送太頻繁：免費信箱服務每小時有次數上限，請等約 1 小時再試，或點之前信件中的登入連結。";
+    if (s >= 500 || (e && e.name === "AuthRetryableFetchError") || m === "{}" || !m) return "寄信服務暫時忙碌（可能已達每小時上限），請稍後再試或點信中連結。";
+    return m.slice(0, 80);
+  }
 
   function readShared() {
     var out = {};
@@ -123,7 +129,7 @@
       setStatus("load", "寄送中…");
       sb.auth.signInWithOtp({ email: em, options: { emailRedirectTo: location.origin + location.pathname } })
         .then(function (r) {
-          if (r.error) { setStatus("err", r.error.message.slice(0, 60)); return; }
+          if (r.error) { setStatus("err", friendlyErr(r.error)); return; }
           el("cloudCodeField").classList.remove("hidden");
           el("cloudVerifyRow").classList.remove("hidden");
           setStatus("ok", "已寄出，請輸入信中的驗證碼（或直接點信中連結）");

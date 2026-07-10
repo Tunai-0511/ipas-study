@@ -310,6 +310,12 @@ window.addEventListener("DOMContentLoaded", function () {
     "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im11Z3JsdGlteGt2bHF5a3N5bWpxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODM2NTY0MDgsImV4cCI6MjA5OTIzMjQwOH0.OfJpNubw7WNF4ca56LZT_oWawiJlZm10Fm1l7rbRI8s");
   var st = document.getElementById("gateStatus");
   function status(m, k) { st.textContent = m || ""; st.className = "gate-status " + (k || ""); }
+  function friendlyErr(e) {
+    var m = (e && e.message) || "", s = (e && e.status) || 0;
+    if (s === 429 || /rate|too many|limit/i.test(m)) return "寄送太頻繁：免費信箱服務每小時有次數上限，請等約 1 小時再試，或直接點之前信件中的登入連結。";
+    if (s >= 500 || (e && e.name === "AuthRetryableFetchError") || m === "{}" || !m) return "寄信服務暫時忙碌（可能已達每小時上限）。請稍後再試，或點之前信件中的登入連結登入。";
+    return m.slice(0, 80);
+  }
   function authed(on, email) {
     document.documentElement.classList.toggle("authed", !!on);
     if (on) {
@@ -342,7 +348,7 @@ window.addEventListener("DOMContentLoaded", function () {
       sb.auth.signInWithOtp({ email: email, options: { emailRedirectTo: location.origin + location.pathname } })
         .then(function (r) {
           btn.disabled = false;
-          if (r.error) { status(r.error.message.slice(0, 60), "err"); return; }
+          if (r.error) { status(friendlyErr(r.error), "err"); return; }
           sent = true; gate.classList.add("sent"); btn.textContent = "登入";
           status("驗證碼已寄出，請查收信箱", "ok");
         });
