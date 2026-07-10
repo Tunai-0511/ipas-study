@@ -243,7 +243,6 @@
 
     var hero =
       '<section class="hero">' +
-        (global.LITE ? '' : '<video class="hero-video" autoplay muted loop playsinline preload="none" poster="assets/media/hero-light.jpg"><source src="assets/media/hero.mp4" type="video/mp4"></video>') +
         '<div class="hero-bg"></div><div class="hero-scrim"></div>' +
         '<div class="hero-inner">' +
           '<div class="hero-eyebrow">iPAS · AI 應用規劃師（初級）能力鑑定</div>' +

@@ -749,3 +749,51 @@ body::before{opacity:.42}
 /* 墨水開關：關閉時淡化並讓水滴圖示留白 */
 #inkToggle.is-off{opacity:.6}
 #inkToggle.is-off .ic{opacity:.7}
+
+/* ============================================================
+   Apple 玻璃 v2（junior）— 質感升級
+   桌面非 LITE：內容卡回歸「真模糊＋高飽和」的蘋果玻璃；
+   邊緣 1px 亮邊捕光、內頂高光、更柔的大半徑陰影。
+   LITE / reduced-motion 維持假玻璃保流暢。
+   ============================================================ */
+:root{
+  --glass:rgba(255,255,255,.58); --glass-2:rgba(255,255,255,.44);
+  --glass-brd:rgba(255,255,255,.75); --glass-hi:rgba(255,255,255,.95);
+}
+[data-theme="dark"]{
+  --glass:rgba(24,27,40,.52); --glass-2:rgba(30,34,50,.42);
+  --glass-brd:rgba(255,255,255,.10); --glass-hi:rgba(255,255,255,.16);
+}
+html:not(.lite) .card,
+html:not(.lite) .mode-card,
+html:not(.lite) .subject-card,
+html:not(.lite) .stat-card,
+html:not(.lite) .chapter,
+html:not(.lite) .review-item{
+  backdrop-filter:blur(26px) saturate(1.9) !important;
+  -webkit-backdrop-filter:blur(26px) saturate(1.9) !important;
+  border:1px solid var(--glass-brd);
+  box-shadow:
+    inset 0 1px 0 var(--glass-hi),
+    inset 0 0 0 .5px rgba(255,255,255,.06),
+    0 24px 60px -24px rgba(30,34,90,.28);
+}
+html:not(.lite) body[data-theme="dark"] .card{ box-shadow: inset 0 1px 0 var(--glass-hi), 0 24px 60px -24px rgba(0,0,0,.55); }
+.sidebar{ backdrop-filter:blur(30px) saturate(1.9); -webkit-backdrop-filter:blur(30px) saturate(1.9);
+  border-right:1px solid var(--glass-brd); box-shadow: inset 0 1px 0 var(--glass-hi), 12px 0 40px -28px rgba(30,34,90,.25); }
+.topbar{ backdrop-filter:blur(26px) saturate(1.9); -webkit-backdrop-filter:blur(26px) saturate(1.9); }
+.modal-box{ backdrop-filter:blur(30px) saturate(1.9); -webkit-backdrop-filter:blur(30px) saturate(1.9);
+  border:1px solid var(--glass-brd); box-shadow: inset 0 1px 0 var(--glass-hi), 0 40px 100px -30px rgba(0,0,0,.4); }
+.chip{ border:1px solid var(--glass-brd); box-shadow: inset 0 1px 0 var(--glass-hi); }
+.btn-glass{ backdrop-filter:blur(18px) saturate(1.8); -webkit-backdrop-filter:blur(18px) saturate(1.8);
+  border:1px solid var(--glass-brd); box-shadow: inset 0 1px 0 var(--glass-hi), 0 10px 30px -12px rgba(30,34,90,.3); }
+/* 認證切換 chips */
+.cert-switch .chip{ font-size:12px; padding:5px 12px }
+.cert-switch .chip.on{ background:linear-gradient(135deg, color-mix(in srgb,var(--primary) 88%, #fff), var(--primary)); color:var(--on-primary,#fff); border-color:transparent }
+/* hero 玻璃卡與大標更精緻 */
+.hero-inner{ text-shadow: 0 1px 24px rgba(255,255,255,.25) }
+[data-theme="dark"] .hero-inner{ text-shadow: 0 1px 24px rgba(0,0,0,.45) }
+/* LITE 維持假玻璃 */
+.lite .card,.lite .mode-card,.lite .subject-card,.lite .stat-card,.lite .chapter,.lite .review-item{
+  backdrop-filter:none !important; -webkit-backdrop-filter:none !important;
+}

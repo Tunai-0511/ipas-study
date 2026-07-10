@@ -21,10 +21,20 @@ body{
   min-height:100vh; font-family:"SF Pro TC","PingFang TC","Noto Sans TC",system-ui,sans-serif;
   color:var(--text); display:flex; flex-direction:column; align-items:center; justify-content:center;
   padding:48px 20px; position:relative; overflow-x:hidden;
-  background:
-    radial-gradient(900px 600px at 12% 8%, color-mix(in srgb, var(--primary) 16%, transparent), transparent 60%),
-    radial-gradient(800px 600px at 88% 90%, color-mix(in srgb, var(--accent) 14%, transparent), transparent 60%),
-    linear-gradient(160deg, var(--bg1), var(--bg2));
+  background:linear-gradient(160deg, var(--bg1), var(--bg2));
+}
+body::before{
+  content:""; position:fixed; inset:0; z-index:-2;
+  background:url("junior/assets/media/bg-light.jpg") center/cover no-repeat;
+}
+body::after{
+  content:""; position:fixed; inset:0; z-index:-1;
+  background:color-mix(in srgb, var(--bg1) 46%, transparent);
+  backdrop-filter:blur(2px); -webkit-backdrop-filter:blur(2px);
+}
+@media (prefers-color-scheme: dark){
+  body::before{ background-image:url("junior/assets/media/bg-dark.jpg"); }
+  body::after{ background:color-mix(in srgb, var(--bg1) 52%, transparent); }
 }
 .wrap{width:100%;max-width:1060px;text-align:center}
 .eyebrow{font-size:13px;letter-spacing:.22em;color:var(--mute);text-transform:uppercase;margin-bottom:14px}
