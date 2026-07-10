@@ -18,7 +18,6 @@
     official: { name: "官方題庫", icon: "bookOpen", desc: "依科目/章節練習真實考題，作答即對答與解析", immediate: true },
     mock:     { name: "模擬考",   icon: "target", desc: "跨科隨機組卷、計時作答，交卷後看成績", immediate: false },
     wrong:    { name: "錯題複習", icon: "loop", desc: "重做你之前答錯的題目，鞏固弱點", immediate: true },
-    ai:       { name: "AI 生成",  icon: "sparkle", desc: "練習你用 AI 出的新題（附詳解）", immediate: true },
     bookmark: { name: "收藏複習", icon: "flag", desc: "重做你按★收藏標記的題目", immediate: true }
   };
 

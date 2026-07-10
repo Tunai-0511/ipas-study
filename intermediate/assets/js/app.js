@@ -297,7 +297,6 @@
         actionCard("mock", "target", "模擬考", "跨科計時組卷") +
         actionCard("exam", "target", "正式模考", "50 題 / 60 分鐘") +
         actionCard("wrong", "loop", "錯題複習", "重做答錯的題目") +
-        actionCard("generate", "sparkle", "AI 出題", "依考點生成新題") +
       '</div>';
 
     var growthCard = "";
@@ -364,7 +363,6 @@
         (cc ? '<div class="kp-title">關鍵名詞</div>' + cc : '') +
         '<div class="chapter-actions">' +
           (qn ? '<button class="btn btn-primary btn-sm" data-practice="' + ch.id + '" data-subj="' + subj + '">' + Icon.get("pencil") + '練習本章 (' + qn + ')</button>' : '') +
-          '<button class="btn btn-ghost btn-sm" data-gench="' + ch.id + '" data-subj="' + subj + '">' + Icon.get("sparkle") + '用 AI 出本章題</button>' +
         '</div>' +
       '</div></div>';
   }
@@ -398,7 +396,6 @@
       h.onkeydown = function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggle(); } };
     });
     $$("[data-practice]").forEach(function (b) { b.onclick = function (e) { e.stopPropagation(); startQuiz({ mode: "official", subject: b.getAttribute("data-subj"), topic: b.getAttribute("data-practice"), subjectName: Content.chapterTitle(b.getAttribute("data-practice")) }); }; });
-    $$("[data-gench]").forEach(function (b) { b.onclick = function (e) { e.stopPropagation(); go("generate"); setTimeout(function () { presetGenerate(b.getAttribute("data-subj"), b.getAttribute("data-gench")); }, 0); }; });
   };
 
   /* ---- 測驗設定 ---- */
