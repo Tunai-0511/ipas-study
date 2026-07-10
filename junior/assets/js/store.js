@@ -28,7 +28,7 @@
     var id = uid();
     return {
       version: 1,
-      profiles: [{ id: id, name: "我", avatar: "", createdAt: nowISO() }],
+      profiles: [{ id: id, name: "使用者", avatar: "", createdAt: nowISO() }],
       currentId: id,
       ai: { provider: "minimax", model: "", key: "", baseUrl: "", path: "", connMode: "auto", remember: true },
       data: {}   // { profileId: { attempts:[], aiQuestions:[], explains:{} } }

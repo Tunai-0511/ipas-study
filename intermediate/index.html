@@ -12,7 +12,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-title" content="備考學院" />
-<link rel="stylesheet" href="assets/css/style.css?v=16" />
+<link rel="stylesheet" href="assets/css/style.css?v=17" />
 <script>
   // 低階/行動/減少動態 → 精簡模式（關閉重特效以求流暢）
   window.LITE = (function () { try {
@@ -27,7 +27,6 @@
 <body data-theme="light">
 <div class="app-bg" aria-hidden="true"></div>
 <div class="app-veil" aria-hidden="true"></div>
-<canvas class="ink" id="inkCanvas" aria-hidden="true"></canvas>
 
 <!-- 行動版頂列 -->
 <header class="topbar">
@@ -122,25 +121,8 @@
       </div>
     </div>
 
-    <!-- 資料備份 -->
-    <div class="side-section">
-      <button class="side-section-head" data-collapse="backupPanel">
-        <span class="sh-label"><i class="ic-wrap" data-ico="save"></i> 資料備份</span><span class="chevron">▾</span>
-      </button>
-      <div class="side-section-body collapsed" id="backupPanel">
-        <p class="side-hint">成績紀錄存在此瀏覽器。換裝置或清快取前，請先匯出備份。</p>
-        <div class="btn-row">
-          <button class="btn btn-ghost btn-sm" id="exportBtn">匯出</button>
-          <button class="btn btn-ghost btn-sm" id="importBtn">匯入</button>
-        </div>
-        <button class="btn btn-danger-ghost btn-sm full" id="resetBtn">清除本使用者紀錄</button>
-        <input type="file" id="importFile" accept="application/json" hidden />
-      </div>
-    </div>
-
     <div class="side-footer">
       <button class="btn btn-ghost btn-sm full" id="themeToggle"><i class="ic-wrap" data-ico="moon"></i> 深／淺色</button>
-      <button class="btn btn-ghost btn-sm full" id="inkToggle" hidden aria-pressed="true"><i class="ic-wrap" data-ico="drop"></i> <span id="inkToggleLabel">墨水效果：開</span></button>
       <div class="side-version">v1.0 · 題庫：官方114-2</div>
     </div>
   </aside>
@@ -161,22 +143,21 @@
 <div class="toast-wrap" id="toastWrap"></div>
 
 <!-- 動畫函式庫（在地化，離線可用） -->
-<script defer src="assets/vendor/gsap.min.js?v=16"></script>
-<script defer src="assets/vendor/lottie.min.js?v=16"></script>
+<script defer src="assets/vendor/gsap.min.js?v=17"></script>
+<script defer src="assets/vendor/lottie.min.js?v=17"></script>
 <!-- 資料（官方題＋教材；擴充題庫 bank.js 由 content-api 按需延遲載入）-->
-<script defer src="data/content.js?v=16"></script>
+<script defer src="data/content.js?v=17"></script>
 <!-- 模組 -->
-<script defer src="assets/js/icons.js?v=16"></script>
-<script defer src="assets/js/content-api.js?v=16"></script>
-<script defer src="assets/js/store.js?v=16"></script>
-<script defer src="assets/js/ai.js?v=16"></script>
-<script defer src="assets/js/charts.js?v=16"></script>
-<script defer src="assets/js/analysis.js?v=16"></script>
-<script defer src="assets/js/quiz.js?v=16"></script>
-<script defer src="assets/js/app.js?v=16"></script>
-<script defer src="assets/js/anim.js?v=16"></script>
-<script defer src="assets/js/interactions.js?v=16"></script>
-<script defer src="assets/js/ink.js?v=16"></script>
+<script defer src="assets/js/icons.js?v=17"></script>
+<script defer src="assets/js/content-api.js?v=17"></script>
+<script defer src="assets/js/store.js?v=17"></script>
+<script defer src="assets/js/ai.js?v=17"></script>
+<script defer src="assets/js/charts.js?v=17"></script>
+<script defer src="assets/js/analysis.js?v=17"></script>
+<script defer src="assets/js/quiz.js?v=17"></script>
+<script defer src="assets/js/app.js?v=17"></script>
+<script defer src="assets/js/anim.js?v=17"></script>
+<script defer src="assets/js/interactions.js?v=17"></script>
 <script>
   // PWA：註冊 Service Worker（離線可用）。file:// 或不支援時略過。
   if ("serviceWorker" in navigator && location.protocol.indexOf("http") === 0) {

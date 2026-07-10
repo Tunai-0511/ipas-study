@@ -13,13 +13,10 @@
     var h = Math.floor(sec / 3600), m = Math.floor((sec % 3600) / 60), s = sec % 60;
     return h ? (h + ":" + pad2(m) + ":" + pad2(s)) : (pad2(m) + ":" + pad2(s));
   }
-  var DAY = 86400000;
-  var REVIEW_INTERVALS = [0, 1, 3, 7, 14, 30];
 
   var MODES = {
     official: { name: "官方題庫", icon: "bookOpen", desc: "依科目/章節練習真實考題，作答即對答與解析", immediate: true },
     mock:     { name: "模擬考",   icon: "target", desc: "跨科隨機組卷、計時作答，交卷後看成績", immediate: false },
-    review:   { name: "間隔複習", icon: "clock", desc: "依記憶曲線重做今天到期的題目", immediate: true },
     wrong:    { name: "錯題複習", icon: "loop", desc: "重做你之前答錯的題目，鞏固弱點", immediate: true },
     ai:       { name: "AI 生成",  icon: "sparkle", desc: "練習你用 AI 出的新題（附詳解）", immediate: true },
     bookmark: { name: "收藏複習", icon: "flag", desc: "重做你按★收藏標記的題目", immediate: true }
@@ -28,46 +25,6 @@
   /* ---- 組題 ---- */
   function aiQuestionMap() {
     var m = {}; Store.aiQuestions().forEach(function (q) { m[q.id] = q; }); return m;
-  }
-  function reviewItems(config, includeUpcoming) {
-    config = config || {};
-    var stats = {}, aimap = aiQuestionMap();
-    Store.attempts().slice().sort(function (a, b) {
-      return Date.parse(a.finishedAt || a.startedAt || "") - Date.parse(b.finishedAt || b.startedAt || "");
-    }).forEach(function (a) {
-      var ts = Date.parse(a.finishedAt || a.startedAt || "") || 0;
-      (a.items || []).forEach(function (it) {
-        var s = stats[it.qid] || (stats[it.qid] = { seen: 0, wrong: 0, correct: 0, streak: 0, lastSeen: 0, lastWrong: 0, lastResult: "" });
-        s.seen++; s.lastSeen = Math.max(s.lastSeen, ts);
-        if (it.isCorrect) { s.correct++; s.streak = s.lastResult === "correct" ? s.streak + 1 : 1; s.lastResult = "correct"; }
-        else { s.wrong++; s.streak = 0; s.lastWrong = Math.max(s.lastWrong, ts); s.lastResult = "wrong"; }
-      });
-    });
-    var now = Date.now();
-    return Object.keys(stats).map(function (id) {
-      var s = stats[id], q = Content.question(id) || aimap[id];
-      if (!q || q.needsContext || (Store.isHidden && Store.isHidden(id))) return null;
-      if (config.subject && q.subject !== config.subject) return null;
-      if (config.topic && q.topic !== config.topic) return null;
-      var days = s.lastResult === "wrong" ? 0 : REVIEW_INTERVALS[Math.min(s.streak, REVIEW_INTERVALS.length - 1)];
-      var dueAt = s.lastSeen + days * DAY;
-      var due = dueAt <= now;
-      if (!due && !includeUpcoming) return null;
-      return {
-        q: q, due: due, dueAt: dueAt, stats: s,
-        score: (due ? 1000000 : 0) + s.wrong * 10 - s.streak * 2 + Math.max(0, (now - dueAt) / DAY)
-      };
-    }).filter(Boolean).sort(function (a, b) { return b.score - a.score; });
-  }
-  function reviewStats(config) {
-    var due = reviewItems(config, false);
-    var all = reviewItems(config, true);
-    return {
-      due: due.length,
-      tracked: all.length,
-      upcoming: all.filter(function (x) { return !x.due; }).length,
-      nextDueAt: all.filter(function (x) { return !x.due; }).reduce(function (m, x) { return !m || x.dueAt < m ? x.dueAt : m; }, 0)
-    };
   }
   function buildQuestions(config) {
     var qs = [];
@@ -80,8 +37,6 @@
         if (config.subject && q.subject !== config.subject) return false;
         if (config.topic && q.topic !== config.topic) return false; return true;
       });
-    } else if (config.mode === "review") {
-      reviewItems(config, false).forEach(function (x) { qs.push(x.q); });
     } else if (config.mode === "wrong") {
       var wrongStats = {}, aimap = aiQuestionMap();
       Store.attempts().forEach(function (a) {
@@ -105,7 +60,7 @@
         var q = Content.question(id) || amap[id]; if (q && !q.needsContext) qs.push(q);
       });
     }
-    if (config.mode !== "wrong" && config.mode !== "review") qs = shuffle(qs);
+    if (config.mode !== "wrong") qs = shuffle(qs);
     var count = config.count || qs.length;
     return qs.slice(0, count);
   }
@@ -361,10 +316,6 @@
   }
 
   function emptyState(mode) {
-    if (mode === "review") {
-      return '<div class="empty"><div class="e-ico">' + Icon.get("clock", "ic-xl") + '</div><div class="e-title">今天沒有到期複習題</div>' +
-        '<div class="e-sub">可以先做新題、錯題複習，或明天再回來檢查排程。</div><br><button class="btn btn-primary" data-back>返回</button></div>';
-    }
     var msg = mode === "wrong" ? "你目前沒有答錯的題目。先去做幾份測驗吧！"
       : mode === "ai" ? "還沒有 AI 生成的題目。請到「AI 出題」頁面產生題目。"
       : "此範圍暫無可作答的題目。";
@@ -372,5 +323,5 @@
       '<div class="e-sub">' + msg + '</div><br><button class="btn btn-primary" data-back>返回</button></div>';
   }
 
-  global.Quiz = { MODES: MODES, buildQuestions: buildQuestions, launch: launch, reviewStats: reviewStats };
+  global.Quiz = { MODES: MODES, buildQuestions: buildQuestions, launch: launch };
 })(window);

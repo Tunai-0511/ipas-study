@@ -78,24 +78,18 @@
   $("#themeToggle") && ($("#themeToggle").onclick = toggleTheme);
   $("#themeToggleTop") && ($("#themeToggleTop").onclick = toggleTheme);
 
-  /* ---------- 墨水效果開關（ink.js 在 app.js 之後才載入，延到 DOMContentLoaded 綁定）---------- */
-  function initInkToggle() {
-    var btn = $("#inkToggle"); if (!btn) return;
-    var Ink = global.Ink;
-    if (!Ink || !Ink.supported) return;         // 精簡/減少動態模式：不顯示（本就停用）
-    btn.hidden = false;
-    function paint() {
-      var on = Ink.isOn();
-      $("#inkToggleLabel").textContent = "墨水效果：" + (on ? "開" : "關");
-      btn.setAttribute("aria-pressed", on ? "true" : "false");
-      btn.classList.toggle("is-off", !on);
-    }
-    paint();
-    btn.onclick = function () { Ink.toggle(); paint(); };
-  }
-  // DOMContentLoaded 一定晚於所有 defer 腳本（含 ink.js），此時 window.Ink 才就緒
-  if (document.readyState === "complete") initInkToggle();
-  else document.addEventListener("DOMContentLoaded", initInkToggle);
+
+  /* ---------- 使用者名稱：預設遷移＋跨認證同步 ---------- */
+  (function () {
+    try {
+      var u = Store.current();
+      var DEFAULTS = ["我", "使用者", "學習者"];
+      if (u.name === "我") { Store.renameProfile(u.id, "使用者"); u = Store.current(); }
+      var shared = localStorage.getItem("ipas_shared_name");
+      if (shared && shared !== u.name && DEFAULTS.indexOf(u.name) >= 0) { Store.renameProfile(u.id, shared); }
+      else if (!shared) { localStorage.setItem("ipas_shared_name", u.name); }
+    } catch (e) {}
+  })();
 
   /* ---------- 使用者切換 ---------- */
   function paintUser() {
@@ -135,7 +129,7 @@
       '<div class="field"><span class="field-label">名稱</span><input id="rnName" value="' + esc(u.name) + '" maxlength="16"></div>' +
       '<div class="modal-actions"><button class="btn btn-ghost" id="mCancel">取消</button><button class="btn btn-primary" id="mOk">儲存</button></div>');
     $("#mCancel").onclick = closeModal;
-    $("#mOk").onclick = function () { Store.renameProfile(u.id, $("#rnName").value.trim() || u.name); closeModal(); paintUser(); toast("已更新"); };
+    $("#mOk").onclick = function () { var nn = $("#rnName").value.trim() || u.name; Store.renameProfile(u.id, nn); try { localStorage.setItem("ipas_shared_name", nn); } catch (e2) {} closeModal(); paintUser(); toast("已更新"); };
   }
   function delUserDlg() {
     var u = Store.current();
@@ -199,29 +193,6 @@
     var url = URL.createObjectURL(blob); var a = document.createElement("a");
     a.href = url; a.download = name; a.click(); setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
   }
-  $("#exportBtn").onclick = function () {
-    downloadJSON(Store.exportAll(), "AI規劃師備考_備份_" + new Date().toISOString().slice(0, 10) + ".json");
-    toast("已匯出備份", "ok");
-  };
-  $("#importBtn").onclick = function () { $("#importFile").click(); };
-  $("#importFile").onchange = function (e) {
-    var f = e.target.files[0]; if (!f) return;
-    var rd = new FileReader();
-    rd.onload = function () {
-      try {
-        var obj = JSON.parse(rd.result);
-        confirmDlg("匯入備份", "選擇匯入方式。合併：保留現有資料並加入；取代：清空後全部換成備份內容。", function () {
-          Store.importAll(obj, "merge"); paintUser(); go("dashboard"); toast("已合併匯入", "ok");
-        }, "合併匯入");
-      } catch (err) { toast("匯入失敗：檔案格式錯誤", "err"); }
-    };
-    rd.readAsText(f); e.target.value = "";
-  };
-  $("#resetBtn").onclick = function () {
-    confirmDlg("清除此使用者的成績？", "將刪除「" + Store.current().name + "」的所有測驗紀錄與 AI 題庫（不影響其他使用者）。", function () {
-      Store.clearCurrentData(); go("dashboard"); toast("已清除", "ok");
-    }, "清除");
-  };
 
   /* ============================================================
      頁面
@@ -282,7 +253,6 @@
       '<div class="grid grid-3">' +
         actionCard("mock", "target", "模擬考", "跨科計時組卷") +
         actionCard("exam", "target", "正式模考", "50 題 / 60 分鐘") +
-        actionCard("review", "clock", "間隔複習", "重做今天到期題") +
         actionCard("wrong", "loop", "錯題複習", "重做答錯的題目") +
       '</div>';
 
@@ -315,7 +285,6 @@
   function handleAction(act) {
     if (act === "mock") startQuiz({ mode: "mock", count: 50, subjectName: "綜合模擬考" });
     else if (act === "exam") startQuiz({ mode: "mock", count: 50, onlyOfficial: true, limitSec: 60 * 60, subjectName: "正式模考" });
-    else if (act === "review") startQuiz({ mode: "review", subjectName: "間隔複習" });
     else if (act === "wrong") startQuiz({ mode: "wrong", subjectName: "錯題複習" });
     else if (act === "generate") go("generate");
   }
@@ -409,7 +378,6 @@
     if (quizCfg.mode === "mock") return Content.allOfficial(false, quizCfg.onlyOfficial).length;
     if (quizCfg.mode === "official") return Content.questions({ subject: quizCfg.subject || null, topic: quizCfg.topic || null, includeContext: false, onlyOfficial: quizCfg.onlyOfficial }).length;
     if (quizCfg.mode === "ai") return Store.aiQuestions().length;
-    if (quizCfg.mode === "review") return Quiz.buildQuestions({ mode: "review" }).length;
     if (quizCfg.mode === "wrong") return Quiz.buildQuestions({ mode: "wrong" }).length;
     if (quizCfg.mode === "bookmark") return Quiz.buildQuestions({ mode: "bookmark" }).length;
     return 0;
@@ -439,13 +407,6 @@
         sourceGroup() +
         '<div class="opt-group"><span class="og-label">題數</span>' + countChips([20, 30, 50, 100]) + '</div>' +
         limitGroup();
-    } else if (quizCfg.mode === "review") {
-      var rs = Quiz.reviewStats();
-      var next = rs.nextDueAt ? new Date(rs.nextDueAt) : null;
-      var nextTxt = next ? ('下一批約 ' + (next.getMonth() + 1) + '/' + next.getDate()) : '完成幾次測驗後會自動建立排程';
-      body = '<div class="callout ' + (rs.due ? "" : "warn") + '"><span class="co-ico">' + Icon.get("clock") + '</span><div>' +
-        (rs.due ? ('今天有 <b>' + rs.due + '</b> 題到期；已追蹤 <b>' + rs.tracked + '</b> 題。答錯立即重排，連續答對會延後到 1/3/7/14/30 天。') : ('今天沒有到期題。' + nextTxt + '。')) +
-        '</div></div>';
     } else if (quizCfg.mode === "wrong") {
       var wc = Quiz.buildQuestions({ mode: "wrong" }).length;
       body = '<div class="callout ' + (wc ? "" : "warn") + '"><span class="co-ico">' + Icon.get("loop") + '</span><div>' +
@@ -458,7 +419,6 @@
 
     var canStart = true;
     if (quizCfg.mode === "ai" && Store.aiQuestions().length === 0) canStart = false;
-    if (quizCfg.mode === "review" && poolSize() === 0) canStart = false;
     if (quizCfg.mode === "wrong" && poolSize() === 0) canStart = false;
     if (quizCfg.mode === "bookmark" && poolSize() === 0) canStart = false;
     var pool = poolSize();
@@ -468,8 +428,8 @@
       row("模式", Quiz.MODES[quizCfg.mode].name) +
       ((quizCfg.mode === "official" || quizCfg.mode === "ai") ? row("科目", quizCfg.subject ? Content.subjectName(quizCfg.subject) : "全部科目") + row("章節", quizCfg.topic ? Content.chapterTitle(quizCfg.topic) : "全部章節") : "") +
       ((quizCfg.mode === "official" || quizCfg.mode === "mock") ? row("來源", quizCfg.onlyOfficial ? "只考官方真題" : "全部題庫") : "") +
-      row("題數", quizCfg.mode === "review" ? "全部到期題" : quizCfg.mode === "wrong" ? "全部錯題" : quizCfg.count + " 題") +
-      row("可用題目", pool + " 題" + (pool < quizCfg.count && quizCfg.mode !== "wrong" && quizCfg.mode !== "review" ? "（不足將全數作答）" : ""));
+      row("題數", quizCfg.mode === "wrong" ? "全部錯題" : quizCfg.count + " 題") +
+      row("可用題目", pool + " 題" + (pool < quizCfg.count && quizCfg.mode !== "wrong" ? "（不足將全數作答）" : ""));
 
     var panel =
       '<aside class="quiz-side">' +
@@ -495,7 +455,7 @@
     $$("[data-limit]").forEach(function (c) { c.onclick = function () { var v = c.getAttribute("data-limit"); quizCfg.limit = v === "perq" ? "perq" : +v; VIEWS.quiz(); }; });
     $("#qzStart").onclick = function () {
       var name = quizCfg.mode === "mock" ? "綜合模擬考" : quizCfg.topic ? Content.chapterTitle(quizCfg.topic) : quizCfg.subject ? Content.subjectName(quizCfg.subject) : Quiz.MODES[quizCfg.mode].name;
-      var allMode = quizCfg.mode === "wrong" || quizCfg.mode === "bookmark" || quizCfg.mode === "review";
+      var allMode = quizCfg.mode === "wrong" || quizCfg.mode === "bookmark";
       startQuiz({ mode: quizCfg.mode, subject: quizCfg.subject, topic: quizCfg.topic, count: allMode ? 0 : quizCfg.count, onlyOfficial: quizCfg.onlyOfficial, limitSec: limitSecOf(), subjectName: name });
     };
     if (global.Interactions && Interactions.mountQuizAnim) Interactions.mountQuizAnim();
@@ -525,7 +485,6 @@
     var strong = Analysis.strongTopics(2, 3);
     var recs = Analysis.recommendations();
     var mastery = Analysis.masterySummary();
-    var review = Quiz.reviewStats();
 
     var subjBars = Charts.bars(subj.map(function (s) { return { label: s.title, value: s.accuracy }; }));
     var weakHtml = weak.length ? weak.map(function (t) {
@@ -542,10 +501,6 @@
 
     var strongHtml = strong.length ? ('<div class="chip-row">' + strong.map(function (t) { return '<span class="chip on">' + Icon.get("check") + esc(t.title) + '　' + t.accuracy + '%</span>'; }).join("") + '</div>') : "";
 
-    var reviewBox = '<div class="callout ' + (review.due ? "" : "warn") + '" style="margin-bottom:16px"><span class="co-ico">' + Icon.get("clock") + '</span><div style="flex:1">' +
-      (review.due ? ('今天有 <b>' + review.due + '</b> 題到期，建議先完成間隔複習。') : '今天沒有到期複習題；繼續刷題後系統會自動安排。') +
-      '</div><button class="btn btn-primary btn-sm" id="analysisReview" ' + (review.due ? "" : "disabled") + '>開始複習</button></div>';
-
     main.innerHTML = pageHead("成績判讀", "看清楚哪些觀念要加強") +
       '<div class="grid grid-4">' +
         statCard("熟練章節", mastery.mastered, "章", "accent") +
@@ -553,13 +508,10 @@
         statCard("高風險弱點", mastery.risk, "章", null) +
         statCard("題量不足", mastery.insufficient, "章", null) +
       '</div>' +
-      reviewBox +
       '<div class="section-title">各科正確率</div><div class="card card-pad">' + subjBars + '</div>' +
       '<div class="section-title">最需加強的主題 <span class="tag">正確率由低到高</span></div><div class="card card-pad">' + weakHtml + '</div>' +
       (recHtml ? '<div class="section-title">加強建議</div>' + recHtml : "") +
       (strongHtml ? '<div class="section-title">你的強項</div>' + strongHtml : "");
-    var reviewBtn = $("#analysisReview");
-    if (reviewBtn) reviewBtn.onclick = function () { startQuiz({ mode: "review", subjectName: "間隔複習" }); };
   };
 
   /* ---- 成長曲線 ---- */
