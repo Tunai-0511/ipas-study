@@ -83,13 +83,21 @@
   (function () {
     try {
       var u = Store.current();
-      var DEFAULTS = ["我", "使用者", "學習者"];
       if (u.name === "我") { Store.renameProfile(u.id, "使用者"); u = Store.current(); }
       var shared = localStorage.getItem("ipas_shared_name");
-      if (shared && shared !== u.name && DEFAULTS.indexOf(u.name) >= 0) { Store.renameProfile(u.id, shared); }
+      if (shared && shared !== u.name) { Store.renameProfile(u.id, shared); }
       else if (!shared) { localStorage.setItem("ipas_shared_name", u.name); }
     } catch (e) {}
   })();
+
+  /* 共用名稱即時同步：另一個認證分頁改名時，這裡不必刷新直接跟著變 */
+  global.addEventListener("storage", function (ev) {
+    if (!ev || ev.key !== "ipas_shared_name" || !ev.newValue) return;
+    try {
+      var u = Store.current();
+      if (u.name !== ev.newValue) { Store.renameProfile(u.id, ev.newValue); paintUser(); }
+    } catch (e) {}
+  });
 
   /* ---------- 使用者切換 ---------- */
   function paintUser() {
@@ -109,7 +117,7 @@
       '<a class="um-item" href="#" role="menuitem" data-rename="1">' + Icon.get("pencil") + '重新命名</a>' +
       (Store.profiles().length > 1 ? '<a class="um-item" href="#" role="menuitem" data-del="1" style="color:var(--danger)">' + Icon.get("trash") + '刪除此使用者</a>' : '');
     menu.innerHTML = html; menu.classList.remove("hidden");
-    $$("[data-uid]", menu).forEach(function (a) { a.onclick = function (e) { e.preventDefault(); Store.switchProfile(a.getAttribute("data-uid")); menu.classList.add("hidden"); paintUser(); go(route); toast("已切換使用者"); }; });
+    $$("[data-uid]", menu).forEach(function (a) { a.onclick = function (e) { e.preventDefault(); Store.switchProfile(a.getAttribute("data-uid")); try { localStorage.setItem("ipas_shared_name", Store.current().name); } catch (e2) {} menu.classList.add("hidden"); paintUser(); go(route); toast("已切換使用者"); }; });
     $("[data-add]", menu) && ($("[data-add]", menu).onclick = function (e) { e.preventDefault(); menu.classList.add("hidden"); addUserDlg(); });
     $("[data-rename]", menu) && ($("[data-rename]", menu).onclick = function (e) { e.preventDefault(); menu.classList.add("hidden"); renameDlg(); });
     $("[data-del]", menu) && ($("[data-del]", menu).onclick = function (e) { e.preventDefault(); menu.classList.add("hidden"); delUserDlg(); });
@@ -121,7 +129,7 @@
       '<div class="field"><span class="field-label">名稱</span><input id="nuName" placeholder="例：小明" maxlength="16"></div>' +
       '<div class="modal-actions"><button class="btn btn-ghost" id="mCancel">取消</button><button class="btn btn-primary" id="mOk">建立</button></div>');
     $("#mCancel").onclick = closeModal;
-    $("#mOk").onclick = function () { var n = $("#nuName").value.trim() || "學習者"; Store.addProfile(n, ""); closeModal(); paintUser(); go("dashboard"); toast("已建立「" + n + "」", "ok"); };
+    $("#mOk").onclick = function () { var n = $("#nuName").value.trim() || "學習者"; Store.addProfile(n, ""); try { localStorage.setItem("ipas_shared_name", Store.current().name); } catch (e2) {} closeModal(); paintUser(); go("dashboard"); toast("已建立「" + n + "」", "ok"); };
   }
   function renameDlg() {
     var u = Store.current();
