@@ -12,7 +12,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-title" content="備考學院" />
-<link rel="stylesheet" href="assets/css/style.css?v=4" />
+<link rel="stylesheet" href="assets/css/style.css?v=5" />
 <script>
   // 低階/行動/減少動態 → 精簡模式（關閉重特效以求流暢）
   window.LITE = (function () { try {
@@ -49,7 +49,7 @@
 
     <!-- 認證切換 -->
     <div class="side-section" style="margin-top:2px">
-      <div class="cert-switch" style="display:flex;flex-wrap:wrap;gap:6px">
+      <div class="cert-switch" style="display:flex;flex-wrap:wrap;gap:6px;margin:2px 0 14px">
         <span class="chip on" title="目前認證">初級</span>
         <a class="chip" href="../intermediate/" title="切換到 AI應用規劃師（中級）" style="text-decoration:none">中級</a>
         <span class="chip" title="教材與官方題備齊後開放" style="opacity:.55;cursor:not-allowed">BI 即將推出</span>
@@ -88,10 +88,7 @@
           <span class="field-label">API 金鑰</span>
           <input type="password" id="aiKey" placeholder="貼上你的 API Key" autocomplete="off" />
         </label>
-        <label class="field" hidden>
-          <span class="field-label">模型名稱</span>
-          <input type="text" id="aiModel" placeholder="例：MiniMax-Text-01" />
-        </label>
+        <input type="hidden" id="aiModel" />
         <label class="field" id="baseUrlField">
           <span class="field-label">API 位址（Base URL）</span>
           <input type="text" id="aiBaseUrl" placeholder="https://..." />
@@ -160,22 +157,22 @@
 <div class="toast-wrap" id="toastWrap"></div>
 
 <!-- 動畫函式庫（在地化，離線可用） -->
-<script defer src="assets/vendor/gsap.min.js?v=4"></script>
-<script defer src="assets/vendor/lottie.min.js?v=4"></script>
+<script defer src="assets/vendor/gsap.min.js?v=5"></script>
+<script defer src="assets/vendor/lottie.min.js?v=5"></script>
 <!-- 資料（官方題＋教材；擴充題庫 bank.js 由 content-api 按需延遲載入）-->
-<script defer src="data/content.js?v=4"></script>
+<script defer src="data/content.js?v=5"></script>
 <!-- 模組 -->
-<script defer src="assets/js/icons.js?v=4"></script>
-<script defer src="assets/js/content-api.js?v=4"></script>
-<script defer src="assets/js/store.js?v=4"></script>
-<script defer src="assets/js/ai.js?v=4"></script>
-<script defer src="assets/js/charts.js?v=4"></script>
-<script defer src="assets/js/analysis.js?v=4"></script>
-<script defer src="assets/js/quiz.js?v=4"></script>
-<script defer src="assets/js/app.js?v=4"></script>
-<script defer src="assets/js/anim.js?v=4"></script>
-<script defer src="assets/js/interactions.js?v=4"></script>
-<script defer src="assets/js/ink.js?v=4"></script>
+<script defer src="assets/js/icons.js?v=5"></script>
+<script defer src="assets/js/content-api.js?v=5"></script>
+<script defer src="assets/js/store.js?v=5"></script>
+<script defer src="assets/js/ai.js?v=5"></script>
+<script defer src="assets/js/charts.js?v=5"></script>
+<script defer src="assets/js/analysis.js?v=5"></script>
+<script defer src="assets/js/quiz.js?v=5"></script>
+<script defer src="assets/js/app.js?v=5"></script>
+<script defer src="assets/js/anim.js?v=5"></script>
+<script defer src="assets/js/interactions.js?v=5"></script>
+<script defer src="assets/js/ink.js?v=5"></script>
 <script>
   // PWA：註冊 Service Worker（離線可用）。file:// 或不支援時略過。
   if ("serviceWorker" in navigator && location.protocol.indexOf("http") === 0) {
