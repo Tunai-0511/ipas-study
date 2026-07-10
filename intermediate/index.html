@@ -12,7 +12,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-title" content="備考學院" />
-<link rel="stylesheet" href="assets/css/style.css?v=21" />
+<link rel="stylesheet" href="assets/css/style.css?v=22" />
 <script>
   // 低階/行動/減少動態 → 精簡模式（關閉重特效以求流暢）
   window.LITE = (function () { try {
@@ -119,6 +119,30 @@
       </div>
     </div>
 
+    <!-- 帳號與同步 -->
+    <div class="side-section">
+      <button class="side-section-head" data-collapse="cloudPanel">
+        <span class="sh-label"><i class="ic-wrap" data-ico="user"></i> 帳號與同步</span><span class="chevron">▾</span>
+      </button>
+      <div class="side-section-body" id="cloudPanel">
+        <div id="cloudOut">
+          <label class="field"><span class="field-label">信箱</span><input type="email" id="cloudEmail" placeholder="you@example.com" autocomplete="email" /></label>
+          <div class="btn-row"><button class="btn btn-primary btn-sm" id="cloudSend">寄送驗證碼</button></div>
+          <label class="field hidden" id="cloudCodeField"><span class="field-label">驗證碼</span><input inputmode="numeric" id="cloudCode" placeholder="6 位數" /></label>
+          <div class="btn-row hidden" id="cloudVerifyRow"><button class="btn btn-primary btn-sm" id="cloudVerify">登入</button></div>
+          <p class="side-hint">登入後，成績與收藏會在你的裝置之間自動同步。</p>
+        </div>
+        <div id="cloudIn" class="hidden">
+          <p class="side-hint" id="cloudWho"></p>
+          <div class="ai-status" id="cloudStatus"></div>
+          <div class="btn-row">
+            <button class="btn btn-ghost btn-sm" id="cloudSyncBtn">立即同步</button>
+            <button class="btn btn-danger-ghost btn-sm" id="cloudOutBtn">登出</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="side-footer">
       <button class="btn btn-ghost btn-sm full" id="themeToggle"><i class="ic-wrap" data-ico="moon"></i> 深／淺色</button>
       <div class="side-version">v1.0 · 題庫：官方114-2</div>
@@ -141,21 +165,23 @@
 <div class="toast-wrap" id="toastWrap"></div>
 
 <!-- 動畫函式庫（在地化，離線可用） -->
-<script defer src="assets/vendor/gsap.min.js?v=21"></script>
-<script defer src="assets/vendor/lottie.min.js?v=21"></script>
+<script defer src="assets/vendor/gsap.min.js?v=22"></script>
+<script defer src="assets/vendor/lottie.min.js?v=22"></script>
 <!-- 資料（官方題＋教材；擴充題庫 bank.js 由 content-api 按需延遲載入）-->
-<script defer src="data/content.js?v=21"></script>
+<script defer src="data/content.js?v=22"></script>
 <!-- 模組 -->
-<script defer src="assets/js/icons.js?v=21"></script>
-<script defer src="assets/js/content-api.js?v=21"></script>
-<script defer src="assets/js/store.js?v=21"></script>
-<script defer src="assets/js/ai.js?v=21"></script>
-<script defer src="assets/js/charts.js?v=21"></script>
-<script defer src="assets/js/analysis.js?v=21"></script>
-<script defer src="assets/js/quiz.js?v=21"></script>
-<script defer src="assets/js/app.js?v=21"></script>
-<script defer src="assets/js/anim.js?v=21"></script>
-<script defer src="assets/js/interactions.js?v=21"></script>
+<script defer src="assets/js/icons.js?v=22"></script>
+<script defer src="assets/js/content-api.js?v=22"></script>
+<script defer src="assets/js/store.js?v=22"></script>
+<script defer src="assets/js/ai.js?v=22"></script>
+<script defer src="assets/js/charts.js?v=22"></script>
+<script defer src="assets/js/analysis.js?v=22"></script>
+<script defer src="assets/js/quiz.js?v=22"></script>
+<script defer src="assets/js/app.js?v=22"></script>
+<script defer src="assets/js/anim.js?v=22"></script>
+<script defer src="assets/js/interactions.js?v=22"></script>
+<script defer src="assets/vendor/supabase.min.js?v=22"></script>
+<script defer src="assets/js/cloud.js?v=22"></script>
 <script>
   // PWA：註冊 Service Worker（離線可用）。file:// 或不支援時略過。
   if ("serviceWorker" in navigator && location.protocol.indexOf("http") === 0) {

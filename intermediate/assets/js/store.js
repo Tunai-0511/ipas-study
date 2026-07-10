@@ -43,6 +43,7 @@
 
   var _warned = false;
   function persist() {
+    if (typeof Cloud !== "undefined" && Cloud && Cloud.schedulePush) { try { Cloud.schedulePush(); } catch (eC) {} }
     var ok = writeRoot(_root);
     if (!ok && !_warned) {
       _warned = true;
