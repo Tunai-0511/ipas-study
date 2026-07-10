@@ -60,20 +60,22 @@
     h.onclick = function () { var b = $("#" + h.getAttribute("data-collapse")); if (b) b.classList.toggle("collapsed"); };
   });
 
-  /* ---------- 主題 ---------- */
-  function applyTheme(t) { document.body.setAttribute("data-theme", t); try { localStorage.setItem("aipsc_theme", t); } catch (e) {} }
+  /* ---------- 主題（跨認證共用 ipas_shared_theme） ---------- */
+  function applyTheme(t) { document.body.setAttribute("data-theme", t); try { localStorage.setItem("aipsc_theme", t); localStorage.setItem("ipas_shared_theme", t); } catch (e) {} }
   (function () {
     try {
-      var t = localStorage.getItem("aipsc_theme");
+      var t = localStorage.getItem("ipas_shared_theme") || localStorage.getItem("aipsc_theme");
       if (t) { document.body.setAttribute("data-theme", t); return; }
-      // 首訪：跟隨系統深/淺色（不寫入，保留使用者手動優先）
       if (matchMedia("(prefers-color-scheme: dark)").matches) document.body.setAttribute("data-theme", "dark");
-      // 系統色變更時（使用者尚未手動選過）即時跟隨
       matchMedia("(prefers-color-scheme: dark)").addEventListener("change", function (e) {
-        if (!localStorage.getItem("aipsc_theme")) document.body.setAttribute("data-theme", e.matches ? "dark" : "light");
+        if (!localStorage.getItem("ipas_shared_theme") && !localStorage.getItem("aipsc_theme")) document.body.setAttribute("data-theme", e.matches ? "dark" : "light");
       });
     } catch (e) {}
   })();
+  /* 主題即時同步：另一分頁切深淺，這裡不刷新直接變 */
+  global.addEventListener("storage", function (ev) {
+    if (ev && ev.key === "ipas_shared_theme" && (ev.newValue === "dark" || ev.newValue === "light")) document.body.setAttribute("data-theme", ev.newValue);
+  });
   function toggleTheme() { applyTheme(document.body.getAttribute("data-theme") === "dark" ? "light" : "dark"); }
   $("#themeToggle") && ($("#themeToggle").onclick = toggleTheme);
   $("#themeToggleTop") && ($("#themeToggleTop").onclick = toggleTheme);

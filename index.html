@@ -9,7 +9,7 @@
 <script>
   // 主題：手動優先，否則跟系統
   (function () { try {
-    var t = localStorage.getItem("ipas_portal_theme");
+    var t = localStorage.getItem("ipas_shared_theme") || localStorage.getItem("ipas_portal_theme");
     if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t);
   } catch (e) {} })();
 </script>
@@ -209,10 +209,13 @@ footer{
   document.getElementById("themeBtn").onclick = function () {
     var next = isDark() ? "light" : "dark";
     root.setAttribute("data-theme", next);
-    try { localStorage.setItem("ipas_portal_theme", next); } catch (e) {}
+    try { localStorage.setItem("ipas_portal_theme", next); localStorage.setItem("ipas_shared_theme", next); } catch (e) {}
     paint();
   };
   try { matchMedia("(prefers-color-scheme: dark)").addEventListener("change", paint); } catch (e) {}
+  window.addEventListener("storage", function (ev) {
+    if (ev && ev.key === "ipas_shared_theme" && (ev.newValue === "dark" || ev.newValue === "light")) { root.setAttribute("data-theme", ev.newValue); paint(); }
+  });
   paint();
 
   // 停留動畫：hover 播放（依目前主題選片）
