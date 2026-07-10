@@ -155,3 +155,32 @@
 
   global.Interactions = { mountQuizAnim: mountQuizAnim, confetti: confetti };
 })(window);
+
+/* ===== 圖片停留動畫：hover 播放 Higgsfield 生成影片（委派，重繪安全） ===== */
+(function (global) {
+  "use strict";
+  if (global.LITE) return;
+  try {
+    if (!matchMedia("(hover:hover)").matches || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  } catch (e) { return; }
+  var active = null;
+  function stop() {
+    if (!active) return;
+    active.querySelectorAll(".hover-vid").forEach(function (v) { v.pause(); v.classList.remove("on"); });
+    active = null;
+  }
+  document.addEventListener("mouseover", function (e) {
+    var box = e.target.closest ? e.target.closest(".hover-media") : null;
+    if (box === active) return;
+    stop();
+    if (!box) return;
+    active = box;
+    var dark = document.body.getAttribute("data-theme") === "dark";
+    var v = box.querySelector(dark ? ".vid-dark" : ".vid-light");
+    if (!v) return;
+    if (!v.getAttribute("src")) v.setAttribute("src", v.getAttribute("data-src"));
+    v.currentTime = 0;
+    var p = v.play(); if (p && p.catch) p.catch(function () {});
+    v.classList.add("on");
+  }, { passive: true });
+})(window);

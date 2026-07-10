@@ -830,3 +830,11 @@ body[data-theme="dark"] .quiz-anim-img .img-dark{display:block}
   .sc-media img,.quiz-anim-img img{transition:none}
   .subject-card:hover .sc-media img,.quiz-anim-img:hover img{transform:none;filter:none}
 }
+
+/* 停留動畫影片層 */
+.hover-media{position:relative}
+.hover-vid{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .4s ease;pointer-events:none;z-index:1}
+.hover-vid.on{opacity:1}
+.sc-badge{z-index:2}
+.lite .hover-vid{display:none}
+@media (prefers-reduced-motion: reduce){ .hover-vid{display:none} }

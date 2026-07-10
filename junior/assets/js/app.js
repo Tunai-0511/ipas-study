@@ -269,7 +269,10 @@
       var pct = acc ? acc.accuracy : 0;
       var meta = acc ? (acc.correct + "/" + acc.attempted + " 題答對 · 正確率 " + pct + "%") : (Content.chapters(s.code).length + " 章 · " + Content.questions({ subject: s.code }).length + " 題");
       return '<button class="subject-card sc-card" data-subj="' + s.code + '">' +
-        '<div class="sc-media"><img class="img-light" src="' + SUBJ_IMG[s.code] + '.jpg?v=3" alt="" loading="lazy"><img class="img-dark" src="' + SUBJ_IMG[s.code] + '-dark.jpg?v=3" alt="" loading="lazy"><span class="sc-badge">' + s.code + '</span></div>' +
+        '<div class="sc-media hover-media"><img class="img-light" src="' + SUBJ_IMG[s.code] + '.jpg?v=3" alt="" loading="lazy"><img class="img-dark" src="' + SUBJ_IMG[s.code] + '-dark.jpg?v=3" alt="" loading="lazy">' +
+        '<video class="hover-vid vid-light" data-src="' + SUBJ_IMG[s.code] + '.mp4" muted loop playsinline preload="none" aria-hidden="true"></video>' +
+        '<video class="hover-vid vid-dark" data-src="' + SUBJ_IMG[s.code] + '-dark.mp4" muted loop playsinline preload="none" aria-hidden="true"></video>' +
+        '<span class="sc-badge">' + s.code + '</span></div>' +
         '<div class="sc-body"><div class="sc-name">' + esc(s.name) + '</div>' +
         '<div class="sc-meta">' + esc(meta) + '</div>' +
         '<div class="sc-bar"><i style="width:' + pct + '%"></i></div></div></button>';
@@ -470,7 +473,9 @@
 
     var panel =
       '<aside class="quiz-side">' +
-        '<div class="quiz-anim quiz-anim-img"><img class="img-light" src="assets/media/quiz-target-light.jpg?v=3" alt="" loading="lazy"><img class="img-dark" src="assets/media/quiz-target-dark.jpg?v=3" alt="" loading="lazy"></div>' +
+        '<div class="quiz-anim quiz-anim-img hover-media"><img class="img-light" src="assets/media/quiz-target-light.jpg?v=3" alt="" loading="lazy"><img class="img-dark" src="assets/media/quiz-target-dark.jpg?v=3" alt="" loading="lazy">' +
+        '<video class="hover-vid vid-light" data-src="assets/media/quiz-target-light.mp4" muted loop playsinline preload="none" aria-hidden="true"></video>' +
+        '<video class="hover-vid vid-dark" data-src="assets/media/quiz-target-dark.mp4" muted loop playsinline preload="none" aria-hidden="true"></video></div>' +
         '<div class="qs-title">測驗摘要</div>' +
         '<div class="qs-list">' + summary + '</div>' +
         '<button class="btn btn-primary full" id="qzStart" ' + (canStart ? "" : "disabled") + '>開始測驗 →</button>' +

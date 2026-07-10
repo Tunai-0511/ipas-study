@@ -85,7 +85,11 @@ footer{
   border-top:1px solid var(--divider);
   font-size:12px; color:var(--mute); text-align:center; letter-spacing:.01em;
 }
-@media (prefers-reduced-motion: reduce){ .tile,.tile .media img,.tile .cta::after{transition:none} }
+/* 停留動畫影片層 */
+.tile .media{position:relative}
+.hover-vid{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .4s ease;pointer-events:none}
+.hover-vid.on{opacity:1}
+@media (prefers-reduced-motion: reduce){ .tile,.tile .media img,.tile .cta::after,.hover-vid{transition:none} .hover-vid{display:none} }
 </style>
 </head>
 <body>
@@ -115,6 +119,7 @@ footer{
         <source media="(prefers-color-scheme: dark)" srcset="junior/assets/media/subj-j1-dark.jpg">
         <img src="junior/assets/media/subj-j1.jpg" alt="AI應用規劃師（初級）" loading="eager">
       </picture>
+      <video class="hover-vid vid-light" data-src="media/vid-jr-light.mp4" muted loop playsinline preload="none" aria-hidden="true"></video><video class="hover-vid vid-dark" data-src="media/vid-jr-dark.mp4" muted loop playsinline preload="none" aria-hidden="true"></video>
     </div>
     <div class="body">
       <div class="kicker">初級 · Entry</div>
@@ -129,6 +134,7 @@ footer{
         <source media="(prefers-color-scheme: dark)" srcset="media/cert-mid-dark.jpg">
         <img src="media/cert-mid-light.jpg" alt="AI應用規劃師（中級）" loading="eager">
       </picture>
+      <video class="hover-vid vid-light" data-src="media/vid-mid-light.mp4" muted loop playsinline preload="none" aria-hidden="true"></video><video class="hover-vid vid-dark" data-src="media/vid-mid-dark.mp4" muted loop playsinline preload="none" aria-hidden="true"></video>
     </div>
     <div class="body">
       <div class="kicker">中級 · Intermediate</div>
@@ -143,6 +149,7 @@ footer{
         <source media="(prefers-color-scheme: dark)" srcset="media/cert-bi-dark.jpg">
         <img src="media/cert-bi-light.jpg" alt="營運智慧分析師 BI（即將推出）" loading="lazy">
       </picture>
+      <video class="hover-vid vid-light" data-src="media/vid-bi-light.mp4" muted loop playsinline preload="none" aria-hidden="true"></video><video class="hover-vid vid-dark" data-src="media/vid-bi-dark.mp4" muted loop playsinline preload="none" aria-hidden="true"></video>
     </div>
     <div class="body">
       <div class="kicker">籌備中 · Business Intelligence</div>
@@ -154,5 +161,23 @@ footer{
 </section>
 
 <footer>非官方備考輔助工具 · 題目版權屬 iPAS 產業人才能力鑑定推動小組</footer>
+<script>
+(function(){
+  if (!matchMedia('(hover:hover)').matches || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  document.querySelectorAll('.tile').forEach(function(t){
+    t.addEventListener('mouseenter', function(){
+      var dark = matchMedia('(prefers-color-scheme: dark)').matches;
+      var v = t.querySelector(dark ? '.vid-dark' : '.vid-light');
+      if (!v) return;
+      if (!v.getAttribute('src')) v.setAttribute('src', v.getAttribute('data-src'));
+      v.currentTime = 0; v.play().catch(function(){});
+      v.classList.add('on');
+    });
+    t.addEventListener('mouseleave', function(){
+      t.querySelectorAll('.hover-vid').forEach(function(v){ v.pause(); v.classList.remove('on'); });
+    });
+  });
+})();
+</script>
 </body>
 </html>
