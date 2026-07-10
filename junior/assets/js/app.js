@@ -190,14 +190,36 @@
     reflectProvider();
   };
   $("#aiSaveBtn").onclick = function () {
-    Store.saveAi({
+    var cfg = {
       provider: $("#aiProvider").value, key: $("#aiKey").value.trim(), model: $("#aiModel").value.trim(),
       baseUrl: $("#aiBaseUrl").value.trim(), path: $("#aiPath").value.trim(),
       connMode: $("#aiConnMode").value, remember: $("#aiRemember").checked
-    });
+    };
+    Store.saveAi(cfg);
+    try {
+      if (cfg.remember) localStorage.setItem("ipas_shared_ai", JSON.stringify(cfg));
+      else localStorage.removeItem("ipas_shared_ai");
+    } catch (e2) {}
     Ai.resetTransport();
     setAiStatus("已儲存設定", "ok"); toast("AI 設定已儲存", "ok");
   };
+  /* AI 設定跨認證同步：開機採用、另一分頁儲存時即時跟上 */
+  (function () {
+    try {
+      var raw = localStorage.getItem("ipas_shared_ai");
+      if (raw) { var cfg = JSON.parse(raw); if (cfg && cfg.provider) { Store.saveAi(cfg); populateAiForm(); } }
+    } catch (e) {}
+  })();
+  global.addEventListener("storage", function (ev) {
+    if (!ev || ev.key !== "ipas_shared_ai" || !ev.newValue) return;
+    try { var cfg = JSON.parse(ev.newValue); if (cfg && cfg.provider) { Store.saveAi(cfg); Ai.resetTransport(); populateAiForm(); } } catch (e) {}
+  });
+  global.addEventListener("pageshow", function () {
+    try {
+      var raw = localStorage.getItem("ipas_shared_ai");
+      if (raw) { var cfg = JSON.parse(raw); if (cfg && cfg.provider && cfg.key !== Store.ai().key) { Store.saveAi(cfg); populateAiForm(); } }
+    } catch (e) {}
+  });
   $("#aiTestBtn").onclick = function () {
     // 先暫存目前表單，才能測試
     $("#aiSaveBtn").click();
