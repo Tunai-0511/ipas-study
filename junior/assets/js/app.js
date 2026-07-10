@@ -61,16 +61,16 @@
   });
 
   /* ---------- 主題 ---------- */
-  function applyTheme(t) { document.body.setAttribute("data-theme", t); try { localStorage.setItem("aipsc_theme", t); } catch (e) {} }
+  function applyTheme(t) { document.body.setAttribute("data-theme", t); try { localStorage.setItem("ipasjr_theme", t); } catch (e) {} }
   (function () {
     try {
-      var t = localStorage.getItem("aipsc_theme");
+      var t = localStorage.getItem("ipasjr_theme");
       if (t) { document.body.setAttribute("data-theme", t); return; }
       // 首訪：跟隨系統深/淺色（不寫入，保留使用者手動優先）
       if (matchMedia("(prefers-color-scheme: dark)").matches) document.body.setAttribute("data-theme", "dark");
       // 系統色變更時（使用者尚未手動選過）即時跟隨
       matchMedia("(prefers-color-scheme: dark)").addEventListener("change", function (e) {
-        if (!localStorage.getItem("aipsc_theme")) document.body.setAttribute("data-theme", e.matches ? "dark" : "light");
+        if (!localStorage.getItem("ipasjr_theme")) document.body.setAttribute("data-theme", e.matches ? "dark" : "light");
       });
     } catch (e) {}
   })();
