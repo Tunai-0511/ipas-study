@@ -124,29 +124,7 @@
       </div>
     </div>
 
-    <!-- 帳號與同步 -->
-    <div class="side-section">
-      <button class="side-section-head" data-collapse="cloudPanel">
-        <span class="sh-label"><i class="ic-wrap" data-ico="user"></i> 帳號與同步</span><span class="chevron">▾</span>
-      </button>
-      <div class="side-section-body" id="cloudPanel">
-        <div id="cloudOut">
-          <label class="field"><span class="field-label">信箱</span><input type="email" id="cloudEmail" placeholder="you@example.com" autocomplete="email" /></label>
-          <div class="btn-row"><button class="btn btn-primary btn-sm" id="cloudSend">寄送驗證碼</button></div>
-          <label class="field hidden" id="cloudCodeField"><span class="field-label">驗證碼</span><input inputmode="numeric" id="cloudCode" placeholder="輸入信中的驗證碼" /></label>
-          <div class="btn-row hidden" id="cloudVerifyRow"><button class="btn btn-primary btn-sm" id="cloudVerify">登入</button></div>
-          <p class="side-hint">登入後，成績與收藏會在你的裝置之間自動同步。</p>
-        </div>
-        <div id="cloudIn" class="hidden">
-          <p class="side-hint" id="cloudWho"></p>
-          <div class="ai-status" id="cloudStatus"></div>
-          <div class="btn-row">
-            <button class="btn btn-ghost btn-sm" id="cloudSyncBtn">立即同步</button>
-            <button class="btn btn-danger-ghost btn-sm" id="cloudOutBtn">登出</button>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- 帳號與同步：登入改由首頁登入閘門處理，登入後跨裝置自動同步（cloud.js 背景執行） -->
 
     <div class="side-footer">
       <div class="side-version">v1.0 · 官方試題 114-4／115-1／115-2</div>
