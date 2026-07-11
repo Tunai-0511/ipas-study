@@ -274,7 +274,7 @@
         '<div class="hero-inner">' +
           '<div class="hero-eyebrow">AI 應用規劃師 · 中級能力鑑定</div>' +
           '<h1 class="hero-title">' + (ov.count ? '歡迎回來，' + esc(u.name) : esc(u.name) + '，開始備考吧') + '</h1>' +
-          '<p class="hero-sub">' + cnts.total + ' 題官方＋AI 題庫、三科完整教材、成績判讀與成長曲線，一站搞定。</p>' +
+          '<p class="hero-sub">' + cnts.total + ' 題官方公告試題（114-2／115-1 兩梯次）、三科教材、成績判讀與成長曲線，一站搞定。</p>' +
           '<div class="hero-cta">' +
             '<button class="btn btn-primary btn-lg" data-act="mock">開始模擬考</button>' +
             '<button class="btn btn-glass btn-lg" data-goto="learn">瀏覽教材</button>' +
