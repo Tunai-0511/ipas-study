@@ -168,6 +168,10 @@ html.authed .gnav .user-chip{display:inline-flex}
 <div class="blob blob-b" aria-hidden="true"></div>
 
 <section id="gate" aria-label="登入 iPAS 備考學院">
+  <button class="theme-btn" id="gateTheme" aria-label="切換深淺色" title="切換深淺色" style="position:fixed;top:18px;right:20px;z-index:5">
+    <svg id="iconMoon2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6.5 6.5 0 0 0 9 9 9 9 0 1 1-9-9z"/></svg>
+    <svg id="iconSun2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5"/><path d="M12 19.5V22"/><path d="M2 12h2.5"/><path d="M19.5 12H22"/><path d="m4.6 4.6 1.8 1.8"/><path d="m17.6 17.6 1.8 1.8"/><path d="m19.4 4.6-1.8 1.8"/><path d="m6.4 17.6-1.8 1.8"/></svg>
+  </button>
   <div class="gate-card">
     <svg class="gate-logo" viewBox="0 0 100 100" fill="none" aria-hidden="true">
       <defs><linearGradient id="glg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5b5bd6"/><stop offset="1" stop-color="#00b3a4"/></linearGradient></defs>
@@ -266,13 +270,18 @@ html.authed .gnav .user-chip{display:inline-flex}
     root.classList.toggle("dark-on", d);
     document.getElementById("iconMoon").style.display = d ? "none" : "block";
     document.getElementById("iconSun").style.display = d ? "block" : "none";
+    var m2 = document.getElementById("iconMoon2"), s2 = document.getElementById("iconSun2");
+    if (m2) m2.style.display = d ? "none" : "block";
+    if (s2) s2.style.display = d ? "block" : "none";
   }
-  document.getElementById("themeBtn").onclick = function () {
+  function doToggle() {
     var next = isDark() ? "light" : "dark";
     root.setAttribute("data-theme", next);
     try { localStorage.setItem("ipas_portal_theme", next); localStorage.setItem("ipas_shared_theme", next); } catch (e) {}
     paint();
-  };
+  }
+  document.getElementById("themeBtn").onclick = doToggle;
+  var _gt = document.getElementById("gateTheme"); if (_gt) _gt.onclick = doToggle;
   try { matchMedia("(prefers-color-scheme: dark)").addEventListener("change", paint); } catch (e) {}
   window.addEventListener("storage", function (ev) {
     if (ev && ev.key === "ipas_shared_theme" && (ev.newValue === "dark" || ev.newValue === "light")) { root.setAttribute("data-theme", ev.newValue); paint(); }

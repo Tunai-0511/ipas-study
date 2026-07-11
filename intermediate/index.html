@@ -12,6 +12,9 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-title" content="備考學院" />
+<!-- 防閃白：外部 CSS 載入前先把 <html> 底色與主題定好（跳頁第一幀就正確） -->
+<style>html{background:#f4f5fb}html[data-theme="dark"]{background:#0f1117}</style>
+<script>try{var _k=localStorage.getItem("ipas_shared_theme")||localStorage.getItem("aipsc_theme");document.documentElement.setAttribute("data-theme",(_k==="dark"||(!_k&&matchMedia("(prefers-color-scheme:dark)").matches))?"dark":"light");}catch(e){}</script>
 <link rel="stylesheet" href="assets/css/style.css?v=27" />
 <script>
   // 低階/行動/減少動態 → 精簡模式（關閉重特效以求流暢）
@@ -25,7 +28,7 @@
 </script>
 </head>
 <body data-theme="light">
-<script>try{var _t=localStorage.getItem("ipas_shared_theme")||localStorage.getItem("aipsc_theme");if(_t==="dark"||_t==="light")document.body.setAttribute("data-theme",_t);}catch(e){}</script>
+<script>try{var _t=localStorage.getItem("ipas_shared_theme")||localStorage.getItem("aipsc_theme");document.body.setAttribute("data-theme",(_t==="dark"||(!_t&&matchMedia("(prefers-color-scheme:dark)").matches))?"dark":"light");}catch(e){}</script>
 <div class="app-bg" aria-hidden="true"></div>
 <div class="app-veil" aria-hidden="true"></div>
 
@@ -182,7 +185,7 @@
 <script defer src="assets/js/anim.js?v=27"></script>
 <script defer src="assets/js/interactions.js?v=27"></script>
 <script defer src="assets/vendor/supabase.min.js?v=27"></script>
-<script defer src="assets/js/cloud.js?v=27"></script>
+<script defer src="assets/js/cloud.js?v=28"></script>
 <script>
   // PWA：註冊 Service Worker（離線可用）。file:// 或不支援時略過。
   if ("serviceWorker" in navigator && location.protocol.indexOf("http") === 0) {
