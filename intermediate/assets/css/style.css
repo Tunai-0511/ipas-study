@@ -750,6 +750,12 @@ body::before{opacity:.42}
 #inkToggle.is-off{opacity:.6}
 #inkToggle.is-off .ic{opacity:.7}
 
+/* 科目卡雙圖（亮/暗各一張，依主題切換；與初級一致）
+   注意：具體度必須壓過 .sc-card .sc-media img{display:block}，否則 none 會被蓋掉 */
+.sc-card .sc-media img.img-dark{display:none}
+body[data-theme="dark"] .sc-card .sc-media img.img-light{display:none}
+body[data-theme="dark"] .sc-card .sc-media img.img-dark{display:block}
+
 /* 圖片停留動畫：原地緩慢放大＋微增亮（Apple 式；不位移、不掃光） */
 .sc-media{overflow:hidden}
 .sc-media img,.quiz-anim-img img{

@@ -68,27 +68,30 @@
   });
 
   /* ---------- 主題（跨認證共用 ipas_shared_theme） ---------- */
+  // 重要：data-theme 必須 html 與 body 同時設。CSS 變數用裸 [data-theme="dark"] 選擇器（會命中 html），
+  // 圖片切換用 body[data-theme]；只設其中一個會出現「圖換了背景沒換」的分裂狀態。
+  function setThemeAttr(t) { document.documentElement.setAttribute("data-theme", t); document.body.setAttribute("data-theme", t); }
   function paintFab(){ var d=document.body.getAttribute("data-theme")==="dark"; var m=document.getElementById("fabMoon"),s=document.getElementById("fabSun"); if(m)m.style.display=d?"none":""; if(s)s.style.display=d?"":"none"; }
-  function applyTheme(t) { document.body.setAttribute("data-theme", t); try { localStorage.setItem("ipasjr_theme", t); localStorage.setItem("ipas_shared_theme", t); } catch (e) {} paintFab(); }
+  function applyTheme(t) { setThemeAttr(t); try { localStorage.setItem("ipasjr_theme", t); localStorage.setItem("ipas_shared_theme", t); } catch (e) {} paintFab(); }
   (function () {
     try {
       var t = localStorage.getItem("ipas_shared_theme") || localStorage.getItem("ipasjr_theme");
-      if (t) { document.body.setAttribute("data-theme", t); return; }
-      if (matchMedia("(prefers-color-scheme: dark)").matches) document.body.setAttribute("data-theme", "dark");
+      if (t) { setThemeAttr(t); return; }
+      if (matchMedia("(prefers-color-scheme: dark)").matches) setThemeAttr("dark");
       matchMedia("(prefers-color-scheme: dark)").addEventListener("change", function (e) {
-        if (!localStorage.getItem("ipas_shared_theme") && !localStorage.getItem("ipasjr_theme")) document.body.setAttribute("data-theme", e.matches ? "dark" : "light");
+        if (!localStorage.getItem("ipas_shared_theme") && !localStorage.getItem("ipasjr_theme")) setThemeAttr(e.matches ? "dark" : "light");
       });
     } catch (e) {}
   })();
   /* 主題即時同步：另一分頁切深淺，這裡不刷新直接變 */
   global.addEventListener("storage", function (ev) {
-    if (ev && ev.key === "ipas_shared_theme" && (ev.newValue === "dark" || ev.newValue === "light")) document.body.setAttribute("data-theme", ev.newValue); paintFab();
+    if (ev && ev.key === "ipas_shared_theme" && (ev.newValue === "dark" || ev.newValue === "light")) setThemeAttr(ev.newValue); paintFab();
   });
   /* bfcache 還原（上一頁/認證切換）時重新對齊共用主題與名稱 */
   global.addEventListener("pageshow", function () {
     try {
       var t = localStorage.getItem("ipas_shared_theme");
-      if ((t === "dark" || t === "light") && document.body.getAttribute("data-theme") !== t) document.body.setAttribute("data-theme", t); paintFab();
+      if ((t === "dark" || t === "light") && document.body.getAttribute("data-theme") !== t) setThemeAttr(t); paintFab();
       var sn = localStorage.getItem("ipas_shared_name");
       var u = Store.current();
       if (sn && u.name !== sn) { Store.renameProfile(u.id, sn); paintUser(); }

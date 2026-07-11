@@ -56,6 +56,8 @@
       // 只在本機尚未有主題偏好時才採用雲端主題；否則以本機為準（避免雲端舊值蓋掉使用者剛在首頁選的主題）
       if ((d.theme === "dark" || d.theme === "light") && !localStorage.getItem("ipas_shared_theme")) {
         localStorage.setItem("ipas_shared_theme", d.theme);
+        // html 與 body 同設，避免裸 [data-theme] 選擇器（命中 html）與 body 規則分裂
+        document.documentElement.setAttribute("data-theme", d.theme);
         document.body.setAttribute("data-theme", d.theme);
       }
       if (d.ai && d.ai.provider) {

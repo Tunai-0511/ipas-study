@@ -798,10 +798,11 @@ html:not(.lite) body[data-theme="dark"] .card{ box-shadow: inset 0 1px 0 var(--g
   backdrop-filter:none !important; -webkit-backdrop-filter:none !important;
 }
 
-/* 主題雙圖切換：跟隨站內深淺色即時換圖 */
-.sc-media .img-dark{display:none}
-body[data-theme="dark"] .sc-media .img-light{display:none}
-body[data-theme="dark"] .sc-media .img-dark{display:block}
+/* 主題雙圖切換：跟隨站內深淺色即時換圖
+   具體度須壓過 .sc-card .sc-media img{display:block}，否則 none 被蓋掉（淺色模式深圖只是被 overflow 裁掉） */
+.sc-card .sc-media img.img-dark{display:none}
+body[data-theme="dark"] .sc-card .sc-media img.img-light{display:none}
+body[data-theme="dark"] .sc-card .sc-media img.img-dark{display:block}
 
 /* 修：使用者頭像改鮮明漸層圓（避免與名字重複的破圖感） */
 .user-avatar{
