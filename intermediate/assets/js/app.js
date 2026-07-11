@@ -7,6 +7,13 @@
   var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
   function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); }
 
+  // 科目一律用中文名（禁用 S1/S2/S3 等代號）：依科目順序給「科目一/二/三…」序位
+  var CJK_NUM = ["一", "二", "三", "四", "五", "六", "七", "八"];
+  function subjOrd(i) { return "科目" + (CJK_NUM[i] || (i + 1)); }
+  function subjOrdName(s, i) { return subjOrd(i) + "　" + (s && s.name || ""); }
+  // 模擬考完全比照官方：單科、50 題、75 分鐘
+  var MOCK_COUNT = 50, MOCK_LIMIT_SEC = 75 * 60;
+
   var main = $("#mainView");
   var route = "dashboard";
   var pendingQuiz = null;
@@ -281,12 +288,12 @@
     ) : '';
 
     var SUBJ_IMG = { S1: "assets/media/subj-s1.jpg?v=12", S2: "assets/media/subj-s2.jpg?v=12", S3: "assets/media/subj-s3.jpg?v=12" };
-    var subjectsCards = Content.subjects().map(function (s) {
+    var subjectsCards = Content.subjects().map(function (s, si) {
       var acc = subjAcc[s.code];
       var pct = acc ? acc.accuracy : 0;
       var meta = acc ? (acc.correct + "/" + acc.attempted + " 題答對 · 正確率 " + pct + "%") : (Content.chapters(s.code).length + " 章 · " + Content.questions({ subject: s.code }).length + " 題");
       return '<button class="subject-card sc-card" data-subj="' + s.code + '">' +
-        '<div class="sc-media"><img src="' + SUBJ_IMG[s.code] + '" alt="" loading="lazy"><span class="sc-badge">' + s.code + '</span></div>' +
+        '<div class="sc-media"><img src="' + SUBJ_IMG[s.code] + '" alt="" loading="lazy"><span class="sc-badge">' + subjOrd(si) + '</span></div>' +
         '<div class="sc-body"><div class="sc-name">' + esc(s.name) + '</div>' +
         '<div class="sc-meta">' + esc(meta) + '</div>' +
         '<div class="sc-bar"><i style="width:' + pct + '%"></i></div></div></button>';
@@ -294,9 +301,9 @@
 
     var quick =
       '<div class="grid grid-3">' +
-        actionCard("mock", "target", "模擬考", "跨科計時組卷") +
-        actionCard("exam", "target", "正式模考", "50 題 / 60 分鐘") +
+        actionCard("mock", "target", "模擬考", "單科 50 題／75 分鐘") +
         actionCard("wrong", "loop", "錯題複習", "重做答錯的題目") +
+        actionCard("bookmark", "flag", "收藏複習", "重做收藏的題目") +
       '</div>';
 
     var growthCard = "";
@@ -326,8 +333,8 @@
       '<div class="mc-name">' + esc(name) + '</div><div class="mc-desc">' + esc(desc) + '</div></button>';
   }
   function handleAction(act) {
-    if (act === "mock") startQuiz({ mode: "mock", count: 50, subjectName: "綜合模擬考" });
-    else if (act === "exam") startQuiz({ mode: "mock", count: 50, onlyOfficial: true, limitSec: 60 * 60, subjectName: "正式模考" });
+    if (act === "mock" || act === "exam") { quizCfg.mode = "mock"; if (!quizCfg.subject) quizCfg.subject = (Content.subjects()[0] || {}).code || ""; go("quiz"); }
+    else if (act === "bookmark") startQuiz({ mode: "bookmark", subjectName: "收藏複習" });
     else if (act === "wrong") startQuiz({ mode: "wrong", subjectName: "錯題複習" });
     else if (act === "generate") go("generate");
   }
@@ -399,17 +406,9 @@
   };
 
   /* ---- 測驗設定 ---- */
-  var quizCfg = { mode: "official", subject: "", topic: "", count: 15, onlyOfficial: false, limit: 0 };
-  function limitGroup() {
-    var opts = [{ v: 0, l: "不限時" }, { v: "perq", l: "每題 1 分" }, { v: 30, l: "30 分鐘" }, { v: 60, l: "60 分鐘" }];
-    return '<div class="opt-group"><span class="og-label">限時（時間到自動交卷）</span><div class="chip-row">' +
-      opts.map(function (o) { return '<button class="chip ' + (quizCfg.limit === o.v ? "on" : "") + '" data-limit="' + o.v + '">' + o.l + '</button>'; }).join("") +
-      '</div></div>';
-  }
+  var quizCfg = { mode: "official", subject: "", topic: "", count: 15, onlyOfficial: false };
   function limitSecOf() {
-    if (quizCfg.mode !== "mock") return 0;
-    if (quizCfg.limit === "perq") return quizCfg.count * 60;
-    return quizCfg.limit ? quizCfg.limit * 60 : 0;
+    return quizCfg.mode === "mock" ? MOCK_LIMIT_SEC : 0;   // 模擬考固定 75 分鐘，其餘不限時
   }
   function sourceGroup() {
     return '<div class="opt-group"><span class="og-label">題目來源</span><div class="chip-row">' +
@@ -418,7 +417,9 @@
       '</div></div>';
   }
   function poolSize() {
-    if (quizCfg.mode === "mock") return Content.allOfficial(false, quizCfg.onlyOfficial).length;
+    if (quizCfg.mode === "mock") return quizCfg.subject
+      ? Content.questions({ subject: quizCfg.subject, includeContext: false, onlyOfficial: quizCfg.onlyOfficial }).length
+      : Content.allOfficial(false, quizCfg.onlyOfficial).length;
     if (quizCfg.mode === "official") return Content.questions({ subject: quizCfg.subject || null, topic: quizCfg.topic || null, includeContext: false, onlyOfficial: quizCfg.onlyOfficial }).length;
     if (quizCfg.mode === "ai") return Store.aiQuestions().length;
     if (quizCfg.mode === "wrong") return Quiz.buildQuestions({ mode: "wrong" }).length;
@@ -436,7 +437,7 @@
     var body = "";
     if (quizCfg.mode === "official" || quizCfg.mode === "ai") {
       var subjChips = '<button class="chip ' + (!quizCfg.subject ? "on" : "") + '" data-subj-chip="">全部科目</button>' +
-        Content.subjects().map(function (s) { return '<button class="chip ' + (quizCfg.subject === s.code ? "on" : "") + '" data-subj-chip="' + s.code + '" title="' + esc(s.name) + '">' + s.code + '</button>'; }).join("");
+        Content.subjects().map(function (s, i) { return '<button class="chip ' + (quizCfg.subject === s.code ? "on" : "") + '" data-subj-chip="' + s.code + '" title="' + esc(s.name) + '">' + esc(subjOrdName(s, i)) + '</button>'; }).join("");
       var chapOpts = '<option value="">全部章節</option>';
       if (quizCfg.subject) chapOpts += Content.chapters(quizCfg.subject).map(function (c) { return '<option value="' + c.id + '"' + (quizCfg.topic === c.id ? " selected" : "") + '>' + esc(c.title) + '</option>'; }).join("");
       body =
@@ -444,12 +445,12 @@
         '<div class="opt-group"><span class="og-label">科目</span><div class="chip-row">' + subjChips + '</div></div>' +
         '<div class="opt-group"><span class="og-label">章節</span><select id="qzChap">' + chapOpts + '</select></div>' +
         (quizCfg.mode === "official" ? sourceGroup() : "") +
-        '<div class="opt-group"><span class="og-label">題數</span>' + countChips([10, 15, 25, 50]) + '</div>';
+        '<div class="opt-group"><span class="og-label">題數</span>' + countChips([10, 15, 25, 50], true) + '</div>';
     } else if (quizCfg.mode === "mock") {
-      body = '<div class="callout"><span class="co-ico">' + Icon.get("target") + '</span><div>從三科可作答題目中隨機抽題、計時作答，交卷後才公布成績與詳解，最貼近實戰。</div></div>' +
-        sourceGroup() +
-        '<div class="opt-group"><span class="og-label">題數</span>' + countChips([20, 30, 50, 100]) + '</div>' +
-        limitGroup();
+      var mockSubjChips = Content.subjects().map(function (s, i) { return '<button class="chip ' + (quizCfg.subject === s.code ? "on" : "") + '" data-subj-chip="' + s.code + '" title="' + esc(s.name) + '">' + esc(subjOrdName(s, i)) + '</button>'; }).join("");
+      body = '<div class="callout"><span class="co-ico">' + Icon.get("target") + '</span><div>完全比照官方考試：<b>單一科目、' + MOCK_COUNT + ' 題、75 分鐘</b>計時作答，交卷後才公布成績與詳解，最貼近實戰。</div></div>' +
+        '<div class="opt-group"><span class="og-label">科目（選一科應考）</span><div class="chip-row">' + mockSubjChips + '</div></div>' +
+        sourceGroup();
     } else if (quizCfg.mode === "wrong") {
       var wc = Quiz.buildQuestions({ mode: "wrong" }).length;
       body = '<div class="callout ' + (wc ? "" : "warn") + '"><span class="co-ico">' + Icon.get("loop") + '</span><div>' +
@@ -460,19 +461,25 @@
         (bc ? ('你已收藏 <b>' + bc + '</b> 題，將隨機重做。') : '目前沒有收藏題目。作答時按題目右上角的★即可收藏。') + '</div></div>';
     }
 
+    var isMock = quizCfg.mode === "mock";
     var canStart = true;
     if (quizCfg.mode === "ai" && Store.aiQuestions().length === 0) canStart = false;
     if (quizCfg.mode === "wrong" && poolSize() === 0) canStart = false;
     if (quizCfg.mode === "bookmark" && poolSize() === 0) canStart = false;
+    if (isMock && !quizCfg.subject) canStart = false;
     var pool = poolSize();
 
     function row(label, val) { return '<div class="qs-row"><span>' + esc(label) + '</span><b>' + esc(val) + '</b></div>'; }
     var summary =
       row("模式", Quiz.MODES[quizCfg.mode].name) +
       ((quizCfg.mode === "official" || quizCfg.mode === "ai") ? row("科目", quizCfg.subject ? Content.subjectName(quizCfg.subject) : "全部科目") + row("章節", quizCfg.topic ? Content.chapterTitle(quizCfg.topic) : "全部章節") : "") +
-      ((quizCfg.mode === "official" || quizCfg.mode === "mock") ? row("來源", quizCfg.onlyOfficial ? "只考官方真題" : "全部題庫") : "") +
-      row("題數", quizCfg.mode === "wrong" ? "全部錯題" : quizCfg.count + " 題") +
-      row("可用題目", pool + " 題" + (pool < quizCfg.count && quizCfg.mode !== "wrong" ? "（不足將全數作答）" : ""));
+      (isMock ? row("科目", quizCfg.subject ? Content.subjectName(quizCfg.subject) : "請選擇一科") : "") +
+      ((quizCfg.mode === "official" || isMock) ? row("來源", quizCfg.onlyOfficial ? "只考官方真題" : "全部題庫") : "") +
+      (isMock ? (row("題數", MOCK_COUNT + " 題") + row("限時", "75 分鐘"))
+              : row("題數", quizCfg.mode === "wrong" ? "全部錯題" : (quizCfg.count === 0 ? "全部" : quizCfg.count + " 題"))) +
+      row("可用題目", pool + " 題" + (
+        (isMock && pool < MOCK_COUNT) || (!isMock && quizCfg.count > 0 && pool < quizCfg.count && quizCfg.mode !== "wrong")
+          ? "（不足將全數作答）" : ""));
 
     var panel =
       '<aside class="quiz-side">' +
@@ -488,21 +495,29 @@
         '<div class="quiz-cols"><div class="quiz-opts">' + body + '</div>' + panel + '</div>' +
       '</div>';
 
-    $$("[data-mode]").forEach(function (b) { b.onclick = function () { quizCfg.mode = b.getAttribute("data-mode"); VIEWS.quiz(); }; });
+    $$("[data-mode]").forEach(function (b) { b.onclick = function () {
+      quizCfg.mode = b.getAttribute("data-mode");
+      if (quizCfg.mode === "mock" && !quizCfg.subject) quizCfg.subject = (Content.subjects()[0] || {}).code || "";
+      VIEWS.quiz();
+    }; });
     $$("[data-subj-chip]").forEach(function (b) { b.onclick = function () { quizCfg.subject = b.getAttribute("data-subj-chip"); quizCfg.topic = ""; VIEWS.quiz(); }; });
     var chapSel = $("#qzChap"); if (chapSel) chapSel.onchange = function () { quizCfg.topic = chapSel.value; VIEWS.quiz(); };
-    $$("[data-count]").forEach(function (c) { c.onclick = function () { quizCfg.count = +c.getAttribute("data-count"); VIEWS.quiz(); }; });
+    $$("[data-count]").forEach(function (c) { c.onclick = function () { var v = c.getAttribute("data-count"); quizCfg.count = v === "all" ? 0 : +v; VIEWS.quiz(); }; });
     $$("[data-src]").forEach(function (c) { c.onclick = function () { quizCfg.onlyOfficial = c.getAttribute("data-src") === "official"; VIEWS.quiz(); }; });
-    $$("[data-limit]").forEach(function (c) { c.onclick = function () { var v = c.getAttribute("data-limit"); quizCfg.limit = v === "perq" ? "perq" : +v; VIEWS.quiz(); }; });
     $("#qzStart").onclick = function () {
-      var name = quizCfg.mode === "mock" ? "綜合模擬考" : quizCfg.topic ? Content.chapterTitle(quizCfg.topic) : quizCfg.subject ? Content.subjectName(quizCfg.subject) : Quiz.MODES[quizCfg.mode].name;
+      var name = quizCfg.mode === "mock"
+        ? (quizCfg.subject ? Content.subjectName(quizCfg.subject) + " 模擬考" : "綜合模擬考")
+        : quizCfg.topic ? Content.chapterTitle(quizCfg.topic) : quizCfg.subject ? Content.subjectName(quizCfg.subject) : Quiz.MODES[quizCfg.mode].name;
       var allMode = quizCfg.mode === "wrong" || quizCfg.mode === "bookmark";
-      startQuiz({ mode: quizCfg.mode, subject: quizCfg.subject, topic: quizCfg.topic, count: allMode ? 0 : quizCfg.count, onlyOfficial: quizCfg.onlyOfficial, limitSec: limitSecOf(), subjectName: name });
+      var cnt = quizCfg.mode === "mock" ? MOCK_COUNT : (allMode ? 0 : quizCfg.count);
+      startQuiz({ mode: quizCfg.mode, subject: quizCfg.subject, topic: quizCfg.mode === "mock" ? "" : quizCfg.topic, count: cnt, onlyOfficial: quizCfg.onlyOfficial, limitSec: limitSecOf(), subjectName: name });
     };
     if (global.Interactions && Interactions.mountQuizAnim) Interactions.mountQuizAnim();
   };
-  function countChips(list) {
-    return '<div class="chip-row">' + list.map(function (n) { return '<button class="chip ' + (quizCfg.count === n ? "on" : "") + '" data-count="' + n + '">' + n + ' 題</button>'; }).join("") + '</div>';
+  function countChips(list, withAll) {
+    var chips = list.map(function (n) { return '<button class="chip ' + (quizCfg.count === n ? "on" : "") + '" data-count="' + n + '">' + n + ' 題</button>'; });
+    if (withAll) chips.push('<button class="chip ' + (quizCfg.count === 0 ? "on" : "") + '" data-count="all">全部</button>');
+    return '<div class="chip-row">' + chips.join("") + '</div>';
   }
   function setupSubject(code) { quizCfg.mode = "official"; quizCfg.subject = code; quizCfg.topic = ""; VIEWS.quiz(); }
 

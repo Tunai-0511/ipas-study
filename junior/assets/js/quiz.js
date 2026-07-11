@@ -15,8 +15,8 @@
   }
 
   var MODES = {
-    official: { name: "官方題庫", icon: "bookOpen", desc: "依科目/章節練習真實考題，作答即對答與解析", immediate: true },
-    mock:     { name: "模擬考",   icon: "target", desc: "跨科隨機組卷、計時作答，交卷後看成績", immediate: false },
+    official: { name: "題庫", icon: "bookOpen", desc: "依科目/章節練習真實考題，作答即對答與解析", immediate: true },
+    mock:     { name: "模擬考",   icon: "target", desc: "單科計時模擬，完全比照官方（50 題／75 分鐘）", immediate: false },
     wrong:    { name: "錯題複習", icon: "loop", desc: "重做你之前答錯的題目，鞏固弱點", immediate: true },
     bookmark: { name: "收藏複習", icon: "flag", desc: "重做你按★收藏標記的題目", immediate: true }
   };
@@ -30,7 +30,10 @@
     if (config.mode === "official") {
       qs = Content.questions({ subject: config.subject || null, topic: config.topic || null, includeContext: false, onlyOfficial: config.onlyOfficial });
     } else if (config.mode === "mock") {
-      qs = Content.allOfficial(false, config.onlyOfficial);
+      // 模擬考完全比照官方：單一科目。未指定科目時退回跨科（相容舊入口）
+      qs = config.subject
+        ? Content.questions({ subject: config.subject, includeContext: false, onlyOfficial: config.onlyOfficial })
+        : Content.allOfficial(false, config.onlyOfficial);
     } else if (config.mode === "ai") {
       qs = Store.aiQuestions().filter(function (q) {
         if (config.subject && q.subject !== config.subject) return false;
@@ -226,7 +229,7 @@
       var score = Math.round(correct / questions.length * 100);
       var attempt = {
         mode: config.mode, modeName: mode.name,
-        subject: config.mode === "mock" ? "MIX" : (config.subject || (config.mode === "ai" ? "AI" : "MIX")),
+        subject: config.subject || (config.mode === "mock" ? "MIX" : (config.mode === "ai" ? "AI" : "MIX")),
         subjectName: config.subjectName || mode.name,
         startedAt: new Date(startTs).toISOString(), finishedAt: new Date().toISOString(),
         durationSec: Math.floor((Date.now() - startTs) / 1000),
