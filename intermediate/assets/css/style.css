@@ -758,6 +758,14 @@ body::before{opacity:.42}
 }
 .subject-card:hover .sc-media img{transform:scale(1.045);filter:brightness(1.05) saturate(1.08)}
 .quiz-anim-img:hover img{transform:scale(1.045);filter:brightness(1.05) saturate(1.08)}
+/* 科目卡：鼠標停留時的循環動畫——緩慢縮放＋微漂移，停留期間不斷循環（起點與上面靜態值相同，接軌不跳動） */
+@keyframes scHoverLoop{
+  0%,100%{transform:scale(1.045)}
+  50%{transform:scale(1.12) translate(-1.5%,-1%)}
+}
+.subject-card:hover .sc-media img{animation:scHoverLoop 7s ease-in-out infinite}
+.lite .subject-card:hover .sc-media img{animation:none}
+@media (prefers-reduced-motion: reduce){.subject-card:hover .sc-media img{animation:none}}
 .lite .sc-media img,.lite .quiz-anim-img img{transition:none}
 .lite .subject-card:hover .sc-media img,.lite .quiz-anim-img:hover img{transform:none;filter:none}
 @media (prefers-reduced-motion: reduce){
