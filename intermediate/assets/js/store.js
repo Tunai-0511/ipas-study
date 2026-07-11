@@ -40,6 +40,7 @@
   // 遷移／補齊欄位
   if (!_root.data) _root.data = {};
   if (!_root.ai) _root.ai = { provider: "minimax", connMode: "auto", remember: true };
+  if (dedupeProfiles()) writeRoot(_root);   // 開機清除同名重複使用者（同步殘留）
 
   var _warned = false;
   function persist() {
@@ -63,6 +64,34 @@
     if (!b.bookmarks) b.bookmarks = [];
     if (!b.hidden) b.hidden = [];
     return b;
+  }
+
+  // 把 srcId 桶內的紀錄併進 dstId（以 id 去重，非破壞式），再刪除 src 桶
+  function mergeBucket(dstId, srcId) {
+    if (dstId === srcId || !_root.data[srcId]) return;
+    var dst = ensureBucket(dstId), src = ensureBucket(srcId);
+    var seen = {}; dst.attempts.forEach(function (a) { seen[a.id] = true; });
+    src.attempts.forEach(function (a) { if (!seen[a.id]) dst.attempts.push(a); });
+    var seenQ = {}; dst.aiQuestions.forEach(function (q) { seenQ[q.id] = true; });
+    src.aiQuestions.forEach(function (q) { if (!seenQ[q.id]) dst.aiQuestions.push(q); });
+    Object.keys(src.explains).forEach(function (k) { if (!(k in dst.explains)) dst.explains[k] = src.explains[k]; });
+    src.bookmarks.forEach(function (id) { if (dst.bookmarks.indexOf(id) < 0) dst.bookmarks.push(id); });
+    src.hidden.forEach(function (id) { if (dst.hidden.indexOf(id) < 0) dst.hidden.push(id); });
+    delete _root.data[srcId];
+  }
+  // 合併「同名」的重複使用者（雲端同步＋跨 app 共用名機制可能造成同名多筆），資料併入先建立的那筆
+  function dedupeProfiles() {
+    var byName = {}, keep = [], changed = false;
+    _root.profiles.forEach(function (p) {
+      var k = (p.name || "").trim();
+      if (byName[k]) {
+        mergeBucket(byName[k].id, p.id);
+        if (_root.currentId === p.id) _root.currentId = byName[k].id;
+        changed = true;
+      } else { byName[k] = p; keep.push(p); }
+    });
+    if (changed) _root.profiles = keep;
+    return changed;
   }
 
   var Store = {
@@ -210,6 +239,7 @@
           }
         });
       }
+      dedupeProfiles();   // 合併後清除同名重複使用者
       persist();
     }
   };

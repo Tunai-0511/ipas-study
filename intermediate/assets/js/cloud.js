@@ -40,12 +40,17 @@
     try {
       if (d.name) {
         localStorage.setItem("ipas_shared_name", d.name);
+        var target = (d.name || "").trim();
         var u = Store.current();
-        if (u.name !== d.name) {
-          Store.renameProfile(u.id, d.name);
+        if ((u.name || "").trim() !== target) {
+          // 已有同名使用者 → 切換過去；否則才把目前這筆改名，避免產生同名重複
+          var same = Store.profiles().filter(function (p) { return (p.name || "").trim() === target; })[0];
+          if (same) Store.switchProfile(same.id);
+          else Store.renameProfile(u.id, d.name);
+          var cur = Store.current();
           var lb = el("userNameLabel"), av = el("userAvatar");
-          if (lb) lb.textContent = d.name;
-          if (av) av.textContent = (d.name || "?").trim().slice(0, 1).toUpperCase();
+          if (lb) lb.textContent = cur.name;
+          if (av) av.textContent = (cur.name || "?").trim().slice(0, 1).toUpperCase();
         }
       }
       // 只在本機尚未有主題偏好時才採用雲端主題；否則以本機為準（避免雲端舊值蓋掉使用者剛在首頁選的主題）
