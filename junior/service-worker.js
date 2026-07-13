@@ -4,7 +4,7 @@
    同源靜態資源用 stale-while-revalidate（含 bank.js/media 首次使用才快取）；
    AI／代理請求一律走網路、不快取。版本改變時清舊快取。
    ============================================================ */
-var CACHE = "ipas-jr-v28";
+var CACHE = "ipas-jr-v29";
 var CORE = [
   "./",
   "index.html",
@@ -38,13 +38,24 @@ self.addEventListener("fetch", function (e) {
   if (url.origin !== self.location.origin) return;                 // 跨源（含 AI API）走網路
   if (url.pathname.indexOf("/.netlify/functions/") >= 0) return;   // AI 代理不快取
 
-  // 導覽：network-first，離線退回快取的 index.html
+  // 導覽：network-first + 1.2s 逾時退快取殼（切換 app／重整不再空等網路）
   if (req.mode === "navigate") {
-    e.respondWith(
-      fetch(req).catch(function () {
-        return caches.match("index.html").then(function (r) { return r || caches.match("./"); });
-      })
-    );
+    e.respondWith(caches.open(CACHE).then(function (c) {
+      return new Promise(function (resolve) {
+        var done = false;
+        var timer = setTimeout(function () {
+          c.match("index.html").then(function (r) { if (!done && r) { done = true; resolve(r); } });
+        }, 1200);
+        fetch(req).then(function (res) {
+          clearTimeout(timer);
+          if (res && res.status === 200) c.put("index.html", res.clone());
+          if (!done) { done = true; resolve(res); }
+        }).catch(function () {
+          clearTimeout(timer);
+          c.match("index.html").then(function (r) { if (!done) { done = true; resolve(r || caches.match("./")); } });
+        });
+      });
+    }));
     return;
   }
 
