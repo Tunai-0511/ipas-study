@@ -336,7 +336,7 @@
       '<div class="mc-name">' + esc(name) + '</div><div class="mc-desc">' + esc(desc) + '</div></button>';
   }
   function handleAction(act) {
-    if (act === "mock" || act === "exam") { quizCfg.mode = "mock"; if (!quizCfg.subject) quizCfg.subject = (Content.subjects()[0] || {}).code || ""; go("quiz"); }
+    if (act === "mock" || act === "exam") { quizCfg.mode = "mock"; if (!quizCfg.subject) quizCfg.subject = (Content.subjects()[0] || {}).code || ""; quizCfg.onlyOfficial = true; go("quiz"); }
     else if (act === "bookmark") startQuiz({ mode: "bookmark", subjectName: "收藏複習" });
     else if (act === "wrong") startQuiz({ mode: "wrong", subjectName: "錯題複習" });
     else if (act === "generate") go("generate");
@@ -415,8 +415,8 @@
   }
   function sourceGroup() {
     return '<div class="opt-group"><span class="og-label">題目來源</span><div class="chip-row">' +
-      '<button class="chip ' + (!quizCfg.onlyOfficial ? "on" : "") + '" data-src="all">全部題庫</button>' +
-      '<button class="chip ' + (quizCfg.onlyOfficial ? "on" : "") + '" data-src="official">只考官方真題</button>' +
+      '<button class="chip ' + (!quizCfg.onlyOfficial ? "on" : "") + '" data-src="all">全部（官方＋網路）</button>' +
+      '<button class="chip ' + (quizCfg.onlyOfficial ? "on" : "") + '" data-src="official">只考官方歷屆</button>' +
       '</div></div>';
   }
   function poolSize() {
@@ -477,7 +477,7 @@
       row("模式", Quiz.MODES[quizCfg.mode].name) +
       ((quizCfg.mode === "official" || quizCfg.mode === "ai") ? row("科目", quizCfg.subject ? Content.subjectName(quizCfg.subject) : "全部科目") + row("章節", quizCfg.topic ? Content.chapterTitle(quizCfg.topic) : "全部章節") : "") +
       (isMock ? row("科目", quizCfg.subject ? Content.subjectName(quizCfg.subject) : "請選擇一科") : "") +
-      ((quizCfg.mode === "official" || isMock) ? row("來源", quizCfg.onlyOfficial ? "只考官方真題" : "全部題庫") : "") +
+      ((quizCfg.mode === "official" || isMock) ? row("來源", quizCfg.onlyOfficial ? "只考官方歷屆" : "全部（官方＋網路）") : "") +
       (isMock ? (row("題數", MOCK_COUNT + " 題") + row("限時", "75 分鐘"))
               : row("題數", quizCfg.mode === "wrong" ? "全部錯題" : (quizCfg.count === 0 ? "全部" : quizCfg.count + " 題"))) +
       row("可用題目", pool + " 題" + (
@@ -500,7 +500,7 @@
 
     $$("[data-mode]").forEach(function (b) { b.onclick = function () {
       quizCfg.mode = b.getAttribute("data-mode");
-      if (quizCfg.mode === "mock" && !quizCfg.subject) quizCfg.subject = (Content.subjects()[0] || {}).code || "";
+      if (quizCfg.mode === "mock") { if (!quizCfg.subject) quizCfg.subject = (Content.subjects()[0] || {}).code || ""; quizCfg.onlyOfficial = true; }
       VIEWS.quiz();
     }; });
     $$("[data-subj-chip]").forEach(function (b) { b.onclick = function () { quizCfg.subject = b.getAttribute("data-subj-chip"); quizCfg.topic = ""; VIEWS.quiz(); }; });
