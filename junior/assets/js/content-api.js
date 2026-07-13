@@ -7,7 +7,7 @@
 (function (global) {
   "use strict";
   var C = global.APP_CONTENT || { subjects: [], questions: [] };
-  var BANK_VERSION = "18";
+  var BANK_VERSION = "19";
 
   var subjById = {}, chapterById = {};
   C.subjects.forEach(function (s) {

@@ -1,5 +1,5 @@
 /* ============================================================
-   quiz.js — 測驗引擎（作答、計時、評分、檢討、AI 解析）
+   quiz.js — 測驗引擎（作答、計時、評分、檢討、解析）
    ============================================================ */
 (function (global) {
   "use strict";
@@ -150,18 +150,14 @@
     }
 
     function explainBlock(q) {
-      function head(showBadge) {
-        return '<div class="ex-head">' + Icon.get("bulb") + ' 解析　<span class="ex-ans">正解：' + q.answer + '</span>' +
-          (showBadge ? '<span class="q-badge">AI 解析</span>' : '') + '</div>';
+      function head() {
+        return '<div class="ex-head">' + Icon.get("bulb") + ' 解析　<span class="ex-ans">正解：' + q.answer + '</span></div>';
       }
-      if (q.explanation) return '<div class="explain">' + head(true) + '<div>' + esc(q.explanation) + '</div>' +
+      if (q.explanation) return '<div class="explain">' + head() + '<div>' + esc(q.explanation) + '</div>' +
         (q.concept ? '<div style="margin-top:6px;color:var(--text-mute);font-size:12.5px">觀念：' + esc(q.concept) + '</div>' : '') + '</div>';
-      // 官方題：AI 解析（可快取）
       var cached = Store.getExplain(q.id);
-      if (cached) return '<div class="explain">' + head(true) + '<div>' + esc(cached) + '</div></div>';
-      return '<div class="explain" id="exBox">' + head(false) +
-        '<div id="exBody" class="explain-loading">尚無解析。可用你設定的 AI 產生詳解。</div>' +
-        '<button class="btn btn-ghost btn-sm" id="exBtn" style="margin-top:10px">' + Icon.get("sparkle") + 'AI 產生解析</button></div>';
+      if (cached) return '<div class="explain">' + head() + '<div>' + esc(cached) + '</div></div>';
+      return '<div class="explain">' + head() + '<div class="explain-loading">本題暫無解析。</div></div>';
     }
 
     function bind() {
@@ -263,9 +259,9 @@
           '<div class="ri-detail">你的答案：<b style="color:' + (ok ? "var(--ok)" : "var(--danger)") + '">' + esc(yourTxt) + '</b>' +
           (ok ? "" : '<br>正確答案：<b>' + q.answer + ". " + esc(q.options[q.answer] || "") + '</b>') + '</div>' +
           '<div class="ri-detail" data-exwrap="' + i + '">' +
-            (q.explanation ? ('<div class="explain" style="margin-top:8px"><span class="q-badge" style="margin-bottom:6px;display:inline-block">AI 解析</span><div>' + esc(q.explanation) + '</div></div>')
-              : (Store.getExplain(q.id) ? ('<div class="explain" style="margin-top:8px"><span class="q-badge" style="margin-bottom:6px;display:inline-block">AI 解析</span><div>' + esc(Store.getExplain(q.id)) + '</div></div>')
-                : '<button class="btn btn-ghost btn-sm" data-exq="' + i + '" style="margin-top:8px">' + Icon.get("sparkle") + 'AI 解析</button>')) +
+            (q.explanation ? ('<div class="explain" style="margin-top:8px"><div class="ex-head">' + Icon.get("bulb") + ' 解析</div><div>' + esc(q.explanation) + '</div></div>')
+              : (Store.getExplain(q.id) ? ('<div class="explain" style="margin-top:8px"><div class="ex-head">' + Icon.get("bulb") + ' 解析</div><div>' + esc(Store.getExplain(q.id)) + '</div></div>')
+                : '<div style="margin-top:8px;color:var(--text-mute);font-size:13px">本題暫無解析</div>')) +
           '</div>' +
           (q.generated ? '<div class="ri-detail"><button class="btn btn-danger-ghost btn-sm" data-report="' + esc(q.id) + '" style="margin-top:6px">' + Icon.get("x") + '這題有誤，回報並移除</button></div>' : '') +
         '</div>';

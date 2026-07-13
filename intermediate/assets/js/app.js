@@ -171,76 +171,7 @@
     }, "刪除");
   }
 
-  /* ---------- AI 設定 ---------- */
-  function populateAiForm() {
-    var sel = $("#aiProvider");
-    sel.innerHTML = Object.keys(Ai.PROVIDERS).map(function (k) { return '<option value="' + k + '">' + esc(Ai.PROVIDERS[k].label) + '</option>'; }).join("");
-    var a = Store.ai();
-    sel.value = a.provider || "minimax";
-    $("#aiKey").value = a.key || "";
-    $("#aiModel").value = a.model || "";
-    $("#aiBaseUrl").value = a.baseUrl || "";
-    $("#aiPath").value = a.path || "";
-    $("#aiConnMode").value = a.connMode || "auto";
-    $("#aiRemember").checked = a.remember !== false;
-    reflectProvider();
-  }
-  function reflectProvider() {
-    var p = Ai.PROVIDERS[$("#aiProvider").value] || {};
-    // 未填模型時給預設提示
-    if (!$("#aiModel").value) $("#aiModel").placeholder = p.model || "模型名稱";
-    var showBase = !!p.showBase;
-    $("#baseUrlField").style.display = showBase ? "" : "none";
-    $("#pathField").style.display = showBase ? "" : "none";
-    if (showBase && !$("#aiBaseUrl").value) $("#aiBaseUrl").placeholder = "https://your-endpoint/v1";
-  }
-  $("#aiProvider").onchange = function () {
-    var p = Ai.PROVIDERS[$("#aiProvider").value] || {};
-    // 切換供應商時，若模型欄為空或屬前一供應商預設，帶入新預設
-    $("#aiModel").value = p.model || "";
-    $("#aiBaseUrl").value = p.showBase ? $("#aiBaseUrl").value : "";
-    $("#aiPath").value = p.showBase ? ($("#aiPath").value || p.path || "") : "";
-    reflectProvider();
-  };
-  $("#aiSaveBtn").onclick = function () {
-    var cfg = {
-      provider: $("#aiProvider").value, key: $("#aiKey").value.trim(), model: $("#aiModel").value.trim(),
-      baseUrl: $("#aiBaseUrl").value.trim(), path: $("#aiPath").value.trim(),
-      connMode: $("#aiConnMode").value, remember: $("#aiRemember").checked
-    };
-    Store.saveAi(cfg);
-    try {
-      if (cfg.remember) localStorage.setItem("ipas_shared_ai", JSON.stringify(cfg));
-      else localStorage.removeItem("ipas_shared_ai");
-    } catch (e2) {}
-    Ai.resetTransport();
-    setAiStatus("已儲存設定", "ok"); toast("AI 設定已儲存", "ok");
-  };
-  /* AI 設定跨認證同步：開機採用、另一分頁儲存時即時跟上 */
-  (function () {
-    try {
-      var raw = localStorage.getItem("ipas_shared_ai");
-      if (raw) { var cfg = JSON.parse(raw); if (cfg && cfg.provider) { Store.saveAi(cfg); populateAiForm(); } }
-    } catch (e) {}
-  })();
-  global.addEventListener("storage", function (ev) {
-    if (!ev || ev.key !== "ipas_shared_ai" || !ev.newValue) return;
-    try { var cfg = JSON.parse(ev.newValue); if (cfg && cfg.provider) { Store.saveAi(cfg); Ai.resetTransport(); populateAiForm(); } } catch (e) {}
-  });
-  global.addEventListener("pageshow", function () {
-    try {
-      var raw = localStorage.getItem("ipas_shared_ai");
-      if (raw) { var cfg = JSON.parse(raw); if (cfg && cfg.provider && cfg.key !== Store.ai().key) { Store.saveAi(cfg); populateAiForm(); } }
-    } catch (e) {}
-  });
-  $("#aiTestBtn").onclick = function () {
-    // 先暫存目前表單，才能測試
-    $("#aiSaveBtn").click();
-    setAiStatus("測試連線中…", "load");
-    Ai.testConnection().then(function () { setAiStatus("✓ 連線成功", "ok"); })
-      .catch(function (e) { setAiStatus("✕ " + e.message, "err"); });
-  };
-  function setAiStatus(msg, cls) { var el = $("#aiStatus"); el.textContent = msg; el.className = "ai-status " + (cls || ""); }
+  /* AI 模型設定已移除：官方＋網路題皆內建解析，無需使用者提供金鑰 */
 
   /* ---------- 備份 ---------- */
   function downloadJSON(obj, name) {
@@ -713,7 +644,6 @@
   /* ---------- 啟動 ---------- */
   global.App = { go: go, confirm: confirmDlg, toast: toast };
   paintUser();
-  populateAiForm();
   go("dashboard");
 
   // 題庫載入完成後，若正在儀表板（且不在測驗中）刷新數字

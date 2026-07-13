@@ -90,49 +90,6 @@
       <a class="nav-item" href="#" data-route="growth"><i class="ic-wrap" data-ico="trending"></i><span>成長曲線</span></a>
     </nav>
 
-    <!-- AI 模型設定 -->
-    <div class="side-section">
-      <button class="side-section-head" data-collapse="aiPanel">
-        <span class="sh-label"><i class="ic-wrap" data-ico="gear"></i> AI 模型設定</span><span class="chevron">▾</span>
-      </button>
-      <div class="side-section-body" id="aiPanel">
-        <label class="field">
-          <span class="field-label">模型供應商</span>
-          <select id="aiProvider"></select>
-        </label>
-        <label class="field">
-          <span class="field-label">API 金鑰</span>
-          <input type="password" id="aiKey" placeholder="貼上你的 API Key" autocomplete="off" />
-        </label>
-        <input type="hidden" id="aiModel" />
-        <label class="field" id="baseUrlField">
-          <span class="field-label">API 位址（Base URL）</span>
-          <input type="text" id="aiBaseUrl" placeholder="https://..." />
-        </label>
-        <label class="field" id="pathField">
-          <span class="field-label">端點路徑（Path）</span>
-          <input type="text" id="aiPath" placeholder="/chat/completions" />
-        </label>
-        <label class="field">
-          <span class="field-label">連線方式</span>
-          <select id="aiConnMode">
-            <option value="auto">自動（建議）</option>
-            <option value="proxy">透過 Netlify 代理（解決 CORS）</option>
-            <option value="direct">瀏覽器直接連線</option>
-          </select>
-        </label>
-        <label class="check">
-          <input type="checkbox" id="aiRemember" checked />
-          <span>在此裝置記住金鑰</span>
-        </label>
-        <div class="btn-row">
-          <button class="btn btn-primary btn-sm" id="aiSaveBtn">儲存</button>
-          <button class="btn btn-ghost btn-sm" id="aiTestBtn">測試連線</button>
-        </div>
-        <div class="ai-status" id="aiStatus"></div>
-        <p class="side-hint">金鑰僅儲存在你的瀏覽器，不會上傳到任何伺服器。多裝置請用「資料備份」轉移。</p>
-      </div>
-    </div>
 
     <!-- 帳號與同步：登入改由首頁登入閘門處理，登入後跨裝置自動同步（cloud.js 背景執行） -->
 
@@ -160,16 +117,16 @@
 <script defer src="assets/vendor/gsap.min.js?v=27"></script>
 <script defer src="assets/vendor/lottie.min.js?v=27"></script>
 <!-- 資料（官方題＋教材；擴充題庫 bank.js 由 content-api 按需延遲載入）-->
-<script defer src="data/content.js?v=29"></script>
+<script defer src="data/content.js?v=30"></script>
 <!-- 模組 -->
 <script defer src="assets/js/icons.js?v=27"></script>
-<script defer src="assets/js/content-api.js?v=28"></script>
+<script defer src="assets/js/content-api.js?v=29"></script>
 <script defer src="assets/js/store.js?v=31"></script>
 <script defer src="assets/js/ai.js?v=27"></script>
 <script defer src="assets/js/charts.js?v=27"></script>
 <script defer src="assets/js/analysis.js?v=27"></script>
-<script defer src="assets/js/quiz.js?v=31"></script>
-<script defer src="assets/js/app.js?v=35"></script>
+<script defer src="assets/js/quiz.js?v=32"></script>
+<script defer src="assets/js/app.js?v=36"></script>
 <script defer src="assets/js/anim.js?v=27"></script>
 <script defer src="assets/js/interactions.js?v=27"></script>
 <script defer src="assets/vendor/supabase.min.js?v=27"></script>
