@@ -53,12 +53,22 @@
       </div>
     </div>
 
-    <!-- 認證切換 -->
+    <!-- 認證切換：家族→級別分群（避免級別/認證名混用；新增級別或認證時各歸各群） -->
     <div class="side-section" style="margin-top:2px">
-      <div class="cert-switch" style="display:flex;flex-wrap:wrap;gap:6px;margin:2px 0 14px">
-        <a class="chip" href="../junior/" title="切換到 AI應用規劃師（初級）" style="text-decoration:none">初級</a>
-        <span class="chip on" title="目前認證">中級</span>
-        <a class="chip" href="../bi/" title="切換到 營運智慧分析師（初級）" style="text-decoration:none">BI</a>
+      <div class="cert-switch" style="display:flex;flex-direction:column;gap:11px;margin:2px 0 14px">
+        <div class="cert-fam">
+          <div style="font-size:11px;font-weight:800;letter-spacing:.4px;color:var(--text-mute);margin:0 0 6px 2px">AI應用規劃師</div>
+          <div style="display:flex;flex-wrap:wrap;gap:6px">
+            <a class="chip" href="../junior/" title="切換到 AI應用規劃師（初級）" style="text-decoration:none">初級</a>
+            <span class="chip on" title="目前認證">中級</span>
+          </div>
+        </div>
+        <div class="cert-fam">
+          <div style="font-size:11px;font-weight:800;letter-spacing:.4px;color:var(--text-mute);margin:0 0 6px 2px">營運智慧分析師</div>
+          <div style="display:flex;flex-wrap:wrap;gap:6px">
+            <a class="chip" href="../bi/" title="切換到 營運智慧分析師（初級）" style="text-decoration:none">初級</a>
+          </div>
+        </div>
       </div>
     </div>
 
