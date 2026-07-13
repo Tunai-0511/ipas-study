@@ -4,7 +4,7 @@
    同源靜態資源用 stale-while-revalidate（含 bank.js/media 首次使用才快取）；
    AI／代理請求一律走網路、不快取。版本改變時清舊快取。
    ============================================================ */
-var CACHE = "aipsc-v40";
+var CACHE = "aipsc-v41";
 var CORE = [
   "./",
   "index.html",

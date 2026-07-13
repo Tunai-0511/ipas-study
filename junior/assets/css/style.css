@@ -650,7 +650,8 @@ body::before{
 .app-veil{position:fixed;inset:0;z-index:-3;pointer-events:none;
   background:color-mix(in srgb,var(--bg) 48%,transparent)}
 body::before{opacity:.5}
-body{background:var(--bg)}
+/* body 底色須透明：.app-bg 是負 z-index，body 若填不透明底色會依繪製順序蓋掉極光背景（只剩底部露出）。基底色改由 html 提供（見 index.html FOUC inline style） */
+body{background:transparent}
 
 /* ===== SVG 圖示 ===== */
 .ic{width:1.15em;height:1.15em;display:inline-block;vertical-align:-.17em;flex-shrink:0;stroke-width:1.75}
