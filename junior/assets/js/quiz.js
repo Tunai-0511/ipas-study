@@ -263,7 +263,7 @@
               : (Store.getExplain(q.id) ? ('<div class="explain" style="margin-top:8px"><div class="ex-head">' + Icon.get("bulb") + ' 解析</div><div>' + esc(Store.getExplain(q.id)) + '</div></div>')
                 : '<div style="margin-top:8px;color:var(--text-mute);font-size:13px">本題暫無解析</div>')) +
           '</div>' +
-          (q.generated ? '<div class="ri-detail"><button class="btn btn-danger-ghost btn-sm" data-report="' + esc(q.id) + '" style="margin-top:6px">' + Icon.get("x") + '這題有誤，回報並移除</button></div>' : '') +
+          '' +
         '</div>';
       }).join("");
 

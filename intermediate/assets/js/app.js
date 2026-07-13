@@ -258,9 +258,9 @@
     $$("[data-act]").forEach(function (b) { b.onclick = function () { handleAction(b.getAttribute("data-act")); }; });
     $$("[data-goto]").forEach(function (b) { b.onclick = function () { go(b.getAttribute("data-goto")); }; });
   };
-  function statCard(label, val, unit, cls) {
+  function statCard(label, val, unit, cls, foot) {
     return '<div class="stat ' + (cls ? "stat-" + cls : "") + '"><div class="stat-label">' + esc(label) + '</div>' +
-      '<div class="stat-value">' + val + '<span class="unit">' + esc(unit || "") + '</span></div></div>';
+      '<div class="stat-value">' + val + '<span class="unit">' + esc(unit || "") + '</span></div>' + (foot ? '<div class="stat-foot">' + esc(foot) + '</div>' : '') + '</div>';
   }
   function actionCard(act, ico, name, desc) {
     return '<button class="mode-card" data-act="' + act + '"><div class="mc-ico">' + Icon.get(ico) + '</div>' +
@@ -511,7 +511,23 @@
     if (!Analysis.hasData()) { main.innerHTML = pageHead("成長曲線") + emptyBox("尚無成長紀錄", "每完成一次測驗，就會在這裡新增一個分數點，追蹤你的進步。", "去測驗", "quiz"); bindEmpty(); return; }
     var ov = Analysis.overall();
     var g = Analysis.growthSeries();
-    var improve = ov.lastScore - ov.firstScore;
+    var _atts = Store.attempts().slice().sort(function (x, y) { return new Date(x.finishedAt) - new Date(y.finishedAt); });
+    var _n = _atts.length, _sumT = 0, _sumC = 0;
+    _atts.forEach(function (a) { _sumT += a.total; _sumC += a.correct; });
+    var _acc = _sumT ? Math.round(100 * _sumC / _sumT) : 0;
+    var _accOf = function (arr) { var t = 0, c = 0; arr.forEach(function (a) { t += a.total; c += a.correct; }); return t ? (100 * c / t) : null; };
+    var _c1 = statCard("平均正確率", _acc, "%", null, "題目加權");
+    var _c2 = statCard("累積作答", _sumT, "題", null, "共 " + _n + " 次");
+    var _c3;
+    if (_n >= 4) {
+      var _k = Math.min(5, Math.floor(_n / 2));
+      var _d = Math.round(_accOf(_atts.slice(_n - _k)) - _accOf(_atts.slice(0, _n - _k)));
+      var _col = _d > 0 ? "#16a34a" : _d < 0 ? "#e5566b" : "var(--text-mute)";
+      var _arr = _d > 0 ? "▲" : _d < 0 ? "▼" : "▬";
+      _c3 = statCard("近期趨勢", '<span style="color:' + _col + '">' + _arr + " " + (_d > 0 ? "+" : "") + _d + "</span>", "%", null, "近" + _k + "次 vs 更早");
+    } else {
+      _c3 = statCard("近期趨勢", "—", "", null, "資料累積中");
+    }
 
     var series;
     if (growthMode === "overall") series = [{ name: "總分", color: SUBJ_COLORS.MIX, points: g.overall }];
@@ -528,9 +544,7 @@
 
     main.innerHTML = pageHead("成長曲線", "你的進步軌跡") +
       '<div class="grid grid-3">' +
-        statCard("首次分數", ov.firstScore, "分", null) +
-        statCard("最近分數", ov.lastScore, "分", "accent") +
-        statCard("進步幅度", (improve >= 0 ? "+" : "") + improve, "分", null) +
+        _c1 + _c2 + _c3 +
       '</div>' +
       '<div class="section-title">分數趨勢　<span class="chip-row" style="display:inline-flex;margin-left:6px">' +
         '<button class="chip ' + (growthMode === "overall" ? "on" : "") + '" data-gm="overall">總分</button>' +
