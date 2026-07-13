@@ -7,7 +7,7 @@
   var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
   function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); }
 
-  // 科目一律用中文名（禁用 J1/J2 等代號）：依科目順序給「科目一/二/三…」序位
+  // 科目一律用中文名（禁用 S1/S2/S3 等代號）：依科目順序給「科目一/二/三…」序位
   var CJK_NUM = ["一", "二", "三", "四", "五", "六", "七", "八"];
   function subjOrd(i) { return "科目" + (CJK_NUM[i] || (i + 1)); }
   function subjOrdName(s, i) { return subjOrd(i) + "　" + (s && s.name || ""); }
@@ -72,14 +72,14 @@
   // 圖片切換用 body[data-theme]；只設其中一個會出現「圖換了背景沒換」的分裂狀態。
   function setThemeAttr(t) { document.documentElement.setAttribute("data-theme", t); document.body.setAttribute("data-theme", t); }
   function paintFab(){ var d=document.body.getAttribute("data-theme")==="dark"; var m=document.getElementById("fabMoon"),s=document.getElementById("fabSun"); if(m)m.style.display=d?"none":""; if(s)s.style.display=d?"":"none"; }
-  function applyTheme(t) { setThemeAttr(t); try { localStorage.setItem("ipasjr_theme", t); localStorage.setItem("ipas_shared_theme", t); } catch (e) {} paintFab(); }
+  function applyTheme(t) { setThemeAttr(t); try { localStorage.setItem("ipasbi_theme", t); localStorage.setItem("ipas_shared_theme", t); } catch (e) {} paintFab(); }
   (function () {
     try {
-      var t = localStorage.getItem("ipas_shared_theme") || localStorage.getItem("ipasjr_theme");
+      var t = localStorage.getItem("ipas_shared_theme") || localStorage.getItem("ipasbi_theme");
       if (t) { setThemeAttr(t); return; }
       if (matchMedia("(prefers-color-scheme: dark)").matches) setThemeAttr("dark");
       matchMedia("(prefers-color-scheme: dark)").addEventListener("change", function (e) {
-        if (!localStorage.getItem("ipas_shared_theme") && !localStorage.getItem("ipasjr_theme")) setThemeAttr(e.matches ? "dark" : "light");
+        if (!localStorage.getItem("ipas_shared_theme") && !localStorage.getItem("ipasbi_theme")) setThemeAttr(e.matches ? "dark" : "light");
       });
     } catch (e) {}
   })();
@@ -252,7 +252,7 @@
   /* ============================================================
      頁面
      ============================================================ */
-  var SUBJ_COLORS = { J1: "#5b5bd6", J2: "#00b3a4", MIX: "#8a63d2", AI: "#e5566b" };
+  var SUBJ_COLORS = { B1: "#5b5bd6", B2: "#00b3a4", MIX: "#8a63d2", AI: "#e5566b" };
 
   function pageHead(title, sub) {
     return '<div class="page-head"><div class="page-title">' + esc(title) + '</div>' + (sub ? '<div class="page-sub">' + esc(sub) + '</div>' : '') + '</div>';
@@ -269,11 +269,12 @@
 
     var hero =
       '<section class="hero">' +
+        (global.LITE ? '' : '<video class="hero-video" autoplay muted loop playsinline preload="none" poster="assets/media/hero-light.jpg"><source src="assets/media/hero.mp4" type="video/mp4"></video>') +
         '<div class="hero-bg"></div><div class="hero-scrim"></div>' +
         '<div class="hero-inner">' +
-          '<div class="hero-eyebrow">iPAS · AI 應用規劃師（初級）能力鑑定</div>' +
+          '<div class="hero-eyebrow">營運智慧分析師 · 初級能力鑑定</div>' +
           '<h1 class="hero-title">' + (ov.count ? '歡迎回來，' + esc(u.name) : esc(u.name) + '，開始備考吧') + '</h1>' +
-          '<p class="hero-sub">' + cnts.total + ' 題官方公告試題（114-4／115-1／115-2 三梯次）、主題式練習、成績判讀與成長曲線，一站搞定。</p>' +
+          '<p class="hero-sub">' + (cnts.official ? cnts.official + ' 題官方公告試題、' : '官方試題將於 115/10/31 首考後加入；') + (cnts.generated ? '網路題庫 ' + cnts.generated + ' 題、' : '') + '兩科教材、成績判讀與成長曲線，一站搞定。</p>' +
           '<div class="hero-cta">' +
             '<button class="btn btn-primary btn-lg" data-act="mock">開始模擬考</button>' +
             '<button class="btn btn-glass btn-lg" data-goto="learn">瀏覽教材</button>' +
@@ -289,16 +290,13 @@
       '</div>'
     ) : '';
 
-    var SUBJ_IMG = { J1: "assets/media/subj-j1", J2: "assets/media/subj-j2" };
+    var SUBJ_IMG = { B1: "assets/media/subj-b1", B2: "assets/media/subj-b2" };
     var subjectsCards = Content.subjects().map(function (s, si) {
       var acc = subjAcc[s.code];
       var pct = acc ? acc.accuracy : 0;
       var meta = acc ? (acc.correct + "/" + acc.attempted + " 題答對 · 正確率 " + pct + "%") : (Content.chapters(s.code).length + " 章 · " + Content.questions({ subject: s.code }).length + " 題");
       return '<button class="subject-card sc-card" data-subj="' + s.code + '">' +
-        '<div class="sc-media hover-media"><img class="img-light" src="' + SUBJ_IMG[s.code] + '.jpg?v=3" alt="" loading="lazy"><img class="img-dark" src="' + SUBJ_IMG[s.code] + '-dark.jpg?v=3" alt="" loading="lazy">' +
-        '<video class="hover-vid vid-light" data-src="' + SUBJ_IMG[s.code] + '.mp4" muted loop playsinline preload="none" aria-hidden="true"></video>' +
-        '<video class="hover-vid vid-dark" data-src="' + SUBJ_IMG[s.code] + '-dark.mp4" muted loop playsinline preload="none" aria-hidden="true"></video>' +
-        '<span class="sc-badge">' + subjOrd(si) + '</span></div>' +
+        '<div class="sc-media"><img class="img-light" src="' + SUBJ_IMG[s.code] + '.jpg?v=13" alt="" loading="lazy"><img class="img-dark" src="' + SUBJ_IMG[s.code] + '-dark.jpg?v=13" alt="" loading="lazy"><span class="sc-badge">' + subjOrd(si) + '</span></div>' +
         '<div class="sc-body"><div class="sc-name">' + esc(s.name) + '</div>' +
         '<div class="sc-meta">' + esc(meta) + '</div>' +
         '<div class="sc-bar"><i style="width:' + pct + '%"></i></div></div></button>';
@@ -320,8 +318,8 @@
 
     main.innerHTML =
       hero + statsGrid +
-      '<div class="section-title">兩大考科 <span class="tag">點擊開始練習</span></div>' +
-      '<div class="grid grid-3">' + subjectsCards + '</div>' +
+      '<div class="section-title">兩大科目 <span class="tag">點擊開始練習</span></div>' +
+      '<div class="grid grid-2">' + subjectsCards + '</div>' +
       '<div class="section-title">快速開始</div>' + quick +
       growthCard;
 
@@ -338,14 +336,14 @@
       '<div class="mc-name">' + esc(name) + '</div><div class="mc-desc">' + esc(desc) + '</div></button>';
   }
   function handleAction(act) {
-    if (act === "mock" || act === "exam") { quizCfg.mode = "mock"; if (!quizCfg.subject) quizCfg.subject = (Content.subjects()[0] || {}).code || ""; quizCfg.onlyOfficial = true; quizCfg.onlyNetwork = false; go("quiz"); }
+    if (act === "mock" || act === "exam") { quizCfg.mode = "mock"; if (!quizCfg.subject) quizCfg.subject = (Content.subjects()[0] || {}).code || ""; quizCfg.onlyOfficial = Content.counts().official > 0; quizCfg.onlyNetwork = false; go("quiz"); }
     else if (act === "bookmark") startQuiz({ mode: "bookmark", subjectName: "收藏複習" });
     else if (act === "wrong") startQuiz({ mode: "wrong", subjectName: "錯題複習" });
     else if (act === "generate") go("generate");
   }
 
   /* ---- 教材學習 ---- */
-  var learnSubj = "J1", learnQuery = "";
+  var learnSubj = "B1", learnQuery = "";
   function hl(text, q) {
     var t = esc(text || "");
     if (!q) return t;
@@ -416,6 +414,12 @@
     return quizCfg.mode === "mock" ? MOCK_LIMIT_SEC : 0;   // 模擬考固定 75 分鐘，其餘不限時
   }
   function sourceGroup() {
+    // 官方桶為空（BI 首考 115/10/31 前）：來源固定網路題，並明示官方題進度
+    if (!Content.counts().official) {
+      return '<div class="opt-group"><span class="og-label">題目來源</span><div class="chip-row">' +
+        '<button class="chip on" data-src="all">網路題庫</button></div>' +
+        '<p class="side-hint" style="margin:6px 0 0">官方試題將於 115/10/31 首考公告後加入，屆時模擬考改用官方歷屆題。</p></div>';
+    }
     return '<div class="opt-group"><span class="og-label">題目來源</span><div class="chip-row">' +
       '<button class="chip ' + (!quizCfg.onlyOfficial && !quizCfg.onlyNetwork ? "on" : "") + '" data-src="all">全部（官方＋網路）</button>' +
       '<button class="chip ' + (quizCfg.onlyOfficial ? "on" : "") + '" data-src="official">只考官方歷屆</button>' +
@@ -480,7 +484,7 @@
       row("模式", Quiz.MODES[quizCfg.mode].name) +
       ((quizCfg.mode === "official" || quizCfg.mode === "ai") ? row("科目", quizCfg.subject ? Content.subjectName(quizCfg.subject) : "全部科目") + row("章節", quizCfg.topic ? Content.chapterTitle(quizCfg.topic) : "全部章節") : "") +
       (isMock ? row("科目", quizCfg.subject ? Content.subjectName(quizCfg.subject) : "請選擇一科") : "") +
-      ((quizCfg.mode === "official" || isMock) ? row("來源", quizCfg.onlyOfficial ? "只考官方歷屆" : quizCfg.onlyNetwork ? "只考網路題" : "全部（官方＋網路）") : "") +
+      ((quizCfg.mode === "official" || isMock) ? row("來源", quizCfg.onlyOfficial ? "只考官方歷屆" : quizCfg.onlyNetwork ? "只考網路題" : (Content.counts().official ? "全部（官方＋網路）" : "網路題庫")) : "") +
       (isMock ? (row("題數", MOCK_COUNT + " 題") + row("限時", "75 分鐘"))
               : row("題數", quizCfg.mode === "wrong" ? "全部錯題" : (quizCfg.count === 0 ? "全部" : quizCfg.count + " 題"))) +
       row("可用題目", pool + " 題" + (
@@ -489,9 +493,7 @@
 
     var panel =
       '<aside class="quiz-side">' +
-        '<div class="quiz-anim quiz-anim-img hover-media"><img class="img-light" src="assets/media/quiz-target-light.jpg?v=3" alt="" loading="lazy"><img class="img-dark" src="assets/media/quiz-target-dark.jpg?v=3" alt="" loading="lazy">' +
-        '<video class="hover-vid vid-light" data-src="assets/media/quiz-target-light.mp4" muted loop playsinline preload="none" aria-hidden="true"></video>' +
-        '<video class="hover-vid vid-dark" data-src="assets/media/quiz-target-dark.mp4" muted loop playsinline preload="none" aria-hidden="true"></video></div>' +
+        '<div class="quiz-anim quiz-anim-img"><img class="img-light" src="assets/media/quiz-target-light.jpg?v=25" alt="" loading="lazy"><img class="img-dark" src="assets/media/quiz-target-dark.jpg?v=25" alt="" loading="lazy"></div>' +
         '<div class="qs-title">測驗摘要</div>' +
         '<div class="qs-list">' + summary + '</div>' +
         '<button class="btn btn-primary full" id="qzStart" ' + (canStart ? "" : "disabled") + '>開始測驗 →</button>' +
@@ -505,7 +507,7 @@
 
     $$("[data-mode]").forEach(function (b) { b.onclick = function () {
       quizCfg.mode = b.getAttribute("data-mode");
-      if (quizCfg.mode === "mock") { if (!quizCfg.subject) quizCfg.subject = (Content.subjects()[0] || {}).code || ""; quizCfg.onlyOfficial = true; quizCfg.onlyNetwork = false; }
+      if (quizCfg.mode === "mock") { if (!quizCfg.subject) quizCfg.subject = (Content.subjects()[0] || {}).code || ""; quizCfg.onlyOfficial = Content.counts().official > 0; quizCfg.onlyNetwork = false; }
       VIEWS.quiz();
     }; });
     $$("[data-subj-chip]").forEach(function (b) { b.onclick = function () { quizCfg.subject = b.getAttribute("data-subj-chip"); quizCfg.topic = ""; VIEWS.quiz(); }; });
@@ -615,7 +617,7 @@
   };
 
   /* ---- AI 出題 ---- */
-  var genState = { subject: "J1", chapter: "", count: 5, difficulty: "中等", preview: null, busy: false };
+  var genState = { subject: "B1", chapter: "", count: 5, difficulty: "中等", preview: null, busy: false };
   function presetGenerate(subj, chap) { genState.subject = subj; genState.chapter = chap || ""; VIEWS.generate(); }
   VIEWS.generate = function () {
     var subjOpts = Content.subjects().map(function (s) { return '<option value="' + s.code + '"' + (genState.subject === s.code ? " selected" : "") + '>' + esc(s.name) + '</option>'; }).join("");
@@ -721,7 +723,7 @@
   go("dashboard");
 
   // 題庫載入完成後，若正在儀表板（且不在測驗中）刷新數字
-  document.addEventListener("bank-ready", function () { if (route === "dashboard" && !inRunner) render(); });
+  document.addEventListener("bank-ready", function () { if ((route === "dashboard" || route === "quiz") && !inRunner) render(); });
   // 首屏後閒置時預先載入擴充題庫，讓開始測驗時已就緒（不阻塞首屏）
   (window.requestIdleCallback || function (f) { setTimeout(f, 1200); })(function () { Content.ensureBank(); });
 

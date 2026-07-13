@@ -336,7 +336,7 @@
       '<div class="mc-name">' + esc(name) + '</div><div class="mc-desc">' + esc(desc) + '</div></button>';
   }
   function handleAction(act) {
-    if (act === "mock" || act === "exam") { quizCfg.mode = "mock"; if (!quizCfg.subject) quizCfg.subject = (Content.subjects()[0] || {}).code || ""; quizCfg.onlyOfficial = true; go("quiz"); }
+    if (act === "mock" || act === "exam") { quizCfg.mode = "mock"; if (!quizCfg.subject) quizCfg.subject = (Content.subjects()[0] || {}).code || ""; quizCfg.onlyOfficial = true; quizCfg.onlyNetwork = false; go("quiz"); }
     else if (act === "bookmark") startQuiz({ mode: "bookmark", subjectName: "收藏複習" });
     else if (act === "wrong") startQuiz({ mode: "wrong", subjectName: "錯題複習" });
     else if (act === "generate") go("generate");
@@ -389,8 +389,8 @@
         ? '<div class="page-sub" style="margin-bottom:12px">找到 ' + hits.length + ' 章</div>' + hits.map(function (h) { return chapterCard(h.ch, h.code, h.i, q, true); }).join("")
         : '<div class="empty"><div class="e-title">找不到「' + esc(learnQuery) + '」</div><div class="e-sub">換個關鍵字試試。</div></div>';
     } else {
-      tabs = '<div class="chip-row" style="margin-bottom:16px">' + Content.subjects().map(function (s) {
-        return '<button class="chip ' + (s.code === learnSubj ? "on" : "") + '" data-ltab="' + s.code + '">' + s.code + '　' + esc(s.name) + '</button>';
+      tabs = '<div class="chip-row" style="margin-bottom:16px">' + Content.subjects().map(function (s, i) {
+        return '<button class="chip ' + (s.code === learnSubj ? "on" : "") + '" data-ltab="' + s.code + '">' + subjOrd(i) + '　' + esc(s.name) + '</button>';
       }).join("") + '</div>';
       var subj = Content.subject(learnSubj);
       body = (subj ? subj.chapters : []).map(function (ch, i) { return chapterCard(ch, "", i, "", false); }).join("");
@@ -409,21 +409,22 @@
   };
 
   /* ---- 測驗設定 ---- */
-  var quizCfg = { mode: "official", subject: "", topic: "", count: 15, onlyOfficial: false };
+  var quizCfg = { mode: "official", subject: "", topic: "", count: 15, onlyOfficial: false, onlyNetwork: false };
   function limitSecOf() {
     return quizCfg.mode === "mock" ? MOCK_LIMIT_SEC : 0;   // 模擬考固定 75 分鐘，其餘不限時
   }
   function sourceGroup() {
     return '<div class="opt-group"><span class="og-label">題目來源</span><div class="chip-row">' +
-      '<button class="chip ' + (!quizCfg.onlyOfficial ? "on" : "") + '" data-src="all">全部（官方＋網路）</button>' +
+      '<button class="chip ' + (!quizCfg.onlyOfficial && !quizCfg.onlyNetwork ? "on" : "") + '" data-src="all">全部（官方＋網路）</button>' +
       '<button class="chip ' + (quizCfg.onlyOfficial ? "on" : "") + '" data-src="official">只考官方歷屆</button>' +
+      '<button class="chip ' + (quizCfg.onlyNetwork ? "on" : "") + '" data-src="network">只考網路題</button>' +
       '</div></div>';
   }
   function poolSize() {
     if (quizCfg.mode === "mock") return quizCfg.subject
-      ? Content.questions({ subject: quizCfg.subject, includeContext: false, onlyOfficial: quizCfg.onlyOfficial }).length
-      : Content.allOfficial(false, quizCfg.onlyOfficial).length;
-    if (quizCfg.mode === "official") return Content.questions({ subject: quizCfg.subject || null, topic: quizCfg.topic || null, includeContext: false, onlyOfficial: quizCfg.onlyOfficial }).length;
+      ? Content.questions({ subject: quizCfg.subject, includeContext: false, onlyOfficial: quizCfg.onlyOfficial, onlyGenerated: quizCfg.onlyNetwork }).length
+      : Content.allOfficial(false, quizCfg.onlyOfficial, quizCfg.onlyNetwork).length;
+    if (quizCfg.mode === "official") return Content.questions({ subject: quizCfg.subject || null, topic: quizCfg.topic || null, includeContext: false, onlyOfficial: quizCfg.onlyOfficial, onlyGenerated: quizCfg.onlyNetwork }).length;
     if (quizCfg.mode === "ai") return Store.aiQuestions().length;
     if (quizCfg.mode === "wrong") return Quiz.buildQuestions({ mode: "wrong" }).length;
     if (quizCfg.mode === "bookmark") return Quiz.buildQuestions({ mode: "bookmark" }).length;
@@ -477,7 +478,7 @@
       row("模式", Quiz.MODES[quizCfg.mode].name) +
       ((quizCfg.mode === "official" || quizCfg.mode === "ai") ? row("科目", quizCfg.subject ? Content.subjectName(quizCfg.subject) : "全部科目") + row("章節", quizCfg.topic ? Content.chapterTitle(quizCfg.topic) : "全部章節") : "") +
       (isMock ? row("科目", quizCfg.subject ? Content.subjectName(quizCfg.subject) : "請選擇一科") : "") +
-      ((quizCfg.mode === "official" || isMock) ? row("來源", quizCfg.onlyOfficial ? "只考官方歷屆" : "全部（官方＋網路）") : "") +
+      ((quizCfg.mode === "official" || isMock) ? row("來源", quizCfg.onlyOfficial ? "只考官方歷屆" : quizCfg.onlyNetwork ? "只考網路題" : "全部（官方＋網路）") : "") +
       (isMock ? (row("題數", MOCK_COUNT + " 題") + row("限時", "75 分鐘"))
               : row("題數", quizCfg.mode === "wrong" ? "全部錯題" : (quizCfg.count === 0 ? "全部" : quizCfg.count + " 題"))) +
       row("可用題目", pool + " 題" + (
@@ -500,20 +501,20 @@
 
     $$("[data-mode]").forEach(function (b) { b.onclick = function () {
       quizCfg.mode = b.getAttribute("data-mode");
-      if (quizCfg.mode === "mock") { if (!quizCfg.subject) quizCfg.subject = (Content.subjects()[0] || {}).code || ""; quizCfg.onlyOfficial = true; }
+      if (quizCfg.mode === "mock") { if (!quizCfg.subject) quizCfg.subject = (Content.subjects()[0] || {}).code || ""; quizCfg.onlyOfficial = true; quizCfg.onlyNetwork = false; }
       VIEWS.quiz();
     }; });
     $$("[data-subj-chip]").forEach(function (b) { b.onclick = function () { quizCfg.subject = b.getAttribute("data-subj-chip"); quizCfg.topic = ""; VIEWS.quiz(); }; });
     var chapSel = $("#qzChap"); if (chapSel) chapSel.onchange = function () { quizCfg.topic = chapSel.value; VIEWS.quiz(); };
     $$("[data-count]").forEach(function (c) { c.onclick = function () { var v = c.getAttribute("data-count"); quizCfg.count = v === "all" ? 0 : +v; VIEWS.quiz(); }; });
-    $$("[data-src]").forEach(function (c) { c.onclick = function () { quizCfg.onlyOfficial = c.getAttribute("data-src") === "official"; VIEWS.quiz(); }; });
+    $$("[data-src]").forEach(function (c) { c.onclick = function () { var v = c.getAttribute("data-src"); quizCfg.onlyOfficial = v === "official"; quizCfg.onlyNetwork = v === "network"; VIEWS.quiz(); }; });
     $("#qzStart").onclick = function () {
       var name = quizCfg.mode === "mock"
         ? (quizCfg.subject ? Content.subjectName(quizCfg.subject) + " 模擬考" : "綜合模擬考")
         : quizCfg.topic ? Content.chapterTitle(quizCfg.topic) : quizCfg.subject ? Content.subjectName(quizCfg.subject) : Quiz.MODES[quizCfg.mode].name;
       var allMode = quizCfg.mode === "wrong" || quizCfg.mode === "bookmark";
       var cnt = quizCfg.mode === "mock" ? MOCK_COUNT : (allMode ? 0 : quizCfg.count);
-      startQuiz({ mode: quizCfg.mode, subject: quizCfg.subject, topic: quizCfg.mode === "mock" ? "" : quizCfg.topic, count: cnt, onlyOfficial: quizCfg.onlyOfficial, limitSec: limitSecOf(), subjectName: name });
+      startQuiz({ mode: quizCfg.mode, subject: quizCfg.subject, topic: quizCfg.mode === "mock" ? "" : quizCfg.topic, count: cnt, onlyOfficial: quizCfg.onlyOfficial, onlyGenerated: quizCfg.onlyNetwork, limitSec: limitSecOf(), subjectName: name });
     };
     if (global.Interactions && Interactions.mountQuizAnim) Interactions.mountQuizAnim();
   };

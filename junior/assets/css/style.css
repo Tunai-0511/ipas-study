@@ -784,7 +784,8 @@ html:not(.lite) body[data-theme="dark"] .card{ box-shadow: inset 0 1px 0 var(--g
 .topbar{ backdrop-filter:blur(26px) saturate(1.9); -webkit-backdrop-filter:blur(26px) saturate(1.9); }
 .modal-box{ backdrop-filter:blur(30px) saturate(1.9); -webkit-backdrop-filter:blur(30px) saturate(1.9);
   border:1px solid var(--glass-brd); box-shadow: inset 0 1px 0 var(--glass-hi), 0 40px 100px -30px rgba(0,0,0,.4); }
-.chip{ border:1px solid var(--glass-brd); box-shadow: inset 0 1px 0 var(--glass-hi); }
+/* 白色主題下 --glass-brd 為半透明白，套在淺色卡上的 chip 框幾乎隱形→改用實色 --border，維持玻璃頂光即可 */
+.chip{ box-shadow: inset 0 1px 0 var(--glass-hi); }
 .btn-glass{ backdrop-filter:blur(18px) saturate(1.8); -webkit-backdrop-filter:blur(18px) saturate(1.8);
   border:1px solid var(--glass-brd); box-shadow: inset 0 1px 0 var(--glass-hi), 0 10px 30px -12px rgba(30,34,90,.3); }
 /* 認證切換 chips */

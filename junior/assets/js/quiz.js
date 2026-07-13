@@ -28,12 +28,12 @@
   function buildQuestions(config) {
     var qs = [];
     if (config.mode === "official") {
-      qs = Content.questions({ subject: config.subject || null, topic: config.topic || null, includeContext: false, onlyOfficial: config.onlyOfficial });
+      qs = Content.questions({ subject: config.subject || null, topic: config.topic || null, includeContext: false, onlyOfficial: config.onlyOfficial, onlyGenerated: config.onlyGenerated });
     } else if (config.mode === "mock") {
       // 模擬考完全比照官方：單一科目。未指定科目時退回跨科（相容舊入口）
       qs = config.subject
-        ? Content.questions({ subject: config.subject, includeContext: false, onlyOfficial: config.onlyOfficial })
-        : Content.allOfficial(false, config.onlyOfficial);
+        ? Content.questions({ subject: config.subject, includeContext: false, onlyOfficial: config.onlyOfficial, onlyGenerated: config.onlyGenerated })
+        : Content.allOfficial(false, config.onlyOfficial, config.onlyGenerated);
     } else if (config.mode === "ai") {
       qs = Store.aiQuestions().filter(function (q) {
         if (config.subject && q.subject !== config.subject) return false;

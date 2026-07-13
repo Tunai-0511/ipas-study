@@ -87,15 +87,17 @@
         if (filter.topic && q.topic !== filter.topic) return false;
         if (!filter.includeContext && q.needsContext) return false;
         if (filter.onlyOfficial && q.generated) return false;
+        if (filter.onlyGenerated && !q.generated) return false;
         return true;
       });
     },
-    allOfficial: function (includeContext, onlyOfficial) {
+    allOfficial: function (includeContext, onlyOfficial, onlyGenerated) {
       var hidden = (global.Store && Store.isHidden) ? Store.isHidden : null;
       return ALL.filter(function (q) {
         if (hidden && hidden(q.id)) return false;
         if (!includeContext && q.needsContext) return false;
         if (onlyOfficial && q.generated) return false;
+        if (onlyGenerated && !q.generated) return false;
         return true;
       });
     },
