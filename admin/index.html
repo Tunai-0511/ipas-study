@@ -26,10 +26,11 @@
   .stat .val{font-size:34px;font-weight:800;margin-top:4px}
   .stat .val .u{font-size:15px;color:var(--muted);font-weight:700;margin-left:3px}
   table{width:100%;border-collapse:collapse;margin-top:6px}
-  th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--stroke);font-size:14px}
+  th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--stroke);font-size:14px;vertical-align:top}
   th{color:var(--muted);font-size:12.5px;font-weight:700}
   td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
   .sec-title{font-size:15px;font-weight:800;margin:26px 0 10px}
+  .sec-note{font-weight:600;color:var(--muted);font-size:12px;margin-left:6px}
   .msg{font-size:13.5px;margin-top:10px;min-height:20px}
   .msg.err{color:var(--danger)}
   .login-card{max-width:400px;margin:8vh auto 0}
@@ -37,9 +38,11 @@
   .login-card .field label{display:block;font-size:12.5px;color:var(--muted);font-weight:700;margin-bottom:6px}
   .foot{color:var(--muted);font-size:12px;margin-top:28px;text-align:center}
   .bars{display:flex;align-items:flex-end;gap:3px;height:120px;padding-top:8px}
-  .bars .b{flex:1;background:var(--teal);border-radius:3px 3px 0 0;min-height:2px;position:relative}
+  .bars .b{flex:1;background:var(--teal);border-radius:3px 3px 0 0;min-height:2px}
   .bars .b:hover{background:var(--primary)}
   .bars-x{display:flex;justify-content:space-between;color:var(--muted);font-size:11px;margin-top:6px}
+  .uname{font-weight:700}
+  .uemail{color:var(--muted);font-size:12px;word-break:break-all}
 </style>
 </head>
 <body>
@@ -80,10 +83,18 @@
     </div>
 
     <div class="sec-title">各認證</div>
-    <div class="card">
+    <div class="card" style="overflow-x:auto">
       <table>
         <thead><tr><th>認證</th><th class="num">使用者</th><th class="num">累積作答</th><th>最後活動</th></tr></thead>
         <tbody id="appRows"></tbody>
+      </table>
+    </div>
+
+    <div class="sec-title">使用者明細 <span class="sec-note">含 Email，請妥善保管</span></div>
+    <div class="card" style="overflow-x:auto">
+      <table>
+        <thead><tr><th>使用者</th><th>認證</th><th class="num">作答</th><th class="num">正確率</th><th>最後活動</th></tr></thead>
+        <tbody id="userRows"></tbody>
       </table>
     </div>
 
@@ -108,11 +119,13 @@
   var APP_NAMES = { junior:"AI應用規劃師 初級", intermediate:"AI應用規劃師 中級", bi:"營運智慧分析師 初級", shared:"（跨站共用資料）" };
 
   var el = function(id){ return document.getElementById(id); };
+  function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
   if (!window.supabase) { el("loginMsg").textContent = "Supabase 函式庫載入失敗，請重整。"; el("loginMsg").className = "msg err"; return; }
   var sb = window.supabase.createClient(SB_URL, SB_KEY);
 
   function show(view){ el("loginView").classList.toggle("hidden", view!=="login"); el("dashView").classList.toggle("hidden", view!=="dash"); }
   function fmtDate(s){ if(!s) return "—"; var d=new Date(s); return (d.getMonth()+1)+"/"+d.getDate()+" "+("0"+d.getHours()).slice(-2)+":"+("0"+d.getMinutes()).slice(-2); }
+  function appList(csv){ return (csv||"").split(", ").filter(Boolean).map(function(a){ return APP_NAMES[a]||a; }).join("、"); }
 
   /* ---- 登入（Email OTP，與主站同一套） ---- */
   el("sendBtn").onclick = function(){
@@ -161,9 +174,16 @@
     el("s_30d").innerHTML   = (d.active_30d||0)+'<span class="u">人</span>';
 
     var rows = (d.by_app||[]).map(function(a){
-      return "<tr><td>"+(APP_NAMES[a.app]||a.app)+"</td><td class='num'>"+a.users+"</td><td class='num'>"+(a.attempts||0)+"</td><td>"+fmtDate(a.last_active)+"</td></tr>";
+      return "<tr><td>"+esc(APP_NAMES[a.app]||a.app)+"</td><td class='num'>"+a.users+"</td><td class='num'>"+(a.attempts||0)+"</td><td>"+fmtDate(a.last_active)+"</td></tr>";
     }).join("");
     el("appRows").innerHTML = rows || "<tr><td colspan='4' style='color:var(--muted)'>尚無資料</td></tr>";
+
+    var us = d.users||[];
+    el("userRows").innerHTML = us.map(function(u){
+      var who = "<div class='uname'>"+esc(u.name||"（未命名）")+"</div><div class='uemail'>"+esc(u.email||"—")+"</div>";
+      var acc = (u.accuracy==null) ? "—" : (u.accuracy+"%");
+      return "<tr><td>"+who+"</td><td style='font-size:13px'>"+esc(appList(u.apps))+"</td><td class='num'>"+(u.attempts||0)+"</td><td class='num'>"+acc+"</td><td>"+fmtDate(u.last_active)+"</td></tr>";
+    }).join("") || "<tr><td colspan='5' style='color:var(--muted)'>尚無使用者</td></tr>";
 
     var daily = d.daily||[];
     var max = daily.reduce(function(m,x){ return Math.max(m, x.active); }, 1);
