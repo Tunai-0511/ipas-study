@@ -43,6 +43,17 @@
   .bars-x{display:flex;justify-content:space-between;color:var(--muted);font-size:11px;margin-top:6px}
   .uname{font-weight:700}
   .uemail{color:var(--muted);font-size:12px;word-break:break-all}
+  tr.clickable{cursor:pointer}
+  tr.clickable:hover td{background:var(--card2)}
+  .go{color:var(--muted);font-size:11px}
+  .modal{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;z-index:50}
+  .modal.hidden{display:none}
+  .modal-scrim{position:absolute;inset:0;background:rgba(0,0,0,.55)}
+  .modal-box{position:relative;background:var(--card);border:1px solid var(--stroke);border-radius:14px;padding:18px 20px;width:min(780px,94vw);max-height:84vh;display:flex;flex-direction:column}
+  .modal-head{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+  .modal-head .t{flex:1;font-weight:800;word-break:break-all}
+  .modal-body{overflow:auto}
+  .pill{display:inline-block;font-size:12px;font-weight:700;color:var(--muted);background:var(--card2);border:1px solid var(--stroke);border-radius:20px;padding:2px 10px;margin-right:8px}
 </style>
 </head>
 <body>
@@ -90,10 +101,10 @@
       </table>
     </div>
 
-    <div class="sec-title">使用者明細 <span class="sec-note">含 Email，請妥善保管</span></div>
+    <div class="sec-title">使用者明細 <span class="sec-note">含 Email，請妥善保管 · 點一列看該員測驗紀錄</span></div>
     <div class="card" style="overflow-x:auto">
       <table>
-        <thead><tr><th>使用者</th><th>認證</th><th class="num">作答</th><th class="num">正確率</th><th>最後活動</th></tr></thead>
+        <thead><tr><th>使用者</th><th>認證</th><th class="num">作答</th><th class="num">正確率</th><th>最後活動</th><th></th></tr></thead>
         <tbody id="userRows"></tbody>
       </table>
     </div>
@@ -106,6 +117,15 @@
 
     <div class="msg err" id="dashMsg"></div>
     <div class="foot">只統計「已登入雲端同步」的使用者；純訪客不含在內（那部分看 Cloudflare Web Analytics）。</div>
+  </div>
+
+  <!-- 使用者測驗紀錄視窗 -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-scrim" id="modalScrim"></div>
+    <div class="modal-box">
+      <div class="modal-head"><div class="t" id="modalTitle"></div><button class="ghost" id="modalClose">關閉</button></div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
   </div>
 
 </div>
@@ -124,7 +144,7 @@
   var sb = window.supabase.createClient(SB_URL, SB_KEY);
 
   function show(view){ el("loginView").classList.toggle("hidden", view!=="login"); el("dashView").classList.toggle("hidden", view!=="dash"); }
-  function fmtDate(s){ if(!s) return "—"; var d=new Date(s); return (d.getMonth()+1)+"/"+d.getDate()+" "+("0"+d.getHours()).slice(-2)+":"+("0"+d.getMinutes()).slice(-2); }
+  function fmtDate(s){ if(!s) return "—"; var d=new Date(s); if(isNaN(d)) return "—"; return (d.getMonth()+1)+"/"+d.getDate()+" "+("0"+d.getHours()).slice(-2)+":"+("0"+d.getMinutes()).slice(-2); }
   function appList(csv){ return (csv||"").split(", ").filter(Boolean).map(function(a){ return APP_NAMES[a]||a; }).join("、"); }
 
   /* ---- 登入（Email OTP，與主站同一套） ---- */
@@ -149,6 +169,43 @@
   el("backBtn").onclick = function(){ el("step2").classList.add("hidden"); el("step1").classList.remove("hidden"); el("loginMsg").textContent=""; };
   el("logoutBtn").onclick = function(){ sb.auth.signOut().then(function(){ show("login"); }); };
   el("refreshBtn").onclick = loadStats;
+
+  /* ---- 使用者紀錄視窗 ---- */
+  function closeModal(){ el("modal").classList.add("hidden"); }
+  el("modalClose").onclick = closeModal;
+  el("modalScrim").onclick = closeModal;
+  document.addEventListener("keydown", function(e){ if(e.key==="Escape") closeModal(); });
+
+  el("userRows").onclick = function(e){
+    var tr = e.target.closest("tr[data-email]");
+    if(tr){ openUser(tr.getAttribute("data-email"), tr.getAttribute("data-name")); }
+  };
+
+  function openUser(email, name){
+    el("modalTitle").innerHTML = "<span>"+esc(name||"使用者")+"</span> <span style='color:var(--muted);font-weight:600;font-size:13px'>"+esc(email||"")+"</span>";
+    el("modalBody").innerHTML = "<div style='color:var(--muted);padding:16px'>載入中…</div>";
+    el("modal").classList.remove("hidden");
+    sb.rpc("user_attempts", { p_email: email }).then(function(r){
+      if(r.error){ el("modalBody").innerHTML = "<div class='msg err' style='padding:8px'>讀取失敗："+esc(r.error.message)+"</div>"; return; }
+      renderAttempts(r.data||[]);
+    });
+  }
+
+  function renderAttempts(list){
+    if(!list.length){ el("modalBody").innerHTML = "<div style='color:var(--muted);padding:16px'>這位使用者尚無作答紀錄。</div>"; return; }
+    var tot = list.length, sumC=0, sumT=0;
+    list.forEach(function(a){ sumC += (+a.correct||0); sumT += (+a.total||0); });
+    var acc = sumT ? Math.round(100*sumC/sumT) : null;
+    var head = "<div style='margin:2px 0 12px'><span class='pill'>共 "+tot+" 次</span><span class='pill'>累積 "+sumT+" 題</span><span class='pill'>整體正確率 "+(acc==null?"—":acc+"%")+"</span></div>";
+    var rows = list.map(function(a){
+      return "<tr><td>"+fmtDate(a.finished)+"</td><td>"+esc(APP_NAMES[a.app]||a.app)+"</td><td>"+esc(a.subject||"—")+"</td>"+
+             "<td style='color:var(--muted);font-size:12px'>"+esc(a.mode||"")+"</td>"+
+             "<td class='num'>"+esc(a.correct)+" / "+esc(a.total)+"</td>"+
+             "<td class='num' style='font-weight:800'>"+esc(a.score)+"</td></tr>";
+    }).join("");
+    el("modalBody").innerHTML = head +
+      "<table><thead><tr><th>時間</th><th>認證</th><th>科目</th><th>模式</th><th class='num'>答對</th><th class='num'>分數</th></tr></thead><tbody>"+rows+"</tbody></table>";
+  }
 
   function enterDash(){ show("dash"); loadStats(); }
 
@@ -182,8 +239,11 @@
     el("userRows").innerHTML = us.map(function(u){
       var who = "<div class='uname'>"+esc(u.name||"（未命名）")+"</div><div class='uemail'>"+esc(u.email||"—")+"</div>";
       var acc = (u.accuracy==null) ? "—" : (u.accuracy+"%");
-      return "<tr><td>"+who+"</td><td style='font-size:13px'>"+esc(appList(u.apps))+"</td><td class='num'>"+(u.attempts||0)+"</td><td class='num'>"+acc+"</td><td>"+fmtDate(u.last_active)+"</td></tr>";
-    }).join("") || "<tr><td colspan='5' style='color:var(--muted)'>尚無使用者</td></tr>";
+      return "<tr class='clickable' data-email='"+esc(u.email||"")+"' data-name='"+esc(u.name||"")+"'>"+
+             "<td>"+who+"</td><td style='font-size:13px'>"+esc(appList(u.apps))+"</td>"+
+             "<td class='num'>"+(u.attempts||0)+"</td><td class='num'>"+acc+"</td><td>"+fmtDate(u.last_active)+"</td>"+
+             "<td class='go'>看紀錄 ›</td></tr>";
+    }).join("") || "<tr><td colspan='6' style='color:var(--muted)'>尚無使用者</td></tr>";
 
     var daily = d.daily||[];
     var max = daily.reduce(function(m,x){ return Math.max(m, x.active); }, 1);
