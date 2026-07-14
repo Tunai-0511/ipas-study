@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>iPAS 使用統計 · 管理後台</title>
+<style>
+  :root{ --bg:#0f1117; --card:#191c25; --card2:#12141c; --stroke:#2b3040; --ink:#e9ebf3; --muted:#9aa0b8; --primary:#8f8ff2; --teal:#2dd4bf; --danger:#e5566b; }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:'Segoe UI',system-ui,-apple-system,"Noto Sans TC",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+  .wrap{max-width:1000px;margin:0 auto;padding:28px 20px 60px}
+  h1{font-size:22px;margin:0 0 2px}
+  .sub{color:var(--muted);font-size:13px}
+  .row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+  .spacer{flex:1}
+  button{font-family:inherit;font-size:14px;font-weight:700;border:1px solid var(--stroke);background:var(--card);color:var(--ink);padding:9px 16px;border-radius:9px;cursor:pointer;transition:.15s}
+  button:hover{border-color:var(--primary)}
+  button.primary{background:var(--primary);color:#12131a;border-color:var(--primary)}
+  button.ghost{background:transparent}
+  input{font-family:inherit;font-size:15px;background:var(--card2);color:var(--ink);border:1px solid var(--stroke);border-radius:9px;padding:11px 13px;width:100%}
+  .card{background:var(--card);border:1px solid var(--stroke);border-radius:14px;padding:18px 20px}
+  .hidden{display:none}
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin:18px 0}
+  .stat .lbl{color:var(--muted);font-size:13px;font-weight:700}
+  .stat .val{font-size:34px;font-weight:800;margin-top:4px}
+  .stat .val .u{font-size:15px;color:var(--muted);font-weight:700;margin-left:3px}
+  table{width:100%;border-collapse:collapse;margin-top:6px}
+  th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--stroke);font-size:14px}
+  th{color:var(--muted);font-size:12.5px;font-weight:700}
+  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+  .sec-title{font-size:15px;font-weight:800;margin:26px 0 10px}
+  .msg{font-size:13.5px;margin-top:10px;min-height:20px}
+  .msg.err{color:var(--danger)}
+  .login-card{max-width:400px;margin:8vh auto 0}
+  .login-card .field{margin-top:14px}
+  .login-card .field label{display:block;font-size:12.5px;color:var(--muted);font-weight:700;margin-bottom:6px}
+  .foot{color:var(--muted);font-size:12px;margin-top:28px;text-align:center}
+  .bars{display:flex;align-items:flex-end;gap:3px;height:120px;padding-top:8px}
+  .bars .b{flex:1;background:var(--teal);border-radius:3px 3px 0 0;min-height:2px;position:relative}
+  .bars .b:hover{background:var(--primary)}
+  .bars-x{display:flex;justify-content:space-between;color:var(--muted);font-size:11px;margin-top:6px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- 登入 -->
+  <div id="loginView" class="card login-card">
+    <h1>使用統計後台</h1>
+    <div class="sub">僅限管理者登入</div>
+    <div id="step1">
+      <div class="field"><label>管理者信箱</label><input id="email" type="email" placeholder="you@example.com" autocomplete="email" /></div>
+      <div class="field"><button class="primary" id="sendBtn" style="width:100%">寄送登入驗證碼</button></div>
+    </div>
+    <div id="step2" class="hidden">
+      <div class="field"><label>輸入信箱收到的 6 位數驗證碼</label><input id="code" inputmode="numeric" placeholder="000000" /></div>
+      <div class="field"><button class="primary" id="verifyBtn" style="width:100%">登入</button></div>
+      <div class="field"><button class="ghost" id="backBtn" style="width:100%">換一個信箱</button></div>
+    </div>
+    <div class="msg" id="loginMsg"></div>
+  </div>
+
+  <!-- 儀表板 -->
+  <div id="dashView" class="hidden">
+    <div class="row">
+      <div>
+        <h1>iPAS 使用統計</h1>
+        <div class="sub" id="asOf">—</div>
+      </div>
+      <div class="spacer"></div>
+      <button id="refreshBtn">↻ 重新整理</button>
+      <button class="ghost" id="logoutBtn">登出</button>
+    </div>
+
+    <div class="stats">
+      <div class="card stat"><div class="lbl">總使用者（已登入）</div><div class="val" id="s_total">—</div></div>
+      <div class="card stat"><div class="lbl">近 7 天活躍</div><div class="val" id="s_7d">—</div></div>
+      <div class="card stat"><div class="lbl">近 30 天活躍</div><div class="val" id="s_30d">—</div></div>
+    </div>
+
+    <div class="sec-title">各認證</div>
+    <div class="card">
+      <table>
+        <thead><tr><th>認證</th><th class="num">使用者</th><th class="num">累積作答</th><th>最後活動</th></tr></thead>
+        <tbody id="appRows"></tbody>
+      </table>
+    </div>
+
+    <div class="sec-title">近 30 天每日活躍</div>
+    <div class="card">
+      <div class="bars" id="bars"></div>
+      <div class="bars-x" id="barsX"></div>
+    </div>
+
+    <div class="msg err" id="dashMsg"></div>
+    <div class="foot">只統計「已登入雲端同步」的使用者；純訪客不含在內（那部分看 Cloudflare Web Analytics）。</div>
+  </div>
+
+</div>
+
+<script src="../junior/assets/vendor/supabase.min.js"></script>
+<script>
+(function(){
+  "use strict";
+  var SB_URL = "https://mugrltimxkvlqyksymjq.supabase.co";
+  var SB_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im11Z3JsdGlteGt2bHF5a3N5bWpxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODM2NTY0MDgsImV4cCI6MjA5OTIzMjQwOH0.OfJpNubw7WNF4ca56LZT_oWawiJlZm10Fm1l7rbRI8s";
+  var APP_NAMES = { junior:"AI應用規劃師 初級", intermediate:"AI應用規劃師 中級", bi:"營運智慧分析師 初級", shared:"（跨站共用資料）" };
+
+  var el = function(id){ return document.getElementById(id); };
+  if (!window.supabase) { el("loginMsg").textContent = "Supabase 函式庫載入失敗，請重整。"; el("loginMsg").className = "msg err"; return; }
+  var sb = window.supabase.createClient(SB_URL, SB_KEY);
+
+  function show(view){ el("loginView").classList.toggle("hidden", view!=="login"); el("dashView").classList.toggle("hidden", view!=="dash"); }
+  function fmtDate(s){ if(!s) return "—"; var d=new Date(s); return (d.getMonth()+1)+"/"+d.getDate()+" "+("0"+d.getHours()).slice(-2)+":"+("0"+d.getMinutes()).slice(-2); }
+
+  /* ---- 登入（Email OTP，與主站同一套） ---- */
+  el("sendBtn").onclick = function(){
+    var email = (el("email").value||"").trim();
+    if(!email){ return; }
+    el("loginMsg").className="msg"; el("loginMsg").textContent="寄送中…";
+    sb.auth.signInWithOtp({ email: email, options:{ emailRedirectTo: location.href } }).then(function(r){
+      if(r.error){ el("loginMsg").className="msg err"; el("loginMsg").textContent=r.error.message; return; }
+      el("step1").classList.add("hidden"); el("step2").classList.remove("hidden");
+      el("loginMsg").className="msg"; el("loginMsg").textContent="驗證碼已寄到 "+email;
+    });
+  };
+  el("verifyBtn").onclick = function(){
+    var email=(el("email").value||"").trim(), code=(el("code").value||"").trim();
+    el("loginMsg").className="msg"; el("loginMsg").textContent="驗證中…";
+    sb.auth.verifyOtp({ email: email, token: code, type:"email" }).then(function(r){
+      if(r.error){ el("loginMsg").className="msg err"; el("loginMsg").textContent=r.error.message; return; }
+      enterDash();
+    });
+  };
+  el("backBtn").onclick = function(){ el("step2").classList.add("hidden"); el("step1").classList.remove("hidden"); el("loginMsg").textContent=""; };
+  el("logoutBtn").onclick = function(){ sb.auth.signOut().then(function(){ show("login"); }); };
+  el("refreshBtn").onclick = loadStats;
+
+  function enterDash(){ show("dash"); loadStats(); }
+
+  /* ---- 讀統計（呼叫 security-definer 函式 usage_stats） ---- */
+  function loadStats(){
+    el("dashMsg").textContent="";
+    sb.rpc("usage_stats").then(function(r){
+      if(r.error){
+        el("dashMsg").textContent = (r.error.message||"").indexOf("not authorized")>=0
+          ? "此帳號未被授權查看統計。請確認你用的信箱已加入 usage_stats 函式的管理者名單。"
+          : ("讀取失敗："+r.error.message);
+        return;
+      }
+      render(r.data);
+    });
+  }
+
+  function render(d){
+    if(!d){ el("dashMsg").textContent="沒有資料。"; return; }
+    el("asOf").textContent = "更新於 "+fmtDate(d.generated_at);
+    el("s_total").innerHTML = (d.total_users||0)+'<span class="u">人</span>';
+    el("s_7d").innerHTML    = (d.active_7d||0)+'<span class="u">人</span>';
+    el("s_30d").innerHTML   = (d.active_30d||0)+'<span class="u">人</span>';
+
+    var rows = (d.by_app||[]).map(function(a){
+      return "<tr><td>"+(APP_NAMES[a.app]||a.app)+"</td><td class='num'>"+a.users+"</td><td class='num'>"+(a.attempts||0)+"</td><td>"+fmtDate(a.last_active)+"</td></tr>";
+    }).join("");
+    el("appRows").innerHTML = rows || "<tr><td colspan='4' style='color:var(--muted)'>尚無資料</td></tr>";
+
+    var daily = d.daily||[];
+    var max = daily.reduce(function(m,x){ return Math.max(m, x.active); }, 1);
+    el("bars").innerHTML = daily.map(function(x){
+      var h = Math.round((x.active/max)*100);
+      return "<div class='b' style='height:"+h+"%' title='"+x.day+"："+x.active+" 人'></div>";
+    }).join("") || "<div style='color:var(--muted);font-size:13px'>近 30 天尚無活躍紀錄</div>";
+    if(daily.length){
+      el("barsX").innerHTML = "<span>"+daily[0].day.slice(5)+"</span><span>"+daily[daily.length-1].day.slice(5)+"</span>";
+    } else { el("barsX").innerHTML=""; }
+  }
+
+  /* ---- 已登入則直接進儀表板（含 magic-link 回跳） ---- */
+  sb.auth.getSession().then(function(r){ if(r.data.session){ enterDash(); } else { show("login"); } });
+  sb.auth.onAuthStateChange(function(ev, session){ if(session){ enterDash(); } });
+})();
+</script>
+</body>
+</html>
