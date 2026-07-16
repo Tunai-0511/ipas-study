@@ -7,6 +7,11 @@
 
   function shuffle(a) { a = a.slice(); for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
   function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); }
+  // 官方試題附圖（自 PDF 裁切）。無 image 欄位的題目不輸出任何節點。
+  function figBlock(q) {
+    if (!q || !q.image) return "";
+    return '<figure class="q-fig"><img src="' + esc(q.image) + '" alt="本題附圖：官方試題原圖" loading="lazy" decoding="async"></figure>';
+  }
   function pad2(n){ return n < 10 ? "0" + n : "" + n; }
   function fmtTime(sec){
     sec = Math.max(0, Math.floor(sec || 0));
@@ -120,6 +125,7 @@
               '<button class="qz-bm' + (Store.isBookmarked(q.id) ? ' on' : '') + '" id="qzBm" aria-label="收藏此題" title="收藏此題">' + Icon.get("flag") + '</button>' +
             '</div>' +
             '<div class="q-stem">' + esc(q.stem) + '</div>' +
+            figBlock(q) +
             '<div class="options">' +
               LETTERS.map(function (k) {
                 if (!q.options[k]) return "";
@@ -256,6 +262,7 @@
         return '<div class="review-item">' +
           '<div class="ri-head"><span class="ri-status ' + (ok ? "ok" : "no") + '">' + (ok ? "✓" : "✕") + '</span>' +
           '<span class="ri-stem">' + (i + 1) + '. ' + esc(q.stem) + '</span></div>' +
+          figBlock(q) +
           '<div class="ri-detail">你的答案：<b style="color:' + (ok ? "var(--ok)" : "var(--danger)") + '">' + esc(yourTxt) + '</b>' +
           (ok ? "" : '<br>正確答案：<b>' + q.answer + ". " + esc(q.options[q.answer] || "") + '</b>') + '</div>' +
           '<div class="ri-detail" data-exwrap="' + i + '">' +

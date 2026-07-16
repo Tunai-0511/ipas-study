@@ -195,6 +195,12 @@ select option{background:var(--surface);color:var(--text)}
 .q-badge{font-size:14px;font-weight:800;padding:3px 9px;border-radius:6px;background:var(--surface-2);color:var(--text-soft)}
 .q-badge.subj{background:var(--primary-soft);color:var(--primary-d)}
 .q-stem{font-size:20px;font-weight:650;line-height:1.65;margin-bottom:18px;white-space:pre-wrap}
+/* 官方試題附圖：原圖為白底程式碼／圖表截圖，深色主題下仍維持淺色襯底以保可讀性 */
+.q-fig{margin:0 0 18px;padding:10px;background:#fff;border:1px solid var(--border);
+  border-radius:var(--radius-sm);overflow-x:auto;-webkit-overflow-scrolling:touch}
+.q-fig img{display:block;max-width:100%;height:auto;margin:0 auto;border-radius:4px}
+[data-theme="dark"] .q-fig{background:#eef0f3;border-color:rgba(255,255,255,.16)}
+.review-item .q-fig{margin:10px 0 0;max-width:520px}
 .options{display:flex;flex-direction:column;gap:10px}
 .option{display:flex;gap:12px;align-items:flex-start;padding:13px 15px;border:1.5px solid var(--border);border-radius:var(--radius-sm);
   background:var(--surface);transition:.13s;text-align:left;width:100%;color:var(--text);font-size:17px;line-height:1.55}
