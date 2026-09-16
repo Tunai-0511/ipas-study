@@ -1,3 +1,8 @@
 ipas_src/
 *.pyc
 .claude/
+node_modules/
+.wrangler/
+dist/
+.dev.vars*
+.env*
