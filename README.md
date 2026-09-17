@@ -47,6 +47,7 @@
 - 📈 **成長曲線** — 題目加權的平均正確率、累積作答量、近期趨勢（不被單場難度誤導）。
 - 🔌 **PWA 離線可用** — 加到主畫面像 App 一樣用，沒網路也能刷題。
 - 👤 **登入即有名稱** — 信箱驗證碼登入使用 Email 的 `@` 前綴；登入資料已有 `full_name`／`name` 時優先採用。點側欄名稱即可更改，三站與雲端保留自訂名稱，不必新增使用者。
+- 🔑 **Google／信箱登入** — Google provider 啟用後，首頁顯示「使用 Google 登入」；保留信箱驗證碼與訪客瀏覽。Google 登入只使用基本個人資料與 Email，不要求 Gmail 存取權。
 - ☁️ **跨裝置雲端同步** — 登入後手機、電腦進度自動同步（Supabase）。
 - 🌗 **深淺色主題** — 全站主題感應，跨認證同步。
 - 🛡️ **隱私友善** — 無 cookie 追蹤、無第三方廣告。
@@ -117,12 +118,28 @@ npx serve .
 3. 若建立新 Supabase 專案，更新根目錄 `index.html`、`admin/index.html` 及三站 `assets/js/cloud.js` 的 `SB_URL`、`SB_KEY`。前端只可使用公開 publishable／anon key，不能放 `service_role` 或 secret key。
 4. 啟用 Email 登入，將正式網域及需要的登入返回網址加入 Supabase Auth 的 Site URL／Redirect URLs；本機驗證時另加入本機來源。寄信與 OTP 範本需在 Supabase Auth 設定，SQL 不會設定寄信服務。
 
+### 啟用 Google 登入
+
+1. 在 Google Auth Platform 設定應用程式品牌與使用對象，建立 **Web application** OAuth client。正式站的 Authorized JavaScript origins 為 `https://ipas.tun9i.com`。
+2. 將 Supabase 的 callback URL 加入 Google 的 **Authorized redirect URIs**：`https://mugrltimxkvlqyksymjq.supabase.co/auth/v1/callback`。這是 Google 返回 Supabase 的網址，不是首頁網址。
+3. 在 Supabase Auth → Sign In / Providers → Google 填入 Client ID／Client Secret 並啟用。**Client Secret 只保存在供應商設定，不能加入 HTML、原始碼、瀏覽器儲存或 Git。** 前端使用既有公開 anon key。
+4. 在 Supabase Auth URL Configuration 設定 Site URL 為 `https://ipas.tun9i.com`，並允許實際首頁返回網址（目前 allowlist 為 `https://ipas.tun9i.com/**`）。本機測試需另允許例如 `http://localhost:8000/`。
+5. 若 Google 應用程式處於 Testing，只有已加入的測試使用者能登入；對一般使用者開放前，應確認 Audience／Publishing status 已適當設定。
+
+首頁會透過 Supabase 公開 `/auth/v1/settings` 確認 `external.google === true` 才顯示可點擊的 Google 按鈕；未啟用、離線或查詢失敗時仍可使用信箱／訪客流程。這項檢查僅代表 provider 已啟用，不代表 Client ID、Secret 或 Google 授權畫面已實際驗證成功。
+
+Google 按鈕沿用現有 Supabase client 的 `signInWithOAuth` 隱式流程，回到目前首頁路徑；不要求額外 scopes 或離線 Google 存取，也不另外擷取或保存 Google provider token。取消／失敗會顯示中文訊息，瀏覽器返回後可重試；登入成功後既有跨站同步與自訂名稱規則照常使用。更換不同 Google 帳號不保證會接續原本另一個信箱帳號的雲端紀錄。
+
+參考：[Supabase Google 登入官方文件](https://supabase.com/docs/guides/auth/social-login/auth-google)。
+
 ### 後端驗證
 
 ```bash
 npm ci
 npm test
 ```
+
+Google 登入測試執行首頁實際登入程式，涵蓋 provider 啟用判斷、跳轉參數、防止連點、錯誤與返回重試、回呼參數清理，以及信箱／訪客流程保留；另使用網站現有 Supabase SDK，驗證合成 callback token 成功與 `/user` 回傳 401 的失敗情境，確認初始化錯誤不會被既有訪客／登入狀態掩蓋。外部 Auth 與 settings 回應採合成資料，不會進行真實 Google 授權。正式啟用後仍需用測試帳號完成 Google → Supabase → 首頁的登入與登出驗證。
 
 名稱與同步測試使用實際 Store／Cloud 程式及合成登入資料，涵蓋首次命名、自訂名稱衝突、新裝置還原與紀錄保留；不寄送驗證碼。資料庫測試使用獨立的 PGlite PostgreSQL 與合成學習紀錄，驗證管理員查詢、一般使用者拒絕、匿名拒絕、本人資料隔離與重複建置；不連接或修改正式資料庫。
 

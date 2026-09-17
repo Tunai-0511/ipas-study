@@ -122,13 +122,13 @@ footer{
 }
 
 /* ===== 登入閘門 ===== */
-#gate{position:fixed;inset:0;z-index:40;display:flex;align-items:center;justify-content:center;padding:24px;
+#gate{position:fixed;inset:0;z-index:40;display:flex;align-items:center;justify-content:center;padding:24px;overflow-y:auto;
   background:var(--bg);transition:opacity .45s ease, visibility .45s}
 #gate.gone{opacity:0;visibility:hidden;pointer-events:none}
 #gate::before{content:"";position:absolute;inset:0;background:url("junior/assets/media/bg-light.jpg") center/cover no-repeat;opacity:.55}
 html.dark-on #gate::before{background-image:url("junior/assets/media/bg-dark.jpg");opacity:.65}
 #gate::after{content:"";position:absolute;inset:0;background:color-mix(in srgb, var(--bg) 30%, transparent);backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px)}
-.gate-card{position:relative;z-index:1;width:100%;max-width:400px;border-radius:24px;padding:38px 34px 28px;text-align:center;
+.gate-card{position:relative;z-index:1;width:100%;max-width:400px;margin:auto;border-radius:24px;padding:38px 34px 28px;text-align:center;
   background:color-mix(in srgb, var(--tile) 74%, transparent);
   backdrop-filter:blur(30px) saturate(1.9);-webkit-backdrop-filter:blur(30px) saturate(1.9);
   border:1px solid color-mix(in srgb, var(--text) 10%, transparent);
@@ -147,6 +147,16 @@ html.dark-on #gate::before{background-image:url("junior/assets/media/bg-dark.jpg
   background:linear-gradient(96deg,#5b5bd6,#00b3a4);color:#fff;transition:transform .2s, box-shadow .2s;margin-bottom:6px}
 .gate-btn:hover{transform:translateY(-1px);box-shadow:0 10px 26px -10px rgba(91,91,214,.55)}
 .gate-btn:disabled{opacity:.55;cursor:default;transform:none;box-shadow:none}
+.gate-google{width:100%;min-height:44px;display:flex;align-items:center;justify-content:center;gap:12px;padding:11px 12px;
+  border:1px solid #747775;border-radius:12px;background:#fff;color:#1f1f1f;font:500 14px/20px Arial,sans-serif;cursor:pointer}
+.gate-google svg{width:20px;height:20px;flex-shrink:0}
+.gate-google:hover{background:#f8faff;box-shadow:0 1px 3px rgba(60,64,67,.2)}
+.gate-google:focus-visible{outline:3px solid var(--link);outline-offset:3px}
+.gate-google:disabled{cursor:wait;opacity:.6;box-shadow:none}
+.gate-divider{display:flex;align-items:center;gap:12px;margin:16px 0;color:var(--mute);font-size:12px}
+.gate-divider::before,.gate-divider::after{content:"";height:1px;flex:1;background:var(--divider)}
+#gateOAuthStatus:empty{display:none}
+#gateOAuthStatus{margin:0 0 12px;line-height:1.5}
 .gate-status{min-height:18px;font-size:12.5px;margin:2px 0 6px;color:var(--mute)}
 .gate-status.err{color:#e5566b}.gate-status.ok{color:#00b3a4}
 .gate-guest{font-size:13px;color:var(--link);background:none;border:none;cursor:pointer;margin-top:4px}
@@ -180,10 +190,18 @@ html.authed .gnav .user-chip{display:inline-flex}
       <path class="draw2" d="M33 49 v10 c0 6 8 9 17 9 s17-3 17-9 v-10" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
     </svg>
     <div class="gate-title">iPAS 備考學院</div>
-    <p class="gate-sub">輸入信箱即可登入，第一次使用會自動完成註冊。<br>成績與收藏將在你的裝置之間同步。</p>
-    <input class="gate-field" id="gateEmail" type="email" placeholder="you@example.com" autocomplete="email" />
+    <p class="gate-sub">登入後，成績與收藏會在你的裝置之間同步。<br>第一次使用會自動完成註冊。</p>
+    <div id="gateGoogleWrap" hidden>
+      <button class="gate-google" id="gateGoogle" type="button" disabled>
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6C44.4 38.03 46.98 31.87 46.98 24.55z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.91-5.8l-7.73-6c-2.15 1.45-4.92 2.3-8.18 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+        <span id="gateGoogleLabel">使用 Google 登入</span>
+      </button>
+      <div class="gate-divider">或以信箱登入</div>
+    </div>
+    <div class="gate-status" id="gateOAuthStatus" role="status" aria-live="polite"></div>
+    <input class="gate-field" id="gateEmail" type="email" aria-label="電子信箱" placeholder="you@example.com" autocomplete="email" />
     <div id="gateCode"><input class="gate-field" id="gateToken" inputmode="numeric" placeholder="輸入信中的驗證碼" /></div>
-    <div class="gate-status" id="gateStatus"></div>
+    <div class="gate-status" id="gateStatus" role="status" aria-live="polite"></div>
     <button class="gate-btn" id="gateGo">寄送驗證碼</button>
     <button class="gate-guest" id="gateGuest">先以訪客瀏覽 →</button>
     <p class="gate-note">也可以直接點信件中的登入連結。資料由資料庫層級權限保護，僅你本人可讀取。</p>
@@ -313,10 +331,86 @@ html.authed .gnav .user-chip{display:inline-flex}
 <script>
 window.addEventListener("DOMContentLoaded", function () {
   var gate = document.getElementById("gate");
-  if (!window.supabase) { gate.classList.add("gone"); return; }
-  var sb = window.supabase.createClient(
-    "https://mugrltimxkvlqyksymjq.supabase.co",
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im11Z3JsdGlteGt2bHF5a3N5bWpxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODM2NTY0MDgsImV4cCI6MjA5OTIzMjQwOH0.OfJpNubw7WNF4ca56LZT_oWawiJlZm10Fm1l7rbRI8s");
+  document.getElementById("gateGuest").onclick = function () {
+    sessionStorage.setItem("ipas_guest", "1");
+    gate.classList.add("gone");
+  };
+  if (!window.supabase) {
+    document.getElementById("gateGo").disabled = true;
+    document.getElementById("gateStatus").textContent = "登入服務暫時無法載入，請重新整理或先以訪客瀏覽。";
+    return;
+  }
+  var SB_URL = "https://mugrltimxkvlqyksymjq.supabase.co";
+  var SB_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im11Z3JsdGlteGt2bHF5a3N5bWpxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODM2NTY0MDgsImV4cCI6MjA5OTIzMjQwOH0.OfJpNubw7WNF4ca56LZT_oWawiJlZm10Fm1l7rbRI8s";
+  var googleBtn = document.getElementById("gateGoogle"), googleLabel = document.getElementById("gateGoogleLabel");
+  var googleWrap = document.getElementById("gateGoogleWrap"), oauthStatus = document.getElementById("gateOAuthStatus");
+  var googleAvailable = false, googleBusy = false;
+  function googleStatus(message) { oauthStatus.textContent = message || ""; oauthStatus.className = "gate-status" + (message ? " err" : ""); }
+  function resetGoogle() {
+    googleBusy = false; googleBtn.disabled = !googleAvailable;
+    googleBtn.setAttribute("aria-busy", "false"); googleLabel.textContent = "使用 Google 登入";
+  }
+  // Successful callback tokens belong to Supabase; remember only whether this is a callback.
+  var callbackError = "";
+  var callbackUrl = new URL(location.href), callbackHash = new URLSearchParams(callbackUrl.hash.slice(1));
+  var hasAuthCallback = [callbackUrl.searchParams, callbackHash].some(function (params) {
+    return ["access_token", "refresh_token", "provider_token", "provider_refresh_token", "code", "error", "error_code", "error_description"].some(function (key) { return params.has(key); });
+  });
+  var callbackPending = hasAuthCallback;
+  function clearCallbackParams() {
+    var url = new URL(location.href), hash = new URLSearchParams(url.hash.slice(1));
+    [url.searchParams, hash].forEach(function (params) {
+      ["error", "error_code", "error_description", "access_token", "refresh_token", "provider_token", "provider_refresh_token", "expires_in", "expires_at", "token_type", "code"].forEach(function (key) { params.delete(key); });
+    });
+    url.hash = hash.toString();
+    try { history.replaceState(history.state, "", url.pathname + url.search + url.hash); } catch (e) {}
+  }
+  function callbackFailed(message) {
+    callbackPending = false;
+    callbackError = message || "登入驗證未完成，請重新登入或使用信箱驗證碼。";
+    if (hasAuthCallback) clearCallbackParams();
+    googleStatus(callbackError); gate.classList.remove("gone");
+  }
+  function retryLogin() { callbackError = ""; callbackPending = false; googleStatus(""); }
+  if ([callbackUrl.searchParams, callbackHash].some(function (params) {
+    return params.has("error") || params.has("error_code") || params.has("error_description");
+  })) {
+    callbackFailed("登入未完成，請重新嘗試或使用信箱驗證碼。");
+  }
+  var sb = window.supabase.createClient(SB_URL, SB_KEY);
+  async function checkGoogleProvider() {
+    googleAvailable = false; googleWrap.hidden = true; googleBtn.disabled = true;
+    var controller = new AbortController(), timer = setTimeout(function () { controller.abort(); }, 6000);
+    try {
+      var response = await fetch(SB_URL + "/auth/v1/settings", { headers: { apikey: SB_KEY }, cache: "no-store", signal: controller.signal });
+      if (!response.ok) return;
+      var settings = await response.json();
+      googleAvailable = !!(settings && settings.external && settings.external.google === true);
+      googleWrap.hidden = !googleAvailable; googleBtn.disabled = !googleAvailable || googleBusy;
+    } catch (e) {
+      // Email OTP and guest browsing remain available when provider settings cannot be checked.
+    } finally { clearTimeout(timer); }
+  }
+  googleBtn.onclick = async function () {
+    if (!googleAvailable || googleBusy) return;
+    googleBusy = true; googleBtn.disabled = true; googleBtn.setAttribute("aria-busy", "true");
+    googleLabel.textContent = "正在前往 Google…"; retryLogin();
+    sessionStorage.removeItem("ipas_guest");
+    try {
+      var result = await sb.auth.signInWithOAuth({ provider: "google", options: {
+        redirectTo: location.origin + location.pathname, queryParams: { prompt: "select_account" }
+      } });
+      if (result.error || !result.data || !result.data.url) throw new Error("oauth_unavailable");
+      // Supabase performs the navigation. Keep the button busy until leaving this page.
+    } catch (e) {
+      resetGoogle(); googleStatus("Google 登入暫時無法使用，請重試或使用信箱驗證碼。");
+    }
+  };
+  window.addEventListener("pageshow", function (event) {
+    if (!event.persisted) return;
+    resetGoogle(); googleStatus(callbackError); checkGoogleProvider();
+  });
+  checkGoogleProvider();
   var st = document.getElementById("gateStatus");
   function status(m, k) { st.textContent = m || ""; st.className = "gate-status " + (k || ""); }
   function friendlyErr(e) {
@@ -326,16 +420,27 @@ window.addEventListener("DOMContentLoaded", function () {
     return m.slice(0, 80);
   }
   function authed(on, email) {
+    if (on && (callbackError || callbackPending)) return;
     document.documentElement.classList.toggle("authed", !!on);
     if (on) {
       gate.classList.add("gone");
       var c = document.getElementById("chipMail"); if (c) c.textContent = email || "";
     }
   }
-  sb.auth.getSession().then(function (r) {
+  // getSession() does not return errors encountered while Supabase initializes a URL callback.
+  sb.auth.initialize().then(function (result) {
+    if (callbackError) return null;
+    if (result.error) { callbackFailed(); return null; }
+    return sb.auth.getSession();
+  }).then(function (r) {
+    if (!r || callbackError) return;
+    callbackPending = false;
+    if (r.error || (hasAuthCallback && !r.data.session)) { callbackFailed(); return; }
     var s = r.data.session;
     if (s) authed(true, s.user.email);
-    else if (sessionStorage.getItem("ipas_guest") === "1") gate.classList.add("gone");
+    else if (!callbackError && sessionStorage.getItem("ipas_guest") === "1") gate.classList.add("gone");
+  }).catch(function () {
+    callbackFailed(callbackError || "登入服務暫時無法連線，請重新整理或使用信箱驗證碼。");
   });
   sb.auth.onAuthStateChange(function (ev, s) {
     if (ev === "SIGNED_IN" && s) authed(true, s.user.email);
@@ -344,6 +449,7 @@ window.addEventListener("DOMContentLoaded", function () {
       sessionStorage.removeItem("ipas_guest");
       gate.classList.remove("gone", "sent");
       var b = document.getElementById("gateGo"); b.textContent = "寄送驗證碼"; b.disabled = false;
+      sent = false; email = ""; resetGoogle(); googleStatus(callbackError);
       status("");
     }
   });
@@ -353,6 +459,7 @@ window.addEventListener("DOMContentLoaded", function () {
     if (!sent) {
       email = (document.getElementById("gateEmail").value || "").trim();
       if (email.indexOf("@") < 1) { status("請輸入有效信箱", "err"); return; }
+      retryLogin();
       btn.disabled = true; status("寄送中…");
       sb.auth.signInWithOtp({ email: email, options: { emailRedirectTo: location.origin + location.pathname } })
         .then(function (r) {
@@ -364,6 +471,7 @@ window.addEventListener("DOMContentLoaded", function () {
     } else {
       var code = (document.getElementById("gateToken").value || "").trim();
       if (!code) { status("請輸入驗證碼", "err"); return; }
+      retryLogin();
       btn.disabled = true; status("驗證中…");
       sb.auth.verifyOtp({ email: email, token: code, type: "email" })
         .then(function (r) {
@@ -372,10 +480,6 @@ window.addEventListener("DOMContentLoaded", function () {
           status("登入成功", "ok");
         });
     }
-  };
-  document.getElementById("gateGuest").onclick = function () {
-    sessionStorage.setItem("ipas_guest", "1");
-    gate.classList.add("gone");
   };
   var out = document.getElementById("chipOut");
   if (out) out.onclick = function () { sb.auth.signOut(); };
