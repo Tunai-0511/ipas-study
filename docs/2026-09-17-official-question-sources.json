@@ -1,0 +1,499 @@
+{
+  "sources": [
+    {
+      "subject": "s1",
+      "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/bf93f438f7be48d295c1b40a34d79f3d/115%E5%B9%B4%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%B8%AD%E7%B4%9AAI%E6%87%89%E7%94%A8%E8%A6%8F%E5%8A%83%E5%B8%AB_%E7%AC%AC%E4%B8%80%E7%A7%91_%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E6%8A%80%E8%A1%93%E6%87%89%E7%94%A8%E8%88%87%E8%A6%8F%E5%8A%83_%E5%85%AC%E5%91%8A%E8%A9%A6%E9%A1%8C_20260615003359.pdf",
+      "pages": 15,
+      "bytes": 721396,
+      "sha256": "86a52c105ec68048060eb4b20f3ba92213267fd8c7dfdb718fbcc0c28f90f179",
+      "examDate": "2026-05-23",
+      "sourcePage": "https://www.ipas.org.tw/certification/AIAP/learning-resources"
+    },
+    {
+      "subject": "s3",
+      "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/bf93f438f7be48d295c1b40a34d79f3d/115%E5%B9%B4%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%B8%AD%E7%B4%9AAI%E6%87%89%E7%94%A8%E8%A6%8F%E5%8A%83%E5%B8%AB_%E7%AC%AC%E4%B8%89%E7%A7%91_%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E6%8A%80%E8%A1%93%E8%88%87%E6%87%89%E7%94%A8_%E5%85%AC%E5%91%8A%E8%A9%A6%E9%A1%8C_20260615003428.pdf",
+      "pages": 18,
+      "bytes": 1596592,
+      "sha256": "96c553d232e0902a4973a612d3c44c5867466bb21af626e7480f9a1e76a03e76",
+      "examDate": "2026-05-23",
+      "sourcePage": "https://www.ipas.org.tw/certification/AIAP/learning-resources"
+    },
+    {
+      "subject": "s2",
+      "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/bf93f438f7be48d295c1b40a34d79f3d/115%E5%B9%B4%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%B8%AD%E7%B4%9AAI%E6%87%89%E7%94%A8%E8%A6%8F%E5%8A%83%E5%B8%AB_%E7%AC%AC%E4%BA%8C%E7%A7%91_%E5%A4%A7%E6%95%B8%E6%93%9A%E8%99%95%E7%90%86%E5%88%86%E6%9E%90%E8%88%87%E6%87%89%E7%94%A8_%E5%85%AC%E5%91%8A%E8%A9%A6%E9%A1%8C_20260615003417.pdf",
+      "pages": 17,
+      "bytes": 789445,
+      "sha256": "86436d512dcd8e323fa3351c4254d7135adf92095c11a988616ddf449837effd",
+      "examDate": "2026-05-23",
+      "sourcePage": "https://www.ipas.org.tw/certification/AIAP/learning-resources"
+    }
+  ],
+  "changedQuestionIds": [
+    "s1-115-1-19",
+    "s2-115-1-2",
+    "s2-115-1-8",
+    "s2-115-1-19",
+    "s2-115-1-23",
+    "s2-115-1-39",
+    "s2-115-1-40",
+    "s2-115-1-41",
+    "s2-115-1-43",
+    "s2-115-1-50",
+    "s2-115-1-42",
+    "s2-115-1-44",
+    "s2-115-1-45",
+    "s2-115-1-46",
+    "s2-115-1-47",
+    "s2-115-1-48",
+    "s2-115-1-49",
+    "s3-115-1-40",
+    "s3-115-1-41",
+    "s3-115-1-42",
+    "s3-115-1-43",
+    "s3-115-1-44",
+    "s3-115-1-45",
+    "s3-115-1-46",
+    "s3-115-1-47",
+    "s3-115-1-48",
+    "s3-115-1-49",
+    "s3-115-1-50"
+  ],
+  "figures": [
+    {
+      "questionIds": [
+        "s1-115-1-19"
+      ],
+      "sourceSubject": "s1",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/bf93f438f7be48d295c1b40a34d79f3d/115%E5%B9%B4%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%B8%AD%E7%B4%9AAI%E6%87%89%E7%94%A8%E8%A6%8F%E5%8A%83%E5%B8%AB_%E7%AC%AC%E4%B8%80%E7%A7%91_%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E6%8A%80%E8%A1%93%E6%87%89%E7%94%A8%E8%88%87%E8%A6%8F%E5%8A%83_%E5%85%AC%E5%91%8A%E8%A9%A6%E9%A1%8C_20260615003359.pdf",
+      "sourceSha256": "86a52c105ec68048060eb4b20f3ba92213267fd8c7dfdb718fbcc0c28f90f179",
+      "sourcePage": 6,
+      "cropBoundsPdfPointsTopLeft": [
+        119,
+        359,
+        437,
+        514
+      ],
+      "renderScale": 3,
+      "output": "intermediate/assets/questions/115-1/s1-q019.png",
+      "width": 954,
+      "height": 465,
+      "sha256": "75132e73fc73b1cadd8be560f84c0da3daf2a8f04930612d9ecc09bc9f425a5e",
+      "role": "question figure",
+      "visualVerified": true
+    },
+    {
+      "questionIds": [
+        "s2-115-1-2"
+      ],
+      "sourceSubject": "s2",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/bf93f438f7be48d295c1b40a34d79f3d/115%E5%B9%B4%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%B8%AD%E7%B4%9AAI%E6%87%89%E7%94%A8%E8%A6%8F%E5%8A%83%E5%B8%AB_%E7%AC%AC%E4%BA%8C%E7%A7%91_%E5%A4%A7%E6%95%B8%E6%93%9A%E8%99%95%E7%90%86%E5%88%86%E6%9E%90%E8%88%87%E6%87%89%E7%94%A8_%E5%85%AC%E5%91%8A%E8%A9%A6%E9%A1%8C_20260615003417.pdf",
+      "sourceSha256": "86436d512dcd8e323fa3351c4254d7135adf92095c11a988616ddf449837effd",
+      "sourcePage": 1,
+      "cropBoundsPdfPointsTopLeft": [
+        103,
+        310,
+        211,
+        368
+      ],
+      "renderScale": 3,
+      "output": "intermediate/assets/questions/115-1/s2-q002.png",
+      "width": 324,
+      "height": 174,
+      "sha256": "206d04f2ce24f96c14dcdd07b1da8cc30bbb1fc2056d137f1bbf54c759da82c6",
+      "role": "question figure",
+      "visualVerified": true
+    },
+    {
+      "questionIds": [
+        "s2-115-1-8"
+      ],
+      "sourceSubject": "s2",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/bf93f438f7be48d295c1b40a34d79f3d/115%E5%B9%B4%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%B8%AD%E7%B4%9AAI%E6%87%89%E7%94%A8%E8%A6%8F%E5%8A%83%E5%B8%AB_%E7%AC%AC%E4%BA%8C%E7%A7%91_%E5%A4%A7%E6%95%B8%E6%93%9A%E8%99%95%E7%90%86%E5%88%86%E6%9E%90%E8%88%87%E6%87%89%E7%94%A8_%E5%85%AC%E5%91%8A%E8%A9%A6%E9%A1%8C_20260615003417.pdf",
+      "sourceSha256": "86436d512dcd8e323fa3351c4254d7135adf92095c11a988616ddf449837effd",
+      "sourcePage": 2,
+      "cropBoundsPdfPointsTopLeft": [
+        103,
+        693,
+        224,
+        751
+      ],
+      "renderScale": 3,
+      "output": "intermediate/assets/questions/115-1/s2-q008.png",
+      "width": 363,
+      "height": 174,
+      "sha256": "45d86d72250c946638cd1068e62d9eb3fc1aeec4bb7e57815246ded71932b2dd",
+      "role": "question figure",
+      "visualVerified": true
+    },
+    {
+      "questionIds": [
+        "s2-115-1-19"
+      ],
+      "sourceSubject": "s2",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/bf93f438f7be48d295c1b40a34d79f3d/115%E5%B9%B4%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%B8%AD%E7%B4%9AAI%E6%87%89%E7%94%A8%E8%A6%8F%E5%8A%83%E5%B8%AB_%E7%AC%AC%E4%BA%8C%E7%A7%91_%E5%A4%A7%E6%95%B8%E6%93%9A%E8%99%95%E7%90%86%E5%88%86%E6%9E%90%E8%88%87%E6%87%89%E7%94%A8_%E5%85%AC%E5%91%8A%E8%A9%A6%E9%A1%8C_20260615003417.pdf",
+      "sourceSha256": "86436d512dcd8e323fa3351c4254d7135adf92095c11a988616ddf449837effd",
+      "sourcePage": 6,
+      "cropBoundsPdfPointsTopLeft": [
+        103,
+        136,
+        292,
+        368
+      ],
+      "renderScale": 3,
+      "output": "intermediate/assets/questions/115-1/s2-q019.png",
+      "width": 567,
+      "height": 696,
+      "sha256": "f452cdce9fc86e13988e7294a98bd6db9f1b8c4663e568489d4adcff93bd831b",
+      "role": "question figure",
+      "visualVerified": true
+    },
+    {
+      "questionIds": [
+        "s2-115-1-23"
+      ],
+      "sourceSubject": "s2",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/bf93f438f7be48d295c1b40a34d79f3d/115%E5%B9%B4%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%B8%AD%E7%B4%9AAI%E6%87%89%E7%94%A8%E8%A6%8F%E5%8A%83%E5%B8%AB_%E7%AC%AC%E4%BA%8C%E7%A7%91_%E5%A4%A7%E6%95%B8%E6%93%9A%E8%99%95%E7%90%86%E5%88%86%E6%9E%90%E8%88%87%E6%87%89%E7%94%A8_%E5%85%AC%E5%91%8A%E8%A9%A6%E9%A1%8C_20260615003417.pdf",
+      "sourceSha256": "86436d512dcd8e323fa3351c4254d7135adf92095c11a988616ddf449837effd",
+      "sourcePage": 7,
+      "cropBoundsPdfPointsTopLeft": [
+        103,
+        434,
+        312,
+        634
+      ],
+      "renderScale": 3,
+      "output": "intermediate/assets/questions/115-1/s2-q023.png",
+      "width": 627,
+      "height": 600,
+      "sha256": "b3d65abf3680588c5b458f4fd66732c95b9b7fe1c3be4f82db1b28c89d1b171a",
+      "role": "question figure",
+      "visualVerified": true
+    },
+    {
+      "questionIds": [
+        "s2-115-1-39"
+      ],
+      "sourceSubject": "s2",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/bf93f438f7be48d295c1b40a34d79f3d/115%E5%B9%B4%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%B8%AD%E7%B4%9AAI%E6%87%89%E7%94%A8%E8%A6%8F%E5%8A%83%E5%B8%AB_%E7%AC%AC%E4%BA%8C%E7%A7%91_%E5%A4%A7%E6%95%B8%E6%93%9A%E8%99%95%E7%90%86%E5%88%86%E6%9E%90%E8%88%87%E6%87%89%E7%94%A8_%E5%85%AC%E5%91%8A%E8%A9%A6%E9%A1%8C_20260615003417.pdf",
+      "sourceSha256": "86436d512dcd8e323fa3351c4254d7135adf92095c11a988616ddf449837effd",
+      "sourcePage": 12,
+      "cropBoundsPdfPointsTopLeft": [
+        105,
+        198,
+        340,
+        358
+      ],
+      "renderScale": 3,
+      "output": "intermediate/assets/questions/115-1/s2-q039.png",
+      "width": 705,
+      "height": 480,
+      "sha256": "462d50b08a8be46f7a57a53117bfcb97b578a25dd0095b7e226e4f2c33154a2e",
+      "role": "question figure",
+      "visualVerified": true
+    },
+    {
+      "questionIds": [
+        "s2-115-1-40"
+      ],
+      "sourceSubject": "s2",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/bf93f438f7be48d295c1b40a34d79f3d/115%E5%B9%B4%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%B8%AD%E7%B4%9AAI%E6%87%89%E7%94%A8%E8%A6%8F%E5%8A%83%E5%B8%AB_%E7%AC%AC%E4%BA%8C%E7%A7%91_%E5%A4%A7%E6%95%B8%E6%93%9A%E8%99%95%E7%90%86%E5%88%86%E6%9E%90%E8%88%87%E6%87%89%E7%94%A8_%E5%85%AC%E5%91%8A%E8%A9%A6%E9%A1%8C_20260615003417.pdf",
+      "sourceSha256": "86436d512dcd8e323fa3351c4254d7135adf92095c11a988616ddf449837effd",
+      "sourcePage": 12,
+      "cropBoundsPdfPointsTopLeft": [
+        105,
+        464,
+        394,
+        718
+      ],
+      "renderScale": 3,
+      "output": "intermediate/assets/questions/115-1/s2-q040.png",
+      "width": 867,
+      "height": 762,
+      "sha256": "d32aeecb978181a28c77e8b1643ba715b03f9dcee49f8609b552e9fc7d96dfbf",
+      "role": "question figure",
+      "visualVerified": true
+    },
+    {
+      "questionIds": [
+        "s2-115-1-41"
+      ],
+      "sourceSubject": "s2",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/bf93f438f7be48d295c1b40a34d79f3d/115%E5%B9%B4%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%B8%AD%E7%B4%9AAI%E6%87%89%E7%94%A8%E8%A6%8F%E5%8A%83%E5%B8%AB_%E7%AC%AC%E4%BA%8C%E7%A7%91_%E5%A4%A7%E6%95%B8%E6%93%9A%E8%99%95%E7%90%86%E5%88%86%E6%9E%90%E8%88%87%E6%87%89%E7%94%A8_%E5%85%AC%E5%91%8A%E8%A9%A6%E9%A1%8C_20260615003417.pdf",
+      "sourceSha256": "86436d512dcd8e323fa3351c4254d7135adf92095c11a988616ddf449837effd",
+      "sourcePage": 13,
+      "cropBoundsPdfPointsTopLeft": [
+        105,
+        441,
+        491,
+        526
+      ],
+      "renderScale": 3,
+      "output": "intermediate/assets/questions/115-1/s2-q041.png",
+      "width": 1158,
+      "height": 255,
+      "sha256": "587ad65d7cdbfbde95fe8cb47f3b96f0b4cb453ab5bc6d36e64cbf8ac555999f",
+      "role": "question figure",
+      "visualVerified": true
+    },
+    {
+      "questionIds": [
+        "s2-115-1-43"
+      ],
+      "sourceSubject": "s2",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/bf93f438f7be48d295c1b40a34d79f3d/115%E5%B9%B4%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%B8%AD%E7%B4%9AAI%E6%87%89%E7%94%A8%E8%A6%8F%E5%8A%83%E5%B8%AB_%E7%AC%AC%E4%BA%8C%E7%A7%91_%E5%A4%A7%E6%95%B8%E6%93%9A%E8%99%95%E7%90%86%E5%88%86%E6%9E%90%E8%88%87%E6%87%89%E7%94%A8_%E5%85%AC%E5%91%8A%E8%A9%A6%E9%A1%8C_20260615003417.pdf",
+      "sourceSha256": "86436d512dcd8e323fa3351c4254d7135adf92095c11a988616ddf449837effd",
+      "sourcePage": 14,
+      "cropBoundsPdfPointsTopLeft": [
+        105,
+        372,
+        350,
+        481
+      ],
+      "renderScale": 3,
+      "output": "intermediate/assets/questions/115-1/s2-q043.png",
+      "width": 735,
+      "height": 327,
+      "sha256": "7fc7a23ed11310b34681913bb640a93a2b38fdc7ac5f881276edd5e2c9ddbe7e",
+      "role": "question figure",
+      "visualVerified": true
+    },
+    {
+      "questionIds": [
+        "s2-115-1-50"
+      ],
+      "sourceSubject": "s2",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/bf93f438f7be48d295c1b40a34d79f3d/115%E5%B9%B4%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%B8%AD%E7%B4%9AAI%E6%87%89%E7%94%A8%E8%A6%8F%E5%8A%83%E5%B8%AB_%E7%AC%AC%E4%BA%8C%E7%A7%91_%E5%A4%A7%E6%95%B8%E6%93%9A%E8%99%95%E7%90%86%E5%88%86%E6%9E%90%E8%88%87%E6%87%89%E7%94%A8_%E5%85%AC%E5%91%8A%E8%A9%A6%E9%A1%8C_20260615003417.pdf",
+      "sourceSha256": "86436d512dcd8e323fa3351c4254d7135adf92095c11a988616ddf449837effd",
+      "sourcePage": 17,
+      "cropBoundsPdfPointsTopLeft": [
+        105,
+        448,
+        557,
+        652
+      ],
+      "renderScale": 3,
+      "output": "intermediate/assets/questions/115-1/s2-q050.png",
+      "width": 1356,
+      "height": 612,
+      "sha256": "9de6f3cfb8e0d803daf99d6c2de91e49eadb87d23b7e2d3dc74ca8bb3e1919de",
+      "role": "question figure",
+      "visualVerified": true
+    },
+    {
+      "questionIds": [
+        "s2-115-1-48",
+        "s2-115-1-49",
+        "s2-115-1-50"
+      ],
+      "sourceSubject": "s2",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/bf93f438f7be48d295c1b40a34d79f3d/115%E5%B9%B4%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%B8%AD%E7%B4%9AAI%E6%87%89%E7%94%A8%E8%A6%8F%E5%8A%83%E5%B8%AB_%E7%AC%AC%E4%BA%8C%E7%A7%91_%E5%A4%A7%E6%95%B8%E6%93%9A%E8%99%95%E7%90%86%E5%88%86%E6%9E%90%E8%88%87%E6%87%89%E7%94%A8_%E5%85%AC%E5%91%8A%E8%A9%A6%E9%A1%8C_20260615003417.pdf",
+      "sourceSha256": "86436d512dcd8e323fa3351c4254d7135adf92095c11a988616ddf449837effd",
+      "sourcePage": 16,
+      "cropBoundsPdfPointsTopLeft": [
+        105,
+        185,
+        556,
+        338
+      ],
+      "renderScale": 3,
+      "output": "intermediate/assets/questions/115-1/s2-q048-q050-setup.png",
+      "width": 1353,
+      "height": 459,
+      "sha256": "d357b7d23d66d8fd71cf161dd45c8d865472c48eb1563dc6bcb98ef2e1b82100",
+      "role": "question figure",
+      "visualVerified": true
+    },
+    {
+      "questionIds": [
+        "s2-115-1-48",
+        "s2-115-1-49",
+        "s2-115-1-50"
+      ],
+      "sourceSubject": "s2",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/bf93f438f7be48d295c1b40a34d79f3d/115%E5%B9%B4%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%B8%AD%E7%B4%9AAI%E6%87%89%E7%94%A8%E8%A6%8F%E5%8A%83%E5%B8%AB_%E7%AC%AC%E4%BA%8C%E7%A7%91_%E5%A4%A7%E6%95%B8%E6%93%9A%E8%99%95%E7%90%86%E5%88%86%E6%9E%90%E8%88%87%E6%87%89%E7%94%A8_%E5%85%AC%E5%91%8A%E8%A9%A6%E9%A1%8C_20260615003417.pdf",
+      "sourceSha256": "86436d512dcd8e323fa3351c4254d7135adf92095c11a988616ddf449837effd",
+      "sourcePage": 16,
+      "cropBoundsPdfPointsTopLeft": [
+        105,
+        353,
+        556,
+        503
+      ],
+      "renderScale": 3,
+      "output": "intermediate/assets/questions/115-1/s2-q048-q050-data.png",
+      "width": 1353,
+      "height": 450,
+      "sha256": "9cd0072d061345a467f53602e776713ffb663ba29679fd4ef9844fafe524edb4",
+      "role": "question figure",
+      "visualVerified": true
+    },
+    {
+      "sourceSubject": "s3",
+      "sourcePage": 11,
+      "cropBoundsPdfPointsTopLeft": [
+        111.42857142857143,
+        207.14285714285717,
+        455.00000000000006,
+        374.28571428571433
+      ],
+      "renderScale": 2.8,
+      "output": "intermediate/assets/questions/115-1/s3-40-code.png",
+      "visualVerified": true,
+      "sha256": "f17e08e8fb7bb9f059761db0aa0e4c55a15e8e2d31ac3aedc0e9f2a681208e92"
+    },
+    {
+      "sourceSubject": "s3",
+      "sourcePage": 11,
+      "cropBoundsPdfPointsTopLeft": [
+        111.42857142857143,
+        538.5714285714286,
+        482.8571428571429,
+        769.2857142857143
+      ],
+      "renderScale": 2.8,
+      "output": "intermediate/assets/questions/115-1/s3-41-code.png",
+      "visualVerified": true,
+      "sha256": "d4bc4bf7d5e0b99f743f76139bf574896beed44c36106b6a1c01860d86de5808"
+    },
+    {
+      "sourceSubject": "s3",
+      "sourcePage": 12,
+      "cropBoundsPdfPointsTopLeft": [
+        112.14285714285715,
+        252.85714285714286,
+        536.4285714285714,
+        450.00000000000006
+      ],
+      "renderScale": 2.8,
+      "output": "intermediate/assets/questions/115-1/s3-42-43-code.png",
+      "visualVerified": true,
+      "sha256": "3c0459daae2732c68e43e892fbd1f684d39b55204f52c8a350d085f9ece14401"
+    },
+    {
+      "sourceSubject": "s3",
+      "sourcePage": 13,
+      "cropBoundsPdfPointsTopLeft": [
+        112.14285714285715,
+        279.2857142857143,
+        535,
+        641.4285714285714
+      ],
+      "renderScale": 2.8,
+      "output": "intermediate/assets/questions/115-1/s3-44-45-data.png",
+      "visualVerified": true,
+      "sha256": "81de3769788e6701fecc1d73dc189b8e1712399a0b9ea4ce434d8d1c9d96c652"
+    },
+    {
+      "sourceSubject": "s3",
+      "sourcePage": 14,
+      "cropBoundsPdfPointsTopLeft": [
+        112.14285714285715,
+        110.71428571428572,
+        493.5714285714286,
+        257.14285714285717
+      ],
+      "renderScale": 2.8,
+      "output": "intermediate/assets/questions/115-1/s3-44-code.png",
+      "visualVerified": true,
+      "sha256": "d5706e24d961d8aed79e1e7cec6653d4dbcea1a6e23f27157c49ab68755a3197"
+    },
+    {
+      "sourceSubject": "s3",
+      "sourcePage": 14,
+      "cropBoundsPdfPointsTopLeft": [
+        112.14285714285715,
+        417.8571428571429,
+        493.5714285714286,
+        546.4285714285714
+      ],
+      "renderScale": 2.8,
+      "output": "intermediate/assets/questions/115-1/s3-45-code.png",
+      "visualVerified": true,
+      "sha256": "8a6916e656a2138eaffc2648512a22e626662993e73d1318738f6b88837bc9a5"
+    },
+    {
+      "sourceSubject": "s3",
+      "sourcePage": 14,
+      "cropBoundsPdfPointsTopLeft": [
+        112.14285714285715,
+        635,
+        529.2857142857143,
+        702.8571428571429
+      ],
+      "renderScale": 2.8,
+      "output": "intermediate/assets/questions/115-1/s3-45-candidates.png",
+      "visualVerified": true,
+      "sha256": "307e88c9bb6d33f9fd572b8b62839a474b0597044054b20abf8fa18a09332b43"
+    },
+    {
+      "sourceSubject": "s3",
+      "sourcePage": 15,
+      "cropBoundsPdfPointsTopLeft": [
+        112.14285714285715,
+        222.85714285714286,
+        540,
+        582.8571428571429
+      ],
+      "renderScale": 2.8,
+      "output": "intermediate/assets/questions/115-1/s3-46-48-data.png",
+      "visualVerified": true,
+      "sha256": "92362130e23e6f095622e1b177b8a27d9d3f72329c8f6c3bf43f225ae436d360"
+    },
+    {
+      "sourceSubject": "s3",
+      "sourcePage": 15,
+      "cropBoundsPdfPointsTopLeft": [
+        112.14285714285715,
+        612.1428571428572,
+        538.5714285714286,
+        788.5714285714287
+      ],
+      "renderScale": 2.8,
+      "output": "intermediate/assets/questions/115-1/s3-46-code.png",
+      "visualVerified": true,
+      "sha256": "e875dc22532f2af0997ef3551f664463dd3b9d36781ec0264d2e3704b0368fd4"
+    },
+    {
+      "sourceSubject": "s3",
+      "sourcePage": 16,
+      "cropBoundsPdfPointsTopLeft": [
+        112.14285714285715,
+        215.71428571428572,
+        542.8571428571429,
+        688.5714285714287
+      ],
+      "renderScale": 2.8,
+      "output": "intermediate/assets/questions/115-1/s3-47-code.png",
+      "visualVerified": true,
+      "sha256": "1d4c26023fdf25aa4ab421cc18ec6fffedf84175703c08d0b1a62324b9679873"
+    },
+    {
+      "sourceSubject": "s3",
+      "sourcePage": 17,
+      "cropBoundsPdfPointsTopLeft": [
+        112.85714285714286,
+        136.42857142857144,
+        444.28571428571433,
+        397.14285714285717
+      ],
+      "renderScale": 2.8,
+      "output": "intermediate/assets/questions/115-1/s3-48-chart.png",
+      "visualVerified": true,
+      "sha256": "75b9fa24ac7eba2601c5321ddebec7fd461c24ac5469cd68ecb04686ae768f6d"
+    },
+    {
+      "sourceSubject": "s3",
+      "sourcePage": 18,
+      "cropBoundsPdfPointsTopLeft": [
+        112.14285714285715,
+        293.5714285714286,
+        443.5714285714286,
+        415
+      ],
+      "renderScale": 2.8,
+      "output": "intermediate/assets/questions/115-1/s3-50-code.png",
+      "visualVerified": true,
+      "sha256": "69dab93798040314c47f6c40200bf3cd796a3a119417bd0c7e2f5d5c4732b86f"
+    }
+  ]
+}

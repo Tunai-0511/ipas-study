@@ -4,7 +4,7 @@
    同源靜態資源用 stale-while-revalidate（含 bank.js/media 首次使用才快取）；
    AI／代理請求一律走網路、不快取。版本改變時清舊快取。
    ============================================================ */
-var CACHE = "ipas-jr-v32";
+var CACHE = "ipas-jr-v33";
 var CORE = [
   "../assets/require-auth.js?v=1",
   "./",
@@ -39,8 +39,9 @@ self.addEventListener("fetch", function (e) {
   if (url.origin !== self.location.origin) return;                 // 跨源（含 AI API）走網路
   if (url.pathname.indexOf("/.netlify/functions/") >= 0) return;   // AI 代理不快取
 
-  // 導覽：network-first + 1.2s 逾時退快取殼（切換 app／重整不再空等網路）
-  if (req.mode === "navigate") {
+  // 僅 App 首頁導覽可更新 HTML 殼；另開題目附圖仍以圖片自己的 URL 快取。
+  var appPath = new URL("./", self.location.href).pathname;
+  if (req.mode === "navigate" && (url.pathname === appPath || url.pathname === appPath + "index.html")) {
     e.respondWith(caches.open(CACHE).then(function (c) {
       return new Promise(function (resolve) {
         var done = false;
@@ -49,7 +50,7 @@ self.addEventListener("fetch", function (e) {
         }, 1200);
         fetch(req).then(function (res) {
           clearTimeout(timer);
-          if (res && res.status === 200) c.put("index.html", res.clone());
+          if (res && res.status === 200 && /^text\/html(?:;|$)/i.test(res.headers.get("content-type") || "")) c.put("index.html", res.clone());
           if (!done) { done = true; resolve(res); }
         }).catch(function () {
           clearTimeout(timer);

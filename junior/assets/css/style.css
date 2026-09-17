@@ -194,14 +194,26 @@ select option{background:var(--surface);color:var(--text)}
 .q-meta{display:flex;gap:8px;align-items:center;margin-bottom:12px;flex-wrap:wrap}
 .q-badge{font-size:14px;font-weight:800;padding:3px 9px;border-radius:6px;background:var(--surface-2);color:var(--text-soft)}
 .q-badge.subj{background:var(--primary-soft);color:var(--primary-d)}
-.q-stem{font-size:20px;font-weight:650;line-height:1.65;margin-bottom:18px;white-space:pre-wrap}
+.q-stem{font-size:20px;font-weight:650;line-height:1.65;margin-bottom:18px;white-space:pre-wrap;overflow-wrap:anywhere}
+/* 題組說明與官方附圖：文字可換行，原圖可另開分頁放大。 */
+.q-context{margin-bottom:18px;padding:14px 16px;background:var(--surface-2);border:1px solid var(--border);border-radius:var(--radius-sm);font-size:16px;line-height:1.7}
+.q-context-label{font-weight:800;color:var(--primary);margin-bottom:6px}
+.q-code{display:block;max-width:100%;margin:10px 0;padding:10px 12px;border:1px solid var(--border);border-radius:8px;background:var(--surface-2);font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.9em;font-weight:400;line-height:1.6;white-space:pre-wrap;overflow-wrap:anywhere}
+.q-context > div:last-child{white-space:pre-wrap;overflow-wrap:anywhere}
+.q-fig{margin:0 0 18px;padding:10px;background:#fff;border:1px solid var(--border);border-radius:var(--radius-sm)}
+.q-fig a{display:block}
+.q-fig img{display:block;max-width:100%;height:auto;margin:0 auto;border-radius:4px}
+.q-fig-hint{display:block;margin-top:8px;text-align:center;color:#4849c4;font-size:13px}
+[data-theme="dark"] .q-fig{background:#eef0f3;border-color:rgba(255,255,255,.16)}
+.review-item .q-fig{margin:10px 0 0;max-width:520px}
+.review-item .q-context{margin-top:12px}
 .options{display:flex;flex-direction:column;gap:10px}
 .option{display:flex;gap:12px;align-items:flex-start;padding:13px 15px;border:1.5px solid var(--border);border-radius:var(--radius-sm);
   background:var(--surface);transition:.13s;text-align:left;width:100%;color:var(--text);font-size:17px;line-height:1.55}
 .option:hover:not(:disabled){border-color:var(--primary);background:var(--surface-2)}
 .option .opt-key{width:26px;height:26px;border-radius:7px;background:var(--surface-2);color:var(--text-soft);
   font-weight:800;display:grid;place-items:center;flex-shrink:0;font-size:15.5px;border:1px solid var(--border)}
-.option span:last-child{white-space:pre-wrap;overflow-wrap:anywhere}
+.option span:last-child{min-width:0;white-space:pre-wrap;overflow-wrap:anywhere}
 .option.sel{border-color:var(--primary);background:var(--primary-soft)}
 .option.sel .opt-key{background:var(--primary);color:var(--on-primary);border-color:var(--primary)}
 .option.correct{border-color:var(--ok);background:rgba(48,164,108,.1)}
@@ -209,12 +221,16 @@ select option{background:var(--surface);color:var(--text)}
 .option.wrong{border-color:var(--danger);background:rgba(229,72,77,.09)}
 .option.wrong .opt-key{background:var(--danger);color:#fff;border-color:var(--danger)}
 .option:disabled{cursor:default}
-.quiz-foot{margin-top:20px;display:flex;justify-content:space-between;gap:10px}
+.quiz-foot{margin-top:20px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+.quiz-foot > div{max-width:100%;flex-wrap:wrap}
+.quiz-foot .btn{max-width:100%;overflow-wrap:anywhere}
 
 .explain{margin-top:16px;padding:15px;border-radius:var(--radius-sm);background:var(--surface-2);border:1px solid var(--border);font-size:16.5px;line-height:1.7}
 .explain .ex-head{font-weight:800;color:var(--primary);margin-bottom:6px;display:flex;align-items:center;gap:7px}
 .explain .ex-ans{font-weight:800;color:var(--ok)}
 .explain-loading{color:var(--text-mute);font-style:italic}
+.explain{white-space:pre-wrap;overflow-wrap:anywhere}
+.explain .ex-head{white-space:normal;flex-wrap:wrap}
 
 /* 結果 */
 .result-hero{text-align:center;padding:30px 20px}
@@ -225,8 +241,8 @@ select option{background:var(--surface);color:var(--text)}
 .review-item .ri-head{display:flex;gap:10px;align-items:flex-start}
 .ri-status{width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font-size:15.5px;flex-shrink:0;font-weight:800;color:#fff}
 .ri-status.ok{background:var(--ok)}.ri-status.no{background:var(--danger)}
-.ri-stem{font-weight:650;font-size:17px;flex:1}
-.ri-detail{margin:8px 0 0 34px;font-size:16px;color:var(--text-soft)}
+.ri-stem{font-weight:650;font-size:17px;flex:1;min-width:0;white-space:pre-wrap;overflow-wrap:anywhere}
+.ri-detail{margin:8px 0 0 34px;font-size:16px;color:var(--text-soft);white-space:pre-wrap;overflow-wrap:anywhere}
 .ri-detail b{color:var(--text)}
 
 /* ===== 分析 ===== */
@@ -253,6 +269,7 @@ select option{background:var(--surface);color:var(--text)}
 /* 圖表 */
 .chart-wrap{width:100%;overflow-x:auto}
 svg.chart{display:block;width:100%;height:auto;min-width:320px}
+.result-hero > svg.chart{width:160px;min-width:0;max-width:100%;height:auto;margin:0 auto 14px}
 .legend{display:flex;gap:16px;flex-wrap:wrap;margin-top:10px;justify-content:center}
 .legend-item{display:flex;align-items:center;gap:6px;font-size:15px;font-weight:600;color:var(--text-soft)}
 .legend-dot{width:11px;height:11px;border-radius:3px}

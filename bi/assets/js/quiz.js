@@ -7,6 +7,49 @@
 
   function shuffle(a) { a = a.slice(); for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
   function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); }
+  // 僅支援完整配對、獨立成行的 Python／無語言程式區塊，其餘內容維持純文字。
+  function formatText(value) {
+    var lines = String(value == null ? "" : value).split("\n"), parts = [], plain = [];
+    function flush() { if (plain.length) { parts.push(esc(plain.join("\n"))); plain = []; } }
+    for (var i = 0; i < lines.length; i++) {
+      if (!/^```/.test(lines[i])) { plain.push(lines[i]); continue; }
+      var supported = /^```(?:python)?[ \t]*\r?$/.test(lines[i]);
+      var end = i + 1;
+      while (end < lines.length && !/^```[ \t]*\r?$/.test(lines[end])) end++;
+      if (!supported || end === lines.length) {
+        // 未知語言／缺少結尾的區塊原樣保留，避免把其結尾誤認為下一段開頭。
+        var last = end < lines.length ? end : lines.length - 1;
+        for (; i <= last; i++) plain.push(lines[i]);
+        i--; continue;
+      }
+      flush();
+      parts.push('<code class="q-code">' + esc(lines.slice(i + 1, end).join("\n")) + '</code>');
+      i = end;
+    }
+    flush();
+    return parts.join("");
+  }
+  // 共用情境及附圖需跟著每一題呈現，錯題／收藏／逐題檢討才不會缺少資料。
+  function contextBlock(q) {
+    if (!q || typeof q.context !== "string" || !q.context.trim()) return "";
+    return '<div class="q-context"><div class="q-context-label">題組說明</div><div>' + formatText(q.context) + '</div></div>';
+  }
+  function figBlock(q) {
+    if (!q) return "";
+    var paths = (Array.isArray(q.images) ? q.images : []).concat(q.image || []);
+    var seen = {};
+    paths = paths.filter(function (path) {
+      // 只開啟本站已打包的點陣圖；排除外站、協定、路徑跳脫與 HTML/SVG。
+      if (typeof path !== "string" || !/^assets\/(?:[a-z0-9_-]+\/)*[a-z0-9_-]+\.(?:png|jpe?g|webp|gif|avif)$/i.test(path) || seen[path]) return false;
+      seen[path] = true; return true;
+    });
+    return paths.map(function (path, i) {
+      var label = [q.subjectName, q.source, q.number ? "第 " + q.number + " 題" : "本題", "附圖 " + (i + 1)].filter(Boolean).join("・");
+      return '<figure class="q-fig"><a href="' + esc(path) + '" target="_blank" rel="noopener noreferrer" aria-label="' + esc("開啟" + label + "原圖（另開分頁）") + '">' +
+        '<img src="' + esc(path) + '" alt="' + esc(label) + '" loading="lazy" decoding="async">' +
+        '<span class="q-fig-hint">附圖 ' + (i + 1) + '・點擊查看原圖</span></a></figure>';
+    }).join("");
+  }
   function pad2(n){ return n < 10 ? "0" + n : "" + n; }
   function fmtTime(sec){
     sec = Math.max(0, Math.floor(sec || 0));
@@ -119,7 +162,9 @@
               '<span class="q-badge">' + esc(q.source || "") + '</span>' +
               '<button class="qz-bm' + (Store.isBookmarked(q.id) ? ' on' : '') + '" id="qzBm" aria-label="收藏此題" title="收藏此題">' + Icon.get("flag") + '</button>' +
             '</div>' +
-            '<div class="q-stem">' + esc(q.stem) + '</div>' +
+            contextBlock(q) +
+            '<div class="q-stem">' + formatText(q.stem) + '</div>' +
+            figBlock(q) +
             '<div class="options">' +
               LETTERS.map(function (k) {
                 if (!q.options[k]) return "";
@@ -129,7 +174,7 @@
                   else if (k === ans) cls += " wrong";
                 } else if (k === ans) cls += " sel";
                 return '<button class="' + cls + '" data-k="' + k + '"' + (isLocked ? " disabled" : "") + '>' +
-                  '<span class="opt-key">' + k + '</span><span>' + esc(q.options[k]) + '</span></button>';
+                  '<span class="opt-key">' + k + '</span><span>' + formatText(q.options[k]) + '</span></button>';
               }).join("") +
             '</div>' +
             (showResult ? explainBlock(q) : "") +
@@ -153,10 +198,10 @@
       function head() {
         return '<div class="ex-head">' + Icon.get("bulb") + ' 解析　<span class="ex-ans">正解：' + q.answer + '</span></div>';
       }
-      if (q.explanation) return '<div class="explain">' + head() + '<div>' + esc(q.explanation) + '</div>' +
-        (q.concept ? '<div style="margin-top:6px;color:var(--text-mute);font-size:12.5px">觀念：' + esc(q.concept) + '</div>' : '') + '</div>';
+      if (q.explanation) return '<div class="explain">' + head() + '<div>' + formatText(q.explanation) + '</div>' +
+        (q.concept ? '<div style="margin-top:6px;color:var(--text-mute);font-size:12.5px">觀念：' + formatText(q.concept) + '</div>' : '') + '</div>';
       var cached = Store.getExplain(q.id);
-      if (cached) return '<div class="explain">' + head() + '<div>' + esc(cached) + '</div></div>';
+      if (cached) return '<div class="explain">' + head() + '<div>' + formatText(cached) + '</div></div>';
       return '<div class="explain">' + head() + '<div class="explain-loading">本題暫無解析。</div></div>';
     }
 
@@ -181,6 +226,7 @@
     // 鍵盤快速作答：1-4 選項、Enter 下一題/交卷、方向鍵上下題
     function onKey(e) {
       if (e.target && /^(input|textarea|select)$/i.test(e.target.tagName)) return;
+      if (e.key === "Enter" && e.target && e.target.closest && e.target.closest("a, button")) return;
       var q = questions[idx];
       if (e.key >= "1" && e.key <= "4") {
         var k = LETTERS[+e.key - 1];
@@ -201,7 +247,7 @@
       btn.disabled = true; btn.innerHTML = '<span class="spin"></span> 產生中…';
       Ai.explainQuestion(q).then(function (txt) {
         Store.setExplain(q.id, txt);
-        if (body) { body.classList.remove("explain-loading"); body.textContent = txt; }
+        if (body) { body.classList.remove("explain-loading"); body.innerHTML = formatText(txt); }
         btn.remove();
       }).catch(function (e) {
         if (body) { body.classList.add("explain-loading"); body.textContent = "解析失敗：" + e.message; }
@@ -252,15 +298,17 @@
 
       var reviewHtml = qs.map(function (q, i) {
         var ok = ans[i] === q.answer;
-        var yourTxt = ans[i] ? (ans[i] + ". " + (q.options[ans[i]] || "")) : "未作答";
+        var yourTxt = ans[i] ? (esc(ans[i]) + ". " + formatText(q.options[ans[i]] || "")) : "未作答";
         return '<div class="review-item">' +
           '<div class="ri-head"><span class="ri-status ' + (ok ? "ok" : "no") + '">' + (ok ? "✓" : "✕") + '</span>' +
-          '<span class="ri-stem">' + (i + 1) + '. ' + esc(q.stem) + '</span></div>' +
-          '<div class="ri-detail">你的答案：<b style="color:' + (ok ? "var(--ok)" : "var(--danger)") + '">' + esc(yourTxt) + '</b>' +
-          (ok ? "" : '<br>正確答案：<b>' + q.answer + ". " + esc(q.options[q.answer] || "") + '</b>') + '</div>' +
+          '<span class="ri-stem">' + (i + 1) + '. ' + formatText(q.stem) + '</span></div>' +
+          contextBlock(q) +
+          figBlock(q) +
+          '<div class="ri-detail">你的答案：<b style="color:' + (ok ? "var(--ok)" : "var(--danger)") + '">' + yourTxt + '</b>' +
+          (ok ? "" : '<br>正確答案：<b>' + q.answer + ". " + formatText(q.options[q.answer] || "") + '</b>') + '</div>' +
           '<div class="ri-detail" data-exwrap="' + i + '">' +
-            (q.explanation ? ('<div class="explain" style="margin-top:8px"><div class="ex-head">' + Icon.get("bulb") + ' 解析</div><div>' + esc(q.explanation) + '</div></div>')
-              : (Store.getExplain(q.id) ? ('<div class="explain" style="margin-top:8px"><div class="ex-head">' + Icon.get("bulb") + ' 解析</div><div>' + esc(Store.getExplain(q.id)) + '</div></div>')
+            (q.explanation ? ('<div class="explain" style="margin-top:8px"><div class="ex-head">' + Icon.get("bulb") + ' 解析</div><div>' + formatText(q.explanation) + '</div></div>')
+              : (Store.getExplain(q.id) ? ('<div class="explain" style="margin-top:8px"><div class="ex-head">' + Icon.get("bulb") + ' 解析</div><div>' + formatText(Store.getExplain(q.id)) + '</div></div>')
                 : '<div style="margin-top:8px;color:var(--text-mute);font-size:13px">本題暫無解析</div>')) +
           '</div>' +
           '' +
@@ -299,7 +347,7 @@
           btn.disabled = true; btn.innerHTML = '<span class="spin"></span> 產生中…';
           Ai.explainQuestion(q).then(function (txt) {
             Store.setExplain(q.id, txt);
-            wrap.innerHTML = '<div class="explain" style="margin-top:8px">' + esc(txt) + '</div>';
+            wrap.innerHTML = '<div class="explain" style="margin-top:8px">' + formatText(txt) + '</div>';
           }).catch(function (e) { btn.disabled = false; btn.textContent = "重試（" + e.message.slice(0, 40) + "）"; });
         };
       });
