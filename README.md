@@ -120,11 +120,15 @@ npx serve .
 
 ### 啟用 Google 登入
 
+**正式站實測（2026-09-17）：** Google 按鈕已顯示；以一個既有帳號完成 Google → Supabase → 首頁登入、重新整理保留登入，以及登出返回登入畫面。登入後網址的 token 已清除，沿用原 Supabase 使用者並正常還原既有學習紀錄，三站均保留既有自訂名稱。取消授權後會顯示中文訊息，Google 重試與信箱登入仍可操作。此紀錄未涵蓋全新帳號或所有裝置。
+
+Google Audience 目前仍為 **Testing**，未加入測試使用者，已利用下述基本登入 scopes 例外完成無測試警告的真實登入。**自訂品牌驗證尚未完成**，Google 授權畫面目前顯示 Supabase 專案網域。
+
 1. 在 Google Auth Platform 設定應用程式品牌與使用對象，建立 **Web application** OAuth client。正式站的 Authorized JavaScript origins 為 `https://ipas.tun9i.com`。
 2. 將 Supabase 的 callback URL 加入 Google 的 **Authorized redirect URIs**：`https://mugrltimxkvlqyksymjq.supabase.co/auth/v1/callback`。這是 Google 返回 Supabase 的網址，不是首頁網址。
 3. 在 Supabase Auth → Sign In / Providers → Google 填入 Client ID／Client Secret 並啟用。**Client Secret 只保存在供應商設定，不能加入 HTML、原始碼、瀏覽器儲存或 Git。** 前端使用既有公開 anon key。
 4. 在 Supabase Auth URL Configuration 設定 Site URL 為 `https://ipas.tun9i.com`，並允許實際首頁返回網址（目前 allowlist 為 `https://ipas.tun9i.com/**`）。本機測試需另允許例如 `http://localhost:8000/`。
-5. 若 Google 應用程式處於 Testing，只有已加入的測試使用者能登入；對一般使用者開放前，應確認 Audience／Publishing status 已適當設定。
+5. Testing 通常限制測試使用者；但本案僅請求 `openid`、`userinfo.email`、`userinfo.profile`，依 [Google 官方基本登入例外](https://support.google.com/cloud/answer/15549945)，使用者不必在測試名單，也不受測試警告及 7 天授權到期限制。日後若加入其他 scopes，此例外不再適用，須重新確認 Audience／發布狀態與所需審核。
 
 首頁會透過 Supabase 公開 `/auth/v1/settings` 確認 `external.google === true` 才顯示可點擊的 Google 按鈕；未啟用、離線或查詢失敗時仍可使用信箱／訪客流程。這項檢查僅代表 provider 已啟用，不代表 Client ID、Secret 或 Google 授權畫面已實際驗證成功。
 
@@ -139,7 +143,7 @@ npm ci
 npm test
 ```
 
-Google 登入測試執行首頁實際登入程式，涵蓋 provider 啟用判斷、跳轉參數、防止連點、錯誤與返回重試、回呼參數清理，以及信箱／訪客流程保留；另使用網站現有 Supabase SDK，驗證合成 callback token 成功與 `/user` 回傳 401 的失敗情境，確認初始化錯誤不會被既有訪客／登入狀態掩蓋。外部 Auth 與 settings 回應採合成資料，不會進行真實 Google 授權。正式啟用後仍需用測試帳號完成 Google → Supabase → 首頁的登入與登出驗證。
+Google 登入測試執行首頁實際登入程式，涵蓋 provider 啟用判斷、跳轉參數、防止連點、錯誤與返回重試、回呼參數清理，以及信箱／訪客流程保留；另使用網站現有 Supabase SDK，驗證合成 callback token 成功與 `/user` 回傳 401 的失敗情境，確認初始化錯誤不會被既有訪客／登入狀態掩蓋。自動化測試的外部 Auth 與 settings 回應採合成資料，不會進行真實 Google 授權；正式環境已實測項目見上方日期紀錄。
 
 名稱與同步測試使用實際 Store／Cloud 程式及合成登入資料，涵蓋首次命名、自訂名稱衝突、新裝置還原與紀錄保留；不寄送驗證碼。資料庫測試使用獨立的 PGlite PostgreSQL 與合成學習紀錄，驗證管理員查詢、一般使用者拒絕、匿名拒絕、本人資料隔離與重複建置；不連接或修改正式資料庫。
 
