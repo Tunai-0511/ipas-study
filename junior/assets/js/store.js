@@ -81,7 +81,7 @@
   }
   // 合併「同名」的重複使用者（雲端同步＋跨 app 共用名機制可能造成同名多筆），資料併入先建立的那筆
   function dedupeProfiles() {
-    var byName = {}, keep = [], changed = false;
+    var byName = Object.create(null), keep = [], changed = false;
     _root.profiles.forEach(function (p) {
       var k = (p.name || "").trim();
       if (byName[k]) {

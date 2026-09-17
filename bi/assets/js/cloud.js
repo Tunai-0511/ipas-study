@@ -9,9 +9,9 @@
   "use strict";
   var SB_URL = "https://mugrltimxkvlqyksymjq.supabase.co";
   var SB_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im11Z3JsdGlteGt2bHF5a3N5bWpxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODM2NTY0MDgsImV4cCI6MjA5OTIzMjQwOH0.OfJpNubw7WNF4ca56LZT_oWawiJlZm10Fm1l7rbRI8s";
-  var APP_ID = location.pathname.indexOf("/bi/") >= 0 ? "bi"
-    : (location.pathname.indexOf("/intermediate/") >= 0 ? "intermediate" : "junior");
-  var sb = null, pushTimer = null, lastEmail = "";
+  var APP_ID = location.pathname.indexOf("/bi/") >= 0 ? "bi" :
+    (location.pathname.indexOf("/intermediate/") >= 0 ? "intermediate" : "junior");
+  var sb = null, pushTimer = null, syncPromise = null, lastEmail = "";
 
   function el(id) { return document.getElementById(id); }
   function setStatus(kind, msg) {
@@ -30,6 +30,8 @@
     var out = {};
     try {
       out.name = localStorage.getItem("ipas_shared_name") || "";
+      out.nameSource = localStorage.getItem("ipas_shared_name_source") || "";
+      out.nameUpdatedAt = Number(localStorage.getItem("ipas_shared_name_updated_at")) || 0;
       out.theme = localStorage.getItem("ipas_shared_theme") || "";
       var ai = localStorage.getItem("ipas_shared_ai");
       if (ai) out.ai = JSON.parse(ai);
@@ -39,21 +41,6 @@
   function applyShared(d) {
     if (!d) return;
     try {
-      if (d.name) {
-        localStorage.setItem("ipas_shared_name", d.name);
-        var target = (d.name || "").trim();
-        var u = Store.current();
-        if ((u.name || "").trim() !== target) {
-          // 已有同名使用者 → 切換過去；否則才把目前這筆改名，避免產生同名重複
-          var same = Store.profiles().filter(function (p) { return (p.name || "").trim() === target; })[0];
-          if (same) Store.switchProfile(same.id);
-          else Store.renameProfile(u.id, d.name);
-          var cur = Store.current();
-          var lb = el("userNameLabel"), av = el("userAvatar");
-          if (lb) lb.textContent = cur.name;
-          if (av) av.textContent = (cur.name || "?").trim().slice(0, 1).toUpperCase();
-        }
-      }
       // 只在本機尚未有主題偏好時才採用雲端主題；否則以本機為準（避免雲端舊值蓋掉使用者剛在首頁選的主題）
       if ((d.theme === "dark" || d.theme === "light") && !localStorage.getItem("ipas_shared_theme")) {
         localStorage.setItem("ipas_shared_theme", d.theme);
@@ -76,25 +63,87 @@
     ]).then(function (r) { if (r.error) throw r.error; });
   }
 
+  function cleanName(value) {
+    return typeof value === "string" ? value.trim().slice(0, 64) : "";
+  }
+  function nameChoice(data) {
+    data = data || {};
+    var name = cleanName(data.name);
+    var custom = data.nameSource === "custom" ||
+      (!data.nameSource && name && ["我", "使用者", "學習者"].indexOf(name) < 0);
+    return { name: name, custom: custom, updatedAt: Number(data.nameUpdatedAt) || 0 };
+  }
+  function localName(user) {
+    var owner = localStorage.getItem("ipas_shared_name_owner");
+    if (owner && owner !== user.id) return nameChoice(null);
+    var d = readShared();
+    if (!d.name) d.name = Store.current().name;
+    return nameChoice(d);
+  }
+  function applyAccountName(user, shared, local, remoteProfile) {
+    var remote = nameChoice(shared);
+    // 舊版沒有 shared 資料時，仍保留雲端已取好的名稱。
+    if (!remote.name && remoteProfile) remote = nameChoice(remoteProfile);
+    var chosen;
+    if (local.custom && local.name && (!remote.custom || local.updatedAt > remote.updatedAt)) chosen = local;
+    else if (remote.custom && remote.name) chosen = remote;
+    else {
+      var meta = user.user_metadata || {};
+      chosen = { name: cleanName(meta.full_name) || cleanName(meta.name) ||
+        cleanName((user.email || "").split("@")[0]) || "使用者", custom: false, updatedAt: 0 };
+    }
+    localStorage.setItem("ipas_shared_name_owner", user.id);
+    localStorage.setItem("ipas_shared_name_updated_at", String(chosen.updatedAt));
+    localStorage.setItem("ipas_shared_name_source", chosen.custom ? "custom" : "account");
+    localStorage.setItem("ipas_shared_name", chosen.name);
+    var current = Store.current();
+    if (current.name !== chosen.name) Store.renameProfile(current.id, chosen.name);
+    var label = el("userNameLabel"), avatar = el("userAvatar");
+    if (label) label.textContent = chosen.name;
+    if (avatar) avatar.textContent = chosen.name.slice(0, 1).toUpperCase();
+    document.dispatchEvent(new CustomEvent("profile-name-changed"));
+  }
+  function isEmptyLocalProfile() {
+    var state = Store.exportAll();
+    if (state.profiles.length !== 1) return false;
+    return Object.keys(state.data || {}).every(function (id) {
+      return Object.keys(state.data[id] || {}).every(function (key) {
+        var value = state.data[id][key];
+        return !value || (typeof value === "object" && Object.keys(value).length === 0);
+      });
+    });
+  }
+
   function syncNow() {
-    if (!sb) return;
+    if (!sb) return Promise.resolve();
+    if (syncPromise) return syncPromise;
     setStatus("load", "同步中…");
-    sb.auth.getUser().then(function (u) {
-      var uid = u.data.user && u.data.user.id;
-      if (!uid) { paint(); return; }
+    syncPromise = sb.auth.getUser().then(function (u) {
+      var user = u.data.user;
+      if (!user) { paint(); return; }
       return sb.from("user_state").select("app,data").in("app", [APP_ID, "shared"])
         .then(function (res) {
           if (res.error) throw res.error;
-          (res.data || []).forEach(function (row) {
-            if (row.app === APP_ID && row.data && row.data.profiles) {
-              try { Store.importAll(row.data, "merge"); } catch (e) {}
-            }
-            if (row.app === "shared") applyShared(row.data);
-          });
-          return pushNow(uid);
+          var rows = res.data || [];
+          var appRow = rows.filter(function (row) { return row.app === APP_ID; })[0];
+          var sharedRow = rows.filter(function (row) { return row.app === "shared"; })[0];
+          // 在回應抵達後讀取本機名稱，避免蓋掉使用者同步途中剛改的名稱。
+          var local = localName(user), remoteProfile;
+          if (appRow && appRow.data && appRow.data.profiles && appRow.data.profiles.length) {
+            remoteProfile = appRow.data.profiles.filter(function (p) { return p.id === appRow.data.currentId; })[0];
+            // 新裝置直接還原雲端目前的使用者，既有本機紀錄則照常合併。
+            Store.importAll(appRow.data, isEmptyLocalProfile() ? "replace" : "merge");
+          }
+          applyShared(sharedRow && sharedRow.data);
+          applyAccountName(user, sharedRow && sharedRow.data, local, remoteProfile);
+          clearTimeout(pushTimer); pushTimer = null;
+          return pushNow(user.id);
         })
         .then(function () { setStatus("ok", "✓ 已同步"); });
-    }).catch(function (e) { setStatus("err", "同步失敗：" + (e.message || "網路問題").slice(0, 40)); });
+    }).catch(function (e) {
+      setStatus("err", "同步失敗：" + (e.message || "網路問題").slice(0, 40));
+    }).finally(function () { syncPromise = null; });
+    return syncPromise;
   }
 
   function schedulePush() {
@@ -104,6 +153,7 @@
   }
   function flushPush() {
     if (!sb) return;
+    if (syncPromise) { syncPromise.then(flushPush); return; }
     clearTimeout(pushTimer); pushTimer = null;
     sb.auth.getUser().then(function (u) {
       var uid = u.data.user && u.data.user.id;
@@ -167,8 +217,11 @@
     sb = global.supabase.createClient(SB_URL, SB_KEY);
     bind();
     sb.auth.onAuthStateChange(function (ev) {
-      paint();
-      if (ev === "SIGNED_IN") syncNow();
+      // 離開 Auth callback 後再呼叫 Auth API，避免登入鎖互相等待。
+      setTimeout(function () {
+        paint();
+        if (ev === "SIGNED_IN") syncNow();
+      }, 0);
     });
     paint();
     sb.auth.getSession().then(function (r) { if (r.data.session) syncNow(); });

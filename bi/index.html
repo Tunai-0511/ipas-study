@@ -72,14 +72,13 @@
       </div>
     </div>
 
-    <!-- 使用者切換 -->
+    <!-- 使用者名稱 -->
     <div class="user-switcher" id="userSwitcher">
-      <button class="user-current" id="userCurrentBtn">
+      <button class="user-current" id="userCurrentBtn" type="button" aria-label="更改使用者名稱" aria-haspopup="dialog" title="更改使用者名稱">
         <span class="user-avatar" id="userAvatar"></span>
         <span class="user-name" id="userNameLabel">學習者</span>
-        <span class="chevron">▾</span>
+        <i class="ic-wrap" data-ico="pencil" aria-hidden="true"></i>
       </button>
-      <div class="user-menu hidden" id="userMenu"></div>
     </div>
 
     <nav class="nav" id="mainNav" aria-label="主導覽">
@@ -128,16 +127,16 @@
 <!-- 模組 -->
 <script defer src="assets/js/icons.js?v=27"></script>
 <script defer src="assets/js/content-api.js?v=28"></script>
-<script defer src="assets/js/store.js?v=31"></script>
+<script defer src="assets/js/store.js?v=32"></script>
 <script defer src="assets/js/ai.js?v=27"></script>
 <script defer src="assets/js/charts.js?v=27"></script>
 <script defer src="assets/js/analysis.js?v=27"></script>
 <script defer src="assets/js/quiz.js?v=32"></script>
-<script defer src="assets/js/app.js?v=36"></script>
+<script defer src="assets/js/app.js?v=37"></script>
 <script defer src="assets/js/anim.js?v=27"></script>
 <script defer src="assets/js/interactions.js?v=27"></script>
 <script defer src="assets/vendor/supabase.min.js?v=27"></script>
-<script defer src="assets/js/cloud.js?v=32"></script>
+<script defer src="assets/js/cloud.js?v=33"></script>
 <script>
   // PWA：註冊 Service Worker（離線可用）。file:// 或不支援時略過。
   if ("serviceWorker" in navigator && location.protocol.indexOf("http") === 0) {

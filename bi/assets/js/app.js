@@ -94,7 +94,7 @@
       if ((t === "dark" || t === "light") && document.body.getAttribute("data-theme") !== t) setThemeAttr(t); paintFab();
       var sn = localStorage.getItem("ipas_shared_name");
       var u = Store.current();
-      if (sn && u.name !== sn) { Store.renameProfile(u.id, sn); paintUser(); }
+      if (sn && u.name !== sn) { Store.renameProfile(u.id, sn); refreshUserName(); }
     } catch (e) {}
   });
   function toggleTheme() { applyTheme(document.body.getAttribute("data-theme") === "dark" ? "light" : "dark"); }
@@ -120,55 +120,40 @@
     if (!ev || ev.key !== "ipas_shared_name" || !ev.newValue) return;
     try {
       var u = Store.current();
-      if (u.name !== ev.newValue) { Store.renameProfile(u.id, ev.newValue); paintUser(); }
+      if (u.name !== ev.newValue) { Store.renameProfile(u.id, ev.newValue); refreshUserName(); }
     } catch (e) {}
   });
 
-  /* ---------- 使用者切換 ---------- */
+  /* ---------- 使用者名稱 ---------- */
   function paintUser() {
     var u = Store.current();
     $("#userNameLabel").textContent = u.name; $("#userAvatar").textContent = (u.name || "?").trim().slice(0, 1).toUpperCase();
   }
-  $("#userCurrentBtn").onclick = function (e) {
-    e.stopPropagation();
-    var menu = $("#userMenu");
-    if (!menu.classList.contains("hidden")) { menu.classList.add("hidden"); return; }
-    var cur = Store.currentId();
-    var html = Store.profiles().map(function (p) {
-      return '<a class="um-item ' + (p.id === cur ? "active" : "") + '" href="#" role="menuitem" data-uid="' + p.id + '">' +
-        '<span class="um-ava">' + esc((p.name || "?").trim().slice(0, 1).toUpperCase()) + '</span><span style="flex:1">' + esc(p.name) + '</span>' + (p.id === cur ? Icon.get("check") : "") + '</a>';
-    }).join("");
-    html += '<div class="um-sep"></div><a class="um-item um-add" href="#" role="menuitem" data-add="1">' + Icon.get("plus") + '新增使用者</a>' +
-      '<a class="um-item" href="#" role="menuitem" data-rename="1">' + Icon.get("pencil") + '重新命名</a>' +
-      (Store.profiles().length > 1 ? '<a class="um-item" href="#" role="menuitem" data-del="1" style="color:var(--danger)">' + Icon.get("trash") + '刪除此使用者</a>' : '');
-    menu.innerHTML = html; menu.classList.remove("hidden");
-    $$("[data-uid]", menu).forEach(function (a) { a.onclick = function (e) { e.preventDefault(); Store.switchProfile(a.getAttribute("data-uid")); try { localStorage.setItem("ipas_shared_name", Store.current().name); } catch (e2) {} menu.classList.add("hidden"); paintUser(); go(route); toast("已切換使用者"); }; });
-    $("[data-add]", menu) && ($("[data-add]", menu).onclick = function (e) { e.preventDefault(); menu.classList.add("hidden"); addUserDlg(); });
-    $("[data-rename]", menu) && ($("[data-rename]", menu).onclick = function (e) { e.preventDefault(); menu.classList.add("hidden"); renameDlg(); });
-    $("[data-del]", menu) && ($("[data-del]", menu).onclick = function (e) { e.preventDefault(); menu.classList.add("hidden"); delUserDlg(); });
-  };
-  document.addEventListener("click", function () { var m = $("#userMenu"); if (m && !m.classList.contains("hidden")) m.classList.add("hidden"); });
-
-  function addUserDlg() {
-    modal('<div class="modal-title">新增使用者</div><div class="modal-desc">建立獨立的學習與成績紀錄。</div>' +
-      '<div class="field"><span class="field-label">名稱</span><input id="nuName" placeholder="例：小明" maxlength="16"></div>' +
-      '<div class="modal-actions"><button class="btn btn-ghost" id="mCancel">取消</button><button class="btn btn-primary" id="mOk">建立</button></div>');
-    $("#mCancel").onclick = closeModal;
-    $("#mOk").onclick = function () { var n = $("#nuName").value.trim() || "學習者"; Store.addProfile(n, ""); try { localStorage.setItem("ipas_shared_name", Store.current().name); } catch (e2) {} closeModal(); paintUser(); go("dashboard"); toast("已建立「" + n + "」", "ok"); };
+  function refreshUserName() {
+    paintUser();
+    if (route === "dashboard" && !inRunner) render();
   }
+  document.addEventListener("profile-name-changed", refreshUserName);
+  $("#userCurrentBtn").onclick = renameDlg;
+
   function renameDlg() {
     var u = Store.current();
-    modal('<div class="modal-title">重新命名</div>' +
-      '<div class="field"><span class="field-label">名稱</span><input id="rnName" value="' + esc(u.name) + '" maxlength="16"></div>' +
+    modal('<div class="modal-title">更改使用者名稱</div>' +
+      '<div class="field"><span class="field-label">名稱</span><input id="rnName" value="' + esc(u.name) + '" maxlength="64"></div>' +
       '<div class="modal-actions"><button class="btn btn-ghost" id="mCancel">取消</button><button class="btn btn-primary" id="mOk">儲存</button></div>');
     $("#mCancel").onclick = closeModal;
-    $("#mOk").onclick = function () { var nn = $("#rnName").value.trim() || u.name; Store.renameProfile(u.id, nn); try { localStorage.setItem("ipas_shared_name", nn); } catch (e2) {} closeModal(); paintUser(); toast("已更新"); };
-  }
-  function delUserDlg() {
-    var u = Store.current();
-    confirmDlg("刪除使用者「" + u.name + "」？", "此使用者的所有成績紀錄將永久刪除，無法復原。", function () {
-      Store.deleteProfile(u.id); paintUser(); go("dashboard"); toast("已刪除", "ok");
-    }, "刪除");
+    $("#mOk").onclick = function () {
+      var current = Store.current();
+      var nn = $("#rnName").value.trim() || current.name;
+      try {
+        localStorage.setItem("ipas_shared_name_updated_at", String(Date.now()));
+        localStorage.setItem("ipas_shared_name", nn);
+        localStorage.setItem("ipas_shared_name_source", "custom");
+      } catch (e) {}
+      Store.renameProfile(current.id, nn);
+      closeModal(); refreshUserName(); toast("已更新");
+    };
+    $("#rnName").focus();
   }
 
   /* AI 模型設定已移除：官方＋網路題皆內建解析，無需使用者提供金鑰 */
