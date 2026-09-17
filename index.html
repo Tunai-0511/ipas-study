@@ -159,7 +159,6 @@ html.dark-on #gate::before{background-image:url("junior/assets/media/bg-dark.jpg
 #gateOAuthStatus{margin:0 0 12px;line-height:1.5}
 .gate-status{min-height:18px;font-size:12.5px;margin:2px 0 6px;color:var(--mute)}
 .gate-status.err{color:#e5566b}.gate-status.ok{color:#00b3a4}
-.gate-guest{font-size:13px;color:var(--link);background:none;border:none;cursor:pointer;margin-top:4px}
 .gate-note{font-size:11.5px;color:var(--mute);margin-top:14px;line-height:1.6}
 #gateCode{display:none}
 #gate.sent #gateCode{display:block}
@@ -203,7 +202,6 @@ html.authed .gnav .user-chip{display:inline-flex}
     <div id="gateCode"><input class="gate-field" id="gateToken" inputmode="numeric" placeholder="輸入信中的驗證碼" /></div>
     <div class="gate-status" id="gateStatus" role="status" aria-live="polite"></div>
     <button class="gate-btn" id="gateGo">寄送驗證碼</button>
-    <button class="gate-guest" id="gateGuest">先以訪客瀏覽 →</button>
     <p class="gate-note">也可以直接點信件中的登入連結。資料由資料庫層級權限保護，僅你本人可讀取。</p>
   </div>
 </section>
@@ -331,13 +329,11 @@ html.authed .gnav .user-chip{display:inline-flex}
 <script>
 window.addEventListener("DOMContentLoaded", function () {
   var gate = document.getElementById("gate");
-  document.getElementById("gateGuest").onclick = function () {
-    sessionStorage.setItem("ipas_guest", "1");
-    gate.classList.add("gone");
-  };
+  // Retire guest sessions created before sign-in became required.
+  try { sessionStorage.removeItem("ipas_guest"); } catch (e) {}
   if (!window.supabase) {
     document.getElementById("gateGo").disabled = true;
-    document.getElementById("gateStatus").textContent = "登入服務暫時無法載入，請重新整理或先以訪客瀏覽。";
+    document.getElementById("gateStatus").textContent = "登入服務暫時無法載入，請重新整理後再登入。";
     return;
   }
   var SB_URL = "https://mugrltimxkvlqyksymjq.supabase.co";
@@ -388,14 +384,13 @@ window.addEventListener("DOMContentLoaded", function () {
       googleAvailable = !!(settings && settings.external && settings.external.google === true);
       googleWrap.hidden = !googleAvailable; googleBtn.disabled = !googleAvailable || googleBusy;
     } catch (e) {
-      // Email OTP and guest browsing remain available when provider settings cannot be checked.
+      // Email OTP remains available when provider settings cannot be checked.
     } finally { clearTimeout(timer); }
   }
   googleBtn.onclick = async function () {
     if (!googleAvailable || googleBusy) return;
     googleBusy = true; googleBtn.disabled = true; googleBtn.setAttribute("aria-busy", "true");
     googleLabel.textContent = "正在前往 Google…"; retryLogin();
-    sessionStorage.removeItem("ipas_guest");
     try {
       var result = await sb.auth.signInWithOAuth({ provider: "google", options: {
         redirectTo: location.origin + location.pathname, queryParams: { prompt: "select_account" }
@@ -438,7 +433,6 @@ window.addEventListener("DOMContentLoaded", function () {
     if (r.error || (hasAuthCallback && !r.data.session)) { callbackFailed(); return; }
     var s = r.data.session;
     if (s) authed(true, s.user.email);
-    else if (!callbackError && sessionStorage.getItem("ipas_guest") === "1") gate.classList.add("gone");
   }).catch(function () {
     callbackFailed(callbackError || "登入服務暫時無法連線，請重新整理或使用信箱驗證碼。");
   });
@@ -446,7 +440,6 @@ window.addEventListener("DOMContentLoaded", function () {
     if (ev === "SIGNED_IN" && s) authed(true, s.user.email);
     if (ev === "SIGNED_OUT") {
       document.documentElement.classList.remove("authed");
-      sessionStorage.removeItem("ipas_guest");
       gate.classList.remove("gone", "sent");
       var b = document.getElementById("gateGo"); b.textContent = "寄送驗證碼"; b.disabled = false;
       sent = false; email = ""; resetGoogle(); googleStatus(callbackError);

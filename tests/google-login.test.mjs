@@ -108,21 +108,21 @@ for (const settings of [{ external: { google: false } }, { external: { google: '
     h.elements.get('gateGo').onclick();
     await settle();
     assert.deepEqual(h.verifyCalls, [{ email: 'learner@example.com', token: '123456', type: 'email' }]);
-    h.elements.get('gateGuest').onclick();
-    assert.equal(h.storage.getItem('ipas_guest'), '1');
-    assert.equal(h.elements.get('gate').classList.contains('gone'), true);
+    assert.equal(h.elements.has('gateGuest'), false);
+    assert.equal(h.elements.get('gate').classList.contains('gone'), false, 'requesting an OTP alone must not allow entry');
   });
 }
 
 for (const fetchSettings of [() => Promise.reject(new Error('offline')), () => ({ ok: false }), () => ({ ok: true, json: () => Promise.reject(new Error('invalid JSON')) })]) {
-  test('settings request failures keep Google unavailable without disabling Email or guest', async () => {
+  test('settings request failures keep Google unavailable without disabling Email or allowing guest access', async () => {
     const h = setup({ fetchSettings });
     await settle();
     assert.ok(h.elements.has('gateGoogle'), 'the login gate must offer a Google button');
     assert.equal(h.elements.get('gateGoogle').disabled, true);
     assert.equal(h.elements.get('gateGoogleWrap').hidden, true);
     assert.equal(h.elements.get('gateGo').disabled, false);
-    assert.equal(typeof h.elements.get('gateGuest').onclick, 'function');
+    assert.equal(h.elements.has('gateGuest'), false);
+    assert.equal(h.elements.get('gate').classList.contains('gone'), false);
     assert.equal(h.timers.size, 0);
   });
 }
@@ -184,14 +184,30 @@ test('successful callbacks leave session parsing to Supabase and show the logged
   assert.equal(h.elements.get('chipMail').textContent, 'learner@example.com');
 });
 
-test('an unavailable auth library requires an explicit guest choice instead of hiding the login gate', async () => {
+test('an unavailable auth library keeps the login gate closed without any guest fallback', async () => {
   const h = setup({ sdkAvailable: false, guest: true });
   await settle();
   assert.equal(h.elements.get('gate').classList.contains('gone'), false);
   assert.equal(h.elements.get('gateGo').disabled, true);
   assert.match(h.elements.get('gateStatus').textContent, /登入.*重新整理/);
-  h.elements.get('gateGuest').onclick();
+  assert.equal(h.elements.has('gateGuest'), false);
+  assert.equal(h.storage.getItem('ipas_guest'), null);
+});
+
+test('legacy guest sessions cannot bypass login and only authenticated sessions open the portal', async () => {
+  const h = setup({ guest: true });
+  h.storage.setItem('learning-records', 'preserve-me');
+  await settle();
+  assert.equal(h.storage.getItem('ipas_guest'), null);
+  assert.equal(h.storage.getItem('learning-records'), 'preserve-me');
+  assert.equal(h.elements.has('gateGuest'), false);
+  assert.equal(h.elements.get('gate').classList.contains('gone'), false);
+  h.auth('SIGNED_IN', { user: { email: 'learner@example.com' } });
   assert.equal(h.elements.get('gate').classList.contains('gone'), true);
+  await h.elements.get('chipOut').onclick();
+  assert.equal(h.elements.get('gate').classList.contains('gone'), false);
+  assert.equal(h.elements.get('gateGo').disabled, false);
+  assert.equal(h.storage.getItem('learning-records'), 'preserve-me');
 });
 
 test('a failed session callback is visible and does not silently continue as a previous guest', async () => {

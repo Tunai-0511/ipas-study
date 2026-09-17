@@ -45,9 +45,9 @@
 - 🧠 **每題內建解析** — 不需要自己再去查，答完立刻懂。
 - 📊 **成績判讀** — 各科正確率、最需加強的主題、個人化加強建議。
 - 📈 **成長曲線** — 題目加權的平均正確率、累積作答量、近期趨勢（不被單場難度誤導）。
-- 🔌 **PWA 離線可用** — 加到主畫面像 App 一樣用，沒網路也能刷題。
+- 🔌 **PWA 離線可用** — 加到主畫面像 App 一樣用，已有未到期登入狀態時可離線刷題；首次登入或登入過期時需連線。
 - 👤 **登入即有名稱** — 信箱驗證碼登入使用 Email 的 `@` 前綴；登入資料已有 `full_name`／`name` 時優先採用。點側欄名稱即可更改，三站與雲端保留自訂名稱，不必新增使用者。
-- 🔑 **Google／信箱登入** — Google provider 啟用後，首頁顯示「使用 Google 登入」；保留信箱驗證碼與訪客瀏覽。Google 登入只使用基本個人資料與 Email，不要求 Gmail 存取權。
+- 🔑 **Google／信箱登入** — Google provider 啟用後，首頁顯示「使用 Google 登入」；也可使用信箱驗證碼。訪客瀏覽暫時關閉，進入備考站須先登入。Google 登入只使用基本個人資料與 Email，不要求 Gmail 存取權。
 - ☁️ **跨裝置雲端同步** — 登入後手機、電腦進度自動同步（Supabase）。
 - 🌗 **深淺色主題** — 全站主題感應，跨認證同步。
 - 🛡️ **隱私友善** — 無 cookie 追蹤、無第三方廣告。
@@ -130,7 +130,9 @@ Google Audience 目前仍為 **Testing**，未加入測試使用者，已利用�
 4. 在 Supabase Auth URL Configuration 設定 Site URL 為 `https://ipas.tun9i.com`，並允許實際首頁返回網址（目前 allowlist 為 `https://ipas.tun9i.com/**`）。本機測試需另允許例如 `http://localhost:8000/`。
 5. Testing 通常限制測試使用者；但本案僅請求 `openid`、`userinfo.email`、`userinfo.profile`，依 [Google 官方基本登入例外](https://support.google.com/cloud/answer/15549945)，使用者不必在測試名單，也不受測試警告及 7 天授權到期限制。日後若加入其他 scopes，此例外不再適用，須重新確認 Audience／發布狀態與所需審核。
 
-首頁會透過 Supabase 公開 `/auth/v1/settings` 確認 `external.google === true` 才顯示可點擊的 Google 按鈕；未啟用、離線或查詢失敗時仍可使用信箱／訪客流程。這項檢查僅代表 provider 已啟用，不代表 Client ID、Secret 或 Google 授權畫面已實際驗證成功。
+首頁會透過 Supabase 公開 `/auth/v1/settings` 確認 `external.google === true` 才顯示可點擊的 Google 按鈕；未啟用或查詢失敗時仍保留信箱登入入口，寄送與驗證需要網路連線。這項檢查僅代表 provider 已啟用，不代表 Client ID、Secret 或 Google 授權畫面已實際驗證成功。
+
+訪客入口與舊版 `ipas_guest` 狀態已停用；直接開啟三個備考站時，頁面也會先檢查登入狀態。這是網站使用流程的限制，題庫等靜態檔案仍由公開資產服務提供，個人雲端資料持續由 Supabase RLS 保護。
 
 Google 按鈕沿用現有 Supabase client 的 `signInWithOAuth` 隱式流程，回到目前首頁路徑；不要求額外 scopes 或離線 Google 存取，也不另外擷取或保存 Google provider token。取消／失敗會顯示中文訊息，瀏覽器返回後可重試；登入成功後既有跨站同步與自訂名稱規則照常使用。更換不同 Google 帳號不保證會接續原本另一個信箱帳號的雲端紀錄。
 
@@ -143,7 +145,7 @@ npm ci
 npm test
 ```
 
-Google 登入測試執行首頁實際登入程式，涵蓋 provider 啟用判斷、跳轉參數、防止連點、錯誤與返回重試、回呼參數清理，以及信箱／訪客流程保留；另使用網站現有 Supabase SDK，驗證合成 callback token 成功與 `/user` 回傳 401 的失敗情境，確認初始化錯誤不會被既有訪客／登入狀態掩蓋。自動化測試的外部 Auth 與 settings 回應採合成資料，不會進行真實 Google 授權；正式環境已實測項目見上方日期紀錄。
+Google 登入測試執行首頁實際登入程式，涵蓋 provider 啟用判斷、跳轉參數、防止連點、錯誤與返回重試、回呼參數清理，以及信箱登入與舊訪客狀態失效；另使用網站現有 Supabase SDK，驗證合成 callback token 成功與 `/user` 回傳 401 的失敗情境，確認初始化錯誤不會被既有訪客／登入狀態掩蓋。自動化測試的外部 Auth 與 settings 回應採合成資料，不會進行真實 Google 授權；正式環境已實測項目見上方日期紀錄。
 
 名稱與同步測試使用實際 Store／Cloud 程式及合成登入資料，涵蓋首次命名、自訂名稱衝突、新裝置還原與紀錄保留；不寄送驗證碼。資料庫測試使用獨立的 PGlite PostgreSQL 與合成學習紀錄，驗證管理員查詢、一般使用者拒絕、匿名拒絕、本人資料隔離與重複建置；不連接或修改正式資料庫。
 

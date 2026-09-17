@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-Hant" data-auth-pending>
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,6 +15,14 @@
 <!-- 防閃白：外部 CSS 載入前先把 <html> 底色與主題定好（跳頁第一幀就正確） -->
 <style>html{background:#f4f5fb}html[data-theme="dark"]{background:#0f1117}</style>
 <script>try{var _k=localStorage.getItem("ipas_shared_theme")||localStorage.getItem("aipsc_theme");document.documentElement.setAttribute("data-theme",(_k==="dark"||(!_k&&matchMedia("(prefers-color-scheme:dark)").matches))?"dark":"light");}catch(e){}</script>
+<style>
+html[data-auth-pending] body > :not(#authLoading){display:none!important}
+#authLoading{display:none;min-height:100vh;box-sizing:border-box;padding:28px;align-items:center;justify-content:center;flex-direction:column;gap:16px;text-align:center;color:#56566b;font:16px/1.6 system-ui,sans-serif}
+html[data-auth-pending] #authLoading{display:flex}
+html[data-theme="dark"] #authLoading{color:#d6d6e5}
+#authLoading a{color:#7777ee}#authRetry{font:inherit;padding:8px 18px;border:1px solid #7777ee;border-radius:10px;cursor:pointer}
+</style>
+<script defer src="../assets/require-auth.js?v=1"></script>
 <link rel="stylesheet" href="assets/css/style.css?v=34" />
 <script>
   // 低階/行動/減少動態 → 精簡模式（關閉重特效以求流暢）
@@ -28,6 +36,12 @@
 </script>
 </head>
 <body data-theme="light">
+<div id="authLoading" role="status" aria-live="polite">
+  <div id="authMessage">正在確認登入狀態…</div>
+  <button id="authRetry" type="button" hidden>重新確認</button>
+  <a href="../">返回登入頁</a>
+  <noscript>請開啟 JavaScript 後重新載入頁面。</noscript>
+</div>
 <script>try{var _t=localStorage.getItem("ipas_shared_theme")||localStorage.getItem("aipsc_theme");document.body.setAttribute("data-theme",(_t==="dark"||(!_t&&matchMedia("(prefers-color-scheme:dark)").matches))?"dark":"light");}catch(e){}</script>
 <div class="app-bg" aria-hidden="true"></div>
 <div class="app-veil" aria-hidden="true"></div>
@@ -132,11 +146,11 @@
 <script defer src="assets/js/charts.js?v=27"></script>
 <script defer src="assets/js/analysis.js?v=27"></script>
 <script defer src="assets/js/quiz.js?v=34"></script>
-<script defer src="assets/js/app.js?v=39"></script>
+<script defer src="assets/js/app.js?v=40"></script>
 <script defer src="assets/js/anim.js?v=27"></script>
 <script defer src="assets/js/interactions.js?v=27"></script>
 <script defer src="assets/vendor/supabase.min.js?v=27"></script>
-<script defer src="assets/js/cloud.js?v=33"></script>
+<script defer src="assets/js/cloud.js?v=34"></script>
 <script>
   // PWA：註冊 Service Worker（離線可用）。file:// 或不支援時略過。
   if ("serviceWorker" in navigator && location.protocol.indexOf("http") === 0) {

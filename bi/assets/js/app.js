@@ -3,6 +3,7 @@
    ============================================================ */
 (function (global) {
   "use strict";
+  function boot() {
   var $ = function (s, r) { return (r || document).querySelector(s); };
   var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
   function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); }
@@ -656,4 +657,6 @@
   // 首屏後閒置時預先載入擴充題庫，讓開始測驗時已就緒（不阻塞首屏）
   (window.requestIdleCallback || function (f) { setTimeout(f, 1200); })(function () { Content.ensureBank(); });
 
+  }
+  if (global.IpasAuth) global.IpasAuth.ready.then(function (allowed) { if (allowed) boot(); });
 })(window);

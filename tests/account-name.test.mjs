@@ -47,6 +47,8 @@ function setup(app, { account = user, rows = [], storage = {}, state, pull } = {
       documentElement: { setAttribute() {} }, body: { setAttribute() {} },
     },
     supabase: { createClient: () => client },
+    // Account-name tests start after the separately tested login guard accepts a session.
+    IpasAuth: { check: () => ({ then: (callback) => callback(true) }) },
   });
   context.window = context;
   vm.runInContext(storeCode, context);

@@ -4,8 +4,9 @@
    同源靜態資源用 stale-while-revalidate（含 bank.js/media 首次使用才快取）；
    AI／代理請求一律走網路、不快取。版本改變時清舊快取。
    ============================================================ */
-var CACHE = "aipsc-v49";
+var CACHE = "aipsc-v50";
 var CORE = [
+  "../assets/require-auth.js?v=1",
   "./",
   "index.html",
   "manifest.webmanifest",
@@ -26,7 +27,7 @@ self.addEventListener("install", function (e) {
 self.addEventListener("activate", function (e) {
   e.waitUntil(
     caches.keys().then(function (keys) {
-      return Promise.all(keys.map(function (k) { if (k !== CACHE) return caches.delete(k); }));
+      return Promise.all(keys.map(function (k) { if (k.indexOf("aipsc-v") === 0 && k !== CACHE) return caches.delete(k); }));
     }).then(function () { return self.clients.claim(); })
   );
 });

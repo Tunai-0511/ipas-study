@@ -215,6 +215,14 @@
       return;
     }
     sb = global.supabase.createClient(SB_URL, SB_KEY);
+    if (!global.IpasAuth) return;
+    global.IpasAuth.check(sb).then(function (allowed) {
+      if (!allowed) return;
+      startSync();
+    });
+  }
+
+  function startSync() {
     bind();
     sb.auth.onAuthStateChange(function (ev) {
       // 離開 Auth callback 後再呼叫 Auth API，避免登入鎖互相等待。
