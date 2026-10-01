@@ -1,0 +1,1207 @@
+{
+  "version": 1,
+  "certId": "m2m",
+  "updatedAt": "2026-10-01",
+  "questions": [
+    {
+      "id": "practice-m2m-junior-1-001",
+      "certId": "m2m",
+      "levelId": "junior",
+      "subjectId": "m2m-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "工業DMZ在圖中的主要作用是？",
+      "options": {
+        "A": "把全部PLC直接暴露於公網",
+        "B": "取消控制區的所有身份確認",
+        "C": "取代每一台PLC的控制程式",
+        "D": "限制IT與控制區間的直接接觸並提供受控交換"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "分區與受控通道可降低跨區風險，但不等於單靠一個區域名稱就安全。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/m2m-junior-1/figure-01.svg",
+          "alt": "工廠網路分區。欄位依序為：區域、設備、允許跨區用途。企業IT：報表與辦公電腦：到DMZ取報表；工業DMZ：資料轉送閘道：受控轉送；控制區：PLC、HMI：PLC控制與監看。跨區連線需經明確規則；PLC不直接公開到網際網路。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NIST SP 800-82 Rev.3：OT 安全",
+          "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
+        },
+        {
+          "title": "OASIS MQTT 5.0 標準",
+          "url": "https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html"
+        },
+        {
+          "title": "Modbus Application Protocol",
+          "url": "https://www.modbus.org/file/secure/modbusprotocolspecification.pdf"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：智慧聯網與工控資安整合概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ff892391-2933-4f3e-a474-0f6add7a692e_114年度智慧聯網與工控資安整合應用工程師能力鑑定簡章(初級)_1140520.pdf&fileno=dea274b1-198d-401b-9272-ea30265f9b46&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "工廠網路分區",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-m2m-junior-1-002",
+      "certId": "m2m",
+      "levelId": "junior",
+      "subjectId": "m2m-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "辦公電腦只需讀報表，哪項規則最符合最小必要權限？",
+      "options": {
+        "A": "僅允許到DMZ指定報表服務",
+        "B": "允許到所有PLC的全部連接埠",
+        "C": "讓辦公使用者共用PLC管理員帳密",
+        "D": "每次查報表都關閉所有防火牆"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "允許所需服務即可；不應因讀報表開放完整控制區存取。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/m2m-junior-1/figure-01.svg",
+          "alt": "工廠網路分區。欄位依序為：區域、設備、允許跨區用途。企業IT：報表與辦公電腦：到DMZ取報表；工業DMZ：資料轉送閘道：受控轉送；控制區：PLC、HMI：PLC控制與監看。跨區連線需經明確規則；PLC不直接公開到網際網路。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NIST SP 800-82 Rev.3：OT 安全",
+          "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
+        },
+        {
+          "title": "OASIS MQTT 5.0 標準",
+          "url": "https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html"
+        },
+        {
+          "title": "Modbus Application Protocol",
+          "url": "https://www.modbus.org/file/secure/modbusprotocolspecification.pdf"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：智慧聯網與工控資安整合概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ff892391-2933-4f3e-a474-0f6add7a692e_114年度智慧聯網與工控資安整合應用工程師能力鑑定簡章(初級)_1140520.pdf&fileno=dea274b1-198d-401b-9272-ea30265f9b46&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "工廠網路分區",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-m2m-junior-1-003",
+      "certId": "m2m",
+      "levelId": "junior",
+      "subjectId": "m2m-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "只有VLAN名稱不同但路由完全互通，是否足以達到圖中的跨區限制？",
+      "options": {
+        "A": "足夠，名稱不同即代表無法連線",
+        "B": "不足，還需落實並驗證存取規則",
+        "C": "足夠，VLAN會自動驗證所有命令",
+        "D": "不足的原因是所有VLAN都只能存在同一廣播域"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "邏輯分區仍須配合路由、防火牆等實際控制，不能只看命名。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/m2m-junior-1/figure-01.svg",
+          "alt": "工廠網路分區。欄位依序為：區域、設備、允許跨區用途。企業IT：報表與辦公電腦：到DMZ取報表；工業DMZ：資料轉送閘道：受控轉送；控制區：PLC、HMI：PLC控制與監看。跨區連線需經明確規則；PLC不直接公開到網際網路。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NIST SP 800-82 Rev.3：OT 安全",
+          "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
+        },
+        {
+          "title": "OASIS MQTT 5.0 標準",
+          "url": "https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html"
+        },
+        {
+          "title": "Modbus Application Protocol",
+          "url": "https://www.modbus.org/file/secure/modbusprotocolspecification.pdf"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：智慧聯網與工控資安整合概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ff892391-2933-4f3e-a474-0f6add7a692e_114年度智慧聯網與工控資安整合應用工程師能力鑑定簡章(初級)_1140520.pdf&fileno=dea274b1-198d-401b-9272-ea30265f9b46&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "工廠網路分區",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-m2m-junior-1-004",
+      "certId": "m2m",
+      "levelId": "junior",
+      "subjectId": "m2m-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "相較每日報表，停止命令設計應更優先驗證什麼？",
+      "options": {
+        "A": "是否能以每日批次處理所有命令",
+        "B": "是否可直接套用報表的重試間隔",
+        "C": "安全與時序要求及失效行為",
+        "D": "是否能以資料分析平台取代安全連鎖"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "OT系統需重視實際安全、可靠性及時序；不能把安全命令當一般資料報表。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/m2m-junior-1/figure-02.svg",
+          "alt": "資料與控制需求。欄位依序為：工作、容許延遲、失效後果。每日能源報表：分鐘：報表延後；產線停止命令：依安全設計：可能影響人員設備；一般趨勢顯示：數秒：顯示暫停。是否屬安全功能、故障安全狀態由工程評估決定。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NIST SP 800-82 Rev.3：OT 安全",
+          "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
+        },
+        {
+          "title": "OASIS MQTT 5.0 標準",
+          "url": "https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html"
+        },
+        {
+          "title": "Modbus Application Protocol",
+          "url": "https://www.modbus.org/file/secure/modbusprotocolspecification.pdf"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：智慧聯網與工控資安整合概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ff892391-2933-4f3e-a474-0f6add7a692e_114年度智慧聯網與工控資安整合應用工程師能力鑑定簡章(初級)_1140520.pdf&fileno=dea274b1-198d-401b-9272-ea30265f9b46&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "資料與控制需求",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-m2m-junior-1-005",
+      "certId": "m2m",
+      "levelId": "junior",
+      "subjectId": "m2m-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "平台失聯時直接讓所有設備持續最後輸出，正確看法是？",
+      "options": {
+        "A": "任何設備都一定最安全",
+        "B": "所有設備失聯時一律斷電都最安全",
+        "C": "失聯必定代表感測器全部正常",
+        "D": "須按製程風險定義故障安全策略，不能一概套用"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "不同製程的安全狀態不同，持續輸出或停止都需有工程依據。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/m2m-junior-1/figure-02.svg",
+          "alt": "資料與控制需求。欄位依序為：工作、容許延遲、失效後果。每日能源報表：分鐘：報表延後；產線停止命令：依安全設計：可能影響人員設備；一般趨勢顯示：數秒：顯示暫停。是否屬安全功能、故障安全狀態由工程評估決定。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NIST SP 800-82 Rev.3：OT 安全",
+          "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
+        },
+        {
+          "title": "OASIS MQTT 5.0 標準",
+          "url": "https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html"
+        },
+        {
+          "title": "Modbus Application Protocol",
+          "url": "https://www.modbus.org/file/secure/modbusprotocolspecification.pdf"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：智慧聯網與工控資安整合概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ff892391-2933-4f3e-a474-0f6add7a692e_114年度智慧聯網與工控資安整合應用工程師能力鑑定簡章(初級)_1140520.pdf&fileno=dea274b1-198d-401b-9272-ea30265f9b46&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "資料與控制需求",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-m2m-junior-1-006",
+      "certId": "m2m",
+      "levelId": "junior",
+      "subjectId": "m2m-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "評估閘道器更新時，哪項最符合OT特性？",
+      "options": {
+        "A": "先在測試環境驗證並安排維護與回復方案",
+        "B": "無論產線狀態都立即重啟全部設備",
+        "C": "只看安裝檔是否能下載",
+        "D": "以辦公電腦更新結果取代控制系統測試"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "更新需兼顧安全修補與生產可靠性，預先驗證相容性及回復路徑。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/m2m-junior-1/figure-02.svg",
+          "alt": "資料與控制需求。欄位依序為：工作、容許延遲、失效後果。每日能源報表：分鐘：報表延後；產線停止命令：依安全設計：可能影響人員設備；一般趨勢顯示：數秒：顯示暫停。是否屬安全功能、故障安全狀態由工程評估決定。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NIST SP 800-82 Rev.3：OT 安全",
+          "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
+        },
+        {
+          "title": "OASIS MQTT 5.0 標準",
+          "url": "https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html"
+        },
+        {
+          "title": "Modbus Application Protocol",
+          "url": "https://www.modbus.org/file/secure/modbusprotocolspecification.pdf"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：智慧聯網與工控資安整合概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ff892391-2933-4f3e-a474-0f6add7a692e_114年度智慧聯網與工控資安整合應用工程師能力鑑定簡章(初級)_1140520.pdf&fileno=dea274b1-198d-401b-9272-ea30265f9b46&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "資料與控制需求",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-m2m-junior-1-007",
+      "certId": "m2m",
+      "levelId": "junior",
+      "subjectId": "m2m-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "閘道器加入「品質碼」的價值是什麼？",
+      "options": {
+        "A": "讓所有讀值都自動正確",
+        "B": "區分可信新值與逾時、故障或無效資料",
+        "C": "代替設備地址",
+        "D": "把數位訊號改成無線電波"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "相同數字可能來自舊值或錯誤，品質資訊能避免平台把無效資料當真。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/m2m-junior-1/figure-03.svg",
+          "alt": "閘道器資料轉送。欄位依序為：介面、資料。下行設備：Modbus holding register；閘道器：單位轉換、時間戳、品質碼；上行平台：MQTT資料主題；網路中斷：本機緩衝及告警。PLC暫存器與上雲訊息格式不必相同。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NIST SP 800-82 Rev.3：OT 安全",
+          "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
+        },
+        {
+          "title": "OASIS MQTT 5.0 標準",
+          "url": "https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html"
+        },
+        {
+          "title": "Modbus Application Protocol",
+          "url": "https://www.modbus.org/file/secure/modbusprotocolspecification.pdf"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：智慧聯網與工控資安整合概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ff892391-2933-4f3e-a474-0f6add7a692e_114年度智慧聯網與工控資安整合應用工程師能力鑑定簡章(初級)_1140520.pdf&fileno=dea274b1-198d-401b-9272-ea30265f9b46&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "閘道器資料轉送",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-m2m-junior-1-008",
+      "certId": "m2m",
+      "levelId": "junior",
+      "subjectId": "m2m-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "設備輸出0.1°C為單位的整數235，上雲欲用°C，應轉為多少？",
+      "options": {
+        "A": "235°C",
+        "B": "2.35°C",
+        "C": "23.5°C",
+        "D": "2,350°C"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "整數235×0.1＝23.5°C；需保留單位定義，避免十倍誤差。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/m2m-junior-1/figure-03.svg",
+          "alt": "閘道器資料轉送。欄位依序為：介面、資料。下行設備：Modbus holding register；閘道器：單位轉換、時間戳、品質碼；上行平台：MQTT資料主題；網路中斷：本機緩衝及告警。PLC暫存器與上雲訊息格式不必相同。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NIST SP 800-82 Rev.3：OT 安全",
+          "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
+        },
+        {
+          "title": "OASIS MQTT 5.0 標準",
+          "url": "https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html"
+        },
+        {
+          "title": "Modbus Application Protocol",
+          "url": "https://www.modbus.org/file/secure/modbusprotocolspecification.pdf"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：智慧聯網與工控資安整合概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ff892391-2933-4f3e-a474-0f6add7a692e_114年度智慧聯網與工控資安整合應用工程師能力鑑定簡章(初級)_1140520.pdf&fileno=dea274b1-198d-401b-9272-ea30265f9b46&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "閘道器資料轉送",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-m2m-junior-1-009",
+      "certId": "m2m",
+      "levelId": "junior",
+      "subjectId": "m2m-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "只在雲端有資料而不保留裝置來源，最直接的問題是？",
+      "options": {
+        "A": "傳輸一定無法加密",
+        "B": "所有訊息會自動壓縮",
+        "C": "所有資料都能依值大小唯一判斷來源",
+        "D": "難以追溯資料所屬設備"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "裝置身分、時間與品質資訊是資料追蹤基礎；單一值不足以定位設備。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/m2m-junior-1/figure-03.svg",
+          "alt": "閘道器資料轉送。欄位依序為：介面、資料。下行設備：Modbus holding register；閘道器：單位轉換、時間戳、品質碼；上行平台：MQTT資料主題；網路中斷：本機緩衝及告警。PLC暫存器與上雲訊息格式不必相同。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NIST SP 800-82 Rev.3：OT 安全",
+          "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
+        },
+        {
+          "title": "OASIS MQTT 5.0 標準",
+          "url": "https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html"
+        },
+        {
+          "title": "Modbus Application Protocol",
+          "url": "https://www.modbus.org/file/secure/modbusprotocolspecification.pdf"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：智慧聯網與工控資安整合概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ff892391-2933-4f3e-a474-0f6add7a692e_114年度智慧聯網與工控資安整合應用工程師能力鑑定簡章(初級)_1140520.pdf&fileno=dea274b1-198d-401b-9272-ea30265f9b46&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "閘道器資料轉送",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-m2m-junior-1-010",
+      "certId": "m2m",
+      "levelId": "junior",
+      "subjectId": "m2m-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "將控制暫存器寫入操作直接等同一般遙測發布，主要風險是？",
+      "options": {
+        "A": "混淆讀資料與改變設備狀態的權限",
+        "B": "讀取與寫入只要共用主題就已有同等授權",
+        "C": "控制命令與遙測封包必定有相同風險",
+        "D": "只要有資料品質碼就不需要操作授權"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "寫控制命令可能改變實體流程，應另設授權、驗證與安全限制。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/m2m-junior-1/figure-03.svg",
+          "alt": "閘道器資料轉送。欄位依序為：介面、資料。下行設備：Modbus holding register；閘道器：單位轉換、時間戳、品質碼；上行平台：MQTT資料主題；網路中斷：本機緩衝及告警。PLC暫存器與上雲訊息格式不必相同。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NIST SP 800-82 Rev.3：OT 安全",
+          "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
+        },
+        {
+          "title": "OASIS MQTT 5.0 標準",
+          "url": "https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html"
+        },
+        {
+          "title": "Modbus Application Protocol",
+          "url": "https://www.modbus.org/file/secure/modbusprotocolspecification.pdf"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：智慧聯網與工控資安整合概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ff892391-2933-4f3e-a474-0f6add7a692e_114年度智慧聯網與工控資安整合應用工程師能力鑑定簡章(初級)_1140520.pdf&fileno=dea274b1-198d-401b-9272-ea30265f9b46&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "閘道器資料轉送",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-m2m-junior-2-001",
+      "certId": "m2m",
+      "levelId": "junior",
+      "subjectId": "m2m-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "針對vendor共用密碼，最直接的改善是？",
+      "options": {
+        "A": "建立個人帳戶、最小權限與可追溯稽核",
+        "B": "把密碼公開給更多人",
+        "C": "以同一帳戶關閉所有日誌",
+        "D": "維持共用帳戶但把密碼長度加倍即可歸責"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "個別身分與操作紀錄有助權限控管及歸責，共用身分會混淆操作者。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/m2m-junior-2/figure-01.svg",
+          "alt": "維護帳戶盤點。欄位依序為：帳戶、存取方式、問題。vendor：所有廠商共用密碼：無法歸責；operator7：個人帳戶＋最小權限：僅可監看；engineer2：遠端登入無MFA：憑證遭竊風險。遠端維護須經授權入口並保留操作紀錄。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NIST SP 800-82 Rev.3：OT 安全",
+          "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：工控資訊安全技術",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ff892391-2933-4f3e-a474-0f6add7a692e_114年度智慧聯網與工控資安整合應用工程師能力鑑定簡章(初級)_1140520.pdf&fileno=dea274b1-198d-401b-9272-ea30265f9b46&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "維護帳戶盤點",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-m2m-junior-2-002",
+      "certId": "m2m",
+      "levelId": "junior",
+      "subjectId": "m2m-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "遠端入口加入MFA的主要目的為何？",
+      "options": {
+        "A": "把所有工控協定自動加密",
+        "B": "降低單一密碼外洩即能登入的風險",
+        "C": "取代設備安全連鎖",
+        "D": "保證帳戶永遠不會被冒用"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "多因素增加驗證層次，但不能取代其他控制，也不構成零風險保證。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/m2m-junior-2/figure-01.svg",
+          "alt": "維護帳戶盤點。欄位依序為：帳戶、存取方式、問題。vendor：所有廠商共用密碼：無法歸責；operator7：個人帳戶＋最小權限：僅可監看；engineer2：遠端登入無MFA：憑證遭竊風險。遠端維護須經授權入口並保留操作紀錄。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NIST SP 800-82 Rev.3：OT 安全",
+          "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：工控資訊安全技術",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ff892391-2933-4f3e-a474-0f6add7a692e_114年度智慧聯網與工控資安整合應用工程師能力鑑定簡章(初級)_1140520.pdf&fileno=dea274b1-198d-401b-9272-ea30265f9b46&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "維護帳戶盤點",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-m2m-junior-2-003",
+      "certId": "m2m",
+      "levelId": "junior",
+      "subjectId": "m2m-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "operator7只需看溫度，哪個權限更合理？",
+      "options": {
+        "A": "取得韌體簽章私鑰",
+        "B": "可新增所有管理員帳戶",
+        "C": "讀取所需遙測而不能改控制參數",
+        "D": "可刪除全廠稽核日誌"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "最小權限依工作需求給予；讀遙測不需要修改控制或管理身分的權限。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/m2m-junior-2/figure-01.svg",
+          "alt": "維護帳戶盤點。欄位依序為：帳戶、存取方式、問題。vendor：所有廠商共用密碼：無法歸責；operator7：個人帳戶＋最小權限：僅可監看；engineer2：遠端登入無MFA：憑證遭竊風險。遠端維護須經授權入口並保留操作紀錄。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NIST SP 800-82 Rev.3：OT 安全",
+          "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：工控資訊安全技術",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ff892391-2933-4f3e-a474-0f6add7a692e_114年度智慧聯網與工控資安整合應用工程師能力鑑定簡章(初級)_1140520.pdf&fileno=dea274b1-198d-401b-9272-ea30265f9b46&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "維護帳戶盤點",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-m2m-junior-2-004",
+      "certId": "m2m",
+      "levelId": "junior",
+      "subjectId": "m2m-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "更新檔與攻擊者提供的雜湊值相符，能否單憑此確認發行者可信？",
+      "options": {
+        "A": "可以，任何相同雜湊都等於官方授權",
+        "B": "可以，只要雜湊演算法具有密碼學強度",
+        "C": "不能，因完整性驗證在工控完全無用",
+        "D": "不能，還需可信來源或簽章信任鏈"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "若檔案及摘要都可被替換，比對只能證明兩者相符，不能證明授權來源。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/m2m-junior-2/figure-02.svg",
+          "alt": "韌體更新信任鏈。欄位依序為：順序、檢核。1：下載更新套件；2：驗證受信任簽章與版本規則；3：測試及安排安全維護窗口；4：更新後驗證，必要時回復。雜湊摘要用於資料完整性；簽章驗證還需要可信任公鑰。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NIST SP 800-82 Rev.3：OT 安全",
+          "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：工控資訊安全技術",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ff892391-2933-4f3e-a474-0f6add7a692e_114年度智慧聯網與工控資安整合應用工程師能力鑑定簡章(初級)_1140520.pdf&fileno=dea274b1-198d-401b-9272-ea30265f9b46&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "韌體更新信任鏈",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-m2m-junior-2-005",
+      "certId": "m2m",
+      "levelId": "junior",
+      "subjectId": "m2m-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "韌體簽章驗證成功後，為何仍要測試與維護窗口？",
+      "options": {
+        "A": "可信來源不代表一定相容或可在生產中直接重啟",
+        "B": "簽章代表套件必然有惡意程式",
+        "C": "維護窗口可取代所有備份",
+        "D": "相同發行者的韌體不需要確認硬體版本"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "簽章處理來源與完整性，更新的可靠性、相容性及作業風險仍需驗證。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/m2m-junior-2/figure-02.svg",
+          "alt": "韌體更新信任鏈。欄位依序為：順序、檢核。1：下載更新套件；2：驗證受信任簽章與版本規則；3：測試及安排安全維護窗口；4：更新後驗證，必要時回復。雜湊摘要用於資料完整性；簽章驗證還需要可信任公鑰。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NIST SP 800-82 Rev.3：OT 安全",
+          "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：工控資訊安全技術",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ff892391-2933-4f3e-a474-0f6add7a692e_114年度智慧聯網與工控資安整合應用工程師能力鑑定簡章(初級)_1140520.pdf&fileno=dea274b1-198d-401b-9272-ea30265f9b46&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "韌體更新信任鏈",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-m2m-junior-2-006",
+      "certId": "m2m",
+      "levelId": "junior",
+      "subjectId": "m2m-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "回復方案除了備份檔，還應確認什麼？",
+      "options": {
+        "A": "只看備份檔名含有backup",
+        "B": "備份可還原且還原後能恢復必要功能",
+        "C": "只在另一部無關設備上開檔",
+        "D": "刪除舊設定以免混淆"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "可用的回復方案需經還原與功能驗證；有檔案不等於可恢復。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/m2m-junior-2/figure-02.svg",
+          "alt": "韌體更新信任鏈。欄位依序為：順序、檢核。1：下載更新套件；2：驗證受信任簽章與版本規則；3：測試及安排安全維護窗口；4：更新後驗證，必要時回復。雜湊摘要用於資料完整性；簽章驗證還需要可信任公鑰。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NIST SP 800-82 Rev.3：OT 安全",
+          "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：工控資訊安全技術",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ff892391-2933-4f3e-a474-0f6add7a692e_114年度智慧聯網與工控資安整合應用工程師能力鑑定簡章(初級)_1140520.pdf&fileno=dea274b1-198d-401b-9272-ea30265f9b46&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "韌體更新信任鏈",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-m2m-junior-2-007",
+      "certId": "m2m",
+      "levelId": "junior",
+      "subjectId": "m2m-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "發現疑似未授權設定變更時，哪項處置最合適？",
+      "options": {
+        "A": "立即清除所有設備日誌",
+        "B": "不評估製程就斷掉所有安全系統電源",
+        "C": "依程序保存證據並由授權團隊安全限制影響",
+        "D": "直接公開管理員憑證請網友排查"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "OT事件處置需兼顧安全與證據，避免以未評估的動作擴大影響。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/m2m-junior-2/figure-03.svg",
+          "alt": "事件觀測時間線。欄位依序為：時間、觀察。09:00：陌生來源連入維護入口；09:03：管理員設定遭修改；09:05：設備告警增加；09:06：控制系統仍可由現場安全操作。處置需由授權團隊兼顧人員安全、證據與生產程序。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NIST SP 800-82 Rev.3：OT 安全",
+          "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：工控資訊安全技術",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ff892391-2933-4f3e-a474-0f6add7a692e_114年度智慧聯網與工控資安整合應用工程師能力鑑定簡章(初級)_1140520.pdf&fileno=dea274b1-198d-401b-9272-ea30265f9b46&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "事件觀測時間線",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-m2m-junior-2-008",
+      "certId": "m2m",
+      "levelId": "junior",
+      "subjectId": "m2m-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "若各設備時間差達10分鐘，重建事件因果最大的困難是？",
+      "options": {
+        "A": "所有密碼都會變成明文",
+        "B": "網路分區自動消失",
+        "C": "每個檔案都無法算雜湊",
+        "D": "跨設備時間線難以對齊"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "一致時間來源及偏差紀錄有助對齊登入、設定與告警事件。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/m2m-junior-2/figure-03.svg",
+          "alt": "事件觀測時間線。欄位依序為：時間、觀察。09:00：陌生來源連入維護入口；09:03：管理員設定遭修改；09:05：設備告警增加；09:06：控制系統仍可由現場安全操作。處置需由授權團隊兼顧人員安全、證據與生產程序。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NIST SP 800-82 Rev.3：OT 安全",
+          "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：工控資訊安全技術",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ff892391-2933-4f3e-a474-0f6add7a692e_114年度智慧聯網與工控資安整合應用工程師能力鑑定簡章(初級)_1140520.pdf&fileno=dea274b1-198d-401b-9272-ea30265f9b46&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "事件觀測時間線",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-m2m-junior-2-009",
+      "certId": "m2m",
+      "levelId": "junior",
+      "subjectId": "m2m-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "希望先了解舊產線網路資產而降低干擾，哪個起點較適合？",
+      "options": {
+        "A": "經授權檢視既有資料及被動流量觀測",
+        "B": "對所有PLC立即做高強度壓力掃描",
+        "C": "停用安全告警避免訊息太多",
+        "D": "刪除現有網段紀錄重做"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "被動盤點可降低對敏感設備的直接負擔；主動測試仍需事先評估授權與影響。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/m2m-junior-2/figure-03.svg",
+          "alt": "事件觀測時間線。欄位依序為：時間、觀察。09:00：陌生來源連入維護入口；09:03：管理員設定遭修改；09:05：設備告警增加；09:06：控制系統仍可由現場安全操作。處置需由授權團隊兼顧人員安全、證據與生產程序。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NIST SP 800-82 Rev.3：OT 安全",
+          "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：工控資訊安全技術",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ff892391-2933-4f3e-a474-0f6add7a692e_114年度智慧聯網與工控資安整合應用工程師能力鑑定簡章(初級)_1140520.pdf&fileno=dea274b1-198d-401b-9272-ea30265f9b46&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "事件觀測時間線",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-m2m-junior-2-010",
+      "certId": "m2m",
+      "levelId": "junior",
+      "subjectId": "m2m-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "結案後只改一次密碼而不查設定變更，最可能遺漏什麼？",
+      "options": {
+        "A": "已正常運作的例行資料格式",
+        "B": "尚未恢復的惡意或錯誤設定",
+        "C": "已驗證無異常的正常警報門檻",
+        "D": "依原程序完成的正常備份"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "憑證處理之外，需驗證系統狀態、授權設定與根因，確認必要控制已恢復。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/m2m-junior-2/figure-03.svg",
+          "alt": "事件觀測時間線。欄位依序為：時間、觀察。09:00：陌生來源連入維護入口；09:03：管理員設定遭修改；09:05：設備告警增加；09:06：控制系統仍可由現場安全操作。處置需由授權團隊兼顧人員安全、證據與生產程序。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NIST SP 800-82 Rev.3：OT 安全",
+          "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：工控資訊安全技術",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ff892391-2933-4f3e-a474-0f6add7a692e_114年度智慧聯網與工控資安整合應用工程師能力鑑定簡章(初級)_1140520.pdf&fileno=dea274b1-198d-401b-9272-ea30265f9b46&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "事件觀測時間線",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-m2m-junior-3-001",
+      "certId": "m2m",
+      "levelId": "junior",
+      "subjectId": "m2m-junior-3",
+      "sourceKind": "original-practice",
+      "stem": "依工作單，raw=238應顯示多少溫度？",
+      "options": {
+        "A": "238°C",
+        "B": "23.8°C",
+        "C": "2.38°C",
+        "D": "2,380°C"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "每一整數單位代表0.1°C，238×0.1＝23.8。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/m2m-junior-3/figure-01.svg",
+          "alt": "Modbus RTU 溫度讀取工作單。欄位依序為：項目、設定。介面：RS-485，9600 baud，8E1；站號：7；功能碼：03：讀holding registers；資料：位址0，raw=238；單位0.1°C。設備手冊指定PDU位址0；不是文件標號40001直接填入PDU。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Modbus Application Protocol",
+          "url": "https://www.modbus.org/file/secure/modbusprotocolspecification.pdf"
+        },
+        {
+          "title": "NIST SP 800-82 Rev.3：OT 安全",
+          "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：智慧聯網基礎應用實作",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ff892391-2933-4f3e-a474-0f6add7a692e_114年度智慧聯網與工控資安整合應用工程師能力鑑定簡章(初級)_1140520.pdf&fileno=dea274b1-198d-401b-9272-ea30265f9b46&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "Modbus RTU 溫度讀取工作單",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-m2m-junior-3-002",
+      "certId": "m2m",
+      "levelId": "junior",
+      "subjectId": "m2m-junior-3",
+      "sourceKind": "original-practice",
+      "stem": "文件標號40001對應PDU位址0，讀取時應填哪個位址？",
+      "options": {
+        "A": "40001",
+        "B": "40000",
+        "C": "0",
+        "D": "65535"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "Modbus文件慣用編號與PDU位址是不同表示；本題已明確指定映射。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/m2m-junior-3/figure-01.svg",
+          "alt": "Modbus RTU 溫度讀取工作單。欄位依序為：項目、設定。介面：RS-485，9600 baud，8E1；站號：7；功能碼：03：讀holding registers；資料：位址0，raw=238；單位0.1°C。設備手冊指定PDU位址0；不是文件標號40001直接填入PDU。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Modbus Application Protocol",
+          "url": "https://www.modbus.org/file/secure/modbusprotocolspecification.pdf"
+        },
+        {
+          "title": "NIST SP 800-82 Rev.3：OT 安全",
+          "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：智慧聯網基礎應用實作",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ff892391-2933-4f3e-a474-0f6add7a692e_114年度智慧聯網與工控資安整合應用工程師能力鑑定簡章(初級)_1140520.pdf&fileno=dea274b1-198d-401b-9272-ea30265f9b46&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "Modbus RTU 溫度讀取工作單",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-m2m-junior-3-003",
+      "certId": "m2m",
+      "levelId": "junior",
+      "subjectId": "m2m-junior-3",
+      "sourceKind": "original-practice",
+      "stem": "保持RS-485接線不變，卻把站號改成8，最可能結果是？",
+      "options": {
+        "A": "讀值一定變成原來的八倍",
+        "B": "資料型態自動改成浮點數",
+        "C": "通訊功能碼自動加密",
+        "D": "無法取得原站號7設備的預期回應"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "站號用於識別目標裝置；實體線路相同不代表上層位址可以忽略。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/m2m-junior-3/figure-01.svg",
+          "alt": "Modbus RTU 溫度讀取工作單。欄位依序為：項目、設定。介面：RS-485，9600 baud，8E1；站號：7；功能碼：03：讀holding registers；資料：位址0，raw=238；單位0.1°C。設備手冊指定PDU位址0；不是文件標號40001直接填入PDU。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Modbus Application Protocol",
+          "url": "https://www.modbus.org/file/secure/modbusprotocolspecification.pdf"
+        },
+        {
+          "title": "NIST SP 800-82 Rev.3：OT 安全",
+          "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：智慧聯網基礎應用實作",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ff892391-2933-4f3e-a474-0f6add7a692e_114年度智慧聯網與工控資安整合應用工程師能力鑑定簡章(初級)_1140520.pdf&fileno=dea274b1-198d-401b-9272-ea30265f9b46&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "Modbus RTU 溫度讀取工作單",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-m2m-junior-3-004",
+      "certId": "m2m",
+      "levelId": "junior",
+      "subjectId": "m2m-junior-3",
+      "sourceKind": "original-practice",
+      "stem": "依指定word order合併後，32-bit十六進位值為何？",
+      "options": {
+        "A": "0x12345678",
+        "B": "0x56781234",
+        "C": "0x34127856",
+        "D": "0x12341234"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "低地址存高16位，因此(0x1234<<16) OR 0x5678＝0x12345678。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/m2m-junior-3/figure-02.svg",
+          "alt": "兩個16-bit暫存器合併。欄位依序為：地址、十六進位內容。100：0x1234；101：0x5678；文件規定：高16位在低地址；資料型態：無號32-bit整數。須依設備文件處理word order；不是IEEE浮點數。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Modbus Application Protocol",
+          "url": "https://www.modbus.org/file/secure/modbusprotocolspecification.pdf"
+        },
+        {
+          "title": "NIST SP 800-82 Rev.3：OT 安全",
+          "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：智慧聯網基礎應用實作",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ff892391-2933-4f3e-a474-0f6add7a692e_114年度智慧聯網與工控資安整合應用工程師能力鑑定簡章(初級)_1140520.pdf&fileno=dea274b1-198d-401b-9272-ea30265f9b46&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "兩個16-bit暫存器合併",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-m2m-junior-3-005",
+      "certId": "m2m",
+      "levelId": "junior",
+      "subjectId": "m2m-junior-3",
+      "sourceKind": "original-practice",
+      "stem": "若接收程式誤把兩個word互換，會產生哪個值？",
+      "options": {
+        "A": "0x12345678",
+        "B": "0x56781234",
+        "C": "0x00005678",
+        "D": "0x12340000"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "word互換會讓原低16位成高16位，須依設備指定順序解析。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/m2m-junior-3/figure-02.svg",
+          "alt": "兩個16-bit暫存器合併。欄位依序為：地址、十六進位內容。100：0x1234；101：0x5678；文件規定：高16位在低地址；資料型態：無號32-bit整數。須依設備文件處理word order；不是IEEE浮點數。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Modbus Application Protocol",
+          "url": "https://www.modbus.org/file/secure/modbusprotocolspecification.pdf"
+        },
+        {
+          "title": "NIST SP 800-82 Rev.3：OT 安全",
+          "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：智慧聯網基礎應用實作",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ff892391-2933-4f3e-a474-0f6add7a692e_114年度智慧聯網與工控資安整合應用工程師能力鑑定簡章(初級)_1140520.pdf&fileno=dea274b1-198d-401b-9272-ea30265f9b46&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "兩個16-bit暫存器合併",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-m2m-junior-3-006",
+      "certId": "m2m",
+      "levelId": "junior",
+      "subjectId": "m2m-junior-3",
+      "sourceKind": "original-practice",
+      "stem": "為何不能把所有兩暫存器資料一律當IEEE 754 float？",
+      "options": {
+        "A": "Modbus不允許任何32-bit數據",
+        "B": "32-bit資料必然是文字",
+        "C": "資料型態及位元組順序需由設備文件決定",
+        "D": "暫存器數量越多越不需文件"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "通訊協定搬運暫存器，不自動定義每筆應用資料的語意。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/m2m-junior-3/figure-02.svg",
+          "alt": "兩個16-bit暫存器合併。欄位依序為：地址、十六進位內容。100：0x1234；101：0x5678；文件規定：高16位在低地址；資料型態：無號32-bit整數。須依設備文件處理word order；不是IEEE浮點數。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Modbus Application Protocol",
+          "url": "https://www.modbus.org/file/secure/modbusprotocolspecification.pdf"
+        },
+        {
+          "title": "NIST SP 800-82 Rev.3：OT 安全",
+          "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：智慧聯網基礎應用實作",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ff892391-2933-4f3e-a474-0f6add7a692e_114年度智慧聯網與工控資安整合應用工程師能力鑑定簡章(初級)_1140520.pdf&fileno=dea274b1-198d-401b-9272-ea30265f9b46&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "兩個16-bit暫存器合併",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-m2m-junior-3-007",
+      "certId": "m2m",
+      "levelId": "junior",
+      "subjectId": "m2m-junior-3",
+      "sourceKind": "original-practice",
+      "stem": "依故障記錄，最優先核對的差異為何？",
+      "options": {
+        "A": "主站輪詢頻率是否只是稍微降低",
+        "B": "顯示端的小數位數設定",
+        "C": "平台資料庫的排序方式",
+        "D": "主從的同位檢查設定不一致"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "8N1與8E1在parity不同；序列參數不一致可能使訊框無法正常接收。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/m2m-junior-3/figure-03.svg",
+          "alt": "現場讀值與故障記錄。欄位依序為：檢查點、觀察。電源：感測器供電正常；實體介面：A/B端與接地依設備文件連接；通訊參數：主站8N1；從站8E1；上層狀態：持續逾時，無有效回應。維修時先使用安全隔離測試環境，不任意變更生產控制值。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Modbus Application Protocol",
+          "url": "https://www.modbus.org/file/secure/modbusprotocolspecification.pdf"
+        },
+        {
+          "title": "NIST SP 800-82 Rev.3：OT 安全",
+          "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：智慧聯網基礎應用實作",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ff892391-2933-4f3e-a474-0f6add7a692e_114年度智慧聯網與工控資安整合應用工程師能力鑑定簡章(初級)_1140520.pdf&fileno=dea274b1-198d-401b-9272-ea30265f9b46&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "現場讀值與故障記錄",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-m2m-junior-3-008",
+      "certId": "m2m",
+      "levelId": "junior",
+      "subjectId": "m2m-junior-3",
+      "sourceKind": "original-practice",
+      "stem": "修正參數後CRC仍偶發錯誤，哪項檢查有實際意義？",
+      "options": {
+        "A": "線路干擾、終端及接線品質",
+        "B": "把CRC欄位直接忽略",
+        "C": "把所有錯誤訊框當新量測",
+        "D": "每次修改資料內容直到CRC碰巧相符"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "CRC錯誤表示訊框完整性未通過，應排查通訊品質，不能用忽略檢查掩蓋。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/m2m-junior-3/figure-03.svg",
+          "alt": "現場讀值與故障記錄。欄位依序為：檢查點、觀察。電源：感測器供電正常；實體介面：A/B端與接地依設備文件連接；通訊參數：主站8N1；從站8E1；上層狀態：持續逾時，無有效回應。維修時先使用安全隔離測試環境，不任意變更生產控制值。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Modbus Application Protocol",
+          "url": "https://www.modbus.org/file/secure/modbusprotocolspecification.pdf"
+        },
+        {
+          "title": "NIST SP 800-82 Rev.3：OT 安全",
+          "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：智慧聯網基礎應用實作",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ff892391-2933-4f3e-a474-0f6add7a692e_114年度智慧聯網與工控資安整合應用工程師能力鑑定簡章(初級)_1140520.pdf&fileno=dea274b1-198d-401b-9272-ea30265f9b46&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "現場讀值與故障記錄",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-m2m-junior-3-009",
+      "certId": "m2m",
+      "levelId": "junior",
+      "subjectId": "m2m-junior-3",
+      "sourceKind": "original-practice",
+      "stem": "CRC正確是否表示該命令一定由授權人發出？",
+      "options": {
+        "A": "是，CRC等於管理員登入",
+        "B": "否，CRC不是密碼學身分驗證",
+        "C": "是，CRC包含使用者指紋",
+        "D": "否，因只有QoS 2才能提供使用者認證"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "CRC用來偵測傳輸錯誤，不能替代來源認證與操作授權。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/m2m-junior-3/figure-03.svg",
+          "alt": "現場讀值與故障記錄。欄位依序為：檢查點、觀察。電源：感測器供電正常；實體介面：A/B端與接地依設備文件連接；通訊參數：主站8N1；從站8E1；上層狀態：持續逾時，無有效回應。維修時先使用安全隔離測試環境，不任意變更生產控制值。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Modbus Application Protocol",
+          "url": "https://www.modbus.org/file/secure/modbusprotocolspecification.pdf"
+        },
+        {
+          "title": "NIST SP 800-82 Rev.3：OT 安全",
+          "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：智慧聯網基礎應用實作",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ff892391-2933-4f3e-a474-0f6add7a692e_114年度智慧聯網與工控資安整合應用工程師能力鑑定簡章(初級)_1140520.pdf&fileno=dea274b1-198d-401b-9272-ea30265f9b46&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "現場讀值與故障記錄",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-m2m-junior-3-010",
+      "certId": "m2m",
+      "levelId": "junior",
+      "subjectId": "m2m-junior-3",
+      "sourceKind": "original-practice",
+      "stem": "逾時時儀表板仍顯示上一筆23.8°C，應如何避免誤導？",
+      "options": {
+        "A": "把上一筆時間改成目前時間",
+        "B": "把數字隨機加一表示仍運作",
+        "C": "同時顯示資料時間與逾時品質狀態",
+        "D": "只刪除全部錯誤訊息"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "舊值可保留供參考，但需標明新鮮度與失效狀態，不能偽裝成最新量測。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/m2m-junior-3/figure-03.svg",
+          "alt": "現場讀值與故障記錄。欄位依序為：檢查點、觀察。電源：感測器供電正常；實體介面：A/B端與接地依設備文件連接；通訊參數：主站8N1；從站8E1；上層狀態：持續逾時，無有效回應。維修時先使用安全隔離測試環境，不任意變更生產控制值。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Modbus Application Protocol",
+          "url": "https://www.modbus.org/file/secure/modbusprotocolspecification.pdf"
+        },
+        {
+          "title": "NIST SP 800-82 Rev.3：OT 安全",
+          "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：智慧聯網基礎應用實作",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ff892391-2933-4f3e-a474-0f6add7a692e_114年度智慧聯網與工控資安整合應用工程師能力鑑定簡章(初級)_1140520.pdf&fileno=dea274b1-198d-401b-9272-ea30265f9b46&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "現場讀值與故障記錄",
+      "practicalPreparation": true,
+      "historical": true
+    }
+  ]
+}

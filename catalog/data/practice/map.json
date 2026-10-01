@@ -1,0 +1,887 @@
+{
+  "version": 1,
+  "certId": "map",
+  "updatedAt": "2026-10-01",
+  "questions": [
+    {
+      "id": "practice-map-junior-1-001",
+      "certId": "map",
+      "levelId": "junior",
+      "subjectId": "map-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "依情境，哪項需求最可驗證且貼近核心任務？",
+      "options": {
+        "A": "所有畫面必須有動畫",
+        "B": "一定要求使用者先分享社群",
+        "C": "斷網時仍能讀取已儲存路線",
+        "D": "先蒐集所有聯絡人才能查路線"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "需求應對應真實任務與限制，可用斷網測試確認。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/map-junior-1/figure-01.svg",
+          "alt": "通勤者到站提醒的需求證據。欄位依序為：觀察、企劃意義。情境：單手操作，常在網路不穩的車廂；主要任務：查看已儲存路線的下一站；限制：提醒不可只用顏色表達。先界定使用者任務，再決定功能優先順序。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Apple：無障礙設計",
+          "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility"
+        },
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "W3C WCAG：不只依賴顏色傳達資訊",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動應用企劃概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=df16cd6f-6c9c-4def-afbb-86b899bbaf0f_112年初級行動應用企劃師能力鑑定簡章_0420.pdf&type=10"
+        }
+      ],
+      "topic": "通勤者到站提醒的需求證據",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-map-junior-1-002",
+      "certId": "map",
+      "levelId": "junior",
+      "subjectId": "map-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "提醒只以紅綠圓點區分，應補上什麼？",
+      "options": {
+        "A": "更接近的兩種色相",
+        "B": "只有更細的邊框",
+        "C": "取消所有狀態提示",
+        "D": "狀態文字或可辨識圖示"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "色覺差異或顯示條件可能讓顏色難以辨識，應提供額外資訊線索。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/map-junior-1/figure-01.svg",
+          "alt": "通勤者到站提醒的需求證據。欄位依序為：觀察、企劃意義。情境：單手操作，常在網路不穩的車廂；主要任務：查看已儲存路線的下一站；限制：提醒不可只用顏色表達。先界定使用者任務，再決定功能優先順序。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Apple：無障礙設計",
+          "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility"
+        },
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "W3C WCAG：不只依賴顏色傳達資訊",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動應用企劃概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=df16cd6f-6c9c-4def-afbb-86b899bbaf0f_112年初級行動應用企劃師能力鑑定簡章_0420.pdf&type=10"
+        }
+      ],
+      "topic": "通勤者到站提醒的需求證據",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-map-junior-1-003",
+      "certId": "map",
+      "levelId": "junior",
+      "subjectId": "map-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "要確認單手操作是否順暢，哪項研究最直接？",
+      "options": {
+        "A": "讓目標使用者在原型上完成指定任務",
+        "B": "只詢問團隊喜歡哪種配色",
+        "C": "只計算程式碼行數",
+        "D": "只比較競品商店截圖大小"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "觀察任務成功、錯誤與操作困難，較能驗證操作需求。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/map-junior-1/figure-01.svg",
+          "alt": "通勤者到站提醒的需求證據。欄位依序為：觀察、企劃意義。情境：單手操作，常在網路不穩的車廂；主要任務：查看已儲存路線的下一站；限制：提醒不可只用顏色表達。先界定使用者任務，再決定功能優先順序。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Apple：無障礙設計",
+          "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility"
+        },
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "W3C WCAG：不只依賴顏色傳達資訊",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動應用企劃概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=df16cd6f-6c9c-4def-afbb-86b899bbaf0f_112年初級行動應用企劃師能力鑑定簡章_0420.pdf&type=10"
+        }
+      ],
+      "topic": "通勤者到站提醒的需求證據",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-map-junior-1-004",
+      "certId": "map",
+      "levelId": "junior",
+      "subjectId": "map-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "從開啟App到啟用提醒的整體轉換率是多少？",
+      "options": {
+        "A": "50%",
+        "B": "30%",
+        "C": "60%",
+        "D": "90%"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "300÷1000=30%；分母需是同批漏斗起點人數。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/map-junior-1/figure-02.svg",
+          "alt": "同一批首次使用者漏斗。欄位依序為：步驟、人數。開啟App：1000；完成路線設定：600；啟用提醒：300。同一期間、同一批使用者；每人每步驟最多計一次。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Apple：無障礙設計",
+          "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility"
+        },
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "W3C WCAG：不只依賴顏色傳達資訊",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動應用企劃概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=df16cd6f-6c9c-4def-afbb-86b899bbaf0f_112年初級行動應用企劃師能力鑑定簡章_0420.pdf&type=10"
+        }
+      ],
+      "topic": "同一批首次使用者漏斗",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-map-junior-1-005",
+      "certId": "map",
+      "levelId": "junior",
+      "subjectId": "map-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "已完成路線設定者中，有多少比例啟用提醒？",
+      "options": {
+        "A": "30%",
+        "B": "60%",
+        "C": "50%",
+        "D": "20%"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "300÷600=50%，這是設定到啟用的步驟轉換率。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/map-junior-1/figure-02.svg",
+          "alt": "同一批首次使用者漏斗。欄位依序為：步驟、人數。開啟App：1000；完成路線設定：600；啟用提醒：300。同一期間、同一批使用者；每人每步驟最多計一次。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Apple：無障礙設計",
+          "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility"
+        },
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "W3C WCAG：不只依賴顏色傳達資訊",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動應用企劃概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=df16cd6f-6c9c-4def-afbb-86b899bbaf0f_112年初級行動應用企劃師能力鑑定簡章_0420.pdf&type=10"
+        }
+      ],
+      "topic": "同一批首次使用者漏斗",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-map-junior-1-006",
+      "certId": "map",
+      "levelId": "junior",
+      "subjectId": "map-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "若要了解400人未完成設定的原因，下一步較合適的是？",
+      "options": {
+        "A": "直接判定都是價格太高",
+        "B": "只增加首頁下載量",
+        "C": "刪除所有未完成者紀錄",
+        "D": "結合該步驟操作觀察與錯誤事件"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "漏斗指出流失位置，原因仍需質性或事件證據，不能直接推定。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/map-junior-1/figure-02.svg",
+          "alt": "同一批首次使用者漏斗。欄位依序為：步驟、人數。開啟App：1000；完成路線設定：600；啟用提醒：300。同一期間、同一批使用者；每人每步驟最多計一次。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Apple：無障礙設計",
+          "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility"
+        },
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "W3C WCAG：不只依賴顏色傳達資訊",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動應用企劃概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=df16cd6f-6c9c-4def-afbb-86b899bbaf0f_112年初級行動應用企劃師能力鑑定簡章_0420.pdf&type=10"
+        }
+      ],
+      "topic": "同一批首次使用者漏斗",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-map-junior-1-007",
+      "certId": "map",
+      "levelId": "junior",
+      "subjectId": "map-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "依目標與期限，哪個組合最符合首版範圍？",
+      "options": {
+        "A": "甲＋丙",
+        "B": "甲＋乙",
+        "C": "乙＋丙",
+        "D": "只做乙"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "甲4天＋丙3天符合7天，且共同支援離線查看路線。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/map-junior-1/figure-03.svg",
+          "alt": "首版方案比較。欄位依序為：方案、核心任務／開發天數。甲：查看已存路線／4天；乙：社群頭像裝飾／8天；丙：離線路線快取／3天。首版期限7天；主要目標是網路不穩時也能查看已存路線。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Apple：無障礙設計",
+          "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility"
+        },
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "W3C WCAG：不只依賴顏色傳達資訊",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動應用企劃概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=df16cd6f-6c9c-4def-afbb-86b899bbaf0f_112年初級行動應用企劃師能力鑑定簡章_0420.pdf&type=10"
+        }
+      ],
+      "topic": "首版方案比較",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-map-junior-1-008",
+      "certId": "map",
+      "levelId": "junior",
+      "subjectId": "map-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "乙功能延到後續版本的最主要理由是？",
+      "options": {
+        "A": "所有社群功能永遠沒有價值",
+        "B": "與首版核心任務關聯低且耗時較高",
+        "C": "裝飾功能必定不能開發",
+        "D": "8天的功能必定品質較差"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "優先順序取決於本次目標與限制，不是永久否定該功能。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/map-junior-1/figure-03.svg",
+          "alt": "首版方案比較。欄位依序為：方案、核心任務／開發天數。甲：查看已存路線／4天；乙：社群頭像裝飾／8天；丙：離線路線快取／3天。首版期限7天；主要目標是網路不穩時也能查看已存路線。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Apple：無障礙設計",
+          "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility"
+        },
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "W3C WCAG：不只依賴顏色傳達資訊",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動應用企劃概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=df16cd6f-6c9c-4def-afbb-86b899bbaf0f_112年初級行動應用企劃師能力鑑定簡章_0420.pdf&type=10"
+        }
+      ],
+      "topic": "首版方案比較",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-map-junior-1-009",
+      "certId": "map",
+      "levelId": "junior",
+      "subjectId": "map-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "首版驗收標準哪個最明確？",
+      "options": {
+        "A": "畫面感覺很方便",
+        "B": "功能看起來足夠多",
+        "C": "預存路線後關閉網路，仍能顯示該路線站名",
+        "D": "讓所有人都喜歡設計"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "可觀測的操作條件與預期結果能形成可重複驗收。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/map-junior-1/figure-03.svg",
+          "alt": "首版方案比較。欄位依序為：方案、核心任務／開發天數。甲：查看已存路線／4天；乙：社群頭像裝飾／8天；丙：離線路線快取／3天。首版期限7天；主要目標是網路不穩時也能查看已存路線。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Apple：無障礙設計",
+          "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility"
+        },
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "W3C WCAG：不只依賴顏色傳達資訊",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動應用企劃概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=df16cd6f-6c9c-4def-afbb-86b899bbaf0f_112年初級行動應用企劃師能力鑑定簡章_0420.pdf&type=10"
+        }
+      ],
+      "topic": "首版方案比較",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-map-junior-1-010",
+      "certId": "map",
+      "levelId": "junior",
+      "subjectId": "map-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "企劃發現離線快取其實需6天，最合理的處理是？",
+      "options": {
+        "A": "維持7天承諾且不更動任何條件",
+        "B": "把估時數字改回3天即可",
+        "C": "只把甲的名稱改成離線功能",
+        "D": "重新評估範圍與時程並說明取捨"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "新證據改變可行性，應調整範圍或資源，不以文字掩蓋工期。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/map-junior-1/figure-03.svg",
+          "alt": "首版方案比較。欄位依序為：方案、核心任務／開發天數。甲：查看已存路線／4天；乙：社群頭像裝飾／8天；丙：離線路線快取／3天。首版期限7天；主要目標是網路不穩時也能查看已存路線。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Apple：無障礙設計",
+          "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility"
+        },
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "W3C WCAG：不只依賴顏色傳達資訊",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動應用企劃概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=df16cd6f-6c9c-4def-afbb-86b899bbaf0f_112年初級行動應用企劃師能力鑑定簡章_0420.pdf&type=10"
+        }
+      ],
+      "topic": "首版方案比較",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-map-junior-2-001",
+      "certId": "map",
+      "levelId": "junior",
+      "subjectId": "map-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "在C畫面發現說明有誤，原型應提供什麼？",
+      "options": {
+        "A": "只能關閉App重填",
+        "B": "直接送出後才准修改",
+        "C": "把所有輸入欄隱藏",
+        "D": "可返回B編輯並保留現有內容"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "確認步驟的用途包含檢查與修正，保留草稿可降低重工。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/map-junior-2/figure-01.svg",
+          "alt": "報修原型流程。欄位依序為：畫面、操作與狀態。A：問題類型：選擇漏水／設備／其他；B：照片與說明：照片可選填；說明必填；C：確認：顯示內容與送出按鈕；D：結果：成功編號或可重試失敗。草稿可返回編輯；送出前不應丟失已填內容。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Apple：無障礙設計",
+          "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility"
+        },
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "W3C WCAG：文字對比",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動應用企劃實務",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=df16cd6f-6c9c-4def-afbb-86b899bbaf0f_112年初級行動應用企劃師能力鑑定簡章_0420.pdf&type=10"
+        }
+      ],
+      "topic": "報修原型流程",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-map-junior-2-002",
+      "certId": "map",
+      "levelId": "junior",
+      "subjectId": "map-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "測試照片選填規則的驗收案例應為何？",
+      "options": {
+        "A": "未附照片但已填說明仍可送出",
+        "B": "未填說明也必須成功送出",
+        "C": "未附照片必定停留A畫面",
+        "D": "附照片就可以省略所有必填欄"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "圖中照片選填、說明必填，驗收應對照此具體規則。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/map-junior-2/figure-01.svg",
+          "alt": "報修原型流程。欄位依序為：畫面、操作與狀態。A：問題類型：選擇漏水／設備／其他；B：照片與說明：照片可選填；說明必填；C：確認：顯示內容與送出按鈕；D：結果：成功編號或可重試失敗。草稿可返回編輯；送出前不應丟失已填內容。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Apple：無障礙設計",
+          "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility"
+        },
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "W3C WCAG：文字對比",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動應用企劃實務",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=df16cd6f-6c9c-4def-afbb-86b899bbaf0f_112年初級行動應用企劃師能力鑑定簡章_0420.pdf&type=10"
+        }
+      ],
+      "topic": "報修原型流程",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-map-junior-2-003",
+      "certId": "map",
+      "levelId": "junior",
+      "subjectId": "map-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "送出逾時卻不確定伺服器是否收件，規劃應補上什麼？",
+      "options": {
+        "A": "每次逾時直接建立新報修",
+        "B": "查詢結果或防重複提交的狀態處理",
+        "C": "一律顯示已成功且不提供編號",
+        "D": "清除全部草稿並退出"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "逾時不代表伺服器一定未執行，流程需避免重複案件並能確認結果。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/map-junior-2/figure-01.svg",
+          "alt": "報修原型流程。欄位依序為：畫面、操作與狀態。A：問題類型：選擇漏水／設備／其他；B：照片與說明：照片可選填；說明必填；C：確認：顯示內容與送出按鈕；D：結果：成功編號或可重試失敗。草稿可返回編輯；送出前不應丟失已填內容。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Apple：無障礙設計",
+          "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility"
+        },
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "W3C WCAG：文字對比",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動應用企劃實務",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=df16cd6f-6c9c-4def-afbb-86b899bbaf0f_112年初級行動應用企劃師能力鑑定簡章_0420.pdf&type=10"
+        }
+      ],
+      "topic": "報修原型流程",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-map-junior-2-004",
+      "certId": "map",
+      "levelId": "junior",
+      "subjectId": "map-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "依題目定義，無協助成功率是多少？",
+      "options": {
+        "A": "80%",
+        "B": "60%",
+        "C": "40%",
+        "D": "100%"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "4人完成中2人需協助，因此無協助完成2人，2÷5=40%。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/map-junior-2/figure-02.svg",
+          "alt": "5位使用者的原型測試。欄位依序為：項目、觀測。成功完成：4人；其中需主持人提示：2人；未完成：1人；共同卡點：3人找不到返回編輯。無協助成功指完成任務且沒有主持人提示。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Apple：無障礙設計",
+          "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility"
+        },
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "W3C WCAG：文字對比",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動應用企劃實務",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=df16cd6f-6c9c-4def-afbb-86b899bbaf0f_112年初級行動應用企劃師能力鑑定簡章_0420.pdf&type=10"
+        }
+      ],
+      "topic": "5位使用者的原型測試",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-map-junior-2-005",
+      "certId": "map",
+      "levelId": "junior",
+      "subjectId": "map-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "只報告4人完成而省略協助情況，有何問題？",
+      "options": {
+        "A": "會使樣本數自動增加",
+        "B": "會讓未完成者變成成功",
+        "C": "一定使成功率低估",
+        "D": "可能高估獨立使用時的可用性"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "主持人提示可能替代介面本該提供的引導，應分開報告。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/map-junior-2/figure-02.svg",
+          "alt": "5位使用者的原型測試。欄位依序為：項目、觀測。成功完成：4人；其中需主持人提示：2人；未完成：1人；共同卡點：3人找不到返回編輯。無協助成功指完成任務且沒有主持人提示。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Apple：無障礙設計",
+          "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility"
+        },
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "W3C WCAG：文字對比",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動應用企劃實務",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=df16cd6f-6c9c-4def-afbb-86b899bbaf0f_112年初級行動應用企劃師能力鑑定簡章_0420.pdf&type=10"
+        }
+      ],
+      "topic": "5位使用者的原型測試",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-map-junior-2-006",
+      "certId": "map",
+      "levelId": "junior",
+      "subjectId": "map-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "3人找不到返回編輯，最適合的後續改版驗證是？",
+      "options": {
+        "A": "修改入口後再觀察使用者完成修正任務",
+        "B": "只詢問團隊入口是否美觀",
+        "C": "把測試紀錄刪掉再測",
+        "D": "直接宣稱所有流程都失敗"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "針對已觀測問題設計相同任務驗證，才能知道改善是否有效。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/map-junior-2/figure-02.svg",
+          "alt": "5位使用者的原型測試。欄位依序為：項目、觀測。成功完成：4人；其中需主持人提示：2人；未完成：1人；共同卡點：3人找不到返回編輯。無協助成功指完成任務且沒有主持人提示。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Apple：無障礙設計",
+          "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility"
+        },
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "W3C WCAG：文字對比",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動應用企劃實務",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=df16cd6f-6c9c-4def-afbb-86b899bbaf0f_112年初級行動應用企劃師能力鑑定簡章_0420.pdf&type=10"
+        }
+      ],
+      "topic": "5位使用者的原型測試",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-map-junior-2-007",
+      "certId": "map",
+      "levelId": "junior",
+      "subjectId": "map-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "依3天限制，優先完成哪個組合最有理由？",
+      "options": {
+        "A": "只有乙",
+        "B": "甲＋丙",
+        "C": "甲＋乙",
+        "D": "乙＋丙"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "甲1天和丙2天同時降低任務受阻與資料流失，符合3天。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/map-junior-2/figure-03.svg",
+          "alt": "有限工期的改善清單。欄位依序為：項目、影響／工作量。甲：返回編輯入口：3人受阻／1天；乙：成功畫面動畫：無任務阻礙／3天；丙：斷網保留草稿：可能丟失輸入／2天。改善工期3天；本次以完成任務與避免資料流失為優先。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Apple：無障礙設計",
+          "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility"
+        },
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "W3C WCAG：文字對比",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動應用企劃實務",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=df16cd6f-6c9c-4def-afbb-86b899bbaf0f_112年初級行動應用企劃師能力鑑定簡章_0420.pdf&type=10"
+        }
+      ],
+      "topic": "有限工期的改善清單",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-map-junior-2-008",
+      "certId": "map",
+      "levelId": "junior",
+      "subjectId": "map-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "驗證丙改善時，應包含哪個情境？",
+      "options": {
+        "A": "只在高速網路測首頁",
+        "B": "只檢查成功動畫幀數",
+        "C": "填寫途中斷網再恢復，內容仍可找回",
+        "D": "只測空白草稿"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "草稿保留問題發生在有輸入且網路失效時，需實際覆盖該情境。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/map-junior-2/figure-03.svg",
+          "alt": "有限工期的改善清單。欄位依序為：項目、影響／工作量。甲：返回編輯入口：3人受阻／1天；乙：成功畫面動畫：無任務阻礙／3天；丙：斷網保留草稿：可能丟失輸入／2天。改善工期3天；本次以完成任務與避免資料流失為優先。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Apple：無障礙設計",
+          "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility"
+        },
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "W3C WCAG：文字對比",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動應用企劃實務",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=df16cd6f-6c9c-4def-afbb-86b899bbaf0f_112年初級行動應用企劃師能力鑑定簡章_0420.pdf&type=10"
+        }
+      ],
+      "topic": "有限工期的改善清單",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-map-junior-2-009",
+      "certId": "map",
+      "levelId": "junior",
+      "subjectId": "map-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "改善紀錄應如何連結問題與設計？",
+      "options": {
+        "A": "只保存最後一張美化截圖",
+        "B": "刪除原版本避免比較",
+        "C": "只記錄團隊投入時數",
+        "D": "保存觀測、修改內容與再測結果"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "可追溯紀錄可說明改動原因與成效，不把外觀變更當作任務改善證據。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/map-junior-2/figure-03.svg",
+          "alt": "有限工期的改善清單。欄位依序為：項目、影響／工作量。甲：返回編輯入口：3人受阻／1天；乙：成功畫面動畫：無任務阻礙／3天；丙：斷網保留草稿：可能丟失輸入／2天。改善工期3天；本次以完成任務與避免資料流失為優先。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Apple：無障礙設計",
+          "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility"
+        },
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "W3C WCAG：文字對比",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動應用企劃實務",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=df16cd6f-6c9c-4def-afbb-86b899bbaf0f_112年初級行動應用企劃師能力鑑定簡章_0420.pdf&type=10"
+        }
+      ],
+      "topic": "有限工期的改善清單",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-map-junior-2-010",
+      "certId": "map",
+      "levelId": "junior",
+      "subjectId": "map-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "若丙仍偶爾丟失草稿，最合理的交付說明為何？",
+      "options": {
+        "A": "列出未解情境與復現步驟，持續修正",
+        "B": "把狀態改稱已完全完成",
+        "C": "只以多數成功證明沒有缺陷",
+        "D": "要求測試者不再斷網"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "實作準備重視可復現與可驗證，不能隱藏已知不可靠情況。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/map-junior-2/figure-03.svg",
+          "alt": "有限工期的改善清單。欄位依序為：項目、影響／工作量。甲：返回編輯入口：3人受阻／1天；乙：成功畫面動畫：無任務阻礙／3天；丙：斷網保留草稿：可能丟失輸入／2天。改善工期3天；本次以完成任務與避免資料流失為優先。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Apple：無障礙設計",
+          "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility"
+        },
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "W3C WCAG：文字對比",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動應用企劃實務",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=df16cd6f-6c9c-4def-afbb-86b899bbaf0f_112年初級行動應用企劃師能力鑑定簡章_0420.pdf&type=10"
+        }
+      ],
+      "topic": "有限工期的改善清單",
+      "practicalPreparation": true,
+      "historical": true
+    }
+  ]
+}

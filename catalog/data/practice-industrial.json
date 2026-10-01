@@ -1,0 +1,5605 @@
+{
+  "version": 1,
+  "questions": [
+    {
+      "id": "practice-ant-junior-2-001",
+      "certId": "ant",
+      "levelId": "junior",
+      "subjectId": "ant-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依圖中阻抗，Γ=(ZL−Z₀)/(ZL+Z₀)。反射係數大小為何？",
+      "options": {
+        "A": "2/3",
+        "B": "2",
+        "C": "1/3",
+        "D": "1/2"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "(100−50)/(100+50)=1/3。反射係數是電壓波比，不能直接當作反射功率比例。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-jr-match.svg",
+          "alt": "VNA 在天線饋入面 P 校正；阻抗 100+j0 Ω，參考 50 Ω，入射 90 mW；另次 S11 −20 dB。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：VNA 天線量測",
+          "url": "https://www.rohde-schwarz.com/uk/products/test-and-measurement/essentials-test-equipment/spectrum-analyzers/vector-network-analyzer-antenna-measurement_258137.html"
+        }
+      ],
+      "topic": "阻抗匹配",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-ant-junior-2-002",
+      "certId": "ant",
+      "levelId": "junior",
+      "subjectId": "ant-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依圖中 100 Ω 負載，反射功率為入射功率乘 |Γ|²。反射功率多少？",
+      "options": {
+        "A": "30 mW",
+        "B": "45 mW",
+        "C": "80 mW",
+        "D": "10 mW"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "|Γ|=1/3，因此90×(1/3)²=10 mW；其餘80 mW進入天線，但未必全部輻射。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-jr-match.svg",
+          "alt": "VNA 在天線饋入面 P 校正；阻抗 100+j0 Ω，參考 50 Ω，入射 90 mW；另次 S11 −20 dB。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：VNA 天線量測",
+          "url": "https://www.rohde-schwarz.com/uk/products/test-and-measurement/essentials-test-equipment/spectrum-analyzers/vector-network-analyzer-antenna-measurement_258137.html"
+        }
+      ],
+      "topic": "反射功率",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-ant-junior-2-003",
+      "certId": "ant",
+      "levelId": "junior",
+      "subjectId": "ant-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "同一 100 Ω 量測點，VSWR=(1+|Γ|)/(1−|Γ|)。結果為何？",
+      "options": {
+        "A": "2:1",
+        "B": "1:1",
+        "C": "3:1",
+        "D": "4:1"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "Γ=1/3，VSWR=(4/3)/(2/3)=2。這描述饋線匹配，不等於天線增益。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-jr-match.svg",
+          "alt": "VNA 在天線饋入面 P 校正；阻抗 100+j0 Ω，參考 50 Ω，入射 90 mW；另次 S11 −20 dB。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：VNA 天線量測",
+          "url": "https://www.rohde-schwarz.com/uk/products/test-and-measurement/essentials-test-equipment/spectrum-analyzers/vector-network-analyzer-antenna-measurement_258137.html"
+        }
+      ],
+      "topic": "駐波比",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-ant-junior-2-004",
+      "certId": "ant",
+      "levelId": "junior",
+      "subjectId": "ant-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "圖中另一次 S11=−20 dB。以功率比 10^(S11/10) 計算，反射功率占比多少？",
+      "options": {
+        "A": "99%",
+        "B": "1%",
+        "C": "10%",
+        "D": "20%"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "10^(−20/10)=0.01，因此反射1%。匹配改善仍需另驗證輻射效率。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-jr-match.svg",
+          "alt": "VNA 在天線饋入面 P 校正；阻抗 100+j0 Ω，參考 50 Ω，入射 90 mW；另次 S11 −20 dB。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：VNA 天線量測",
+          "url": "https://www.rohde-schwarz.com/uk/products/test-and-measurement/essentials-test-equipment/spectrum-analyzers/vector-network-analyzer-antenna-measurement_258137.html"
+        }
+      ],
+      "topic": "S11 判讀",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-ant-junior-2-005",
+      "certId": "ant",
+      "levelId": "junior",
+      "subjectId": "ant-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "使用圖中理想模型，2.40 GHz 的初估輻射體長度是多少？",
+      "options": {
+        "A": "62.50 mm",
+        "B": "125.00 mm",
+        "C": "31.25 mm",
+        "D": "12.50 mm"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "λ/4=c/(4f)=3×10⁸/(4×2.4×10⁹)=0.03125 m；實體端部與介質效應仍須量測調整。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-jr-length.svg",
+          "alt": "S11 掃描在2.20、2.40、2.60 GHz為−6、−18、−5 dB；裝殼後諧振2.28 GHz，理想四分之一波長模型。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：Antenna design, measurement and optimization",
+          "url": "https://scdn.rohde-schwarz.com/ur/pws/dl_downloads/premiumdownloads/premium_dl_brochures_and_datasheets/IoT-design-guide_eGuide_en_3683-3959-92_v0100.pdf"
+        }
+      ],
+      "topic": "天線尺寸估算",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-ant-junior-2-006",
+      "certId": "ant",
+      "levelId": "junior",
+      "subjectId": "ant-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "僅依圖中三個掃描點，哪一點的饋入匹配最好？",
+      "options": {
+        "A": "2.20 GHz",
+        "B": "2.60 GHz",
+        "C": "三點匹配相同",
+        "D": "2.40 GHz"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "S11最負的−18 dB代表三點中反射最小；這不能單獨證明全頻段或輻射效能。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-jr-length.svg",
+          "alt": "S11 掃描在2.20、2.40、2.60 GHz為−6、−18、−5 dB；裝殼後諧振2.28 GHz，理想四分之一波長模型。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：VNA 天線量測",
+          "url": "https://www.rohde-schwarz.com/uk/products/test-and-measurement/essentials-test-equipment/spectrum-analyzers/vector-network-analyzer-antenna-measurement_258137.html"
+        }
+      ],
+      "topic": "掃頻判讀",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-ant-junior-2-007",
+      "certId": "ant",
+      "levelId": "junior",
+      "subjectId": "ant-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "裝殼後諧振降為2.28 GHz。假定諧振頻率與有效長度成反比，欲回到2.40 GHz，原有效長度應乘多少？",
+      "options": {
+        "A": "0.95",
+        "B": "1.05",
+        "C": "1.12",
+        "D": "0.50"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "L新/L舊=f舊/f新=2.28/2.40=0.95，先縮短約5%，再做裝殼後實測。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-jr-length.svg",
+          "alt": "S11 掃描在2.20、2.40、2.60 GHz為−6、−18、−5 dB；裝殼後諧振2.28 GHz，理想四分之一波長模型。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：Antenna design, measurement and optimization",
+          "url": "https://scdn.rohde-schwarz.com/ur/pws/dl_downloads/premiumdownloads/premium_dl_brochures_and_datasheets/IoT-design-guide_eGuide_en_3683-3959-92_v0100.pdf"
+        }
+      ],
+      "topic": "外殼失諧",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-ant-junior-2-008",
+      "certId": "ant",
+      "levelId": "junior",
+      "subjectId": "ant-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "要查證外殼是否造成圖中的頻移，哪組對照最能隔離外殼影響？",
+      "options": {
+        "A": "只測發射功率，略過掃頻",
+        "B": "固定饋線、天線位置與校正面，只切換有無外殼",
+        "C": "有殼時同時換不同電纜與轉接頭",
+        "D": "裸板量測後直接比較另一台未校正儀器"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "對照需控制饋線、位置與校正條件，避免將治具或連接誤差誤判成外殼效應。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-jr-length.svg",
+          "alt": "S11 掃描在2.20、2.40、2.60 GHz為−6、−18、−5 dB；裝殼後諧振2.28 GHz，理想四分之一波長模型。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：VNA 天線量測",
+          "url": "https://www.rohde-schwarz.com/uk/products/test-and-measurement/essentials-test-equipment/spectrum-analyzers/vector-network-analyzer-antenna-measurement_258137.html"
+        }
+      ],
+      "topic": "量測配置",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-ant-junior-2-009",
+      "certId": "ant",
+      "levelId": "junior",
+      "subjectId": "ant-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依圖中左右−3 dB交點，此切面的半功率波束寬是多少？",
+      "options": {
+        "A": "90°",
+        "B": "120°",
+        "C": "60°",
+        "D": "30°"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "兩個半功率方向為−30°與+30°，角度差為60°，不是單側30°。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-jr-pattern.svg",
+          "alt": "方向圖−30與30度為−3 dB，0度為0 dB，180度為−15 dB；接受100 mW，總輻射60 mW。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：VNA 天線量測",
+          "url": "https://www.rohde-schwarz.com/uk/products/test-and-measurement/essentials-test-equipment/spectrum-analyzers/vector-network-analyzer-antenna-measurement_258137.html"
+        }
+      ],
+      "topic": "半功率波束寬",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-ant-junior-2-010",
+      "certId": "ant",
+      "levelId": "junior",
+      "subjectId": "ant-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "若以0°為前向、180°為背向，圖中前後比是多少？",
+      "options": {
+        "A": "−15 dB",
+        "B": "3 dB",
+        "C": "30 dB",
+        "D": "15 dB"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "前向0 dB減背向−15 dB為15 dB；兩者須在相同頻率、極化及量測條件比較。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-jr-pattern.svg",
+          "alt": "方向圖−30與30度為−3 dB，0度為0 dB，180度為−15 dB；接受100 mW，總輻射60 mW。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：VNA 天線量測",
+          "url": "https://www.rohde-schwarz.com/uk/products/test-and-measurement/essentials-test-equipment/spectrum-analyzers/vector-network-analyzer-antenna-measurement_258137.html"
+        }
+      ],
+      "topic": "前後比",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-ant-junior-2-011",
+      "certId": "ant",
+      "levelId": "junior",
+      "subjectId": "ant-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "按圖中接受與總輻射功率，輻射效率是多少？",
+      "options": {
+        "A": "60%",
+        "B": "40%",
+        "C": "100%",
+        "D": "166.7%"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "輻射效率=總輻射功率/接受功率=60/100=60%；此處不再重複扣除反射損失。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-jr-pattern.svg",
+          "alt": "方向圖−30與30度為−3 dB，0度為0 dB，180度為−15 dB；接受100 mW，總輻射60 mW。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：Antenna design, measurement and optimization",
+          "url": "https://scdn.rohde-schwarz.com/ur/pws/dl_downloads/premiumdownloads/premium_dl_brochures_and_datasheets/IoT-design-guide_eGuide_en_3683-3959-92_v0100.pdf"
+        }
+      ],
+      "topic": "輻射效率",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-ant-junior-2-012",
+      "certId": "ant",
+      "levelId": "junior",
+      "subjectId": "ant-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "工程師只保留圖中一個切面的方向圖，哪項結論仍缺充分證據？",
+      "options": {
+        "A": "已測背向比峰值低15 dB",
+        "B": "天線完整三維空間的總輻射方向分布",
+        "C": "此切面峰值落在0°",
+        "D": "此切面−3 dB交點相隔60°"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "單一切面不能補出其他仰角與方位角的輻射資料，完整三維分布需要更多空間量測。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-jr-pattern.svg",
+          "alt": "方向圖−30與30度為−3 dB，0度為0 dB，180度為−15 dB；接受100 mW，總輻射60 mW。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：VNA 天線量測",
+          "url": "https://www.rohde-schwarz.com/uk/products/test-and-measurement/essentials-test-equipment/spectrum-analyzers/vector-network-analyzer-antenna-measurement_258137.html"
+        }
+      ],
+      "topic": "方向圖限制",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-ant-intermediate-2-001",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "subjectId": "ant-intermediate-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "不含額外衰落，圖中接收器輸入功率為多少？",
+      "options": {
+        "A": "−66 dBm",
+        "B": "−64 dBm",
+        "C": "−68 dBm",
+        "D": "−71 dBm"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "依序加增益扣損失：20−2+5−90+2−1=−66 dBm。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-mid-budget.svg",
+          "alt": "發射20 dBm、TX饋線損失2 dB、TX增益5 dBi、路損90 dB、RX增益2 dBi、RX饋線損失1 dB，靈敏度−75 dBm，額外衰落8 dB。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線系統整合設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：Antenna design, measurement and optimization",
+          "url": "https://scdn.rohde-schwarz.com/ur/pws/dl_downloads/premiumdownloads/premium_dl_brochures_and_datasheets/IoT-design-guide_eGuide_en_3683-3959-92_v0100.pdf"
+        }
+      ],
+      "topic": "整合鏈路預算",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-ant-intermediate-2-002",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "subjectId": "ant-intermediate-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "不含額外衰落，接收輸入相對−75 dBm靈敏度的裕度為何？",
+      "options": {
+        "A": "75 dB",
+        "B": "9 dB",
+        "C": "−9 dB",
+        "D": "66 dB"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "−66−(−75)=9 dB，表示在此模型下尚可容許9 dB額外損耗至靈敏度。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-mid-budget.svg",
+          "alt": "發射20 dBm、TX饋線損失2 dB、TX增益5 dBi、路損90 dB、RX增益2 dBi、RX饋線損失1 dB，靈敏度−75 dBm，額外衰落8 dB。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線系統整合設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：Antenna design, measurement and optimization",
+          "url": "https://scdn.rohde-schwarz.com/ur/pws/dl_downloads/premiumdownloads/premium_dl_brochures_and_datasheets/IoT-design-guide_eGuide_en_3683-3959-92_v0100.pdf"
+        }
+      ],
+      "topic": "鏈路裕度",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-ant-intermediate-2-003",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "subjectId": "ant-intermediate-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "加入圖中8 dB額外衰落後，剩餘裕度多少？",
+      "options": {
+        "A": "9 dB",
+        "B": "17 dB",
+        "C": "1 dB",
+        "D": "8 dB"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "原9 dB裕度減去8 dB衰落，僅剩1 dB；不能把衰落當作額外增益。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-mid-budget.svg",
+          "alt": "發射20 dBm、TX饋線損失2 dB、TX增益5 dBi、路損90 dB、RX增益2 dBi、RX饋線損失1 dB，靈敏度−75 dBm，額外衰落8 dB。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線系統整合設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：Antenna design, measurement and optimization",
+          "url": "https://scdn.rohde-schwarz.com/ur/pws/dl_downloads/premiumdownloads/premium_dl_brochures_and_datasheets/IoT-design-guide_eGuide_en_3683-3959-92_v0100.pdf"
+        }
+      ],
+      "topic": "衰落評估",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-ant-intermediate-2-004",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "subjectId": "ant-intermediate-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "本練習規定EIRP不得超過24 dBm。保留圖中TX天線及饋線，發射器輸出上限是多少？",
+      "options": {
+        "A": "17 dBm",
+        "B": "24 dBm",
+        "C": "27 dBm",
+        "D": "21 dBm"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "EIRP=Ptx−2+5=Ptx+3，因此Ptx≤21 dBm；24 dBm是本題假設，不是通用法規上限。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-mid-budget.svg",
+          "alt": "發射20 dBm、TX饋線損失2 dB、TX增益5 dBi、路損90 dB、RX增益2 dBi、RX饋線損失1 dB，靈敏度−75 dBm，額外衰落8 dB。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線系統整合設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：Antenna design, measurement and optimization",
+          "url": "https://scdn.rohde-schwarz.com/ur/pws/dl_downloads/premiumdownloads/premium_dl_brochures_and_datasheets/IoT-design-guide_eGuide_en_3683-3959-92_v0100.pdf"
+        }
+      ],
+      "topic": "EIRP 限制",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-ant-intermediate-2-005",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "subjectId": "ant-intermediate-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依圖中本題三項需求，哪個方案同時符合？",
+      "options": {
+        "A": "乙",
+        "B": "甲",
+        "C": "丙",
+        "D": "甲與丙都符合"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "甲的S21只有−8 dB，不合隔離需求；丙效率過低；乙匹配、隔離與效率全部符合。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-mid-mimo.svg",
+          "alt": "甲乙丙的匹配、S21隔離、兩端總效率表；本題要求匹配≤−10 dB、S21≤−15 dB、各效率≥60%。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線系統整合設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：Antenna design, measurement and optimization",
+          "url": "https://scdn.rohde-schwarz.com/ur/pws/dl_downloads/premiumdownloads/premium_dl_brochures_and_datasheets/IoT-design-guide_eGuide_en_3683-3959-92_v0100.pdf"
+        }
+      ],
+      "topic": "MIMO 方案篩選",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-ant-intermediate-2-006",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "subjectId": "ant-intermediate-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "在相同匹配量測條件下，乙的S21=−20 dB對應多少傳輸功率比？",
+      "options": {
+        "A": "80%",
+        "B": "1%",
+        "C": "10%",
+        "D": "20%"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "|S21|²功率比=10^(−20/10)=0.01；S參數比較須保留一致參考阻抗與量測設定。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-mid-mimo.svg",
+          "alt": "甲乙丙的匹配、S21隔離、兩端總效率表；本題要求匹配≤−10 dB、S21≤−15 dB、各效率≥60%。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線系統整合設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：VNA 天線量測",
+          "url": "https://www.rohde-schwarz.com/uk/products/test-and-measurement/essentials-test-equipment/spectrum-analyzers/vector-network-analyzer-antenna-measurement_258137.html"
+        }
+      ],
+      "topic": "埠間耦合",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-ant-intermediate-2-007",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "subjectId": "ant-intermediate-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "丙具有最小的S21，卻未被選用。最直接的原因為何？",
+      "options": {
+        "A": "匹配低於−20 dB一定代表短路",
+        "B": "雙天線效率必須相加超過100%",
+        "C": "其低耦合伴隨低總效率，不符合本題最低效率",
+        "D": "−25 dB表示耦合比−8 dB更強"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "隔離好不代表系統一定好；此表已給出低效率證據，需兼顧各天線可用輻射效能。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-mid-mimo.svg",
+          "alt": "甲乙丙的匹配、S21隔離、兩端總效率表；本題要求匹配≤−10 dB、S21≤−15 dB、各效率≥60%。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線系統整合設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：Antenna design, measurement and optimization",
+          "url": "https://scdn.rohde-schwarz.com/ur/pws/dl_downloads/premiumdownloads/premium_dl_brochures_and_datasheets/IoT-design-guide_eGuide_en_3683-3959-92_v0100.pdf"
+        }
+      ],
+      "topic": "解耦合取捨",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-ant-intermediate-2-008",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "subjectId": "ant-intermediate-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "表中哪些附加資料最能幫助直接分析兩天線的空間輻射相關性？",
+      "options": {
+        "A": "只增加S11的小數位數",
+        "B": "只量整機外殼重量",
+        "C": "只知道主板供電電壓",
+        "D": "兩天線完整複數遠場方向圖與極化資訊"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "遠場相關性涉及空間幅度、相位及極化；只看匹配或隔離不足以完整描述，尤其有損天線。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-mid-mimo.svg",
+          "alt": "甲乙丙的匹配、S21隔離、兩端總效率表；本題要求匹配≤−10 dB、S21≤−15 dB、各效率≥60%。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線系統整合設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：Antenna design, measurement and optimization",
+          "url": "https://scdn.rohde-schwarz.com/ur/pws/dl_downloads/premiumdownloads/premium_dl_brochures_and_datasheets/IoT-design-guide_eGuide_en_3683-3959-92_v0100.pdf"
+        }
+      ],
+      "topic": "相關性量測",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-ant-intermediate-2-009",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "subjectId": "ant-intermediate-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "圖中握持條件的輻射效率為何？",
+      "options": {
+        "A": "25%",
+        "B": "75%",
+        "C": "−15%",
+        "D": "100%"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "接受功率均100 mW，握持輻射25 mW，效率為25%；不能用相同S11推斷相同效率。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-mid-loading.svg",
+          "alt": "裸板、塑膠殼、握持、重調握持四組接受功率均100 mW，輻射80、65、25、26 mW；前三S11均−15，後者−20 dB。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線系統整合設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：Antenna design, measurement and optimization",
+          "url": "https://scdn.rohde-schwarz.com/ur/pws/dl_downloads/premiumdownloads/premium_dl_brochures_and_datasheets/IoT-design-guide_eGuide_en_3683-3959-92_v0100.pdf"
+        }
+      ],
+      "topic": "整機效率",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-ant-intermediate-2-010",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "subjectId": "ant-intermediate-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "前三組S11相同而輻射功率不同，最合理的工程解讀為何？",
+      "options": {
+        "A": "握持只會改變電池電壓，不影響天線",
+        "B": "良好匹配不能排除外殼或人體造成額外損耗",
+        "C": "S11相同保證總輻射功率相同",
+        "D": "接受功率100 mW代表沒有任何損耗"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "S11只量饋入反射；接受功率還可能轉為介質、導體或人體吸收損失。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-mid-loading.svg",
+          "alt": "裸板、塑膠殼、握持、重調握持四組接受功率均100 mW，輻射80、65、25、26 mW；前三S11均−15，後者−20 dB。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線系統整合設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：Antenna design, measurement and optimization",
+          "url": "https://scdn.rohde-schwarz.com/ur/pws/dl_downloads/premiumdownloads/premium_dl_brochures_and_datasheets/IoT-design-guide_eGuide_en_3683-3959-92_v0100.pdf"
+        }
+      ],
+      "topic": "失效辨識",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-ant-intermediate-2-011",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "subjectId": "ant-intermediate-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "重調匹配後握持輻射僅25變26 mW。下一步最有依據的改善方向為何？",
+      "options": {
+        "A": "只重測裸板S11就宣稱握持問題消失",
+        "B": "只提高接收器顯示增益，視為天線效率已恢復",
+        "C": "評估天線與手部的間距、位置及電流分布",
+        "D": "只繼續追求更負S11，忽略輻射量測"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "匹配改善未顯著恢復輻射功率，應調查近場負載與布局，並以握持實測驗證。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-mid-loading.svg",
+          "alt": "裸板、塑膠殼、握持、重調握持四組接受功率均100 mW，輻射80、65、25、26 mW；前三S11均−15，後者−20 dB。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線系統整合設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：Antenna design, measurement and optimization",
+          "url": "https://scdn.rohde-schwarz.com/ur/pws/dl_downloads/premiumdownloads/premium_dl_brochures_and_datasheets/IoT-design-guide_eGuide_en_3683-3959-92_v0100.pdf"
+        }
+      ],
+      "topic": "修正策略",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-ant-intermediate-2-012",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "subjectId": "ant-intermediate-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "裸板80 mW變握持25 mW，依10log10(80/25)，相對輻射損失最接近多少？",
+      "options": {
+        "A": "0.51 dB",
+        "B": "3.20 dB",
+        "C": "55 dB",
+        "D": "5.05 dB"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "同一接受功率下功率比80/25=3.2，10log10(3.2)約5.05 dB。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-mid-loading.svg",
+          "alt": "裸板、塑膠殼、握持、重調握持四組接受功率均100 mW，輻射80、65、25、26 mW；前三S11均−15，後者−20 dB。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線系統整合設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：Antenna design, measurement and optimization",
+          "url": "https://scdn.rohde-schwarz.com/ur/pws/dl_downloads/premiumdownloads/premium_dl_brochures_and_datasheets/IoT-design-guide_eGuide_en_3683-3959-92_v0100.pdf"
+        }
+      ],
+      "topic": "負載損失比較",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-pcb-junior-3-001",
+      "certId": "pcb",
+      "levelId": "junior",
+      "subjectId": "pcb-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依圖，同倍率下每1像素代表多少實際長度？",
+      "options": {
+        "A": "2.5 μm",
+        "B": "4.0 μm",
+        "C": "25 μm",
+        "D": "0.4 μm"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "校正係數=100/250=0.4 μm/px；應使用同物鏡與相同影像縮放設定。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/pcb-jr-scale.svg",
+          "alt": "100微米刻度對應250像素；孔壁上中下60、50、70像素，練習最低銅厚18微米。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 電路板製程工程師官方簡章：電路板製造及切片分析實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/PCB/115年度電路板製程工程師能力鑑定簡章(初級、中級)_0410_20260410161233.pdf"
+        },
+        {
+          "title": "IPC-TM-650 2.1.1：Microsectioning",
+          "url": "https://www.ipc.org/sites/default/files/test_methods_docs/2-1-01f.pdf"
+        }
+      ],
+      "topic": "顯微尺度校正",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-pcb-junior-3-002",
+      "certId": "pcb",
+      "levelId": "junior",
+      "subjectId": "pcb-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "圖中三個測點的最小銅厚是多少？",
+      "options": {
+        "A": "20 μm",
+        "B": "18 μm",
+        "C": "24 μm",
+        "D": "28 μm"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "最小讀值50 px，乘0.4 μm/px得到20 μm；平均厚度不能取代最薄處判讀。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/pcb-jr-scale.svg",
+          "alt": "100微米刻度對應250像素；孔壁上中下60、50、70像素，練習最低銅厚18微米。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 電路板製程工程師官方簡章：電路板製造及切片分析實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/PCB/115年度電路板製程工程師能力鑑定簡章(初級、中級)_0410_20260410161233.pdf"
+        },
+        {
+          "title": "IPC-TM-650 2.1.1：Microsectioning",
+          "url": "https://www.ipc.org/sites/default/files/test_methods_docs/2-1-01f.pdf"
+        }
+      ],
+      "topic": "最小孔銅厚度",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-pcb-junior-3-003",
+      "certId": "pcb",
+      "levelId": "junior",
+      "subjectId": "pcb-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "只依圖中三測點與本題最低18 μm規格，該三點是否符合？",
+      "options": {
+        "A": "只有最厚處符合",
+        "B": "三點均符合，最低值仍比門檻高2 μm",
+        "C": "中間點不符合，因50 px小於60 px",
+        "D": "三點平均合格但最低值不合格"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "上中下為24、20、28 μm，均不小於18 μm；這只判斷給定測點，並非整板所有品質的證明。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/pcb-jr-scale.svg",
+          "alt": "100微米刻度對應250像素；孔壁上中下60、50、70像素，練習最低銅厚18微米。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 電路板製程工程師官方簡章：電路板製造及切片分析實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/PCB/115年度電路板製程工程師能力鑑定簡章(初級、中級)_0410_20260410161233.pdf"
+        },
+        {
+          "title": "IPC-TM-650 2.1.1：Microsectioning",
+          "url": "https://www.ipc.org/sites/default/files/test_methods_docs/2-1-01f.pdf"
+        }
+      ],
+      "topic": "題定規格判讀",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-pcb-junior-3-004",
+      "certId": "pcb",
+      "levelId": "junior",
+      "subjectId": "pcb-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "若把原影像等比例放大2倍後仍使用0.4 μm/px，銅厚報告會如何偏差？",
+      "options": {
+        "A": "完全不變",
+        "B": "固定多出0.4 μm",
+        "C": "變成真實值的2倍",
+        "D": "變成真實值的1/2"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "放大後像素數加倍，每像素應改為0.2 μm；沿用舊比例會把尺寸算成兩倍。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/pcb-jr-scale.svg",
+          "alt": "100微米刻度對應250像素；孔壁上中下60、50、70像素，練習最低銅厚18微米。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 電路板製程工程師官方簡章：電路板製造及切片分析實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/PCB/115年度電路板製程工程師能力鑑定簡章(初級、中級)_0410_20260410161233.pdf"
+        },
+        {
+          "title": "IPC-TM-650 2.1.1：Microsectioning",
+          "url": "https://www.ipc.org/sites/default/files/test_methods_docs/2-1-01f.pdf"
+        }
+      ],
+      "topic": "縮放誤差",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-pcb-junior-3-005",
+      "certId": "pcb",
+      "levelId": "junior",
+      "subjectId": "pcb-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "圖中進入拋光前仍有粗磨刮痕，最合理的處理為何？",
+      "options": {
+        "A": "直接用更強微蝕把刮痕當作銅界面",
+        "B": "增加影像銳利化取代實際研磨",
+        "C": "忽略刮痕，直接量所有銅厚",
+        "D": "回到適當研磨級次，去除前階段刮痕再細化"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "後續細磨應去除前階段損傷。粗刮痕可能妨礙界面與缺陷判讀，不能靠影像處理修復試樣。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/pcb-jr-section.svg",
+          "alt": "切片流程：取樣鑲埋、研磨拋光、檢查微蝕；孔中心定位、逐級砂紙與可疑空隙之觀察紀錄。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 電路板製程工程師官方簡章：電路板製造及切片分析實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/PCB/115年度電路板製程工程師能力鑑定簡章(初級、中級)_0410_20260410161233.pdf"
+        },
+        {
+          "title": "IPC-TM-650 2.1.1：Microsectioning",
+          "url": "https://www.ipc.org/sites/default/files/test_methods_docs/2-1-01f.pdf"
+        }
+      ],
+      "topic": "試樣製備",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-pcb-junior-3-006",
+      "certId": "pcb",
+      "levelId": "junior",
+      "subjectId": "pcb-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "切片偏離圓孔中心時，影像所見孔內寬度通常如何變化？",
+      "options": {
+        "A": "小於通過圓心的直徑",
+        "B": "必定大於直徑",
+        "C": "一定等於真實直徑",
+        "D": "必定變成兩倍直徑"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "圓的離心弦短於直徑，因此偏心切片會扭曲幾何判讀，應確認切面位置再作比較。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/pcb-jr-section.svg",
+          "alt": "切片流程：取樣鑲埋、研磨拋光、檢查微蝕；孔中心定位、逐級砂紙與可疑空隙之觀察紀錄。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 電路板製程工程師官方簡章：電路板製造及切片分析實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/PCB/115年度電路板製程工程師能力鑑定簡章(初級、中級)_0410_20260410161233.pdf"
+        },
+        {
+          "title": "IPC-TM-650 2.1.1：Microsectioning",
+          "url": "https://www.ipc.org/sites/default/files/test_methods_docs/2-1-01f.pdf"
+        }
+      ],
+      "topic": "切面位置",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-pcb-junior-3-007",
+      "certId": "pcb",
+      "levelId": "junior",
+      "subjectId": "pcb-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "可疑孔壁空隙只在一次粗暴拋光後出現。下一步最能提高判讀可信度的是？",
+      "options": {
+        "A": "加大影像對比就足以確認來源",
+        "B": "保留紀錄，改善製樣並以相鄰切面或重複試樣交叉查證",
+        "C": "立即把整批判為同一製程缺陷",
+        "D": "把空隙塗黑後刪除原圖"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "製樣可能造成拉脫、拖曳等假象；重複與相鄰切面對照有助區分真實結構缺陷和製樣損傷。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/pcb-jr-section.svg",
+          "alt": "切片流程：取樣鑲埋、研磨拋光、檢查微蝕；孔中心定位、逐級砂紙與可疑空隙之觀察紀錄。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 電路板製程工程師官方簡章：電路板製造及切片分析實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/PCB/115年度電路板製程工程師能力鑑定簡章(初級、中級)_0410_20260410161233.pdf"
+        },
+        {
+          "title": "IPC-TM-650 2.1.1：Microsectioning",
+          "url": "https://www.ipc.org/sites/default/files/test_methods_docs/2-1-01f.pdf"
+        }
+      ],
+      "topic": "製樣假象",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-pcb-junior-3-008",
+      "certId": "pcb",
+      "levelId": "junior",
+      "subjectId": "pcb-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "為何圖中流程強調「適度」微蝕，而不是無限制延長？",
+      "options": {
+        "A": "微蝕可以恢復已被研磨掉的材料",
+        "B": "所有材料微蝕速率永遠相同",
+        "C": "過度蝕刻可能改變邊界形貌，影響尺寸與缺陷判讀",
+        "D": "微蝕越久一定得到原始銅厚"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "微蝕用於顯露組織與界面，但過度處理會侵蝕待觀察結構；需遵循受控製樣程序。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/pcb-jr-section.svg",
+          "alt": "切片流程：取樣鑲埋、研磨拋光、檢查微蝕；孔中心定位、逐級砂紙與可疑空隙之觀察紀錄。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 電路板製程工程師官方簡章：電路板製造及切片分析實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/PCB/115年度電路板製程工程師能力鑑定簡章(初級、中級)_0410_20260410161233.pdf"
+        },
+        {
+          "title": "IPC-TM-650 2.1.1：Microsectioning",
+          "url": "https://www.ipc.org/sites/default/files/test_methods_docs/2-1-01f.pdf"
+        }
+      ],
+      "topic": "微蝕操作",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-pcb-junior-3-009",
+      "certId": "pcb",
+      "levelId": "junior",
+      "subjectId": "pcb-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "若孔與焊墊完全同心，單側名義孔環寬度是多少？",
+      "options": {
+        "A": "0.40 mm",
+        "B": "0.60 mm",
+        "C": "0.10 mm",
+        "D": "0.20 mm"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "單側孔環=(焊墊直徑−孔徑)/2=(0.80−0.40)/2=0.20 mm。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/pcb-jr-via.svg",
+          "alt": "圓形焊墊0.80 mm、孔徑0.40 mm、偏心0.10 mm；板厚1.60 mm；練習剩餘孔環最低0.12 mm。示意圖非量測比例。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 電路板製程工程師官方簡章：電路板製造及切片分析實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/PCB/115年度電路板製程工程師能力鑑定簡章(初級、中級)_0410_20260410161233.pdf"
+        },
+        {
+          "title": "IPC-TM-650 2.1.1：Microsectioning",
+          "url": "https://www.ipc.org/sites/default/files/test_methods_docs/2-1-01f.pdf"
+        }
+      ],
+      "topic": "孔環幾何",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-pcb-junior-3-010",
+      "certId": "pcb",
+      "levelId": "junior",
+      "subjectId": "pcb-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "加入圖中0.10 mm偏心，最小單側剩餘孔環是多少？",
+      "options": {
+        "A": "0.10 mm",
+        "B": "0.20 mm",
+        "C": "0.30 mm",
+        "D": "0.40 mm"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "最窄側為名義0.20減偏心0.10，等於0.10 mm；另一側較寬不能抵銷最窄側不足。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/pcb-jr-via.svg",
+          "alt": "圓形焊墊0.80 mm、孔徑0.40 mm、偏心0.10 mm；板厚1.60 mm；練習剩餘孔環最低0.12 mm。示意圖非量測比例。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 電路板製程工程師官方簡章：電路板製造及切片分析實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/PCB/115年度電路板製程工程師能力鑑定簡章(初級、中級)_0410_20260410161233.pdf"
+        },
+        {
+          "title": "IPC-TM-650 2.1.1：Microsectioning",
+          "url": "https://www.ipc.org/sites/default/files/test_methods_docs/2-1-01f.pdf"
+        }
+      ],
+      "topic": "偏心判讀",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-pcb-junior-3-011",
+      "certId": "pcb",
+      "levelId": "junior",
+      "subjectId": "pcb-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依本題最低0.12 mm孔環要求，最窄側的判定為何？",
+      "options": {
+        "A": "因平均孔環0.20 mm所以必然合格",
+        "B": "不足0.02 mm，未符合本題門檻",
+        "C": "超過0.02 mm，符合門檻",
+        "D": "不足0.12 mm，沒有任何孔環"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "最窄0.10 mm小於0.12 mm，差0.02 mm；此數值是題定練習規格，不宣稱為通用IPC分級標準。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/pcb-jr-via.svg",
+          "alt": "圓形焊墊0.80 mm、孔徑0.40 mm、偏心0.10 mm；板厚1.60 mm；練習剩餘孔環最低0.12 mm。示意圖非量測比例。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 電路板製程工程師官方簡章：電路板製造及切片分析實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/PCB/115年度電路板製程工程師能力鑑定簡章(初級、中級)_0410_20260410161233.pdf"
+        },
+        {
+          "title": "IPC-TM-650 2.1.1：Microsectioning",
+          "url": "https://www.ipc.org/sites/default/files/test_methods_docs/2-1-01f.pdf"
+        }
+      ],
+      "topic": "本題允收",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-pcb-junior-3-012",
+      "certId": "pcb",
+      "levelId": "junior",
+      "subjectId": "pcb-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "以板厚除成品孔徑作本題孔深寬比，圖中比值為何？",
+      "options": {
+        "A": "8:1",
+        "B": "1:4",
+        "C": "4:1",
+        "D": "2:1"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "1.60/0.40=4；比值需先講明採用鑽孔或成品孔徑，本題明確採成品孔徑。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/pcb-jr-via.svg",
+          "alt": "圓形焊墊0.80 mm、孔徑0.40 mm、偏心0.10 mm；板厚1.60 mm；練習剩餘孔環最低0.12 mm。示意圖非量測比例。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 電路板製程工程師官方簡章：電路板製造及切片分析實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/PCB/115年度電路板製程工程師能力鑑定簡章(初級、中級)_0410_20260410161233.pdf"
+        },
+        {
+          "title": "IPC-TM-650 2.1.1：Microsectioning",
+          "url": "https://www.ipc.org/sites/default/files/test_methods_docs/2-1-01f.pdf"
+        }
+      ],
+      "topic": "孔深寬比",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-aiot-junior-3-001",
+      "certId": "aiot",
+      "levelId": "junior",
+      "subjectId": "aiot-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依圖中倍率與位元組順序，00 FA代表多少溫度？",
+      "options": {
+        "A": "6400 °C",
+        "B": "25.0 °C",
+        "C": "2.50 °C",
+        "D": "250 °C"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "00FA十六進位為250，乘0.1得到25.0 °C；暫存器倍率由設備映射表定義。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/aiot-jr-register.svg",
+          "alt": "PLC透過閘道擷取，Modbus功能03回傳00 FA 03 E8；位址0溫度乘0.1，位址1轉速乘1，文件40001對PDU0。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 AIoT應用工程師官方簡章：機器聯網基礎應用實作",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/AIOT/115年度AIoT應用工程師能力鑑定簡章(初級)_1150410_20260410114755.pdf"
+        },
+        {
+          "title": "Modbus Organization：Application Protocol V1.1b3",
+          "url": "https://www.modbus.org/file/secure/modbusprotocolspecification.pdf"
+        }
+      ],
+      "topic": "暫存器解碼",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-aiot-junior-3-002",
+      "certId": "aiot",
+      "levelId": "junior",
+      "subjectId": "aiot-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "功能03一次讀取圖中溫度與轉速兩個16-bit暫存器，回應的資料區共幾bytes？",
+      "options": {
+        "A": "8 bytes",
+        "B": "16 bytes",
+        "C": "4 bytes",
+        "D": "2 bytes"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "每暫存器2 bytes，兩個合計4 bytes；不包括功能碼、byte count或傳輸層標頭。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/aiot-jr-register.svg",
+          "alt": "PLC透過閘道擷取，Modbus功能03回傳00 FA 03 E8；位址0溫度乘0.1，位址1轉速乘1，文件40001對PDU0。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 AIoT應用工程師官方簡章：機器聯網基礎應用實作",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/AIOT/115年度AIoT應用工程師能力鑑定簡章(初級)_1150410_20260410114755.pdf"
+        },
+        {
+          "title": "Modbus Organization：Application Protocol V1.1b3",
+          "url": "https://www.modbus.org/file/secure/modbusprotocolspecification.pdf"
+        }
+      ],
+      "topic": "資料长度",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-aiot-junior-3-003",
+      "certId": "aiot",
+      "levelId": "junior",
+      "subjectId": "aiot-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "圖中設備文件將40001對應PDU位址0，讀40002時PDU起始位址應填多少？",
+      "options": {
+        "A": "40002",
+        "B": "2",
+        "C": "40001",
+        "D": "1"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "依已給定的一基文件編號與零基PDU映射，40002對應1。不可把文件前綴4直接放入PDU位址。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/aiot-jr-register.svg",
+          "alt": "PLC透過閘道擷取，Modbus功能03回傳00 FA 03 E8；位址0溫度乘0.1，位址1轉速乘1，文件40001對PDU0。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 AIoT應用工程師官方簡章：機器聯網基礎應用實作",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/AIOT/115年度AIoT應用工程師能力鑑定簡章(初級)_1150410_20260410114755.pdf"
+        },
+        {
+          "title": "Modbus Organization：Application Protocol V1.1b3",
+          "url": "https://www.modbus.org/file/secure/modbusprotocolspecification.pdf"
+        }
+      ],
+      "topic": "位址基準",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-aiot-junior-3-004",
+      "certId": "aiot",
+      "levelId": "junior",
+      "subjectId": "aiot-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "閘道將00 FA顯示為250 °C，但封包讀取正常。最優先檢查什麼？",
+      "options": {
+        "A": "工程單位倍率是否漏乘0.1",
+        "B": "先重設PLC所有控制參數",
+        "C": "將正常功能碼03改成寫入功能06",
+        "D": "把閘道時間全部清零"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "原始數值250正確，差異正好10倍，直接證據指向縮放設定。應先修資料映射，不更動設備控制。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/aiot-jr-register.svg",
+          "alt": "PLC透過閘道擷取，Modbus功能03回傳00 FA 03 E8；位址0溫度乘0.1，位址1轉速乘1，文件40001對PDU0。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 AIoT應用工程師官方簡章：機器聯網基礎應用實作",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/AIOT/115年度AIoT應用工程師能力鑑定簡章(初級)_1150410_20260410114755.pdf"
+        },
+        {
+          "title": "Modbus Organization：Application Protocol V1.1b3",
+          "url": "https://www.modbus.org/file/secure/modbusprotocolspecification.pdf"
+        }
+      ],
+      "topic": "映射排錯",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-aiot-junior-3-005",
+      "certId": "aiot",
+      "levelId": "junior",
+      "subjectId": "aiot-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "圖中10:00:20那筆資料，畫面最合適的呈現方式為何？",
+      "options": {
+        "A": "改成零轉速並宣告機台停機",
+        "B": "保留值作追溯但標示品質不良與資料已過期",
+        "C": "當成最新正常轉速延伸實線趨勢",
+        "D": "將Bad自動改為Good以保持圖表連續"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "DataValue包含值、狀態與時間。Bad且來源時間未更新，不能當作可靠的新量測值。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/aiot-jr-quality.svg",
+          "alt": "四筆OPC UA轉速資料；10:00:20收到1210 rpm但來源時間仍10:00:02且品質Bad，其餘Good。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 AIoT應用工程師官方簡章：機器聯網基礎應用實作",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/AIOT/115年度AIoT應用工程師能力鑑定簡章(初級)_1150410_20260410114755.pdf"
+        },
+        {
+          "title": "OPC Foundation：DataValue",
+          "url": "https://reference.opcfoundation.org/specs/OPC-10000-4/7.11"
+        }
+      ],
+      "topic": "資料品質",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-aiot-junior-3-006",
+      "certId": "aiot",
+      "levelId": "junior",
+      "subjectId": "aiot-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "10:00:20收到的資料相對來源時間已落後多少秒？",
+      "options": {
+        "A": "20秒",
+        "B": "22秒",
+        "C": "18秒",
+        "D": "2秒"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "接收20秒減來源02秒為18秒；接收時間新不代表物理量測值也是新的。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/aiot-jr-quality.svg",
+          "alt": "四筆OPC UA轉速資料；10:00:20收到1210 rpm但來源時間仍10:00:02且品質Bad，其餘Good。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 AIoT應用工程師官方簡章：機器聯網基礎應用實作",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/AIOT/115年度AIoT應用工程師能力鑑定簡章(初級)_1150410_20260410114755.pdf"
+        },
+        {
+          "title": "OPC Foundation：DataValue",
+          "url": "https://reference.opcfoundation.org/specs/OPC-10000-4/7.11"
+        }
+      ],
+      "topic": "時間戳判讀",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-aiot-junior-3-007",
+      "certId": "aiot",
+      "levelId": "junior",
+      "subjectId": "aiot-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "只取圖中StatusCode為Good的三筆轉速，其平均值最接近多少？",
+      "options": {
+        "A": "1210.0 rpm",
+        "B": "900.0 rpm",
+        "C": "1203.8 rpm",
+        "D": "1201.7 rpm"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "(1200+1210+1195)/3=1201.67 rpm；排除Bad的重複舊值，且統計需標明資料品質篩選。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/aiot-jr-quality.svg",
+          "alt": "四筆OPC UA轉速資料；10:00:20收到1210 rpm但來源時間仍10:00:02且品質Bad，其餘Good。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 AIoT應用工程師官方簡章：機器聯網基礎應用實作",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/AIOT/115年度AIoT應用工程師能力鑑定簡章(初級)_1150410_20260410114755.pdf"
+        },
+        {
+          "title": "OPC Foundation：DataValue",
+          "url": "https://reference.opcfoundation.org/specs/OPC-10000-4/7.11"
+        }
+      ],
+      "topic": "趨勢統計",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-aiot-junior-3-008",
+      "certId": "aiot",
+      "levelId": "junior",
+      "subjectId": "aiot-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "若資料庫只存Value而丟棄來源時間與StatusCode，最直接失去什麼能力？",
+      "options": {
+        "A": "辨識數值相同但已過期或品質不良的資料",
+        "B": "辨識轉速數值是否有小數點",
+        "C": "將數字存成文字",
+        "D": "對資料列排序的所有能力"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "相同1210可能是有效新量測或連線失敗的舊值；時間與品質旗標是區別兩者的重要證據。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/aiot-jr-quality.svg",
+          "alt": "四筆OPC UA轉速資料；10:00:20收到1210 rpm但來源時間仍10:00:02且品質Bad，其餘Good。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 AIoT應用工程師官方簡章：機器聯網基礎應用實作",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/AIOT/115年度AIoT應用工程師能力鑑定簡章(初級)_1150410_20260410114755.pdf"
+        },
+        {
+          "title": "OPC Foundation：DataValue",
+          "url": "https://reference.opcfoundation.org/specs/OPC-10000-4/7.11"
+        }
+      ],
+      "topic": "採樣追溯",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-aiot-junior-3-009",
+      "certId": "aiot",
+      "levelId": "junior",
+      "subjectId": "aiot-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "QoS 1下收到圖中兩筆同id資料，告警服務避免重複開單的合適策略是？",
+      "options": {
+        "A": "只依目前溫度相同便永久忽略日後事件",
+        "B": "用機台識別與事件id做冪等去重",
+        "C": "把QoS 1視為保證絕不重複",
+        "D": "每收到一次就新增一張工單"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "QoS 1允許重送；應以事件識別去重，不能將相同溫度的不同時間事件一概丟棄。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/aiot-jr-mqtt.svg",
+          "alt": "MQTT QoS 1傳送id73溫度82，1秒後同id重送；retained供新訂閱者取得最後值但仍需檢查時間。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 AIoT應用工程師官方簡章：機器聯網基礎應用實作",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/AIOT/115年度AIoT應用工程師能力鑑定簡章(初級)_1150410_20260410114755.pdf"
+        },
+        {
+          "title": "OASIS：MQTT Version 3.1.1",
+          "url": "https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html"
+        }
+      ],
+      "topic": "重複訊息",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-aiot-junior-3-010",
+      "certId": "aiot",
+      "levelId": "junior",
+      "subjectId": "aiot-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "新訂閱者收到retained溫度後，為何仍須檢查時間戳？",
+      "options": {
+        "A": "retained會自動校正感測器偏差",
+        "B": "retained代表經由兩個獨立感測器驗證",
+        "C": "它可能是歷史最後值，不一定是剛量到的值",
+        "D": "retained必定代表資料剛產生一秒內"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "retained提供主題最後保留值；最新保留不等於當下新鮮，離線期間值可能已過期。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/aiot-jr-mqtt.svg",
+          "alt": "MQTT QoS 1傳送id73溫度82，1秒後同id重送；retained供新訂閱者取得最後值但仍需檢查時間。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 AIoT應用工程師官方簡章：機器聯網基礎應用實作",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/AIOT/115年度AIoT應用工程師能力鑑定簡章(初級)_1150410_20260410114755.pdf"
+        },
+        {
+          "title": "OASIS：MQTT Version 3.1.1",
+          "url": "https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html"
+        }
+      ],
+      "topic": "保留訊息",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-aiot-junior-3-011",
+      "certId": "aiot",
+      "levelId": "junior",
+      "subjectId": "aiot-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "要只訂閱line底下各產線的temp，例如line/1/temp與line/2/temp，最精確的篩選是？",
+      "options": {
+        "A": "line/#/temp",
+        "B": "line/temp/+",
+        "C": "line/1/#",
+        "D": "line/+/temp"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "+匹配單一階層；#只能作最後的多階層萬用字元。line/+/temp涵蓋各產線的temp欄位。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/aiot-jr-mqtt.svg",
+          "alt": "MQTT QoS 1傳送id73溫度82，1秒後同id重送；retained供新訂閱者取得最後值但仍需檢查時間。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 AIoT應用工程師官方簡章：機器聯網基礎應用實作",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/AIOT/115年度AIoT應用工程師能力鑑定簡章(初級)_1150410_20260410114755.pdf"
+        },
+        {
+          "title": "OASIS：MQTT Version 3.1.1",
+          "url": "https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html"
+        }
+      ],
+      "topic": "主題篩選",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-aiot-junior-3-012",
+      "certId": "aiot",
+      "levelId": "junior",
+      "subjectId": "aiot-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "圖中已核實兩筆是同一事件id=73的原送與重送，去重後應計幾次高溫事件？",
+      "options": {
+        "A": "1次",
+        "B": "0次",
+        "C": "2次",
+        "D": "73次"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "去重鍵相同且兩筆為同一事件，業務事件計數為1；傳輸接收次數2不等於新事件2次。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/aiot-jr-mqtt.svg",
+          "alt": "MQTT QoS 1傳送id73溫度82，1秒後同id重送；retained供新訂閱者取得最後值但仍需檢查時間。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 AIoT應用工程師官方簡章：機器聯網基礎應用實作",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/AIOT/115年度AIoT應用工程師能力鑑定簡章(初級)_1150410_20260410114755.pdf"
+        },
+        {
+          "title": "OASIS：MQTT Version 3.1.1",
+          "url": "https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html"
+        }
+      ],
+      "topic": "事件計數",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-aiot-junior-4-001",
+      "certId": "aiot",
+      "levelId": "junior",
+      "subjectId": "aiot-junior-4",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依圖，12 mA對應多少壓力？",
+      "options": {
+        "A": "75 kPa",
+        "B": "12 kPa",
+        "C": "50 kPa",
+        "D": "60 kPa"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "需先扣活零點4 mA：P=(12−4)/(20−4)×100=50 kPa。不能直接用12/20換算。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/sensor-jr-loop.svg",
+          "alt": "壓力0至100 kPa線性對應4至20 mA；取樣電阻250 Ω、電流12 mA；供電24 V，傳送器最低12 V，其他串聯100 Ω。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 AIoT應用工程師官方簡章：感測器信號調節實務應用",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/AIOT/115年度AIoT應用工程師能力鑑定簡章(初級)_1150410_20260410114755.pdf"
+        },
+        {
+          "title": "Fluke：Eliminating sensor errors in loop calibrations",
+          "url": "https://media.fluke.com/b21c30b8-7919-495d-b9a9-b1060066a809_original%20file.pdf"
+        }
+      ],
+      "topic": "電流迴路縮放",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-aiot-junior-4-002",
+      "certId": "aiot",
+      "levelId": "junior",
+      "subjectId": "aiot-junior-4",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "圖中12 mA通過250 Ω電阻，ADC端電壓為何？",
+      "options": {
+        "A": "0.048 V",
+        "B": "2.5 V",
+        "C": "5.0 V",
+        "D": "3.0 V"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "V=IR=0.012×250=3.0 V；取樣電阻将電流轉為ADC可讀電壓。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/sensor-jr-loop.svg",
+          "alt": "壓力0至100 kPa線性對應4至20 mA；取樣電阻250 Ω、電流12 mA；供電24 V，傳送器最低12 V，其他串聯100 Ω。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 AIoT應用工程師官方簡章：感測器信號調節實務應用",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/AIOT/115年度AIoT應用工程師能力鑑定簡章(初級)_1150410_20260410114755.pdf"
+        },
+        {
+          "title": "Fluke：Eliminating sensor errors in loop calibrations",
+          "url": "https://media.fluke.com/b21c30b8-7919-495d-b9a9-b1060066a809_original%20file.pdf"
+        }
+      ],
+      "topic": "電流轉電壓",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-aiot-junior-4-003",
+      "certId": "aiot",
+      "levelId": "junior",
+      "subjectId": "aiot-junior-4",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "滿刻度20 mA時，250 Ω取樣電阻耗散多少功率？",
+      "options": {
+        "A": "0.10 W",
+        "B": "0.01 W",
+        "C": "1.00 W",
+        "D": "5.00 W"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "P=I²R=0.02²×250=0.10 W。實際選型還要有適當降額、精度與溫漂考量。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/sensor-jr-loop.svg",
+          "alt": "壓力0至100 kPa線性對應4至20 mA；取樣電阻250 Ω、電流12 mA；供電24 V，傳送器最低12 V，其他串聯100 Ω。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 AIoT應用工程師官方簡章：感測器信號調節實務應用",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/AIOT/115年度AIoT應用工程師能力鑑定簡章(初級)_1150410_20260410114755.pdf"
+        },
+        {
+          "title": "Fluke：Eliminating sensor errors in loop calibrations",
+          "url": "https://media.fluke.com/b21c30b8-7919-495d-b9a9-b1060066a809_original%20file.pdf"
+        }
+      ],
+      "topic": "電阻功率",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-aiot-junior-4-004",
+      "certId": "aiot",
+      "levelId": "junior",
+      "subjectId": "aiot-junior-4",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "20 mA時，扣掉250 Ω取樣與100 Ω線路壓降，傳送器端剩多少電壓？",
+      "options": {
+        "A": "24 V",
+        "B": "17 V",
+        "C": "7 V",
+        "D": "12 V"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "總壓降0.020×(250+100)=7 V；24−7=17 V，高於本題最低工作電壓12 V。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/sensor-jr-loop.svg",
+          "alt": "壓力0至100 kPa線性對應4至20 mA；取樣電阻250 Ω、電流12 mA；供電24 V，傳送器最低12 V，其他串聯100 Ω。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 AIoT應用工程師官方簡章：感測器信號調節實務應用",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/AIOT/115年度AIoT應用工程師能力鑑定簡章(初級)_1150410_20260410114755.pdf"
+        },
+        {
+          "title": "Fluke：Eliminating sensor errors in loop calibrations",
+          "url": "https://media.fluke.com/b21c30b8-7919-495d-b9a9-b1060066a809_original%20file.pdf"
+        }
+      ],
+      "topic": "迴路供電裕度",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-aiot-junior-4-005",
+      "certId": "aiot",
+      "levelId": "junior",
+      "subjectId": "aiot-junior-4",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "忽略偏移，圖中10 mV經G=100放大後是多少？",
+      "options": {
+        "A": "10 V",
+        "B": "100 V",
+        "C": "1.0 V",
+        "D": "0.1 V"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "10 mV×100=1000 mV=1.0 V，仍在0–3.3 V線性輸出與ADC範圍內。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/sensor-jr-amplifier.svg",
+          "alt": "感測器0到20 mV，理想增益100；ADC12-bit 0至3.3 V採floor(V/3.3×4096)，輸入例10 mV、輸入偏移0.2 mV。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 AIoT應用工程師官方簡章：感測器信號調節實務應用",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/AIOT/115年度AIoT應用工程師能力鑑定簡章(初級)_1150410_20260410114755.pdf"
+        },
+        {
+          "title": "Texas Instruments：ADC code 與電壓換算",
+          "url": "https://e2e.ti.com/blogs_/archives/b/precisionhub/posts/it-s-in-the-math-how-to-convert-adc-code-to-a-voltage-part-1"
+        }
+      ],
+      "topic": "訊號放大",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-aiot-junior-4-006",
+      "certId": "aiot",
+      "levelId": "junior",
+      "subjectId": "aiot-junior-4",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依圖的4096等分定義，ADC輸入端1 LSB約為多少？",
+      "options": {
+        "A": "8.06 mV",
+        "B": "0.0806 mV",
+        "C": "3.3 mV",
+        "D": "0.806 mV"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "1 LSB=3.3/4096 V≈0.0008057 V=0.806 mV。此處依題定等分規則，不用4095作分母。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/sensor-jr-amplifier.svg",
+          "alt": "感測器0到20 mV，理想增益100；ADC12-bit 0至3.3 V採floor(V/3.3×4096)，輸入例10 mV、輸入偏移0.2 mV。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 AIoT應用工程師官方簡章：感測器信號調節實務應用",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/AIOT/115年度AIoT應用工程師能力鑑定簡章(初級)_1150410_20260410114755.pdf"
+        },
+        {
+          "title": "Texas Instruments：ADC code 與電壓換算",
+          "url": "https://e2e.ti.com/blogs_/archives/b/precisionhub/posts/it-s-in-the-math-how-to-convert-adc-code-to-a-voltage-part-1"
+        }
+      ],
+      "topic": "ADC解析度",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-aiot-junior-4-007",
+      "certId": "aiot",
+      "levelId": "junior",
+      "subjectId": "aiot-junior-4",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "將圖中0.2 mV輸入偏移視為固定加性誤差，放大後輸出偏移多少？",
+      "options": {
+        "A": "20 mV",
+        "B": "0.2 mV",
+        "C": "2 mV",
+        "D": "200 mV"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "輸入偏移也被增益放大：0.2×100=20 mV。只提高ADC位元數不會自動消除此系統誤差。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/sensor-jr-amplifier.svg",
+          "alt": "感測器0到20 mV，理想增益100；ADC12-bit 0至3.3 V採floor(V/3.3×4096)，輸入例10 mV、輸入偏移0.2 mV。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 AIoT應用工程師官方簡章：感測器信號調節實務應用",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/AIOT/115年度AIoT應用工程師能力鑑定簡章(初級)_1150410_20260410114755.pdf"
+        },
+        {
+          "title": "Texas Instruments：ADC code 與電壓換算",
+          "url": "https://e2e.ti.com/blogs_/archives/b/precisionhub/posts/it-s-in-the-math-how-to-convert-adc-code-to-a-voltage-part-1"
+        }
+      ],
+      "topic": "偏移誤差",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-aiot-junior-4-008",
+      "certId": "aiot",
+      "levelId": "junior",
+      "subjectId": "aiot-junior-4",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "若只把增益從100改200，感測器滿刻度20 mV時會遇到什麼？",
+      "options": {
+        "A": "增加增益會自動降低感測器滿刻度",
+        "B": "理想輸出4 V超過3.3 V範圍，造成飽和或截頂",
+        "C": "輸出2 V且解析度完全不變",
+        "D": "滿刻度仍必定為3.3 V且無失真"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "20 mV×200=4 V，超過圖中線性輸出與ADC範圍；必須保留完整訊號與誤差的裕度。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/sensor-jr-amplifier.svg",
+          "alt": "感測器0到20 mV，理想增益100；ADC12-bit 0至3.3 V採floor(V/3.3×4096)，輸入例10 mV、輸入偏移0.2 mV。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 AIoT應用工程師官方簡章：感測器信號調節實務應用",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/AIOT/115年度AIoT應用工程師能力鑑定簡章(初級)_1150410_20260410114755.pdf"
+        },
+        {
+          "title": "Texas Instruments：ADC code 與電壓換算",
+          "url": "https://e2e.ti.com/blogs_/archives/b/precisionhub/posts/it-s-in-the-math-how-to-convert-adc-code-to-a-voltage-part-1"
+        }
+      ],
+      "topic": "飽和風險",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-aiot-junior-4-009",
+      "certId": "aiot",
+      "levelId": "junior",
+      "subjectId": "aiot-junior-4",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "圖中的一階RC截止頻率最接近多少？",
+      "options": {
+        "A": "1000 Hz",
+        "B": "15900 Hz",
+        "C": "159 Hz",
+        "D": "1.59 Hz"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "RC=1000×10⁻⁶=0.001 s；fc=1/(2π×0.001)≈159.2 Hz。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/sensor-jr-filter.svg",
+          "alt": "一階RC低通R1千歐C1微法，ADC取樣1000 Hz；有效20 Hz，干擾900 Hz；給定截止及振幅比公式。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 AIoT應用工程師官方簡章：感測器信號調節實務應用",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/AIOT/115年度AIoT應用工程師能力鑑定簡章(初級)_1150410_20260410114755.pdf"
+        },
+        {
+          "title": "Texas Instruments：MSPM0 ADC Noise Analysis and Application",
+          "url": "https://www.ti.com/lit/an/slaaeo8a/slaaeo8a.pdf"
+        }
+      ],
+      "topic": "低通截止",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-aiot-junior-4-010",
+      "certId": "aiot",
+      "levelId": "junior",
+      "subjectId": "aiot-junior-4",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "在f=fc處，依圖給定公式，輸出/輸入振幅比最接近多少？",
+      "options": {
+        "A": "0.500",
+        "B": "1.000",
+        "C": "1.414",
+        "D": "0.707"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "代入f/fc=1，|H|=1/√2≈0.707，即振幅約−3 dB；不是振幅一半。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/sensor-jr-filter.svg",
+          "alt": "一階RC低通R1千歐C1微法，ADC取樣1000 Hz；有效20 Hz，干擾900 Hz；給定截止及振幅比公式。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 AIoT應用工程師官方簡章：感測器信號調節實務應用",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/AIOT/115年度AIoT應用工程師能力鑑定簡章(初級)_1150410_20260410114755.pdf"
+        },
+        {
+          "title": "Texas Instruments：MSPM0 ADC Noise Analysis and Application",
+          "url": "https://www.ti.com/lit/an/slaaeo8a/slaaeo8a.pdf"
+        }
+      ],
+      "topic": "頻率響應",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-aiot-junior-4-011",
+      "certId": "aiot",
+      "levelId": "junior",
+      "subjectId": "aiot-junior-4",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "假設900 Hz干擾未充分濾除，fs=1000 Hz取樣後最可能混疊到哪個低頻？",
+      "options": {
+        "A": "100 Hz",
+        "B": "20 Hz",
+        "C": "500 Hz",
+        "D": "1900 Hz"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "900 Hz與取樣頻率的差為100 Hz，會折返至Nyquist範圍；數位端不能唯一分辨其原始頻率。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/sensor-jr-filter.svg",
+          "alt": "一階RC低通R1千歐C1微法，ADC取樣1000 Hz；有效20 Hz，干擾900 Hz；給定截止及振幅比公式。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 AIoT應用工程師官方簡章：感測器信號調節實務應用",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/AIOT/115年度AIoT應用工程師能力鑑定簡章(初級)_1150410_20260410114755.pdf"
+        },
+        {
+          "title": "Texas Instruments：MSPM0 ADC Noise Analysis and Application",
+          "url": "https://www.ti.com/lit/an/slaaeo8a/slaaeo8a.pdf"
+        }
+      ],
+      "topic": "混疊判讀",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-aiot-junior-4-012",
+      "certId": "aiot",
+      "levelId": "junior",
+      "subjectId": "aiot-junior-4",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "要在取樣前抑制900 Hz干擾，同時保留20 Hz訊號，最合理的方向是？",
+      "options": {
+        "A": "把900 Hz數值直接改名為20 Hz",
+        "B": "設計適當類比低通及取樣率，再驗證通帶與阻帶",
+        "C": "只在取樣後把圖表刻度改小",
+        "D": "取消類比濾波但保持相同取樣率"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "抗混疊須在ADC取樣前削弱高頻成分；同時確認20 Hz通帶誤差與所需阻帶衰減，不能只改顯示。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/sensor-jr-filter.svg",
+          "alt": "一階RC低通R1千歐C1微法，ADC取樣1000 Hz；有效20 Hz，干擾900 Hz；給定截止及振幅比公式。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 AIoT應用工程師官方簡章：感測器信號調節實務應用",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/AIOT/115年度AIoT應用工程師能力鑑定簡章(初級)_1150410_20260410114755.pdf"
+        },
+        {
+          "title": "Texas Instruments：MSPM0 ADC Noise Analysis and Application",
+          "url": "https://www.ti.com/lit/an/slaaeo8a/slaaeo8a.pdf"
+        }
+      ],
+      "topic": "抗混疊改善",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-junior-3-001",
+      "certId": "3dp",
+      "levelId": "junior",
+      "subjectId": "3dp-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依圖20 mm高模型需要幾層？",
+      "options": {
+        "A": "50層",
+        "B": "80層",
+        "C": "200層",
+        "D": "100層"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "20/0.20=100層。首層與其餘層相同，且不含底座，故沒有其他層高修正。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/fdm-jr-slicing.svg",
+          "alt": "模型高20 mm、各層0.20 mm、不含底座；外殼0.45 mm線寬3道，頂層5層，採忽略重疊之估算。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印製程實務：材料擠製成型",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Prusa Research：Max volumetric speed",
+          "url": "https://help.prusa3d.com/article/max-volumetric-speed_127176"
+        }
+      ],
+      "topic": "層數計算",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-junior-3-002",
+      "certId": "3dp",
+      "levelId": "junior",
+      "subjectId": "3dp-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "按本題忽略重疊的估算，3道外殼總厚度多少？",
+      "options": {
+        "A": "1.35 mm",
+        "B": "1.20 mm",
+        "C": "0.60 mm",
+        "D": "0.45 mm"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "使用切片線寬而非噴嘴直徑：3×0.45=1.35 mm；真實路徑可能有重疊，需另看切片預覽。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/fdm-jr-slicing.svg",
+          "alt": "模型高20 mm、各層0.20 mm、不含底座；外殼0.45 mm線寬3道，頂層5層，採忽略重疊之估算。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印製程實務：材料擠製成型",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Prusa Research：Max volumetric speed",
+          "url": "https://help.prusa3d.com/article/max-volumetric-speed_127176"
+        }
+      ],
+      "topic": "外殼厚度",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-junior-3-003",
+      "certId": "3dp",
+      "levelId": "junior",
+      "subjectId": "3dp-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "圖中5個頂層的實體厚度是多少？",
+      "options": {
+        "A": "5.0 mm",
+        "B": "1.0 mm",
+        "C": "0.2 mm",
+        "D": "2.5 mm"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "5層×0.20 mm/層=1.0 mm；層數與厚度需配合層高解讀。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/fdm-jr-slicing.svg",
+          "alt": "模型高20 mm、各層0.20 mm、不含底座；外殼0.45 mm線寬3道，頂層5層，採忽略重疊之估算。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印製程實務：材料擠製成型",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Prusa Research：Max volumetric speed",
+          "url": "https://help.prusa3d.com/article/max-volumetric-speed_127176"
+        }
+      ],
+      "topic": "頂層厚度",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-junior-3-004",
+      "certId": "3dp",
+      "levelId": "junior",
+      "subjectId": "3dp-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "模型與頂部需求1.0 mm不變，改用0.10 mm層高時，頂層數應設多少？",
+      "options": {
+        "A": "2層",
+        "B": "20層",
+        "C": "10層",
+        "D": "5層"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "維持同樣頂部厚度需1.0/0.10=10層；只保留5層會使頂部厚度減半。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/fdm-jr-slicing.svg",
+          "alt": "模型高20 mm、各層0.20 mm、不含底座；外殼0.45 mm線寬3道，頂層5層，採忽略重疊之估算。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印製程實務：材料擠製成型",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Prusa Research：Max volumetric speed",
+          "url": "https://help.prusa3d.com/article/max-volumetric-speed_127176"
+        }
+      ],
+      "topic": "層高變更",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-junior-3-005",
+      "certId": "3dp",
+      "levelId": "junior",
+      "subjectId": "3dp-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "使用圖中一階公式，新流量倍率應為何？",
+      "options": {
+        "A": "1.11",
+        "B": "0.45",
+        "C": "1.50",
+        "D": "0.90"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "1.00×0.45/0.50=0.90；這是校正起點，更新後仍應列印驗證，而非保證所有特徵同等修正。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/fdm-jr-calibration.svg",
+          "alt": "單壁目標0.45 mm，三次實測均0.50 mm；目前流量倍率1.00，新倍率採舊倍率乘目標除實測的一階模型。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印製程實務：材料擠製成型",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Prusa Research：Extrusion multiplier calibration",
+          "url": "https://help.prusa3d.com/article/extrusion-multiplier-calibration_2257"
+        }
+      ],
+      "topic": "流量校正",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-junior-3-006",
+      "certId": "3dp",
+      "levelId": "junior",
+      "subjectId": "3dp-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "圖中目前單壁厚度相對目標，絕對偏差為何？",
+      "options": {
+        "A": "厚0.05 mm",
+        "B": "薄0.05 mm",
+        "C": "厚0.50 mm",
+        "D": "薄0.45 mm"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "實測0.50−目標0.45=+0.05 mm，屬偏厚；不能把整個0.50 mm當作誤差。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/fdm-jr-calibration.svg",
+          "alt": "單壁目標0.45 mm，三次實測均0.50 mm；目前流量倍率1.00，新倍率採舊倍率乘目標除實測的一階模型。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印製程實務：材料擠製成型",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Prusa Research：Extrusion multiplier calibration",
+          "url": "https://help.prusa3d.com/article/extrusion-multiplier-calibration_2257"
+        }
+      ],
+      "topic": "偏差量",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-junior-3-007",
+      "certId": "3dp",
+      "levelId": "junior",
+      "subjectId": "3dp-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "改倍率後最適合採取哪個驗證步驟？",
+      "options": {
+        "A": "量測外包裝尺寸取代試件",
+        "B": "相同材料與條件重印同一單壁件並重測",
+        "C": "只看切片器顯示的估計重量",
+        "D": "同時更換噴嘴、材料、層高且不留紀錄"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "固定其他條件才能觀察流量倍率的效果；多變因一起改會使原因無法辨識。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/fdm-jr-calibration.svg",
+          "alt": "單壁目標0.45 mm，三次實測均0.50 mm；目前流量倍率1.00，新倍率採舊倍率乘目標除實測的一階模型。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印製程實務：材料擠製成型",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Prusa Research：Extrusion multiplier calibration",
+          "url": "https://help.prusa3d.com/article/extrusion-multiplier-calibration_2257"
+        }
+      ],
+      "topic": "校正驗證",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-junior-3-008",
+      "certId": "3dp",
+      "levelId": "junior",
+      "subjectId": "3dp-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "為什麼不能只靠這三筆相同厚度就宣稱整台機器全部尺寸準確？",
+      "options": {
+        "A": "單壁厚度等於X、Y、Z的全部定位誤差",
+        "B": "只要倍率小於1就完全沒有誤差",
+        "C": "此試件只驗證指定條件的局部壁厚，其他方向與特徵需另測",
+        "D": "相同量測值代表所有孔徑也必然正確"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "壁厚受擠出流量影響，但孔徑、軸向尺寸、收縮及機械誤差還有其他來源。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/fdm-jr-calibration.svg",
+          "alt": "單壁目標0.45 mm，三次實測均0.50 mm；目前流量倍率1.00，新倍率採舊倍率乘目標除實測的一階模型。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印製程實務：材料擠製成型",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Prusa Research：Extrusion multiplier calibration",
+          "url": "https://help.prusa3d.com/article/extrusion-multiplier-calibration_2257"
+        }
+      ],
+      "topic": "量測限制",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-junior-3-009",
+      "certId": "3dp",
+      "levelId": "junior",
+      "subjectId": "3dp-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "甲與乙的結果最直接支持哪個優先處置？",
+      "options": {
+        "A": "優先提高模型內部填充率",
+        "B": "優先改變內部填充圖案",
+        "C": "優先增加頂部實心層數",
+        "D": "依平台材質規範清潔接觸面，再驗證首層"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "控制其他條件後，清潔使首層恢復，證據優先指向表面污染；還應遵循平台相容清潔方式。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/fdm-jr-fault.svg",
+          "alt": "甲平台有油污首層翹起，乙清潔後黏附；丙提高速度高速缺料，丁恢复速度缺料消失。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印製程實務：材料擠製成型",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Prusa Research：Extrusion multiplier calibration",
+          "url": "https://help.prusa3d.com/article/extrusion-multiplier-calibration_2257"
+        }
+      ],
+      "topic": "首層排錯",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-junior-3-010",
+      "certId": "3dp",
+      "levelId": "junior",
+      "subjectId": "3dp-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "丙與丁的差異最值得先檢查哪個限制？",
+      "options": {
+        "A": "高速時需求體積流量是否超過熱端可供應量",
+        "B": "只檢查頂層數，不檢查擠出需求",
+        "C": "優先判定平台平整度是高速區缺料的唯一原因",
+        "D": "只檢查孔徑補償，不檢查供料能力"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "線寬×層高×速度決定體積流量需求。提高速度才缺料、降低後恢復，應查熱端流量與供料。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/fdm-jr-fault.svg",
+          "alt": "甲平台有油污首層翹起，乙清潔後黏附；丙提高速度高速缺料，丁恢复速度缺料消失。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印製程實務：材料擠製成型",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Prusa Research：Max volumetric speed",
+          "url": "https://help.prusa3d.com/article/max-volumetric-speed_127176"
+        }
+      ],
+      "topic": "供料能力",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-junior-3-011",
+      "certId": "3dp",
+      "levelId": "junior",
+      "subjectId": "3dp-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "要進一步確認高速缺料與速度有關，哪個試驗最合適？",
+      "options": {
+        "A": "只增加模型支撐密度",
+        "B": "保持材料、溫度和截面，只分段改變速度並記錄缺料起點",
+        "C": "每次同時改材料、溫度與速度",
+        "D": "只比較兩張不同曝光的成品照片"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "單一變因與分段記錄可建立速度／流量限制的關聯，避免多變因混淆。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/fdm-jr-fault.svg",
+          "alt": "甲平台有油污首層翹起，乙清潔後黏附；丙提高速度高速缺料，丁恢复速度缺料消失。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印製程實務：材料擠製成型",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Prusa Research：Max volumetric speed",
+          "url": "https://help.prusa3d.com/article/max-volumetric-speed_127176"
+        }
+      ],
+      "topic": "故障實驗",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-junior-3-012",
+      "certId": "3dp",
+      "levelId": "junior",
+      "subjectId": "3dp-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "若切片預覽某薄肋完全沒有擠出路徑，尚未列印就應先查什麼？",
+      "options": {
+        "A": "只把相同路徑的列印速度降低",
+        "B": "只增加相同切片結果的擠出倍率",
+        "C": "薄肋尺寸與線寬、薄壁處理及模型有效性",
+        "D": "優先增加平台溫度以修復未生成的路徑"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "切片階段已缺失路徑，應先查幾何與切片策略；硬體清潔或風扇無法補上未生成的指令。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/fdm-jr-fault.svg",
+          "alt": "甲平台有油污首層翹起，乙清潔後黏附；丙提高速度高速缺料，丁恢复速度缺料消失。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印製程實務：材料擠製成型",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Prusa Research：Max volumetric speed",
+          "url": "https://help.prusa3d.com/article/max-volumetric-speed_127176"
+        }
+      ],
+      "topic": "切片預覽",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-junior-4-001",
+      "certId": "3dp",
+      "levelId": "junior",
+      "subjectId": "3dp-junior-4",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "要求柱徑與孔徑都在目標±0.05 mm，且細柱完整，圖中應優先選哪個測試條件？",
+      "options": {
+        "A": "2.5 s",
+        "B": "2.0 s",
+        "C": "3.0 s",
+        "D": "3.5 s"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "2.5秒同時滿足兩尺寸與完整性；其餘條件至少一項超差。此結果僅適用本題樹脂與設備設定。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/sla-jr-exposure.svg",
+          "alt": "同樹脂層高曝光2.0/2.5/3.0/3.5秒，柱徑0.92/1.00/1.08/1.15，孔徑2.08/2.00/1.90/1.80 mm，2.0秒細柱斷裂。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印製程實務：光聚合固化",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Formlabs：SLA 零件擺放、支撐與排液",
+          "url": "https://formlabs.com/blog/how-to-orient-sla-parts/"
+        }
+      ],
+      "topic": "曝光校正",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-junior-4-002",
+      "certId": "3dp",
+      "levelId": "junior",
+      "subjectId": "3dp-junior-4",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依表中2.5至3.5秒資料，隨曝光增加，哪個趨勢符合量測？",
+      "options": {
+        "A": "實心柱變細，孔徑變大",
+        "B": "實心柱變粗，孔徑變小",
+        "C": "實心柱與孔徑都變大",
+        "D": "實心柱與孔徑都不變"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "表中柱徑1.00→1.15，孔徑2.00→1.80，顯示此測試的固化範圍增加；不能任意套用單一整體縮放修正。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/sla-jr-exposure.svg",
+          "alt": "同樹脂層高曝光2.0/2.5/3.0/3.5秒，柱徑0.92/1.00/1.08/1.15，孔徑2.08/2.00/1.90/1.80 mm，2.0秒細柱斷裂。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印製程實務：光聚合固化",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Formlabs：SLA 零件擺放、支撐與排液",
+          "url": "https://formlabs.com/blog/how-to-orient-sla-parts/"
+        }
+      ],
+      "topic": "曝光尺寸趨勢",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-junior-4-003",
+      "certId": "3dp",
+      "levelId": "junior",
+      "subjectId": "3dp-junior-4",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "3.0秒條件的孔徑相對目標偏差是多少？",
+      "options": {
+        "A": "小0.08 mm",
+        "B": "大0.08 mm",
+        "C": "小0.10 mm",
+        "D": "大0.10 mm"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "1.90−2.00=−0.10 mm；柱徑+0.08 mm是另一個特徵的偏差。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/sla-jr-exposure.svg",
+          "alt": "同樹脂層高曝光2.0/2.5/3.0/3.5秒，柱徑0.92/1.00/1.08/1.15，孔徑2.08/2.00/1.90/1.80 mm，2.0秒細柱斷裂。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印製程實務：光聚合固化",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Formlabs：SLA 零件擺放、支撐與排液",
+          "url": "https://formlabs.com/blog/how-to-orient-sla-parts/"
+        }
+      ],
+      "topic": "孔徑誤差",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-junior-4-004",
+      "certId": "3dp",
+      "levelId": "junior",
+      "subjectId": "3dp-junior-4",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "把2.5秒設定改用另一款樹脂後，最合理的做法為何？",
+      "options": {
+        "A": "沿用2.5秒並保證仍符合±0.05 mm",
+        "B": "只驗證外輪廓，略過孔徑與細柱",
+        "C": "因兩款樹脂標示相同波長，便不再校正",
+        "D": "依新樹脂建議條件重新印測試片與量測"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "曝光反應與材料、光源及層高有關；前一試驗不能直接保證新樹脂尺寸與強度。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/sla-jr-exposure.svg",
+          "alt": "同樹脂層高曝光2.0/2.5/3.0/3.5秒，柱徑0.92/1.00/1.08/1.15，孔徑2.08/2.00/1.90/1.80 mm，2.0秒細柱斷裂。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印製程實務：光聚合固化",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Formlabs：SLA 零件擺放、支撐與排液",
+          "url": "https://formlabs.com/blog/how-to-orient-sla-parts/"
+        },
+        {
+          "title": "Formlabs：3D printing post-processing FAQs",
+          "url": "https://formlabs.com/global/support/3d-printing-post-processing-faqs/"
+        }
+      ],
+      "topic": "校正移轉",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-junior-4-005",
+      "certId": "3dp",
+      "levelId": "junior",
+      "subjectId": "3dp-junior-4",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依圖中三項限制，哪個方案同時符合？",
+      "options": {
+        "A": "傾斜 Q",
+        "B": "平放 P",
+        "C": "直立 R",
+        "D": "P與R都符合"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "P截面過大且沒有排液孔；R高度超限；Q三項都符合。此規格是本題示例而非所有設備標準。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/sla-jr-orientation.svg",
+          "alt": "同一中空件P/Q/R三方案：最大截面800/300/100 mm²、高度20/35/60 mm，P無排液孔，Q/R有；限制350 mm²、40 mm與有排液孔。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印製程實務：光聚合固化",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Formlabs：SLA 零件擺放、支撐與排液",
+          "url": "https://formlabs.com/blog/how-to-orient-sla-parts/"
+        }
+      ],
+      "topic": "擺放方案選擇",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-junior-4-006",
+      "certId": "3dp",
+      "levelId": "junior",
+      "subjectId": "3dp-junior-4",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "若選Q且所有層高均0.05 mm，不計底座，建構35 mm需幾層？",
+      "options": {
+        "A": "70層",
+        "B": "700層",
+        "C": "350層",
+        "D": "175層"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "35/0.05=700層。增加傾斜角可能減少截面但增加高度，需平衡兩者。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/sla-jr-orientation.svg",
+          "alt": "同一中空件P/Q/R三方案：最大截面800/300/100 mm²、高度20/35/60 mm，P無排液孔，Q/R有；限制350 mm²、40 mm與有排液孔。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印製程實務：光聚合固化",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Formlabs：SLA 零件擺放、支撐與排液",
+          "url": "https://formlabs.com/blog/how-to-orient-sla-parts/"
+        }
+      ],
+      "topic": "建構層數",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-junior-4-007",
+      "certId": "3dp",
+      "levelId": "junior",
+      "subjectId": "3dp-junior-4",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "Q的最大層截面占P的百分比是多少？",
+      "options": {
+        "A": "26.7%",
+        "B": "75.0%",
+        "C": "37.5%",
+        "D": "62.5%"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "300/800×100=37.5%。這是面積比，不等於保證實際剝離力也按完全相同比例改變。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/sla-jr-orientation.svg",
+          "alt": "同一中空件P/Q/R三方案：最大截面800/300/100 mm²、高度20/35/60 mm，P無排液孔，Q/R有；限制350 mm²、40 mm與有排液孔。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印製程實務：光聚合固化",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Formlabs：SLA 零件擺放、支撐與排液",
+          "url": "https://formlabs.com/blog/how-to-orient-sla-parts/"
+        }
+      ],
+      "topic": "剝離面積比較",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-junior-4-008",
+      "certId": "3dp",
+      "levelId": "junior",
+      "subjectId": "3dp-junior-4",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "圖中P没有排液孔，最直接的後處理問題為何？",
+      "options": {
+        "A": "封閉內腔會自動完成均勻後固化",
+        "B": "中空件完全不需清洗",
+        "C": "外表乾燥即可證明內腔沒有液體",
+        "D": "內腔可能困住未固化樹脂，難以有效清洗排出"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "排液孔有助清洗液與未固化樹脂進出；外部狀態不能證明封閉內腔已清乾淨。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/sla-jr-orientation.svg",
+          "alt": "同一中空件P/Q/R三方案：最大截面800/300/100 mm²、高度20/35/60 mm，P無排液孔，Q/R有；限制350 mm²、40 mm與有排液孔。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印製程實務：光聚合固化",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Formlabs：SLA 零件擺放、支撐與排液",
+          "url": "https://formlabs.com/blog/how-to-orient-sla-parts/"
+        }
+      ],
+      "topic": "中空排液",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-junior-4-009",
+      "certId": "3dp",
+      "levelId": "junior",
+      "subjectId": "3dp-junior-4",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依圖中的作業卡，正確的後處理順序是哪一個？",
+      "options": {
+        "A": "清洗→完全乾燥→後固化",
+        "B": "後固化→清洗→仍濕時包裝",
+        "C": "乾燥→後固化→略過清洗",
+        "D": "清洗→帶大量清洗液直接後固化"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "先移除殘餘樹脂，再依要求乾燥與後固化；順序與材料相容條件應依該批官方作業指引。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/sla-jr-process.svg",
+          "alt": "本批樹脂作業卡：清洗10分鐘、乾燥15分鐘、後固化20分鐘60°C；另觀察清洗液飽和且表面殘留液態樹脂。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印製程實務：光聚合固化",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Formlabs：Using the Form Wash",
+          "url": "https://formlabs.com/support/Using-Form-Wash/"
+        },
+        {
+          "title": "Formlabs：3D printing post-processing FAQs",
+          "url": "https://formlabs.com/global/support/3d-printing-post-processing-faqs/"
+        }
+      ],
+      "topic": "製程順序",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-junior-4-010",
+      "certId": "3dp",
+      "levelId": "junior",
+      "subjectId": "3dp-junior-4",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "一批零件依圖逐步處理、不重疊作業且無等待，總時間多少？",
+      "options": {
+        "A": "60 min",
+        "B": "45 min",
+        "C": "30 min",
+        "D": "35 min"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "10+15+20=45分鐘；本題明確不做平行批次處理。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/sla-jr-process.svg",
+          "alt": "本批樹脂作業卡：清洗10分鐘、乾燥15分鐘、後固化20分鐘60°C；另觀察清洗液飽和且表面殘留液態樹脂。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印製程實務：光聚合固化",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Formlabs：Using the Form Wash",
+          "url": "https://formlabs.com/support/Using-Form-Wash/"
+        }
+      ],
+      "topic": "製程時間",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-junior-4-011",
+      "certId": "3dp",
+      "levelId": "junior",
+      "subjectId": "3dp-junior-4",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "發現圖中飽和清洗液與液態殘留，最合理的優先改善為何？",
+      "options": {
+        "A": "略過乾燥以減少總工時",
+        "B": "只提高包裝密封性避免看見表面",
+        "C": "依規範更換或管理清洗液，重驗清洗效果",
+        "D": "只延長後固化時間把表面殘留全部固住"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "清洗液飽和會降低清洗效果；後固化不是替代去除殘餘液態樹脂的步驟。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/sla-jr-process.svg",
+          "alt": "本批樹脂作業卡：清洗10分鐘、乾燥15分鐘、後固化20分鐘60°C；另觀察清洗液飽和且表面殘留液態樹脂。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印製程實務：光聚合固化",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Formlabs：Using the Form Wash",
+          "url": "https://formlabs.com/support/Using-Form-Wash/"
+        }
+      ],
+      "topic": "清洗異常",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-junior-4-012",
+      "certId": "3dp",
+      "levelId": "junior",
+      "subjectId": "3dp-junior-4",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "圖中60 °C、20分鐘可以直接當所有樹脂的固定條件嗎？",
+      "options": {
+        "A": "可以，所有光固化材料反應均相同",
+        "B": "可以，只要成品外觀透明即可",
+        "C": "可以，層高比樹脂配方更能決定全部條件",
+        "D": "不可以，應依各樹脂與設備的適用固化條件"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "圖中僅是本批作業卡。不同配方與零件需求可能有不同後固化條件，不能從單一案例擴張成通則。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/sla-jr-process.svg",
+          "alt": "本批樹脂作業卡：清洗10分鐘、乾燥15分鐘、後固化20分鐘60°C；另觀察清洗液飽和且表面殘留液態樹脂。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印製程實務：光聚合固化",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Formlabs：3D printing post-processing FAQs",
+          "url": "https://formlabs.com/global/support/3d-printing-post-processing-faqs/"
+        }
+      ],
+      "topic": "後固化條件",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-intermediate-1-001",
+      "certId": "3dp",
+      "levelId": "intermediate",
+      "subjectId": "3dp-intermediate-1",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "各組重複數相同。以高溫兩組平均減低溫兩組平均，溫度主效應是多少？",
+      "options": {
+        "A": "−8 MPa",
+        "B": "+8 MPa",
+        "C": "+12 MPa",
+        "D": "+4 MPa"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "高溫平均(42+26)/2=34；低溫(30+22)/2=26，差+8 MPa。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/3dp-mid-doe.svg",
+          "alt": "同材料同試件2×2試驗：200°C/30%風扇30MPa、220/30%42、200/80%22、220/80%26；各組有同數量重複。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印材料與製程優化",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Prusa Research：Max volumetric speed",
+          "url": "https://help.prusa3d.com/article/max-volumetric-speed_127176"
+        }
+      ],
+      "topic": "因子主效應",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-3dp-intermediate-1-002",
+      "certId": "3dp",
+      "levelId": "intermediate",
+      "subjectId": "3dp-intermediate-1",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "以80%風扇兩組平均減30%風扇兩組平均，冷卻主效應是多少？",
+      "options": {
+        "A": "−4 MPa",
+        "B": "−20 MPa",
+        "C": "−12 MPa",
+        "D": "+12 MPa"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "80%平均(22+26)/2=24；30%平均(30+42)/2=36，差−12 MPa；僅針對本材料與試驗範圍。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/3dp-mid-doe.svg",
+          "alt": "同材料同試件2×2試驗：200°C/30%風扇30MPa、220/30%42、200/80%22、220/80%26；各組有同數量重複。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印材料與製程優化",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Prusa Research：Max volumetric speed",
+          "url": "https://help.prusa3d.com/article/max-volumetric-speed_127176"
+        }
+      ],
+      "topic": "冷卻主效應",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-3dp-intermediate-1-003",
+      "certId": "3dp",
+      "levelId": "intermediate",
+      "subjectId": "3dp-intermediate-1",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "低風扇下升溫增加12 MPa，高風扇下升溫增加4 MPa。此結果提示什麼？",
+      "options": {
+        "A": "溫度在所有冷卻條件效果必定相同",
+        "B": "只由強度表即可判定兩因子毫無影響",
+        "C": "風扇效果與溫度效果必定互不相關",
+        "D": "溫度效果受冷卻設定影響，存在交互作用線索"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "升溫效果在兩個冷卻水準不同，差異為8 MPa；需配合重複與誤差估計判斷統計顯著性。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/3dp-mid-doe.svg",
+          "alt": "同材料同試件2×2試驗：200°C/30%風扇30MPa、220/30%42、200/80%22、220/80%26；各組有同數量重複。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印材料與製程優化",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Prusa Research：Max volumetric speed",
+          "url": "https://help.prusa3d.com/article/max-volumetric-speed_127176"
+        }
+      ],
+      "topic": "交互作用辨識",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-3dp-intermediate-1-004",
+      "certId": "3dp",
+      "levelId": "intermediate",
+      "subjectId": "3dp-intermediate-1",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "以表中最高強度Q作候選後，哪個下一步最合理？",
+      "options": {
+        "A": "重複確認Q，並檢查尺寸、翹曲和材料適用溫度",
+        "B": "不再試印即宣稱任何材料都適用220°C",
+        "C": "把Q的42 MPa直接寫成設備永久保證值",
+        "D": "只保留最大值並刪除其餘試驗數據"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "單一輸出最佳不表示所有品質目標皆最佳；需确认重現性與其他限制，不能省略原始試驗紀錄。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/3dp-mid-doe.svg",
+          "alt": "同材料同試件2×2試驗：200°C/30%風扇30MPa、220/30%42、200/80%22、220/80%26；各組有同數量重複。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印材料與製程優化",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Prusa Research：Max volumetric speed",
+          "url": "https://help.prusa3d.com/article/max-volumetric-speed_127176"
+        }
+      ],
+      "topic": "優化確認",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-3dp-intermediate-1-005",
+      "certId": "3dp",
+      "levelId": "intermediate",
+      "subjectId": "3dp-intermediate-1",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依圖，Cp最接近多少？",
+      "options": {
+        "A": "2.67",
+        "B": "1.33",
+        "C": "0.67",
+        "D": "2.00"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "Cp=(20.20−19.80)/(6×0.05)=0.40/0.30≈1.33。Cp未計入平均偏移。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/3dp-mid-capability.svg",
+          "alt": "穩定近似常態尺寸：目標20、上下限19.8與20.2、平均20.1、標準差0.05 mm；給定Cp與Cpk公式。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印材料與製程優化",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "NIST：What is Process Capability?",
+          "url": "https://www.itl.nist.gov/div898/handbook/pmc/section1/pmc16.htm"
+        }
+      ],
+      "topic": "尺寸能力Cp",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-3dp-intermediate-1-006",
+      "certId": "3dp",
+      "levelId": "intermediate",
+      "subjectId": "3dp-intermediate-1",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依圖，Cpk最接近多少？",
+      "options": {
+        "A": "2.00",
+        "B": "0.33",
+        "C": "0.67",
+        "D": "1.33"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "上側(20.20−20.10)/0.15≈0.67；下側0.30/0.15=2.00，取較小值。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/3dp-mid-capability.svg",
+          "alt": "穩定近似常態尺寸：目標20、上下限19.8與20.2、平均20.1、標準差0.05 mm；給定Cp與Cpk公式。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印材料與製程優化",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "NIST：What is Process Capability?",
+          "url": "https://www.itl.nist.gov/div898/handbook/pmc/section1/pmc16.htm"
+        }
+      ],
+      "topic": "偏移後Cpk",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-3dp-intermediate-1-007",
+      "certId": "3dp",
+      "levelId": "intermediate",
+      "subjectId": "3dp-intermediate-1",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "如果仅把平均校正到20.00 mm，σ仍0.05 mm，Cpk會變為多少？",
+      "options": {
+        "A": "0.67",
+        "B": "2.67",
+        "C": "4.00",
+        "D": "1.33"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "兩側距離都0.20 mm，Cpk=0.20/(3×0.05)≈1.33；居中改善偏移，但沒有降低變異。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/3dp-mid-capability.svg",
+          "alt": "穩定近似常態尺寸：目標20、上下限19.8與20.2、平均20.1、標準差0.05 mm；給定Cp與Cpk公式。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印材料與製程優化",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "NIST：What is Process Capability?",
+          "url": "https://www.itl.nist.gov/div898/handbook/pmc/section1/pmc16.htm"
+        }
+      ],
+      "topic": "均值補償",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-3dp-intermediate-1-008",
+      "certId": "3dp",
+      "levelId": "intermediate",
+      "subjectId": "3dp-intermediate-1",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "若製程其實持續漂移，為何不宜直接把圖中能力值視為長期保證？",
+      "options": {
+        "A": "公式的穩定製程假設不成立，短期估值可能無法代表未來",
+        "B": "Cpk只要大於零就必然永久合格",
+        "C": "任何分布都能直接用相同常態能力判斷",
+        "D": "樣本平均一旦算出就永不再改變"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "能力分析需確認製程穩定及分布假設；漂移會改變均值與變異，單次數值不能替代管制與再驗證。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/3dp-mid-capability.svg",
+          "alt": "穩定近似常態尺寸：目標20、上下限19.8與20.2、平均20.1、標準差0.05 mm；給定Cp與Cpk公式。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印材料與製程優化",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "NIST：What is Process Capability?",
+          "url": "https://www.itl.nist.gov/div898/handbook/pmc/section1/pmc16.htm"
+        }
+      ],
+      "topic": "能力指標限制",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-3dp-intermediate-1-009",
+      "certId": "3dp",
+      "levelId": "intermediate",
+      "subjectId": "3dp-intermediate-1",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "要求強度至少46 MPa，列印時間不超過60分鐘，哪個方案符合？",
+      "options": {
+        "A": "丙",
+        "B": "丁",
+        "C": "甲",
+        "D": "乙"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "甲與丙強度不足；乙時間65分鐘超過限制；丁48 MPa、50分鐘同時符合。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/3dp-mid-tradeoff.svg",
+          "alt": "甲乙丙丁強度45/50/42/48MPa，用料12/10/14/11g，時間40/65/35/50min；材料2元/g，機時0.2元/min，功率0.12kW。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印材料與製程優化",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Prusa Research：Max volumetric speed",
+          "url": "https://help.prusa3d.com/article/max-volumetric-speed_127176"
+        }
+      ],
+      "topic": "限制條件選型",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-3dp-intermediate-1-010",
+      "certId": "3dp",
+      "levelId": "intermediate",
+      "subjectId": "3dp-intermediate-1",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依圖中材料與機時費率，丁的直接成本是多少？",
+      "options": {
+        "A": "10元",
+        "B": "61元",
+        "C": "32元",
+        "D": "22元"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "材料11×2=22元；機時50×0.2=10元，合計32元；本題未計入其他費用。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/3dp-mid-tradeoff.svg",
+          "alt": "甲乙丙丁強度45/50/42/48MPa，用料12/10/14/11g，時間40/65/35/50min；材料2元/g，機時0.2元/min，功率0.12kW。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印材料與製程優化",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Prusa Research：Max volumetric speed",
+          "url": "https://help.prusa3d.com/article/max-volumetric-speed_127176"
+        }
+      ],
+      "topic": "製造成本",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-3dp-intermediate-1-011",
+      "certId": "3dp",
+      "levelId": "intermediate",
+      "subjectId": "3dp-intermediate-1",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "平均功率依圖固定0.12 kW，丁一次50分鐘列印耗電多少？",
+      "options": {
+        "A": "6.0 kWh",
+        "B": "0.12 kWh",
+        "C": "0.50 kWh",
+        "D": "0.10 kWh"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "能量=0.12×(50/60)=0.10 kWh；分鐘需換成小時。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/3dp-mid-tradeoff.svg",
+          "alt": "甲乙丙丁強度45/50/42/48MPa，用料12/10/14/11g，時間40/65/35/50min；材料2元/g，機時0.2元/min，功率0.12kW。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印材料與製程優化",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Prusa Research：Max volumetric speed",
+          "url": "https://help.prusa3d.com/article/max-volumetric-speed_127176"
+        }
+      ],
+      "topic": "能耗估算",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-3dp-intermediate-1-012",
+      "certId": "3dp",
+      "levelId": "intermediate",
+      "subjectId": "3dp-intermediate-1",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "若只考慮「強度愈高愈好、用料愈少愈好」，不考慮時間，哪項成立？",
+      "options": {
+        "A": "乙在這兩項上均優於丁",
+        "B": "丁在這兩項上均優於乙",
+        "C": "丙在這兩項上均優於甲",
+        "D": "甲在這兩項上均優於乙"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "乙50>48 MPa且10<11 g，所以在這兩個目標支配丁；加入時間限制後結論可能不同。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/3dp-mid-tradeoff.svg",
+          "alt": "甲乙丙丁強度45/50/42/48MPa，用料12/10/14/11g，時間40/65/35/50min；材料2元/g，機時0.2元/min，功率0.12kW。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印材料與製程優化",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Prusa Research：Max volumetric speed",
+          "url": "https://help.prusa3d.com/article/max-volumetric-speed_127176"
+        }
+      ],
+      "topic": "Pareto判讀",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-3dp-intermediate-2-001",
+      "certId": "3dp",
+      "levelId": "intermediate",
+      "subjectId": "3dp-intermediate-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依圖矩形近似，60 mm/s長線段的需求體積流量多少？",
+      "options": {
+        "A": "18.0 mm³/s",
+        "B": "36.0 mm³/s",
+        "C": "10.8 mm³/s",
+        "D": "12.0 mm³/s"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "Q=0.60×0.30×60=10.8 mm³/s，低於本題熱端上限12。真實截面形狀可能需切片器修正。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/fdm-mid-throughput.svg",
+          "alt": "矩形截面近似線寬0.60層高0.30，熱端12mm³/s；長段60mm/s；短段6mm，加速度1000mm/s²，兩端0且對稱加減速。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印進階製程實務：材料擠製成型",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Prusa Research：Max volumetric speed",
+          "url": "https://help.prusa3d.com/article/max-volumetric-speed_127176"
+        }
+      ],
+      "topic": "體積流量",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-intermediate-2-002",
+      "certId": "3dp",
+      "levelId": "intermediate",
+      "subjectId": "3dp-intermediate-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "保持圖中線寬與層高，僅由熱端12 mm³/s限制，速度上限約為？",
+      "options": {
+        "A": "40.0 mm/s",
+        "B": "100.0 mm/s",
+        "C": "200.0 mm/s",
+        "D": "66.7 mm/s"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "v=Q/(w×h)=12/(0.6×0.3)=66.67 mm/s，不能直接把線速度當作體積流量。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/fdm-mid-throughput.svg",
+          "alt": "矩形截面近似線寬0.60層高0.30，熱端12mm³/s；長段60mm/s；短段6mm，加速度1000mm/s²，兩端0且對稱加減速。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印進階製程實務：材料擠製成型",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Prusa Research：Max volumetric speed",
+          "url": "https://help.prusa3d.com/article/max-volumetric-speed_127176"
+        }
+      ],
+      "topic": "熱端速度上限",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-intermediate-2-003",
+      "certId": "3dp",
+      "levelId": "intermediate",
+      "subjectId": "3dp-intermediate-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "只考慮圖中短線段運動模型，6 mm線段可達峰值最接近多少？",
+      "options": {
+        "A": "77.5 mm/s",
+        "B": "6.0 mm/s",
+        "C": "60.0 mm/s",
+        "D": "1000 mm/s"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "v峰=√(1000×6)=√6000≈77.46 mm/s；此值未加入熱端供料限制。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/fdm-mid-throughput.svg",
+          "alt": "矩形截面近似線寬0.60層高0.30，熱端12mm³/s；長段60mm/s；短段6mm，加速度1000mm/s²，兩端0且對稱加減速。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印進階製程實務：材料擠製成型",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Prusa Research：Max volumetric speed",
+          "url": "https://help.prusa3d.com/article/max-volumetric-speed_127176"
+        }
+      ],
+      "topic": "加速度限制",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-intermediate-2-004",
+      "certId": "3dp",
+      "levelId": "intermediate",
+      "subjectId": "3dp-intermediate-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "同時考慮短線段運動與熱端流量，允許的峰值上限由哪者決定？",
+      "options": {
+        "A": "兩限制無關，可直接設定100 mm/s",
+        "B": "熱端流量，約66.7 mm/s",
+        "C": "短線段運動，約77.5 mm/s",
+        "D": "將兩上限相加為144.2 mm/s"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "實際上限應取兩者較小值min(66.7,77.5)=66.7 mm/s。此為簡化限制估算。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/fdm-mid-throughput.svg",
+          "alt": "矩形截面近似線寬0.60層高0.30，熱端12mm³/s；長段60mm/s；短段6mm，加速度1000mm/s²，兩端0且對稱加減速。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印進階製程實務：材料擠製成型",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Prusa Research：Max volumetric speed",
+          "url": "https://help.prusa3d.com/article/max-volumetric-speed_127176"
+        }
+      ],
+      "topic": "限制整合",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-intermediate-2-005",
+      "certId": "3dp",
+      "levelId": "intermediate",
+      "subjectId": "3dp-intermediate-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依圖拉力與有效截面，名義拉應力是多少？",
+      "options": {
+        "A": "250 MPa",
+        "B": "2500 MPa",
+        "C": "25 MPa",
+        "D": "2.5 MPa"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "σ=F/A=250/10=25 N/mm²=25 MPa。本題忽略應力集中。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/fdm-mid-anisotropy.svg",
+          "alt": "同批試片X沿擠出55MPa、Y層內橫向50MPa、Z垂直層面28MPa；設計250N拉力、有效截面10mm²。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印進階製程實務：材料擠製成型",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Prusa Research：Max volumetric speed",
+          "url": "https://help.prusa3d.com/article/max-volumetric-speed_127176"
+        }
+      ],
+      "topic": "設計應力",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-intermediate-2-006",
+      "certId": "3dp",
+      "levelId": "intermediate",
+      "subjectId": "3dp-intermediate-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依破壞強度/名義應力計算，Z方向安全係數為何？",
+      "options": {
+        "A": "2.00",
+        "B": "2.20",
+        "C": "0.89",
+        "D": "1.12"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "Z方向強度28 MPa除應力25 MPa為1.12，明顯低於另外兩方向；不能用X強度替代Z。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/fdm-mid-anisotropy.svg",
+          "alt": "同批試片X沿擠出55MPa、Y層內橫向50MPa、Z垂直層面28MPa；設計250N拉力、有效截面10mm²。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印進階製程實務：材料擠製成型",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Prusa Research：Max volumetric speed",
+          "url": "https://help.prusa3d.com/article/max-volumetric-speed_127176"
+        }
+      ],
+      "topic": "方向安全係數",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-intermediate-2-007",
+      "certId": "3dp",
+      "levelId": "intermediate",
+      "subjectId": "3dp-intermediate-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "只依圖中拉伸強度且其他條件相同，承受此單向拉力的最高安全裕度方向是？",
+      "options": {
+        "A": "X方向",
+        "B": "Y方向",
+        "C": "Z方向",
+        "D": "三方向完全相同"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "X方向55 MPa最高，其名義安全係數55/25=2.2。實際還需評估支撐、尺寸與載荷方向。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/fdm-mid-anisotropy.svg",
+          "alt": "同批試片X沿擠出55MPa、Y層內橫向50MPa、Z垂直層面28MPa；設計250N拉力、有效截面10mm²。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印進階製程實務：材料擠製成型",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Prusa Research：Max volumetric speed",
+          "url": "https://help.prusa3d.com/article/max-volumetric-speed_127176"
+        }
+      ],
+      "topic": "列印方向選擇",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-intermediate-2-008",
+      "certId": "3dp",
+      "levelId": "intermediate",
+      "subjectId": "3dp-intermediate-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "若正式零件改成反覆彎曲負載，為何不能直接用此表保證壽命？",
+      "options": {
+        "A": "把MPa換成N就能得到循環壽命",
+        "B": "此表為單次拉伸破壞，沒有反覆彎曲疲勞與幾何效應資料",
+        "C": "拉伸強度高一定代表任意疲勞壽命無限",
+        "D": "Z方向數據可自動當成所有彎曲循環數"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "載荷型態、循環、應力集中與方向性會影響壽命；需適當疲勞或零件層級驗證。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/fdm-mid-anisotropy.svg",
+          "alt": "同批試片X沿擠出55MPa、Y層內橫向50MPa、Z垂直層面28MPa；設計250N拉力、有效截面10mm²。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印進階製程實務：材料擠製成型",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Prusa Research：Max volumetric speed",
+          "url": "https://help.prusa3d.com/article/max-volumetric-speed_127176"
+        }
+      ],
+      "topic": "驗證範圍",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-intermediate-2-009",
+      "certId": "3dp",
+      "levelId": "intermediate",
+      "subjectId": "3dp-intermediate-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "圖中8次換料總清洗體積是多少？",
+      "options": {
+        "A": "16 cm³",
+        "B": "1600 cm³",
+        "C": "1.6 cm³",
+        "D": "0.16 cm³"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "200×8=1600 mm³，1000 mm³=1 cm³，所以為1.6 cm³。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/fdm-mid-material-switch.svg",
+          "alt": "每次換料清洗200mm³、8次、密度1.25g/cm³，零件與支撐淨重25g；清洗不足介面殘留與強度波動，經驗證清洗改善。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印進階製程實務：材料擠製成型",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Prusa Research：Extrusion multiplier calibration",
+          "url": "https://help.prusa3d.com/article/extrusion-multiplier-calibration_2257"
+        }
+      ],
+      "topic": "換料材料損耗",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-intermediate-2-010",
+      "certId": "3dp",
+      "levelId": "intermediate",
+      "subjectId": "3dp-intermediate-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "加上清洗耗材，本次列印總用料質量為何？",
+      "options": {
+        "A": "25 g",
+        "B": "26.6 g",
+        "C": "41 g",
+        "D": "27 g"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "清洗質量1.6×1.25=2 g；淨重25+2=27 g，不可將清洗塔重量漏算。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/fdm-mid-material-switch.svg",
+          "alt": "每次換料清洗200mm³、8次、密度1.25g/cm³，零件與支撐淨重25g；清洗不足介面殘留與強度波動，經驗證清洗改善。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印進階製程實務：材料擠製成型",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Prusa Research：Extrusion multiplier calibration",
+          "url": "https://help.prusa3d.com/article/extrusion-multiplier-calibration_2257"
+        }
+      ],
+      "topic": "耗材預估",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-intermediate-2-011",
+      "certId": "3dp",
+      "levelId": "intermediate",
+      "subjectId": "3dp-intermediate-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "若重新安排路徑使換料降為4次、每次200 mm³不變，清洗材料可減少多少？",
+      "options": {
+        "A": "1 g",
+        "B": "0.4 g",
+        "C": "2 g",
+        "D": "4 g"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "少4次×200=800 mm³=0.8 cm³，乘1.25得到1 g；須另確認改路徑不損害零件品質。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/fdm-mid-material-switch.svg",
+          "alt": "每次換料清洗200mm³、8次、密度1.25g/cm³，零件與支撐淨重25g；清洗不足介面殘留與強度波動，經驗證清洗改善。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印進階製程實務：材料擠製成型",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Prusa Research：Extrusion multiplier calibration",
+          "url": "https://help.prusa3d.com/article/extrusion-multiplier-calibration_2257"
+        }
+      ],
+      "topic": "換料順序優化",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-intermediate-2-012",
+      "certId": "3dp",
+      "levelId": "intermediate",
+      "subjectId": "3dp-intermediate-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依圖中甲乙對照，未驗證就大幅減少清洗量，最直接的品質風險為何？",
+      "options": {
+        "A": "只要總耗材較少就證明品質相同",
+        "B": "前材料殘留改變介面組成，導致結合品質不穩",
+        "C": "清洗量只影響檔案大小，不影響材料",
+        "D": "更少清洗必定使介面強度提高"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "表中對照已顯示殘留與強度波動相關；減少浪費仍需保留足夠且經驗證的換料清洗量。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/fdm-mid-material-switch.svg",
+          "alt": "每次換料清洗200mm³、8次、密度1.25g/cm³，零件與支撐淨重25g；清洗不足介面殘留與強度波動，經驗證清洗改善。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印進階製程實務：材料擠製成型",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Prusa Research：Extrusion multiplier calibration",
+          "url": "https://help.prusa3d.com/article/extrusion-multiplier-calibration_2257"
+        }
+      ],
+      "topic": "材料介面排錯",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-intermediate-3-001",
+      "certId": "3dp",
+      "levelId": "intermediate",
+      "subjectId": "3dp-intermediate-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依圖，E=10 mJ/cm²時，Cd最接近多少？",
+      "options": {
+        "A": "0.0301 mm",
+        "B": "0.1000 mm",
+        "C": "0.2000 mm",
+        "D": "0.0693 mm"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "Cd=0.10×ln(10/5)=0.10×ln2≈0.0693 mm，必須使用自然對數。此為題定簡化模型。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/sla-mid-working-curve.svg",
+          "alt": "簡化Jacobs工作曲線Cd=Dp ln(E/Ec)，Dp0.10mm，Ec5mJ/cm²，照度5mW/cm²，目標固化深度0.10mm；ln為自然對數。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印進階製程實務：光聚合固化",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "NIST：Working Curve in Vat Photopolymerization",
+          "url": "https://www.nist.gov/publications/results-interlaboratory-study-working-curve-vat-photopolymerization"
+        }
+      ],
+      "topic": "工作曲線計算",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-intermediate-3-002",
+      "certId": "3dp",
+      "levelId": "intermediate",
+      "subjectId": "3dp-intermediate-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "欲達圖中0.10 mm深度，所需E最接近多少？",
+      "options": {
+        "A": "13.59 mJ/cm²",
+        "B": "5.00 mJ/cm²",
+        "C": "10.00 mJ/cm²",
+        "D": "50.00 mJ/cm²"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "E=Ec×exp(Cd/Dp)=5×e¹≈13.59 mJ/cm²。材料實際參數須以適用波長和程序量測。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/sla-mid-working-curve.svg",
+          "alt": "簡化Jacobs工作曲線Cd=Dp ln(E/Ec)，Dp0.10mm，Ec5mJ/cm²，照度5mW/cm²，目標固化深度0.10mm；ln為自然對數。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印進階製程實務：光聚合固化",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "NIST：Working Curve in Vat Photopolymerization",
+          "url": "https://www.nist.gov/publications/results-interlaboratory-study-working-curve-vat-photopolymerization"
+        }
+      ],
+      "topic": "曝光劑量反算",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-intermediate-3-003",
+      "certId": "3dp",
+      "levelId": "intermediate",
+      "subjectId": "3dp-intermediate-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "以圖中固定照度5.0 mW/cm²提供13.59 mJ/cm²劑量，時間最接近多少？",
+      "options": {
+        "A": "67.95 s",
+        "B": "2.72 s",
+        "C": "0.37 s",
+        "D": "13.59 s"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "E=I×t，1 mW=1 mJ/s，因此t=13.59/5≈2.72秒。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/sla-mid-working-curve.svg",
+          "alt": "簡化Jacobs工作曲線Cd=Dp ln(E/Ec)，Dp0.10mm，Ec5mJ/cm²，照度5mW/cm²，目標固化深度0.10mm；ln為自然對數。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印進階製程實務：光聚合固化",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "NIST：Working Curve in Vat Photopolymerization",
+          "url": "https://www.nist.gov/publications/results-interlaboratory-study-working-curve-vat-photopolymerization"
+        }
+      ],
+      "topic": "曝光時間",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-intermediate-3-004",
+      "certId": "3dp",
+      "levelId": "intermediate",
+      "subjectId": "3dp-intermediate-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "本題要求Cd至少0.075 mm，若使用E=10 mJ/cm²，依模型是否符合？",
+      "options": {
+        "A": "符合，因Cd必然等於層高",
+        "B": "無需考慮固化深度，只看樹脂顏色",
+        "C": "不符合，0.0693 mm小於0.075 mm",
+        "D": "符合，因10大於Ec=5即可保證任何層深"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "模型算出的0.0693 mm不足需求；E高於Ec只表示模型有正固化深度，並不保證指定深度。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/sla-mid-working-curve.svg",
+          "alt": "簡化Jacobs工作曲線Cd=Dp ln(E/Ec)，Dp0.10mm，Ec5mJ/cm²，照度5mW/cm²，目標固化深度0.10mm；ln為自然對數。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印進階製程實務：光聚合固化",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "NIST：Working Curve in Vat Photopolymerization",
+          "url": "https://www.nist.gov/publications/results-interlaboratory-study-working-curve-vat-photopolymerization"
+        }
+      ],
+      "topic": "層間固化條件",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-intermediate-3-005",
+      "certId": "3dp",
+      "levelId": "intermediate",
+      "subjectId": "3dp-intermediate-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "僅校正圖中外尺寸的比例收縮，CAD全尺寸應乘多少？",
+      "options": {
+        "A": "0.9900",
+        "B": "1.1000",
+        "C": "0.0101",
+        "D": "約1.0101"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "比例補償係數=1/0.99≈1.0101；必須在量測流程與材料狀態固定下驗證。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/sla-mid-compensation.svg",
+          "alt": "標準後固化外尺寸50印成49.5；外尺寸模型0.99×CAD，孔徑局部模型0.99×CAD−0.16，目標外尺寸50與孔徑4mm。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印進階製程實務：光聚合固化",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Formlabs：SLA 零件擺放、支撐與排液",
+          "url": "https://formlabs.com/blog/how-to-orient-sla-parts/"
+        }
+      ],
+      "topic": "外尺寸縮放",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-intermediate-3-006",
+      "certId": "3dp",
+      "levelId": "intermediate",
+      "subjectId": "3dp-intermediate-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依圖中孔徑模型，要得到4.00 mm實際孔徑，CAD孔徑約應為多少？",
+      "options": {
+        "A": "4.202 mm",
+        "B": "4.040 mm",
+        "C": "3.840 mm",
+        "D": "4.160 mm"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "解4.00=0.99D−0.16，得D=4.16/0.99≈4.202 mm；比例縮放不足以消除固定偏差。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/sla-mid-compensation.svg",
+          "alt": "標準後固化外尺寸50印成49.5；外尺寸模型0.99×CAD，孔徑局部模型0.99×CAD−0.16，目標外尺寸50與孔徑4mm。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印進階製程實務：光聚合固化",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Formlabs：SLA 零件擺放、支撐與排液",
+          "url": "https://formlabs.com/blog/how-to-orient-sla-parts/"
+        }
+      ],
+      "topic": "孔徑局部補償",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-intermediate-3-007",
+      "certId": "3dp",
+      "levelId": "intermediate",
+      "subjectId": "3dp-intermediate-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "若只把原CAD孔徑4.00 mm乘1/0.99，依圖模型，最終孔徑為何？",
+      "options": {
+        "A": "4.202 mm",
+        "B": "3.84 mm",
+        "C": "4.00 mm",
+        "D": "4.16 mm"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "代入0.99×(4/0.99)−0.16=3.84 mm；全域比例補償後仍留下孔徑固定偏差。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/sla-mid-compensation.svg",
+          "alt": "標準後固化外尺寸50印成49.5；外尺寸模型0.99×CAD，孔徑局部模型0.99×CAD−0.16，目標外尺寸50與孔徑4mm。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印進階製程實務：光聚合固化",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Formlabs：SLA 零件擺放、支撐與排液",
+          "url": "https://formlabs.com/blog/how-to-orient-sla-parts/"
+        }
+      ],
+      "topic": "只做全域縮放的結果",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-intermediate-3-008",
+      "certId": "3dp",
+      "levelId": "intermediate",
+      "subjectId": "3dp-intermediate-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "為什麼補償前後都需依圖在相同標準後固化狀態量測？",
+      "options": {
+        "A": "在任何濕潤程度下量測都等價",
+        "B": "只有CAD數值重要，實體狀態不影響驗證",
+        "C": "後固化可能改變尺寸與材料狀態，否則無法隔離補償效果",
+        "D": "後固化前後所有材料尺寸必然完全相同"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "製程與量測狀態是模型的適用條件；不同固化或乾燥狀態的數據不能直接混為同一校正關係。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/sla-mid-compensation.svg",
+          "alt": "標準後固化外尺寸50印成49.5；外尺寸模型0.99×CAD，孔徑局部模型0.99×CAD−0.16，目標外尺寸50與孔徑4mm。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印進階製程實務：光聚合固化",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Formlabs：3D printing post-processing FAQs",
+          "url": "https://formlabs.com/global/support/3d-printing-post-processing-faqs/"
+        }
+      ],
+      "topic": "量測狀態一致性",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-intermediate-3-009",
+      "certId": "3dp",
+      "levelId": "intermediate",
+      "subjectId": "3dp-intermediate-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依圖並正確換算面積單位，F是多少？",
+      "options": {
+        "A": "12000 N",
+        "B": "0.012 N",
+        "C": "30 N",
+        "D": "12 N"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "600 mm²=600×10⁻⁶ m²，F=20000×0.0006=12 N。模型刻意忽略其他力，不能直接當實機設計全貌。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/sla-mid-peel.svg",
+          "alt": "簡化剝離力F=壓差×層面積，忽略黏附與動態，20kPa和600mm²；6支支撐每支3N；要求總容許力對F至少2。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印進階製程實務：光聚合固化",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Formlabs：SLA 零件擺放、支撐與排液",
+          "url": "https://formlabs.com/blog/how-to-orient-sla-parts/"
+        }
+      ],
+      "topic": "剝離力估算",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-intermediate-3-010",
+      "certId": "3dp",
+      "levelId": "intermediate",
+      "subjectId": "3dp-intermediate-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "圖中6個支撐等分負載且每支容許3 N，總體安全係數多少？",
+      "options": {
+        "A": "1.5",
+        "B": "0.5",
+        "C": "2.0",
+        "D": "3.0"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "總容許力6×3=18 N，除簡化負載12 N得到1.5，未達題定2。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/sla-mid-peel.svg",
+          "alt": "簡化剝離力F=壓差×層面積，忽略黏附與動態，20kPa和600mm²；6支支撐每支3N；要求總容許力對F至少2。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印進階製程實務：光聚合固化",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Formlabs：SLA 零件擺放、支撐與排液",
+          "url": "https://formlabs.com/blog/how-to-orient-sla-parts/"
+        }
+      ],
+      "topic": "支撐安全係數",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-intermediate-3-011",
+      "certId": "3dp",
+      "levelId": "intermediate",
+      "subjectId": "3dp-intermediate-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "保持每支3 N且平均受力，要滿足圖中係數至少2，最少需多少支？",
+      "options": {
+        "A": "12支",
+        "B": "8支",
+        "C": "4支",
+        "D": "6支"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "n×3/12≥2，得n≥8。這只回答本題均分負載模型，實際支撐還需考慮偏心、材料與幾何。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/sla-mid-peel.svg",
+          "alt": "簡化剝離力F=壓差×層面積，忽略黏附與動態，20kPa和600mm²；6支支撐每支3N；要求總容許力對F至少2。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印進階製程實務：光聚合固化",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Formlabs：SLA 零件擺放、支撐與排液",
+          "url": "https://formlabs.com/blog/how-to-orient-sla-parts/"
+        }
+      ],
+      "topic": "支撐數量反算",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-3dp-intermediate-3-012",
+      "certId": "3dp",
+      "levelId": "intermediate",
+      "subjectId": "3dp-intermediate-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "若擺放優化將最大截面降至300 mm²，其餘相同仍6支，簡化安全係數是多少？",
+      "options": {
+        "A": "2.0",
+        "B": "6.0",
+        "C": "3.0",
+        "D": "1.5"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "負載減為20000×300×10⁻⁶=6 N，支撐總容許18 N，所以18/6=3。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/sla-mid-peel.svg",
+          "alt": "簡化剝離力F=壓差×層面積，忽略黏附與動態，20kPa和600mm²；6支支撐每支3N；要求總容許力對F至少2。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 3D列印積層製造工程師官方簡章：3D列印進階製程實務：光聚合固化",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf"
+        },
+        {
+          "title": "Formlabs：SLA 零件擺放、支撐與排液",
+          "url": "https://formlabs.com/blog/how-to-orient-sla-parts/"
+        }
+      ],
+      "topic": "降低截面比較",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-mdmt-junior-2-001",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "subjectId": "mdmt-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依圖，盲孔底到塊體另一面的剩餘厚度為何？",
+      "options": {
+        "A": "40 mm",
+        "B": "10 mm",
+        "C": "20 mm",
+        "D": "30 mm"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "總厚30減孔深20，剩10 mm。深度標註不是孔到底後再增加的距離。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/mdmt-jr-section.svg",
+          "alt": "固定塊厚30mm，剖面示意直徑10mm、深20mm的理想平底盲孔，不含鑽尖錐體。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 工具機機械設計工程師官方簡章：機械製圖(含工具機實例)",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/MDMT/115年度工具機機械設計工程師能力鑑定簡章(初級)_0410_20260410112702.pdf"
+        },
+        {
+          "title": "Autodesk：Dimension reference",
+          "url": "https://help.autodesk.com/cloudhelp/ENU/Fusion-Drawing/files/DWG-REF-DIMENSION-DLG.htm"
+        }
+      ],
+      "topic": "剖面深度判讀",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-mdmt-junior-2-002",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "subjectId": "mdmt-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依圖理想平底圓柱孔，其去除體積最接近多少？",
+      "options": {
+        "A": "314 mm³",
+        "B": "157 mm³",
+        "C": "1571 mm³",
+        "D": "6283 mm³"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "V=π×10²×20/4=500π≈1571 mm³；使用的是直徑，不能漏除4。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/mdmt-jr-section.svg",
+          "alt": "固定塊厚30mm，剖面示意直徑10mm、深20mm的理想平底盲孔，不含鑽尖錐體。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 工具機機械設計工程師官方簡章：機械製圖(含工具機實例)",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/MDMT/115年度工具機機械設計工程師能力鑑定簡章(初級)_0410_20260410112702.pdf"
+        },
+        {
+          "title": "Autodesk：Dimension reference",
+          "url": "https://help.autodesk.com/cloudhelp/ENU/Fusion-Drawing/files/DWG-REF-DIMENSION-DLG.htm"
+        }
+      ],
+      "topic": "幾何體積",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-mdmt-junior-2-003",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "subjectId": "mdmt-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依圖的孔底位置與剩餘材料，應辨識為哪一種孔？",
+      "options": {
+        "A": "貫穿孔",
+        "B": "外螺紋",
+        "C": "開放式通槽",
+        "D": "盲孔"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "剖面可見孔底仍有10 mm材料，且未贯穿全厚，因此為盲孔；圖中沒有螺紋標註。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/mdmt-jr-section.svg",
+          "alt": "固定塊厚30mm，剖面示意直徑10mm、深20mm的理想平底盲孔，不含鑽尖錐體。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 工具機機械設計工程師官方簡章：機械製圖(含工具機實例)",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/MDMT/115年度工具機機械設計工程師能力鑑定簡章(初級)_0410_20260410112702.pdf"
+        },
+        {
+          "title": "Autodesk：Dimension reference",
+          "url": "https://help.autodesk.com/cloudhelp/ENU/Fusion-Drawing/files/DWG-REF-DIMENSION-DLG.htm"
+        }
+      ],
+      "topic": "孔型辨識",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-mdmt-junior-2-004",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "subjectId": "mdmt-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "若實際改用帶鑽尖的鑽頭，而圖仍要求20 mm完整圓柱孔深，最應再確認哪個尺寸？",
+      "options": {
+        "A": "鑽尖額外深度是否侵入剩餘壁厚與功能區",
+        "B": "只依孔徑選鑽頭，忽略孔底額外深度",
+        "C": "直接將鑽尖最深點標成完整圓柱孔深",
+        "D": "只檢查入口倒角，略過底部剩餘壁厚"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "完整孔深與鑽尖總深度不同；題圖理想平底假設不可忽略地套到實際錐形鑽尖。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/mdmt-jr-section.svg",
+          "alt": "固定塊厚30mm，剖面示意直徑10mm、深20mm的理想平底盲孔，不含鑽尖錐體。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 工具機機械設計工程師官方簡章：機械製圖(含工具機實例)",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/MDMT/115年度工具機機械設計工程師能力鑑定簡章(初級)_0410_20260410112702.pdf"
+        },
+        {
+          "title": "Autodesk：Dimension reference",
+          "url": "https://help.autodesk.com/cloudhelp/ENU/Fusion-Drawing/files/DWG-REF-DIMENSION-DLG.htm"
+        }
+      ],
+      "topic": "實際加工對照",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-mdmt-junior-2-005",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "subjectId": "mdmt-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "圖中規格內零件的最小直徑間隙為何？",
+      "options": {
+        "A": "−0.007 mm",
+        "B": "0.007 mm",
+        "C": "0.041 mm",
+        "D": "0.020 mm"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "20.000−19.993=0.007 mm；最緊組合是最小孔配最大軸。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/mdmt-jr-fit.svg",
+          "alt": "孔公差20.000至20.021mm，軸19.980至19.993mm；直徑間隙為孔減軸；另送檢軸20.005mm。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 工具機機械設計工程師官方簡章：機械製圖(含工具機實例)",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/MDMT/115年度工具機機械設計工程師能力鑑定簡章(初級)_0410_20260410112702.pdf"
+        },
+        {
+          "title": "Autodesk：Limits and Fits Mechanical Calculator",
+          "url": "https://help.autodesk.com/cloudhelp/2026/ENU/Inventor-Help/files/GUID-1EF0D439-A1C2-4073-A5F8-0154A5C4677A.htm"
+        }
+      ],
+      "topic": "最小間隙",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-mdmt-junior-2-006",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "subjectId": "mdmt-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "圖中規格內零件的最大直徑間隙為何？",
+      "options": {
+        "A": "0.021 mm",
+        "B": "0.013 mm",
+        "C": "0.041 mm",
+        "D": "0.007 mm"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "20.021−19.980=0.041 mm；最鬆組合是最大孔配最小軸。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/mdmt-jr-fit.svg",
+          "alt": "孔公差20.000至20.021mm，軸19.980至19.993mm；直徑間隙為孔減軸；另送檢軸20.005mm。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 工具機機械設計工程師官方簡章：機械製圖(含工具機實例)",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/MDMT/115年度工具機機械設計工程師能力鑑定簡章(初級)_0410_20260410112702.pdf"
+        },
+        {
+          "title": "Autodesk：Limits and Fits Mechanical Calculator",
+          "url": "https://help.autodesk.com/cloudhelp/2026/ENU/Inventor-Help/files/GUID-1EF0D439-A1C2-4073-A5F8-0154A5C4677A.htm"
+        }
+      ],
+      "topic": "最大間隙",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-mdmt-junior-2-007",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "subjectId": "mdmt-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依圖中全部規格範圍，這是哪類配合？",
+      "options": {
+        "A": "過盈配合",
+        "B": "過渡配合",
+        "C": "僅由這些上下限無法分類",
+        "D": "間隙配合"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "最大軸19.993仍小於最小孔20.000，所有合規組合都有正間隙。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/mdmt-jr-fit.svg",
+          "alt": "孔公差20.000至20.021mm，軸19.980至19.993mm；直徑間隙為孔減軸；另送檢軸20.005mm。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 工具機機械設計工程師官方簡章：機械製圖(含工具機實例)",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/MDMT/115年度工具機機械設計工程師能力鑑定簡章(初級)_0410_20260410112702.pdf"
+        },
+        {
+          "title": "Autodesk：Limits and Fits Mechanical Calculator",
+          "url": "https://help.autodesk.com/cloudhelp/2026/ENU/Inventor-Help/files/GUID-1EF0D439-A1C2-4073-A5F8-0154A5C4677A.htm"
+        }
+      ],
+      "topic": "配合分類",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-mdmt-junior-2-008",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "subjectId": "mdmt-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "另送檢軸20.005 mm應如何判斷？",
+      "options": {
+        "A": "超過軸上限0.012 mm，不能因可能裝入較大孔就當合規",
+        "B": "在孔徑範圍內，所以軸必然合規",
+        "C": "只要大於軸下限就合規",
+        "D": "因小於20.021 mm就符合軸規格"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "軸需對軸上限19.993判斷；20.005−19.993=0.012 mm超差，孔的規格不能代替軸的規格。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/mdmt-jr-fit.svg",
+          "alt": "孔公差20.000至20.021mm，軸19.980至19.993mm；直徑間隙為孔減軸；另送檢軸20.005mm。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 工具機機械設計工程師官方簡章：機械製圖(含工具機實例)",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/MDMT/115年度工具機機械設計工程師能力鑑定簡章(初級)_0410_20260410112702.pdf"
+        },
+        {
+          "title": "Autodesk：Limits and Fits Mechanical Calculator",
+          "url": "https://help.autodesk.com/cloudhelp/2026/ENU/Inventor-Help/files/GUID-1EF0D439-A1C2-4073-A5F8-0154A5C4677A.htm"
+        }
+      ],
+      "topic": "量測允收",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-mdmt-junior-2-009",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "subjectId": "mdmt-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依圖，D名義值多少？",
+      "options": {
+        "A": "65.00 mm",
+        "B": "15.00 mm",
+        "C": "25.00 mm",
+        "D": "35.00 mm"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "D=A−B−C=40−15−10=15 mm；需依方向關係相減。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/mdmt-jr-stack.svg",
+          "alt": "一維尺寸鏈A=D+B+C；A40±0.10、B15±0.05、C10±0.02mm；D推導，不另獨立標公差，採最壞情況。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 工具機機械設計工程師官方簡章：機械製圖(含工具機實例)",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/MDMT/115年度工具機機械設計工程師能力鑑定簡章(初級)_0410_20260410112702.pdf"
+        },
+        {
+          "title": "Autodesk：Dimension reference",
+          "url": "https://help.autodesk.com/cloudhelp/ENU/Fusion-Drawing/files/DWG-REF-DIMENSION-DLG.htm"
+        }
+      ],
+      "topic": "名義尺寸鏈",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-mdmt-junior-2-010",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "subjectId": "mdmt-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依圖獨立公差範圍，D最小值為何？",
+      "options": {
+        "A": "15.00 mm",
+        "B": "15.17 mm",
+        "C": "14.83 mm",
+        "D": "14.97 mm"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "最小D=最小A−最大B−最大C=39.90−15.05−10.02=14.83 mm。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/mdmt-jr-stack.svg",
+          "alt": "一維尺寸鏈A=D+B+C；A40±0.10、B15±0.05、C10±0.02mm；D推導，不另獨立標公差，採最壞情況。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 工具機機械設計工程師官方簡章：機械製圖(含工具機實例)",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/MDMT/115年度工具機機械設計工程師能力鑑定簡章(初級)_0410_20260410112702.pdf"
+        },
+        {
+          "title": "Autodesk：Dimension reference",
+          "url": "https://help.autodesk.com/cloudhelp/ENU/Fusion-Drawing/files/DWG-REF-DIMENSION-DLG.htm"
+        }
+      ],
+      "topic": "最壞情況下限",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-mdmt-junior-2-011",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "subjectId": "mdmt-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依圖最壞情況法，D可寫成15.00±多少mm？",
+      "options": {
+        "A": "0.10 mm",
+        "B": "0.07 mm",
+        "C": "0.05 mm",
+        "D": "0.17 mm"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "公差半寬最壞情況相加：0.10+0.05+0.02=0.17 mm，不因尺寸公式有減號就相互抵銷。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/mdmt-jr-stack.svg",
+          "alt": "一維尺寸鏈A=D+B+C；A40±0.10、B15±0.05、C10±0.02mm；D推導，不另獨立標公差，採最壞情況。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 工具機機械設計工程師官方簡章：機械製圖(含工具機實例)",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/MDMT/115年度工具機機械設計工程師能力鑑定簡章(初級)_0410_20260410112702.pdf"
+        },
+        {
+          "title": "Autodesk：Dimension reference",
+          "url": "https://help.autodesk.com/cloudhelp/ENU/Fusion-Drawing/files/DWG-REF-DIMENSION-DLG.htm"
+        }
+      ],
+      "topic": "公差累積",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-mdmt-junior-2-012",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "subjectId": "mdmt-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "其他不變，若把B公差由±0.05改±0.025，D最壞情況公差半寬變為？",
+      "options": {
+        "A": "0.145 mm",
+        "B": "0.025 mm",
+        "C": "0.120 mm",
+        "D": "0.195 mm"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "0.10+0.025+0.02=0.145 mm，較原0.17縮小0.025 mm；此計算不代表加工成本一定合理。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/mdmt-jr-stack.svg",
+          "alt": "一維尺寸鏈A=D+B+C；A40±0.10、B15±0.05、C10±0.02mm；D推導，不另獨立標公差，採最壞情況。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 工具機機械設計工程師官方簡章：機械製圖(含工具機實例)",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/MDMT/115年度工具機機械設計工程師能力鑑定簡章(初級)_0410_20260410112702.pdf"
+        },
+        {
+          "title": "Autodesk：Dimension reference",
+          "url": "https://help.autodesk.com/cloudhelp/ENU/Fusion-Drawing/files/DWG-REF-DIMENSION-DLG.htm"
+        }
+      ],
+      "topic": "改善公差鏈",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-spe-junior-3-001",
+      "certId": "spe",
+      "levelId": "junior",
+      "subjectId": "spe-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依圖，Availability=運轉/排定生產，結果為何？",
+      "options": {
+        "A": "90%",
+        "B": "87.5%",
+        "C": "95%",
+        "D": "78.75%"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "排定生產480−60=420分；運轉420−42=378分；378/420=90%。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/spe-jr-oee.svg",
+          "alt": "班次480分，排除休息60分；生產停機42分；理想0.5分/件，總700件，首過良品665，35件返工或報廢。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 智慧生產工程師官方簡章：智慧生產與管理實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/SPE/115年度智慧生產工程師能力鑑定簡章(初、中級)_0410_20260410140735.pdf"
+        },
+        {
+          "title": "Vorne：OEE Calculation",
+          "url": "https://www.oee.com/calculating-oee/"
+        }
+      ],
+      "topic": "OEE時間稼動率",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-spe-junior-3-002",
+      "certId": "spe",
+      "levelId": "junior",
+      "subjectId": "spe-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "Performance=理想單件時間×總件數/運轉時間。圖中結果最接近？",
+      "options": {
+        "A": "105.00%",
+        "B": "92.59%",
+        "C": "83.33%",
+        "D": "95.00%"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "0.50×700/378≈92.59%；返工與報廢件仍包含在總件數，品質損失另計。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/spe-jr-oee.svg",
+          "alt": "班次480分，排除休息60分；生產停機42分；理想0.5分/件，總700件，首過良品665，35件返工或報廢。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 智慧生產工程師官方簡章：智慧生產與管理實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/SPE/115年度智慧生產工程師能力鑑定簡章(初、中級)_0410_20260410140735.pdf"
+        },
+        {
+          "title": "Vorne：OEE Calculation",
+          "url": "https://www.oee.com/calculating-oee/"
+        }
+      ],
+      "topic": "OEE性能效率",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-spe-junior-3-003",
+      "certId": "spe",
+      "levelId": "junior",
+      "subjectId": "spe-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依首過良品原則，圖中Quality是多少？",
+      "options": {
+        "A": "90%",
+        "B": "92.59%",
+        "C": "95%",
+        "D": "100%"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "首過良品665/總700=95%；需返工品即使日後修好，也不算本次首過良品。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/spe-jr-oee.svg",
+          "alt": "班次480分，排除休息60分；生產停機42分；理想0.5分/件，總700件，首過良品665，35件返工或報廢。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 智慧生產工程師官方簡章：智慧生產與管理實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/SPE/115年度智慧生產工程師能力鑑定簡章(初、中級)_0410_20260410140735.pdf"
+        },
+        {
+          "title": "Vorne：OEE Calculation",
+          "url": "https://www.oee.com/calculating-oee/"
+        }
+      ],
+      "topic": "OEE品質率",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-spe-junior-3-004",
+      "certId": "spe",
+      "levelId": "junior",
+      "subjectId": "spe-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依圖，OEE也可算良品×理想單件時間/排定生產時間，約為？",
+      "options": {
+        "A": "90.00%",
+        "B": "95.00%",
+        "C": "83.33%",
+        "D": "79.17%"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "665×0.50/420≈79.17%，等於時間稼動率、性能與品質率相乘。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/spe-jr-oee.svg",
+          "alt": "班次480分，排除休息60分；生產停機42分；理想0.5分/件，總700件，首過良品665，35件返工或報廢。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 智慧生產工程師官方簡章：智慧生產與管理實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/SPE/115年度智慧生產工程師能力鑑定簡章(初、中級)_0410_20260410140735.pdf"
+        },
+        {
+          "title": "Vorne：OEE Calculation",
+          "url": "https://www.oee.com/calculating-oee/"
+        }
+      ],
+      "topic": "OEE整體效率",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-spe-junior-3-005",
+      "certId": "spe",
+      "levelId": "junior",
+      "subjectId": "spe-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "採最早交期優先EDD，圖中應排哪個順序？",
+      "options": {
+        "A": "乙→甲→丙",
+        "B": "甲→乙→丙",
+        "C": "丙→甲→乙",
+        "D": "甲→丙→乙"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "交期由小到大為乙4、甲7、丙9，所以EDD順序乙甲丙。這是題定單機且工單同時可用情境。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/spe-jr-dispatch.svg",
+          "alt": "三工單時間0到齊，同一機器不搶占、無換線時間；甲工時4交期7，乙工時2交期4，丙工時3交期9，現行甲乙丙。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 智慧生產工程師官方簡章：智慧生產與管理實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/SPE/115年度智慧生產工程師能力鑑定簡章(初、中級)_0410_20260410140735.pdf"
+        }
+      ],
+      "topic": "交期優先派工",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-spe-junior-3-006",
+      "certId": "spe",
+      "levelId": "junior",
+      "subjectId": "spe-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依圖現行甲→乙→丙，乙完成時間為6 h，其延遲T=max(0,C−d)是多少？",
+      "options": {
+        "A": "6 h",
+        "B": "2 h",
+        "C": "0 h",
+        "D": "4 h"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "乙需等待甲4小時再加工2小時，完成6；交期4，所以延遲2小時。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/spe-jr-dispatch.svg",
+          "alt": "三工單時間0到齊，同一機器不搶占、無換線時間；甲工時4交期7，乙工時2交期4，丙工時3交期9，現行甲乙丙。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 智慧生產工程師官方簡章：智慧生產與管理實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/SPE/115年度智慧生產工程師能力鑑定簡章(初、中級)_0410_20260410140735.pdf"
+        }
+      ],
+      "topic": "延遲計算",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-spe-junior-3-007",
+      "certId": "spe",
+      "levelId": "junior",
+      "subjectId": "spe-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "改採乙→甲→丙後，三單完成時間依序為2、6、9 h。總延遲為何？",
+      "options": {
+        "A": "2 h",
+        "B": "4 h",
+        "C": "0 h",
+        "D": "1 h"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "乙2≤4、甲6≤7、丙9≤9，三單都不晚交，總延遲0。此處不宣稱可推廣至任意多機排程。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/spe-jr-dispatch.svg",
+          "alt": "三工單時間0到齊，同一機器不搶占、無換線時間；甲工時4交期7，乙工時2交期4，丙工時3交期9，現行甲乙丙。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 智慧生產工程師官方簡章：智慧生產與管理實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/SPE/115年度智慧生產工程師能力鑑定簡章(初、中級)_0410_20260410140735.pdf"
+        }
+      ],
+      "topic": "改善後完工",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-spe-junior-3-008",
+      "certId": "spe",
+      "levelId": "junior",
+      "subjectId": "spe-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "如果只把圖中工單順序改成EDD而沒有改加工時間，總加工量會如何？",
+      "options": {
+        "A": "自動減為6 h",
+        "B": "自動增為12 h",
+        "C": "總工時變為最短工單的2 h",
+        "D": "仍為9 h，改善的是交期表現而非總工時"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "4+2+3=9 h不變。排序能改變各單完工時間與延遲，但不會憑空減少加工需求。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/spe-jr-dispatch.svg",
+          "alt": "三工單時間0到齊，同一機器不搶占、無換線時間；甲工時4交期7，乙工時2交期4，丙工時3交期9，現行甲乙丙。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 智慧生產工程師官方簡章：智慧生產與管理實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/SPE/115年度智慧生產工程師能力鑑定簡章(初、中級)_0410_20260410140735.pdf"
+        }
+      ],
+      "topic": "瓶頸判讀",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-spe-junior-3-009",
+      "certId": "spe",
+      "levelId": "junior",
+      "subjectId": "spe-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依圖200件中40件不良且無重複計數，首過良率是多少？",
+      "options": {
+        "A": "80%",
+        "B": "20%",
+        "C": "90%",
+        "D": "95%"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "良品200−40=160件，160/200=80%；不良原因數不能直接當成不良件數。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/spe-jr-quality.svg",
+          "alt": "檢查200件，40件不良互斥分類：尺寸18、刮傷12、缺件6、標示4，並附換刀、搬運、投料、工單切換追溯資訊。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 智慧生產工程師官方簡章：智慧生產與管理實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/SPE/115年度智慧生產工程師能力鑑定簡章(初、中級)_0410_20260410140735.pdf"
+        },
+        {
+          "title": "Vorne：OEE Calculation",
+          "url": "https://www.oee.com/calculating-oee/"
+        }
+      ],
+      "topic": "首過良率",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-spe-junior-3-010",
+      "certId": "spe",
+      "levelId": "junior",
+      "subjectId": "spe-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "若先處理件數最多的兩項原因，可涵蓋全部不良的多少比例？",
+      "options": {
+        "A": "90%",
+        "B": "75%",
+        "C": "30%",
+        "D": "60%"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "最多為尺寸18和刮傷12，共30件；30/40=75%。這是件數涵蓋率，尚未加入嚴重度或成本。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/spe-jr-quality.svg",
+          "alt": "檢查200件，40件不良互斥分類：尺寸18、刮傷12、缺件6、標示4，並附換刀、搬運、投料、工單切換追溯資訊。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 智慧生產工程師官方簡章：智慧生產與管理實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/SPE/115年度智慧生產工程師能力鑑定簡章(初、中級)_0410_20260410140735.pdf"
+        }
+      ],
+      "topic": "柏拉圖排序",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-spe-junior-3-011",
+      "certId": "spe",
+      "levelId": "junior",
+      "subjectId": "spe-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "要查證尺寸超差與換刀是否相關，最應補查哪組資料？",
+      "options": {
+        "A": "只比較兩站人員姓名而不查作業資料",
+        "B": "只增加不良分類顏色而不保留時間",
+        "C": "逐件量測時間、刀具更換時點、刀補與批次紀錄",
+        "D": "只看所有工單的總營收"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "圖中有換刀後集中線索，需串起時間、刀補與量測，才能檢查原因；相關線索本身尚不是因果證明。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/spe-jr-quality.svg",
+          "alt": "檢查200件，40件不良互斥分類：尺寸18、刮傷12、缺件6、標示4，並附換刀、搬運、投料、工單切換追溯資訊。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 智慧生產工程師官方簡章：智慧生產與管理實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/SPE/115年度智慧生產工程師能力鑑定簡章(初、中級)_0410_20260410140735.pdf"
+        }
+      ],
+      "topic": "製程追溯",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-spe-junior-3-012",
+      "certId": "spe",
+      "levelId": "junior",
+      "subjectId": "spe-junior-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "若同一不良件同時有尺寸與刮傷，後續報告為避免把不良件率算高，應如何？",
+      "options": {
+        "A": "把每個缺陷都當不同產品加入分母",
+        "B": "刪除第二種缺陷避免保留紀錄",
+        "C": "不再記錄批號只留下合計",
+        "D": "保留單件識別，分開統計不良件數與缺陷次數"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "一件可有多種缺陷，缺陷次數與不良件數須區分；單件識別可去重又保留完整改善資訊。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/spe-jr-quality.svg",
+          "alt": "檢查200件，40件不良互斥分類：尺寸18、刮傷12、缺件6、標示4，並附換刀、搬運、投料、工單切換追溯資訊。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 智慧生產工程師官方簡章：智慧生產與管理實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/SPE/115年度智慧生產工程師能力鑑定簡章(初、中級)_0410_20260410140735.pdf"
+        },
+        {
+          "title": "Vorne：OEE Calculation",
+          "url": "https://www.oee.com/calculating-oee/"
+        }
+      ],
+      "topic": "指標防失真",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-pmae-intermediate-3-001",
+      "certId": "pmae",
+      "levelId": "intermediate",
+      "subjectId": "pmae-intermediate-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依圖的訊號形貌，哪個區域最符合玻璃轉移的典型DSC表徵？",
+      "options": {
+        "A": "II的明顯放熱峰",
+        "B": "III的熔融吸熱峰",
+        "C": "只有最高溫端點才可能是玻璃轉移",
+        "D": "I的基線階躍"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "玻璃轉移通常表現為熱容量改變導致的基線階躍；熔融與結晶常呈現峰形。仍須配合材料與測試條件判讀。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/pmae-mid-dsc.svg",
+          "alt": "DSC吸熱向上，I在80°C為基線階躍，II140°C放熱面積20J/g試樣，III250°C吸熱90；完全晶體參考140J/g聚合物，聚合物分率0.80。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 塑膠材料應用工程師官方簡章：常見塑膠材料檢測儀器的功能及數據判讀",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/PMAE/115年度塑膠材料應用工程師能力鑑定簡章(初、中級)_20251230213934.pdf"
+        },
+        {
+          "title": "NETZSCH：How to Analyze Thermoplastic Polymers by Means of DSC",
+          "url": "https://analyzing-testing.netzsch.com/en-US/application-literature/how-to-analyze-thermoplastic-polymers-by-means-of-dsc"
+        }
+      ],
+      "topic": "玻璃轉移判讀",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-pmae-intermediate-3-002",
+      "certId": "pmae",
+      "levelId": "intermediate",
+      "subjectId": "pmae-intermediate-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "假定II為冷結晶、III為熔融。以(ΔHm−ΔHcc)/(聚合物分率×參考焓)計算原有結晶度，結果為何？",
+      "options": {
+        "A": "62.5%",
+        "B": "50.0%",
+        "C": "80.4%",
+        "D": "78.6%"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "(90−20)/(0.80×140)×100=62.5%；需扣升溫中新生成晶體的焓，並校正填料稀釋。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/pmae-mid-dsc.svg",
+          "alt": "DSC吸熱向上，I在80°C為基線階躍，II140°C放熱面積20J/g試樣，III250°C吸熱90；完全晶體參考140J/g聚合物，聚合物分率0.80。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 塑膠材料應用工程師官方簡章：常見塑膠材料檢測儀器的功能及數據判讀",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/PMAE/115年度塑膠材料應用工程師能力鑑定簡章(初、中級)_20251230213934.pdf"
+        },
+        {
+          "title": "NETZSCH：Crystallinity / Degree of Crystallinity",
+          "url": "https://analyzing-testing.netzsch.com/en/know-how/glossary/crystallinity-degree-of-crystallinity"
+        }
+      ],
+      "topic": "結晶度計算",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-pmae-intermediate-3-003",
+      "certId": "pmae",
+      "levelId": "intermediate",
+      "subjectId": "pmae-intermediate-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "若忘記除以圖中0.80聚合物分率，會把相對聚合物的原有結晶度估成多少？",
+      "options": {
+        "A": "100%，因為填料已全結晶",
+        "B": "50.0%，低估",
+        "C": "80.0%，高估",
+        "D": "62.5%，完全不影響"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "只算(90−20)/140=50%，用整個複合試樣質量稀釋了聚合物焓，因此低於62.5%。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/pmae-mid-dsc.svg",
+          "alt": "DSC吸熱向上，I在80°C為基線階躍，II140°C放熱面積20J/g試樣，III250°C吸熱90；完全晶體參考140J/g聚合物，聚合物分率0.80。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 塑膠材料應用工程師官方簡章：常見塑膠材料檢測儀器的功能及數據判讀",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/PMAE/115年度塑膠材料應用工程師能力鑑定簡章(初、中級)_20251230213934.pdf"
+        },
+        {
+          "title": "NETZSCH：Crystallinity / Degree of Crystallinity",
+          "url": "https://analyzing-testing.netzsch.com/en/know-how/glossary/crystallinity-degree-of-crystallinity"
+        }
+      ],
+      "topic": "質量基準",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-pmae-intermediate-3-004",
+      "certId": "pmae",
+      "levelId": "intermediate",
+      "subjectId": "pmae-intermediate-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "若要比較材料本質而降低先前加工熱歷史影響，哪種設計較合理？",
+      "options": {
+        "A": "只比較不同重量試樣未正規化的熱流",
+        "B": "把冷結晶峰刪掉，宣稱熱歷史已消除",
+        "C": "採受控第一次升溫、冷卻，再比較相同程序的第二次升溫",
+        "D": "任意改變升溫速率後直接比較峰高"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "受控熱循環使試樣取得可比的熱歷史；仍需一致升降溫速率、氣氛及量測基準，不能只刪除資料。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/pmae-mid-dsc.svg",
+          "alt": "DSC吸熱向上，I在80°C為基線階躍，II140°C放熱面積20J/g試樣，III250°C吸熱90；完全晶體參考140J/g聚合物，聚合物分率0.80。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 塑膠材料應用工程師官方簡章：常見塑膠材料檢測儀器的功能及數據判讀",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/PMAE/115年度塑膠材料應用工程師能力鑑定簡章(初、中級)_20251230213934.pdf"
+        },
+        {
+          "title": "NETZSCH：How to Analyze Thermoplastic Polymers by Means of DSC",
+          "url": "https://analyzing-testing.netzsch.com/en-US/application-literature/how-to-analyze-thermoplastic-polymers-by-means-of-dsc"
+        }
+      ],
+      "topic": "熱歷史比較",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-pmae-intermediate-3-005",
+      "certId": "pmae",
+      "levelId": "intermediate",
+      "subjectId": "pmae-intermediate-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "按圖中假設，150°C前的揮發分占原試樣多少？",
+      "options": {
+        "A": "1%",
+        "B": "10%",
+        "C": "95%",
+        "D": "5%"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "失重20−19=1 mg，除起始20 mg為5%。本題已排除該段其他反應，實際需另辨識氣體與材料。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/pmae-mid-tga.svg",
+          "alt": "TGA起始20mg、150°C氮氣19mg、600°C氮氣8mg、切換空氣後2mg；題定低溫只揮發、空氣燃殘炭、無機填料穩定。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 塑膠材料應用工程師官方簡章：常見塑膠材料檢測儀器的功能及數據判讀",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/PMAE/115年度塑膠材料應用工程師能力鑑定簡章(初、中級)_20251230213934.pdf"
+        },
+        {
+          "title": "NETZSCH：TGA Measurements on Polymers",
+          "url": "https://analyzing-testing.netzsch.com/en-US/application-literature/tga-measurements-and-c-dta-determination-on-polymers"
+        }
+      ],
+      "topic": "揮發分計算",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-pmae-intermediate-3-006",
+      "certId": "pmae",
+      "levelId": "intermediate",
+      "subjectId": "pmae-intermediate-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依圖中無機填料穩定的假設，空氣段後的無機殘重占原試樣多少？",
+      "options": {
+        "A": "10%",
+        "B": "2%",
+        "C": "30%",
+        "D": "40%"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "最終殘重2 mg/原20 mg=10%；若填料本身分解失重，便不能照此直接推回其原始含量。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/pmae-mid-tga.svg",
+          "alt": "TGA起始20mg、150°C氮氣19mg、600°C氮氣8mg、切換空氣後2mg；題定低溫只揮發、空氣燃殘炭、無機填料穩定。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 塑膠材料應用工程師官方簡章：常見塑膠材料檢測儀器的功能及數據判讀",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/PMAE/115年度塑膠材料應用工程師能力鑑定簡章(初、中級)_20251230213934.pdf"
+        },
+        {
+          "title": "NETZSCH：TGA Measurements on Polymers",
+          "url": "https://analyzing-testing.netzsch.com/en-US/application-literature/tga-measurements-and-c-dta-determination-on-polymers"
+        }
+      ],
+      "topic": "灰分判讀",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-pmae-intermediate-3-007",
+      "certId": "pmae",
+      "levelId": "intermediate",
+      "subjectId": "pmae-intermediate-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "氮氣600°C後切換空氣，燃燒掉的殘留占原試樣多少？",
+      "options": {
+        "A": "90%",
+        "B": "30%",
+        "C": "6%",
+        "D": "40%"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "8−2=6 mg，占20 mg的30%；此部分可包含熱裂解形成的炭，不等於已證明全是原加炭黑。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/pmae-mid-tga.svg",
+          "alt": "TGA起始20mg、150°C氮氣19mg、600°C氮氣8mg、切換空氣後2mg；題定低溫只揮發、空氣燃殘炭、無機填料穩定。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 塑膠材料應用工程師官方簡章：常見塑膠材料檢測儀器的功能及數據判讀",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/PMAE/115年度塑膠材料應用工程師能力鑑定簡章(初、中級)_20251230213934.pdf"
+        },
+        {
+          "title": "NETZSCH：TGA Measurements on Polymers",
+          "url": "https://analyzing-testing.netzsch.com/en-US/application-literature/tga-measurements-and-c-dta-determination-on-polymers"
+        }
+      ],
+      "topic": "可燃殘留計算",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-pmae-intermediate-3-008",
+      "certId": "pmae",
+      "levelId": "intermediate",
+      "subjectId": "pmae-intermediate-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "僅憑此TGA質量曲線，哪項結論不能直接確定？",
+      "options": {
+        "A": "空氣段失重量為6 mg",
+        "B": "最終殘重為2 mg",
+        "C": "試樣的精確熔點與聚合物化學身分",
+        "D": "低溫失重量為1 mg"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "TGA主要追蹤質量變化，熔融未必失重；精確身分與熔點需配合DSC、光譜等其他證據。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/pmae-mid-tga.svg",
+          "alt": "TGA起始20mg、150°C氮氣19mg、600°C氮氣8mg、切換空氣後2mg；題定低溫只揮發、空氣燃殘炭、無機填料穩定。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 塑膠材料應用工程師官方簡章：常見塑膠材料檢測儀器的功能及數據判讀",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/PMAE/115年度塑膠材料應用工程師能力鑑定簡章(初、中級)_20251230213934.pdf"
+        },
+        {
+          "title": "NETZSCH：TGA Measurements on Polymers",
+          "url": "https://analyzing-testing.netzsch.com/en-US/application-literature/tga-measurements-and-c-dta-determination-on-polymers"
+        }
+      ],
+      "topic": "儀器能力界線",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-pmae-intermediate-3-009",
+      "certId": "pmae",
+      "levelId": "intermediate",
+      "subjectId": "pmae-intermediate-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依原截面計算工程應力，圖中100 N量測點為何？",
+      "options": {
+        "A": "2 MPa",
+        "B": "100 MPa",
+        "C": "1000 MPa",
+        "D": "10 MPa"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "工程應力=100 N/10 mm²=10 N/mm²=10 MPa，使用原截面而非頸縮後截面。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/pmae-mid-mechanical.svg",
+          "alt": "拉伸試片原截面10mm²標距50mm，線性區100N伸長0.25mm，斷裂伸長10mm；MFR固定溫度負載2分鐘流出2.4g且穩定。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 塑膠材料應用工程師官方簡章：常見塑膠材料檢測儀器的功能及數據判讀",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/PMAE/115年度塑膠材料應用工程師能力鑑定簡章(初、中級)_20251230213934.pdf"
+        },
+        {
+          "title": "ZwickRoell：Tensile test on plastics ISO 527",
+          "url": "https://www.zwickroell.com/industries/plastics/thermoplastics-and-thermosetting-molding-materials/tensile-test-iso-527-1-2/"
+        }
+      ],
+      "topic": "拉伸應力",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-pmae-intermediate-3-010",
+      "certId": "pmae",
+      "levelId": "intermediate",
+      "subjectId": "pmae-intermediate-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "使用圖中線彈性量測點，E=σ/ε，估算模數是多少？",
+      "options": {
+        "A": "2000 MPa",
+        "B": "40 MPa",
+        "C": "500 MPa",
+        "D": "20000 MPa"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "應變=0.25/50=0.005，應力10 MPa，E=10/0.005=2000 MPa。此為題定線性區近似。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/pmae-mid-mechanical.svg",
+          "alt": "拉伸試片原截面10mm²標距50mm，線性區100N伸長0.25mm，斷裂伸長10mm；MFR固定溫度負載2分鐘流出2.4g且穩定。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 塑膠材料應用工程師官方簡章：常見塑膠材料檢測儀器的功能及數據判讀",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/PMAE/115年度塑膠材料應用工程師能力鑑定簡章(初、中級)_20251230213934.pdf"
+        },
+        {
+          "title": "ZwickRoell：Tensile test on plastics ISO 527",
+          "url": "https://www.zwickroell.com/industries/plastics/thermoplastics-and-thermosetting-molding-materials/tensile-test-iso-527-1-2/"
+        }
+      ],
+      "topic": "彈性模數",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-pmae-intermediate-3-011",
+      "certId": "pmae",
+      "levelId": "intermediate",
+      "subjectId": "pmae-intermediate-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依圖中原標距與斷裂伸長量，工程斷裂伸長率多少？",
+      "options": {
+        "A": "50%",
+        "B": "20%",
+        "C": "5%",
+        "D": "10%"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "伸長率=10/50×100=20%；分母為原始標距，不是斷後60 mm。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/pmae-mid-mechanical.svg",
+          "alt": "拉伸試片原截面10mm²標距50mm，線性區100N伸長0.25mm，斷裂伸長10mm；MFR固定溫度負載2分鐘流出2.4g且穩定。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 塑膠材料應用工程師官方簡章：常見塑膠材料檢測儀器的功能及數據判讀",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/PMAE/115年度塑膠材料應用工程師能力鑑定簡章(初、中級)_20251230213934.pdf"
+        },
+        {
+          "title": "ZwickRoell：Tensile test on plastics ISO 527",
+          "url": "https://www.zwickroell.com/industries/plastics/thermoplastics-and-thermosetting-molding-materials/tensile-test-iso-527-1-2/"
+        }
+      ],
+      "topic": "斷裂伸長率",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-pmae-intermediate-3-012",
+      "certId": "pmae",
+      "levelId": "intermediate",
+      "subjectId": "pmae-intermediate-3",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "在圖中固定規定條件且流量穩定下，MFR換算為多少g/10 min？",
+      "options": {
+        "A": "2.4 g/10 min",
+        "B": "24 g/10 min",
+        "C": "12 g/10 min",
+        "D": "1.2 g/10 min"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "2.4 g/2 min×10 min=12 g/10 min；不同測試溫度或負載的MFR不可不加說明直接比較。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/pmae-mid-mechanical.svg",
+          "alt": "拉伸試片原截面10mm²標距50mm，線性區100N伸長0.25mm，斷裂伸長10mm；MFR固定溫度負載2分鐘流出2.4g且穩定。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 塑膠材料應用工程師官方簡章：常見塑膠材料檢測儀器的功能及數據判讀",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/PMAE/115年度塑膠材料應用工程師能力鑑定簡章(初、中級)_20251230213934.pdf"
+        },
+        {
+          "title": "ZwickRoell：MFR and MVR definitions",
+          "url": "https://www.zwickroell.com/industries/plastics/plastic-pipes/melt-index-flow-rate/"
+        }
+      ],
+      "topic": "熔融質量流率",
+      "practicalPreparation": false
+    }
+  ]
+}

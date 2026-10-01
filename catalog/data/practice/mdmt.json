@@ -1,0 +1,2452 @@
+{
+  "version": 1,
+  "certId": "mdmt",
+  "updatedAt": "2026-10-01",
+  "questions": [
+    {
+      "id": "mdmt-junior-past-cbe657a21c18-q1",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "paperId": "mdmt-junior-past-cbe657a21c18",
+      "subjectName": "工具機機械設計概論",
+      "number": 1,
+      "printedNumber": 1,
+      "sectionLabel": "一、單選題40題(佔100%)",
+      "multiple": false,
+      "answer": "A",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/fd76487d209c4f1fa3c9a975ac8594eb/114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114_20251226182536.pdf#page=1",
+      "page": 1,
+      "promptText": "傳動馬達的轉速為500 rpm,其運轉功率為20 kW。請問該馬達扭力是多少?\n1.\n(A) 382 Nm;(B) 143.5 Nm;(C) 200 Nm;(D) 551 Nm。",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "傳動馬達的轉速為500 rpm,其運轉功率為20 kW。請問該馬達扭力是多少?\n1.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/mdmt-junior-past-cbe657a21c18/q001-01-801ab0a701.webp",
+          "alt": "工具機機械設計概論原卷第 1 題題目與選項",
+          "page": 1,
+          "rect": [
+            26,
+            186.4,
+            575.32,
+            229.92
+          ],
+          "role": "question",
+          "sha256": "1224e7c187441223bd88e2a7cf085612e9b534a53ed6bc03d994458bacd49c06"
+        }
+      ],
+      "sourcePdfSha256": "9012ed37295e32a8607585af55658041194867d264d7057dc8668bb0f375fe13",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 1,
+          "rect": [
+            84.31999969482422,
+            198.1999969482422,
+            105.55999755859375,
+            220.05996704101562
+          ]
+        }
+      ],
+      "subjectId": "mdmt-junior-1",
+      "paperTitle": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)",
+      "source": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)"
+    },
+    {
+      "id": "mdmt-junior-past-cbe657a21c18-q2",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "paperId": "mdmt-junior-past-cbe657a21c18",
+      "subjectName": "工具機機械設計概論",
+      "number": 2,
+      "printedNumber": 2,
+      "sectionLabel": "一、單選題40題(佔100%)",
+      "multiple": false,
+      "answer": "B",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/fd76487d209c4f1fa3c9a975ac8594eb/114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114_20251226182536.pdf#page=1",
+      "page": 1,
+      "promptText": "當撓性聯軸器超過容許偏差時,若徑向偏差和角度偏差同時存在,應如何處\n理?\n2.\n(A) 兩者可以獨立存在,不須處理;(B) 允許的偏差值必須按比例減少;(C) 只\n需考慮其中較大的偏差值;(D) 聯軸器必須更換為更高規格的型號。",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "當撓性聯軸器超過容許偏差時,若徑向偏差和角度偏差同時存在,應如何處\n理?\n2.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/mdmt-junior-past-cbe657a21c18/q002-01-dd7dae0a09.webp",
+          "alt": "工具機機械設計概論原卷第 2 題題目與選項",
+          "page": 1,
+          "rect": [
+            26,
+            229.12,
+            575.32,
+            310.44
+          ],
+          "role": "question",
+          "sha256": "d453486578f1382ec9db17ae0d159c8319e729bca86f18bdc4b8109671278b4b"
+        }
+      ],
+      "sourcePdfSha256": "9012ed37295e32a8607585af55658041194867d264d7057dc8668bb0f375fe13",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 1,
+          "rect": [
+            84.68,
+            259.76,
+            97.72,
+            277.924
+          ]
+        }
+      ],
+      "subjectId": "mdmt-junior-1",
+      "paperTitle": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)",
+      "source": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)"
+    },
+    {
+      "id": "mdmt-junior-past-cbe657a21c18-q3",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "paperId": "mdmt-junior-past-cbe657a21c18",
+      "subjectName": "工具機機械設計概論",
+      "number": 3,
+      "printedNumber": 3,
+      "sectionLabel": "一、單選題40題(佔100%)",
+      "multiple": false,
+      "answer": "A",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/fd76487d209c4f1fa3c9a975ac8594eb/114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114_20251226182536.pdf#page=1",
+      "page": 1,
+      "promptText": "鏈傳動系統的鏈輪選擇對整體性能至關重要。若需提升鏈傳動在嚴苛環境下的\n耐久性,下列哪一項鏈輪特性何者為非?\n3.\n(A) 鏈輪的齒數需盡可能地多,以提高傳動平穩性;(B) 鏈輪必須採用輕量化\n設計,以降低旋轉慣量;(C) 鏈輪齒尖必須經過硬化處理,以提高耐磨耗性;\n(D) 鏈輪的轂(hub)需採用較小的外徑,以節省空間。",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "鏈傳動系統的鏈輪選擇對整體性能至關重要。若需提升鏈傳動在嚴苛環境下的\n耐久性,下列哪一項鏈輪特性何者為非?\n3.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/mdmt-junior-past-cbe657a21c18/q003-01-91ddbec142.webp",
+          "alt": "工具機機械設計概論原卷第 3 題題目與選項",
+          "page": 1,
+          "rect": [
+            26,
+            309.64,
+            575.32,
+            411
+          ],
+          "role": "question",
+          "sha256": "d102285a957672597b0a18562b9b0e05f04dd2a85df7edb944a2c01c64b4ca73"
+        }
+      ],
+      "sourcePdfSha256": "9012ed37295e32a8607585af55658041194867d264d7057dc8668bb0f375fe13",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 1,
+          "rect": [
+            84.31999969482422,
+            350.2399597167969,
+            105.55999755859375,
+            372.219970703125
+          ]
+        }
+      ],
+      "subjectId": "mdmt-junior-1",
+      "paperTitle": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)",
+      "source": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)"
+    },
+    {
+      "id": "mdmt-junior-past-cbe657a21c18-q4",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "paperId": "mdmt-junior-past-cbe657a21c18",
+      "subjectName": "工具機機械設計概論",
+      "number": 4,
+      "printedNumber": 4,
+      "sectionLabel": "一、單選題40題(佔100%)",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/fd76487d209c4f1fa3c9a975ac8594eb/114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114_20251226182536.pdf#page=1",
+      "page": 1,
+      "promptText": "在線性滑軌的滑塊安裝過程中,常會對其施加預壓(preload)。預壓的主要目\n的是什麼?\n(A) 減少滑塊與軌道間的摩擦力,降低運行溫度;(B) 降低滑軌的動態負載能\n4.\n力,延長使用壽命;(C) 消除滑塊與軌道間的間隙,提高剛性和運行精度;(D)\n簡化安裝程序。",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "在線性滑軌的滑塊安裝過程中,常會對其施加預壓(preload)。預壓的主要目\n的是什麼?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/mdmt-junior-past-cbe657a21c18/q004-01-3a54e95589.webp",
+          "alt": "工具機機械設計概論原卷第 4 題題目與選項",
+          "page": 1,
+          "rect": [
+            26,
+            410.2,
+            575.32,
+            511.44
+          ],
+          "role": "question",
+          "sha256": "cf60af20c4e258c15451838c67c2b1e4a1a3917f2dd6ca8d2c8deef336622afe"
+        }
+      ],
+      "sourcePdfSha256": "9012ed37295e32a8607585af55658041194867d264d7057dc8668bb0f375fe13",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 1,
+          "rect": [
+            84.68,
+            450.8,
+            97.72,
+            468.964
+          ]
+        }
+      ],
+      "subjectId": "mdmt-junior-1",
+      "paperTitle": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)",
+      "source": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)"
+    },
+    {
+      "id": "mdmt-junior-past-cbe657a21c18-q5",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "paperId": "mdmt-junior-past-cbe657a21c18",
+      "subjectName": "工具機機械設計概論",
+      "number": 5,
+      "printedNumber": 5,
+      "sectionLabel": "一、單選題40題(佔100%)",
+      "multiple": false,
+      "answer": "A",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/fd76487d209c4f1fa3c9a975ac8594eb/114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114_20251226182536.pdf#page=1",
+      "page": 1,
+      "promptText": "某線性滑軌的靜態基本額定負荷為 2000 kN,工作負荷為1000 kN。請問在不\n考慮任何衝擊及額外負載的情況下,此滑軌是否滿足安全要求?\n5.\n(A) 滿足,因為實際安全係數為 2.0;(B) 滿足,因為實際安全係數為 0.5;(C)\n不滿足,因為實際安全係數為 2.0;(D) 不滿足,因為實際安全係數為 0.5。",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "某線性滑軌的靜態基本額定負荷為 2000 kN,工作負荷為1000 kN。請問在不\n考慮任何衝擊及額外負載的情況下,此滑軌是否滿足安全要求?\n5.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/mdmt-junior-past-cbe657a21c18/q005-01-0699973584.webp",
+          "alt": "工具機機械設計概論原卷第 5 題題目與選項",
+          "page": 1,
+          "rect": [
+            26,
+            510.64,
+            575.32,
+            591.96
+          ],
+          "role": "question",
+          "sha256": "397d8d10a06e4fdb6aea84d111ed154274a3e087229a2faa520c0ee651dd8f50"
+        }
+      ],
+      "sourcePdfSha256": "9012ed37295e32a8607585af55658041194867d264d7057dc8668bb0f375fe13",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 1,
+          "rect": [
+            84.31999969482422,
+            541.280029296875,
+            105.55999755859375,
+            563.260009765625
+          ]
+        }
+      ],
+      "subjectId": "mdmt-junior-1",
+      "paperTitle": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)",
+      "source": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)"
+    },
+    {
+      "id": "mdmt-junior-past-cbe657a21c18-q6",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "paperId": "mdmt-junior-past-cbe657a21c18",
+      "subjectName": "工具機機械設計概論",
+      "number": 6,
+      "printedNumber": 6,
+      "sectionLabel": "一、單選題40題(佔100%)",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/fd76487d209c4f1fa3c9a975ac8594eb/114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114_20251226182536.pdf#page=1",
+      "page": 1,
+      "promptText": "軸承基本代號系統,代號為「6205」的軸承中,最後兩位數字「05」代表什麼\n意義?\n6.\n(A) 軸承外徑為5mm;(B) 軸承寬度為5mm;(C) 軸承內徑為25mm;(D)\n軸承尺寸系列為05 系列。",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "軸承基本代號系統,代號為「6205」的軸承中,最後兩位數字「05」代表什麼\n意義?\n6.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/mdmt-junior-past-cbe657a21c18/q006-01-f998b59d3d.webp",
+          "alt": "工具機機械設計概論原卷第 6 題題目與選項",
+          "page": 1,
+          "rect": [
+            26,
+            591.16,
+            575.32,
+            672.48
+          ],
+          "role": "question",
+          "sha256": "a62245fbb55d69e3273630064c7352c944683d4c89a7f2f7e96dd091a1f7bb23"
+        }
+      ],
+      "sourcePdfSha256": "9012ed37295e32a8607585af55658041194867d264d7057dc8668bb0f375fe13",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 1,
+          "rect": [
+            84.68,
+            621.8,
+            97.72,
+            639.964
+          ]
+        }
+      ],
+      "subjectId": "mdmt-junior-1",
+      "paperTitle": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)",
+      "source": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)"
+    },
+    {
+      "id": "mdmt-junior-past-cbe657a21c18-q7",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "paperId": "mdmt-junior-past-cbe657a21c18",
+      "subjectName": "工具機機械設計概論",
+      "number": 7,
+      "printedNumber": 7,
+      "sectionLabel": "一、單選題40題(佔100%)",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/fd76487d209c4f1fa3c9a975ac8594eb/114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114_20251226182536.pdf#page=1",
+      "page": 1,
+      "promptText": "一工具機立柱採用方形空心鋼管,外邊長200mm,壁厚20mm,承受軸向壓縮\n力800kN。若材料的降伏強度為235MPa,則立柱的安全係數最接近下列何者?\n7.\n(A) 1.8;(B) 2.1;(C) 2.6;(D) 3.2。",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "一工具機立柱採用方形空心鋼管,外邊長200mm,壁厚20mm,承受軸向壓縮\n力800kN。若材料的降伏強度為235MPa,則立柱的安全係數最接近下列何者?\n7.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/mdmt-junior-past-cbe657a21c18/q007-01-9b4a4b244d.webp",
+          "alt": "工具機機械設計概論原卷第 7 題題目與選項",
+          "page": 1,
+          "rect": [
+            26,
+            671.68,
+            575.32,
+            732.96
+          ],
+          "role": "question",
+          "sha256": "8a9fa6fdb547d24e11431669620b2d28b506c70dfc36c03097bfb2db29f3f351"
+        }
+      ],
+      "sourcePdfSha256": "9012ed37295e32a8607585af55658041194867d264d7057dc8668bb0f375fe13",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 1,
+          "rect": [
+            84.68,
+            692.24,
+            97.72,
+            710.404
+          ]
+        }
+      ],
+      "subjectId": "mdmt-junior-1",
+      "paperTitle": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)",
+      "source": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)"
+    },
+    {
+      "id": "mdmt-junior-past-cbe657a21c18-q8",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "paperId": "mdmt-junior-past-cbe657a21c18",
+      "subjectName": "工具機機械設計概論",
+      "number": 8,
+      "printedNumber": 8,
+      "sectionLabel": "一、單選題40題(佔100%)",
+      "multiple": false,
+      "answer": "A",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/fd76487d209c4f1fa3c9a975ac8594eb/114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114_20251226182536.pdf#page=2",
+      "page": 2,
+      "promptText": "若車床主軸直徑60mm,轉速1200rpm,傳遞功率15kW。而材料許可剪應力\n為80MPa,此主軸設計是否安全?其剪應力數值為何?\n8.\n(A) 安全,剪應力約65MPa;(B) 安全,剪應力約72MPa;(C) 不安全,剪應\n力約85MPa;(D) 不安全,剪應力約95MPa。",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "若車床主軸直徑60mm,轉速1200rpm,傳遞功率15kW。而材料許可剪應力\n為80MPa,此主軸設計是否安全?其剪應力數值為何?\n8.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/mdmt-junior-past-cbe657a21c18/q008-01-206d7c474d.webp",
+          "alt": "工具機機械設計概論原卷第 8 題題目與選項",
+          "page": 2,
+          "rect": [
+            26,
+            140.32,
+            575.32,
+            221.64
+          ],
+          "role": "question",
+          "sha256": "edc8808ba5c5eb8ef5e50fb836b5a7eafd6d0907a298c99e5f72af6a66dff406"
+        }
+      ],
+      "sourcePdfSha256": "9012ed37295e32a8607585af55658041194867d264d7057dc8668bb0f375fe13",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 2,
+          "rect": [
+            84.31999969482422,
+            170.9600067138672,
+            105.55999755859375,
+            192.93997192382812
+          ]
+        }
+      ],
+      "subjectId": "mdmt-junior-1",
+      "paperTitle": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)",
+      "source": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)"
+    },
+    {
+      "id": "mdmt-junior-past-cbe657a21c18-q9",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "paperId": "mdmt-junior-past-cbe657a21c18",
+      "subjectName": "工具機機械設計概論",
+      "number": 9,
+      "printedNumber": 9,
+      "sectionLabel": "一、單選題40題(佔100%)",
+      "multiple": false,
+      "answer": "B",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/fd76487d209c4f1fa3c9a975ac8594eb/114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114_20251226182536.pdf#page=2",
+      "page": 2,
+      "promptText": "龍門銑床橫樑長3m,兩端簡支,中央承受集中負載20kN。此樑的最大彎矩\n為?\n9.\n(A) 10 kN·m;(B) 15 kN·m;(C) 20 kN·m;(D) 30 kN·m。",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "龍門銑床橫樑長3m,兩端簡支,中央承受集中負載20kN。此樑的最大彎矩\n為?\n9.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/mdmt-junior-past-cbe657a21c18/q009-01-b01d1918d8.webp",
+          "alt": "工具機機械設計概論原卷第 9 題題目與選項",
+          "page": 2,
+          "rect": [
+            26,
+            220.84,
+            575.32,
+            282.12
+          ],
+          "role": "question",
+          "sha256": "6af3627e4c95a6c5e07eda86b51638b40b7e0125c306a680552044cb679d06c4"
+        }
+      ],
+      "sourcePdfSha256": "9012ed37295e32a8607585af55658041194867d264d7057dc8668bb0f375fe13",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 2,
+          "rect": [
+            84.68,
+            241.52,
+            97.72,
+            259.684
+          ]
+        }
+      ],
+      "subjectId": "mdmt-junior-1",
+      "paperTitle": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)",
+      "source": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)"
+    },
+    {
+      "id": "mdmt-junior-past-cbe657a21c18-q10",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "paperId": "mdmt-junior-past-cbe657a21c18",
+      "subjectName": "工具機機械設計概論",
+      "number": 10,
+      "printedNumber": 10,
+      "sectionLabel": "一、單選題40題(佔100%)",
+      "multiple": false,
+      "answer": "B",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/fd76487d209c4f1fa3c9a975ac8594eb/114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114_20251226182536.pdf#page=2",
+      "page": 2,
+      "promptText": "如果銑床主軸電機功率7.5kW,機械效率85%,而主軸轉速1800rpm,則主軸\n可提供的扭矩約為?\n10.\n(A) 28 N·m;(B) 34 N·m;(C) 40 N·m;(D) 47 N·m。",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "如果銑床主軸電機功率7.5kW,機械效率85%,而主軸轉速1800rpm,則主軸\n可提供的扭矩約為?\n10.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/mdmt-junior-past-cbe657a21c18/q010-01-8100f4c6ae.webp",
+          "alt": "工具機機械設計概論原卷第 10 題題目與選項",
+          "page": 2,
+          "rect": [
+            26,
+            281.32,
+            575.32,
+            349.68
+          ],
+          "role": "question",
+          "sha256": "5373f55daa14d46cd1e3e03b22a17e4ac815ce43cc1358da3715e9f8280d7b0a"
+        }
+      ],
+      "sourcePdfSha256": "9012ed37295e32a8607585af55658041194867d264d7057dc8668bb0f375fe13",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 2,
+          "rect": [
+            84.68,
+            305.48,
+            97.72,
+            323.644
+          ]
+        }
+      ],
+      "subjectId": "mdmt-junior-1",
+      "paperTitle": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)",
+      "source": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)"
+    },
+    {
+      "id": "mdmt-junior-past-cbe657a21c18-q11",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "paperId": "mdmt-junior-past-cbe657a21c18",
+      "subjectName": "工具機機械設計概論",
+      "number": 11,
+      "printedNumber": 11,
+      "sectionLabel": "一、單選題40題(佔100%)",
+      "multiple": false,
+      "answer": "B",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/fd76487d209c4f1fa3c9a975ac8594eb/114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114_20251226182536.pdf#page=2",
+      "page": 2,
+      "promptText": "某工具機直線導軌的摩擦係數為0.02,工作台重量5000N,則滑動時的摩擦力\n為?\n11.\n(A) 50N;(B) 100N;(C) 150N;(D) 200N。",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "某工具機直線導軌的摩擦係數為0.02,工作台重量5000N,則滑動時的摩擦力\n為?\n11.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/mdmt-junior-past-cbe657a21c18/q011-01-40cbb22aa9.webp",
+          "alt": "工具機機械設計概論原卷第 11 題題目與選項",
+          "page": 2,
+          "rect": [
+            26,
+            348.88,
+            575.32,
+            410.28
+          ],
+          "role": "question",
+          "sha256": "57ae5208abf3b158a873036af7fe149099fc597ff303063455e262ce0d6314cf"
+        }
+      ],
+      "sourcePdfSha256": "9012ed37295e32a8607585af55658041194867d264d7057dc8668bb0f375fe13",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 2,
+          "rect": [
+            84.68,
+            371.36,
+            97.72,
+            389.524
+          ]
+        }
+      ],
+      "subjectId": "mdmt-junior-1",
+      "paperTitle": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)",
+      "source": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)"
+    },
+    {
+      "id": "mdmt-junior-past-cbe657a21c18-q12",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "paperId": "mdmt-junior-past-cbe657a21c18",
+      "subjectName": "工具機機械設計概論",
+      "number": 12,
+      "printedNumber": 12,
+      "sectionLabel": "一、單選題40題(佔100%)",
+      "multiple": false,
+      "answer": "A",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/fd76487d209c4f1fa3c9a975ac8594eb/114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114_20251226182536.pdf#page=2",
+      "page": 2,
+      "promptText": "有一橫樑截面為矩形,寬度100mm,高度200mm。此截面對中性軸的慣性矩\n12.\n為?\n(A) 66.7×106 mm4;(B) 133.3×106 mm4;(C) 200×106 mm4;(D) 266.7×106 mm4。",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "有一橫樑截面為矩形,寬度100mm,高度200mm。此截面對中性軸的慣性矩\n12.\n為?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/mdmt-junior-past-cbe657a21c18/q012-01-e17875486a.webp",
+          "alt": "工具機機械設計概論原卷第 12 題題目與選項",
+          "page": 2,
+          "rect": [
+            26,
+            409.48,
+            575.32,
+            470.76
+          ],
+          "role": "question",
+          "sha256": "00ac20b7eefebbb0c9defbe373d4a79c31e66ecd930831596836be6a1e8ad7ce"
+        }
+      ],
+      "sourcePdfSha256": "9012ed37295e32a8607585af55658041194867d264d7057dc8668bb0f375fe13",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 2,
+          "rect": [
+            84.31999969482422,
+            430.03997802734375,
+            105.55999755859375,
+            451.89996337890625
+          ]
+        }
+      ],
+      "subjectId": "mdmt-junior-1",
+      "paperTitle": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)",
+      "source": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)"
+    },
+    {
+      "id": "mdmt-junior-past-cbe657a21c18-q13",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "paperId": "mdmt-junior-past-cbe657a21c18",
+      "subjectName": "工具機機械設計概論",
+      "number": 13,
+      "printedNumber": 13,
+      "sectionLabel": "一、單選題40題(佔100%)",
+      "multiple": false,
+      "answer": "D",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/fd76487d209c4f1fa3c9a975ac8594eb/114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114_20251226182536.pdf#page=2",
+      "page": 2,
+      "promptText": "下列何者為剪應力(Shear Stress)?\n13.\n(A) 拉伸應力;(B) 壓縮應力;(C) 彎曲應力;(D) 扭轉應力。",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "下列何者為剪應力(Shear Stress)?\n13.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/mdmt-junior-past-cbe657a21c18/q013-01-59c0d945a6.webp",
+          "alt": "工具機機械設計概論原卷第 13 題題目與選項",
+          "page": 2,
+          "rect": [
+            26,
+            469.96,
+            575.32,
+            513.48
+          ],
+          "role": "question",
+          "sha256": "0de901407f91732df95e88461cde327c50665942558bffcc238e1dc30724115a"
+        }
+      ],
+      "sourcePdfSha256": "9012ed37295e32a8607585af55658041194867d264d7057dc8668bb0f375fe13",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 2,
+          "rect": [
+            84.31999969482422,
+            481.6399841308594,
+            105.55999755859375,
+            503.6199645996094
+          ]
+        }
+      ],
+      "subjectId": "mdmt-junior-1",
+      "paperTitle": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)",
+      "source": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)"
+    },
+    {
+      "id": "mdmt-junior-past-cbe657a21c18-q14",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "paperId": "mdmt-junior-past-cbe657a21c18",
+      "subjectName": "工具機機械設計概論",
+      "number": 14,
+      "printedNumber": 14,
+      "sectionLabel": "一、單選題40題(佔100%)",
+      "multiple": false,
+      "answer": "D",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/fd76487d209c4f1fa3c9a975ac8594eb/114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114_20251226182536.pdf#page=2",
+      "page": 2,
+      "promptText": "關於工具機熱變形的影響因素,下列敘述何者錯誤?\n(A) 主軸轉速越高,發熱量越大,熱變形越嚴重;(B) 環境溫度變化會影響\n14.\n機台的尺寸精度;(C) 花崗岩床身的熱膨脹係數比鑄鐵小,熱穩定性較好;\n(D) 冷卻系統只能降低切削溫度,對機台熱變形無影響。",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "關於工具機熱變形的影響因素,下列敘述何者錯誤?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/mdmt-junior-past-cbe657a21c18/q014-01-2cb283c0c3.webp",
+          "alt": "工具機機械設計概論原卷第 14 題題目與選項",
+          "page": 2,
+          "rect": [
+            26,
+            512.68,
+            575.32,
+            594
+          ],
+          "role": "question",
+          "sha256": "87a7793254d26b7c7cec86f39a4d8273b759b8d5f04e76702bf8986089a42f96"
+        }
+      ],
+      "sourcePdfSha256": "9012ed37295e32a8607585af55658041194867d264d7057dc8668bb0f375fe13",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 2,
+          "rect": [
+            84.31999969482422,
+            543.3200073242188,
+            105.55999755859375,
+            565.300048828125
+          ]
+        }
+      ],
+      "subjectId": "mdmt-junior-1",
+      "paperTitle": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)",
+      "source": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)"
+    },
+    {
+      "id": "mdmt-junior-past-cbe657a21c18-q15",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "paperId": "mdmt-junior-past-cbe657a21c18",
+      "subjectName": "工具機機械設計概論",
+      "number": 15,
+      "printedNumber": 15,
+      "sectionLabel": "一、單選題40題(佔100%)",
+      "multiple": false,
+      "answer": "B",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/fd76487d209c4f1fa3c9a975ac8594eb/114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114_20251226182536.pdf#page=2",
+      "page": 2,
+      "promptText": "在智慧製造產線中,為達成刀具壽命自動監控,須搭配材料與加工熱效應推估。\n下列何者最可能造成刀具快速磨損?\n15.\n(A) 使用鑽石刀具切削鋁材;(B) 不鏽鋼乾式切削高速加工;(C) 銅件低速銑\n削;(D) 工具鋼淬火後表面研磨。",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "在智慧製造產線中,為達成刀具壽命自動監控,須搭配材料與加工熱效應推估。\n下列何者最可能造成刀具快速磨損?\n15.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/mdmt-junior-past-cbe657a21c18/q015-01-235b51406b.webp",
+          "alt": "工具機機械設計概論原卷第 15 題題目與選項",
+          "page": 2,
+          "rect": [
+            26,
+            593.2,
+            575.32,
+            674.52
+          ],
+          "role": "question",
+          "sha256": "96e188da3781adf99b4a870dba0ba376aeeaaf127215162bb9d110eb38b6dfbd"
+        }
+      ],
+      "sourcePdfSha256": "9012ed37295e32a8607585af55658041194867d264d7057dc8668bb0f375fe13",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 2,
+          "rect": [
+            84.68,
+            623.84,
+            97.72,
+            642.004
+          ]
+        }
+      ],
+      "subjectId": "mdmt-junior-1",
+      "paperTitle": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)",
+      "source": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)"
+    },
+    {
+      "id": "mdmt-junior-past-cbe657a21c18-q16",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "paperId": "mdmt-junior-past-cbe657a21c18",
+      "subjectName": "工具機機械設計概論",
+      "number": 16,
+      "printedNumber": 16,
+      "sectionLabel": "一、單選題40題(佔100%)",
+      "multiple": false,
+      "answer": "B",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/fd76487d209c4f1fa3c9a975ac8594eb/114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114_20251226182536.pdf#page=2",
+      "page": 2,
+      "promptText": "拉床(Broaching)最適合應用於哪一類製程中?\n(A) 單件少量鋁板加工;(B) 高精度、大量鍵槽加工;(C) 模具銑削加工;\n16.\n(D) 熱壓鑄零件打磨。",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "拉床(Broaching)最適合應用於哪一類製程中?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/mdmt-junior-past-cbe657a21c18/q016-01-c1339e0a44.webp",
+          "alt": "工具機機械設計概論原卷第 16 題題目與選項",
+          "page": 2,
+          "rect": [
+            26,
+            673.72,
+            575.32,
+            735
+          ],
+          "role": "question",
+          "sha256": "c2c33ef9ed423a7222bdb1f1ce17f3b0213384dd61caec31bda7f0d331539011"
+        }
+      ],
+      "sourcePdfSha256": "9012ed37295e32a8607585af55658041194867d264d7057dc8668bb0f375fe13",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 2,
+          "rect": [
+            84.68,
+            694.4,
+            97.72,
+            712.564
+          ]
+        }
+      ],
+      "subjectId": "mdmt-junior-1",
+      "paperTitle": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)",
+      "source": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)"
+    },
+    {
+      "id": "mdmt-junior-past-cbe657a21c18-q17",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "paperId": "mdmt-junior-past-cbe657a21c18",
+      "subjectName": "工具機機械設計概論",
+      "number": 17,
+      "printedNumber": 17,
+      "sectionLabel": "一、單選題40題(佔100%)",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/fd76487d209c4f1fa3c9a975ac8594eb/114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114_20251226182536.pdf#page=2",
+      "page": 2,
+      "promptText": "17. 表面粗糙度 Ra 值越小代表?\n\n(A) 加工面越粗糙;(B) 加工深度越深;(C) 表面越光滑;(D) 精度越低。",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "表面粗糙度 Ra 值越小代表?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/mdmt-junior-past-cbe657a21c18/q017-01-74d247eca1.webp",
+          "alt": "工具機機械設計概論原卷第 17 題題目與選項",
+          "page": 2,
+          "rect": [
+            26,
+            734.2,
+            575.32,
+            803.022
+          ],
+          "role": "question",
+          "sha256": "5b4f3096a12580fc6199ef1936a8c768185fe54a0ff152348d223d217a383fbe"
+        },
+        {
+          "path": "assets/questions/official/mdmt-junior-past-cbe657a21c18/q017-02-5209b423a9.webp",
+          "alt": "工具機機械設計概論原卷第 17 題題目與選項",
+          "page": 3,
+          "rect": [
+            26,
+            132.972,
+            575.32,
+            161.64
+          ],
+          "role": "question",
+          "sha256": "3fa8528939b3704e2b8ed7ef96057bfa3adbf35e4899def03869df856f1da08d"
+        }
+      ],
+      "sourcePdfSha256": "9012ed37295e32a8607585af55658041194867d264d7057dc8668bb0f375fe13",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 2,
+          "rect": [
+            84.68,
+            738.56,
+            97.72,
+            756.724
+          ]
+        }
+      ],
+      "subjectId": "mdmt-junior-1",
+      "paperTitle": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)",
+      "source": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)"
+    },
+    {
+      "id": "mdmt-junior-past-cbe657a21c18-q18",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "paperId": "mdmt-junior-past-cbe657a21c18",
+      "subjectName": "工具機機械設計概論",
+      "number": 18,
+      "printedNumber": 18,
+      "sectionLabel": "一、單選題40題(佔100%)",
+      "multiple": false,
+      "answer": "D",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/fd76487d209c4f1fa3c9a975ac8594eb/114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114_20251226182536.pdf#page=3",
+      "page": 3,
+      "promptText": "精密鑽削加工後,如要測量孔徑,不宜使用?\n18.\n(A) 影像測量機;(B) 三點內徑規;(C) 游標卡尺;(D) 高度規。",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "精密鑽削加工後,如要測量孔徑,不宜使用?\n18.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/mdmt-junior-past-cbe657a21c18/q018-01-f740e29de9.webp",
+          "alt": "工具機機械設計概論原卷第 18 題題目與選項",
+          "page": 3,
+          "rect": [
+            26,
+            160.84,
+            575.32,
+            204.48
+          ],
+          "role": "question",
+          "sha256": "eff4e856fcbebae449142300928bd2071a8578a989465f098cd7123d4c2e5014"
+        }
+      ],
+      "sourcePdfSha256": "9012ed37295e32a8607585af55658041194867d264d7057dc8668bb0f375fe13",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 3,
+          "rect": [
+            84.31999969482422,
+            172.63999938964844,
+            105.55999755859375,
+            194.49996948242188
+          ]
+        }
+      ],
+      "subjectId": "mdmt-junior-1",
+      "paperTitle": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)",
+      "source": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)"
+    },
+    {
+      "id": "mdmt-junior-past-cbe657a21c18-q19",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "paperId": "mdmt-junior-past-cbe657a21c18",
+      "subjectName": "工具機機械設計概論",
+      "number": 19,
+      "printedNumber": 19,
+      "sectionLabel": "一、單選題40題(佔100%)",
+      "multiple": false,
+      "answer": "B",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/fd76487d209c4f1fa3c9a975ac8594eb/114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114_20251226182536.pdf#page=3",
+      "page": 3,
+      "promptText": "CNC 銑床進行曲面加工時,若產生邊角台階感,可能原因為?\n(A) 刀具太新;(B) 未正確設定刀具半徑補償;(C) 材料硬度過高;(D) 選錯\n19.\n刀具材質。",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "CNC 銑床進行曲面加工時,若產生邊角台階感,可能原因為?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/mdmt-junior-past-cbe657a21c18/q019-01-ba623966cf.webp",
+          "alt": "工具機機械設計概論原卷第 19 題題目與選項",
+          "page": 3,
+          "rect": [
+            26,
+            203.68,
+            575.32,
+            264.96
+          ],
+          "role": "question",
+          "sha256": "282de12e0c840273005720e08bda56d6e4e366d9c8cb5cdb9891e07c3912da23"
+        }
+      ],
+      "sourcePdfSha256": "9012ed37295e32a8607585af55658041194867d264d7057dc8668bb0f375fe13",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 3,
+          "rect": [
+            84.68,
+            224.24,
+            97.72,
+            242.404
+          ]
+        }
+      ],
+      "subjectId": "mdmt-junior-1",
+      "paperTitle": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)",
+      "source": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)"
+    },
+    {
+      "id": "mdmt-junior-past-cbe657a21c18-q20",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "paperId": "mdmt-junior-past-cbe657a21c18",
+      "subjectName": "工具機機械設計概論",
+      "number": 20,
+      "printedNumber": 20,
+      "sectionLabel": "一、單選題40題(佔100%)",
+      "multiple": false,
+      "answer": "B",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/fd76487d209c4f1fa3c9a975ac8594eb/114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114_20251226182536.pdf#page=3",
+      "page": 3,
+      "promptText": "加工中心在執行高速切削時常出現刀具損耗,最佳對策為?\n(A) 增加主軸轉速;(B) 減少切削深度與選用適當刀具材質;(C) 降低主軸冷\n20.\n卻壓力;(D) 將程式速度提升。",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "加工中心在執行高速切削時常出現刀具損耗,最佳對策為?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/mdmt-junior-past-cbe657a21c18/q020-01-4286979ae4.webp",
+          "alt": "工具機機械設計概論原卷第 20 題題目與選項",
+          "page": 3,
+          "rect": [
+            26,
+            264.16,
+            575.32,
+            325.44
+          ],
+          "role": "question",
+          "sha256": "4b5b714707a24983248116b13f265fa55f2e3cf2e96ed1744dfcfd6ec2f20cc0"
+        }
+      ],
+      "sourcePdfSha256": "9012ed37295e32a8607585af55658041194867d264d7057dc8668bb0f375fe13",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 3,
+          "rect": [
+            84.68,
+            284.84,
+            97.72,
+            303.004
+          ]
+        }
+      ],
+      "subjectId": "mdmt-junior-1",
+      "paperTitle": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)",
+      "source": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)"
+    },
+    {
+      "id": "mdmt-junior-past-cbe657a21c18-q21",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "paperId": "mdmt-junior-past-cbe657a21c18",
+      "subjectName": "工具機機械設計概論",
+      "number": 21,
+      "printedNumber": 21,
+      "sectionLabel": "一、單選題40題(佔100%)",
+      "multiple": false,
+      "answer": "A",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/fd76487d209c4f1fa3c9a975ac8594eb/114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114_20251226182536.pdf#page=3",
+      "page": 3,
+      "promptText": "下列哪項設計可提升刀具剛性與散熱效率?\n21.\n(A) 短刀桿設計與內部冷卻孔;(B) 刀柄延伸設計;(C) 外部風扇;(D) 純陶\n瓷刀柄。",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "下列哪項設計可提升刀具剛性與散熱效率?\n21.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/mdmt-junior-past-cbe657a21c18/q021-01-8737005dc5.webp",
+          "alt": "工具機機械設計概論原卷第 21 題題目與選項",
+          "page": 3,
+          "rect": [
+            26,
+            324.64,
+            575.32,
+            385.92
+          ],
+          "role": "question",
+          "sha256": "698cbbeff5895e83f55e4b891f381d56be5ceef162f290b3a6a5b28d34be9137"
+        }
+      ],
+      "sourcePdfSha256": "9012ed37295e32a8607585af55658041194867d264d7057dc8668bb0f375fe13",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 3,
+          "rect": [
+            84.31999969482422,
+            345.3199768066406,
+            105.55999755859375,
+            367.1799621582031
+          ]
+        }
+      ],
+      "subjectId": "mdmt-junior-1",
+      "paperTitle": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)",
+      "source": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)"
+    },
+    {
+      "id": "mdmt-junior-past-cbe657a21c18-q22",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "paperId": "mdmt-junior-past-cbe657a21c18",
+      "subjectName": "工具機機械設計概論",
+      "number": 22,
+      "printedNumber": 22,
+      "sectionLabel": "一、單選題40題(佔100%)",
+      "multiple": false,
+      "answer": "D",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/fd76487d209c4f1fa3c9a975ac8594eb/114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114_20251226182536.pdf#page=3",
+      "page": 3,
+      "promptText": "若在智慧工廠中建立 AI 品質辨識模組,以下哪項為模型訓練基礎?\n22.\n(A) 作業員經驗;(B) 材料成本分析;(C) 手動檢查報告;(D) 感測器即時影\n像與量測資料。",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "若在智慧工廠中建立 AI 品質辨識模組,以下哪項為模型訓練基礎?\n22.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/mdmt-junior-past-cbe657a21c18/q022-01-953e9d12c3.webp",
+          "alt": "工具機機械設計概論原卷第 22 題題目與選項",
+          "page": 3,
+          "rect": [
+            26,
+            385.12,
+            575.32,
+            446.52
+          ],
+          "role": "question",
+          "sha256": "b31138ed404da0e9926cced28376864c4f7a82ddd69d842f93f5df9e2b2c0ac3"
+        }
+      ],
+      "sourcePdfSha256": "9012ed37295e32a8607585af55658041194867d264d7057dc8668bb0f375fe13",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 3,
+          "rect": [
+            84.31999969482422,
+            405.7999572753906,
+            105.55999755859375,
+            427.65997314453125
+          ]
+        }
+      ],
+      "subjectId": "mdmt-junior-1",
+      "paperTitle": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)",
+      "source": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)"
+    },
+    {
+      "id": "mdmt-junior-past-cbe657a21c18-q23",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "paperId": "mdmt-junior-past-cbe657a21c18",
+      "subjectName": "工具機機械設計概論",
+      "number": 23,
+      "printedNumber": 23,
+      "sectionLabel": "一、單選題40題(佔100%)",
+      "multiple": false,
+      "answer": "D",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/fd76487d209c4f1fa3c9a975ac8594eb/114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114_20251226182536.pdf#page=3",
+      "page": 3,
+      "promptText": "下列何者並非AC 伺服馬達驅動器可設定的運行模式(Operation Mode)?\n23.\n(A) 位置模式;(B) 速度模式;(C) 扭矩模式;(D) 通訊模式。",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "下列何者並非AC 伺服馬達驅動器可設定的運行模式(Operation Mode)?\n23.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/mdmt-junior-past-cbe657a21c18/q023-01-60fc4d13b7.webp",
+          "alt": "工具機機械設計概論原卷第 23 題題目與選項",
+          "page": 3,
+          "rect": [
+            26,
+            445.72,
+            575.32,
+            489.24
+          ],
+          "role": "question",
+          "sha256": "e104f6f973d52c1fb9d13b73f9a5feb884632b138aeba8ed4f5c0e9add47da6e"
+        }
+      ],
+      "sourcePdfSha256": "9012ed37295e32a8607585af55658041194867d264d7057dc8668bb0f375fe13",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 3,
+          "rect": [
+            84.31999969482422,
+            457.39996337890625,
+            105.55999755859375,
+            479.3799743652344
+          ]
+        }
+      ],
+      "subjectId": "mdmt-junior-1",
+      "paperTitle": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)",
+      "source": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)"
+    },
+    {
+      "id": "mdmt-junior-past-cbe657a21c18-q24",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "paperId": "mdmt-junior-past-cbe657a21c18",
+      "subjectName": "工具機機械設計概論",
+      "number": 24,
+      "printedNumber": 24,
+      "sectionLabel": "一、單選題40題(佔100%)",
+      "multiple": false,
+      "answer": "B",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/fd76487d209c4f1fa3c9a975ac8594eb/114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114_20251226182536.pdf#page=3",
+      "page": 3,
+      "promptText": "下列何者為非可程式邏輯控制器(PLC)所使用之語言或指令?\n(A) Ladder Diagram;(B) Fortran;(C) Instruction List;(D) Function Block\n24.\nDiagram。",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "下列何者為非可程式邏輯控制器(PLC)所使用之語言或指令?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/mdmt-junior-past-cbe657a21c18/q024-01-9f76fb554e.webp",
+          "alt": "工具機機械設計概論原卷第 24 題題目與選項",
+          "page": 3,
+          "rect": [
+            26,
+            488.44,
+            575.32,
+            549.72
+          ],
+          "role": "question",
+          "sha256": "d2eac9f5e1682b8647110763c5669e514cd693e8fe75ceeeccb5c0e427215342"
+        }
+      ],
+      "sourcePdfSha256": "9012ed37295e32a8607585af55658041194867d264d7057dc8668bb0f375fe13",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 3,
+          "rect": [
+            84.68,
+            509.12,
+            97.72,
+            527.284
+          ]
+        }
+      ],
+      "subjectId": "mdmt-junior-1",
+      "paperTitle": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)",
+      "source": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)"
+    },
+    {
+      "id": "mdmt-junior-past-cbe657a21c18-q25",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "paperId": "mdmt-junior-past-cbe657a21c18",
+      "subjectName": "工具機機械設計概論",
+      "number": 25,
+      "printedNumber": 25,
+      "sectionLabel": "一、單選題40題(佔100%)",
+      "multiple": false,
+      "answer": "B",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/fd76487d209c4f1fa3c9a975ac8594eb/114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114_20251226182536.pdf#page=3",
+      "page": 3,
+      "promptText": "馬達選用時考量項目之一為負載與馬達間的慣量比(Jload/Jmotor)。請問若慣量\n比太大,可以如何因應?\n25.\n(A) 加裝高解析編碼器;(B) 加裝減速機;(C) 調高控制器增益;(D) 調高進\n給速度。",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "馬達選用時考量項目之一為負載與馬達間的慣量比(Jload/Jmotor)。請問若慣量\n比太大,可以如何因應?\n25.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/mdmt-junior-past-cbe657a21c18/q025-01-6022c71176.webp",
+          "alt": "工具機機械設計概論原卷第 25 題題目與選項",
+          "page": 3,
+          "rect": [
+            26,
+            548.92,
+            575.32,
+            630.24
+          ],
+          "role": "question",
+          "sha256": "67804465486215a31def27feed5726a6209298f77fb41c25ab852206ed6019d6"
+        }
+      ],
+      "sourcePdfSha256": "9012ed37295e32a8607585af55658041194867d264d7057dc8668bb0f375fe13",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 3,
+          "rect": [
+            84.68,
+            579.56,
+            97.72,
+            597.724
+          ]
+        }
+      ],
+      "subjectId": "mdmt-junior-1",
+      "paperTitle": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)",
+      "source": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)"
+    },
+    {
+      "id": "mdmt-junior-past-cbe657a21c18-q26",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "paperId": "mdmt-junior-past-cbe657a21c18",
+      "subjectName": "工具機機械設計概論",
+      "number": 26,
+      "printedNumber": 26,
+      "sectionLabel": "一、單選題40題(佔100%)",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/fd76487d209c4f1fa3c9a975ac8594eb/114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114_20251226182536.pdf#page=3",
+      "page": 3,
+      "promptText": "一含負載之慣量(JL)為0.01kg·m2,經由一1:5 的齒輪列(N1/N2=1/5)後,N2 側\n的等效之反射慣量(Jr: Reflected Inertia)為多少?\n26.\n(A) 0.01 kg·m2;(B) 0.002 kg·m2;(C) 0.0004 kg·m2;(D) 0.00008 kg·m2。",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "一含負載之慣量(JL)為0.01kg·m2,經由一1:5 的齒輪列(N1/N2=1/5)後,N2 側\n的等效之反射慣量(Jr: Reflected Inertia)為多少?\n26.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/mdmt-junior-past-cbe657a21c18/q026-01-3b1d11486d.webp",
+          "alt": "工具機機械設計概論原卷第 26 題題目與選項",
+          "page": 3,
+          "rect": [
+            26,
+            629.44,
+            575.32,
+            690.72
+          ],
+          "role": "question",
+          "sha256": "901e0d1c9e7a45380d108bc451ce0a636ca841c4e0d4e8ee73b7beedc7bb6c21"
+        }
+      ],
+      "sourcePdfSha256": "9012ed37295e32a8607585af55658041194867d264d7057dc8668bb0f375fe13",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 3,
+          "rect": [
+            84.68,
+            650.12,
+            97.72,
+            668.284
+          ]
+        }
+      ],
+      "subjectId": "mdmt-junior-1",
+      "paperTitle": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)",
+      "source": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)"
+    },
+    {
+      "id": "mdmt-junior-past-cbe657a21c18-q27",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "paperId": "mdmt-junior-past-cbe657a21c18",
+      "subjectName": "工具機機械設計概論",
+      "number": 27,
+      "printedNumber": 27,
+      "sectionLabel": "一、單選題40題(佔100%)",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/fd76487d209c4f1fa3c9a975ac8594eb/114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114_20251226182536.pdf#page=3",
+      "page": 3,
+      "promptText": "一無損失之理想變壓器60Hz,一次側V1 為200 Volt,電流I1 為2A。N1 為200\n匝,N2 為50 匝。則二次側之端電壓V2 及電流I2 為多少?\n27.\n(A) V2 =200Volt,I2 =2A;(B) V2 =100Volt,I2 =4A;(C) V2 =50Volt,I2 =8A;\n(D) V2 =25Volt,I2 =16A。",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "一無損失之理想變壓器60Hz,一次側V1 為200 Volt,電流I1 為2A。N1 為200\n匝,N2 為50 匝。則二次側之端電壓V2 及電流I2 為多少?\n27.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/mdmt-junior-past-cbe657a21c18/q027-01-db527e86e0.webp",
+          "alt": "工具機機械設計概論原卷第 27 題題目與選項",
+          "page": 3,
+          "rect": [
+            26,
+            689.92,
+            575.32,
+            771.24
+          ],
+          "role": "question",
+          "sha256": "c8d3486b25a23066a38970ad7cecb1a126a0a1a0b7b9ced31e2774854487bc85"
+        }
+      ],
+      "sourcePdfSha256": "9012ed37295e32a8607585af55658041194867d264d7057dc8668bb0f375fe13",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 3,
+          "rect": [
+            84.68,
+            720.56,
+            97.72,
+            738.724
+          ]
+        }
+      ],
+      "subjectId": "mdmt-junior-1",
+      "paperTitle": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)",
+      "source": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)"
+    },
+    {
+      "id": "mdmt-junior-past-cbe657a21c18-q28",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "paperId": "mdmt-junior-past-cbe657a21c18",
+      "subjectName": "工具機機械設計概論",
+      "number": 28,
+      "printedNumber": 28,
+      "sectionLabel": "一、單選題40題(佔100%)",
+      "multiple": false,
+      "answer": "A",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/fd76487d209c4f1fa3c9a975ac8594eb/114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114_20251226182536.pdf#page=4",
+      "page": 4,
+      "promptText": "相較於閉迴路控制(Closed-loop control),下列何者不是開迴路控制(Open -loop\ncontrol)的優點?\n28.\n(A) 抗干擾能力強,準確度高;(B) 構造簡單,維護容易;(C) 沒有穩定度問\n題產生;(D) 成本普遍較低。",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "相較於閉迴路控制(Closed-loop control),下列何者不是開迴路控制(Open -loop\ncontrol)的優點?\n28.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/mdmt-junior-past-cbe657a21c18/q028-01-9576791e86.webp",
+          "alt": "工具機機械設計概論原卷第 28 題題目與選項",
+          "page": 4,
+          "rect": [
+            26,
+            140.32,
+            575.32,
+            221.64
+          ],
+          "role": "question",
+          "sha256": "b9f27f8af00e1361cb1fa8634cafdb46ee78f3bd730d0c424f77d4587b99ae7b"
+        }
+      ],
+      "sourcePdfSha256": "9012ed37295e32a8607585af55658041194867d264d7057dc8668bb0f375fe13",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 4,
+          "rect": [
+            84.31999969482422,
+            170.9600067138672,
+            105.55999755859375,
+            192.93997192382812
+          ]
+        }
+      ],
+      "subjectId": "mdmt-junior-1",
+      "paperTitle": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)",
+      "source": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)"
+    },
+    {
+      "id": "mdmt-junior-past-cbe657a21c18-q29",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "paperId": "mdmt-junior-past-cbe657a21c18",
+      "subjectName": "工具機機械設計概論",
+      "number": 29,
+      "printedNumber": 29,
+      "sectionLabel": "一、單選題40題(佔100%)",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/fd76487d209c4f1fa3c9a975ac8594eb/114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114_20251226182536.pdf#page=4",
+      "page": 4,
+      "promptText": "CNC 工具機中,控制架構常使用全閉迴路(Full-closed loop),如高精度銑床等。\n請問是配置什麼裝置來達成全閉迴路?\n29.\n(A) 軸向極限開關;(B) 絕對型馬達編碼器;(C) 線性光學尺;(D) 溫度補償\n卡。",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "CNC 工具機中,控制架構常使用全閉迴路(Full-closed loop),如高精度銑床等。\n請問是配置什麼裝置來達成全閉迴路?\n29.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/mdmt-junior-past-cbe657a21c18/q029-01-8e7b4bbf77.webp",
+          "alt": "工具機機械設計概論原卷第 29 題題目與選項",
+          "page": 4,
+          "rect": [
+            26,
+            220.84,
+            575.32,
+            302.16
+          ],
+          "role": "question",
+          "sha256": "371b3670db6417c0678650c7bb0af63032bda015d7414b5999af990952f6d9d4"
+        }
+      ],
+      "sourcePdfSha256": "9012ed37295e32a8607585af55658041194867d264d7057dc8668bb0f375fe13",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 4,
+          "rect": [
+            84.68,
+            251.48,
+            97.72,
+            269.644
+          ]
+        }
+      ],
+      "subjectId": "mdmt-junior-1",
+      "paperTitle": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)",
+      "source": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)"
+    },
+    {
+      "id": "mdmt-junior-past-cbe657a21c18-q30",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "paperId": "mdmt-junior-past-cbe657a21c18",
+      "subjectName": "工具機機械設計概論",
+      "number": 30,
+      "printedNumber": 30,
+      "sectionLabel": "一、單選題40題(佔100%)",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/fd76487d209c4f1fa3c9a975ac8594eb/114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114_20251226182536.pdf#page=4",
+      "page": 4,
+      "promptText": "工具機及伺服馬達調機中,帶拒濾波器(Notch Filter)其主要作用為何?\n(A) 平滑加工路徑;(B) 平滑加減速路徑;(C) 抑制機具共振頻率;(D) 抑制\n30.\n隨機雜訊干擾。",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "工具機及伺服馬達調機中,帶拒濾波器(Notch Filter)其主要作用為何?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/mdmt-junior-past-cbe657a21c18/q030-01-d7674be2e1.webp",
+          "alt": "工具機機械設計概論原卷第 30 題題目與選項",
+          "page": 4,
+          "rect": [
+            26,
+            301.36,
+            575.32,
+            362.64
+          ],
+          "role": "question",
+          "sha256": "a84274c3e68ef9590f3fea1daf1081fb08eeefad70b7aaff254bdea54fd5e35b"
+        }
+      ],
+      "sourcePdfSha256": "9012ed37295e32a8607585af55658041194867d264d7057dc8668bb0f375fe13",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 4,
+          "rect": [
+            84.68,
+            322.04,
+            97.72,
+            340.204
+          ]
+        }
+      ],
+      "subjectId": "mdmt-junior-1",
+      "paperTitle": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)",
+      "source": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)"
+    },
+    {
+      "id": "mdmt-junior-past-cbe657a21c18-q31",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "paperId": "mdmt-junior-past-cbe657a21c18",
+      "subjectName": "工具機機械設計概論",
+      "number": 31,
+      "printedNumber": 31,
+      "sectionLabel": "一、單選題40題(佔100%)",
+      "multiple": false,
+      "answer": "D",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/fd76487d209c4f1fa3c9a975ac8594eb/114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114_20251226182536.pdf#page=4",
+      "page": 4,
+      "promptText": "使用螺栓結合機件時,加上墊圈之功用,下列何者錯誤?\n(A) 機件材料太軟,用以增加受力面積;(B) 增加摩擦面減少鬆動;(C) 連接\n31.\n件表面不平整,可作為光滑平整承面;(D) 避免螺栓螺紋損傷。",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "使用螺栓結合機件時,加上墊圈之功用,下列何者錯誤?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/mdmt-junior-past-cbe657a21c18/q031-01-bd9bb5cc2e.webp",
+          "alt": "工具機機械設計概論原卷第 31 題題目與選項",
+          "page": 4,
+          "rect": [
+            26,
+            361.84,
+            575.32,
+            423.12
+          ],
+          "role": "question",
+          "sha256": "4202bdf0b51fc7cde64afbc70c6d540e7a993b6f3ab39bed171ff8ed1140ddee"
+        }
+      ],
+      "sourcePdfSha256": "9012ed37295e32a8607585af55658041194867d264d7057dc8668bb0f375fe13",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 4,
+          "rect": [
+            82.64,
+            383.792,
+            96.64,
+            400.852
+          ]
+        }
+      ],
+      "subjectId": "mdmt-junior-1",
+      "paperTitle": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)",
+      "source": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)"
+    },
+    {
+      "id": "mdmt-junior-past-cbe657a21c18-q32",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "paperId": "mdmt-junior-past-cbe657a21c18",
+      "subjectName": "工具機機械設計概論",
+      "number": 32,
+      "printedNumber": 32,
+      "sectionLabel": "一、單選題40題(佔100%)",
+      "multiple": false,
+      "answer": "B",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/fd76487d209c4f1fa3c9a975ac8594eb/114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114_20251226182536.pdf#page=4",
+      "page": 4,
+      "promptText": "校正銑床上虎鉗鉗口與床台左右移動的平行度,宜採用下列何者量具?\n32.\n(A) 分厘卡;(B) 槓桿量錶;(C) 正弦桿;(D) 塊規。",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "校正銑床上虎鉗鉗口與床台左右移動的平行度,宜採用下列何者量具?\n32.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/mdmt-junior-past-cbe657a21c18/q032-01-b7b05fe513.webp",
+          "alt": "工具機機械設計概論原卷第 32 題題目與選項",
+          "page": 4,
+          "rect": [
+            26,
+            422.32,
+            575.32,
+            465.96
+          ],
+          "role": "question",
+          "sha256": "fe789fc287d09a2588439126917c4e2418888c7acc52a52ddaec722fe5904116"
+        }
+      ],
+      "sourcePdfSha256": "9012ed37295e32a8607585af55658041194867d264d7057dc8668bb0f375fe13",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 4,
+          "rect": [
+            82.64,
+            435.512,
+            94.96,
+            452.572
+          ]
+        }
+      ],
+      "subjectId": "mdmt-junior-1",
+      "paperTitle": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)",
+      "source": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)"
+    },
+    {
+      "id": "mdmt-junior-past-cbe657a21c18-q33",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "paperId": "mdmt-junior-past-cbe657a21c18",
+      "subjectName": "工具機機械設計概論",
+      "number": 33,
+      "printedNumber": 33,
+      "sectionLabel": "一、單選題40題(佔100%)",
+      "multiple": false,
+      "answer": "A",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/fd76487d209c4f1fa3c9a975ac8594eb/114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114_20251226182536.pdf#page=4",
+      "page": 4,
+      "promptText": "有關齒輪的計算,下列何者錯誤?(已知:Pc 為周節、d 為節圓直徑、Z 為齒\n數、Pd 為徑節)\n33.\n(A) Pc=πd;(B) Pd=Z/ d;(C) Pc=πd /Z;(D) Pc × Pd=π。",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "有關齒輪的計算,下列何者錯誤?(已知:Pc 為周節、d 為節圓直徑、Z 為齒\n數、Pd 為徑節)\n33.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/mdmt-junior-past-cbe657a21c18/q033-01-e5a3ffe13a.webp",
+          "alt": "工具機機械設計概論原卷第 33 題題目與選項",
+          "page": 4,
+          "rect": [
+            26,
+            465.16,
+            575.32,
+            526.44
+          ],
+          "role": "question",
+          "sha256": "b741abf4e2b3cb97d2d8edb09280b7d1c805986e07f7c892d3c59bd9e05b45f9"
+        }
+      ],
+      "sourcePdfSha256": "9012ed37295e32a8607585af55658041194867d264d7057dc8668bb0f375fe13",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 4,
+          "rect": [
+            82.64,
+            487.112,
+            95.92,
+            504.172
+          ]
+        }
+      ],
+      "subjectId": "mdmt-junior-1",
+      "paperTitle": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)",
+      "source": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)"
+    },
+    {
+      "id": "mdmt-junior-past-cbe657a21c18-q34",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "paperId": "mdmt-junior-past-cbe657a21c18",
+      "subjectName": "工具機機械設計概論",
+      "number": 34,
+      "printedNumber": 34,
+      "sectionLabel": "一、單選題40題(佔100%)",
+      "multiple": false,
+      "answer": "A",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/fd76487d209c4f1fa3c9a975ac8594eb/114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114_20251226182536.pdf#page=4",
+      "page": 4,
+      "promptText": "一個均向性的線彈性材料,其彈性模數E=30ksi,柏松比v (Poisson's ratio) 為\n0.25,則其剪力模數G 應為多少ksi?\n34.\n(A) 12;(B) 15;(C) 20;(D) 24。",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "一個均向性的線彈性材料,其彈性模數E=30ksi,柏松比v (Poisson's ratio) 為\n0.25,則其剪力模數G 應為多少ksi?\n34.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/mdmt-junior-past-cbe657a21c18/q034-01-eb9df67af3.webp",
+          "alt": "工具機機械設計概論原卷第 34 題題目與選項",
+          "page": 4,
+          "rect": [
+            26,
+            525.64,
+            575.32,
+            586.92
+          ],
+          "role": "question",
+          "sha256": "e117b513bbff011d2075379d95e26ae164cfd1a2353de533328b93b9648835cf"
+        }
+      ],
+      "sourcePdfSha256": "9012ed37295e32a8607585af55658041194867d264d7057dc8668bb0f375fe13",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 4,
+          "rect": [
+            82.64,
+            547.592,
+            95.92,
+            564.652
+          ]
+        }
+      ],
+      "subjectId": "mdmt-junior-1",
+      "paperTitle": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)",
+      "source": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)"
+    },
+    {
+      "id": "mdmt-junior-past-cbe657a21c18-q35",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "paperId": "mdmt-junior-past-cbe657a21c18",
+      "subjectName": "工具機機械設計概論",
+      "number": 35,
+      "printedNumber": 35,
+      "sectionLabel": "一、單選題40題(佔100%)",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/fd76487d209c4f1fa3c9a975ac8594eb/114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114_20251226182536.pdf#page=4",
+      "page": 4,
+      "promptText": "有關於步進馬達的敘述,下列選項何者有誤?\n(A) 轉矩隨著轉速增大而降低;(B) 以數位信號進行開迴路控制;(C) 旋轉角\n35.\n度與輸入脈波數成反比;(D) 可作定速、定位以及正逆轉控制。",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "有關於步進馬達的敘述,下列選項何者有誤?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/mdmt-junior-past-cbe657a21c18/q035-01-d2bf46e895.webp",
+          "alt": "工具機機械設計概論原卷第 35 題題目與選項",
+          "page": 4,
+          "rect": [
+            26,
+            586.12,
+            575.32,
+            647.52
+          ],
+          "role": "question",
+          "sha256": "0c8d1b247d8b7c1c462bcabe09fea985370a6bf54c703bf142be903bbd8bb38b"
+        }
+      ],
+      "sourcePdfSha256": "9012ed37295e32a8607585af55658041194867d264d7057dc8668bb0f375fe13",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 4,
+          "rect": [
+            82.64,
+            608.072,
+            95.68,
+            625.132
+          ]
+        }
+      ],
+      "subjectId": "mdmt-junior-1",
+      "paperTitle": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)",
+      "source": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)"
+    },
+    {
+      "id": "mdmt-junior-past-cbe657a21c18-q36",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "paperId": "mdmt-junior-past-cbe657a21c18",
+      "subjectName": "工具機機械設計概論",
+      "number": 36,
+      "printedNumber": 36,
+      "sectionLabel": "一、單選題40題(佔100%)",
+      "multiple": false,
+      "answer": "A",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/fd76487d209c4f1fa3c9a975ac8594eb/114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114_20251226182536.pdf#page=4",
+      "page": 4,
+      "promptText": "由多個零件組合時需要用到螺絲、鍵與定位銷等相關元件,下列敘述何者錯\n36.\n誤?\n(A) 定位銷可以提高兩個零件結合後的強度;(B) 兩個零件使用螺絲與螺帽鎖\n合時,須使用適當的鎖緊力;(C) 兩個零件採用鍵結合時,要確保配合尺寸是\n否符合公差規範;(D) 兩個零件在使用螺絲鎖合時,須確保零件結合面是否平\n整。",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "由多個零件組合時需要用到螺絲、鍵與定位銷等相關元件,下列敘述何者錯\n36.\n誤?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/mdmt-junior-past-cbe657a21c18/q036-01-3afe0e616e.webp",
+          "alt": "工具機機械設計概論原卷第 36 題題目與選項",
+          "page": 4,
+          "rect": [
+            26,
+            646.72,
+            575.32,
+            768
+          ],
+          "role": "question",
+          "sha256": "cbe3a552554fb77eb38441792f80a082eb6b74f395b1eed01a587fce65040507"
+        }
+      ],
+      "sourcePdfSha256": "9012ed37295e32a8607585af55658041194867d264d7057dc8668bb0f375fe13",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 4,
+          "rect": [
+            82.64,
+            698.552,
+            95.92,
+            715.612
+          ]
+        }
+      ],
+      "subjectId": "mdmt-junior-1",
+      "paperTitle": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)",
+      "source": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)"
+    },
+    {
+      "id": "mdmt-junior-past-cbe657a21c18-q37",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "paperId": "mdmt-junior-past-cbe657a21c18",
+      "subjectName": "工具機機械設計概論",
+      "number": 37,
+      "printedNumber": 37,
+      "sectionLabel": "一、單選題40題(佔100%)",
+      "multiple": false,
+      "answer": "B",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/fd76487d209c4f1fa3c9a975ac8594eb/114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114_20251226182536.pdf#page=5",
+      "page": 5,
+      "promptText": "一鋼棒降伏强度為 200MPa,且承受軸向拉力在 600N 到 1000N 之間變\n化,若設定安全因數為 2,則此鋼棒的最小截面積應為多少 mm2 ?\n37.\n(A)6;(B)10;(C)12;(D)16。",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "一鋼棒降伏强度為 200MPa,且承受軸向拉力在 600N 到 1000N 之間變\n化,若設定安全因數為 2,則此鋼棒的最小截面積應為多少 mm2 ?\n37.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/mdmt-junior-past-cbe657a21c18/q037-01-1ace0bf5ea.webp",
+          "alt": "工具機機械設計概論原卷第 37 題題目與選項",
+          "page": 5,
+          "rect": [
+            26,
+            140.32,
+            575.32,
+            201.72
+          ],
+          "role": "question",
+          "sha256": "b26012d351e24c6579934ced1c9293ae45df882d8b6ea6b070971adaee7dea49"
+        }
+      ],
+      "sourcePdfSha256": "9012ed37295e32a8607585af55658041194867d264d7057dc8668bb0f375fe13",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 5,
+          "rect": [
+            82.64,
+            162.272,
+            94.96,
+            179.332
+          ]
+        }
+      ],
+      "subjectId": "mdmt-junior-1",
+      "paperTitle": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)",
+      "source": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)"
+    },
+    {
+      "id": "mdmt-junior-past-cbe657a21c18-q38",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "paperId": "mdmt-junior-past-cbe657a21c18",
+      "subjectName": "工具機機械設計概論",
+      "number": 38,
+      "printedNumber": 38,
+      "sectionLabel": "一、單選題40題(佔100%)",
+      "multiple": false,
+      "answer": "A",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/fd76487d209c4f1fa3c9a975ac8594eb/114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114_20251226182536.pdf#page=5",
+      "page": 5,
+      "promptText": "請問在相同直徑狀況下,銑刀刃數的選擇考量中,下列何者為非?\n(A) 刃數越少、越難排屑;(B) 刃數越多,剛性越好;(C) 刃數越少,剛性越\n差;(D) 3 刃刀不易用游標卡尺量測外徑。\n38.",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "請問在相同直徑狀況下,銑刀刃數的選擇考量中,下列何者為非?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/mdmt-junior-past-cbe657a21c18/q038-01-4eb708ca2e.webp",
+          "alt": "工具機機械設計概論原卷第 38 題題目與選項",
+          "page": 5,
+          "rect": [
+            26,
+            200.92,
+            575.32,
+            369.24
+          ],
+          "role": "question",
+          "sha256": "7133105852168f2109ec93591d7669427083896218c9fc5b0b78c4a4bd3a84db"
+        }
+      ],
+      "sourcePdfSha256": "9012ed37295e32a8607585af55658041194867d264d7057dc8668bb0f375fe13",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 5,
+          "rect": [
+            82.64,
+            276.272,
+            95.92,
+            293.332
+          ]
+        }
+      ],
+      "subjectId": "mdmt-junior-1",
+      "paperTitle": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)",
+      "source": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)"
+    },
+    {
+      "id": "mdmt-junior-past-cbe657a21c18-q39",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "paperId": "mdmt-junior-past-cbe657a21c18",
+      "subjectName": "工具機機械設計概論",
+      "number": 39,
+      "printedNumber": 39,
+      "sectionLabel": "一、單選題40題(佔100%)",
+      "multiple": false,
+      "answer": "A",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/fd76487d209c4f1fa3c9a975ac8594eb/114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114_20251226182536.pdf#page=5",
+      "page": 5,
+      "promptText": "在平面銑削加工操作中,當主軸旋轉速度為500 轉/分、銑刀直徑Ø150mm,\n請問此時的切削速度?\n39.\n(A)235.5 m/min;(B)471 m/min;(C)157 m/min;(D)137.4m/min。",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "在平面銑削加工操作中,當主軸旋轉速度為500 轉/分、銑刀直徑Ø150mm,\n請問此時的切削速度?\n39.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/mdmt-junior-past-cbe657a21c18/q039-01-c34aadd0ba.webp",
+          "alt": "工具機機械設計概論原卷第 39 題題目與選項",
+          "page": 5,
+          "rect": [
+            26,
+            368.44,
+            575.32,
+            529.68
+          ],
+          "role": "question",
+          "sha256": "fe2505287a454f6e20547b4ea23eae8485f479aefe6348554f4691e497fdf776"
+        }
+      ],
+      "sourcePdfSha256": "9012ed37295e32a8607585af55658041194867d264d7057dc8668bb0f375fe13",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 5,
+          "rect": [
+            82.64,
+            440.312,
+            95.92,
+            457.372
+          ]
+        }
+      ],
+      "subjectId": "mdmt-junior-1",
+      "paperTitle": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)",
+      "source": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)"
+    },
+    {
+      "id": "mdmt-junior-past-cbe657a21c18-q40",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "paperId": "mdmt-junior-past-cbe657a21c18",
+      "subjectName": "工具機機械設計概論",
+      "number": 40,
+      "printedNumber": 40,
+      "sectionLabel": "一、單選題40題(佔100%)",
+      "multiple": false,
+      "answer": "B",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/fd76487d209c4f1fa3c9a975ac8594eb/114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114_20251226182536.pdf#page=5",
+      "page": 5,
+      "promptText": "當一移載平台傳動系統產生振動情形時,除了機構質量調整與設計較佳結構\n外,也可以透過控制系統進行抑制。請問下列哪種調整方式無法達到振動抑\n制效果?\n40.\n(A)降低控制器增益;(B)增加控制器增益;(C)增加加速時間及減速時間;(D)\n設計濾波器。",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "當一移載平台傳動系統產生振動情形時,除了機構質量調整與設計較佳結構\n外,也可以透過控制系統進行抑制。請問下列哪種調整方式無法達到振動抑\n制效果?\n40.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/mdmt-junior-past-cbe657a21c18/q040-01-a17c2da105.webp",
+          "alt": "工具機機械設計概論原卷第 40 題題目與選項",
+          "page": 5,
+          "rect": [
+            26,
+            528.88,
+            575.32,
+            630.24
+          ],
+          "role": "question",
+          "sha256": "7a3e5389dc609e6b540db1ae8bb9a1a29b4aad41548814e0488ef009fdd73c14"
+        }
+      ],
+      "sourcePdfSha256": "9012ed37295e32a8607585af55658041194867d264d7057dc8668bb0f375fe13",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 5,
+          "rect": [
+            82.64,
+            570.872,
+            94.96,
+            587.932
+          ]
+        }
+      ],
+      "subjectId": "mdmt-junior-1",
+      "paperTitle": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)",
+      "source": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10)"
+    },
+    {
+      "id": "practice-mdmt-junior-2-001",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "subjectId": "mdmt-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依圖，盲孔底到塊體另一面的剩餘厚度為何？",
+      "options": {
+        "A": "40 mm",
+        "B": "10 mm",
+        "C": "20 mm",
+        "D": "30 mm"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "總厚30減孔深20，剩10 mm。深度標註不是孔到底後再增加的距離。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/mdmt-jr-section.svg",
+          "alt": "固定塊厚30mm，剖面示意直徑10mm、深20mm的理想平底盲孔，不含鑽尖錐體。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 工具機機械設計工程師官方簡章：機械製圖(含工具機實例)",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/MDMT/115年度工具機機械設計工程師能力鑑定簡章(初級)_0410_20260410112702.pdf"
+        },
+        {
+          "title": "Autodesk：Dimension reference",
+          "url": "https://help.autodesk.com/cloudhelp/ENU/Fusion-Drawing/files/DWG-REF-DIMENSION-DLG.htm"
+        }
+      ],
+      "topic": "剖面深度判讀",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-mdmt-junior-2-002",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "subjectId": "mdmt-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依圖理想平底圓柱孔，其去除體積最接近多少？",
+      "options": {
+        "A": "314 mm³",
+        "B": "157 mm³",
+        "C": "1571 mm³",
+        "D": "6283 mm³"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "V=π×10²×20/4=500π≈1571 mm³；使用的是直徑，不能漏除4。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/mdmt-jr-section.svg",
+          "alt": "固定塊厚30mm，剖面示意直徑10mm、深20mm的理想平底盲孔，不含鑽尖錐體。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 工具機機械設計工程師官方簡章：機械製圖(含工具機實例)",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/MDMT/115年度工具機機械設計工程師能力鑑定簡章(初級)_0410_20260410112702.pdf"
+        },
+        {
+          "title": "Autodesk：Dimension reference",
+          "url": "https://help.autodesk.com/cloudhelp/ENU/Fusion-Drawing/files/DWG-REF-DIMENSION-DLG.htm"
+        }
+      ],
+      "topic": "幾何體積",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-mdmt-junior-2-003",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "subjectId": "mdmt-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依圖的孔底位置與剩餘材料，應辨識為哪一種孔？",
+      "options": {
+        "A": "貫穿孔",
+        "B": "外螺紋",
+        "C": "開放式通槽",
+        "D": "盲孔"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "剖面可見孔底仍有10 mm材料，且未贯穿全厚，因此為盲孔；圖中沒有螺紋標註。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/mdmt-jr-section.svg",
+          "alt": "固定塊厚30mm，剖面示意直徑10mm、深20mm的理想平底盲孔，不含鑽尖錐體。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 工具機機械設計工程師官方簡章：機械製圖(含工具機實例)",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/MDMT/115年度工具機機械設計工程師能力鑑定簡章(初級)_0410_20260410112702.pdf"
+        },
+        {
+          "title": "Autodesk：Dimension reference",
+          "url": "https://help.autodesk.com/cloudhelp/ENU/Fusion-Drawing/files/DWG-REF-DIMENSION-DLG.htm"
+        }
+      ],
+      "topic": "孔型辨識",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-mdmt-junior-2-004",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "subjectId": "mdmt-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "若實際改用帶鑽尖的鑽頭，而圖仍要求20 mm完整圓柱孔深，最應再確認哪個尺寸？",
+      "options": {
+        "A": "鑽尖額外深度是否侵入剩餘壁厚與功能區",
+        "B": "只依孔徑選鑽頭，忽略孔底額外深度",
+        "C": "直接將鑽尖最深點標成完整圓柱孔深",
+        "D": "只檢查入口倒角，略過底部剩餘壁厚"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "完整孔深與鑽尖總深度不同；題圖理想平底假設不可忽略地套到實際錐形鑽尖。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/mdmt-jr-section.svg",
+          "alt": "固定塊厚30mm，剖面示意直徑10mm、深20mm的理想平底盲孔，不含鑽尖錐體。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 工具機機械設計工程師官方簡章：機械製圖(含工具機實例)",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/MDMT/115年度工具機機械設計工程師能力鑑定簡章(初級)_0410_20260410112702.pdf"
+        },
+        {
+          "title": "Autodesk：Dimension reference",
+          "url": "https://help.autodesk.com/cloudhelp/ENU/Fusion-Drawing/files/DWG-REF-DIMENSION-DLG.htm"
+        }
+      ],
+      "topic": "實際加工對照",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-mdmt-junior-2-005",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "subjectId": "mdmt-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "圖中規格內零件的最小直徑間隙為何？",
+      "options": {
+        "A": "−0.007 mm",
+        "B": "0.007 mm",
+        "C": "0.041 mm",
+        "D": "0.020 mm"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "20.000−19.993=0.007 mm；最緊組合是最小孔配最大軸。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/mdmt-jr-fit.svg",
+          "alt": "孔公差20.000至20.021mm，軸19.980至19.993mm；直徑間隙為孔減軸；另送檢軸20.005mm。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 工具機機械設計工程師官方簡章：機械製圖(含工具機實例)",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/MDMT/115年度工具機機械設計工程師能力鑑定簡章(初級)_0410_20260410112702.pdf"
+        },
+        {
+          "title": "Autodesk：Limits and Fits Mechanical Calculator",
+          "url": "https://help.autodesk.com/cloudhelp/2026/ENU/Inventor-Help/files/GUID-1EF0D439-A1C2-4073-A5F8-0154A5C4677A.htm"
+        }
+      ],
+      "topic": "最小間隙",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-mdmt-junior-2-006",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "subjectId": "mdmt-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "圖中規格內零件的最大直徑間隙為何？",
+      "options": {
+        "A": "0.021 mm",
+        "B": "0.013 mm",
+        "C": "0.041 mm",
+        "D": "0.007 mm"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "20.021−19.980=0.041 mm；最鬆組合是最大孔配最小軸。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/mdmt-jr-fit.svg",
+          "alt": "孔公差20.000至20.021mm，軸19.980至19.993mm；直徑間隙為孔減軸；另送檢軸20.005mm。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 工具機機械設計工程師官方簡章：機械製圖(含工具機實例)",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/MDMT/115年度工具機機械設計工程師能力鑑定簡章(初級)_0410_20260410112702.pdf"
+        },
+        {
+          "title": "Autodesk：Limits and Fits Mechanical Calculator",
+          "url": "https://help.autodesk.com/cloudhelp/2026/ENU/Inventor-Help/files/GUID-1EF0D439-A1C2-4073-A5F8-0154A5C4677A.htm"
+        }
+      ],
+      "topic": "最大間隙",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-mdmt-junior-2-007",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "subjectId": "mdmt-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依圖中全部規格範圍，這是哪類配合？",
+      "options": {
+        "A": "過盈配合",
+        "B": "過渡配合",
+        "C": "僅由這些上下限無法分類",
+        "D": "間隙配合"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "最大軸19.993仍小於最小孔20.000，所有合規組合都有正間隙。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/mdmt-jr-fit.svg",
+          "alt": "孔公差20.000至20.021mm，軸19.980至19.993mm；直徑間隙為孔減軸；另送檢軸20.005mm。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 工具機機械設計工程師官方簡章：機械製圖(含工具機實例)",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/MDMT/115年度工具機機械設計工程師能力鑑定簡章(初級)_0410_20260410112702.pdf"
+        },
+        {
+          "title": "Autodesk：Limits and Fits Mechanical Calculator",
+          "url": "https://help.autodesk.com/cloudhelp/2026/ENU/Inventor-Help/files/GUID-1EF0D439-A1C2-4073-A5F8-0154A5C4677A.htm"
+        }
+      ],
+      "topic": "配合分類",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-mdmt-junior-2-008",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "subjectId": "mdmt-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "另送檢軸20.005 mm應如何判斷？",
+      "options": {
+        "A": "超過軸上限0.012 mm，不能因可能裝入較大孔就當合規",
+        "B": "在孔徑範圍內，所以軸必然合規",
+        "C": "只要大於軸下限就合規",
+        "D": "因小於20.021 mm就符合軸規格"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "軸需對軸上限19.993判斷；20.005−19.993=0.012 mm超差，孔的規格不能代替軸的規格。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/mdmt-jr-fit.svg",
+          "alt": "孔公差20.000至20.021mm，軸19.980至19.993mm；直徑間隙為孔減軸；另送檢軸20.005mm。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 工具機機械設計工程師官方簡章：機械製圖(含工具機實例)",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/MDMT/115年度工具機機械設計工程師能力鑑定簡章(初級)_0410_20260410112702.pdf"
+        },
+        {
+          "title": "Autodesk：Limits and Fits Mechanical Calculator",
+          "url": "https://help.autodesk.com/cloudhelp/2026/ENU/Inventor-Help/files/GUID-1EF0D439-A1C2-4073-A5F8-0154A5C4677A.htm"
+        }
+      ],
+      "topic": "量測允收",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-mdmt-junior-2-009",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "subjectId": "mdmt-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依圖，D名義值多少？",
+      "options": {
+        "A": "65.00 mm",
+        "B": "15.00 mm",
+        "C": "25.00 mm",
+        "D": "35.00 mm"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "D=A−B−C=40−15−10=15 mm；需依方向關係相減。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/mdmt-jr-stack.svg",
+          "alt": "一維尺寸鏈A=D+B+C；A40±0.10、B15±0.05、C10±0.02mm；D推導，不另獨立標公差，採最壞情況。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 工具機機械設計工程師官方簡章：機械製圖(含工具機實例)",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/MDMT/115年度工具機機械設計工程師能力鑑定簡章(初級)_0410_20260410112702.pdf"
+        },
+        {
+          "title": "Autodesk：Dimension reference",
+          "url": "https://help.autodesk.com/cloudhelp/ENU/Fusion-Drawing/files/DWG-REF-DIMENSION-DLG.htm"
+        }
+      ],
+      "topic": "名義尺寸鏈",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-mdmt-junior-2-010",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "subjectId": "mdmt-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依圖獨立公差範圍，D最小值為何？",
+      "options": {
+        "A": "15.00 mm",
+        "B": "15.17 mm",
+        "C": "14.83 mm",
+        "D": "14.97 mm"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "最小D=最小A−最大B−最大C=39.90−15.05−10.02=14.83 mm。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/mdmt-jr-stack.svg",
+          "alt": "一維尺寸鏈A=D+B+C；A40±0.10、B15±0.05、C10±0.02mm；D推導，不另獨立標公差，採最壞情況。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 工具機機械設計工程師官方簡章：機械製圖(含工具機實例)",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/MDMT/115年度工具機機械設計工程師能力鑑定簡章(初級)_0410_20260410112702.pdf"
+        },
+        {
+          "title": "Autodesk：Dimension reference",
+          "url": "https://help.autodesk.com/cloudhelp/ENU/Fusion-Drawing/files/DWG-REF-DIMENSION-DLG.htm"
+        }
+      ],
+      "topic": "最壞情況下限",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-mdmt-junior-2-011",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "subjectId": "mdmt-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依圖最壞情況法，D可寫成15.00±多少mm？",
+      "options": {
+        "A": "0.10 mm",
+        "B": "0.07 mm",
+        "C": "0.05 mm",
+        "D": "0.17 mm"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "公差半寬最壞情況相加：0.10+0.05+0.02=0.17 mm，不因尺寸公式有減號就相互抵銷。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/mdmt-jr-stack.svg",
+          "alt": "一維尺寸鏈A=D+B+C；A40±0.10、B15±0.05、C10±0.02mm；D推導，不另獨立標公差，採最壞情況。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 工具機機械設計工程師官方簡章：機械製圖(含工具機實例)",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/MDMT/115年度工具機機械設計工程師能力鑑定簡章(初級)_0410_20260410112702.pdf"
+        },
+        {
+          "title": "Autodesk：Dimension reference",
+          "url": "https://help.autodesk.com/cloudhelp/ENU/Fusion-Drawing/files/DWG-REF-DIMENSION-DLG.htm"
+        }
+      ],
+      "topic": "公差累積",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-mdmt-junior-2-012",
+      "certId": "mdmt",
+      "levelId": "junior",
+      "subjectId": "mdmt-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "其他不變，若把B公差由±0.05改±0.025，D最壞情況公差半寬變為？",
+      "options": {
+        "A": "0.145 mm",
+        "B": "0.025 mm",
+        "C": "0.120 mm",
+        "D": "0.195 mm"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "0.10+0.025+0.02=0.145 mm，較原0.17縮小0.025 mm；此計算不代表加工成本一定合理。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/mdmt-jr-stack.svg",
+          "alt": "一維尺寸鏈A=D+B+C；A40±0.10、B15±0.05、C10±0.02mm；D推導，不另獨立標公差，採最壞情況。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 工具機機械設計工程師官方簡章：機械製圖(含工具機實例)",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/MDMT/115年度工具機機械設計工程師能力鑑定簡章(初級)_0410_20260410112702.pdf"
+        },
+        {
+          "title": "Autodesk：Dimension reference",
+          "url": "https://help.autodesk.com/cloudhelp/ENU/Fusion-Drawing/files/DWG-REF-DIMENSION-DLG.htm"
+        }
+      ],
+      "topic": "改善公差鏈",
+      "practicalPreparation": true
+    }
+  ]
+}

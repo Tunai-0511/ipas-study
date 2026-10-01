@@ -5,7 +5,7 @@
 <h1 align="center">iPAS 備考學院</h1>
 
 <p align="center">
-  <b>iPAS 全科目錄與官方原卷研讀</b><br/>
+  <b>iPAS 全科圖文刷題與官方原卷研讀</b><br/>
   AI 應用規劃師（初級・中級）× 營運智慧分析師 BI（初級）× AIoT 應用工程師（初級・物聯網類）<br/>
   <i>Practice smarter. Pass faster.</i>
 </p>
@@ -28,7 +28,7 @@
 
 **iPAS 備考學院**是一個為台灣 iPAS 產業人才能力鑑定打造的線上刷題平台。把散落各處的官方歷屆題與網路題庫，整理成一個**乾淨、快速、能離線用、跨裝置同步**的練習系統——而且**零廣告、零安裝、開網頁就能用**。
 
-現行 17 項鑑定、30 個級別、75 門級別考科均可在 [全部考科目錄](https://ipas.tun9i.com/catalog/) 搜尋；另保留 8 項歷史鑑定供追溯。原有四個互動題庫入口如下：
+現行 17 項鑑定、30 個級別、75 門級別考科均可在 [全部考科目錄](https://ipas.tun9i.com/catalog/) 搜尋與逐題練習；另保留 8 項歷史鑑定的 25 科題庫並標示舊制。共用刷題支援科目／級別／來源篩選、隨機練習、收藏、錯題複習與帳號進度。原有四個章節學習區入口如下：
 
 | 認證 | 級別 | 路徑 |
 |---|---|---|
@@ -86,6 +86,10 @@ GitHub (main)  ──手動部署──▶  Cloudflare Worker ipas-study  ──
 ```
 
 **資料分離原則**：AI 應用規劃師的官方歷屆題放 `content.js`；擴充題放 `bank.js`（內部標記 `generated:true` 並附出處）。AIoT 原 `content.js`／`bank.js` 保留自編題與穩定 ID；官方指引另在 `official-guide.js`，舊制正式題另在 `legacy-bank.js`。全科目錄使用 `catalog/data/certifications.json`，原卷、頁圖與可核對的答案在 `catalog/data/papers.json`，研讀紀錄使用獨立 `catalog` 雲端 app。
+
+**全科刷題建置**：`node scripts/build-practice-bank.mjs` 彙整官方拆題、補充練習與既有題庫，產生 `catalog/data/practice-index.json` 及各鑑定的 `catalog/data/practice/*.json`。每次只下載選定鑑定；官方題保留已遮答的原圖、跨頁與題組背景。自編題使用可編輯 SVG 圖解、明確的情境假設與原理來源。`--partial` 僅供開發，正式建置會拒絕未完成的題庫。
+
+**紀錄相容性**：刷題沿用 Supabase 的 `catalog` 資料列，增加逐題 `practice` 與可取消的 `favorites` 紀錄；每題以更新時間合併。既有 `attempts`／`drafts`、四個章節學習區的題號與紀錄不變。新刷題跨學習區共用題材時保留 `originalId`，各學習區的進度仍分別計算。
 
 ---
 
@@ -189,5 +193,7 @@ npm run deploy
 AIoT 使用獨立本機資料鍵 `ipasaiot_v1` 與雲端 app `aiot`；登入、名稱與主題沿用跨站共用設定。既有 Supabase `user_state` 的複合主鍵支援此命名，無須修改資料表。
 
 ### 全科官方原卷
+
+全科刷題入口與原卷研讀分開：前者將官方選擇題拆成獨立題目，提交後才顯示答案；後者保留原始 PDF 供核對。缺少可直接判分公開題的術科、高級與歷史考科補充自編圖文題，不冒充官方歷屆，也不取代實作或口試。每科的實際來源與題數可在練習篩選中查看。
 
 `/catalog/` 收錄 147 份官方原卷（1,608 頁），含 6,852 題可自動判分的選擇題；另有 27 題官方全給分題排除正確率。提供官方原卷逐頁閱讀、題號跳頁、作答卡、單選／複選判分及帳號同步。原卷可能包含答案，適合對照研讀；練習正確率不等於正式考試成績。官方給分題、無法核對的答案、申論與術科不自動判分。每份原卷保留官方下載來源、來源索引、原始 PDF 和頁圖。目錄與原卷需要連線載入，不宣稱完整離線下載所有試卷。涵蓋範圍及來源差異見 [考科對帳](docs/catalog-coverage.md) 與 [原卷稽核](docs/catalog-papers-audit.md)。

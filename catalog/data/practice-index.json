@@ -1,0 +1,730 @@
+{
+  "version": 1,
+  "updatedAt": "2026-10-01",
+  "complete": true,
+  "totals": {
+    "certifications": 25,
+    "subjects": 100,
+    "questions": 9751,
+    "uniqueQuestions": 8708,
+    "illustrated": 7350
+  },
+  "certifications": [
+    {
+      "id": "ant",
+      "path": "data/practice/ant.json",
+      "total": 98,
+      "illustrated": 98,
+      "sourceCounts": {
+        "official-past": 74,
+        "original-practice": 24
+      },
+      "subjects": {
+        "ant-junior-1": {
+          "total": 50,
+          "illustrated": 50
+        },
+        "ant-junior-2": {
+          "total": 12,
+          "illustrated": 12
+        },
+        "ant-intermediate-1": {
+          "total": 24,
+          "illustrated": 24
+        },
+        "ant-intermediate-2": {
+          "total": 12,
+          "illustrated": 12
+        }
+      },
+      "revision": "abb203c20315bdce"
+    },
+    {
+      "id": "pcb",
+      "path": "data/practice/pcb.json",
+      "total": 247,
+      "illustrated": 247,
+      "sourceCounts": {
+        "official-past": 235,
+        "original-practice": 12
+      },
+      "subjects": {
+        "pcb-junior-1": {
+          "total": 50,
+          "illustrated": 50
+        },
+        "pcb-junior-2": {
+          "total": 50,
+          "illustrated": 50
+        },
+        "pcb-junior-3": {
+          "total": 12,
+          "illustrated": 12
+        },
+        "pcb-intermediate-1": {
+          "total": 45,
+          "illustrated": 45
+        },
+        "pcb-intermediate-2": {
+          "total": 45,
+          "illustrated": 45
+        },
+        "pcb-intermediate-3": {
+          "total": 45,
+          "illustrated": 45
+        }
+      },
+      "revision": "e532dd5fa19dd344"
+    },
+    {
+      "id": "emc",
+      "path": "data/practice/emc.json",
+      "total": 170,
+      "illustrated": 170,
+      "sourceCounts": {
+        "official-past": 170
+      },
+      "subjects": {
+        "emc-junior-1": {
+          "total": 50,
+          "illustrated": 50
+        },
+        "emc-junior-2": {
+          "total": 50,
+          "illustrated": 50
+        },
+        "emc-intermediate-1": {
+          "total": 35,
+          "illustrated": 35
+        },
+        "emc-intermediate-2": {
+          "total": 35,
+          "illustrated": 35
+        }
+      },
+      "revision": "7bfced57f43149d9"
+    },
+    {
+      "id": "aiot",
+      "path": "data/practice/aiot.json",
+      "total": 1261,
+      "illustrated": 46,
+      "sourceCounts": {
+        "official-guide": 64,
+        "legacy-exam": 1043,
+        "original-practice": 124,
+        "original-study": 30
+      },
+      "subjects": {
+        "aiot-junior-1": {
+          "total": 628,
+          "illustrated": 8
+        },
+        "aiot-junior-2": {
+          "total": 609,
+          "illustrated": 14
+        },
+        "aiot-junior-3": {
+          "total": 12,
+          "illustrated": 12
+        },
+        "aiot-junior-4": {
+          "total": 12,
+          "illustrated": 12
+        }
+      },
+      "revision": "a9b14399bc527d17"
+    },
+    {
+      "id": "ise",
+      "path": "data/practice/ise.json",
+      "total": 180,
+      "illustrated": 180,
+      "sourceCounts": {
+        "official-past": 180
+      },
+      "subjects": {
+        "ise-junior-1": {
+          "total": 50,
+          "illustrated": 50
+        },
+        "ise-junior-2": {
+          "total": 50,
+          "illustrated": 50
+        },
+        "ise-intermediate-1": {
+          "total": 40,
+          "illustrated": 40
+        },
+        "ise-intermediate-2": {
+          "total": 40,
+          "illustrated": 40
+        }
+      },
+      "revision": "cd02205624cb2ca6"
+    },
+    {
+      "id": "oia",
+      "path": "data/practice/oia.json",
+      "total": 183,
+      "illustrated": 24,
+      "sourceCounts": {
+        "official-guide": 159,
+        "original-practice": 24
+      },
+      "subjects": {
+        "oia-junior-1": {
+          "total": 86,
+          "illustrated": 12
+        },
+        "oia-junior-2": {
+          "total": 97,
+          "illustrated": 12
+        }
+      },
+      "revision": "6c01991fbcc1b591"
+    },
+    {
+      "id": "3dp",
+      "path": "data/practice/3dp.json",
+      "total": 160,
+      "illustrated": 160,
+      "sourceCounts": {
+        "official-past": 100,
+        "original-practice": 60
+      },
+      "subjects": {
+        "3dp-junior-1": {
+          "total": 50,
+          "illustrated": 50
+        },
+        "3dp-junior-2": {
+          "total": 50,
+          "illustrated": 50
+        },
+        "3dp-junior-3": {
+          "total": 12,
+          "illustrated": 12
+        },
+        "3dp-junior-4": {
+          "total": 12,
+          "illustrated": 12
+        },
+        "3dp-intermediate-1": {
+          "total": 12,
+          "illustrated": 12
+        },
+        "3dp-intermediate-2": {
+          "total": 12,
+          "illustrated": 12
+        },
+        "3dp-intermediate-3": {
+          "total": 12,
+          "illustrated": 12
+        }
+      },
+      "revision": "ee31201855ecd5c6"
+    },
+    {
+      "id": "mdmt",
+      "path": "data/practice/mdmt.json",
+      "total": 52,
+      "illustrated": 52,
+      "sourceCounts": {
+        "official-past": 40,
+        "original-practice": 12
+      },
+      "subjects": {
+        "mdmt-junior-1": {
+          "total": 40,
+          "illustrated": 40
+        },
+        "mdmt-junior-2": {
+          "total": 12,
+          "illustrated": 12
+        }
+      },
+      "revision": "c2062398a1303c36"
+    },
+    {
+      "id": "spe",
+      "path": "data/practice/spe.json",
+      "total": 212,
+      "illustrated": 212,
+      "sourceCounts": {
+        "official-past": 200,
+        "original-practice": 12
+      },
+      "subjects": {
+        "spe-junior-1": {
+          "total": 50,
+          "illustrated": 50
+        },
+        "spe-junior-2": {
+          "total": 50,
+          "illustrated": 50
+        },
+        "spe-junior-3": {
+          "total": 12,
+          "illustrated": 12
+        },
+        "spe-intermediate-1": {
+          "total": 50,
+          "illustrated": 50
+        },
+        "spe-intermediate-2": {
+          "total": 50,
+          "illustrated": 50
+        }
+      },
+      "revision": "8dd6dc3a4aca0400"
+    },
+    {
+      "id": "pmae",
+      "path": "data/practice/pmae.json",
+      "total": 328,
+      "illustrated": 328,
+      "sourceCounts": {
+        "official-past": 200,
+        "official-sample": 116,
+        "original-practice": 12
+      },
+      "subjects": {
+        "pmae-junior-1": {
+          "total": 100,
+          "illustrated": 100
+        },
+        "pmae-junior-2": {
+          "total": 100,
+          "illustrated": 100
+        },
+        "pmae-intermediate-1": {
+          "total": 59,
+          "illustrated": 59
+        },
+        "pmae-intermediate-2": {
+          "total": 57,
+          "illustrated": 57
+        },
+        "pmae-intermediate-3": {
+          "total": 12,
+          "illustrated": 12
+        }
+      },
+      "revision": "52ff8678472b410c"
+    },
+    {
+      "id": "evm",
+      "path": "data/practice/evm.json",
+      "total": 257,
+      "illustrated": 257,
+      "sourceCounts": {
+        "official-past": 190,
+        "official-sample": 67
+      },
+      "subjects": {
+        "evm-junior-1": {
+          "total": 50,
+          "illustrated": 50
+        },
+        "evm-junior-2": {
+          "total": 50,
+          "illustrated": 50
+        },
+        "evm-intermediate-1": {
+          "total": 68,
+          "illustrated": 68
+        },
+        "evm-intermediate-2": {
+          "total": 79,
+          "illustrated": 79
+        },
+        "evm-intermediate-3": {
+          "total": 10,
+          "illustrated": 10
+        }
+      },
+      "revision": "ff072b16d24659e0"
+    },
+    {
+      "id": "fqa",
+      "path": "data/practice/fqa.json",
+      "total": 3769,
+      "illustrated": 3769,
+      "sourceCounts": {
+        "official-past": 3763,
+        "official-sample": 6
+      },
+      "subjects": {
+        "fqa-junior-1": {
+          "total": 1385,
+          "illustrated": 1385
+        },
+        "fqa-junior-2": {
+          "total": 1395,
+          "illustrated": 1395
+        },
+        "fqa-intermediate-1": {
+          "total": 330,
+          "illustrated": 330
+        },
+        "fqa-intermediate-2": {
+          "total": 329,
+          "illustrated": 329
+        },
+        "fqa-intermediate-3": {
+          "total": 330,
+          "illustrated": 330
+        }
+      },
+      "revision": "49902831da968cfb"
+    },
+    {
+      "id": "cpm",
+      "path": "data/practice/cpm.json",
+      "total": 68,
+      "illustrated": 68,
+      "sourceCounts": {
+        "official-sample": 48,
+        "original-practice": 20
+      },
+      "subjects": {
+        "cpm-junior-1": {
+          "total": 32,
+          "illustrated": 32
+        },
+        "cpm-junior-2": {
+          "total": 10,
+          "illustrated": 10
+        },
+        "cpm-junior-3": {
+          "total": 26,
+          "illustrated": 26
+        }
+      },
+      "revision": "c2eb079bba5c4a9c"
+    },
+    {
+      "id": "nz",
+      "path": "data/practice/nz.json",
+      "total": 400,
+      "illustrated": 400,
+      "sourceCounts": {
+        "official-past": 400
+      },
+      "subjects": {
+        "nz-junior-1": {
+          "total": 100,
+          "illustrated": 100
+        },
+        "nz-junior-2": {
+          "total": 100,
+          "illustrated": 100
+        },
+        "nz-intermediate-1": {
+          "total": 100,
+          "illustrated": 100
+        },
+        "nz-intermediate-2": {
+          "total": 100,
+          "illustrated": 100
+        }
+      },
+      "revision": "577bef2da300ee0b"
+    },
+    {
+      "id": "cv",
+      "path": "data/practice/cv.json",
+      "total": 280,
+      "illustrated": 280,
+      "sourceCounts": {
+        "official-past": 250,
+        "original-practice": 30
+      },
+      "subjects": {
+        "cv-junior-1": {
+          "total": 50,
+          "illustrated": 50
+        },
+        "cv-junior-2": {
+          "total": 50,
+          "illustrated": 50
+        },
+        "cv-intermediate-1": {
+          "total": 50,
+          "illustrated": 50
+        },
+        "cv-intermediate-2": {
+          "total": 50,
+          "illustrated": 50
+        },
+        "cv-intermediate-3": {
+          "total": 50,
+          "illustrated": 50
+        },
+        "cv-advanced-1": {
+          "total": 10,
+          "illustrated": 10
+        },
+        "cv-advanced-2": {
+          "total": 10,
+          "illustrated": 10
+        },
+        "cv-advanced-3": {
+          "total": 10,
+          "illustrated": 10
+        }
+      },
+      "revision": "76855ddb710f5bb5"
+    },
+    {
+      "id": "aiap",
+      "path": "data/practice/aiap.json",
+      "total": 700,
+      "illustrated": 700,
+      "sourceCounts": {
+        "official-past": 700
+      },
+      "subjects": {
+        "aiap-junior-1": {
+          "total": 200,
+          "illustrated": 200
+        },
+        "aiap-junior-2": {
+          "total": 200,
+          "illustrated": 200
+        },
+        "aiap-intermediate-1": {
+          "total": 100,
+          "illustrated": 100
+        },
+        "aiap-intermediate-2": {
+          "total": 100,
+          "illustrated": 100
+        },
+        "aiap-intermediate-3": {
+          "total": 100,
+          "illustrated": 100
+        }
+      },
+      "revision": "0d64b0ce4016b4f0"
+    },
+    {
+      "id": "aoc",
+      "path": "data/practice/aoc.json",
+      "total": 113,
+      "illustrated": 113,
+      "sourceCounts": {
+        "official-sample": 113
+      },
+      "subjects": {
+        "aoc-junior-1": {
+          "total": 55,
+          "illustrated": 55
+        },
+        "aoc-junior-2": {
+          "total": 58,
+          "illustrated": 58
+        }
+      },
+      "revision": "05dcde15a5acd1da"
+    },
+    {
+      "id": "iota",
+      "path": "data/practice/iota.json",
+      "total": 1063,
+      "illustrated": 36,
+      "sourceCounts": {
+        "legacy-exam": 1043,
+        "original-practice": 20
+      },
+      "subjects": {
+        "iota-junior-1": {
+          "total": 496,
+          "illustrated": 4
+        },
+        "iota-junior-2": {
+          "total": 547,
+          "illustrated": 12
+        },
+        "iota-intermediate-1": {
+          "total": 10,
+          "illustrated": 10
+        },
+        "iota-intermediate-2": {
+          "total": 10,
+          "illustrated": 10
+        }
+      },
+      "revision": "34930b403df37e30"
+    },
+    {
+      "id": "m2m",
+      "path": "data/practice/m2m.json",
+      "total": 30,
+      "illustrated": 30,
+      "sourceCounts": {
+        "original-practice": 30
+      },
+      "subjects": {
+        "m2m-junior-1": {
+          "total": 10,
+          "illustrated": 10
+        },
+        "m2m-junior-2": {
+          "total": 10,
+          "illustrated": 10
+        },
+        "m2m-junior-3": {
+          "total": 10,
+          "illustrated": 10
+        }
+      },
+      "revision": "b64f51612038344e"
+    },
+    {
+      "id": "iots",
+      "path": "data/practice/iots.json",
+      "total": 20,
+      "illustrated": 20,
+      "sourceCounts": {
+        "original-practice": 20
+      },
+      "subjects": {
+        "iots-junior-1": {
+          "total": 10,
+          "illustrated": 10
+        },
+        "iots-junior-2": {
+          "total": 10,
+          "illustrated": 10
+        }
+      },
+      "revision": "049d6fd7c2b7d7b9"
+    },
+    {
+      "id": "bda",
+      "path": "data/practice/bda.json",
+      "total": 40,
+      "illustrated": 40,
+      "sourceCounts": {
+        "original-practice": 40
+      },
+      "subjects": {
+        "bda-junior-1": {
+          "total": 10,
+          "illustrated": 10
+        },
+        "bda-junior-2": {
+          "total": 10,
+          "illustrated": 10
+        },
+        "bda-intermediate-1": {
+          "total": 10,
+          "illustrated": 10
+        },
+        "bda-intermediate-2": {
+          "total": 10,
+          "illustrated": 10
+        }
+      },
+      "revision": "36f34ec9eb918d8f"
+    },
+    {
+      "id": "ml",
+      "path": "data/practice/ml.json",
+      "total": 20,
+      "illustrated": 20,
+      "sourceCounts": {
+        "original-practice": 20
+      },
+      "subjects": {
+        "ml-junior-1": {
+          "total": 10,
+          "illustrated": 10
+        },
+        "ml-junior-2": {
+          "total": 10,
+          "illustrated": 10
+        }
+      },
+      "revision": "1c43f9bf985cbf99"
+    },
+    {
+      "id": "map",
+      "path": "data/practice/map.json",
+      "total": 20,
+      "illustrated": 20,
+      "sourceCounts": {
+        "original-practice": 20
+      },
+      "subjects": {
+        "map-junior-1": {
+          "total": 10,
+          "illustrated": 10
+        },
+        "map-junior-2": {
+          "total": 10,
+          "illustrated": 10
+        }
+      },
+      "revision": "50f5c76175f6ec07"
+    },
+    {
+      "id": "mad",
+      "path": "data/practice/mad.json",
+      "total": 60,
+      "illustrated": 60,
+      "sourceCounts": {
+        "original-practice": 60
+      },
+      "subjects": {
+        "mad-junior-1": {
+          "total": 10,
+          "illustrated": 10
+        },
+        "mad-junior-2": {
+          "total": 10,
+          "illustrated": 10
+        },
+        "mad-junior-3": {
+          "total": 10,
+          "illustrated": 10
+        },
+        "mad-intermediate-1": {
+          "total": 10,
+          "illustrated": 10
+        },
+        "mad-intermediate-2": {
+          "total": 10,
+          "illustrated": 10
+        },
+        "mad-intermediate-3": {
+          "total": 10,
+          "illustrated": 10
+        }
+      },
+      "revision": "59d0054024af517b"
+    },
+    {
+      "id": "mgp",
+      "path": "data/practice/mgp.json",
+      "total": 20,
+      "illustrated": 20,
+      "sourceCounts": {
+        "original-practice": 20
+      },
+      "subjects": {
+        "mgp-junior-1": {
+          "total": 10,
+          "illustrated": 10
+        },
+        "mgp-junior-2": {
+          "total": 10,
+          "illustrated": 10
+        }
+      },
+      "revision": "b72222742ee9289f"
+    }
+  ]
+}

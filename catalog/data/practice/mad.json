@@ -1,0 +1,2767 @@
+{
+  "version": 1,
+  "certId": "mad",
+  "updatedAt": "2026-10-01",
+  "questions": [
+    {
+      "id": "practice-mad-junior-1-001",
+      "certId": "mad",
+      "levelId": "junior",
+      "subjectId": "mad-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "依圖中的密度，48dp對應幾個實體像素？",
+      "options": {
+        "A": "96px",
+        "B": "48px",
+        "C": "24px",
+        "D": "192px"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "48dp×2px/dp=96px。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-junior-1/figure-01.svg",
+          "alt": "裝置與畫面資源。欄位依序為：項目、數值／用途。甲螢幕密度：2 px / dp；元件寬度：48 dp；文字單位：sp，支援使用者文字縮放。本題給定換算比例；不把實體像素直接當作一致的操作大小。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Android：Activity 生命週期",
+          "url": "https://developer.android.com/guide/components/activities/activity-lifecycle"
+        },
+        {
+          "title": "Android：版面配置與資源",
+          "url": "https://developer.android.com/develop/ui/views/layout/declaring-layout"
+        },
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=c6aaa228-6539-4626-839a-fa65c5ff5fbe_112年初級行動裝置程式設計師能力鑑定簡章_0926.pdf&fileno=f12a2378-c4c4-436a-b0c9-de3413a7b59a&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "裝置與畫面資源",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-junior-1-002",
+      "certId": "mad",
+      "levelId": "junior",
+      "subjectId": "mad-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "同一48px元件在更高密度螢幕上，為何可能顯得更小？",
+      "options": {
+        "A": "高密度會自動增加所有元件dp",
+        "B": "固定像素數對應較小的邏輯尺寸",
+        "C": "像素與dp在所有裝置永遠相同",
+        "D": "高密度只能顯示文字不能顯示圖形"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "使用密度獨立單位可降低不同密度造成的操作尺寸差異。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-junior-1/figure-01.svg",
+          "alt": "裝置與畫面資源。欄位依序為：項目、數值／用途。甲螢幕密度：2 px / dp；元件寬度：48 dp；文字單位：sp，支援使用者文字縮放。本題給定換算比例；不把實體像素直接當作一致的操作大小。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Android：Activity 生命週期",
+          "url": "https://developer.android.com/guide/components/activities/activity-lifecycle"
+        },
+        {
+          "title": "Android：版面配置與資源",
+          "url": "https://developer.android.com/develop/ui/views/layout/declaring-layout"
+        },
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=c6aaa228-6539-4626-839a-fa65c5ff5fbe_112年初級行動裝置程式設計師能力鑑定簡章_0926.pdf&fileno=f12a2378-c4c4-436a-b0c9-de3413a7b59a&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "裝置與畫面資源",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-junior-1-003",
+      "certId": "mad",
+      "levelId": "junior",
+      "subjectId": "mad-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "文字採sp並測試大字模式的主要目的為何？",
+      "options": {
+        "A": "保證所有字型檔更小",
+        "B": "把字串自動翻譯成各國語言",
+        "C": "尊重使用者文字大小需求並避免截斷",
+        "D": "禁止版面重新排列"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "文字縮放可能改變占用空間，版面需能容納而不遺失資訊。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-junior-1/figure-01.svg",
+          "alt": "裝置與畫面資源。欄位依序為：項目、數值／用途。甲螢幕密度：2 px / dp；元件寬度：48 dp；文字單位：sp，支援使用者文字縮放。本題給定換算比例；不把實體像素直接當作一致的操作大小。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Android：Activity 生命週期",
+          "url": "https://developer.android.com/guide/components/activities/activity-lifecycle"
+        },
+        {
+          "title": "Android：版面配置與資源",
+          "url": "https://developer.android.com/develop/ui/views/layout/declaring-layout"
+        },
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=c6aaa228-6539-4626-839a-fa65c5ff5fbe_112年初級行動裝置程式設計師能力鑑定簡章_0926.pdf&fileno=f12a2378-c4c4-436a-b0c9-de3413a7b59a&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "裝置與畫面資源",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-junior-1-004",
+      "certId": "mad",
+      "levelId": "junior",
+      "subjectId": "mad-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "程序被系統回收後，僅存在一般記憶體變數的草稿可能怎樣？",
+      "options": {
+        "A": "必然自動同步到伺服器",
+        "B": "保證由畫面快取永久保留",
+        "C": "自動轉成照片檔",
+        "D": "遺失，需可恢復狀態或持久保存"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "程序生命週期不同於資料保存需求，重要輸入不能只依賴記憶體。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-junior-1/figure-02.svg",
+          "alt": "App資料保存層。欄位依序為：層次、特性。畫面記憶體：程序結束後可能消失；本機持久儲存：可跨程序重新啟動保存；伺服器：需處理網路與同步。重要草稿需明確選擇持久化策略。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Android：Activity 生命週期",
+          "url": "https://developer.android.com/guide/components/activities/activity-lifecycle"
+        },
+        {
+          "title": "Android：版面配置與資源",
+          "url": "https://developer.android.com/develop/ui/views/layout/declaring-layout"
+        },
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=c6aaa228-6539-4626-839a-fa65c5ff5fbe_112年初級行動裝置程式設計師能力鑑定簡章_0926.pdf&fileno=f12a2378-c4c4-436a-b0c9-de3413a7b59a&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "App資料保存層",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-junior-1-005",
+      "certId": "mad",
+      "levelId": "junior",
+      "subjectId": "mad-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "需要離線重新開啟仍能閱讀的文章，應至少保存在哪裡？",
+      "options": {
+        "A": "本機持久資料來源",
+        "B": "只存在上一次畫面物件",
+        "C": "只存在尚未完成的網路連線",
+        "D": "只放在未保存的暫存變數"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "離線跨程序讀取需要本機可持續存在的資料。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-junior-1/figure-02.svg",
+          "alt": "App資料保存層。欄位依序為：層次、特性。畫面記憶體：程序結束後可能消失；本機持久儲存：可跨程序重新啟動保存；伺服器：需處理網路與同步。重要草稿需明確選擇持久化策略。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Android：Activity 生命週期",
+          "url": "https://developer.android.com/guide/components/activities/activity-lifecycle"
+        },
+        {
+          "title": "Android：版面配置與資源",
+          "url": "https://developer.android.com/develop/ui/views/layout/declaring-layout"
+        },
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=c6aaa228-6539-4626-839a-fa65c5ff5fbe_112年初級行動裝置程式設計師能力鑑定簡章_0926.pdf&fileno=f12a2378-c4c4-436a-b0c9-de3413a7b59a&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "App資料保存層",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-junior-1-006",
+      "certId": "mad",
+      "levelId": "junior",
+      "subjectId": "mad-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "本機與伺服器同筆資料同時修改，需預先定義什麼？",
+      "options": {
+        "A": "所有裝置必須同一螢幕尺寸",
+        "B": "版本與衝突解決規則",
+        "C": "所有資料每秒刪除一次",
+        "D": "一律忽略伺服器回應"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "離線同步可能產生衝突，需業務可接受且可追溯的處理方式。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-junior-1/figure-02.svg",
+          "alt": "App資料保存層。欄位依序為：層次、特性。畫面記憶體：程序結束後可能消失；本機持久儲存：可跨程序重新啟動保存；伺服器：需處理網路與同步。重要草稿需明確選擇持久化策略。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Android：Activity 生命週期",
+          "url": "https://developer.android.com/guide/components/activities/activity-lifecycle"
+        },
+        {
+          "title": "Android：版面配置與資源",
+          "url": "https://developer.android.com/develop/ui/views/layout/declaring-layout"
+        },
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=c6aaa228-6539-4626-839a-fa65c5ff5fbe_112年初級行動裝置程式設計師能力鑑定簡章_0926.pdf&fileno=f12a2378-c4c4-436a-b0c9-de3413a7b59a&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "App資料保存層",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-junior-1-007",
+      "certId": "mad",
+      "levelId": "junior",
+      "subjectId": "mad-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "在主執行緒等待網路直到完成，常見後果是？",
+      "options": {
+        "A": "自動提升網路頻寬",
+        "B": "所有請求必定依序成功",
+        "C": "畫面無法及時回應操作",
+        "D": "消除網路錯誤處理需求"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "耗時阻塞會妨礙UI處理與繪製，應採適當非同步流程。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-junior-1/figure-03.svg",
+          "alt": "行動網路請求情境。欄位依序為：狀態、畫面需求。載入中：顯示進度或正在載入；成功：顯示資料與更新時間；暫時斷網：顯示可用快取與重試入口。網路呼叫耗時不可預先假定為零。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Android：Activity 生命週期",
+          "url": "https://developer.android.com/guide/components/activities/activity-lifecycle"
+        },
+        {
+          "title": "Android：版面配置與資源",
+          "url": "https://developer.android.com/develop/ui/views/layout/declaring-layout"
+        },
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=c6aaa228-6539-4626-839a-fa65c5ff5fbe_112年初級行動裝置程式設計師能力鑑定簡章_0926.pdf&fileno=f12a2378-c4c4-436a-b0c9-de3413a7b59a&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "行動網路請求情境",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-junior-1-008",
+      "certId": "mad",
+      "levelId": "junior",
+      "subjectId": "mad-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "快取可能過期時，哪種呈現較透明？",
+      "options": {
+        "A": "把舊資料標成即時資料",
+        "B": "隱藏所有更新時間",
+        "C": "只改背景色且無文字",
+        "D": "顯示資料時間與離線狀態"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "使用者需知道資訊新鮮度，才能判斷是否應重試或等待更新。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-junior-1/figure-03.svg",
+          "alt": "行動網路請求情境。欄位依序為：狀態、畫面需求。載入中：顯示進度或正在載入；成功：顯示資料與更新時間；暫時斷網：顯示可用快取與重試入口。網路呼叫耗時不可預先假定為零。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Android：Activity 生命週期",
+          "url": "https://developer.android.com/guide/components/activities/activity-lifecycle"
+        },
+        {
+          "title": "Android：版面配置與資源",
+          "url": "https://developer.android.com/develop/ui/views/layout/declaring-layout"
+        },
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=c6aaa228-6539-4626-839a-fa65c5ff5fbe_112年初級行動裝置程式設計師能力鑑定簡章_0926.pdf&fileno=f12a2378-c4c4-436a-b0c9-de3413a7b59a&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "行動網路請求情境",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-junior-1-009",
+      "certId": "mad",
+      "levelId": "junior",
+      "subjectId": "mad-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "使用者快速連按重試，應避免哪種行為？",
+      "options": {
+        "A": "同一工作無限制重複建立請求",
+        "B": "顯示目前載入狀態",
+        "C": "保留可用快取",
+        "D": "提供錯誤原因"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "可合併或限制重複工作，避免資源浪費與舊回應覆蓋新結果。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-junior-1/figure-03.svg",
+          "alt": "行動網路請求情境。欄位依序為：狀態、畫面需求。載入中：顯示進度或正在載入；成功：顯示資料與更新時間；暫時斷網：顯示可用快取與重試入口。網路呼叫耗時不可預先假定為零。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Android：Activity 生命週期",
+          "url": "https://developer.android.com/guide/components/activities/activity-lifecycle"
+        },
+        {
+          "title": "Android：版面配置與資源",
+          "url": "https://developer.android.com/develop/ui/views/layout/declaring-layout"
+        },
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=c6aaa228-6539-4626-839a-fa65c5ff5fbe_112年初級行動裝置程式設計師能力鑑定簡章_0926.pdf&fileno=f12a2378-c4c4-436a-b0c9-de3413a7b59a&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "行動網路請求情境",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-junior-1-010",
+      "certId": "mad",
+      "levelId": "junior",
+      "subjectId": "mad-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "測試行動App網路狀態時，哪組最完整？",
+      "options": {
+        "A": "只測同一Wi-Fi成功一次",
+        "B": "成功、慢速、斷線及恢復",
+        "C": "只測飛航模式首頁外觀",
+        "D": "只測伺服器永久成功"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "行動環境狀態會切換，測試需涵蓋等待、失敗與恢復路徑。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-junior-1/figure-03.svg",
+          "alt": "行動網路請求情境。欄位依序為：狀態、畫面需求。載入中：顯示進度或正在載入；成功：顯示資料與更新時間；暫時斷網：顯示可用快取與重試入口。網路呼叫耗時不可預先假定為零。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Android：Activity 生命週期",
+          "url": "https://developer.android.com/guide/components/activities/activity-lifecycle"
+        },
+        {
+          "title": "Android：版面配置與資源",
+          "url": "https://developer.android.com/develop/ui/views/layout/declaring-layout"
+        },
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=c6aaa228-6539-4626-839a-fa65c5ff5fbe_112年初級行動裝置程式設計師能力鑑定簡章_0926.pdf&fileno=f12a2378-c4c4-436a-b0c9-de3413a7b59a&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "行動網路請求情境",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-junior-2-001",
+      "certId": "mad",
+      "levelId": "junior",
+      "subjectId": "mad-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "圖中一般初始化畫面結構通常放在哪個回呼？",
+      "options": {
+        "A": "onDestroy",
+        "B": "onCreate",
+        "C": "onPause",
+        "D": "onStop"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "onCreate執行Activity首次建立時的初始化；具體資源還需依生命週期取得釋放。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-junior-2/figure-01.svg",
+          "alt": "Activity典型前景路徑。欄位依序為：順序、回呼。1：onCreate；2：onStart；3：onResume。此圖描述一次建立並進入前景的典型路徑，不代表所有返回情境都重建。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Android：Activity 生命週期",
+          "url": "https://developer.android.com/guide/components/activities/activity-lifecycle"
+        },
+        {
+          "title": "Android：ViewModel",
+          "url": "https://developer.android.com/topic/libraries/architecture/viewmodel"
+        },
+        {
+          "title": "Android：Room 資料持久化",
+          "url": "https://developer.android.com/training/data-storage/room"
+        },
+        {
+          "title": "Kotlin：集合轉換",
+          "url": "https://kotlinlang.org/docs/collection-transformations.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置程式開發-Android程式設計",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=c6aaa228-6539-4626-839a-fa65c5ff5fbe_112年初級行動裝置程式設計師能力鑑定簡章_0926.pdf&fileno=f12a2378-c4c4-436a-b0c9-de3413a7b59a&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "Activity典型前景路徑",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-junior-2-002",
+      "certId": "mad",
+      "levelId": "junior",
+      "subjectId": "mad-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "Activity已建立且從停止狀態返回，能否假定一定重新執行onCreate？",
+      "options": {
+        "A": "能，每次前景都建立新程序",
+        "B": "能，onCreate每一幀都執行",
+        "C": "不能，可能沿重新啟動路徑返回",
+        "D": "不能，因onCreate從未執行"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "既有實例返回與新建實例路徑不同，不應把所有恢復工作只綁首次建立。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-junior-2/figure-01.svg",
+          "alt": "Activity典型前景路徑。欄位依序為：順序、回呼。1：onCreate；2：onStart；3：onResume。此圖描述一次建立並進入前景的典型路徑，不代表所有返回情境都重建。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Android：Activity 生命週期",
+          "url": "https://developer.android.com/guide/components/activities/activity-lifecycle"
+        },
+        {
+          "title": "Android：ViewModel",
+          "url": "https://developer.android.com/topic/libraries/architecture/viewmodel"
+        },
+        {
+          "title": "Android：Room 資料持久化",
+          "url": "https://developer.android.com/training/data-storage/room"
+        },
+        {
+          "title": "Kotlin：集合轉換",
+          "url": "https://kotlinlang.org/docs/collection-transformations.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置程式開發-Android程式設計",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=c6aaa228-6539-4626-839a-fa65c5ff5fbe_112年初級行動裝置程式設計師能力鑑定簡章_0926.pdf&fileno=f12a2378-c4c4-436a-b0c9-de3413a7b59a&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "Activity典型前景路徑",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-junior-2-003",
+      "certId": "mad",
+      "levelId": "junior",
+      "subjectId": "mad-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "若持續更新只應在可互動前景執行，應關注哪種設計？",
+      "options": {
+        "A": "在onCreate開啟後永不停止",
+        "B": "只在onDestroy儲存所有重要資料",
+        "C": "在所有回呼各開一條永久執行緒",
+        "D": "依生命週期啟停更新與釋放資源"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "生命週期感知可避免背景耗電、重複訂閱與已銷毀畫面的更新。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-junior-2/figure-01.svg",
+          "alt": "Activity典型前景路徑。欄位依序為：順序、回呼。1：onCreate；2：onStart；3：onResume。此圖描述一次建立並進入前景的典型路徑，不代表所有返回情境都重建。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Android：Activity 生命週期",
+          "url": "https://developer.android.com/guide/components/activities/activity-lifecycle"
+        },
+        {
+          "title": "Android：ViewModel",
+          "url": "https://developer.android.com/topic/libraries/architecture/viewmodel"
+        },
+        {
+          "title": "Android：Room 資料持久化",
+          "url": "https://developer.android.com/training/data-storage/room"
+        },
+        {
+          "title": "Kotlin：集合轉換",
+          "url": "https://kotlinlang.org/docs/collection-transformations.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置程式開發-Android程式設計",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=c6aaa228-6539-4626-839a-fa65c5ff5fbe_112年初級行動裝置程式設計師能力鑑定簡章_0926.pdf&fileno=f12a2378-c4c4-436a-b0c9-de3413a7b59a&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "Activity典型前景路徑",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-junior-2-004",
+      "certId": "mad",
+      "levelId": "junior",
+      "subjectId": "mad-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "旋轉造成Activity重建時，ViewModel主要能協助保留什麼？",
+      "options": {
+        "A": "畫面所需狀態與資料",
+        "B": "原Activity實例永不銷毀",
+        "C": "所有程序永久不被回收",
+        "D": "檔案系統的完整備份"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "ViewModel設計可跨配置變更保留畫面狀態，但不是程序死亡後的永久保證。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-junior-2/figure-02.svg",
+          "alt": "旋轉畫面與資料擁有者。欄位依序為：資料、存放策略。已載入清單：ViewModel管理畫面狀態；使用者永久收藏：Room等持久資料來源；Activity物件：由系統依生命週期建立／銷毀。ViewModel保留配置變更的畫面狀態，不等同磁碟備份。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Android：Activity 生命週期",
+          "url": "https://developer.android.com/guide/components/activities/activity-lifecycle"
+        },
+        {
+          "title": "Android：ViewModel",
+          "url": "https://developer.android.com/topic/libraries/architecture/viewmodel"
+        },
+        {
+          "title": "Android：Room 資料持久化",
+          "url": "https://developer.android.com/training/data-storage/room"
+        },
+        {
+          "title": "Kotlin：集合轉換",
+          "url": "https://kotlinlang.org/docs/collection-transformations.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置程式開發-Android程式設計",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=c6aaa228-6539-4626-839a-fa65c5ff5fbe_112年初級行動裝置程式設計師能力鑑定簡章_0926.pdf&fileno=f12a2378-c4c4-436a-b0c9-de3413a7b59a&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "旋轉畫面與資料擁有者",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-junior-2-005",
+      "certId": "mad",
+      "levelId": "junior",
+      "subjectId": "mad-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "ViewModel長期保存Activity參考可能帶來什麼？",
+      "options": {
+        "A": "自動建立資料庫索引",
+        "B": "舊畫面物件無法釋放的風險",
+        "C": "保證恢復所有磁碟資料",
+        "D": "完全取消Activity生命週期"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "較長生命週期物件不應不必要地持有短生命週期畫面，避免洩漏。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-junior-2/figure-02.svg",
+          "alt": "旋轉畫面與資料擁有者。欄位依序為：資料、存放策略。已載入清單：ViewModel管理畫面狀態；使用者永久收藏：Room等持久資料來源；Activity物件：由系統依生命週期建立／銷毀。ViewModel保留配置變更的畫面狀態，不等同磁碟備份。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Android：Activity 生命週期",
+          "url": "https://developer.android.com/guide/components/activities/activity-lifecycle"
+        },
+        {
+          "title": "Android：ViewModel",
+          "url": "https://developer.android.com/topic/libraries/architecture/viewmodel"
+        },
+        {
+          "title": "Android：Room 資料持久化",
+          "url": "https://developer.android.com/training/data-storage/room"
+        },
+        {
+          "title": "Kotlin：集合轉換",
+          "url": "https://kotlinlang.org/docs/collection-transformations.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置程式開發-Android程式設計",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=c6aaa228-6539-4626-839a-fa65c5ff5fbe_112年初級行動裝置程式設計師能力鑑定簡章_0926.pdf&fileno=f12a2378-c4c4-436a-b0c9-de3413a7b59a&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "旋轉畫面與資料擁有者",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-junior-2-006",
+      "certId": "mad",
+      "levelId": "junior",
+      "subjectId": "mad-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "收藏必須在App關閉後保留，哪個設計較適合？",
+      "options": {
+        "A": "只放在一般ViewModel欄位",
+        "B": "只放在按鈕的文字內容",
+        "C": "寫入Room等持久資料來源",
+        "D": "只放在尚未完成的coroutine區域變數"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "跨程序保存需要持久化；ViewModel用途是畫面狀態管理。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-junior-2/figure-02.svg",
+          "alt": "旋轉畫面與資料擁有者。欄位依序為：資料、存放策略。已載入清單：ViewModel管理畫面狀態；使用者永久收藏：Room等持久資料來源；Activity物件：由系統依生命週期建立／銷毀。ViewModel保留配置變更的畫面狀態，不等同磁碟備份。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Android：Activity 生命週期",
+          "url": "https://developer.android.com/guide/components/activities/activity-lifecycle"
+        },
+        {
+          "title": "Android：ViewModel",
+          "url": "https://developer.android.com/topic/libraries/architecture/viewmodel"
+        },
+        {
+          "title": "Android：Room 資料持久化",
+          "url": "https://developer.android.com/training/data-storage/room"
+        },
+        {
+          "title": "Kotlin：集合轉換",
+          "url": "https://kotlinlang.org/docs/collection-transformations.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置程式開發-Android程式設計",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=c6aaa228-6539-4626-839a-fa65c5ff5fbe_112年初級行動裝置程式設計師能力鑑定簡章_0926.pdf&fileno=f12a2378-c4c4-436a-b0c9-de3413a7b59a&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "旋轉畫面與資料擁有者",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-junior-2-007",
+      "certId": "mad",
+      "levelId": "junior",
+      "subjectId": "mad-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "out的內容為何？",
+      "options": {
+        "A": "[1, 3]",
+        "B": "[1, 2, 3, 4]",
+        "C": "[0, 0]",
+        "D": "[2, 4]"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "條件it % 2 == 0選出偶數2與4。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-junior-2/figure-03.svg",
+          "alt": "Kotlin清單程式。欄位依序為：位置、程式。資料：val nums = listOf(1, 2, 3, 4)；轉換：val out = nums.filter { it % 2 == 0 }；結果：val sum = out.sum()。filter保留符合條件的元素，並不就地刪除原清單。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Android：Activity 生命週期",
+          "url": "https://developer.android.com/guide/components/activities/activity-lifecycle"
+        },
+        {
+          "title": "Android：ViewModel",
+          "url": "https://developer.android.com/topic/libraries/architecture/viewmodel"
+        },
+        {
+          "title": "Android：Room 資料持久化",
+          "url": "https://developer.android.com/training/data-storage/room"
+        },
+        {
+          "title": "Kotlin：集合轉換",
+          "url": "https://kotlinlang.org/docs/collection-transformations.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置程式開發-Android程式設計",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=c6aaa228-6539-4626-839a-fa65c5ff5fbe_112年初級行動裝置程式設計師能力鑑定簡章_0926.pdf&fileno=f12a2378-c4c4-436a-b0c9-de3413a7b59a&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "Kotlin清單程式",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-junior-2-008",
+      "certId": "mad",
+      "levelId": "junior",
+      "subjectId": "mad-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "sum的值為何？",
+      "options": {
+        "A": "6",
+        "B": "10",
+        "C": "2",
+        "D": "4"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "2＋4=6。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-junior-2/figure-03.svg",
+          "alt": "Kotlin清單程式。欄位依序為：位置、程式。資料：val nums = listOf(1, 2, 3, 4)；轉換：val out = nums.filter { it % 2 == 0 }；結果：val sum = out.sum()。filter保留符合條件的元素，並不就地刪除原清單。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Android：Activity 生命週期",
+          "url": "https://developer.android.com/guide/components/activities/activity-lifecycle"
+        },
+        {
+          "title": "Android：ViewModel",
+          "url": "https://developer.android.com/topic/libraries/architecture/viewmodel"
+        },
+        {
+          "title": "Android：Room 資料持久化",
+          "url": "https://developer.android.com/training/data-storage/room"
+        },
+        {
+          "title": "Kotlin：集合轉換",
+          "url": "https://kotlinlang.org/docs/collection-transformations.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置程式開發-Android程式設計",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=c6aaa228-6539-4626-839a-fa65c5ff5fbe_112年初級行動裝置程式設計師能力鑑定簡章_0926.pdf&fileno=f12a2378-c4c4-436a-b0c9-de3413a7b59a&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "Kotlin清單程式",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-junior-2-009",
+      "certId": "mad",
+      "levelId": "junior",
+      "subjectId": "mad-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "執行filter後，nums的內容為何？",
+      "options": {
+        "A": "變成[2, 4]",
+        "B": "仍為[1, 2, 3, 4]",
+        "C": "變成空清單",
+        "D": "變成[1, 3]"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "filter產生篩選結果，這段程式沒有修改原清單。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-junior-2/figure-03.svg",
+          "alt": "Kotlin清單程式。欄位依序為：位置、程式。資料：val nums = listOf(1, 2, 3, 4)；轉換：val out = nums.filter { it % 2 == 0 }；結果：val sum = out.sum()。filter保留符合條件的元素，並不就地刪除原清單。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Android：Activity 生命週期",
+          "url": "https://developer.android.com/guide/components/activities/activity-lifecycle"
+        },
+        {
+          "title": "Android：ViewModel",
+          "url": "https://developer.android.com/topic/libraries/architecture/viewmodel"
+        },
+        {
+          "title": "Android：Room 資料持久化",
+          "url": "https://developer.android.com/training/data-storage/room"
+        },
+        {
+          "title": "Kotlin：集合轉換",
+          "url": "https://kotlinlang.org/docs/collection-transformations.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置程式開發-Android程式設計",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=c6aaa228-6539-4626-839a-fa65c5ff5fbe_112年初級行動裝置程式設計師能力鑑定簡章_0926.pdf&fileno=f12a2378-c4c4-436a-b0c9-de3413a7b59a&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "Kotlin清單程式",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-junior-2-010",
+      "certId": "mad",
+      "levelId": "junior",
+      "subjectId": "mad-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "若需求是每個數字乘2，應用哪種轉換概念？",
+      "options": {
+        "A": "filter { it % 2 == 0 }",
+        "B": "sum()",
+        "C": "map { it * 2 }",
+        "D": "count()"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "map對每個元素轉換；filter決定保留與否，sum與count是彙總。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-junior-2/figure-03.svg",
+          "alt": "Kotlin清單程式。欄位依序為：位置、程式。資料：val nums = listOf(1, 2, 3, 4)；轉換：val out = nums.filter { it % 2 == 0 }；結果：val sum = out.sum()。filter保留符合條件的元素，並不就地刪除原清單。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Android：Activity 生命週期",
+          "url": "https://developer.android.com/guide/components/activities/activity-lifecycle"
+        },
+        {
+          "title": "Android：ViewModel",
+          "url": "https://developer.android.com/topic/libraries/architecture/viewmodel"
+        },
+        {
+          "title": "Android：Room 資料持久化",
+          "url": "https://developer.android.com/training/data-storage/room"
+        },
+        {
+          "title": "Kotlin：集合轉換",
+          "url": "https://kotlinlang.org/docs/collection-transformations.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置程式開發-Android程式設計",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=c6aaa228-6539-4626-839a-fa65c5ff5fbe_112年初級行動裝置程式設計師能力鑑定簡章_0926.pdf&fileno=f12a2378-c4c4-436a-b0c9-de3413a7b59a&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "Kotlin清單程式",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-junior-3-001",
+      "certId": "mad",
+      "levelId": "junior",
+      "subjectId": "mad-junior-3",
+      "sourceKind": "original-practice",
+      "stem": "shown的值為何？",
+      "options": {
+        "A": "nil",
+        "B": "1",
+        "C": "0",
+        "D": "編譯後固定隨機值"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "nil-coalescing運算子在score為nil時使用右側預設0。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-junior-3/figure-01.svg",
+          "alt": "Swift Optional判斷。欄位依序為：位置、程式。資料：let score: Int? = nil；安全解包：if let value = score { use(value) }；預設值：let shown = score ?? 0。use為已定義的函式；觀察nil與Optional的處理。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Swift：自動參考計數",
+          "url": "https://docs.swift.org/latest/documentation/the-swift-programming-language/automaticreferencecounting/"
+        },
+        {
+          "title": "Apple：SwiftUI 模型資料",
+          "url": "https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app"
+        },
+        {
+          "title": "Apple：Keychain services",
+          "url": "https://developer.apple.com/documentation/security/keychain-services"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置程式開發-iOS程式設計",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=c6aaa228-6539-4626-839a-fa65c5ff5fbe_112年初級行動裝置程式設計師能力鑑定簡章_0926.pdf&fileno=f12a2378-c4c4-436a-b0c9-de3413a7b59a&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "Swift Optional判斷",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-junior-3-002",
+      "certId": "mad",
+      "levelId": "junior",
+      "subjectId": "mad-junior-3",
+      "sourceKind": "original-practice",
+      "stem": "score為nil時，if let區塊會如何？",
+      "options": {
+        "A": "以0呼叫use(value)",
+        "B": "強制以nil作Int呼叫",
+        "C": "必定造成程式崩潰",
+        "D": "不執行use(value)"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "可選綁定只在有值時進入區塊，不會自動填0。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-junior-3/figure-01.svg",
+          "alt": "Swift Optional判斷。欄位依序為：位置、程式。資料：let score: Int? = nil；安全解包：if let value = score { use(value) }；預設值：let shown = score ?? 0。use為已定義的函式；觀察nil與Optional的處理。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Swift：自動參考計數",
+          "url": "https://docs.swift.org/latest/documentation/the-swift-programming-language/automaticreferencecounting/"
+        },
+        {
+          "title": "Apple：SwiftUI 模型資料",
+          "url": "https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app"
+        },
+        {
+          "title": "Apple：Keychain services",
+          "url": "https://developer.apple.com/documentation/security/keychain-services"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置程式開發-iOS程式設計",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=c6aaa228-6539-4626-839a-fa65c5ff5fbe_112年初級行動裝置程式設計師能力鑑定簡章_0926.pdf&fileno=f12a2378-c4c4-436a-b0c9-de3413a7b59a&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "Swift Optional判斷",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-junior-3-003",
+      "certId": "mad",
+      "levelId": "junior",
+      "subjectId": "mad-junior-3",
+      "sourceKind": "original-practice",
+      "stem": "直接使用score!在本例有何風險？",
+      "options": {
+        "A": "強制解包nil引發執行期錯誤",
+        "B": "只會得到0",
+        "C": "自動建立新的Int",
+        "D": "僅使記憶體增加1 byte"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "Optional為nil時不可安全強制解包，應檢查或提供合理預設。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-junior-3/figure-01.svg",
+          "alt": "Swift Optional判斷。欄位依序為：位置、程式。資料：let score: Int? = nil；安全解包：if let value = score { use(value) }；預設值：let shown = score ?? 0。use為已定義的函式；觀察nil與Optional的處理。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Swift：自動參考計數",
+          "url": "https://docs.swift.org/latest/documentation/the-swift-programming-language/automaticreferencecounting/"
+        },
+        {
+          "title": "Apple：SwiftUI 模型資料",
+          "url": "https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app"
+        },
+        {
+          "title": "Apple：Keychain services",
+          "url": "https://developer.apple.com/documentation/security/keychain-services"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置程式開發-iOS程式設計",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=c6aaa228-6539-4626-839a-fa65c5ff5fbe_112年初級行動裝置程式設計師能力鑑定簡章_0926.pdf&fileno=f12a2378-c4c4-436a-b0c9-de3413a7b59a&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "Swift Optional判斷",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-junior-3-004",
+      "certId": "mad",
+      "levelId": "junior",
+      "subjectId": "mad-junior-3",
+      "sourceKind": "original-practice",
+      "stem": "把Detail→Owner改成strong，且Owner仍strong指向Detail，可能形成什麼？",
+      "options": {
+        "A": "值型別自動複製",
+        "B": "強參考循環",
+        "C": "必定立即釋放兩個物件",
+        "D": "弱參考自動增強"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "互相持有強參考可能讓參考計數不歸零，需設計合適所有權。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-junior-3/figure-02.svg",
+          "alt": "物件參考關係。欄位依序為：參考方向、種類。Owner → Detail：strong；Detail → Owner：weak；外部 → Owner：strong，可被釋放。兩者皆為class實例；weak不增加擁有權。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Swift：自動參考計數",
+          "url": "https://docs.swift.org/latest/documentation/the-swift-programming-language/automaticreferencecounting/"
+        },
+        {
+          "title": "Apple：SwiftUI 模型資料",
+          "url": "https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app"
+        },
+        {
+          "title": "Apple：Keychain services",
+          "url": "https://developer.apple.com/documentation/security/keychain-services"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置程式開發-iOS程式設計",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=c6aaa228-6539-4626-839a-fa65c5ff5fbe_112年初級行動裝置程式設計師能力鑑定簡章_0926.pdf&fileno=f12a2378-c4c4-436a-b0c9-de3413a7b59a&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "物件參考關係",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-junior-3-005",
+      "certId": "mad",
+      "levelId": "junior",
+      "subjectId": "mad-junior-3",
+      "sourceKind": "original-practice",
+      "stem": "Owner被釋放後，weak參考通常如何？",
+      "options": {
+        "A": "自動變成另一個Owner",
+        "B": "持續強制保留原Owner",
+        "C": "自動成為nil",
+        "D": "變成整數0且維持非Optional"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "Swift弱參考不保留物件，物件釋放後弱參考會歸nil。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-junior-3/figure-02.svg",
+          "alt": "物件參考關係。欄位依序為：參考方向、種類。Owner → Detail：strong；Detail → Owner：weak；外部 → Owner：strong，可被釋放。兩者皆為class實例；weak不增加擁有權。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Swift：自動參考計數",
+          "url": "https://docs.swift.org/latest/documentation/the-swift-programming-language/automaticreferencecounting/"
+        },
+        {
+          "title": "Apple：SwiftUI 模型資料",
+          "url": "https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app"
+        },
+        {
+          "title": "Apple：Keychain services",
+          "url": "https://developer.apple.com/documentation/security/keychain-services"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置程式開發-iOS程式設計",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=c6aaa228-6539-4626-839a-fa65c5ff5fbe_112年初級行動裝置程式設計師能力鑑定簡章_0926.pdf&fileno=f12a2378-c4c4-436a-b0c9-de3413a7b59a&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "物件參考關係",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-junior-3-006",
+      "certId": "mad",
+      "levelId": "junior",
+      "subjectId": "mad-junior-3",
+      "sourceKind": "original-practice",
+      "stem": "weak與unowned的選擇重點是？",
+      "options": {
+        "A": "物件是否每次都在同一方法內建立",
+        "B": "物件是否已實作自訂init",
+        "C": "類別是否有可選屬性",
+        "D": "被參考物件是否可能先結束生命週期"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "unowned假設引用時物件仍在；可能先釋放時通常需可為nil的weak等安全設計。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-junior-3/figure-02.svg",
+          "alt": "物件參考關係。欄位依序為：參考方向、種類。Owner → Detail：strong；Detail → Owner：weak；外部 → Owner：strong，可被釋放。兩者皆為class實例；weak不增加擁有權。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Swift：自動參考計數",
+          "url": "https://docs.swift.org/latest/documentation/the-swift-programming-language/automaticreferencecounting/"
+        },
+        {
+          "title": "Apple：SwiftUI 模型資料",
+          "url": "https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app"
+        },
+        {
+          "title": "Apple：Keychain services",
+          "url": "https://developer.apple.com/documentation/security/keychain-services"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置程式開發-iOS程式設計",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=c6aaa228-6539-4626-839a-fa65c5ff5fbe_112年初級行動裝置程式設計師能力鑑定簡章_0926.pdf&fileno=f12a2378-c4c4-436a-b0c9-de3413a7b59a&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "物件參考關係",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-junior-3-007",
+      "certId": "mad",
+      "levelId": "junior",
+      "subjectId": "mad-junior-3",
+      "sourceKind": "original-practice",
+      "stem": "登入權杖通常應優先使用何種平台儲存機制？",
+      "options": {
+        "A": "適當設定的Keychain",
+        "B": "公開可分享的純文字檔",
+        "C": "一般除錯日誌",
+        "D": "硬編碼到版本控制中的常數"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "Keychain用於密碼與金鑰等小型敏感資料，仍需設定適當存取條件。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-junior-3/figure-03.svg",
+          "alt": "iOS資料用途與保存。欄位依序為：資料、需求。畫面計數：變更時更新UI；登入權杖：避免明文散落一般設定或紀錄；大型可重抓圖片：可重新下載的快取。保存策略依敏感度與可重建性選擇。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Swift：自動參考計數",
+          "url": "https://docs.swift.org/latest/documentation/the-swift-programming-language/automaticreferencecounting/"
+        },
+        {
+          "title": "Apple：SwiftUI 模型資料",
+          "url": "https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app"
+        },
+        {
+          "title": "Apple：Keychain services",
+          "url": "https://developer.apple.com/documentation/security/keychain-services"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置程式開發-iOS程式設計",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=c6aaa228-6539-4626-839a-fa65c5ff5fbe_112年初級行動裝置程式設計師能力鑑定簡章_0926.pdf&fileno=f12a2378-c4c4-436a-b0c9-de3413a7b59a&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "iOS資料用途與保存",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-junior-3-008",
+      "certId": "mad",
+      "levelId": "junior",
+      "subjectId": "mad-junior-3",
+      "sourceKind": "original-practice",
+      "stem": "使用者登出時，只把登入畫面隱藏但保留有效權杖，哪項需求未落實？",
+      "options": {
+        "A": "將公開圖片快取強制全部清除",
+        "B": "清除或撤銷登入憑證的登出流程",
+        "C": "把所有非敏感偏好都回復預設",
+        "D": "每次登出重新產生應用程式安裝識別"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "登出需處理本機與伺服器會話策略，不只是改變畫面外觀。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-junior-3/figure-03.svg",
+          "alt": "iOS資料用途與保存。欄位依序為：資料、需求。畫面計數：變更時更新UI；登入權杖：避免明文散落一般設定或紀錄；大型可重抓圖片：可重新下載的快取。保存策略依敏感度與可重建性選擇。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Swift：自動參考計數",
+          "url": "https://docs.swift.org/latest/documentation/the-swift-programming-language/automaticreferencecounting/"
+        },
+        {
+          "title": "Apple：SwiftUI 模型資料",
+          "url": "https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app"
+        },
+        {
+          "title": "Apple：Keychain services",
+          "url": "https://developer.apple.com/documentation/security/keychain-services"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置程式開發-iOS程式設計",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=c6aaa228-6539-4626-839a-fa65c5ff5fbe_112年初級行動裝置程式設計師能力鑑定簡章_0926.pdf&fileno=f12a2378-c4c4-436a-b0c9-de3413a7b59a&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "iOS資料用途與保存",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-junior-3-009",
+      "certId": "mad",
+      "levelId": "junior",
+      "subjectId": "mad-junior-3",
+      "sourceKind": "original-practice",
+      "stem": "可重抓圖片快取被系統清掉後，App應如何？",
+      "options": {
+        "A": "視為登入權杖永久遺失",
+        "B": "必須刪除全部使用者資料",
+        "C": "重新下載或顯示佔位狀態",
+        "D": "假定快取永遠不會消失"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "快取應可重建，不能作唯一不可恢復資料來源。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-junior-3/figure-03.svg",
+          "alt": "iOS資料用途與保存。欄位依序為：資料、需求。畫面計數：變更時更新UI；登入權杖：避免明文散落一般設定或紀錄；大型可重抓圖片：可重新下載的快取。保存策略依敏感度與可重建性選擇。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Swift：自動參考計數",
+          "url": "https://docs.swift.org/latest/documentation/the-swift-programming-language/automaticreferencecounting/"
+        },
+        {
+          "title": "Apple：SwiftUI 模型資料",
+          "url": "https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app"
+        },
+        {
+          "title": "Apple：Keychain services",
+          "url": "https://developer.apple.com/documentation/security/keychain-services"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置程式開發-iOS程式設計",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=c6aaa228-6539-4626-839a-fa65c5ff5fbe_112年初級行動裝置程式設計師能力鑑定簡章_0926.pdf&fileno=f12a2378-c4c4-436a-b0c9-de3413a7b59a&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "iOS資料用途與保存",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-junior-3-010",
+      "certId": "mad",
+      "levelId": "junior",
+      "subjectId": "mad-junior-3",
+      "sourceKind": "original-practice",
+      "stem": "畫面計數值改變但UI未更新，應先檢查什麼？",
+      "options": {
+        "A": "Keychain是否儲存每一幀畫面",
+        "B": "是否把所有值改成strong參考",
+        "C": "是否每次都重裝App",
+        "D": "資料是否透過UI觀察的狀態機制更新"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "狀態驅動畫面需要正確的資料觀察與更新路徑，單改不可觀察變數不一定觸發更新。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-junior-3/figure-03.svg",
+          "alt": "iOS資料用途與保存。欄位依序為：資料、需求。畫面計數：變更時更新UI；登入權杖：避免明文散落一般設定或紀錄；大型可重抓圖片：可重新下載的快取。保存策略依敏感度與可重建性選擇。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Swift：自動參考計數",
+          "url": "https://docs.swift.org/latest/documentation/the-swift-programming-language/automaticreferencecounting/"
+        },
+        {
+          "title": "Apple：SwiftUI 模型資料",
+          "url": "https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app"
+        },
+        {
+          "title": "Apple：Keychain services",
+          "url": "https://developer.apple.com/documentation/security/keychain-services"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置程式開發-iOS程式設計",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=c6aaa228-6539-4626-839a-fa65c5ff5fbe_112年初級行動裝置程式設計師能力鑑定簡章_0926.pdf&fileno=f12a2378-c4c4-436a-b0c9-de3413a7b59a&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "iOS資料用途與保存",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-intermediate-1-001",
+      "certId": "mad",
+      "levelId": "intermediate",
+      "subjectId": "mad-intermediate-1",
+      "sourceKind": "original-practice",
+      "stem": "按下儲存後立即離線，如何降低記事遺失風險？",
+      "options": {
+        "A": "只等伺服器回應才保存任何資料",
+        "B": "只改UI文字表示已儲存",
+        "C": "把所有資料留在暫時區域變數",
+        "D": "先持久保存本機記事與待同步狀態"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "本機先保存可讓核心編輯在離線仍可恢復，網路同步另行追蹤。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-intermediate-1/figure-01.svg",
+          "alt": "離線記事本資料流。欄位依序為：階段、責任。UI：觀察本機資料來源；Repository：協調本機與遠端；本機資料庫：保存記事與同步狀態；同步器：上傳待送資料，再更新狀態。畫面不直接以未持久化的網路回應取代本機真實來源。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "Android：ViewModel",
+          "url": "https://developer.android.com/topic/libraries/architecture/viewmodel"
+        },
+        {
+          "title": "Android：資料庫與遷移測試",
+          "url": "https://developer.android.com/training/data-storage/room/testing-db"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置應用開發實務",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=b93bef96-8d9e-4ba9-8d62-76f949139ccf_112年中級行動裝置程式設計師能力鑑定簡章_0303.pdf&type=10"
+        }
+      ],
+      "topic": "離線記事本資料流",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-intermediate-1-002",
+      "certId": "mad",
+      "levelId": "intermediate",
+      "subjectId": "mad-intermediate-1",
+      "sourceKind": "original-practice",
+      "stem": "UI同時直接讀API與本機，兩份不同資料互相覆蓋，應優先改善什麼？",
+      "options": {
+        "A": "定義一致資料來源與Repository協調路徑",
+        "B": "增加更多互不協調的快取",
+        "C": "每次點擊就清空本機資料",
+        "D": "把所有讀取放進UI繪製迴圈"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "明確資料流可減少不一致與競態，讓UI觀察同一來源。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-intermediate-1/figure-01.svg",
+          "alt": "離線記事本資料流。欄位依序為：階段、責任。UI：觀察本機資料來源；Repository：協調本機與遠端；本機資料庫：保存記事與同步狀態；同步器：上傳待送資料，再更新狀態。畫面不直接以未持久化的網路回應取代本機真實來源。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "Android：ViewModel",
+          "url": "https://developer.android.com/topic/libraries/architecture/viewmodel"
+        },
+        {
+          "title": "Android：資料庫與遷移測試",
+          "url": "https://developer.android.com/training/data-storage/room/testing-db"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置應用開發實務",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=b93bef96-8d9e-4ba9-8d62-76f949139ccf_112年中級行動裝置程式設計師能力鑑定簡章_0303.pdf&type=10"
+        }
+      ],
+      "topic": "離線記事本資料流",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-intermediate-1-003",
+      "certId": "mad",
+      "levelId": "intermediate",
+      "subjectId": "mad-intermediate-1",
+      "sourceKind": "original-practice",
+      "stem": "伺服器上傳失敗時，本機待同步狀態應如何？",
+      "options": {
+        "A": "一律標成已同步",
+        "B": "保留可重試狀態並呈現適當回饋",
+        "C": "刪除使用者最新記事",
+        "D": "永久禁止讀取本機資料"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "資料本體與同步結果分開追蹤，可避免失敗時丟失工作。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-intermediate-1/figure-01.svg",
+          "alt": "離線記事本資料流。欄位依序為：階段、責任。UI：觀察本機資料來源；Repository：協調本機與遠端；本機資料庫：保存記事與同步狀態；同步器：上傳待送資料，再更新狀態。畫面不直接以未持久化的網路回應取代本機真實來源。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "Android：ViewModel",
+          "url": "https://developer.android.com/topic/libraries/architecture/viewmodel"
+        },
+        {
+          "title": "Android：資料庫與遷移測試",
+          "url": "https://developer.android.com/training/data-storage/room/testing-db"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置應用開發實務",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=b93bef96-8d9e-4ba9-8d62-76f949139ccf_112年中級行動裝置程式設計師能力鑑定簡章_0303.pdf&type=10"
+        }
+      ],
+      "topic": "離線記事本資料流",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-intermediate-1-004",
+      "certId": "mad",
+      "levelId": "intermediate",
+      "subjectId": "mad-intermediate-1",
+      "sourceKind": "original-practice",
+      "stem": "依API約定，B的更新應如何處理？",
+      "options": {
+        "A": "直接無條件覆蓋版本6",
+        "B": "把版本數字改成0再送",
+        "C": "回報版本衝突並重新取得或合併",
+        "D": "忽略A修改並宣稱無衝突"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "B依舊版5編輯，不能直接當成針對6的更新，需衝突策略。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-intermediate-1/figure-02.svg",
+          "alt": "兩裝置編輯同一筆記事。欄位依序為：事件、版本。初始：伺服器version=5；裝置A：以baseVersion=5送出修改，成功成為6；裝置B：仍以baseVersion=5送出另一修改。API約定：baseVersion必須等於目前版本才可更新。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "Android：ViewModel",
+          "url": "https://developer.android.com/topic/libraries/architecture/viewmodel"
+        },
+        {
+          "title": "Android：資料庫與遷移測試",
+          "url": "https://developer.android.com/training/data-storage/room/testing-db"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置應用開發實務",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=b93bef96-8d9e-4ba9-8d62-76f949139ccf_112年中級行動裝置程式設計師能力鑑定簡章_0303.pdf&type=10"
+        }
+      ],
+      "topic": "兩裝置編輯同一筆記事",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-intermediate-1-005",
+      "certId": "mad",
+      "levelId": "intermediate",
+      "subjectId": "mad-intermediate-1",
+      "sourceKind": "original-practice",
+      "stem": "只用各手機本機時鐘決定最後寫入者，有何限制？",
+      "options": {
+        "A": "所有手機時鐘必然完全同步",
+        "B": "版本檢查一定變成不必要",
+        "C": "時間戳能自動合併所有內容",
+        "D": "時鐘偏差可能導致錯誤排序"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "時間不一定可信或一致；需考慮伺服器版本、時鐘與業務合併語意。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-intermediate-1/figure-02.svg",
+          "alt": "兩裝置編輯同一筆記事。欄位依序為：事件、版本。初始：伺服器version=5；裝置A：以baseVersion=5送出修改，成功成為6；裝置B：仍以baseVersion=5送出另一修改。API約定：baseVersion必須等於目前版本才可更新。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "Android：ViewModel",
+          "url": "https://developer.android.com/topic/libraries/architecture/viewmodel"
+        },
+        {
+          "title": "Android：資料庫與遷移測試",
+          "url": "https://developer.android.com/training/data-storage/room/testing-db"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置應用開發實務",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=b93bef96-8d9e-4ba9-8d62-76f949139ccf_112年中級行動裝置程式設計師能力鑑定簡章_0303.pdf&type=10"
+        }
+      ],
+      "topic": "兩裝置編輯同一筆記事",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-intermediate-1-006",
+      "certId": "mad",
+      "levelId": "intermediate",
+      "subjectId": "mad-intermediate-1",
+      "sourceKind": "original-practice",
+      "stem": "若兩人修改不同欄位，合併時仍應確認什麼？",
+      "options": {
+        "A": "欄位間業務約束與共同基準版本",
+        "B": "只要欄名不同就永遠可安全合併",
+        "C": "必須刪除其中一位帳號",
+        "D": "所有欄位都轉成整數即可"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "不同欄位也可能有相依約束，合併不能只看字面位置。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-intermediate-1/figure-02.svg",
+          "alt": "兩裝置編輯同一筆記事。欄位依序為：事件、版本。初始：伺服器version=5；裝置A：以baseVersion=5送出修改，成功成為6；裝置B：仍以baseVersion=5送出另一修改。API約定：baseVersion必須等於目前版本才可更新。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "Android：ViewModel",
+          "url": "https://developer.android.com/topic/libraries/architecture/viewmodel"
+        },
+        {
+          "title": "Android：資料庫與遷移測試",
+          "url": "https://developer.android.com/training/data-storage/room/testing-db"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置應用開發實務",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=b93bef96-8d9e-4ba9-8d62-76f949139ccf_112年中級行動裝置程式設計師能力鑑定簡章_0303.pdf&type=10"
+        }
+      ],
+      "topic": "兩裝置編輯同一筆記事",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-intermediate-1-007",
+      "certId": "mad",
+      "levelId": "intermediate",
+      "subjectId": "mad-intermediate-1",
+      "sourceKind": "original-practice",
+      "stem": "t3收到R1時，正確的UI更新策略是？",
+      "options": {
+        "A": "無條件顯示最後抵達的回應",
+        "B": "驗證請求仍對應最新查詢，否則忽略",
+        "C": "把R1和R2字串直接拼接",
+        "D": "把目前輸入改回「台」"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "回應抵達順序不等於使用者意圖順序，可用request token等檢查。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-intermediate-1/figure-03.svg",
+          "alt": "清單搜尋請求競態。欄位依序為：時間、事件。t0：搜尋「台」，請求R1；t1：搜尋「台中」，請求R2；t2：R2先回傳台中結果；t3：R1較晚回傳台結果。畫面應保持使用者最新查詢「台中」的結果。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "Android：ViewModel",
+          "url": "https://developer.android.com/topic/libraries/architecture/viewmodel"
+        },
+        {
+          "title": "Android：資料庫與遷移測試",
+          "url": "https://developer.android.com/training/data-storage/room/testing-db"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置應用開發實務",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=b93bef96-8d9e-4ba9-8d62-76f949139ccf_112年中級行動裝置程式設計師能力鑑定簡章_0303.pdf&type=10"
+        }
+      ],
+      "topic": "清單搜尋請求競態",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-intermediate-1-008",
+      "certId": "mad",
+      "levelId": "intermediate",
+      "subjectId": "mad-intermediate-1",
+      "sourceKind": "original-practice",
+      "stem": "取消舊請求後仍檢查回應身分，主要理由為何？",
+      "options": {
+        "A": "取消一定會刪除全部伺服器資料",
+        "B": "所有網路請求不能取消",
+        "C": "取消可能與完成競爭，需防止過期結果更新",
+        "D": "回應身分僅用於文字排版"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "取消與應用結果兩道防線可避免競態造成舊資料覆蓋。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-intermediate-1/figure-03.svg",
+          "alt": "清單搜尋請求競態。欄位依序為：時間、事件。t0：搜尋「台」，請求R1；t1：搜尋「台中」，請求R2；t2：R2先回傳台中結果；t3：R1較晚回傳台結果。畫面應保持使用者最新查詢「台中」的結果。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "Android：ViewModel",
+          "url": "https://developer.android.com/topic/libraries/architecture/viewmodel"
+        },
+        {
+          "title": "Android：資料庫與遷移測試",
+          "url": "https://developer.android.com/training/data-storage/room/testing-db"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置應用開發實務",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=b93bef96-8d9e-4ba9-8d62-76f949139ccf_112年中級行動裝置程式設計師能力鑑定簡章_0303.pdf&type=10"
+        }
+      ],
+      "topic": "清單搜尋請求競態",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-intermediate-1-009",
+      "certId": "mad",
+      "levelId": "intermediate",
+      "subjectId": "mad-intermediate-1",
+      "sourceKind": "original-practice",
+      "stem": "哪種測試最能重現圖中問題？",
+      "options": {
+        "A": "只測單次查詢成功",
+        "B": "只測沒有網路的初始畫面",
+        "C": "只測輸入框最大字數",
+        "D": "控制假API讓較舊請求晚於新請求完成"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "可控制完成順序的測試能確定驗證過期回應是否被忽略。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-intermediate-1/figure-03.svg",
+          "alt": "清單搜尋請求競態。欄位依序為：時間、事件。t0：搜尋「台」，請求R1；t1：搜尋「台中」，請求R2；t2：R2先回傳台中結果；t3：R1較晚回傳台結果。畫面應保持使用者最新查詢「台中」的結果。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "Android：ViewModel",
+          "url": "https://developer.android.com/topic/libraries/architecture/viewmodel"
+        },
+        {
+          "title": "Android：資料庫與遷移測試",
+          "url": "https://developer.android.com/training/data-storage/room/testing-db"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置應用開發實務",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=b93bef96-8d9e-4ba9-8d62-76f949139ccf_112年中級行動裝置程式設計師能力鑑定簡章_0303.pdf&type=10"
+        }
+      ],
+      "topic": "清單搜尋請求競態",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-intermediate-1-010",
+      "certId": "mad",
+      "levelId": "intermediate",
+      "subjectId": "mad-intermediate-1",
+      "sourceKind": "original-practice",
+      "stem": "防止舊結果覆蓋後，仍應測試哪個相關情境？",
+      "options": {
+        "A": "離開畫面後請求完成不應更新已失效畫面",
+        "B": "所有請求都必須依字母排序",
+        "C": "把請求結果永久寫入程式碼",
+        "D": "禁止使用者刪除搜尋字串"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "請求生命週期也須與畫面有效狀態協調，避免離開後更新錯誤目標。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-intermediate-1/figure-03.svg",
+          "alt": "清單搜尋請求競態。欄位依序為：時間、事件。t0：搜尋「台」，請求R1；t1：搜尋「台中」，請求R2；t2：R2先回傳台中結果；t3：R1較晚回傳台結果。畫面應保持使用者最新查詢「台中」的結果。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "Android：ViewModel",
+          "url": "https://developer.android.com/topic/libraries/architecture/viewmodel"
+        },
+        {
+          "title": "Android：資料庫與遷移測試",
+          "url": "https://developer.android.com/training/data-storage/room/testing-db"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置應用開發實務",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=b93bef96-8d9e-4ba9-8d62-76f949139ccf_112年中級行動裝置程式設計師能力鑑定簡章_0303.pdf&type=10"
+        }
+      ],
+      "topic": "清單搜尋請求競態",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-intermediate-2-001",
+      "certId": "mad",
+      "levelId": "intermediate",
+      "subjectId": "mad-intermediate-2",
+      "sourceKind": "original-practice",
+      "stem": "驗證v1升v2遷移最重要的測試資料是？",
+      "options": {
+        "A": "包含舊版既有任務且檢查升級後保留",
+        "B": "只測全新空資料庫建立",
+        "C": "只測最新版空資料表的SELECT",
+        "D": "只檢查版本號字串變大"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "新安裝通過不代表舊資料可升級，需實際建立舊結構與資料驗證。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-intermediate-2/figure-01.svg",
+          "alt": "Room資料表升級案例。欄位依序為：版本、資料結構。v1：Task(id, title)；v2：Task(id, title, done)；既有資料要求：原id與title保留；done預設false。此題為實作準備，需撰寫並驗證遷移；不是官方實作題。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Android：Room 資料持久化",
+          "url": "https://developer.android.com/training/data-storage/room"
+        },
+        {
+          "title": "Android：資料庫與遷移測試",
+          "url": "https://developer.android.com/training/data-storage/room/testing-db"
+        },
+        {
+          "title": "Android：持續性背景工作",
+          "url": "https://developer.android.com/develop/background-work/background-tasks/persistent"
+        },
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置程式設計實作-Android開發實務",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=b93bef96-8d9e-4ba9-8d62-76f949139ccf_112年中級行動裝置程式設計師能力鑑定簡章_0303.pdf&type=10"
+        }
+      ],
+      "topic": "Room資料表升級案例",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-intermediate-2-002",
+      "certId": "mad",
+      "levelId": "intermediate",
+      "subjectId": "mad-intermediate-2",
+      "sourceKind": "original-practice",
+      "stem": "直接刪除舊資料表再建立v2，與題目要求有何衝突？",
+      "options": {
+        "A": "必然讓done值全部為true",
+        "B": "會失去原id與title資料",
+        "C": "會自動保留全部舊資料",
+        "D": "只會改變索引不影響資料"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "題目明確要求保留既有任務，破壞性重建不符合需求。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-intermediate-2/figure-01.svg",
+          "alt": "Room資料表升級案例。欄位依序為：版本、資料結構。v1：Task(id, title)；v2：Task(id, title, done)；既有資料要求：原id與title保留；done預設false。此題為實作準備，需撰寫並驗證遷移；不是官方實作題。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Android：Room 資料持久化",
+          "url": "https://developer.android.com/training/data-storage/room"
+        },
+        {
+          "title": "Android：資料庫與遷移測試",
+          "url": "https://developer.android.com/training/data-storage/room/testing-db"
+        },
+        {
+          "title": "Android：持續性背景工作",
+          "url": "https://developer.android.com/develop/background-work/background-tasks/persistent"
+        },
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置程式設計實作-Android開發實務",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=b93bef96-8d9e-4ba9-8d62-76f949139ccf_112年中級行動裝置程式設計師能力鑑定簡章_0303.pdf&type=10"
+        }
+      ],
+      "topic": "Room資料表升級案例",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-intermediate-2-003",
+      "certId": "mad",
+      "levelId": "intermediate",
+      "subjectId": "mad-intermediate-2",
+      "sourceKind": "original-practice",
+      "stem": "新增done欄位後，既有列的初值應符合哪項？",
+      "options": {
+        "A": "隨機true或false",
+        "B": "使用title字串作布林值",
+        "C": "false，並在遷移與schema定義保持一致",
+        "D": "留成未定義且忽略驗證"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "遷移結果需符合欄位預設與非空等結構約束。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-intermediate-2/figure-01.svg",
+          "alt": "Room資料表升級案例。欄位依序為：版本、資料結構。v1：Task(id, title)；v2：Task(id, title, done)；既有資料要求：原id與title保留；done預設false。此題為實作準備，需撰寫並驗證遷移；不是官方實作題。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Android：Room 資料持久化",
+          "url": "https://developer.android.com/training/data-storage/room"
+        },
+        {
+          "title": "Android：資料庫與遷移測試",
+          "url": "https://developer.android.com/training/data-storage/room/testing-db"
+        },
+        {
+          "title": "Android：持續性背景工作",
+          "url": "https://developer.android.com/develop/background-work/background-tasks/persistent"
+        },
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置程式設計實作-Android開發實務",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=b93bef96-8d9e-4ba9-8d62-76f949139ccf_112年中級行動裝置程式設計師能力鑑定簡章_0303.pdf&type=10"
+        }
+      ],
+      "topic": "Room資料表升級案例",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-intermediate-2-004",
+      "certId": "mad",
+      "levelId": "intermediate",
+      "subjectId": "mad-intermediate-2",
+      "sourceKind": "original-practice",
+      "stem": "此種需可靠安排的延後上傳，適合考慮哪個Android機制？",
+      "options": {
+        "A": "每個畫面重繪都開新永久Thread",
+        "B": "只依onDestroy保證上傳",
+        "C": "用無限while迴圈等網路",
+        "D": "WorkManager持續性工作"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "WorkManager適用可延後且需持續安排的工作，具體執行仍受限制與政策影響。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-intermediate-2/figure-02.svg",
+          "alt": "背景上傳與重試。欄位依序為：參數、設定。工作：上傳已保存的附件；限制：需要網路可用；相同附件：使用固定operationId；暫時錯誤：依政策退避重試。網路可用不代表每次API都成功。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Android：Room 資料持久化",
+          "url": "https://developer.android.com/training/data-storage/room"
+        },
+        {
+          "title": "Android：資料庫與遷移測試",
+          "url": "https://developer.android.com/training/data-storage/room/testing-db"
+        },
+        {
+          "title": "Android：持續性背景工作",
+          "url": "https://developer.android.com/develop/background-work/background-tasks/persistent"
+        },
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置程式設計實作-Android開發實務",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=b93bef96-8d9e-4ba9-8d62-76f949139ccf_112年中級行動裝置程式設計師能力鑑定簡章_0303.pdf&type=10"
+        }
+      ],
+      "topic": "背景上傳與重試",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-intermediate-2-005",
+      "certId": "mad",
+      "levelId": "intermediate",
+      "subjectId": "mad-intermediate-2",
+      "sourceKind": "original-practice",
+      "stem": "同operationId重試時，伺服器應配合什麼設計？",
+      "options": {
+        "A": "辨識重複操作並維持冪等結果",
+        "B": "每次都建立新的附件紀錄",
+        "C": "只依手機時間猜測是否重複",
+        "D": "無條件忽略所有相同檔名"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "固定操作鍵配合伺服器去重，可避免重試造成多份資料。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-intermediate-2/figure-02.svg",
+          "alt": "背景上傳與重試。欄位依序為：參數、設定。工作：上傳已保存的附件；限制：需要網路可用；相同附件：使用固定operationId；暫時錯誤：依政策退避重試。網路可用不代表每次API都成功。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Android：Room 資料持久化",
+          "url": "https://developer.android.com/training/data-storage/room"
+        },
+        {
+          "title": "Android：資料庫與遷移測試",
+          "url": "https://developer.android.com/training/data-storage/room/testing-db"
+        },
+        {
+          "title": "Android：持續性背景工作",
+          "url": "https://developer.android.com/develop/background-work/background-tasks/persistent"
+        },
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置程式設計實作-Android開發實務",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=b93bef96-8d9e-4ba9-8d62-76f949139ccf_112年中級行動裝置程式設計師能力鑑定簡章_0303.pdf&type=10"
+        }
+      ],
+      "topic": "背景上傳與重試",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-intermediate-2-006",
+      "certId": "mad",
+      "levelId": "intermediate",
+      "subjectId": "mad-intermediate-2",
+      "sourceKind": "original-practice",
+      "stem": "登入權杖失效而回401，最適當的處理是？",
+      "options": {
+        "A": "每毫秒用同一失效權杖重送",
+        "B": "進入認證恢復流程，避免無限同條件重試",
+        "C": "把錯誤當成功並刪除附件",
+        "D": "只延長逾時而不更新憑證"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "認證失敗與暫時斷網不同，需取得有效憑證或讓使用者重新登入。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-intermediate-2/figure-02.svg",
+          "alt": "背景上傳與重試。欄位依序為：參數、設定。工作：上傳已保存的附件；限制：需要網路可用；相同附件：使用固定operationId；暫時錯誤：依政策退避重試。網路可用不代表每次API都成功。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Android：Room 資料持久化",
+          "url": "https://developer.android.com/training/data-storage/room"
+        },
+        {
+          "title": "Android：資料庫與遷移測試",
+          "url": "https://developer.android.com/training/data-storage/room/testing-db"
+        },
+        {
+          "title": "Android：持續性背景工作",
+          "url": "https://developer.android.com/develop/background-work/background-tasks/persistent"
+        },
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置程式設計實作-Android開發實務",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=b93bef96-8d9e-4ba9-8d62-76f949139ccf_112年中級行動裝置程式設計師能力鑑定簡章_0303.pdf&type=10"
+        }
+      ],
+      "topic": "背景上傳與重試",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-intermediate-2-007",
+      "certId": "mad",
+      "levelId": "intermediate",
+      "subjectId": "mad-intermediate-2",
+      "sourceKind": "original-practice",
+      "stem": "依圖中SQL，回傳id順序為何？",
+      "options": {
+        "A": "1, 3",
+        "B": "2",
+        "C": "3, 1",
+        "D": "1, 2, 3"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "done=0篩出1與3，DESC由大到小排列。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-intermediate-2/figure-03.svg",
+          "alt": "DAO查詢練習資料。欄位依序為：id、title／done。1：寫報告／false；2：寄信／true；3：備份／false。SQL：SELECT id FROM Task WHERE done = 0 ORDER BY id DESC。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Android：Room 資料持久化",
+          "url": "https://developer.android.com/training/data-storage/room"
+        },
+        {
+          "title": "Android：資料庫與遷移測試",
+          "url": "https://developer.android.com/training/data-storage/room/testing-db"
+        },
+        {
+          "title": "Android：持續性背景工作",
+          "url": "https://developer.android.com/develop/background-work/background-tasks/persistent"
+        },
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置程式設計實作-Android開發實務",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=b93bef96-8d9e-4ba9-8d62-76f949139ccf_112年中級行動裝置程式設計師能力鑑定簡章_0303.pdf&type=10"
+        }
+      ],
+      "topic": "DAO查詢練習資料",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-intermediate-2-008",
+      "certId": "mad",
+      "levelId": "intermediate",
+      "subjectId": "mad-intermediate-2",
+      "sourceKind": "original-practice",
+      "stem": "若移除ORDER BY，能否依賴固定回傳順序？",
+      "options": {
+        "A": "能，一定依插入時間遞增",
+        "B": "能，一定依id遞減",
+        "C": "能，必定與UI最後顯示相同",
+        "D": "不能，未指定排序不保證業務順序"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "需要穩定順序時應明確指定排序與必要的平手規則。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-intermediate-2/figure-03.svg",
+          "alt": "DAO查詢練習資料。欄位依序為：id、title／done。1：寫報告／false；2：寄信／true；3：備份／false。SQL：SELECT id FROM Task WHERE done = 0 ORDER BY id DESC。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Android：Room 資料持久化",
+          "url": "https://developer.android.com/training/data-storage/room"
+        },
+        {
+          "title": "Android：資料庫與遷移測試",
+          "url": "https://developer.android.com/training/data-storage/room/testing-db"
+        },
+        {
+          "title": "Android：持續性背景工作",
+          "url": "https://developer.android.com/develop/background-work/background-tasks/persistent"
+        },
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置程式設計實作-Android開發實務",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=b93bef96-8d9e-4ba9-8d62-76f949139ccf_112年中級行動裝置程式設計師能力鑑定簡章_0303.pdf&type=10"
+        }
+      ],
+      "topic": "DAO查詢練習資料",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-intermediate-2-009",
+      "certId": "mad",
+      "levelId": "intermediate",
+      "subjectId": "mad-intermediate-2",
+      "sourceKind": "original-practice",
+      "stem": "將使用者文字直接拼接進SQL字串，應改進為何？",
+      "options": {
+        "A": "使用參數綁定",
+        "B": "只刪除所有中文字",
+        "C": "只把文字轉大寫",
+        "D": "關閉WHERE條件"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "參數綁定區分資料與SQL結構，也能正確處理引號等特殊字元。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-intermediate-2/figure-03.svg",
+          "alt": "DAO查詢練習資料。欄位依序為：id、title／done。1：寫報告／false；2：寄信／true；3：備份／false。SQL：SELECT id FROM Task WHERE done = 0 ORDER BY id DESC。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Android：Room 資料持久化",
+          "url": "https://developer.android.com/training/data-storage/room"
+        },
+        {
+          "title": "Android：資料庫與遷移測試",
+          "url": "https://developer.android.com/training/data-storage/room/testing-db"
+        },
+        {
+          "title": "Android：持續性背景工作",
+          "url": "https://developer.android.com/develop/background-work/background-tasks/persistent"
+        },
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置程式設計實作-Android開發實務",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=b93bef96-8d9e-4ba9-8d62-76f949139ccf_112年中級行動裝置程式設計師能力鑑定簡章_0303.pdf&type=10"
+        }
+      ],
+      "topic": "DAO查詢練習資料",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-intermediate-2-010",
+      "certId": "mad",
+      "levelId": "intermediate",
+      "subjectId": "mad-intermediate-2",
+      "sourceKind": "original-practice",
+      "stem": "一次更新兩筆任務必須全部成功或全部失敗，應採用什麼？",
+      "options": {
+        "A": "兩次獨立寫入且不處理失敗",
+        "B": "資料庫交易",
+        "C": "先更新UI再假定成功",
+        "D": "把兩個id拼成新字串"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "交易提供所需的原子性，避免部分更新造成不一致。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-intermediate-2/figure-03.svg",
+          "alt": "DAO查詢練習資料。欄位依序為：id、title／done。1：寫報告／false；2：寄信／true；3：備份／false。SQL：SELECT id FROM Task WHERE done = 0 ORDER BY id DESC。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Android：Room 資料持久化",
+          "url": "https://developer.android.com/training/data-storage/room"
+        },
+        {
+          "title": "Android：資料庫與遷移測試",
+          "url": "https://developer.android.com/training/data-storage/room/testing-db"
+        },
+        {
+          "title": "Android：持續性背景工作",
+          "url": "https://developer.android.com/develop/background-work/background-tasks/persistent"
+        },
+        {
+          "title": "Android：離線優先資料層",
+          "url": "https://developer.android.com/topic/architecture/data-layer/offline-first"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置程式設計實作-Android開發實務",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=b93bef96-8d9e-4ba9-8d62-76f949139ccf_112年中級行動裝置程式設計師能力鑑定簡章_0303.pdf&type=10"
+        }
+      ],
+      "topic": "DAO查詢練習資料",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-intermediate-3-001",
+      "certId": "mad",
+      "levelId": "intermediate",
+      "subjectId": "mad-intermediate-3",
+      "sourceKind": "original-practice",
+      "stem": "對Task A呼叫cancel後，哪個敘述正確？",
+      "options": {
+        "A": "A所有指令必定瞬間停止",
+        "B": "A的工作需合作檢查取消狀態或處理取消",
+        "C": "A的伺服器副作用一定自動復原",
+        "D": "A必定變成新的Task B"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "Swift取消是合作式；不可假定任意工作會立刻中止或回滾外部操作。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-intermediate-3/figure-01.svg",
+          "alt": "搜尋任務與取消。欄位依序為：時間、事件。t0：Task A開始搜尋「高」；t1：使用者改搜「高雄」，Task B開始；t2：要求取消A；t3：A內部仍需檢查取消或處理拋錯。Swift任務取消採合作式；單純設定取消不等於所有工作立即終止。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Swift：並行處理與任務取消",
+          "url": "https://docs.swift.org/latest/documentation/the-swift-programming-language/concurrency/"
+        },
+        {
+          "title": "Swift：自動參考計數",
+          "url": "https://docs.swift.org/latest/documentation/the-swift-programming-language/automaticreferencecounting/"
+        },
+        {
+          "title": "Apple：SwiftUI 模型資料",
+          "url": "https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app"
+        },
+        {
+          "title": "Apple：Keychain services",
+          "url": "https://developer.apple.com/documentation/security/keychain-services"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置程式設計實作-iOS開發實務",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=b93bef96-8d9e-4ba9-8d62-76f949139ccf_112年中級行動裝置程式設計師能力鑑定簡章_0303.pdf&type=10"
+        }
+      ],
+      "topic": "搜尋任務與取消",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-intermediate-3-002",
+      "certId": "mad",
+      "levelId": "intermediate",
+      "subjectId": "mad-intermediate-3",
+      "sourceKind": "original-practice",
+      "stem": "A比B晚回傳時，除了取消還應檢查什麼？",
+      "options": {
+        "A": "回應字串是否比B長",
+        "B": "A是否先被建立就有永久優先權",
+        "C": "結果是否仍屬於目前搜尋世代",
+        "D": "A的HTTP標頭是否按字母排序"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "請求或世代識別可防過期結果覆蓋新查詢。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-intermediate-3/figure-01.svg",
+          "alt": "搜尋任務與取消。欄位依序為：時間、事件。t0：Task A開始搜尋「高」；t1：使用者改搜「高雄」，Task B開始；t2：要求取消A；t3：A內部仍需檢查取消或處理拋錯。Swift任務取消採合作式；單純設定取消不等於所有工作立即終止。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Swift：並行處理與任務取消",
+          "url": "https://docs.swift.org/latest/documentation/the-swift-programming-language/concurrency/"
+        },
+        {
+          "title": "Swift：自動參考計數",
+          "url": "https://docs.swift.org/latest/documentation/the-swift-programming-language/automaticreferencecounting/"
+        },
+        {
+          "title": "Apple：SwiftUI 模型資料",
+          "url": "https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app"
+        },
+        {
+          "title": "Apple：Keychain services",
+          "url": "https://developer.apple.com/documentation/security/keychain-services"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置程式設計實作-iOS開發實務",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=b93bef96-8d9e-4ba9-8d62-76f949139ccf_112年中級行動裝置程式設計師能力鑑定簡章_0303.pdf&type=10"
+        }
+      ],
+      "topic": "搜尋任務與取消",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-intermediate-3-003",
+      "certId": "mad",
+      "levelId": "intermediate",
+      "subjectId": "mad-intermediate-3",
+      "sourceKind": "original-practice",
+      "stem": "離開搜尋畫面後，非必要搜尋工作應如何管理？",
+      "options": {
+        "A": "繼續更新已失效的畫面狀態",
+        "B": "強制重新開啟舊畫面",
+        "C": "保存所有Task到永久全域陣列",
+        "D": "與畫面生命週期協調取消並忽略過期結果"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "畫面工作應有明確所有權與有效期間，避免不必要資源消耗及錯誤更新。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-intermediate-3/figure-01.svg",
+          "alt": "搜尋任務與取消。欄位依序為：時間、事件。t0：Task A開始搜尋「高」；t1：使用者改搜「高雄」，Task B開始；t2：要求取消A；t3：A內部仍需檢查取消或處理拋錯。Swift任務取消採合作式；單純設定取消不等於所有工作立即終止。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Swift：並行處理與任務取消",
+          "url": "https://docs.swift.org/latest/documentation/the-swift-programming-language/concurrency/"
+        },
+        {
+          "title": "Swift：自動參考計數",
+          "url": "https://docs.swift.org/latest/documentation/the-swift-programming-language/automaticreferencecounting/"
+        },
+        {
+          "title": "Apple：SwiftUI 模型資料",
+          "url": "https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app"
+        },
+        {
+          "title": "Apple：Keychain services",
+          "url": "https://developer.apple.com/documentation/security/keychain-services"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置程式設計實作-iOS開發實務",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=b93bef96-8d9e-4ba9-8d62-76f949139ccf_112年中級行動裝置程式設計師能力鑑定簡章_0303.pdf&type=10"
+        }
+      ],
+      "topic": "搜尋任務與取消",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-intermediate-3-004",
+      "certId": "mad",
+      "levelId": "intermediate",
+      "subjectId": "mad-intermediate-3",
+      "sourceKind": "original-practice",
+      "stem": "在MainActor上取得回應後執行數秒同步解析，可能導致什麼？",
+      "options": {
+        "A": "UI回應受阻",
+        "B": "所有解析自動平行到背景",
+        "C": "必定形成強參考循環",
+        "D": "Keychain資料自動過期"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "actor隔離不會把耗時同步工作變成免費；需安排合適執行位置。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-intermediate-3/figure-02.svg",
+          "alt": "更新畫面狀態的邊界。欄位依序為：步驟、安排。網路等待：非同步等待回應；CPU密集解析：避免長時間占用UI執行環境；更新可觀察UI狀態：遵循MainActor隔離。await不代表所有後續CPU工作會自動移到背景。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Swift：並行處理與任務取消",
+          "url": "https://docs.swift.org/latest/documentation/the-swift-programming-language/concurrency/"
+        },
+        {
+          "title": "Swift：自動參考計數",
+          "url": "https://docs.swift.org/latest/documentation/the-swift-programming-language/automaticreferencecounting/"
+        },
+        {
+          "title": "Apple：SwiftUI 模型資料",
+          "url": "https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app"
+        },
+        {
+          "title": "Apple：Keychain services",
+          "url": "https://developer.apple.com/documentation/security/keychain-services"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置程式設計實作-iOS開發實務",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=b93bef96-8d9e-4ba9-8d62-76f949139ccf_112年中級行動裝置程式設計師能力鑑定簡章_0303.pdf&type=10"
+        }
+      ],
+      "topic": "更新畫面狀態的邊界",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-intermediate-3-005",
+      "certId": "mad",
+      "levelId": "intermediate",
+      "subjectId": "mad-intermediate-3",
+      "sourceKind": "original-practice",
+      "stem": "UI狀態由MainActor管理時，背景工作完成後應如何更新？",
+      "options": {
+        "A": "任意從所有執行緒同時寫入",
+        "B": "遵循MainActor隔離切回合適更新邊界",
+        "C": "用sleep取代隔離",
+        "D": "只依變數名稱判定安全"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "隔離邊界協調對狀態的存取，不能靠延遲或命名避免競態。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-intermediate-3/figure-02.svg",
+          "alt": "更新畫面狀態的邊界。欄位依序為：步驟、安排。網路等待：非同步等待回應；CPU密集解析：避免長時間占用UI執行環境；更新可觀察UI狀態：遵循MainActor隔離。await不代表所有後續CPU工作會自動移到背景。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Swift：並行處理與任務取消",
+          "url": "https://docs.swift.org/latest/documentation/the-swift-programming-language/concurrency/"
+        },
+        {
+          "title": "Swift：自動參考計數",
+          "url": "https://docs.swift.org/latest/documentation/the-swift-programming-language/automaticreferencecounting/"
+        },
+        {
+          "title": "Apple：SwiftUI 模型資料",
+          "url": "https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app"
+        },
+        {
+          "title": "Apple：Keychain services",
+          "url": "https://developer.apple.com/documentation/security/keychain-services"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置程式設計實作-iOS開發實務",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=b93bef96-8d9e-4ba9-8d62-76f949139ccf_112年中級行動裝置程式設計師能力鑑定簡章_0303.pdf&type=10"
+        }
+      ],
+      "topic": "更新畫面狀態的邊界",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-intermediate-3-006",
+      "certId": "mad",
+      "levelId": "intermediate",
+      "subjectId": "mad-intermediate-3",
+      "sourceKind": "original-practice",
+      "stem": "單看到函式含await，能否判定其中全部工作都不會阻塞UI？",
+      "options": {
+        "A": "能，await保證所有CPU工作都在背景",
+        "B": "能，await自動將所有迴圈切成多核心",
+        "C": "不能，仍需檢查同步區段與隔離位置",
+        "D": "不能，因await只用於資料庫"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "await表示可能暫停的點，不是整個函式的背景執行保證。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-intermediate-3/figure-02.svg",
+          "alt": "更新畫面狀態的邊界。欄位依序為：步驟、安排。網路等待：非同步等待回應；CPU密集解析：避免長時間占用UI執行環境；更新可觀察UI狀態：遵循MainActor隔離。await不代表所有後續CPU工作會自動移到背景。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Swift：並行處理與任務取消",
+          "url": "https://docs.swift.org/latest/documentation/the-swift-programming-language/concurrency/"
+        },
+        {
+          "title": "Swift：自動參考計數",
+          "url": "https://docs.swift.org/latest/documentation/the-swift-programming-language/automaticreferencecounting/"
+        },
+        {
+          "title": "Apple：SwiftUI 模型資料",
+          "url": "https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app"
+        },
+        {
+          "title": "Apple：Keychain services",
+          "url": "https://developer.apple.com/documentation/security/keychain-services"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置程式設計實作-iOS開發實務",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=b93bef96-8d9e-4ba9-8d62-76f949139ccf_112年中級行動裝置程式設計師能力鑑定簡章_0303.pdf&type=10"
+        }
+      ],
+      "topic": "更新畫面狀態的邊界",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-intermediate-3-007",
+      "certId": "mad",
+      "levelId": "intermediate",
+      "subjectId": "mad-intermediate-3",
+      "sourceKind": "original-practice",
+      "stem": "以假登入服務回傳取消，應驗證什麼？",
+      "options": {
+        "A": "仍強制進主畫面",
+        "B": "自動製造一個權杖",
+        "C": "將取消一律當密碼正確",
+        "D": "不誤顯示成功且不保存有效登入狀態"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "取消是獨立結果，成功副作用不應執行。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-intermediate-3/figure-03.svg",
+          "alt": "登入流程測試案例。欄位依序為：案例、預期。成功：安全保存有效權杖並進入主畫面；使用者取消：停止流程且不顯示成功；權杖到期：處理重新認證；權杖更新失敗：保留可理解錯誤與重試路徑。測試需以可替換服務控制結果，不將真實權杖寫入日誌。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Swift：並行處理與任務取消",
+          "url": "https://docs.swift.org/latest/documentation/the-swift-programming-language/concurrency/"
+        },
+        {
+          "title": "Swift：自動參考計數",
+          "url": "https://docs.swift.org/latest/documentation/the-swift-programming-language/automaticreferencecounting/"
+        },
+        {
+          "title": "Apple：SwiftUI 模型資料",
+          "url": "https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app"
+        },
+        {
+          "title": "Apple：Keychain services",
+          "url": "https://developer.apple.com/documentation/security/keychain-services"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置程式設計實作-iOS開發實務",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=b93bef96-8d9e-4ba9-8d62-76f949139ccf_112年中級行動裝置程式設計師能力鑑定簡章_0303.pdf&type=10"
+        }
+      ],
+      "topic": "登入流程測試案例",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-intermediate-3-008",
+      "certId": "mad",
+      "levelId": "intermediate",
+      "subjectId": "mad-intermediate-3",
+      "sourceKind": "original-practice",
+      "stem": "除錯日誌直接列出完整權杖，有何問題？",
+      "options": {
+        "A": "洩漏可用認證秘密",
+        "B": "只是增加圖片快取大小",
+        "C": "能取代Keychain保存",
+        "D": "會自動延長權杖效期"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "日誌可能流向支援或分析系統，應遮蔽敏感憑證。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-intermediate-3/figure-03.svg",
+          "alt": "登入流程測試案例。欄位依序為：案例、預期。成功：安全保存有效權杖並進入主畫面；使用者取消：停止流程且不顯示成功；權杖到期：處理重新認證；權杖更新失敗：保留可理解錯誤與重試路徑。測試需以可替換服務控制結果，不將真實權杖寫入日誌。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Swift：並行處理與任務取消",
+          "url": "https://docs.swift.org/latest/documentation/the-swift-programming-language/concurrency/"
+        },
+        {
+          "title": "Swift：自動參考計數",
+          "url": "https://docs.swift.org/latest/documentation/the-swift-programming-language/automaticreferencecounting/"
+        },
+        {
+          "title": "Apple：SwiftUI 模型資料",
+          "url": "https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app"
+        },
+        {
+          "title": "Apple：Keychain services",
+          "url": "https://developer.apple.com/documentation/security/keychain-services"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置程式設計實作-iOS開發實務",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=b93bef96-8d9e-4ba9-8d62-76f949139ccf_112年中級行動裝置程式設計師能力鑑定簡章_0303.pdf&type=10"
+        }
+      ],
+      "topic": "登入流程測試案例",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-intermediate-3-009",
+      "certId": "mad",
+      "levelId": "intermediate",
+      "subjectId": "mad-intermediate-3",
+      "sourceKind": "original-practice",
+      "stem": "測試權杖到期處理，不應依賴哪種方式？",
+      "options": {
+        "A": "注入可控制時間或過期回應",
+        "B": "讓每次測試都等待真實長效權杖自然過期",
+        "C": "以假服務回傳認證錯誤",
+        "D": "斷言不會無限重試"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "可控制時間與服務讓測試可重複且快速，避免脆弱的真實等待。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-intermediate-3/figure-03.svg",
+          "alt": "登入流程測試案例。欄位依序為：案例、預期。成功：安全保存有效權杖並進入主畫面；使用者取消：停止流程且不顯示成功；權杖到期：處理重新認證；權杖更新失敗：保留可理解錯誤與重試路徑。測試需以可替換服務控制結果，不將真實權杖寫入日誌。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Swift：並行處理與任務取消",
+          "url": "https://docs.swift.org/latest/documentation/the-swift-programming-language/concurrency/"
+        },
+        {
+          "title": "Swift：自動參考計數",
+          "url": "https://docs.swift.org/latest/documentation/the-swift-programming-language/automaticreferencecounting/"
+        },
+        {
+          "title": "Apple：SwiftUI 模型資料",
+          "url": "https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app"
+        },
+        {
+          "title": "Apple：Keychain services",
+          "url": "https://developer.apple.com/documentation/security/keychain-services"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置程式設計實作-iOS開發實務",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=b93bef96-8d9e-4ba9-8d62-76f949139ccf_112年中級行動裝置程式設計師能力鑑定簡章_0303.pdf&type=10"
+        }
+      ],
+      "topic": "登入流程測試案例",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-mad-intermediate-3-010",
+      "certId": "mad",
+      "levelId": "intermediate",
+      "subjectId": "mad-intermediate-3",
+      "sourceKind": "original-practice",
+      "stem": "儲存權杖失敗但UI已宣告登入成功，應修正哪個一致性問題？",
+      "options": {
+        "A": "只把儲存錯誤轉成一般成功回應",
+        "B": "把所有失敗忽略即可",
+        "C": "將必要儲存結果納入成功狀態判定",
+        "D": "只重試導覽而不確認儲存狀態"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "若後續流程依賴持久憑證，狀態轉移需處理儲存成功與失敗。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mad-intermediate-3/figure-03.svg",
+          "alt": "登入流程測試案例。欄位依序為：案例、預期。成功：安全保存有效權杖並進入主畫面；使用者取消：停止流程且不顯示成功；權杖到期：處理重新認證；權杖更新失敗：保留可理解錯誤與重試路徑。測試需以可替換服務控制結果，不將真實權杖寫入日誌。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Swift：並行處理與任務取消",
+          "url": "https://docs.swift.org/latest/documentation/the-swift-programming-language/concurrency/"
+        },
+        {
+          "title": "Swift：自動參考計數",
+          "url": "https://docs.swift.org/latest/documentation/the-swift-programming-language/automaticreferencecounting/"
+        },
+        {
+          "title": "Apple：SwiftUI 模型資料",
+          "url": "https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app"
+        },
+        {
+          "title": "Apple：Keychain services",
+          "url": "https://developer.apple.com/documentation/security/keychain-services"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動裝置程式設計實作-iOS開發實務",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=b93bef96-8d9e-4ba9-8d62-76f949139ccf_112年中級行動裝置程式設計師能力鑑定簡章_0303.pdf&type=10"
+        }
+      ],
+      "topic": "登入流程測試案例",
+      "practicalPreparation": true,
+      "historical": true
+    }
+  ]
+}

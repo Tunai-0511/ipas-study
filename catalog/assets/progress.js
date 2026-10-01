@@ -20,7 +20,7 @@
     snapshot.profiles = [{ id: 'catalog', name: name }];
     snapshot.data = { catalog: { attempts: snapshot.attempts.map(function (attempt) {
       var result = attempt.result || {};
-      return { id: attempt.id, subjectName: attempt.paperTitle || attempt.paperId || '原卷研讀', modeName: '原卷研讀',
+      return { id: attempt.id, subjectName: attempt.paperTitle || attempt.paperId || '原卷研讀', modeName: attempt.modeName || '原卷研讀',
         correct: result.correct || 0, total: result.total || 0, score: result.percent == null ? null : result.percent, finishedAt: attempt.finishedAt };
     }) } };
     return snapshot;
@@ -49,7 +49,7 @@
         cache(run.owner);
         run.revision = revision;
         // Only local changes need a write. Viewing a new account must not create an empty row.
-        if ((!state.attempts.length && !Object.keys(state.drafts).length) || JSON.stringify(state) === JSON.stringify(remote)) {
+        if ((!state.attempts.length && !Object.keys(state.drafts).length && !Object.keys(state.practice || {}).length && !Object.keys(state.favorites || {}).length) || JSON.stringify(state) === JSON.stringify(remote)) {
           report('學習紀錄已就緒'); return;
         }
         var snapshot = cloudSnapshot();
@@ -93,8 +93,25 @@
     },
     addAttempt: function (paper, result) {
       if (!userId) return;
-      state.attempts.push({ id: crypto.randomUUID(), paperId: paper.id, paperTitle: paper.title, certId: paper.certId, levelId: paper.levelId, finishedAt: new Date().toISOString(), result: result });
+      state.attempts.push({ id: crypto.randomUUID(), paperId: paper.id, paperTitle: paper.title, certId: paper.certId, levelId: paper.levelId, modeName: paper.modeName, finishedAt: new Date().toISOString(), result: result });
       state.attempts = state.attempts.slice(-400); persist();
+    },
+    practice: function () { return JSON.parse(JSON.stringify(state.practice || {})); },
+    recordPractice: function (question, chosen, correct) {
+      if (!userId) return;
+      state.practice = state.practice || {};
+      var previous = state.practice[question.id] || {};
+      state.practice[question.id] = { updatedAt: new Date(Math.max(Date.now(), (Date.parse(previous.updatedAt) || 0) + 1)).toISOString(),
+        certId: question.certId, subjectId: question.subjectId, chosen: chosen, correct: !!correct };
+      persist();
+    },
+    favorites: function () { return JSON.parse(JSON.stringify(state.favorites || {})); },
+    favorite: function (question, active) {
+      if (!userId) return;
+      state.favorites = state.favorites || {};
+      var previous = state.favorites[question.id] || {};
+      state.favorites[question.id] = { updatedAt: new Date(Math.max(Date.now(), (Date.parse(previous.updatedAt) || 0) + 1)).toISOString(), certId: question.certId, active: !!active };
+      persist();
     },
     attempts: function (paperId) { return state.attempts.filter(function (attempt) { return attempt.paperId === paperId; }); },
     status: function () { return status; }, sync: sync

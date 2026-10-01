@@ -81,6 +81,38 @@ test('browsing an empty account and reconnecting never creates an empty cloud ro
   assert.deepEqual(h.uploads, []);
 });
 
+test('practice reviews and favorite removal survive sync without an attempt', async () => {
+  const h=setup(); await h.api.ready;
+  const q={id:'sample',certId:'oia',subjectId:'oia-junior-1'};
+  h.api.recordPractice(q,'A',false); h.api.favorite(q,true);
+  await h.api.sync();
+  assert.equal(h.uploads.length,1);
+  assert.equal(h.uploads[0].data.practice.sample.correct,false);
+  assert.equal(h.uploads[0].data.favorites.sample.active,true);
+  const previous=h.api.favorites().sample.updatedAt;
+  h.api.recordPractice(q,'C',true); h.api.favorite(q,false);
+  await h.api.sync();
+  assert.equal(h.uploads[1].data.practice.sample.correct,true);
+  assert.equal(h.uploads[1].data.favorites.sample.active,false);
+  assert.ok(h.uploads[1].data.favorites.sample.updatedAt>previous);
+  const clone=h.api.practice(); clone.sample.correct=false;
+  assert.equal(h.api.practice().sample.correct,true);
+});
+
+test('practice records clear on signout and cannot be written into the next account', async () => {
+  const h=setup(); await h.api.ready;
+  const q={id:'private',certId:'aiot',subjectId:'aiot-junior-1'};
+  h.api.recordPractice(q,'D',false); h.api.favorite(q,true);
+  h.changeUser(null);
+  h.api.recordPractice(q,'A',true); h.api.favorite(q,false);
+  assert.deepEqual(clone(h.api.practice()),{});
+  assert.deepEqual(clone(h.api.favorites()),{});
+  h.changeUser('B'); await settle();
+  assert.deepEqual(clone(h.api.practice()),{});
+  assert.deepEqual(clone(h.api.favorites()),{});
+  assert.equal(JSON.parse(h.storage.get('ipas_catalog_v1_A')).practice.private.chosen,'D');
+});
+
 test('a local copy already present in the cloud does not trigger an unnecessary upload', async () => {
   const data = progress('saved');
   const h = setup({ local: data, remote: clone(data) });

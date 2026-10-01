@@ -1,0 +1,869 @@
+{
+  "version": 1,
+  "questions": [
+    {
+      "id": "practice-oia-junior-1-001",
+      "certId": "oia",
+      "levelId": "junior",
+      "subjectId": "oia-junior-1",
+      "sourceKind": "original-practice",
+      "source": "自編圖文練習｜情境數據為教學假設",
+      "stem": "依圖表，第一季總營收是多少？",
+      "options": {
+        "A": "120 萬元",
+        "B": "150 萬元",
+        "C": "370 萬元",
+        "D": "420 萬元"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "100＋150＋120＝370 萬元。月份是分組維度，營收可依本題口徑加總。",
+      "images": [
+        {
+          "path": "assets/questions/business/sales.svg",
+          "alt": "同一門市三個月銷售紀錄；一月、100、50；二月、150、100；三月、120、60。每筆訂單僅計一次；營收皆為新臺幣，已扣除退貨。"
+        }
+      ],
+      "topic": "彙總與指標",
+      "practicalPreparation": false,
+      "sources": [
+        {
+          "title": "iPAS 營運智慧分析師官方考綱",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/OIA/115年度營運智慧分析師能力鑑定簡章(初級)_1150410_20260410115359.pdf"
+        },
+        {
+          "title": "計算與建模原理參考",
+          "url": "https://www.postgresql.org/docs/17/tutorial-agg.html"
+        }
+      ]
+    },
+    {
+      "id": "practice-oia-junior-1-002",
+      "certId": "oia",
+      "levelId": "junior",
+      "subjectId": "oia-junior-1",
+      "sourceKind": "original-practice",
+      "source": "自編圖文練習｜情境數據為教學假設",
+      "stem": "以一月為基期，二月營收成長率是多少？",
+      "options": {
+        "A": "50%",
+        "B": "33.3%",
+        "C": "150%",
+        "D": "20%"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "（150－100）÷100＝50%。基期分母是一月營收。",
+      "images": [
+        {
+          "path": "assets/questions/business/sales.svg",
+          "alt": "同一門市三個月銷售紀錄；一月、100、50；二月、150、100；三月、120、60。每筆訂單僅計一次；營收皆為新臺幣，已扣除退貨。"
+        }
+      ],
+      "topic": "成長率",
+      "practicalPreparation": false,
+      "sources": [
+        {
+          "title": "iPAS 營運智慧分析師官方考綱",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/OIA/115年度營運智慧分析師能力鑑定簡章(初級)_1150410_20260410115359.pdf"
+        },
+        {
+          "title": "計算與建模原理參考",
+          "url": "https://www.postgresql.org/docs/17/tutorial-agg.html"
+        }
+      ]
+    },
+    {
+      "id": "practice-oia-junior-1-003",
+      "certId": "oia",
+      "levelId": "junior",
+      "subjectId": "oia-junior-1",
+      "sourceKind": "original-practice",
+      "source": "自編圖文練習｜情境數據為教學假設",
+      "stem": "將三個月合併，整季平均每筆訂單營收最接近多少？",
+      "options": {
+        "A": "1.50 萬元",
+        "B": "2.00 萬元",
+        "C": "1.83 萬元",
+        "D": "1.76 萬元"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "總營收 370 萬元 ÷ 總訂單 210 筆 ≈ 1.76 萬元。不能直接平均三個月份的客單價。",
+      "images": [
+        {
+          "path": "assets/questions/business/sales.svg",
+          "alt": "同一門市三個月銷售紀錄；一月、100、50；二月、150、100；三月、120、60。每筆訂單僅計一次；營收皆為新臺幣，已扣除退貨。"
+        }
+      ],
+      "topic": "加權平均",
+      "practicalPreparation": false,
+      "sources": [
+        {
+          "title": "iPAS 營運智慧分析師官方考綱",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/OIA/115年度營運智慧分析師能力鑑定簡章(初級)_1150410_20260410115359.pdf"
+        },
+        {
+          "title": "計算與建模原理參考",
+          "url": "https://www.postgresql.org/docs/17/tutorial-agg.html"
+        }
+      ]
+    },
+    {
+      "id": "practice-oia-junior-1-004",
+      "certId": "oia",
+      "levelId": "junior",
+      "subjectId": "oia-junior-1",
+      "sourceKind": "original-practice",
+      "source": "自編圖文練習｜情境數據為教學假設",
+      "stem": "想依「月份」計算營收總額，SQL 中哪個組合符合圖表口徑？",
+      "options": {
+        "A": "COUNT(營收) 且不分組",
+        "B": "SUM(營收) 並 GROUP BY 月份",
+        "C": "MAX(月份) 並 GROUP BY 訂單編號",
+        "D": "AVG(月份) 並 GROUP BY 營收"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "依月份分組後加總該組的營收；COUNT 計算筆數，並不是營收。",
+      "images": [
+        {
+          "path": "assets/questions/business/sales.svg",
+          "alt": "同一門市三個月銷售紀錄；一月、100、50；二月、150、100；三月、120、60。每筆訂單僅計一次；營收皆為新臺幣，已扣除退貨。"
+        }
+      ],
+      "topic": "資料彙總",
+      "practicalPreparation": false,
+      "sources": [
+        {
+          "title": "iPAS 營運智慧分析師官方考綱",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/OIA/115年度營運智慧分析師能力鑑定簡章(初級)_1150410_20260410115359.pdf"
+        },
+        {
+          "title": "計算與建模原理參考",
+          "url": "https://www.postgresql.org/docs/17/tutorial-agg.html"
+        }
+      ]
+    },
+    {
+      "id": "practice-oia-junior-1-005",
+      "certId": "oia",
+      "levelId": "junior",
+      "subjectId": "oia-junior-1",
+      "sourceKind": "original-practice",
+      "source": "自編圖文練習｜情境數據為教學假設",
+      "stem": "此圖中銷售事實表的資料粒度是什麼？",
+      "options": {
+        "A": "每月一家門市",
+        "B": "每張訂單的每項明細",
+        "C": "所有產品合計",
+        "D": "每個產品類別"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "圖中定義一列為一張訂單的一項明細；分析時須維持一致粒度。",
+      "images": [
+        {
+          "path": "assets/questions/business/model.svg",
+          "alt": "訂單明細與維度關聯；日期維度、一天、日期鍵（唯一）；產品維度、一項產品、產品鍵（唯一）；銷售事實、一張訂單的一項明細、日期鍵、產品鍵、金額。日期維度 1 → 多筆銷售；產品維度 1 → 多筆銷售。"
+        }
+      ],
+      "topic": "事實表粒度",
+      "practicalPreparation": false,
+      "sources": [
+        {
+          "title": "iPAS 營運智慧分析師官方考綱",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/OIA/115年度營運智慧分析師能力鑑定簡章(初級)_1150410_20260410115359.pdf"
+        },
+        {
+          "title": "計算與建模原理參考",
+          "url": "https://learn.microsoft.com/en-us/power-bi/guidance/star-schema"
+        }
+      ]
+    },
+    {
+      "id": "practice-oia-junior-1-006",
+      "certId": "oia",
+      "levelId": "junior",
+      "subjectId": "oia-junior-1",
+      "sourceKind": "original-practice",
+      "source": "自編圖文練習｜情境數據為教學假設",
+      "stem": "要按照「產品類別」篩選銷售金額，產品類別最適合放在哪裡？",
+      "options": {
+        "A": "把金額欄改成類別文字",
+        "B": "只放在報表截圖",
+        "C": "日期維度的日期鍵",
+        "D": "產品維度的描述欄位"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "產品維度描述產品屬性，類別可用來篩選及分組，再彙總關聯的銷售金額。",
+      "images": [
+        {
+          "path": "assets/questions/business/model.svg",
+          "alt": "訂單明細與維度關聯；日期維度、一天、日期鍵（唯一）；產品維度、一項產品、產品鍵（唯一）；銷售事實、一張訂單的一項明細、日期鍵、產品鍵、金額。日期維度 1 → 多筆銷售；產品維度 1 → 多筆銷售。"
+        }
+      ],
+      "topic": "維度篩選",
+      "practicalPreparation": false,
+      "sources": [
+        {
+          "title": "iPAS 營運智慧分析師官方考綱",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/OIA/115年度營運智慧分析師能力鑑定簡章(初級)_1150410_20260410115359.pdf"
+        },
+        {
+          "title": "計算與建模原理參考",
+          "url": "https://learn.microsoft.com/en-us/power-bi/guidance/star-schema"
+        }
+      ]
+    },
+    {
+      "id": "practice-oia-junior-1-007",
+      "certId": "oia",
+      "levelId": "junior",
+      "subjectId": "oia-junior-1",
+      "sourceKind": "original-practice",
+      "source": "自編圖文練習｜情境數據為教學假設",
+      "stem": "產品維度同一產品鍵意外出現兩列。直接以該鍵連接銷售明細後加總，應優先檢查什麼？",
+      "options": {
+        "A": "連接造成明細重複、金額被重算",
+        "B": "營收必然減半",
+        "C": "所有日期自動消失",
+        "D": "數值型別必然變成文字"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "維度唯一鍵重複可能把一筆事實配對多次，導致重算；應先驗證維度唯一性及關聯基數。",
+      "images": [
+        {
+          "path": "assets/questions/business/model.svg",
+          "alt": "訂單明細與維度關聯；日期維度、一天、日期鍵（唯一）；產品維度、一項產品、產品鍵（唯一）；銷售事實、一張訂單的一項明細、日期鍵、產品鍵、金額。日期維度 1 → 多筆銷售；產品維度 1 → 多筆銷售。"
+        }
+      ],
+      "topic": "關聯與重複",
+      "practicalPreparation": false,
+      "sources": [
+        {
+          "title": "iPAS 營運智慧分析師官方考綱",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/OIA/115年度營運智慧分析師能力鑑定簡章(初級)_1150410_20260410115359.pdf"
+        },
+        {
+          "title": "計算與建模原理參考",
+          "url": "https://learn.microsoft.com/en-us/power-bi/guidance/star-schema"
+        }
+      ]
+    },
+    {
+      "id": "practice-oia-junior-1-008",
+      "certId": "oia",
+      "levelId": "junior",
+      "subjectId": "oia-junior-1",
+      "sourceKind": "original-practice",
+      "source": "自編圖文練習｜情境數據為教學假設",
+      "stem": "同一張訂單可含三項明細，若要算「訂單數」而非明細數，應採用哪個口徑？",
+      "options": {
+        "A": "直接加總產品鍵",
+        "B": "對金額取最大值",
+        "C": "對訂單編號去重後計數",
+        "D": "把日期天數當訂單數"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "一訂單多明細時，直接計數明細列會高估訂單數；應依訂單編號去重計數。",
+      "images": [
+        {
+          "path": "assets/questions/business/model.svg",
+          "alt": "訂單明細與維度關聯；日期維度、一天、日期鍵（唯一）；產品維度、一項產品、產品鍵（唯一）；銷售事實、一張訂單的一項明細、日期鍵、產品鍵、金額。日期維度 1 → 多筆銷售；產品維度 1 → 多筆銷售。"
+        }
+      ],
+      "topic": "指標粒度",
+      "practicalPreparation": false,
+      "sources": [
+        {
+          "title": "iPAS 營運智慧分析師官方考綱",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/OIA/115年度營運智慧分析師能力鑑定簡章(初級)_1150410_20260410115359.pdf"
+        },
+        {
+          "title": "計算與建模原理參考",
+          "url": "https://learn.microsoft.com/en-us/power-bi/guidance/star-schema"
+        }
+      ]
+    },
+    {
+      "id": "practice-oia-junior-1-009",
+      "certId": "oia",
+      "levelId": "junior",
+      "subjectId": "oia-junior-1",
+      "sourceKind": "original-practice",
+      "source": "自編圖文練習｜情境數據為教學假設",
+      "stem": "若只彙總圖中金額完整且去重後的交易，新臺幣總額是多少？",
+      "options": {
+        "A": "210 元",
+        "B": "420 元",
+        "C": "520 元",
+        "D": "110 元"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "A01 僅計一次 100 元；A02 換算 10×32＝320 元；A03 缺值不納入此題的完整交易合計，故 420 元。",
+      "images": [
+        {
+          "path": "assets/questions/business/quality.svg",
+          "alt": "匯入前資料檢查表；A01、100、TWD；A01、100、TWD；A02、10、USD；A03、缺漏、TWD。兩筆 A01 是同一次重送；此練習固定匯率 1 USD＝32 TWD。"
+        }
+      ],
+      "topic": "清理與換算",
+      "practicalPreparation": false,
+      "sources": [
+        {
+          "title": "iPAS 營運智慧分析師官方考綱",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/OIA/115年度營運智慧分析師能力鑑定簡章(初級)_1150410_20260410115359.pdf"
+        },
+        {
+          "title": "計算與建模原理參考",
+          "url": "https://www.postgresql.org/docs/17/tutorial-agg.html"
+        }
+      ]
+    },
+    {
+      "id": "practice-oia-junior-1-010",
+      "certId": "oia",
+      "levelId": "junior",
+      "subjectId": "oia-junior-1",
+      "sourceKind": "original-practice",
+      "source": "自編圖文練習｜情境數據為教學假設",
+      "stem": "A03 的金額缺漏，建立營收報表時何種處理較適合？",
+      "options": {
+        "A": "直接假設為最大交易金額",
+        "B": "無聲改成 0 並聲稱資料完整",
+        "C": "刪除所有月份資料",
+        "D": "標記缺漏並回查來源，說明目前統計範圍"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "未知不等於零。應保留品質狀態、回查來源，並標示報表只含金額已確認的交易。",
+      "images": [
+        {
+          "path": "assets/questions/business/quality.svg",
+          "alt": "匯入前資料檢查表；A01、100、TWD；A01、100、TWD；A02、10、USD；A03、缺漏、TWD。兩筆 A01 是同一次重送；此練習固定匯率 1 USD＝32 TWD。"
+        }
+      ],
+      "topic": "缺漏值管理",
+      "practicalPreparation": false,
+      "sources": [
+        {
+          "title": "iPAS 營運智慧分析師官方考綱",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/OIA/115年度營運智慧分析師能力鑑定簡章(初級)_1150410_20260410115359.pdf"
+        },
+        {
+          "title": "計算與建模原理參考",
+          "url": "https://www.postgresql.org/docs/17/tutorial-agg.html"
+        }
+      ]
+    },
+    {
+      "id": "practice-oia-junior-1-011",
+      "certId": "oia",
+      "levelId": "junior",
+      "subjectId": "oia-junior-1",
+      "sourceKind": "original-practice",
+      "source": "自編圖文練習｜情境數據為教學假設",
+      "stem": "重送 A01 的檢查規則，最適合使用哪個欄位識別同一筆交易？",
+      "options": {
+        "A": "已確認具有交易唯一性的訂單 ID",
+        "B": "只比較金額是否相同",
+        "C": "只比較幣別是否相同",
+        "D": "只比較列在檔案中的位置"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "本題已明確 A01 為同次重送；應依穩定的交易識別鍵去重，不能把不同但等額的交易誤刪。",
+      "images": [
+        {
+          "path": "assets/questions/business/quality.svg",
+          "alt": "匯入前資料檢查表；A01、100、TWD；A01、100、TWD；A02、10、USD；A03、缺漏、TWD。兩筆 A01 是同一次重送；此練習固定匯率 1 USD＝32 TWD。"
+        }
+      ],
+      "topic": "去重策略",
+      "practicalPreparation": false,
+      "sources": [
+        {
+          "title": "iPAS 營運智慧分析師官方考綱",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/OIA/115年度營運智慧分析師能力鑑定簡章(初級)_1150410_20260410115359.pdf"
+        },
+        {
+          "title": "計算與建模原理參考",
+          "url": "https://www.postgresql.org/docs/17/tutorial-agg.html"
+        }
+      ]
+    },
+    {
+      "id": "practice-oia-junior-1-012",
+      "certId": "oia",
+      "levelId": "junior",
+      "subjectId": "oia-junior-1",
+      "sourceKind": "original-practice",
+      "source": "自編圖文練習｜情境數據為教學假設",
+      "stem": "若未先轉換幣別，就對原始金額直接加總，主要問題是什麼？",
+      "options": {
+        "A": "SUM 函數一定報錯",
+        "B": "所有數字必然為負數",
+        "C": "混合不同單位，總額失去一致意義",
+        "D": "交易 ID 自動被修改"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "TWD 與 USD 代表不同貨幣單位。須依明確匯率與日期口徑統一單位後彙總。",
+      "images": [
+        {
+          "path": "assets/questions/business/quality.svg",
+          "alt": "匯入前資料檢查表；A01、100、TWD；A01、100、TWD；A02、10、USD；A03、缺漏、TWD。兩筆 A01 是同一次重送；此練習固定匯率 1 USD＝32 TWD。"
+        }
+      ],
+      "topic": "資料標準化",
+      "practicalPreparation": false,
+      "sources": [
+        {
+          "title": "iPAS 營運智慧分析師官方考綱",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/OIA/115年度營運智慧分析師能力鑑定簡章(初級)_1150410_20260410115359.pdf"
+        },
+        {
+          "title": "計算與建模原理參考",
+          "url": "https://www.postgresql.org/docs/17/tutorial-agg.html"
+        }
+      ]
+    },
+    {
+      "id": "practice-oia-junior-2-001",
+      "certId": "oia",
+      "levelId": "junior",
+      "subjectId": "oia-junior-2",
+      "sourceKind": "original-practice",
+      "source": "自編圖文練習｜情境數據為教學假設",
+      "stem": "一筆訂單連續完成三站，最短作業時間是多少？",
+      "options": {
+        "A": "6 分鐘",
+        "B": "9 分鐘",
+        "C": "11 分鐘",
+        "D": "18 分鐘"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "依題設沒有等待與移轉，作業時間為 2＋6＋3＝11 分鐘。",
+      "images": [
+        {
+          "path": "assets/questions/business/process.svg",
+          "alt": "單一訂單處理路徑；1、收單、2；2、揀貨、6；3、包裝、3。時間單位：分鐘。各站一人；本題忽略等待、移轉及停機。"
+        }
+      ],
+      "topic": "流程時間",
+      "practicalPreparation": false,
+      "sources": [
+        {
+          "title": "iPAS 營運智慧分析師官方考綱",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/OIA/115年度營運智慧分析師能力鑑定簡章(初級)_1150410_20260410115359.pdf"
+        },
+        {
+          "title": "計算與建模原理參考",
+          "url": "https://www.postgresql.org/docs/17/tutorial-agg.html"
+        }
+      ]
+    },
+    {
+      "id": "practice-oia-junior-2-002",
+      "certId": "oia",
+      "levelId": "junior",
+      "subjectId": "oia-junior-2",
+      "sourceKind": "original-practice",
+      "source": "自編圖文練習｜情境數據為教學假設",
+      "stem": "穩定流水作業且各站可同時處理不同訂單時，哪一站形成此模型的瓶頸？",
+      "options": {
+        "A": "收單",
+        "B": "揀貨",
+        "C": "包裝",
+        "D": "三站完全相同"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "揀貨每件耗時 6 分鐘，服務速率最低，限制模型中的產出速率。",
+      "images": [
+        {
+          "path": "assets/questions/business/process.svg",
+          "alt": "單一訂單處理路徑；1、收單、2；2、揀貨、6；3、包裝、3。時間單位：分鐘。各站一人；本題忽略等待、移轉及停機。"
+        }
+      ],
+      "topic": "瓶頸分析",
+      "practicalPreparation": false,
+      "sources": [
+        {
+          "title": "iPAS 營運智慧分析師官方考綱",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/OIA/115年度營運智慧分析師能力鑑定簡章(初級)_1150410_20260410115359.pdf"
+        },
+        {
+          "title": "計算與建模原理參考",
+          "url": "https://www.postgresql.org/docs/17/tutorial-agg.html"
+        }
+      ]
+    },
+    {
+      "id": "practice-oia-junior-2-003",
+      "certId": "oia",
+      "levelId": "junior",
+      "subjectId": "oia-junior-2",
+      "sourceKind": "original-practice",
+      "source": "自編圖文練習｜情境數據為教學假設",
+      "stem": "依圖示單站容量，忽略所有停機，流水線長期最大產出率是多少？",
+      "options": {
+        "A": "每小時 30 件",
+        "B": "每小時 20 件",
+        "C": "每小時 60 件",
+        "D": "每小時 10 件"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "瓶頸為每件 6 分鐘的揀貨，60÷6＝10 件／小時。這是題設理想容量，不是實際承諾。",
+      "images": [
+        {
+          "path": "assets/questions/business/process.svg",
+          "alt": "單一訂單處理路徑；1、收單、2；2、揀貨、6；3、包裝、3。時間單位：分鐘。各站一人；本題忽略等待、移轉及停機。"
+        }
+      ],
+      "topic": "產能估算",
+      "practicalPreparation": false,
+      "sources": [
+        {
+          "title": "iPAS 營運智慧分析師官方考綱",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/OIA/115年度營運智慧分析師能力鑑定簡章(初級)_1150410_20260410115359.pdf"
+        },
+        {
+          "title": "計算與建模原理參考",
+          "url": "https://www.postgresql.org/docs/17/tutorial-agg.html"
+        }
+      ]
+    },
+    {
+      "id": "practice-oia-junior-2-004",
+      "certId": "oia",
+      "levelId": "junior",
+      "subjectId": "oia-junior-2",
+      "sourceKind": "original-practice",
+      "source": "自編圖文練習｜情境數據為教學假設",
+      "stem": "導入掃碼後，揀貨降為每件 3 分鐘，其餘不變。新的理想瓶頸週期是多少？",
+      "options": {
+        "A": "3 分鐘／件",
+        "B": "2 分鐘／件",
+        "C": "8 分鐘／件",
+        "D": "11 分鐘／件"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "各站變為 2、3、3 分鐘，最長單站週期為 3 分鐘；揀貨與包裝共同限制產出。",
+      "images": [
+        {
+          "path": "assets/questions/business/process.svg",
+          "alt": "單一訂單處理路徑；1、收單、2；2、揀貨、6；3、包裝、3。時間單位：分鐘。各站一人；本題忽略等待、移轉及停機。"
+        }
+      ],
+      "topic": "數位化流程改善",
+      "practicalPreparation": false,
+      "sources": [
+        {
+          "title": "iPAS 營運智慧分析師官方考綱",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/OIA/115年度營運智慧分析師能力鑑定簡章(初級)_1150410_20260410115359.pdf"
+        },
+        {
+          "title": "計算與建模原理參考",
+          "url": "https://www.postgresql.org/docs/17/tutorial-agg.html"
+        }
+      ]
+    },
+    {
+      "id": "practice-oia-junior-2-005",
+      "certId": "oia",
+      "levelId": "junior",
+      "subjectId": "oia-junior-2",
+      "sourceKind": "original-practice",
+      "source": "自編圖文練習｜情境數據為教學假設",
+      "stem": "依本題規則，補貨點是多少？",
+      "options": {
+        "A": "35 件",
+        "B": "60 件",
+        "C": "75 件",
+        "D": "105 件"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "20×3＋15＝75 件。這是題目提供的簡化規則，不代表所有企業都適用同一補貨政策。",
+      "images": [
+        {
+          "path": "assets/questions/business/stock.svg",
+          "alt": "示範補貨規則與即時庫存；每日需求、20、件／日；交貨前置時間、3、日；安全庫存、15、件；目前庫存部位、70、件。補貨點＝日需求×前置時間＋安全庫存；庫存部位低於補貨點即提醒。"
+        }
+      ],
+      "topic": "庫存指標",
+      "practicalPreparation": false,
+      "sources": [
+        {
+          "title": "iPAS 營運智慧分析師官方考綱",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/OIA/115年度營運智慧分析師能力鑑定簡章(初級)_1150410_20260410115359.pdf"
+        },
+        {
+          "title": "計算與建模原理參考",
+          "url": "https://www.postgresql.org/docs/17/tutorial-agg.html"
+        }
+      ]
+    },
+    {
+      "id": "practice-oia-junior-2-006",
+      "certId": "oia",
+      "levelId": "junior",
+      "subjectId": "oia-junior-2",
+      "sourceKind": "original-practice",
+      "source": "自編圖文練習｜情境數據為教學假設",
+      "stem": "目前庫存部位為 70 件，系統應如何處理？",
+      "options": {
+        "A": "發出補貨提醒",
+        "B": "不提醒，因為 70 大於 15",
+        "C": "自動認定庫存為零",
+        "D": "把日需求改成 0"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "70 低於規則補貨點 75，應發出提醒。是否實際下單仍可另設授權流程。",
+      "images": [
+        {
+          "path": "assets/questions/business/stock.svg",
+          "alt": "示範補貨規則與即時庫存；每日需求、20、件／日；交貨前置時間、3、日；安全庫存、15、件；目前庫存部位、70、件。補貨點＝日需求×前置時間＋安全庫存；庫存部位低於補貨點即提醒。"
+        }
+      ],
+      "topic": "事件驅動提醒",
+      "practicalPreparation": false,
+      "sources": [
+        {
+          "title": "iPAS 營運智慧分析師官方考綱",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/OIA/115年度營運智慧分析師能力鑑定簡章(初級)_1150410_20260410115359.pdf"
+        },
+        {
+          "title": "計算與建模原理參考",
+          "url": "https://www.postgresql.org/docs/17/tutorial-agg.html"
+        }
+      ]
+    },
+    {
+      "id": "practice-oia-junior-2-007",
+      "certId": "oia",
+      "levelId": "junior",
+      "subjectId": "oia-junior-2",
+      "sourceKind": "original-practice",
+      "source": "自編圖文練習｜情境數據為教學假設",
+      "stem": "若前置時間改為 4 日，其他數值不變，新補貨點是多少？",
+      "options": {
+        "A": "80 件",
+        "B": "95 件",
+        "C": "75 件",
+        "D": "60 件"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "20×4＋15＝95 件；前置時間增加會提高此模型的補貨點。",
+      "images": [
+        {
+          "path": "assets/questions/business/stock.svg",
+          "alt": "示範補貨規則與即時庫存；每日需求、20、件／日；交貨前置時間、3、日；安全庫存、15、件；目前庫存部位、70、件。補貨點＝日需求×前置時間＋安全庫存；庫存部位低於補貨點即提醒。"
+        }
+      ],
+      "topic": "情境分析",
+      "practicalPreparation": false,
+      "sources": [
+        {
+          "title": "iPAS 營運智慧分析師官方考綱",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/OIA/115年度營運智慧分析師能力鑑定簡章(初級)_1150410_20260410115359.pdf"
+        },
+        {
+          "title": "計算與建模原理參考",
+          "url": "https://www.postgresql.org/docs/17/tutorial-agg.html"
+        }
+      ]
+    },
+    {
+      "id": "practice-oia-junior-2-008",
+      "certId": "oia",
+      "levelId": "junior",
+      "subjectId": "oia-junior-2",
+      "sourceKind": "original-practice",
+      "source": "自編圖文練習｜情境數據為教學假設",
+      "stem": "若想讓提醒使用可信的庫存部位，下列何者最重要？",
+      "options": {
+        "A": "固定每天補一張庫存截圖",
+        "B": "只使用三個月前盤點",
+        "C": "讓所有人任意覆寫庫存值",
+        "D": "統一入出庫事件與更新時間，並核對漏傳或重送"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "提醒品質依賴輸入資料。統一事件、時間及重送處理才能減少錯誤警報。",
+      "images": [
+        {
+          "path": "assets/questions/business/stock.svg",
+          "alt": "示範補貨規則與即時庫存；每日需求、20、件／日；交貨前置時間、3、日；安全庫存、15、件；目前庫存部位、70、件。補貨點＝日需求×前置時間＋安全庫存；庫存部位低於補貨點即提醒。"
+        }
+      ],
+      "topic": "作業資料治理",
+      "practicalPreparation": false,
+      "sources": [
+        {
+          "title": "iPAS 營運智慧分析師官方考綱",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/OIA/115年度營運智慧分析師能力鑑定簡章(初級)_1150410_20260410115359.pdf"
+        },
+        {
+          "title": "計算與建模原理參考",
+          "url": "https://www.postgresql.org/docs/17/tutorial-agg.html"
+        }
+      ]
+    },
+    {
+      "id": "practice-oia-junior-2-009",
+      "certId": "oia",
+      "levelId": "junior",
+      "subjectId": "oia-junior-2",
+      "sourceKind": "original-practice",
+      "source": "自編圖文練習｜情境數據為教學假設",
+      "stem": "改版後平均每件處理時間是多少？",
+      "options": {
+        "A": "6 分鐘",
+        "B": "8 分鐘",
+        "C": "10 分鐘",
+        "D": "12 分鐘"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "720÷120＝6 分鐘／件。總處理時間與結案件數需來自相同範圍。",
+      "images": [
+        {
+          "path": "assets/questions/business/service.svg",
+          "alt": "客服流程改版前後的觀察；改版前、100、800；改版後、120、720。兩期各一週；案件難度與人力可能不同，尚未做控制實驗。"
+        }
+      ],
+      "topic": "服務效率",
+      "practicalPreparation": false,
+      "sources": [
+        {
+          "title": "iPAS 營運智慧分析師官方考綱",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/OIA/115年度營運智慧分析師能力鑑定簡章(初級)_1150410_20260410115359.pdf"
+        },
+        {
+          "title": "計算與建模原理參考",
+          "url": "https://www.postgresql.org/docs/17/tutorial-agg.html"
+        }
+      ]
+    },
+    {
+      "id": "practice-oia-junior-2-010",
+      "certId": "oia",
+      "levelId": "junior",
+      "subjectId": "oia-junior-2",
+      "sourceKind": "original-practice",
+      "source": "自編圖文練習｜情境數據為教學假設",
+      "stem": "平均每件處理時間從改版前到改版後減少多少百分比？",
+      "options": {
+        "A": "20%",
+        "B": "33.3%",
+        "C": "50%",
+        "D": "25%"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "改版前 800÷100＝8 分鐘，改版後 6 分鐘；（8－6）÷8＝25%。",
+      "images": [
+        {
+          "path": "assets/questions/business/service.svg",
+          "alt": "客服流程改版前後的觀察；改版前、100、800；改版後、120、720。兩期各一週；案件難度與人力可能不同，尚未做控制實驗。"
+        }
+      ],
+      "topic": "績效比較",
+      "practicalPreparation": false,
+      "sources": [
+        {
+          "title": "iPAS 營運智慧分析師官方考綱",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/OIA/115年度營運智慧分析師能力鑑定簡章(初級)_1150410_20260410115359.pdf"
+        },
+        {
+          "title": "計算與建模原理參考",
+          "url": "https://www.postgresql.org/docs/17/tutorial-agg.html"
+        }
+      ]
+    },
+    {
+      "id": "practice-oia-junior-2-011",
+      "certId": "oia",
+      "levelId": "junior",
+      "subjectId": "oia-junior-2",
+      "sourceKind": "original-practice",
+      "source": "自編圖文練習｜情境數據為教學假設",
+      "stem": "單憑這張圖，何種結論最合理？",
+      "options": {
+        "A": "改版是改善的唯一原因",
+        "B": "所有員工工作量都下降 25%",
+        "C": "觀察到平均處理時間下降，但原因仍需檢查",
+        "D": "已證明所有案件滿意度提升"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "資料顯示前後差異，但案件難度、人力等尚未控制，不能僅憑此表斷定唯一因果，也沒有滿意度數據。",
+      "images": [
+        {
+          "path": "assets/questions/business/service.svg",
+          "alt": "客服流程改版前後的觀察；改版前、100、800；改版後、120、720。兩期各一週；案件難度與人力可能不同，尚未做控制實驗。"
+        }
+      ],
+      "topic": "評估界線",
+      "practicalPreparation": false,
+      "sources": [
+        {
+          "title": "iPAS 營運智慧分析師官方考綱",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/OIA/115年度營運智慧分析師能力鑑定簡章(初級)_1150410_20260410115359.pdf"
+        },
+        {
+          "title": "計算與建模原理參考",
+          "url": "https://www.postgresql.org/docs/17/tutorial-agg.html"
+        }
+      ]
+    },
+    {
+      "id": "practice-oia-junior-2-012",
+      "certId": "oia",
+      "levelId": "junior",
+      "subjectId": "oia-junior-2",
+      "sourceKind": "original-practice",
+      "source": "自編圖文練習｜情境數據為教學假設",
+      "stem": "為避免只追求速度而犧牲品質，後續應搭配哪個指標？",
+      "options": {
+        "A": "報表配色數量",
+        "B": "重開案件率或已定義的服務品質指標",
+        "C": "電腦桌布大小",
+        "D": "辦公室樓層數"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "效率與品質需要一起觀察。重開率能提示一次結案是否實際解決問題，仍應明確定義分子分母。",
+      "images": [
+        {
+          "path": "assets/questions/business/service.svg",
+          "alt": "客服流程改版前後的觀察；改版前、100、800；改版後、120、720。兩期各一週；案件難度與人力可能不同，尚未做控制實驗。"
+        }
+      ],
+      "topic": "平衡績效",
+      "practicalPreparation": false,
+      "sources": [
+        {
+          "title": "iPAS 營運智慧分析師官方考綱",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/OIA/115年度營運智慧分析師能力鑑定簡章(初級)_1150410_20260410115359.pdf"
+        },
+        {
+          "title": "計算與建模原理參考",
+          "url": "https://www.postgresql.org/docs/17/tutorial-agg.html"
+        }
+      ]
+    }
+  ]
+}

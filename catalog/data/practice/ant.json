@@ -1,0 +1,4701 @@
+{
+  "version": 1,
+  "certId": "ant",
+  "updatedAt": "2026-10-01",
+  "questions": [
+    {
+      "id": "ant-intermediate-past-d08acedcaee9-q1",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "paperId": "ant-intermediate-past-d08acedcaee9",
+      "subjectName": "天線系統工程",
+      "number": 1,
+      "printedNumber": 1,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "B",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)_20260504115115.pdf#page=1",
+      "page": 1,
+      "promptText": "針對行動電話的接收靈敏度的評估,OTA 的主動性動態測試方法可以直接地反映\n1.\n手機整機的輻射性能,有關OTA 方法的靈敏度效能(TIS)測試結果,下列何者\n有誤?\n(A)接收器靈敏度劣化的因素有很多種,然而其問題的大部分時間係來自於數位訊\n號諧波呈現在PCB 電路板上的雜訊分布場型,使其耦合至天線;\n(B)同一裝置內的不同無線系統,因為其操作頻段與訊號調變方式不同,因此很少影\n響整機的接收靈敏度;\n(C)由於一般數位裝置的接地,其雜訊強度約在 20 mV ~ 200 mV,因此當手機天\n線與之共地時,即可能使接收靈敏度劣化;\n(D)手機系統的頻寬越寬、操作環境溫度越高,則接收靈敏度效能越差",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "針對行動電話的接收靈敏度的評估,OTA 的主動性動態測試方法可以直接地反映\n1.\n手機整機的輻射性能,有關OTA 方法的靈敏度效能(TIS)測試結果,下列何者\n有誤?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-intermediate-past-d08acedcaee9/q001-01-baa7baac3e.webp",
+          "alt": "天線系統工程原卷第 1 題題目與選項",
+          "page": 1,
+          "rect": [
+            26,
+            137.22,
+            575.32,
+            338.57
+          ],
+          "role": "question",
+          "sha256": "c9da92068e9614e7d3aa88c5fd1011d7f6b91123f62c758c6b0670e073fb6685"
+        }
+      ],
+      "sourcePdfSha256": "d6f3926759dd0018a30116d89365cf1d7f81368c5612ccf1152f704d4e5ae066",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 1,
+          "rect": [
+            56,
+            150.568,
+            69.064,
+            165.852
+          ]
+        }
+      ],
+      "subjectId": "ant-intermediate-1",
+      "paperTitle": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)",
+      "source": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)"
+    },
+    {
+      "id": "ant-intermediate-past-d08acedcaee9-q2",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "paperId": "ant-intermediate-past-d08acedcaee9",
+      "subjectName": "天線系統工程",
+      "number": 2,
+      "printedNumber": 2,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "D",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)_20260504115115.pdf#page=1",
+      "page": 1,
+      "promptText": "封包相關係數(ECC, envelope correlation coefficient)用來表示天線之間的獨立性,\n2.\n下列何者影響ECC 最小?\n(A)天線的耦合量;\n(B)天線的位置;\n(C)天線的極化;\n(D)天線的導電率",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "封包相關係數(ECC, envelope correlation coefficient)用來表示天線之間的獨立性,\n2.\n下列何者影響ECC 最小?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-intermediate-past-d08acedcaee9/q002-01-0e814a026a.webp",
+          "alt": "天線系統工程原卷第 2 題題目與選項",
+          "page": 1,
+          "rect": [
+            26,
+            337.77,
+            575.32,
+            459.05
+          ],
+          "role": "question",
+          "sha256": "011f85aca1907837ff989ba087807d303a48c4aa46b176c914781e2207193ed2"
+        }
+      ],
+      "sourcePdfSha256": "d6f3926759dd0018a30116d89365cf1d7f81368c5612ccf1152f704d4e5ae066",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 1,
+          "rect": [
+            55.64,
+            348.598,
+            69.304,
+            363.882
+          ]
+        }
+      ],
+      "subjectId": "ant-intermediate-1",
+      "paperTitle": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)",
+      "source": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)"
+    },
+    {
+      "id": "ant-intermediate-past-d08acedcaee9-q3",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "paperId": "ant-intermediate-past-d08acedcaee9",
+      "subjectName": "天線系統工程",
+      "number": 3,
+      "printedNumber": 3,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "B",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)_20260504115115.pdf#page=1",
+      "page": 1,
+      "promptText": "美國行動通訊產業協會(CTIA,現已改名為無線通訊協會,CTIA - The Wireless\n3.\nAssociation) 針對3G 和4G LTE 設備制定了OTA 空中傳輸OTA (Over-the\nAir) 測試標準,關鍵的OTA 測試測量,有屬於發射機性能指標的TRP,以及屬\n於接收機性能指標的TIS/TRS。下列有關OTA 的測試何者有誤?\n(A)針對5G NR 毫米波(mmWave)的使用者設備(UE),波束成形\n(Beamforming)與多輸入/輸出(MIMO)的效能測試,因連接器的成本、損耗和\n耦合度均很高,因此待測無線電和天線的性能只能通過空中傳輸OTA 方式執行;\n(B)由於電磁波的空中傳輸功率損耗與頻率成正比,因此一般毫米波頻段(如:5G\nNR 的毫米波(mmWave)的測試都採用近場量測方式;\n(C)一般輻射近場的最小距離為\n,其中D 為待測物的最大尺寸;\n(D)依據電磁傳輸理論,遠場條件為波前與平面波相位差小於π∕8,其測試距離\n與頻率成反比",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "美國行動通訊產業協會(CTIA,現已改名為無線通訊協會,CTIA - The Wireless\n3.\nAssociation) 針對3G 和4G LTE 設備制定了OTA 空中傳輸OTA (Over-the\nAir) 測試標準,關鍵的OTA 測試測量,有屬於發射機性能指標的TRP,以及屬\n於接收機性能指標的TIS/TRS。下列有關OTA 的測試何者有誤?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-intermediate-past-d08acedcaee9/q003-01-03db05a562.webp",
+          "alt": "天線系統工程原卷第 3 題題目與選項",
+          "page": 1,
+          "rect": [
+            26,
+            458.25,
+            575.32,
+            716.38
+          ],
+          "role": "question",
+          "sha256": "ef6491c6fa978eca0dcbe3ca3eb477ec2a732e40f07b7301cf6eb717f88208cc"
+        }
+      ],
+      "sourcePdfSha256": "d6f3926759dd0018a30116d89365cf1d7f81368c5612ccf1152f704d4e5ae066",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 1,
+          "rect": [
+            56,
+            469.098,
+            69.064,
+            484.382
+          ]
+        }
+      ],
+      "subjectId": "ant-intermediate-1",
+      "paperTitle": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)",
+      "source": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)"
+    },
+    {
+      "id": "ant-intermediate-past-d08acedcaee9-q4",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "paperId": "ant-intermediate-past-d08acedcaee9",
+      "subjectName": "天線系統工程",
+      "number": 4,
+      "printedNumber": 4,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "D",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)_20260504115115.pdf#page=1",
+      "page": 1,
+      "promptText": "有關Wi-Fi 6E 頻段範圍,下列何者正確?\n4.\n(A) 2.4 GHz;\n(B) 5 GHz;\n(C) 2.4 GHz & 5 GHz;\n\n(D) 2.4 GHz & 5 GHz & 6 GHz",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "有關Wi-Fi 6E 頻段範圍,下列何者正確?\n4.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-intermediate-past-d08acedcaee9/q004-01-b98a585782.webp",
+          "alt": "天線系統工程原卷第 4 題題目與選項",
+          "page": 1,
+          "rect": [
+            26,
+            715.58,
+            575.32,
+            800.744
+          ],
+          "role": "question",
+          "sha256": "c737c139431e521774cc8abccf685e6bdd4b244e7668f99fc276f0599d343611"
+        },
+        {
+          "path": "assets/questions/official/ant-intermediate-past-d08acedcaee9/q004-02-07d5c16a0d.webp",
+          "alt": "天線系統工程原卷第 4 題題目與選項",
+          "page": 2,
+          "rect": [
+            26,
+            116.132,
+            575.32,
+            140.06
+          ],
+          "role": "question",
+          "sha256": "63004167c8479f48107df69ab795fddc3cf7147852f0008618c2ddca18830ea9"
+        }
+      ],
+      "sourcePdfSha256": "d6f3926759dd0018a30116d89365cf1d7f81368c5612ccf1152f704d4e5ae066",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 1,
+          "rect": [
+            55.64,
+            726.408,
+            69.304,
+            741.692
+          ]
+        }
+      ],
+      "subjectId": "ant-intermediate-1",
+      "paperTitle": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)",
+      "source": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)"
+    },
+    {
+      "id": "ant-intermediate-past-d08acedcaee9-q5",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "paperId": "ant-intermediate-past-d08acedcaee9",
+      "subjectName": "天線系統工程",
+      "number": 5,
+      "printedNumber": 5,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "A",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)_20260504115115.pdf#page=2",
+      "page": 2,
+      "promptText": "隨著5G 通訊市場逐步打開,下列何種材料因電 ∕ 物特性極佳而可能被大量應用\n5.\n於目前高階電子產品的天線軟板?\n(A) LCP(Liquid Crystal Polymer);\n(B) FR-4(Flame Retardant 4);\n(C) PET(Polyethylene Terephthalate);\n(D) HDPE(High Density Polyethylene)",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "隨著5G 通訊市場逐步打開,下列何種材料因電 ∕ 物特性極佳而可能被大量應用\n5.\n於目前高階電子產品的天線軟板?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-intermediate-past-d08acedcaee9/q005-01-5d651c7d3b.webp",
+          "alt": "天線系統工程原卷第 5 題題目與選項",
+          "page": 2,
+          "rect": [
+            26,
+            139.26,
+            575.32,
+            260.54
+          ],
+          "role": "question",
+          "sha256": "60c201ae9df9627f04e30003e1e30ba28e07dcc20bc990bef422a03ba3f3a0a5"
+        }
+      ],
+      "sourcePdfSha256": "d6f3926759dd0018a30116d89365cf1d7f81368c5612ccf1152f704d4e5ae066",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 2,
+          "rect": [
+            55.64,
+            150.088,
+            69.304,
+            165.372
+          ]
+        }
+      ],
+      "subjectId": "ant-intermediate-1",
+      "paperTitle": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)",
+      "source": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)"
+    },
+    {
+      "id": "ant-intermediate-past-d08acedcaee9-q6",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "paperId": "ant-intermediate-past-d08acedcaee9",
+      "subjectName": "天線系統工程",
+      "number": 6,
+      "printedNumber": 6,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "A",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)_20260504115115.pdf#page=2",
+      "page": 2,
+      "promptText": "3GPP 定義5G NR FR1/FR2 應用頻段範圍,下列何者正確?\n6.\n(A) FR1 頻段(410 MHz ~ 7.125 GHz ): FR2 頻段(24.25 GH ~ 52.6 GHz);\n(B) FR1 頻段(698 MHz ~ 2.170 GHz): FR2 頻段(2.3 GH~3.6 GHz);\n(C) FR1 頻段(2400 MHz ~ 5.85 GHz): FR2 頻段(5.925 GH ~ 7.125 GHz);\n(D) FR1 頻段(450 MHz ~ 6 GHz): FR2 頻段(24.25 GH ~ 52.6 GHz)",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "3GPP 定義5G NR FR1/FR2 應用頻段範圍,下列何者正確?\n6.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-intermediate-past-d08acedcaee9/q006-01-f92a342425.webp",
+          "alt": "天線系統工程原卷第 6 題題目與選項",
+          "page": 2,
+          "rect": [
+            26,
+            259.74,
+            575.32,
+            361.13
+          ],
+          "role": "question",
+          "sha256": "ab7182ad40e4381b20daa0e03a74bdc9ec014eba761fa8b8bcde34d8bc60383a"
+        }
+      ],
+      "sourcePdfSha256": "d6f3926759dd0018a30116d89365cf1d7f81368c5612ccf1152f704d4e5ae066",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 2,
+          "rect": [
+            55.64,
+            270.718,
+            69.304,
+            286.002
+          ]
+        }
+      ],
+      "subjectId": "ant-intermediate-1",
+      "paperTitle": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)",
+      "source": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)"
+    },
+    {
+      "id": "ant-intermediate-past-d08acedcaee9-q8",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "paperId": "ant-intermediate-past-d08acedcaee9",
+      "subjectName": "天線系統工程",
+      "number": 8,
+      "printedNumber": 8,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "B",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)_20260504115115.pdf#page=2",
+      "page": 2,
+      "promptText": "有關Wi-Fi 7 關鍵技術之敘述,下列何者正確?\n8.\n(A)強制 40 MHz;\n(B)多重連結作業;\n(C) TWT、BSS 著色、波束成形;\n(D)以上皆是",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "有關Wi-Fi 7 關鍵技術之敘述,下列何者正確?\n8.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-intermediate-past-d08acedcaee9/q008-01-2bfc1a50d1.webp",
+          "alt": "天線系統工程原卷第 8 題題目與選項",
+          "page": 2,
+          "rect": [
+            26,
+            460.79,
+            575.32,
+            562.15
+          ],
+          "role": "question",
+          "sha256": "63ccfb7c35984d24e149707a7b67c93e0c7cef01547f1ccfbc626af8b7fd7636"
+        }
+      ],
+      "sourcePdfSha256": "d6f3926759dd0018a30116d89365cf1d7f81368c5612ccf1152f704d4e5ae066",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 2,
+          "rect": [
+            56,
+            471.738,
+            69.064,
+            487.022
+          ]
+        }
+      ],
+      "subjectId": "ant-intermediate-1",
+      "paperTitle": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)",
+      "source": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)"
+    },
+    {
+      "id": "ant-intermediate-past-d08acedcaee9-q9",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "paperId": "ant-intermediate-past-d08acedcaee9",
+      "subjectName": "天線系統工程",
+      "number": 9,
+      "printedNumber": 9,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "D",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)_20260504115115.pdf#page=2",
+      "page": 2,
+      "promptText": "多輸入多輸出 (MIMO) 系統之天線封包相關係數 (envelope correlation coefficient,\n9.\nECC),下列何者正確?\n(A)最佳值為無限大;\n(B)最佳值為負無限大;\n(C)最佳值為1;\n(D)最佳值為0",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "多輸入多輸出 (MIMO) 系統之天線封包相關係數 (envelope correlation coefficient,\n9.\nECC),下列何者正確?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-intermediate-past-d08acedcaee9/q009-01-f46543591d.webp",
+          "alt": "天線系統工程原卷第 9 題題目與選項",
+          "page": 2,
+          "rect": [
+            26,
+            561.35,
+            575.32,
+            682.66
+          ],
+          "role": "question",
+          "sha256": "99ac408b053a6579dc585b611551f71d8ad737cd80c15a4df8a03832b294b35f"
+        }
+      ],
+      "sourcePdfSha256": "d6f3926759dd0018a30116d89365cf1d7f81368c5612ccf1152f704d4e5ae066",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 2,
+          "rect": [
+            55.64,
+            572.178,
+            69.304,
+            587.462
+          ]
+        }
+      ],
+      "subjectId": "ant-intermediate-1",
+      "paperTitle": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)",
+      "source": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)"
+    },
+    {
+      "id": "ant-intermediate-past-d08acedcaee9-q10",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "paperId": "ant-intermediate-past-d08acedcaee9",
+      "subjectName": "天線系統工程",
+      "number": 10,
+      "printedNumber": 10,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "A",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)_20260504115115.pdf#page=2",
+      "page": 2,
+      "promptText": "OTA 量測會依參數的影響範圍,一般測試標準可分成自願型(目的在確認用戶體驗\n10.\n效果)及強迫型(可能會危害人體健康及環經安全)兩類,下列何者OTA 量測屬\n於也適合定義為自願型的量測?\n(A)吞吐量;\n(B)電磁干擾;\n\n(C) SAR(Specific absorption ratio);\n(D)以上皆非",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "OTA 量測會依參數的影響範圍,一般測試標準可分成自願型(目的在確認用戶體驗\n10.\n效果)及強迫型(可能會危害人體健康及環經安全)兩類,下列何者OTA 量測屬\n於也適合定義為自願型的量測?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-intermediate-past-d08acedcaee9/q010-01-061a3a759e.webp",
+          "alt": "天線系統工程原卷第 10 題題目與選項",
+          "page": 2,
+          "rect": [
+            26,
+            681.86,
+            575.32,
+            800.744
+          ],
+          "role": "question",
+          "sha256": "c6e17d5d5dbd7e570dd4f691d70ed60762fc36573830a8db4f04dc960ca2703e"
+        },
+        {
+          "path": "assets/questions/official/ant-intermediate-past-d08acedcaee9/q010-02-e8815e3646.webp",
+          "alt": "天線系統工程原卷第 10 題題目與選項",
+          "page": 3,
+          "rect": [
+            26,
+            116.132,
+            575.32,
+            160.1
+          ],
+          "role": "question",
+          "sha256": "f18931d79262e9cf8451c0d11f2ba8c2fb563a56642e986708560a2bbb5a8659"
+        }
+      ],
+      "sourcePdfSha256": "d6f3926759dd0018a30116d89365cf1d7f81368c5612ccf1152f704d4e5ae066",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 2,
+          "rect": [
+            55.64,
+            692.688,
+            69.304,
+            707.972
+          ]
+        }
+      ],
+      "subjectId": "ant-intermediate-1",
+      "paperTitle": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)",
+      "source": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)"
+    },
+    {
+      "id": "ant-intermediate-past-d08acedcaee9-q11",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "paperId": "ant-intermediate-past-d08acedcaee9",
+      "subjectName": "天線系統工程",
+      "number": 11,
+      "printedNumber": 11,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "D",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)_20260504115115.pdf#page=3",
+      "page": 3,
+      "promptText": "CTIA MIMO OTA TIS 的量測是在自由空間中每幾度量測一個點的值?\n11.\n(A) 10 度;\n(B) 15 度;\n(C) 20 度;\n(D) 30 度",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "CTIA MIMO OTA TIS 的量測是在自由空間中每幾度量測一個點的值?\n11.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-intermediate-past-d08acedcaee9/q011-01-f9f457dd8b.webp",
+          "alt": "天線系統工程原卷第 11 題題目與選項",
+          "page": 3,
+          "rect": [
+            26,
+            159.3,
+            575.32,
+            260.54
+          ],
+          "role": "question",
+          "sha256": "91773f344f44105eb77482b2d547b48a5d61bd615acaa3baebaefef70f5201f1"
+        }
+      ],
+      "sourcePdfSha256": "d6f3926759dd0018a30116d89365cf1d7f81368c5612ccf1152f704d4e5ae066",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 3,
+          "rect": [
+            55.64,
+            170.128,
+            69.304,
+            185.412
+          ]
+        }
+      ],
+      "subjectId": "ant-intermediate-1",
+      "paperTitle": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)",
+      "source": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)"
+    },
+    {
+      "id": "ant-intermediate-past-d08acedcaee9-q12",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "paperId": "ant-intermediate-past-d08acedcaee9",
+      "subjectName": "天線系統工程",
+      "number": 12,
+      "printedNumber": 12,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "A",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)_20260504115115.pdf#page=3",
+      "page": 3,
+      "promptText": "CTIA MIMO OTA Throughput 的量測系統是哪一種?\n12.\n(A) Multi-Probe Anechoic Chamber(MPAC);\n(B) Reverberation Chamber(RC);\n(C) Compact Antenna Test Range(CATR);\n(D)以上皆是",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "CTIA MIMO OTA Throughput 的量測系統是哪一種?\n12.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-intermediate-past-d08acedcaee9/q012-01-b46b49b910.webp",
+          "alt": "天線系統工程原卷第 12 題題目與選項",
+          "page": 3,
+          "rect": [
+            26,
+            259.74,
+            575.32,
+            361.13
+          ],
+          "role": "question",
+          "sha256": "5f99fe9e7a3b71a8f1019be7134a803ab4594a84e9b11de276ea5c15799bee35"
+        }
+      ],
+      "sourcePdfSha256": "d6f3926759dd0018a30116d89365cf1d7f81368c5612ccf1152f704d4e5ae066",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 3,
+          "rect": [
+            55.64,
+            270.718,
+            69.304,
+            286.002
+          ]
+        }
+      ],
+      "subjectId": "ant-intermediate-1",
+      "paperTitle": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)",
+      "source": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)"
+    },
+    {
+      "id": "ant-intermediate-past-d08acedcaee9-q13",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "paperId": "ant-intermediate-past-d08acedcaee9",
+      "subjectName": "天線系統工程",
+      "number": 13,
+      "printedNumber": 13,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "D",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)_20260504115115.pdf#page=3",
+      "page": 3,
+      "promptText": "針對GPS,使用圓極化(CP)跟線性極化(LP)之天線軸比(AR)及收訊描述,\n13.\n下列何者正確?\n(A) AR of CP = ∞ ; AR of LP = 1, LP 最多僅能收到CP 之一半;\n(B) AR of CP = 0 ; AR of LP = 1, LP 最多能收到CP 之兩倍;\n(C) AR of CP = 1 ; AR of LP = 0, LP 最多能收到CP 之兩倍;\n(D) AR of CP = 1 ; AR of LP = ∞, LP 最多僅能收到CP 之一半",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "針對GPS,使用圓極化(CP)跟線性極化(LP)之天線軸比(AR)及收訊描述,\n13.\n下列何者正確?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-intermediate-past-d08acedcaee9/q013-01-0a51a03093.webp",
+          "alt": "天線系統工程原卷第 13 題題目與選項",
+          "page": 3,
+          "rect": [
+            26,
+            360.33,
+            575.32,
+            481.63
+          ],
+          "role": "question",
+          "sha256": "afb23d32daf3b195966a2ffd10c9841c515383477c23313b7acd1daef5c44400"
+        }
+      ],
+      "sourcePdfSha256": "d6f3926759dd0018a30116d89365cf1d7f81368c5612ccf1152f704d4e5ae066",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 3,
+          "rect": [
+            55.64,
+            371.158,
+            69.304,
+            386.442
+          ]
+        }
+      ],
+      "subjectId": "ant-intermediate-1",
+      "paperTitle": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)",
+      "source": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)"
+    },
+    {
+      "id": "ant-intermediate-past-d08acedcaee9-q14",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "paperId": "ant-intermediate-past-d08acedcaee9",
+      "subjectName": "天線系統工程",
+      "number": 14,
+      "printedNumber": 14,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "A",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)_20260504115115.pdf#page=3",
+      "page": 3,
+      "promptText": "多天線系統整合,若無線通訊終端裝置SAR 無法達標,下列哪些方法符合實務?\n14.\n[甲]修改天線饋點或增加天線至外部機殼之距離。\n[乙]使用P-sensor 並配合法規測試。\n[丙]調降輸入功率。\n[丁]將Pre-test SAR 報告轉交給認證實驗室追認。\n(A)甲/乙/丙;\n(B)甲/乙/丁;\n(C)乙/丙/丁;\n(D)甲/乙/丙/丁",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "多天線系統整合,若無線通訊終端裝置SAR 無法達標,下列哪些方法符合實務?\n14.\n[甲]修改天線饋點或增加天線至外部機殼之距離。\n[乙]使用P-sensor 並配合法規測試。\n[丙]調降輸入功率。\n[丁]將Pre-test SAR 報告轉交給認證實驗室追認。",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-intermediate-past-d08acedcaee9/q014-01-6779d06a7b.webp",
+          "alt": "天線系統工程原卷第 14 題題目與選項",
+          "page": 3,
+          "rect": [
+            26,
+            480.83,
+            575.32,
+            662.14
+          ],
+          "role": "question",
+          "sha256": "6efffad79f8640853b9bc4bc677caf404b40ac33621f564baeed56393c65bc59"
+        }
+      ],
+      "sourcePdfSha256": "d6f3926759dd0018a30116d89365cf1d7f81368c5612ccf1152f704d4e5ae066",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 3,
+          "rect": [
+            55.64,
+            491.658,
+            69.304,
+            506.942
+          ]
+        }
+      ],
+      "subjectId": "ant-intermediate-1",
+      "paperTitle": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)",
+      "source": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)"
+    },
+    {
+      "id": "ant-intermediate-past-d08acedcaee9-q15",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "paperId": "ant-intermediate-past-d08acedcaee9",
+      "subjectName": "天線系統工程",
+      "number": 15,
+      "printedNumber": 15,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)_20260504115115.pdf#page=3",
+      "page": 3,
+      "promptText": "下列何者是市售商業波束成型IC(Beamforming IC)用來控制相控陣列天線所輻射\n15.\n之波束轉向的最常見方法?\n(A)將相控陣列天線中來自每一個子天線的訊號振幅均放大3 dB;\n(B)將相控陣列天線中來自每一個子天線的訊號振幅均衰減3 dB;\n(C)利用波束成型IC 改變相連接之子天線的訊號相位;\n(D)固定相連接之子天線的訊號相位但改變訊號振幅",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "下列何者是市售商業波束成型IC(Beamforming IC)用來控制相控陣列天線所輻射\n15.\n之波束轉向的最常見方法?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-intermediate-past-d08acedcaee9/q015-01-efb5841442.webp",
+          "alt": "天線系統工程原卷第 15 題題目與選項",
+          "page": 3,
+          "rect": [
+            26,
+            661.34,
+            575.32,
+            782.74
+          ],
+          "role": "question",
+          "sha256": "6438b00d55e48c6a99eb1218a26577983f4d834e91c895da7cd87e9c19ead43a"
+        }
+      ],
+      "sourcePdfSha256": "d6f3926759dd0018a30116d89365cf1d7f81368c5612ccf1152f704d4e5ae066",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 3,
+          "rect": [
+            55.64,
+            672.168,
+            69.304,
+            687.452
+          ]
+        }
+      ],
+      "subjectId": "ant-intermediate-1",
+      "paperTitle": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)",
+      "source": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)"
+    },
+    {
+      "id": "ant-intermediate-past-d08acedcaee9-q16",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "paperId": "ant-intermediate-past-d08acedcaee9",
+      "subjectName": "天線系統工程",
+      "number": 16,
+      "printedNumber": 16,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "B",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)_20260504115115.pdf#page=4",
+      "page": 4,
+      "promptText": "下列何者工作於毫米波頻帶?\n16.\n(A) L-band 衛星通訊天線;\n(B) Ka-band 衛星地面站天線;\n(C) 5G FR1 基站天線;\n(D)手機內4G 通訊天線",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "下列何者工作於毫米波頻帶?\n16.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-intermediate-past-d08acedcaee9/q016-01-f85304de5f.webp",
+          "alt": "天線系統工程原卷第 16 題題目與選項",
+          "page": 4,
+          "rect": [
+            26,
+            118.74,
+            575.32,
+            220.1
+          ],
+          "role": "question",
+          "sha256": "808dceacd73e2c6d19e1205d248ab5ce39b953cf0578763fabda92a0671222dc"
+        }
+      ],
+      "sourcePdfSha256": "d6f3926759dd0018a30116d89365cf1d7f81368c5612ccf1152f704d4e5ae066",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 4,
+          "rect": [
+            56,
+            129.688,
+            69.064,
+            144.972
+          ]
+        }
+      ],
+      "subjectId": "ant-intermediate-1",
+      "paperTitle": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)",
+      "source": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)"
+    },
+    {
+      "id": "ant-intermediate-past-d08acedcaee9-q17",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "paperId": "ant-intermediate-past-d08acedcaee9",
+      "subjectName": "天線系統工程",
+      "number": 17,
+      "printedNumber": 17,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)_20260504115115.pdf#page=4",
+      "page": 4,
+      "promptText": "5G FR1 及5G FR2 頻帶所使用的技術,下列何者正確?\n17.\n(A) 5G FR2 即為Sub-6 頻段;\n(B)當採用相同的天線設計時,5G FR1 的單一天線尺寸小於5G FR2 的單一天線尺\n寸;\n(C) 5G FR1 及FR2 基地台天線設計通常均採用陣列設計;\n(D) 手持式移動通訊產品無法採用Ka-band 頻段通訊",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "5G FR1 及5G FR2 頻帶所使用的技術,下列何者正確?\n17.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-intermediate-past-d08acedcaee9/q017-01-8dd8814383.webp",
+          "alt": "天線系統工程原卷第 17 題題目與選項",
+          "page": 4,
+          "rect": [
+            26,
+            219.3,
+            575.32,
+            340.61
+          ],
+          "role": "question",
+          "sha256": "dacad5c5b098e6d7334117ffb31f662f2a1f78cb2c9fe98de0f8b24c738a87b6"
+        }
+      ],
+      "sourcePdfSha256": "d6f3926759dd0018a30116d89365cf1d7f81368c5612ccf1152f704d4e5ae066",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 4,
+          "rect": [
+            55.64,
+            230.128,
+            69.304,
+            245.412
+          ]
+        }
+      ],
+      "subjectId": "ant-intermediate-1",
+      "paperTitle": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)",
+      "source": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)"
+    },
+    {
+      "id": "ant-intermediate-past-d08acedcaee9-q18",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "paperId": "ant-intermediate-past-d08acedcaee9",
+      "subjectName": "天線系統工程",
+      "number": 18,
+      "printedNumber": 18,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "D",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)_20260504115115.pdf#page=4",
+      "page": 4,
+      "promptText": "下列哪個機構定義 EIRP (Equivalent Isotropically Radiated Power)規範?\n18.\n(A) IEEE(Institute of Electrical and Electronics Engineers);\n(B) FCC(Federal Communications Commission);\n(C) ITU(International Telecommunication Union);\n(D) CTIA(Cellular Telecommunications Industry Association)",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "下列哪個機構定義 EIRP (Equivalent Isotropically Radiated Power)規範?\n18.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-intermediate-past-d08acedcaee9/q018-01-3f626247cb.webp",
+          "alt": "天線系統工程原卷第 18 題題目與選項",
+          "page": 4,
+          "rect": [
+            26,
+            339.81,
+            575.32,
+            441.17
+          ],
+          "role": "question",
+          "sha256": "51f0017445f4d379cd4ab341f52dfad345dfeed97a0429d01d0dd5a950151799"
+        }
+      ],
+      "sourcePdfSha256": "d6f3926759dd0018a30116d89365cf1d7f81368c5612ccf1152f704d4e5ae066",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 4,
+          "rect": [
+            55.64,
+            350.638,
+            69.304,
+            365.922
+          ]
+        }
+      ],
+      "subjectId": "ant-intermediate-1",
+      "paperTitle": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)",
+      "source": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)"
+    },
+    {
+      "id": "ant-intermediate-past-d08acedcaee9-q19",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "paperId": "ant-intermediate-past-d08acedcaee9",
+      "subjectName": "天線系統工程",
+      "number": 19,
+      "printedNumber": 19,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "D",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)_20260504115115.pdf#page=4",
+      "page": 4,
+      "promptText": "多天線系統中,哪種技術可以同時使用多個天線進行發射和接收,以提高傳輸速\n19.\n率?\n(A)單輸入單輸出(SISO, Single-Input Single-Output);\n(B)天線指向性(Antenna Directivity);\n(C)天線匹配(Antenna Matching);\n(D)多輸入多輸出(MIMO, Multiple-Input Multiple-Output)",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "多天線系統中,哪種技術可以同時使用多個天線進行發射和接收,以提高傳輸速\n19.\n率?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-intermediate-past-d08acedcaee9/q019-01-faeb0a9905.webp",
+          "alt": "天線系統工程原卷第 19 題題目與選項",
+          "page": 4,
+          "rect": [
+            26,
+            440.37,
+            575.32,
+            561.67
+          ],
+          "role": "question",
+          "sha256": "a42fe5846ad0ccf762c17f53942a9c2c80c0186212d02db9342dd00302ec4c5a"
+        }
+      ],
+      "sourcePdfSha256": "d6f3926759dd0018a30116d89365cf1d7f81368c5612ccf1152f704d4e5ae066",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 4,
+          "rect": [
+            55.64,
+            451.218,
+            69.304,
+            466.502
+          ]
+        }
+      ],
+      "subjectId": "ant-intermediate-1",
+      "paperTitle": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)",
+      "source": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)"
+    },
+    {
+      "id": "ant-intermediate-past-d08acedcaee9-q20",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "paperId": "ant-intermediate-past-d08acedcaee9",
+      "subjectName": "天線系統工程",
+      "number": 20,
+      "printedNumber": 20,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)_20260504115115.pdf#page=4",
+      "page": 4,
+      "promptText": "在波束成型電路設計中,下列哪個元件常用於控制相位?\n20.\n(A)天線單元;\n(B)射頻放大器;\n(C)相位移位器(Phase Shifter);\n(D)電容器",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "在波束成型電路設計中,下列哪個元件常用於控制相位?\n20.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-intermediate-past-d08acedcaee9/q020-01-0dd1e16c7f.webp",
+          "alt": "天線系統工程原卷第 20 題題目與選項",
+          "page": 4,
+          "rect": [
+            26,
+            560.87,
+            575.32,
+            662.14
+          ],
+          "role": "question",
+          "sha256": "09cdcdbcfce65fd2557f2e9dd34b5c7a088522a60410e31848c1ced3dc7e7900"
+        }
+      ],
+      "sourcePdfSha256": "d6f3926759dd0018a30116d89365cf1d7f81368c5612ccf1152f704d4e5ae066",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 4,
+          "rect": [
+            55.64,
+            571.698,
+            69.304,
+            586.982
+          ]
+        }
+      ],
+      "subjectId": "ant-intermediate-1",
+      "paperTitle": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)",
+      "source": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)"
+    },
+    {
+      "id": "ant-intermediate-past-d08acedcaee9-q21",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "paperId": "ant-intermediate-past-d08acedcaee9",
+      "subjectName": "天線系統工程",
+      "number": 21,
+      "printedNumber": 21,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)_20260504115115.pdf#page=4",
+      "page": 4,
+      "promptText": "陣列天線的主要優點是什麼?\n21.\n(A)減少天線的尺寸;\n(B)降低系統成本;\n(C)改善天線指向性和增益;\n(D)簡化天線設計",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "陣列天線的主要優點是什麼?\n21.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-intermediate-past-d08acedcaee9/q021-01-eece937c8e.webp",
+          "alt": "天線系統工程原卷第 21 題題目與選項",
+          "page": 4,
+          "rect": [
+            26,
+            661.34,
+            575.32,
+            762.7
+          ],
+          "role": "question",
+          "sha256": "de336075f7d01859ea283e068bf710d4c5f86168b893a4545b2660878a27ae36"
+        }
+      ],
+      "sourcePdfSha256": "d6f3926759dd0018a30116d89365cf1d7f81368c5612ccf1152f704d4e5ae066",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 4,
+          "rect": [
+            55.64,
+            672.168,
+            69.304,
+            687.452
+          ]
+        }
+      ],
+      "subjectId": "ant-intermediate-1",
+      "paperTitle": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)",
+      "source": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)"
+    },
+    {
+      "id": "ant-intermediate-past-d08acedcaee9-q22",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "paperId": "ant-intermediate-past-d08acedcaee9",
+      "subjectName": "天線系統工程",
+      "number": 22,
+      "printedNumber": 22,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "B",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)_20260504115115.pdf#page=4",
+      "page": 4,
+      "promptText": "在陣列天線與波束成型電路整合設計中,下列哪個參數與半功率波束寬度\n22.\n\n(HPBW)最有關?\n(A)天線單元間距;\n(B)天線單元數量;\n(C)天線單元的增益;\n(D)天線單元的阻抗",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "在陣列天線與波束成型電路整合設計中,下列哪個參數與半功率波束寬度\n22.\n(HPBW)最有關?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-intermediate-past-d08acedcaee9/q022-01-8fe31137e8.webp",
+          "alt": "天線系統工程原卷第 22 題題目與選項",
+          "page": 4,
+          "rect": [
+            26,
+            761.9,
+            575.32,
+            800.744
+          ],
+          "role": "question",
+          "sha256": "8f7992862718f2979cc2c05a7dc73550a84a47c0eb390cf0895e89ab66906592"
+        },
+        {
+          "path": "assets/questions/official/ant-intermediate-past-d08acedcaee9/q022-02-09dc71ce31.webp",
+          "alt": "天線系統工程原卷第 22 題題目與選項",
+          "page": 5,
+          "rect": [
+            26,
+            116.132,
+            575.32,
+            220.1
+          ],
+          "role": "question",
+          "sha256": "6e02c50e3677f2765c2ed785f5ee55397285736384f63cff9f6b50aa573e99e9"
+        }
+      ],
+      "sourcePdfSha256": "d6f3926759dd0018a30116d89365cf1d7f81368c5612ccf1152f704d4e5ae066",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 4,
+          "rect": [
+            56,
+            772.724,
+            69.064,
+            788.008
+          ]
+        }
+      ],
+      "subjectId": "ant-intermediate-1",
+      "paperTitle": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)",
+      "source": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)"
+    },
+    {
+      "id": "ant-intermediate-past-d08acedcaee9-q23",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "paperId": "ant-intermediate-past-d08acedcaee9",
+      "subjectName": "天線系統工程",
+      "number": 23,
+      "printedNumber": 23,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)_20260504115115.pdf#page=5",
+      "page": 5,
+      "promptText": "在5G 天線與機構整合驗證中,下列何者不會影響天線的性能?\n23.\n(A)天線的天線設計;\n(B)機構的設計;\n(C)測試順序;\n(D)天線材料",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "在5G 天線與機構整合驗證中,下列何者不會影響天線的性能?\n23.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-intermediate-past-d08acedcaee9/q023-01-6d23e9d89e.webp",
+          "alt": "天線系統工程原卷第 23 題題目與選項",
+          "page": 5,
+          "rect": [
+            26,
+            219.3,
+            575.32,
+            320.57
+          ],
+          "role": "question",
+          "sha256": "55d0f160d6bfbe35356dbdf014f80a06f4c2f0a8abae973148c9e41a32d9bc80"
+        }
+      ],
+      "sourcePdfSha256": "d6f3926759dd0018a30116d89365cf1d7f81368c5612ccf1152f704d4e5ae066",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 5,
+          "rect": [
+            55.64,
+            230.128,
+            69.304,
+            245.412
+          ]
+        }
+      ],
+      "subjectId": "ant-intermediate-1",
+      "paperTitle": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)",
+      "source": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)"
+    },
+    {
+      "id": "ant-intermediate-past-d08acedcaee9-q24",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "paperId": "ant-intermediate-past-d08acedcaee9",
+      "subjectName": "天線系統工程",
+      "number": 24,
+      "printedNumber": 24,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "D",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)_20260504115115.pdf#page=5",
+      "page": 5,
+      "promptText": "5G 多天線系統中,下列何者不是天線設計的重要考量因素?\n24.\n(A)訊號波束形狀;\n(B)天線材質;\n(C)電流分佈情況;\n(D)外部基地台數量",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "5G 多天線系統中,下列何者不是天線設計的重要考量因素?\n24.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-intermediate-past-d08acedcaee9/q024-01-633e5ac380.webp",
+          "alt": "天線系統工程原卷第 24 題題目與選項",
+          "page": 5,
+          "rect": [
+            26,
+            319.77,
+            575.32,
+            421.13
+          ],
+          "role": "question",
+          "sha256": "8230480e2aee7be863ad86f5227c161a251b4d620f68b6555f972a35c0c47f26"
+        }
+      ],
+      "sourcePdfSha256": "d6f3926759dd0018a30116d89365cf1d7f81368c5612ccf1152f704d4e5ae066",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 5,
+          "rect": [
+            55.64,
+            330.718,
+            69.304,
+            346.002
+          ]
+        }
+      ],
+      "subjectId": "ant-intermediate-1",
+      "paperTitle": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)",
+      "source": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)"
+    },
+    {
+      "id": "ant-intermediate-past-d08acedcaee9-q25",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "paperId": "ant-intermediate-past-d08acedcaee9",
+      "subjectName": "天線系統工程",
+      "number": 25,
+      "printedNumber": 25,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)_20260504115115.pdf#page=5",
+      "page": 5,
+      "promptText": "在天線特性量測中,何謂VSWR?\n25.\n(A)天線的發射功率和接收功率之比;\n(B)天線的射頻功率和直流功率之比;\n(C)天線的輸出和輸入端的阻抗不匹配造成的反射損耗比值;\n(D)天線的實際增益和理論增益之比",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "在天線特性量測中,何謂VSWR?\n25.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-intermediate-past-d08acedcaee9/q025-01-5ed02127e4.webp",
+          "alt": "天線系統工程原卷第 25 題題目與選項",
+          "page": 5,
+          "rect": [
+            26,
+            420.33,
+            575.32,
+            521.71
+          ],
+          "role": "question",
+          "sha256": "356debed167b3188358654d4c9a84671bc17c18d0365435138e46b796adb758c"
+        }
+      ],
+      "sourcePdfSha256": "d6f3926759dd0018a30116d89365cf1d7f81368c5612ccf1152f704d4e5ae066",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 5,
+          "rect": [
+            55.64,
+            431.158,
+            69.304,
+            446.442
+          ]
+        }
+      ],
+      "subjectId": "ant-intermediate-1",
+      "paperTitle": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)",
+      "source": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q1",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 1,
+      "printedNumber": 1,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "B",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=1",
+      "page": 1,
+      "promptText": "下列何者不是RFID 標籤天線的類別?\n1.\n(A) Passive;\n(B) Hyper active;\n(C) Active;\n(D) Semi-passive",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "下列何者不是RFID 標籤天線的類別?\n1.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q001-01-57c7d6ed0f.webp",
+          "alt": "天線概論原卷第 1 題題目與選項",
+          "page": 1,
+          "rect": [
+            26,
+            137.22,
+            575.32,
+            238.46
+          ],
+          "role": "question",
+          "sha256": "0abcebaa55190e7bc540f421772b7acee04432050081c773ad227da39226e8ac"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 1,
+          "rect": [
+            55.28,
+            148.75,
+            69.664,
+            166.293
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q2",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 2,
+      "printedNumber": 2,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=1",
+      "page": 1,
+      "promptText": "螺旋天線 (helical antennas) 是美國俄亥俄州立大學 (Ohio State University) 克勞斯\n2.\n教授 (John Daniel Kraus) 於1946 年所發明。克勞斯教授回憶其製作的第一支螺旋\n天線為7 匝、斜度角(pitch angle) 12 度、圓周長約為一個波長,後來發現剛好滿足\n軸向模態 (axial mode) 的操作條件。克勞斯教授在自家地下室以簡單的儀器配置來\n檢測這支螺旋天線 (參見示意圖):在z 軸上以偶極天線做為接收天線,並以z 軸為\n轉軸使偶極天線在x-y 平面上旋轉。針對這樣的檢測配置,下列何者正確?\n(A)從示意圖中螺旋天線的旋繞方式推測,其輻射波應為左旋圓極化,因此偶極天線\n必須順時針繞 (圖中CW 方向) 才能有 “response”;\n(B)從示意圖中螺旋天線的旋繞方式推測,其輻射波應為右旋圓極化,因此偶極天線\n必須逆時針繞 (圖中CCW 方向) 才能有 “response”;\n(C)測得之 “response” 不會隨偶極天線在x-y 平面上旋轉而改變,僅能推論此時螺\n旋天線輻射波為圓極化,無法推測其左/右旋;\n(D)此時螺旋天線在z 軸方向輻射強度甚低,偶極天線在x-y 平面上無論順/逆時針\n旋轉,都無法測得 “response”",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "螺旋天線 (helical antennas) 是美國俄亥俄州立大學 (Ohio State University) 克勞斯\n2.\n教授 (John Daniel Kraus) 於1946 年所發明。克勞斯教授回憶其製作的第一支螺旋\n天線為7 匝、斜度角(pitch angle) 12 度、圓周長約為一個波長,後來發現剛好滿足\n軸向模態 (axial mode) 的操作條件。克勞斯教授在自家地下室以簡單的儀器配置來\n檢測這支螺旋天線 (參見示意圖):在z 軸上以偶極天線做為接收天線,並以z 軸為\n轉軸使偶極天線在x-y 平面上旋轉。針對這樣的檢測配置,下列何者正確?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q002-01-09ea676102.webp",
+          "alt": "天線概論原卷第 2 題題目與選項",
+          "page": 1,
+          "rect": [
+            26,
+            237.66,
+            575.32,
+            619.03
+          ],
+          "role": "question",
+          "sha256": "528087e7419d3ee26280498d935dc945665cee66b2fe24407d8e65f6425680a9"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 1,
+          "rect": [
+            55.28,
+            247.39,
+            69.664,
+            264.933
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q3",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 3,
+      "printedNumber": 3,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "D",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=1",
+      "page": 1,
+      "promptText": "若有一天線輸入功率為20 dBm,天線輻射效率為25 %,天線之最大輻射指向性\n3.\n為5 dB,此天線之EIRP (Effective Isotropic Radiated Power)為多少?\n(A) 5 dBm;\n(B) 14 dBm;\n(C) 16 dBm;\n(D) 19 dBm",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "若有一天線輸入功率為20 dBm,天線輻射效率為25 %,天線之最大輻射指向性\n3.\n為5 dB,此天線之EIRP (Effective Isotropic Radiated Power)為多少?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q003-01-554a3fe991.webp",
+          "alt": "天線概論原卷第 3 題題目與選項",
+          "page": 1,
+          "rect": [
+            26,
+            618.23,
+            575.32,
+            739.54
+          ],
+          "role": "question",
+          "sha256": "0f45a512fb35d1ce29a9e01dae25cf8800c2c934fbe8e9c35962c1f6172204ad"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 1,
+          "rect": [
+            54.92,
+            627.96,
+            70.024,
+            645.503
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q4",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 4,
+      "printedNumber": 4,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "B",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=1",
+      "page": 1,
+      "promptText": "IEEE 對「增益」的定義為「在接受(輸入)相同功率的條件下,天線在給定方向上的\n4.\n輻射強度與等向性輻射體的輻射強度的比值」,下列何者正確?\n(A)天線將輸入功率放大之後輻射出去,天線增益就是總輻射功率與輸入功率之間\n\n的放大倍率;\n(B)等向性輻射體的輻射強度等於輸入功率除以4 π;\n(C)「天線的增益」是增益函數 G(θ, φ) 對於空間立體角總積分之結果;\n(D)改善天線的阻抗匹配,可以提升總輻射功率,因此可以提升天線的增益",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "IEEE 對「增益」的定義為「在接受(輸入)相同功率的條件下,天線在給定方向上的\n4.\n輻射強度與等向性輻射體的輻射強度的比值」,下列何者正確?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q004-01-d24467bccb.webp",
+          "alt": "天線概論原卷第 4 題題目與選項",
+          "page": 1,
+          "rect": [
+            26,
+            738.74,
+            575.32,
+            800.744
+          ],
+          "role": "question",
+          "sha256": "ea65be0122d81865f099d14b38cd02801059351c59e5da5d7d3dafde3269edfd"
+        },
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q004-02-1900d6c0bc.webp",
+          "alt": "天線概論原卷第 4 題題目與選項",
+          "page": 2,
+          "rect": [
+            26,
+            116.132,
+            575.32,
+            200.06
+          ],
+          "role": "question",
+          "sha256": "9dc506efe56e6da83e74ff5bf9f677e9e248ccf2f5ebd0a8344343b7f8ef71cd"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 1,
+          "rect": [
+            55.28,
+            748.466,
+            69.664,
+            766.009
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q5",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 5,
+      "printedNumber": 5,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "A",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=2",
+      "page": 2,
+      "promptText": "已知一微帶線電路之特性阻抗為200\n,今天欲將其設計為更小之特性阻抗,則\n5.\n可採下列何項方法?\n(A)使用較小基板厚度之電路板設計;\n(B)使用較小介電係數之電路板設計;\n(C)將微帶線長度增加;\n(D)將微帶線長度減少",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "已知一微帶線電路之特性阻抗為200\n,今天欲將其設計為更小之特性阻抗,則\n5.\n可採下列何項方法?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q005-01-cdb7820e5e.webp",
+          "alt": "天線概論原卷第 5 題題目與選項",
+          "page": 2,
+          "rect": [
+            26,
+            199.26,
+            575.32,
+            320.57
+          ],
+          "role": "question",
+          "sha256": "960dc370a2f401016a27cfe4270d8f2387aea7319d56dfba6ba3beaac9750242"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 2,
+          "rect": [
+            54.92,
+            208.99,
+            70.024,
+            226.533
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q6",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 6,
+      "printedNumber": 6,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=2",
+      "page": 2,
+      "promptText": "天線的輸入功率為100 mW,若測量到的輻射功率為90 mW,則該天線的輻射效率\n6.\n為何?\n(A) 75 %;\n(B) 80 %;\n(C) 90 %;\n(D) 100 %",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "天線的輸入功率為100 mW,若測量到的輻射功率為90 mW,則該天線的輻射效率\n6.\n為何?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q006-01-40e4c0eed7.webp",
+          "alt": "天線概論原卷第 6 題題目與選項",
+          "page": 2,
+          "rect": [
+            26,
+            319.77,
+            575.32,
+            441.17
+          ],
+          "role": "question",
+          "sha256": "74f4ceb5f6dc7b5d243d80fcd47fea24e153cae5d2fb3ff1f3bdb659abb92b52"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 2,
+          "rect": [
+            55.28,
+            329.62,
+            69.664,
+            347.163
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q7",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 7,
+      "printedNumber": 7,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=2",
+      "page": 2,
+      "promptText": "關於陣列天線的特性,下列何者有誤?\n7.\n(A)較高的增益值;\n(B)較多的旁波瓣;\n(C)較寬的半功率波束;\n(D)較遠的接收距離",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "關於陣列天線的特性,下列何者有誤?\n7.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q007-01-2fcd71d581.webp",
+          "alt": "天線概論原卷第 7 題題目與選項",
+          "page": 2,
+          "rect": [
+            26,
+            440.37,
+            575.32,
+            541.63
+          ],
+          "role": "question",
+          "sha256": "8ea53986e44b7d98d5581b53eebf2557078e1898e0a28dae39d2f1e4a268647f"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 2,
+          "rect": [
+            56.96,
+            450.12,
+            71.344,
+            467.663
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q8",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 8,
+      "printedNumber": 8,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "A",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=2",
+      "page": 2,
+      "promptText": "傳輸線的反射係數若以極座標形式表示,下列何者正確?\n8.\n(A) Γ= |Γ|ejθ;\n(B) Γ= |Γ|ejθ−1;\n(C) Γ= |Γ|ejθ+1;\n(D) Γ= |Γ|ejθ+α",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "傳輸線的反射係數若以極座標形式表示,下列何者正確?\n8.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q008-01-e8f31ffeed.webp",
+          "alt": "天線概論原卷第 8 題題目與選項",
+          "page": 2,
+          "rect": [
+            26,
+            540.83,
+            575.32,
+            642.19
+          ],
+          "role": "question",
+          "sha256": "7e3b65f4ba466e4c92a7f2ae413b71b4eaf800e62fe6e6fbc7beb0d8d4522303"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 2,
+          "rect": [
+            54.92,
+            550.56,
+            70.024,
+            568.103
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q9",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 9,
+      "printedNumber": 9,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=2",
+      "page": 2,
+      "promptText": "若一條特性阻抗為100 Ω 的傳輸線,終端有一個300 + j200 Ω 的負載,則其正規化\n9.\n負載阻抗為何?\n(A) 1+j;\n(B) 1-j;\n(C) 3+j2;\n(D) 2-j3",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "若一條特性阻抗為100 Ω 的傳輸線,終端有一個300 + j200 Ω 的負載,則其正規化\n9.\n負載阻抗為何?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q009-01-d7b04b1035.webp",
+          "alt": "天線概論原卷第 9 題題目與選項",
+          "page": 2,
+          "rect": [
+            26,
+            641.39,
+            575.32,
+            762.7
+          ],
+          "role": "question",
+          "sha256": "4ecfe3e2b9468a29c7ef37e7d512f121b30265ef1a0e88b6f98e1d1a33e5488e"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 2,
+          "rect": [
+            55.28,
+            651.15,
+            69.664,
+            668.693
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q10",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 10,
+      "printedNumber": 10,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "D",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=2",
+      "page": 2,
+      "promptText": "史密斯圖中,若標示為正規化後實部阻抗為1 Ω,其所對應之等電阻圓半徑為何?\n10.\n\n(A) 1;\n(B) 0.2;\n(C) 0.25;\n(D) 0.5",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "史密斯圖中,若標示為正規化後實部阻抗為1 Ω,其所對應之等電阻圓半徑為何?\n10.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q010-01-b8cc96ec82.webp",
+          "alt": "天線概論原卷第 10 題題目與選項",
+          "page": 2,
+          "rect": [
+            26,
+            761.9,
+            575.32,
+            800.744
+          ],
+          "role": "question",
+          "sha256": "7e079ae15bfbe77ea76380145a05ae830fc3d1bc2891ba334d05057b8adf6c16"
+        },
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q010-02-0e907f1d84.webp",
+          "alt": "天線概論原卷第 10 題題目與選項",
+          "page": 3,
+          "rect": [
+            26,
+            116.132,
+            575.32,
+            200.06
+          ],
+          "role": "question",
+          "sha256": "b95a0adc71f3388b0b4e2f7611e04f291d7383bed6d00da786f423a96a7d82d1"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 2,
+          "rect": [
+            54.92,
+            771.626,
+            70.024,
+            789.169
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q11",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 11,
+      "printedNumber": 11,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "B",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=3",
+      "page": 3,
+      "promptText": "關於天線增益值的單位,下列何者正確?\n11.\n(A) dB;\n(B) dBi;\n(C) dBm;\n(D) dBW",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "關於天線增益值的單位,下列何者正確?\n11.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q011-01-0621a85b20.webp",
+          "alt": "天線概論原卷第 11 題題目與選項",
+          "page": 3,
+          "rect": [
+            26,
+            199.26,
+            575.32,
+            300.65
+          ],
+          "role": "question",
+          "sha256": "ca00b9e5baac9065432540469c4f68cfacf1b241691f4649314a7c1c979bf49b"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 3,
+          "rect": [
+            55.28,
+            208.99,
+            69.664,
+            226.533
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q12",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 12,
+      "printedNumber": 12,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=3",
+      "page": 3,
+      "promptText": "關於號角天線的輻射場型,下列何者正確?\n12.\n(A)全向性;\n(B)等向性;\n(C)指向性;\n(D)半等向性",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "關於號角天線的輻射場型,下列何者正確?\n12.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q012-01-10ca213007.webp",
+          "alt": "天線概論原卷第 12 題題目與選項",
+          "page": 3,
+          "rect": [
+            26,
+            299.85,
+            575.32,
+            401.09
+          ],
+          "role": "question",
+          "sha256": "ff3176bb74afc9c88fffa1fab4e3b1c8c73dd0796418b7908eb65246e93e2b59"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 3,
+          "rect": [
+            55.28,
+            309.58,
+            69.664,
+            327.123
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q13",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 13,
+      "printedNumber": 13,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "D",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=3",
+      "page": 3,
+      "promptText": "下列何者為高增益天線?\n13.\n(A)單極天線;\n(B) PIFA 天線;\n(C)環形天線;\n(D)八木天線",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "下列何者為高增益天線?\n13.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q013-01-5c4edc452d.webp",
+          "alt": "天線概論原卷第 13 題題目與選項",
+          "page": 3,
+          "rect": [
+            26,
+            400.29,
+            575.32,
+            501.67
+          ],
+          "role": "question",
+          "sha256": "115146e9687d17c8ef68adc6e24cef40d779f5b09046d548d82233cdccd9fa60"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 3,
+          "rect": [
+            54.92,
+            410.02,
+            70.024,
+            427.563
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q14",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 14,
+      "printedNumber": 14,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "D",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=3",
+      "page": 3,
+      "promptText": "5G NR FR2 天線設計技術,下列何者有誤?\n14.\n(A)使用高增益天線;\n(B)使用波束成型天線陣列;\n(C)使用MIMO 多天線陣列;\n(D)使用全向性天線",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "5G NR FR2 天線設計技術,下列何者有誤?\n14.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q014-01-c02b9f23e0.webp",
+          "alt": "天線概論原卷第 14 題題目與選項",
+          "page": 3,
+          "rect": [
+            26,
+            500.87,
+            575.32,
+            602.11
+          ],
+          "role": "question",
+          "sha256": "127266d3d552642bb2779d7a3f9c59f5451babee5cb40fe55da4996d6f035494"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 3,
+          "rect": [
+            54.92,
+            510.6,
+            70.024,
+            528.143
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q15",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 15,
+      "printedNumber": 15,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "A",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=3",
+      "page": 3,
+      "promptText": "偶極天線的輻射場型為下列何種極化類型?\n15.\n(A)線性極化;\n(B)圓極化;\n(C)橢圓極化;\n(D)雙極化",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "偶極天線的輻射場型為下列何種極化類型?\n15.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q015-01-461e15bdc3.webp",
+          "alt": "天線概論原卷第 15 題題目與選項",
+          "page": 3,
+          "rect": [
+            26,
+            601.31,
+            575.32,
+            702.7
+          ],
+          "role": "question",
+          "sha256": "e0d7b56a6e3f490dec2f9af5e48eb75787883b2b734bff586597324eeed9b12a"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 3,
+          "rect": [
+            54.92,
+            611.04,
+            70.024,
+            628.583
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q16",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 16,
+      "printedNumber": 16,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=3",
+      "page": 3,
+      "promptText": "一無線電發射機,以一50 Ω 傳輸線連接到輸入阻抗為80 + j40 Ω 的天線,可將25.9\n16.\nW 的功率傳送到天線,其無線電發射機在負載為50 Ω 時,可送出多少功率?\n(A) 100 W;\n(B) 50 W;\n\n(C) 30 W;\n(D) 20 W",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "一無線電發射機,以一50 Ω 傳輸線連接到輸入阻抗為80 + j40 Ω 的天線,可將25.9\n16.\nW 的功率傳送到天線,其無線電發射機在負載為50 Ω 時,可送出多少功率?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q016-01-6326ba499f.webp",
+          "alt": "天線概論原卷第 16 題題目與選項",
+          "page": 3,
+          "rect": [
+            26,
+            701.9,
+            575.32,
+            800.744
+          ],
+          "role": "question",
+          "sha256": "91cfb9b3a33b34d0e91a8c5f0239489728ddd97cada4ee74b7b28184b0440477"
+        },
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q016-02-2bd2b3ad61.webp",
+          "alt": "天線概論原卷第 16 題題目與選項",
+          "page": 4,
+          "rect": [
+            26,
+            116.132,
+            575.32,
+            160.1
+          ],
+          "role": "question",
+          "sha256": "5415878fc60f610bdb452a6e39a486033faab56bb07979163f3b27c2b6a5fd3c"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 3,
+          "rect": [
+            55.28,
+            711.63,
+            69.664,
+            729.173
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q17",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 17,
+      "printedNumber": 17,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=4",
+      "page": 4,
+      "promptText": "一長度為2 公分的75 Ω 同軸傳輸線,負載阻抗為37.5 + j75 Ω,若傳輸線內介質的\n17.\n相對介電常數為2.56,且頻率為3.0 GHz,其傳輸線負載端的反射係數為多少?\n(A) 0.62 ∠ 212°;\n(B) 0.62 ∠ -212°;\n(C) 0.62 ∠ 83°;\n(D) 0.62 ∠ -83°",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "一長度為2 公分的75 Ω 同軸傳輸線,負載阻抗為37.5 + j75 Ω,若傳輸線內介質的\n17.\n相對介電常數為2.56,且頻率為3.0 GHz,其傳輸線負載端的反射係數為多少?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q017-01-594cddad7b.webp",
+          "alt": "天線概論原卷第 17 題題目與選項",
+          "page": 4,
+          "rect": [
+            26,
+            159.3,
+            575.32,
+            280.61
+          ],
+          "role": "question",
+          "sha256": "d5e043b7d2ac1d65287a15a4506f5ecb9a5230639e0c5127abc88291a32fe7de"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 4,
+          "rect": [
+            55.28,
+            169.03,
+            69.664,
+            186.573
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q18",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 18,
+      "printedNumber": 18,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "A",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=4",
+      "page": 4,
+      "promptText": "= 2⸰,φHP\n°\n°\n= 2°,則其天線的指向性為何?\n一天線的半功率波束寬度 θHP\n18.\n(A) 40.0 dB;\n(B) 46.4 dB;\n(C) 47.8 dB;\n(D) 49.6 dB",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "= 2⸰,φHP\n°\n°\n= 2°,則其天線的指向性為何?\n一天線的半功率波束寬度 θHP\n18.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q018-01-1ae9e70b37.webp",
+          "alt": "天線概論原卷第 18 題題目與選項",
+          "page": 4,
+          "rect": [
+            26,
+            279.81,
+            575.32,
+            381.17
+          ],
+          "role": "question",
+          "sha256": "aa7dcc9118447b719616a74c5bc1435fadcd0e975b46cfb5143e5b9be8225bbc"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 4,
+          "rect": [
+            54.92,
+            289.54,
+            70.024,
+            307.083
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q19",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 19,
+      "printedNumber": 19,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "A",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=4",
+      "page": 4,
+      "promptText": "= 2⸰,φHP\n°\n°\n= 1°,若天線效率為 k=0.5 時,其天線的\n一天線的半功率波束寬度θHP\n19.\n增益為多少?\n(A) 1.0×104;\n(B) 1.5×104;\n(C) 2.0×104;\n(D) 2.5×104",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "= 2⸰,φHP\n°\n°\n= 1°,若天線效率為 k=0.5 時,其天線的\n一天線的半功率波束寬度θHP\n19.\n增益為多少?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q019-01-4132446b5a.webp",
+          "alt": "天線概論原卷第 19 題題目與選項",
+          "page": 4,
+          "rect": [
+            26,
+            380.37,
+            575.32,
+            501.67
+          ],
+          "role": "question",
+          "sha256": "e8075889e8dc2b7a11f8dbee1613365ae10ce1c32c6d5d4be3f972e442cdced2"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 4,
+          "rect": [
+            54.92,
+            390.1,
+            70.024,
+            407.643
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q20",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 20,
+      "printedNumber": 20,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "A",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=4",
+      "page": 4,
+      "promptText": "若要使天線效率(antenna efficiency)超過90 %,則VSWR 必須為多少?\n20.\n(A) VSWR ≦ 2;\n(B) VSWR ≦ 3;\n(C) VSWR ≦ 5;\n(D) VSWR ≦ 10",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "若要使天線效率(antenna efficiency)超過90 %,則VSWR 必須為多少?\n20.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q020-01-9761184741.webp",
+          "alt": "天線概論原卷第 20 題題目與選項",
+          "page": 4,
+          "rect": [
+            26,
+            500.87,
+            575.32,
+            602.11
+          ],
+          "role": "question",
+          "sha256": "faae2980af87080c43dc24cd45d236b923191fb80eca492191e1a254cd8ef53b"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 4,
+          "rect": [
+            54.92,
+            510.6,
+            70.024,
+            528.143
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q21",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 21,
+      "printedNumber": 21,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=4",
+      "page": 4,
+      "promptText": "一微波天線之指向性 D=900,則其天線的最大有效口徑為下列何者?\n21.\n(A) 15.9 λ2;\n(B) 39.8 λ2;\n(C) 71.6 λ2;\n(D) 95.5 λ2",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "一微波天線之指向性 D=900,則其天線的最大有效口徑為下列何者?\n21.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q021-01-12e38a0bd3.webp",
+          "alt": "天線概論原卷第 21 題題目與選項",
+          "page": 4,
+          "rect": [
+            26,
+            601.31,
+            575.32,
+            702.7
+          ],
+          "role": "question",
+          "sha256": "cef723aa1c48d3551f29503842cb64a7eb92469a95805204d7f0250a3073d0a4"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 4,
+          "rect": [
+            55.28,
+            611.04,
+            69.664,
+            628.583
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q22",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 22,
+      "printedNumber": 22,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=4",
+      "page": 4,
+      "promptText": "下圖倒 F 型天線長度L 為幾個波長?\n22.\n\n(A) 1 ;\n(B) 1/2 ;\n(C) 1/4 ;\n(D) 1/8 ",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "下圖倒 F 型天線長度L 為幾個波長?\n22.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q022-01-cde884afb2.webp",
+          "alt": "天線概論原卷第 22 題題目與選項",
+          "page": 4,
+          "rect": [
+            26,
+            701.9,
+            575.32,
+            800.744
+          ],
+          "role": "question",
+          "sha256": "a9dbf80bac53c5a92d318a89b71071f67375c6365ec6635f05ae3f1fd1ae04c2"
+        },
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q022-02-37dd6c925d.webp",
+          "alt": "天線概論原卷第 22 題題目與選項",
+          "page": 5,
+          "rect": [
+            26,
+            116.132,
+            575.32,
+            328.97
+          ],
+          "role": "question",
+          "sha256": "6d45cf064413df8b8bfcb7b10c8e1c7b85c2d2b6f37dcdca59a31e8402767b72"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 4,
+          "rect": [
+            55.28,
+            711.63,
+            69.664,
+            729.173
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q23",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 23,
+      "printedNumber": 23,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=5",
+      "page": 5,
+      "promptText": "螺旋天線(Helical Antenna)的周長遠小於波長時,下列敘述何者有誤?\n23.\n(A)可視為加上電感性的單極天線;\n(B)全向性輻射;\n(C)共振長度等於1/4 ;\n(D)可縮短天線長度",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "螺旋天線(Helical Antenna)的周長遠小於波長時,下列敘述何者有誤?\n23.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q023-01-a02368b0a2.webp",
+          "alt": "天線概論原卷第 23 題題目與選項",
+          "page": 5,
+          "rect": [
+            26,
+            328.17,
+            575.32,
+            429.41
+          ],
+          "role": "question",
+          "sha256": "23559932976b9634e41e633eb146ae9d14279fd5b4dc23057ba4d4f98e06bb27"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 5,
+          "rect": [
+            55.28,
+            337.9,
+            69.664,
+            355.443
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q24",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 24,
+      "printedNumber": 24,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "A",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=5",
+      "page": 5,
+      "promptText": "有一拋物面天線,於20 GHz 使用時,可得增益g = 60 dB,若開口效率k = 50\n24.\n%,則天線之開口直徑為下列何者?\n(A) 6.75 m;\n(B) 13.5 m;\n(C) 45.0 m;\n(D) 67.5 m",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "有一拋物面天線,於20 GHz 使用時,可得增益g = 60 dB,若開口效率k = 50\n24.\n%,則天線之開口直徑為下列何者?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q024-01-8c8b3659e2.webp",
+          "alt": "天線概論原卷第 24 題題目與選項",
+          "page": 5,
+          "rect": [
+            26,
+            428.61,
+            575.32,
+            549.91
+          ],
+          "role": "question",
+          "sha256": "c3d9b28671273b2c163e4d516d2604ba3e92b2ee77545ca6efcc3ba9c7977cff"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 5,
+          "rect": [
+            54.92,
+            438.34,
+            70.024,
+            455.883
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q25",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 25,
+      "printedNumber": 25,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "D",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=5",
+      "page": 5,
+      "promptText": "關於5G NR FR2 天線的OTA 測試之技術方法,下列何者有誤?\n25.\n(A) 間接遠場量測法;\n(B) 直接遠場量測法;\n(C) 近場到遠場轉換量測法;\n(D) 直接近場量測法",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "關於5G NR FR2 天線的OTA 測試之技術方法,下列何者有誤?\n25.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q025-01-a9f8eda6c1.webp",
+          "alt": "天線概論原卷第 25 題題目與選項",
+          "page": 5,
+          "rect": [
+            26,
+            549.11,
+            575.32,
+            650.5
+          ],
+          "role": "question",
+          "sha256": "a871c7c52796e9f885e37cdccf64456134325c983e82e9a9a8bf3a358efbdbff"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 5,
+          "rect": [
+            54.92,
+            558.84,
+            70.024,
+            576.383
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q26",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 26,
+      "printedNumber": 26,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=5",
+      "page": 5,
+      "promptText": "關於低軌道衛星上的天線架構,下列何者天線適用較佳?\n26.\n(A)號角天線;\n(B) PIFA 天線;\n(C)陣列天線;\n(D)八木天線",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "關於低軌道衛星上的天線架構,下列何者天線適用較佳?\n26.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q026-01-20b57a4e96.webp",
+          "alt": "天線概論原卷第 26 題題目與選項",
+          "page": 5,
+          "rect": [
+            26,
+            649.7,
+            575.32,
+            750.94
+          ],
+          "role": "question",
+          "sha256": "c73c275daeecc2f25b77ea37cd3e511c453e27d4bc43625d3c2c5cb9a5a94928"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 5,
+          "rect": [
+            55.28,
+            659.43,
+            69.664,
+            676.973
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q27",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 27,
+      "printedNumber": 27,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=5",
+      "page": 5,
+      "promptText": "手機天線總全向輻射功率TRP 測試中,需在球座標的 θ 軸和 ∅ 軸分別取點進行\n27.\n量測,即能充分描述轉台的遠場輻射模式和總輻射功率,其量測時分別需間隔多少\n\n度取一個測量點?\n(A) 5 度;\n(B) 10 度;\n(C) 15 度;\n(D) 20 度",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "手機天線總全向輻射功率TRP 測試中,需在球座標的 θ 軸和 ∅ 軸分別取點進行\n27.\n量測,即能充分描述轉台的遠場輻射模式和總輻射功率,其量測時分別需間隔多少\n度取一個測量點?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q027-01-848ba7d663.webp",
+          "alt": "天線概論原卷第 27 題題目與選項",
+          "page": 5,
+          "rect": [
+            26,
+            750.14,
+            575.32,
+            800.744
+          ],
+          "role": "question",
+          "sha256": "6ec2859f96732f37a79b18184e4010e0c909df355710374c92ad055b488e0e67"
+        },
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q027-02-7ee7caa2f0.webp",
+          "alt": "天線概論原卷第 27 題題目與選項",
+          "page": 6,
+          "rect": [
+            26,
+            116.132,
+            575.32,
+            220.1
+          ],
+          "role": "question",
+          "sha256": "4964f891af3925c12a87bac412bf1eb1c86b42571ebd49280a3192beab27bf41"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 5,
+          "rect": [
+            55.28,
+            759.866,
+            69.664,
+            777.409
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q28",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 28,
+      "printedNumber": 28,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "B",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=6",
+      "page": 6,
+      "promptText": "若有一具電感性負載,一端連接λ/4 傳輸線,則另一端看入傳輸線之阻抗應為下列\n28.\n何者?\n(A)電感性;\n(B)電容性;\n(C)電阻性;\n(D)電位性",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "若有一具電感性負載,一端連接λ/4 傳輸線,則另一端看入傳輸線之阻抗應為下列\n28.\n何者?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q028-01-c5180638c3.webp",
+          "alt": "天線概論原卷第 28 題題目與選項",
+          "page": 6,
+          "rect": [
+            26,
+            219.3,
+            575.32,
+            340.61
+          ],
+          "role": "question",
+          "sha256": "0dad62a76242c41823bb09560e7db365ee43de0125773d064ddd6615b3099e1c"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 6,
+          "rect": [
+            55.28,
+            229.03,
+            69.664,
+            246.573
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q29",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 29,
+      "printedNumber": 29,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "D",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=6",
+      "page": 6,
+      "promptText": "手機天線總全向靈敏度TIS 測試中,需要在球座標的 θ 軸和 ∅ 軸分別取點進行量\n29.\n測,即能獲得天線接收性能,量測時分別需間隔多少度取一個測量點?\n(A) 5 度;\n(B) 10 度;\n(C) 20 度;\n(D) 30 度",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "手機天線總全向靈敏度TIS 測試中,需要在球座標的 θ 軸和 ∅ 軸分別取點進行量\n29.\n測,即能獲得天線接收性能,量測時分別需間隔多少度取一個測量點?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q029-01-c1bf39febe.webp",
+          "alt": "天線概論原卷第 29 題題目與選項",
+          "page": 6,
+          "rect": [
+            26,
+            339.81,
+            575.32,
+            461.11
+          ],
+          "role": "question",
+          "sha256": "aaccfb846b6c45c88ec6d9d0de4d7fcd831d4a77632f079ddc06af46ccac5b7f"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 6,
+          "rect": [
+            54.92,
+            349.54,
+            70.024,
+            367.083
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q30",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 30,
+      "printedNumber": 30,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "D",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=6",
+      "page": 6,
+      "promptText": "一天線最大方向性為1.76 dBi,效率為50 %,VSWR 為3,輸入功率為1 W,其天\n30.\n線的總輻射功率(TRP)為多少?\n(A) -2.22 dB;\n(B) -2.80 dB;\n(C) -3.47 dB;\n(D) -4.26 dB",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "一天線最大方向性為1.76 dBi,效率為50 %,VSWR 為3,輸入功率為1 W,其天\n30.\n線的總輻射功率(TRP)為多少?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q030-01-6a72c31b81.webp",
+          "alt": "天線概論原卷第 30 題題目與選項",
+          "page": 6,
+          "rect": [
+            26,
+            460.31,
+            575.32,
+            581.59
+          ],
+          "role": "question",
+          "sha256": "014c47a3ea738785e68fcac1e35ad4ce6f456ea441ef7e784c397686151acf87"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 6,
+          "rect": [
+            54.92,
+            470.04,
+            70.024,
+            487.583
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q31",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 31,
+      "printedNumber": 31,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=6",
+      "page": 6,
+      "promptText": "關於天線之半功率波束寬的定義與輻射最大值之差異,下列敘述何者正確?\n31.\n(A) 1 dB;\n(B) 2 dB;\n(C) 3 dB;\n(D) 6 dB",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "關於天線之半功率波束寬的定義與輻射最大值之差異,下列敘述何者正確?\n31.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q031-01-14b9d779cb.webp",
+          "alt": "天線概論原卷第 31 題題目與選項",
+          "page": 6,
+          "rect": [
+            26,
+            580.79,
+            575.32,
+            682.18
+          ],
+          "role": "question",
+          "sha256": "bd6dbb879db7933605772035f13c3dc337a67756ddf10a4ea49cd26229d1a4fb"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 6,
+          "rect": [
+            55.28,
+            590.64,
+            69.664,
+            608.183
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q32",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 32,
+      "printedNumber": 32,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "B",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=6",
+      "page": 6,
+      "promptText": "在自由空間下,2 GHz 的波長是多少?\n32.\n(A) 7.5 cm;\n(B) 15 cm;\n(C) 30 cm;\n(D) 25 cm",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "在自由空間下,2 GHz 的波長是多少?\n32.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q032-01-3ae5efedc6.webp",
+          "alt": "天線概論原卷第 32 題題目與選項",
+          "page": 6,
+          "rect": [
+            26,
+            681.38,
+            575.32,
+            782.74
+          ],
+          "role": "question",
+          "sha256": "0a2a39ad896ccd14f1e15e89c38b8931adbc4f8e92d251c0690817b614720db8"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 6,
+          "rect": [
+            55.28,
+            691.11,
+            69.664,
+            708.653
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q33",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 33,
+      "printedNumber": 33,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "B",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=7",
+      "page": 7,
+      "promptText": "一無線電鏈路有一個15 瓦的發射器,連接到一個在5 GHz 頻率下具有2.5 平方公\n33.\n尺有效孔徑的天線,接收天線的有效孔徑為0.5 平方公尺,且位於距離發射天線15\n公里視距範圍內,若天線無損且匹配,求其接收器接收到的功率為何?\n(A) 22 μW;\n(B) 23 μW;\n(C) 24 μW;\n(D) 25 μW",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "一無線電鏈路有一個15 瓦的發射器,連接到一個在5 GHz 頻率下具有2.5 平方公\n33.\n尺有效孔徑的天線,接收天線的有效孔徑為0.5 平方公尺,且位於距離發射天線15\n公里視距範圍內,若天線無損且匹配,求其接收器接收到的功率為何?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q033-01-aa9e0ef5e5.webp",
+          "alt": "天線概論原卷第 33 題題目與選項",
+          "page": 7,
+          "rect": [
+            26,
+            118.74,
+            575.32,
+            260.06
+          ],
+          "role": "question",
+          "sha256": "506b5b3206921d916635145137ecf5978bdff51658ed9d5c7e659d6baf973801"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 7,
+          "rect": [
+            56,
+            129.688,
+            69.064,
+            144.972
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q34",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 34,
+      "printedNumber": 34,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "A",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=7",
+      "page": 7,
+      "promptText": "若天線之增益以及效率分別為 3.12 dBi 與 78 %,其天線指向性 (Directivity) 約\n34.\n為多少?\n(A) 4 dBi;\n(B) 3.5 dBi;\n(C) 3 dBi;\n(D) 2.43 dBi",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "若天線之增益以及效率分別為 3.12 dBi 與 78 %,其天線指向性 (Directivity) 約\n34.\n為多少?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q034-01-14ba0edb59.webp",
+          "alt": "天線概論原卷第 34 題題目與選項",
+          "page": 7,
+          "rect": [
+            26,
+            259.26,
+            575.32,
+            380.57
+          ],
+          "role": "question",
+          "sha256": "9e5bd8d403a3d66e2dc6b3464b030b30beb802e3a12027b230cc1c6055f90d47"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 7,
+          "rect": [
+            55.64,
+            270.118,
+            69.304,
+            285.402
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q35",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 35,
+      "printedNumber": 35,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "B",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=7",
+      "page": 7,
+      "promptText": "當使用時域反射儀(TDR)量測傳輸線之阻抗不連續特性時,若出現下列何種阻抗\n35.\n不連續情況,其量測波形會呈現相對應之變化?\n(A)串聯電阻;\n(B)並聯電阻;\n(C)串聯電感;\n(D)串聯電容",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "當使用時域反射儀(TDR)量測傳輸線之阻抗不連續特性時,若出現下列何種阻抗\n35.\n不連續情況,其量測波形會呈現相對應之變化?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q035-01-7b93bacb97.webp",
+          "alt": "天線概論原卷第 35 題題目與選項",
+          "page": 7,
+          "rect": [
+            26,
+            379.77,
+            575.32,
+            611.59
+          ],
+          "role": "question",
+          "sha256": "4575490440898e35c7ed329e7c6cf7e6b6c7e54b3ea9c9cabf8ccdc07446b6a6"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 7,
+          "rect": [
+            56,
+            390.718,
+            69.064,
+            406.002
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q36",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 36,
+      "printedNumber": 36,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "A",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=7",
+      "page": 7,
+      "promptText": "一 RFID tag 晶片之電容值為18 pF,若操作頻帶設為高頻 13.56 MHz,則其天線\n36.\n設計之感抗為多少歐姆(Ω)才可達成阻抗匹配?\n(A) j652 Ω;\n(B) j612 Ω;\n(C) j552 Ω;\n(D) j512 Ω",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "一 RFID tag 晶片之電容值為18 pF,若操作頻帶設為高頻 13.56 MHz,則其天線\n36.\n設計之感抗為多少歐姆(Ω)才可達成阻抗匹配?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q036-01-4590279625.webp",
+          "alt": "天線概論原卷第 36 題題目與選項",
+          "page": 7,
+          "rect": [
+            26,
+            610.79,
+            575.32,
+            732.1
+          ],
+          "role": "question",
+          "sha256": "8d6c81216609001c293373f3ce70bc249dcd0d068a57fd59e71b2176c78d722b"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 7,
+          "rect": [
+            55.64,
+            621.618,
+            69.304,
+            636.902
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q37",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 37,
+      "printedNumber": 37,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "A",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=7",
+      "page": 7,
+      "promptText": "λ ∕ 4 微帶線常用來作為阻抗匹配使用,一天線在 2.4 GHz 的輸入阻抗為150 Ω,且\n37.\n此天線連接於λ ∕ 4 微帶線的末端,若在此微帶線的輸入端得到的阻抗為 50 Ω,若\n此微帶線的有效相對介電常數為 4,則此λ ∕ 4 微帶線的特性阻抗 Zo 及長度 L 為\n\n下列何者?\n(A) Zo = 86 Ω 且 L = 15 mm;\n(B) Zo = 86 Ω 且 L = 10 mm;\n(C) Zo = 50 Ω 且 L = 15 mm;\n(D) Zo = 100 Ω 且 L = 10 mm",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "λ ∕ 4 微帶線常用來作為阻抗匹配使用,一天線在 2.4 GHz 的輸入阻抗為150 Ω,且\n37.\n此天線連接於λ ∕ 4 微帶線的末端,若在此微帶線的輸入端得到的阻抗為 50 Ω,若\n此微帶線的有效相對介電常數為 4,則此λ ∕ 4 微帶線的特性阻抗 Zo 及長度 L 為\n下列何者?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q037-01-7c2d03a6c6.webp",
+          "alt": "天線概論原卷第 37 題題目與選項",
+          "page": 7,
+          "rect": [
+            26,
+            731.3,
+            575.32,
+            800.744
+          ],
+          "role": "question",
+          "sha256": "af1f756271cd3b3571e1913cc215f680bd6e4eb93cea25e90f8ab2f8a8acd53e"
+        },
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q037-02-d40de270e6.webp",
+          "alt": "天線概論原卷第 37 題題目與選項",
+          "page": 8,
+          "rect": [
+            26,
+            116.132,
+            575.32,
+            220.1
+          ],
+          "role": "question",
+          "sha256": "b9ab59217e5f8a1b70e343805bb8c463204bf033719f9947d6addc02a2d1d565"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 7,
+          "rect": [
+            55.64,
+            742.124,
+            69.304,
+            757.408
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q38",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 38,
+      "printedNumber": 38,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "A",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=8",
+      "page": 8,
+      "promptText": "史密斯圖 (Smith Chart) 除開路與短路兩點,其上半平面圓之阻抗值具下列何種特\n38.\n性?\n(A)電感性;\n(B)電容性;\n(C)電阻性;\n(D)電位性",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "史密斯圖 (Smith Chart) 除開路與短路兩點,其上半平面圓之阻抗值具下列何種特\n38.\n性?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q038-01-c7fb93163f.webp",
+          "alt": "天線概論原卷第 38 題題目與選項",
+          "page": 8,
+          "rect": [
+            26,
+            219.3,
+            575.32,
+            340.61
+          ],
+          "role": "question",
+          "sha256": "082cd3fb44151f7829650c6534bb4c2b40e634c7c2929fadcd01b0ccc888bcb8"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 8,
+          "rect": [
+            55.64,
+            230.128,
+            69.304,
+            245.412
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q39",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 39,
+      "printedNumber": 39,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "D",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=8",
+      "page": 8,
+      "promptText": "史密斯圖 (Smith Chart) 採用下列何種座標?\n39.\n(A)電壓圓形及電流弧;\n(B)電壓線及電流弧;\n(C)電阻線及電抗弧;\n(D)電阻圓形及電抗弧",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "史密斯圖 (Smith Chart) 採用下列何種座標?\n39.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q039-01-2a3ff037d4.webp",
+          "alt": "天線概論原卷第 39 題題目與選項",
+          "page": 8,
+          "rect": [
+            26,
+            339.81,
+            575.32,
+            441.17
+          ],
+          "role": "question",
+          "sha256": "f3b7a14afd27a371be56ff88e05fd86b48d9a33aaf52fda3b6850899ca442c00"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 8,
+          "rect": [
+            55.64,
+            350.638,
+            69.304,
+            365.922
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q40",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 40,
+      "printedNumber": 40,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "B",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=8",
+      "page": 8,
+      "promptText": "史密斯圖 (Smith Chart) 除開路、短路與圓心三點,其平面圓的下方部分之阻抗具\n40.\n下列何特性?\n(A)電阻+電感性;\n(B)電阻+電容性;\n(C)純電阻性;\n(D)純電抗性",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "史密斯圖 (Smith Chart) 除開路、短路與圓心三點,其平面圓的下方部分之阻抗具\n40.\n下列何特性?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q040-01-8924a2e7fa.webp",
+          "alt": "天線概論原卷第 40 題題目與選項",
+          "page": 8,
+          "rect": [
+            26,
+            440.37,
+            575.32,
+            561.67
+          ],
+          "role": "question",
+          "sha256": "9f3cfcd391ba6c730f1130d33689e9997be70506d0f36dae7e31824ed64ea8f1"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 8,
+          "rect": [
+            56,
+            451.218,
+            69.064,
+            466.502
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q41",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 41,
+      "printedNumber": 41,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "A",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=8",
+      "page": 8,
+      "promptText": "在傳輸線上,當觀察點由信號源沿線向負載方向移動時,對應於史密斯圖 (Smith\n41.\nChart) 上之移動為下列何種移動?\n(A)沿等反射係數圓逆時針方向移動;\n(B)沿等電阻圓移動;\n(C)沿等電抗圓移動;\n(D)沿等反射係數圓順時針方向移動",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "在傳輸線上,當觀察點由信號源沿線向負載方向移動時,對應於史密斯圖 (Smith\n41.\nChart) 上之移動為下列何種移動?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q041-01-2709673367.webp",
+          "alt": "天線概論原卷第 41 題題目與選項",
+          "page": 8,
+          "rect": [
+            26,
+            560.87,
+            575.32,
+            682.18
+          ],
+          "role": "question",
+          "sha256": "a4f46064d480da696bb7420e03679fd24a1ba1a857a8613bbdc89b047221c1ef"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 8,
+          "rect": [
+            55.64,
+            571.698,
+            69.304,
+            586.982
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q42",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 42,
+      "printedNumber": 42,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "B",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=8",
+      "page": 8,
+      "promptText": "一負載為200 Ω,連接一50 Ω 傳輸線,其會導致連接處反射係數為何?\n42.\n(A) 0.5;\n(B) 0.6;\n(C) 0.7;\n(D) 0.8",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "一負載為200 Ω,連接一50 Ω 傳輸線,其會導致連接處反射係數為何?\n42.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q042-01-dd59d18cb3.webp",
+          "alt": "天線概論原卷第 42 題題目與選項",
+          "page": 8,
+          "rect": [
+            26,
+            681.38,
+            575.32,
+            782.74
+          ],
+          "role": "question",
+          "sha256": "dabb594dd20f0e3ba5108e7f1b787a2e3fdf4e33b90afd980876eadad8b58ae0"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 8,
+          "rect": [
+            56,
+            692.208,
+            69.064,
+            707.492
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q43",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 43,
+      "printedNumber": 43,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=9",
+      "page": 9,
+      "promptText": "當天線頻寬比高達20 : 1 以上,該天線就可稱為下列何者?\n43.\n(A)寬頻天線 (broadband / wideband antenna);\n(B)超寬頻 (ultra-wide band,UWB)天線;\n(C)頻率無關天線 (frequency independent antenna);\n(D)以上皆是",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "當天線頻寬比高達20 : 1 以上,該天線就可稱為下列何者?\n43.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q043-01-60ea60ffaa.webp",
+          "alt": "天線概論原卷第 43 題題目與選項",
+          "page": 9,
+          "rect": [
+            26,
+            118.74,
+            575.32,
+            220.1
+          ],
+          "role": "question",
+          "sha256": "e6b4bb4948790ae79d9d234693c37f9a023a4b72d8c7fbb1c71f3ddeea74583a"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 9,
+          "rect": [
+            56,
+            129.688,
+            69.064,
+            144.972
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q44",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 44,
+      "printedNumber": 44,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "D",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=9",
+      "page": 9,
+      "promptText": "天線系統的駐波比為1:1,其代表意思為何?\n44.\n(A)天線效能很高;\n(B)傳輸線產生輻射;\n(C)天線反射功率與其輻射功率相同;\n(D)天線與傳輸線的阻抗匹配程度",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "天線系統的駐波比為1:1,其代表意思為何?\n44.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q044-01-f5efaa54d3.webp",
+          "alt": "天線概論原卷第 44 題題目與選項",
+          "page": 9,
+          "rect": [
+            26,
+            219.3,
+            575.32,
+            320.57
+          ],
+          "role": "question",
+          "sha256": "fb37a9c71687983629f675a2defb572d4f11d23efa2d892fb7502c6c5b491bf8"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 9,
+          "rect": [
+            55.64,
+            230.128,
+            69.304,
+            245.412
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q45",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 45,
+      "printedNumber": 45,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "A",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=9",
+      "page": 9,
+      "promptText": "下圖為雙埠網路與散射參數之原理,其Input reflection coefficient: S11=下列何者?\n45.\n(A) b1 / a1;\n(B) b2 / a1;\n(C) b1 / a2;\n(D) b2 / a2",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "下圖為雙埠網路與散射參數之原理,其Input reflection coefficient: S11=下列何者?\n45.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q045-01-7103316b71.webp",
+          "alt": "天線概論原卷第 45 題題目與選項",
+          "page": 9,
+          "rect": [
+            26,
+            319.77,
+            575.32,
+            521.11
+          ],
+          "role": "question",
+          "sha256": "8cd19075f174ea7dea431e4dc9ebb9630e1005796149a2e9d5a924557c4ca1b9"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 9,
+          "rect": [
+            55.64,
+            330.718,
+            69.304,
+            346.002
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q46",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 46,
+      "printedNumber": 46,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "A",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=9",
+      "page": 9,
+      "promptText": "一正 z 方向傳播的線性極化波,在空氣中有:Ex = 3sin(ωt−βx) (V/ m),則其波\n46.\n所傳送之單位面積平均功率為何?\n(A) 11.9 mW;\n(B) 12.4 mW;\n(C) 12.9 mW;\n(D) 13.4 mW",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "一正 z 方向傳播的線性極化波,在空氣中有:Ex = 3sin(ωt−βx) (V/ m),則其波\n46.\n所傳送之單位面積平均功率為何?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q046-01-00b084b077.webp",
+          "alt": "天線概論原卷第 46 題題目與選項",
+          "page": 9,
+          "rect": [
+            26,
+            520.31,
+            575.32,
+            641.59
+          ],
+          "role": "question",
+          "sha256": "271627fbb7b067e1cdc7622f75fa7331b4e55e058554da41e81ae7cc9d4e68ae"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 9,
+          "rect": [
+            55.64,
+            531.138,
+            69.304,
+            546.422
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q47",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 47,
+      "printedNumber": 47,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=9",
+      "page": 9,
+      "promptText": "一天線輻射效率50 %,天線饋入端VSWR = 3,若輸入1 W,則天線實際發射功\n47.\n率為多少?\n(A) 0.125 W;\n(B) 0.25 W;\n(C) 0.375 W;\n(D) 0.625 W",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "一天線輻射效率50 %,天線饋入端VSWR = 3,若輸入1 W,則天線實際發射功\n47.\n率為多少?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q047-01-deb42675b9.webp",
+          "alt": "天線概論原卷第 47 題題目與選項",
+          "page": 9,
+          "rect": [
+            26,
+            640.79,
+            575.32,
+            762.22
+          ],
+          "role": "question",
+          "sha256": "b8235337eaf3af89d05d365594b50ca16c6e84a0bd23e4bc72a75aa5ea816b0a"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 9,
+          "rect": [
+            56,
+            651.768,
+            69.064,
+            667.052
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q48",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 48,
+      "printedNumber": 48,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "B",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=9",
+      "page": 9,
+      "promptText": "一天線輻射效率90 %,天線饋入端VSWR = 3,則此天線系統的全效率 (Total\n48.\n\nefficiency) 為多少?\n(A) 63 %;\n(B) 67.5 %;\n(C) 72.5 %;\n(D) 80 %",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "一天線輻射效率90 %,天線饋入端VSWR = 3,則此天線系統的全效率 (Total\n48.\nefficiency) 為多少?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q048-01-e276eef1e8.webp",
+          "alt": "天線概論原卷第 48 題題目與選項",
+          "page": 9,
+          "rect": [
+            26,
+            761.42,
+            575.32,
+            800.744
+          ],
+          "role": "question",
+          "sha256": "47933450113b6dda2410eb932c01f9fbaf5379253086f7fb3c615926a1232668"
+        },
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q048-02-197975033e.webp",
+          "alt": "天線概論原卷第 48 題題目與選項",
+          "page": 10,
+          "rect": [
+            26,
+            116.132,
+            575.32,
+            220.1
+          ],
+          "role": "question",
+          "sha256": "9ea348f5b4e32476956101a652d16a03659b26e608ac781ca2800563a4b2d001"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 9,
+          "rect": [
+            56,
+            772.244,
+            69.064,
+            787.528
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q49",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 49,
+      "printedNumber": 49,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "D",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=10",
+      "page": 10,
+      "promptText": "單極天線擺設於地面上方(天線電流如實線條)如下圖中4 種條件,地面下方(映像電\n49.\n流如折線條),則地面下的電流分佈在何種條件時為正確?\n條件1\n條件2\n條件3\n條件4\n地面上\n地面下\n(A)條件1;\n(B)條件2;\n(C)條件3;\n(D)條件4",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "單極天線擺設於地面上方(天線電流如實線條)如下圖中4 種條件,地面下方(映像電\n49.\n流如折線條),則地面下的電流分佈在何種條件時為正確?\n條件1\n條件2\n條件3\n條件4\n地面上\n地面下",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q049-01-065a2aee78.webp",
+          "alt": "天線概論原卷第 49 題題目與選項",
+          "page": 10,
+          "rect": [
+            26,
+            219.3,
+            575.32,
+            460.63
+          ],
+          "role": "question",
+          "sha256": "8bfe1bb590ae002e1ccde638f2d9bd63bb44b9a2ecd91b672906dda0a3bc9d57"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 10,
+          "rect": [
+            55.64,
+            230.128,
+            69.304,
+            245.412
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "ant-junior-past-8f42fa7ac75d-q50",
+      "certId": "ant",
+      "levelId": "junior",
+      "paperId": "ant-junior-past-8f42fa7ac75d",
+      "subjectName": "天線概論",
+      "number": 50,
+      "printedNumber": 50,
+      "sectionLabel": "一、選擇題",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-past",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf#page=10",
+      "page": 10,
+      "promptText": "若返回損失(Return Loss)為9.5 dB,其對應的駐波比(SWR)為多少?\n50.\n(A) 1.6;\n(B) 1.8;\n(C) 2.0;\n(D) 2.2",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "若返回損失(Return Loss)為9.5 dB,其對應的駐波比(SWR)為多少?\n50.",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/ant-junior-past-8f42fa7ac75d/q050-01-f7621824f9.webp",
+          "alt": "天線概論原卷第 50 題題目與選項",
+          "page": 10,
+          "rect": [
+            26,
+            459.83,
+            575.32,
+            561.19
+          ],
+          "role": "question",
+          "sha256": "ccf8c539e02945acc97f989cd9d367441429f8f629ea11ee2a69cdb846644153"
+        }
+      ],
+      "sourcePdfSha256": "a04ff65d61a5f41f1228c38d0356bf16599a8ffec806e02461bf75a727a32eaa",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 10,
+          "rect": [
+            56,
+            470.658,
+            69.064,
+            485.942
+          ]
+        }
+      ],
+      "subjectId": "ant-junior-1",
+      "paperTitle": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題",
+      "source": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題"
+    },
+    {
+      "id": "practice-ant-junior-2-001",
+      "certId": "ant",
+      "levelId": "junior",
+      "subjectId": "ant-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依圖中阻抗，Γ=(ZL−Z₀)/(ZL+Z₀)。反射係數大小為何？",
+      "options": {
+        "A": "2/3",
+        "B": "2",
+        "C": "1/3",
+        "D": "1/2"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "(100−50)/(100+50)=1/3。反射係數是電壓波比，不能直接當作反射功率比例。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-jr-match.svg",
+          "alt": "VNA 在天線饋入面 P 校正；阻抗 100+j0 Ω，參考 50 Ω，入射 90 mW；另次 S11 −20 dB。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：VNA 天線量測",
+          "url": "https://www.rohde-schwarz.com/uk/products/test-and-measurement/essentials-test-equipment/spectrum-analyzers/vector-network-analyzer-antenna-measurement_258137.html"
+        }
+      ],
+      "topic": "阻抗匹配",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-ant-junior-2-002",
+      "certId": "ant",
+      "levelId": "junior",
+      "subjectId": "ant-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依圖中 100 Ω 負載，反射功率為入射功率乘 |Γ|²。反射功率多少？",
+      "options": {
+        "A": "30 mW",
+        "B": "45 mW",
+        "C": "80 mW",
+        "D": "10 mW"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "|Γ|=1/3，因此90×(1/3)²=10 mW；其餘80 mW進入天線，但未必全部輻射。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-jr-match.svg",
+          "alt": "VNA 在天線饋入面 P 校正；阻抗 100+j0 Ω，參考 50 Ω，入射 90 mW；另次 S11 −20 dB。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：VNA 天線量測",
+          "url": "https://www.rohde-schwarz.com/uk/products/test-and-measurement/essentials-test-equipment/spectrum-analyzers/vector-network-analyzer-antenna-measurement_258137.html"
+        }
+      ],
+      "topic": "反射功率",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-ant-junior-2-003",
+      "certId": "ant",
+      "levelId": "junior",
+      "subjectId": "ant-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "同一 100 Ω 量測點，VSWR=(1+|Γ|)/(1−|Γ|)。結果為何？",
+      "options": {
+        "A": "2:1",
+        "B": "1:1",
+        "C": "3:1",
+        "D": "4:1"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "Γ=1/3，VSWR=(4/3)/(2/3)=2。這描述饋線匹配，不等於天線增益。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-jr-match.svg",
+          "alt": "VNA 在天線饋入面 P 校正；阻抗 100+j0 Ω，參考 50 Ω，入射 90 mW；另次 S11 −20 dB。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：VNA 天線量測",
+          "url": "https://www.rohde-schwarz.com/uk/products/test-and-measurement/essentials-test-equipment/spectrum-analyzers/vector-network-analyzer-antenna-measurement_258137.html"
+        }
+      ],
+      "topic": "駐波比",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-ant-junior-2-004",
+      "certId": "ant",
+      "levelId": "junior",
+      "subjectId": "ant-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "圖中另一次 S11=−20 dB。以功率比 10^(S11/10) 計算，反射功率占比多少？",
+      "options": {
+        "A": "99%",
+        "B": "1%",
+        "C": "10%",
+        "D": "20%"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "10^(−20/10)=0.01，因此反射1%。匹配改善仍需另驗證輻射效率。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-jr-match.svg",
+          "alt": "VNA 在天線饋入面 P 校正；阻抗 100+j0 Ω，參考 50 Ω，入射 90 mW；另次 S11 −20 dB。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：VNA 天線量測",
+          "url": "https://www.rohde-schwarz.com/uk/products/test-and-measurement/essentials-test-equipment/spectrum-analyzers/vector-network-analyzer-antenna-measurement_258137.html"
+        }
+      ],
+      "topic": "S11 判讀",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-ant-junior-2-005",
+      "certId": "ant",
+      "levelId": "junior",
+      "subjectId": "ant-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "使用圖中理想模型，2.40 GHz 的初估輻射體長度是多少？",
+      "options": {
+        "A": "62.50 mm",
+        "B": "125.00 mm",
+        "C": "31.25 mm",
+        "D": "12.50 mm"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "λ/4=c/(4f)=3×10⁸/(4×2.4×10⁹)=0.03125 m；實體端部與介質效應仍須量測調整。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-jr-length.svg",
+          "alt": "S11 掃描在2.20、2.40、2.60 GHz為−6、−18、−5 dB；裝殼後諧振2.28 GHz，理想四分之一波長模型。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：Antenna design, measurement and optimization",
+          "url": "https://scdn.rohde-schwarz.com/ur/pws/dl_downloads/premiumdownloads/premium_dl_brochures_and_datasheets/IoT-design-guide_eGuide_en_3683-3959-92_v0100.pdf"
+        }
+      ],
+      "topic": "天線尺寸估算",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-ant-junior-2-006",
+      "certId": "ant",
+      "levelId": "junior",
+      "subjectId": "ant-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "僅依圖中三個掃描點，哪一點的饋入匹配最好？",
+      "options": {
+        "A": "2.20 GHz",
+        "B": "2.60 GHz",
+        "C": "三點匹配相同",
+        "D": "2.40 GHz"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "S11最負的−18 dB代表三點中反射最小；這不能單獨證明全頻段或輻射效能。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-jr-length.svg",
+          "alt": "S11 掃描在2.20、2.40、2.60 GHz為−6、−18、−5 dB；裝殼後諧振2.28 GHz，理想四分之一波長模型。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：VNA 天線量測",
+          "url": "https://www.rohde-schwarz.com/uk/products/test-and-measurement/essentials-test-equipment/spectrum-analyzers/vector-network-analyzer-antenna-measurement_258137.html"
+        }
+      ],
+      "topic": "掃頻判讀",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-ant-junior-2-007",
+      "certId": "ant",
+      "levelId": "junior",
+      "subjectId": "ant-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "裝殼後諧振降為2.28 GHz。假定諧振頻率與有效長度成反比，欲回到2.40 GHz，原有效長度應乘多少？",
+      "options": {
+        "A": "0.95",
+        "B": "1.05",
+        "C": "1.12",
+        "D": "0.50"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "L新/L舊=f舊/f新=2.28/2.40=0.95，先縮短約5%，再做裝殼後實測。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-jr-length.svg",
+          "alt": "S11 掃描在2.20、2.40、2.60 GHz為−6、−18、−5 dB；裝殼後諧振2.28 GHz，理想四分之一波長模型。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：Antenna design, measurement and optimization",
+          "url": "https://scdn.rohde-schwarz.com/ur/pws/dl_downloads/premiumdownloads/premium_dl_brochures_and_datasheets/IoT-design-guide_eGuide_en_3683-3959-92_v0100.pdf"
+        }
+      ],
+      "topic": "外殼失諧",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-ant-junior-2-008",
+      "certId": "ant",
+      "levelId": "junior",
+      "subjectId": "ant-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "要查證外殼是否造成圖中的頻移，哪組對照最能隔離外殼影響？",
+      "options": {
+        "A": "只測發射功率，略過掃頻",
+        "B": "固定饋線、天線位置與校正面，只切換有無外殼",
+        "C": "有殼時同時換不同電纜與轉接頭",
+        "D": "裸板量測後直接比較另一台未校正儀器"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "對照需控制饋線、位置與校正條件，避免將治具或連接誤差誤判成外殼效應。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-jr-length.svg",
+          "alt": "S11 掃描在2.20、2.40、2.60 GHz為−6、−18、−5 dB；裝殼後諧振2.28 GHz，理想四分之一波長模型。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：VNA 天線量測",
+          "url": "https://www.rohde-schwarz.com/uk/products/test-and-measurement/essentials-test-equipment/spectrum-analyzers/vector-network-analyzer-antenna-measurement_258137.html"
+        }
+      ],
+      "topic": "量測配置",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-ant-junior-2-009",
+      "certId": "ant",
+      "levelId": "junior",
+      "subjectId": "ant-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依圖中左右−3 dB交點，此切面的半功率波束寬是多少？",
+      "options": {
+        "A": "90°",
+        "B": "120°",
+        "C": "60°",
+        "D": "30°"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "兩個半功率方向為−30°與+30°，角度差為60°，不是單側30°。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-jr-pattern.svg",
+          "alt": "方向圖−30與30度為−3 dB，0度為0 dB，180度為−15 dB；接受100 mW，總輻射60 mW。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：VNA 天線量測",
+          "url": "https://www.rohde-schwarz.com/uk/products/test-and-measurement/essentials-test-equipment/spectrum-analyzers/vector-network-analyzer-antenna-measurement_258137.html"
+        }
+      ],
+      "topic": "半功率波束寬",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-ant-junior-2-010",
+      "certId": "ant",
+      "levelId": "junior",
+      "subjectId": "ant-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "若以0°為前向、180°為背向，圖中前後比是多少？",
+      "options": {
+        "A": "−15 dB",
+        "B": "3 dB",
+        "C": "30 dB",
+        "D": "15 dB"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "前向0 dB減背向−15 dB為15 dB；兩者須在相同頻率、極化及量測條件比較。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-jr-pattern.svg",
+          "alt": "方向圖−30與30度為−3 dB，0度為0 dB，180度為−15 dB；接受100 mW，總輻射60 mW。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：VNA 天線量測",
+          "url": "https://www.rohde-schwarz.com/uk/products/test-and-measurement/essentials-test-equipment/spectrum-analyzers/vector-network-analyzer-antenna-measurement_258137.html"
+        }
+      ],
+      "topic": "前後比",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-ant-junior-2-011",
+      "certId": "ant",
+      "levelId": "junior",
+      "subjectId": "ant-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "按圖中接受與總輻射功率，輻射效率是多少？",
+      "options": {
+        "A": "60%",
+        "B": "40%",
+        "C": "100%",
+        "D": "166.7%"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "輻射效率=總輻射功率/接受功率=60/100=60%；此處不再重複扣除反射損失。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-jr-pattern.svg",
+          "alt": "方向圖−30與30度為−3 dB，0度為0 dB，180度為−15 dB；接受100 mW，總輻射60 mW。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：Antenna design, measurement and optimization",
+          "url": "https://scdn.rohde-schwarz.com/ur/pws/dl_downloads/premiumdownloads/premium_dl_brochures_and_datasheets/IoT-design-guide_eGuide_en_3683-3959-92_v0100.pdf"
+        }
+      ],
+      "topic": "輻射效率",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-ant-junior-2-012",
+      "certId": "ant",
+      "levelId": "junior",
+      "subjectId": "ant-junior-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "工程師只保留圖中一個切面的方向圖，哪項結論仍缺充分證據？",
+      "options": {
+        "A": "已測背向比峰值低15 dB",
+        "B": "天線完整三維空間的總輻射方向分布",
+        "C": "此切面峰值落在0°",
+        "D": "此切面−3 dB交點相隔60°"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "單一切面不能補出其他仰角與方位角的輻射資料，完整三維分布需要更多空間量測。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-jr-pattern.svg",
+          "alt": "方向圖−30與30度為−3 dB，0度為0 dB，180度為−15 dB；接受100 mW，總輻射60 mW。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：VNA 天線量測",
+          "url": "https://www.rohde-schwarz.com/uk/products/test-and-measurement/essentials-test-equipment/spectrum-analyzers/vector-network-analyzer-antenna-measurement_258137.html"
+        }
+      ],
+      "topic": "方向圖限制",
+      "practicalPreparation": true
+    },
+    {
+      "id": "practice-ant-intermediate-2-001",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "subjectId": "ant-intermediate-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "不含額外衰落，圖中接收器輸入功率為多少？",
+      "options": {
+        "A": "−66 dBm",
+        "B": "−64 dBm",
+        "C": "−68 dBm",
+        "D": "−71 dBm"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "依序加增益扣損失：20−2+5−90+2−1=−66 dBm。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-mid-budget.svg",
+          "alt": "發射20 dBm、TX饋線損失2 dB、TX增益5 dBi、路損90 dB、RX增益2 dBi、RX饋線損失1 dB，靈敏度−75 dBm，額外衰落8 dB。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線系統整合設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：Antenna design, measurement and optimization",
+          "url": "https://scdn.rohde-schwarz.com/ur/pws/dl_downloads/premiumdownloads/premium_dl_brochures_and_datasheets/IoT-design-guide_eGuide_en_3683-3959-92_v0100.pdf"
+        }
+      ],
+      "topic": "整合鏈路預算",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-ant-intermediate-2-002",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "subjectId": "ant-intermediate-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "不含額外衰落，接收輸入相對−75 dBm靈敏度的裕度為何？",
+      "options": {
+        "A": "75 dB",
+        "B": "9 dB",
+        "C": "−9 dB",
+        "D": "66 dB"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "−66−(−75)=9 dB，表示在此模型下尚可容許9 dB額外損耗至靈敏度。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-mid-budget.svg",
+          "alt": "發射20 dBm、TX饋線損失2 dB、TX增益5 dBi、路損90 dB、RX增益2 dBi、RX饋線損失1 dB，靈敏度−75 dBm，額外衰落8 dB。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線系統整合設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：Antenna design, measurement and optimization",
+          "url": "https://scdn.rohde-schwarz.com/ur/pws/dl_downloads/premiumdownloads/premium_dl_brochures_and_datasheets/IoT-design-guide_eGuide_en_3683-3959-92_v0100.pdf"
+        }
+      ],
+      "topic": "鏈路裕度",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-ant-intermediate-2-003",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "subjectId": "ant-intermediate-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "加入圖中8 dB額外衰落後，剩餘裕度多少？",
+      "options": {
+        "A": "9 dB",
+        "B": "17 dB",
+        "C": "1 dB",
+        "D": "8 dB"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "原9 dB裕度減去8 dB衰落，僅剩1 dB；不能把衰落當作額外增益。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-mid-budget.svg",
+          "alt": "發射20 dBm、TX饋線損失2 dB、TX增益5 dBi、路損90 dB、RX增益2 dBi、RX饋線損失1 dB，靈敏度−75 dBm，額外衰落8 dB。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線系統整合設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：Antenna design, measurement and optimization",
+          "url": "https://scdn.rohde-schwarz.com/ur/pws/dl_downloads/premiumdownloads/premium_dl_brochures_and_datasheets/IoT-design-guide_eGuide_en_3683-3959-92_v0100.pdf"
+        }
+      ],
+      "topic": "衰落評估",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-ant-intermediate-2-004",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "subjectId": "ant-intermediate-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "本練習規定EIRP不得超過24 dBm。保留圖中TX天線及饋線，發射器輸出上限是多少？",
+      "options": {
+        "A": "17 dBm",
+        "B": "24 dBm",
+        "C": "27 dBm",
+        "D": "21 dBm"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "EIRP=Ptx−2+5=Ptx+3，因此Ptx≤21 dBm；24 dBm是本題假設，不是通用法規上限。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-mid-budget.svg",
+          "alt": "發射20 dBm、TX饋線損失2 dB、TX增益5 dBi、路損90 dB、RX增益2 dBi、RX饋線損失1 dB，靈敏度−75 dBm，額外衰落8 dB。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線系統整合設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：Antenna design, measurement and optimization",
+          "url": "https://scdn.rohde-schwarz.com/ur/pws/dl_downloads/premiumdownloads/premium_dl_brochures_and_datasheets/IoT-design-guide_eGuide_en_3683-3959-92_v0100.pdf"
+        }
+      ],
+      "topic": "EIRP 限制",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-ant-intermediate-2-005",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "subjectId": "ant-intermediate-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "依圖中本題三項需求，哪個方案同時符合？",
+      "options": {
+        "A": "乙",
+        "B": "甲",
+        "C": "丙",
+        "D": "甲與丙都符合"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "甲的S21只有−8 dB，不合隔離需求；丙效率過低；乙匹配、隔離與效率全部符合。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-mid-mimo.svg",
+          "alt": "甲乙丙的匹配、S21隔離、兩端總效率表；本題要求匹配≤−10 dB、S21≤−15 dB、各效率≥60%。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線系統整合設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：Antenna design, measurement and optimization",
+          "url": "https://scdn.rohde-schwarz.com/ur/pws/dl_downloads/premiumdownloads/premium_dl_brochures_and_datasheets/IoT-design-guide_eGuide_en_3683-3959-92_v0100.pdf"
+        }
+      ],
+      "topic": "MIMO 方案篩選",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-ant-intermediate-2-006",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "subjectId": "ant-intermediate-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "在相同匹配量測條件下，乙的S21=−20 dB對應多少傳輸功率比？",
+      "options": {
+        "A": "80%",
+        "B": "1%",
+        "C": "10%",
+        "D": "20%"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "|S21|²功率比=10^(−20/10)=0.01；S參數比較須保留一致參考阻抗與量測設定。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-mid-mimo.svg",
+          "alt": "甲乙丙的匹配、S21隔離、兩端總效率表；本題要求匹配≤−10 dB、S21≤−15 dB、各效率≥60%。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線系統整合設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：VNA 天線量測",
+          "url": "https://www.rohde-schwarz.com/uk/products/test-and-measurement/essentials-test-equipment/spectrum-analyzers/vector-network-analyzer-antenna-measurement_258137.html"
+        }
+      ],
+      "topic": "埠間耦合",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-ant-intermediate-2-007",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "subjectId": "ant-intermediate-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "丙具有最小的S21，卻未被選用。最直接的原因為何？",
+      "options": {
+        "A": "匹配低於−20 dB一定代表短路",
+        "B": "雙天線效率必須相加超過100%",
+        "C": "其低耦合伴隨低總效率，不符合本題最低效率",
+        "D": "−25 dB表示耦合比−8 dB更強"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "隔離好不代表系統一定好；此表已給出低效率證據，需兼顧各天線可用輻射效能。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-mid-mimo.svg",
+          "alt": "甲乙丙的匹配、S21隔離、兩端總效率表；本題要求匹配≤−10 dB、S21≤−15 dB、各效率≥60%。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線系統整合設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：Antenna design, measurement and optimization",
+          "url": "https://scdn.rohde-schwarz.com/ur/pws/dl_downloads/premiumdownloads/premium_dl_brochures_and_datasheets/IoT-design-guide_eGuide_en_3683-3959-92_v0100.pdf"
+        }
+      ],
+      "topic": "解耦合取捨",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-ant-intermediate-2-008",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "subjectId": "ant-intermediate-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "表中哪些附加資料最能幫助直接分析兩天線的空間輻射相關性？",
+      "options": {
+        "A": "只增加S11的小數位數",
+        "B": "只量整機外殼重量",
+        "C": "只知道主板供電電壓",
+        "D": "兩天線完整複數遠場方向圖與極化資訊"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "遠場相關性涉及空間幅度、相位及極化；只看匹配或隔離不足以完整描述，尤其有損天線。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-mid-mimo.svg",
+          "alt": "甲乙丙的匹配、S21隔離、兩端總效率表；本題要求匹配≤−10 dB、S21≤−15 dB、各效率≥60%。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線系統整合設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：Antenna design, measurement and optimization",
+          "url": "https://scdn.rohde-schwarz.com/ur/pws/dl_downloads/premiumdownloads/premium_dl_brochures_and_datasheets/IoT-design-guide_eGuide_en_3683-3959-92_v0100.pdf"
+        }
+      ],
+      "topic": "相關性量測",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-ant-intermediate-2-009",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "subjectId": "ant-intermediate-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "圖中握持條件的輻射效率為何？",
+      "options": {
+        "A": "25%",
+        "B": "75%",
+        "C": "−15%",
+        "D": "100%"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "接受功率均100 mW，握持輻射25 mW，效率為25%；不能用相同S11推斷相同效率。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-mid-loading.svg",
+          "alt": "裸板、塑膠殼、握持、重調握持四組接受功率均100 mW，輻射80、65、25、26 mW；前三S11均−15，後者−20 dB。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線系統整合設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：Antenna design, measurement and optimization",
+          "url": "https://scdn.rohde-schwarz.com/ur/pws/dl_downloads/premiumdownloads/premium_dl_brochures_and_datasheets/IoT-design-guide_eGuide_en_3683-3959-92_v0100.pdf"
+        }
+      ],
+      "topic": "整機效率",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-ant-intermediate-2-010",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "subjectId": "ant-intermediate-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "前三組S11相同而輻射功率不同，最合理的工程解讀為何？",
+      "options": {
+        "A": "握持只會改變電池電壓，不影響天線",
+        "B": "良好匹配不能排除外殼或人體造成額外損耗",
+        "C": "S11相同保證總輻射功率相同",
+        "D": "接受功率100 mW代表沒有任何損耗"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "S11只量饋入反射；接受功率還可能轉為介質、導體或人體吸收損失。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-mid-loading.svg",
+          "alt": "裸板、塑膠殼、握持、重調握持四組接受功率均100 mW，輻射80、65、25、26 mW；前三S11均−15，後者−20 dB。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線系統整合設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：Antenna design, measurement and optimization",
+          "url": "https://scdn.rohde-schwarz.com/ur/pws/dl_downloads/premiumdownloads/premium_dl_brochures_and_datasheets/IoT-design-guide_eGuide_en_3683-3959-92_v0100.pdf"
+        }
+      ],
+      "topic": "失效辨識",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-ant-intermediate-2-011",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "subjectId": "ant-intermediate-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "重調匹配後握持輻射僅25變26 mW。下一步最有依據的改善方向為何？",
+      "options": {
+        "A": "只重測裸板S11就宣稱握持問題消失",
+        "B": "只提高接收器顯示增益，視為天線效率已恢復",
+        "C": "評估天線與手部的間距、位置及電流分布",
+        "D": "只繼續追求更負S11，忽略輻射量測"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "匹配改善未顯著恢復輻射功率，應調查近場負載與布局，並以握持實測驗證。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-mid-loading.svg",
+          "alt": "裸板、塑膠殼、握持、重調握持四組接受功率均100 mW，輻射80、65、25、26 mW；前三S11均−15，後者−20 dB。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線系統整合設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：Antenna design, measurement and optimization",
+          "url": "https://scdn.rohde-schwarz.com/ur/pws/dl_downloads/premiumdownloads/premium_dl_brochures_and_datasheets/IoT-design-guide_eGuide_en_3683-3959-92_v0100.pdf"
+        }
+      ],
+      "topic": "修正策略",
+      "practicalPreparation": false
+    },
+    {
+      "id": "practice-ant-intermediate-2-012",
+      "certId": "ant",
+      "levelId": "intermediate",
+      "subjectId": "ant-intermediate-2",
+      "sourceKind": "original-practice",
+      "official": false,
+      "stem": "裸板80 mW變握持25 mW，依10log10(80/25)，相對輻射損失最接近多少？",
+      "options": {
+        "A": "0.51 dB",
+        "B": "3.20 dB",
+        "C": "55 dB",
+        "D": "5.05 dB"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "同一接受功率下功率比80/25=3.2，10log10(3.2)約5.05 dB。",
+      "images": [
+        {
+          "path": "assets/questions/industrial/ant-mid-loading.svg",
+          "alt": "裸板、塑膠殼、握持、重調握持四組接受功率均100 mW，輻射80、65、25、26 mW；前三S11均−15，後者−20 dB。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "iPAS 115 年 天線設計工程師官方簡章：天線系統整合設計實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf"
+        },
+        {
+          "title": "Rohde & Schwarz：Antenna design, measurement and optimization",
+          "url": "https://scdn.rohde-schwarz.com/ur/pws/dl_downloads/premiumdownloads/premium_dl_brochures_and_datasheets/IoT-design-guide_eGuide_en_3683-3959-92_v0100.pdf"
+        }
+      ],
+      "topic": "負載損失比較",
+      "practicalPreparation": false
+    }
+  ]
+}

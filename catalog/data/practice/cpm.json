@@ -1,0 +1,3303 @@
+{
+  "version": 1,
+  "certId": "cpm",
+  "updatedAt": "2026-10-01",
+  "questions": [
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q1",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 1,
+      "printedNumber": 1,
+      "sectionLabel": "L111 色彩學基礎知識",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=1",
+      "page": 1,
+      "promptText": "L11 色彩學\nL111 色彩學基\n1\n以下關於可見光的敘述何者有誤?\n礎知識\n(A)見光是一種電磁波\n(B)磁波的波長長度範圍非常廣,從108 公尺以上的無線電波到10-16 公尺以下的伽瑪射線\n(γrAy)都包含在內\n(C)見光的波長大約介於380 至780 奈米(nm)之間,其中藍色光的波長較靠近780 奈米,\n紅色光的波長較接近380 奈米\n(D)於生理構造的不同,每一種動物的可見光波長範圍不盡相同",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "L11 色彩學\nL111 色彩學基\n1\n以下關於可見光的敘述何者有誤?\n礎知識",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q001-01-09943a0b9f.webp",
+          "alt": "色彩學／色彩度量學原卷第 1 題題目與選項",
+          "page": 1,
+          "rect": [
+            26,
+            100.98,
+            821.92,
+            242.81
+          ],
+          "role": "question",
+          "sha256": "6a38b31f0f94e5847b95750aa2a00e535c91aaff4852c5d16416830f3052adb3"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 1,
+          "rect": [
+            229.06,
+            102.844,
+            242.844,
+            120.3
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-1",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q2",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 2,
+      "printedNumber": 2,
+      "sectionLabel": "L111 色彩學基礎知識",
+      "multiple": false,
+      "answer": "D",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=1",
+      "page": 1,
+      "promptText": "2\n以下對於視覺的敘述何者正確?\n(A)我們之所以看得到各種不同顏色是因為視網膜上的桿狀細胞可接收各種不同波段的可見光\n(B)錐狀細胞分為四種,分別對紅、黃、綠、藍等四色光較為敏感,這也是黑林的對立色理論\n的基礎\n(C)桿狀細胞分布於視網膜中央窩附近,所以我們才能輕易辨別環境的明暗\n(D)錐狀細胞分為三種類型,分別對不同波長的可見光有不同的吸收率",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "以下對於視覺的敘述何者正確?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q002-01-9c970dbfee.webp",
+          "alt": "色彩學／色彩度量學原卷第 2 題題目與選項",
+          "page": 1,
+          "rect": [
+            26,
+            242.01,
+            821.92,
+            363.91
+          ],
+          "role": "question",
+          "sha256": "3d78c19aff4e8fe45fc966f56450725c1007844673b6f8e7e3161984e7fd7418"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 1,
+          "rect": [
+            229.06,
+            243.874,
+            243.924,
+            261.33
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-1",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q3",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 3,
+      "printedNumber": 3,
+      "sectionLabel": "L111 色彩學基礎知識",
+      "multiple": false,
+      "answer": "B",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=1",
+      "page": 1,
+      "promptText": "3\n有一「橘色」塗料,其色相的表示方式,何者為正確?\n(A)在孟塞爾表色體系的色相表示為「O」\n(B)在NSC 表色體系的色相可以表示為「Y50R」\n(C)在PCCS 表色體系的色相表示為數字「2」\n(D)可以用單色光波長400 nm 表示其色相",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "有一「橘色」塗料,其色相的表示方式,何者為正確?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q003-01-fc256f51cd.webp",
+          "alt": "色彩學／色彩度量學原卷第 3 題題目與選項",
+          "page": 1,
+          "rect": [
+            26,
+            363.11,
+            821.92,
+            464.86
+          ],
+          "role": "question",
+          "sha256": "a6560cf8c82cbec2f548274d319007cc9538ec903175198182921856f83c8f31"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 1,
+          "rect": [
+            229.06,
+            364.854,
+            242.244,
+            382.31
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-1",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q4",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 4,
+      "printedNumber": 4,
+      "sectionLabel": "L111 色彩學基礎知識",
+      "multiple": false,
+      "answer": "D",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=2",
+      "page": 2,
+      "promptText": "L11 色彩學\nL111 色彩學基礎\n4\n光是電磁波的一種,電磁波光譜如按照波長從短到長排序,下列敘述何者正確?\n知識\n(A)無線電波、微波、紅外線、可見光、紫外線、X 射線、伽瑪射線\n(B)伽瑪射線、X 射線、紅外線、可見光、紫外線、微波、無線電波\n(C)無線電波、微波、紫外線、可見光、紅外線、X 射線、伽瑪射線\n(D)伽瑪射線、X 射線、紫外線、可見光、紅外線、微波、無線電波",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "L11 色彩學\nL111 色彩學基礎\n4\n光是電磁波的一種,電磁波光譜如按照波長從短到長排序,下列敘述何者正確?\n知識",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q004-01-d608f7c4a7.webp",
+          "alt": "色彩學／色彩度量學原卷第 4 題題目與選項",
+          "page": 2,
+          "rect": [
+            26,
+            94.02,
+            821.92,
+            195.77
+          ],
+          "role": "question",
+          "sha256": "d4954ef679d4842cfd4c82068d9bb897b434abef3a965180e537592ebd2401f2"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 2,
+          "rect": [
+            229.06,
+            95.764,
+            243.924,
+            113.22
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-1",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q5",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 5,
+      "printedNumber": 5,
+      "sectionLabel": "L111 色彩學基礎知識",
+      "multiple": false,
+      "answer": "B",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=2",
+      "page": 2,
+      "promptText": "5\n下列何者非色彩的功能?\n(A)指示性\n(B)立體辨識性\n(C)象徵性\n(D)情緒影響性",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "下列何者非色彩的功能?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q005-01-a20c709d2b.webp",
+          "alt": "色彩學／色彩度量學原卷第 5 題題目與選項",
+          "page": 2,
+          "rect": [
+            26,
+            194.97,
+            821.92,
+            296.81
+          ],
+          "role": "question",
+          "sha256": "c70fb65df5363681b1daa6b3ad16685a1e6a4dadbff3feeecfa91b551d26eb30"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 2,
+          "rect": [
+            229.06,
+            196.834,
+            242.244,
+            214.29
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-1",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q6",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 6,
+      "printedNumber": 6,
+      "sectionLabel": "L111 色彩學基礎知識",
+      "multiple": false,
+      "answer": "B",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=2",
+      "page": 2,
+      "promptText": "6\n關於色彩系統,下列何者是以色相、明度、彩度來標示色彩?\n(A)NCS 色彩體系\n(B)CIEL*C*h 色彩空間\n(C)HSB 色彩空間\n(D)CIExy 色度圖",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "關於色彩系統,下列何者是以色相、明度、彩度來標示色彩?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q006-01-ec9d432004.webp",
+          "alt": "色彩學／色彩度量學原卷第 6 題題目與選項",
+          "page": 2,
+          "rect": [
+            26,
+            296.01,
+            821.92,
+            397.87
+          ],
+          "role": "question",
+          "sha256": "1e49c4f4ca11049e324993e6d52895be9eece572b101b221a183d564d707342a"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 2,
+          "rect": [
+            229.06,
+            297.894,
+            242.244,
+            315.35
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-1",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q7",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 7,
+      "printedNumber": 7,
+      "sectionLabel": "L111 色彩學基礎知識",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=2",
+      "page": 2,
+      "promptText": "7\n新印象派的點描繪畫作品、彩色印刷品的網點或是液晶顯示器畫面上的彩色濾光片混色屬於\n下列何種混色方式?\n(A)同時混色\n(B)繼時混色\n(C)並置混色\n(D)減法混色",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "新印象派的點描繪畫作品、彩色印刷品的網點或是液晶顯示器畫面上的彩色濾光片混色屬於\n下列何種混色方式?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q007-01-3128960894.webp",
+          "alt": "色彩學／色彩度量學原卷第 7 題題目與選項",
+          "page": 2,
+          "rect": [
+            26,
+            397.07,
+            821.92,
+            518.86
+          ],
+          "role": "question",
+          "sha256": "d3b28972b63fff694aebe091098c7c507cf3c6f49db268e979329dd549fc19c0"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 2,
+          "rect": [
+            229.06,
+            398.814,
+            242.844,
+            416.27
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-1",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q8",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 8,
+      "printedNumber": 8,
+      "sectionLabel": "L111 色彩學基礎知識",
+      "multiple": false,
+      "answer": "B",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=3",
+      "page": 3,
+      "promptText": "L11 色彩學\nL111 色彩學基礎\n8\n一般我們能看見不同的色彩樣貌如黃藍綠紅等,主要是由光刺激的什麼參數來決定?\n知識\n(A)速度\n(B)波長\n(C)紅外線\n(D)溫度",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "L11 色彩學\nL111 色彩學基礎\n8\n一般我們能看見不同的色彩樣貌如黃藍綠紅等,主要是由光刺激的什麼參數來決定?\n知識",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q008-01-2505b7e01a.webp",
+          "alt": "色彩學／色彩度量學原卷第 8 題題目與選項",
+          "page": 3,
+          "rect": [
+            26,
+            94.02,
+            821.92,
+            195.77
+          ],
+          "role": "question",
+          "sha256": "1d4d579e246b647188c4df3e047488473c8828e44f911e0c1c921912793b11a6"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 3,
+          "rect": [
+            229.06,
+            95.764,
+            242.244,
+            113.22
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-1",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q9",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 9,
+      "printedNumber": 1,
+      "sectionLabel": "L112 色彩應用基礎知識",
+      "multiple": false,
+      "answer": "B",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=3",
+      "page": 3,
+      "promptText": "L112 色彩應用\n1\nLED 燈泡是目前常見的照明選擇,對LED 光源的色彩特性下列敘述何者正確?\n基礎知識\n(A)標準照明D60 代表色溫600K 的平均日光\n(B)LED 燈若色溫在3300K 以下偏暖白色,超過6000K 則偏冷白色\n(C)鈉光燈的發光效率比LED 好\n(D)相同功率、波長分別為紅色和綠色的雷射筆所呈現的光,其亮度相同",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "L112 色彩應用\n1\nLED 燈泡是目前常見的照明選擇,對LED 光源的色彩特性下列敘述何者正確?\n基礎知識",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q009-01-5ba7d91008.webp",
+          "alt": "色彩學／色彩度量學原卷第 9 題題目與選項",
+          "page": 3,
+          "rect": [
+            26,
+            194.97,
+            821.92,
+            302.81
+          ],
+          "role": "question",
+          "sha256": "239358e9a500e401fb9f07929a1eae39208278af1d4453c9cfdd2f75c01fda8d"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 3,
+          "rect": [
+            229.06,
+            196.834,
+            242.244,
+            214.29
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-1",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q10",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 10,
+      "printedNumber": 2,
+      "sectionLabel": "L112 色彩應用基礎知識",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=3",
+      "page": 3,
+      "promptText": "2\nAdobe Photoshop 色彩設定時,下列描述何者正確?\n(A)RGB 設色介面,值越高顏色越不鮮艷\n(B)CMYK 設色介面,值越低顏色越鮮豔\n(C)Lab 設色介面,a 為介於紅-灰-綠漸變變化\n(D)HSB 設色介面,與L*a*b*視覺化空間相同",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "Adobe Photoshop 色彩設定時,下列描述何者正確?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q010-01-da4dcd755e.webp",
+          "alt": "色彩學／色彩度量學原卷第 10 題題目與選項",
+          "page": 3,
+          "rect": [
+            26,
+            302.01,
+            821.92,
+            403.87
+          ],
+          "role": "question",
+          "sha256": "b0c0da2a655185d2af4f75eb3e18604d8757d15c04614de789280376a51ac0a5"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 3,
+          "rect": [
+            229.06,
+            303.894,
+            242.844,
+            321.35
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-1",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q11",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 11,
+      "printedNumber": 3,
+      "sectionLabel": "L112 色彩應用基礎知識",
+      "multiple": false,
+      "answer": "D",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=3",
+      "page": 3,
+      "promptText": "3\nCIELAB 的明度計算公式L*= 116*(Y/Yn)1/3-16,下列描述何者錯誤?\n(A)L*=0 時為黑、L*=100 時為白\n(B)Y 為色樣本亮度刺激值\n(C)Yn 為參考白亮度刺激值\n(D)「亮度」比「明度」更接近人的視覺色差",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "CIELAB 的明度計算公式L*= 116*(Y/Yn)1/3-16,下列描述何者錯誤?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q011-01-b1472fcf97.webp",
+          "alt": "色彩學／色彩度量學原卷第 11 題題目與選項",
+          "page": 3,
+          "rect": [
+            26,
+            403.07,
+            821.92,
+            504.82
+          ],
+          "role": "question",
+          "sha256": "9f2697e4cbf9340e2ed7a8dbfc46c44ef4a2ea2044ea1da2f54dcf4342b7f3f7"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 3,
+          "rect": [
+            229.06,
+            404.814,
+            243.924,
+            422.27
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-1",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q12",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 12,
+      "printedNumber": 4,
+      "sectionLabel": "L112 色彩應用基礎知識",
+      "multiple": false,
+      "answer": "A",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=4",
+      "page": 4,
+      "promptText": "L11 色彩學\nL112 色彩應用\n4\n8 位元RGB 數位色彩下,若想在螢幕中呈現紅色,應將R、G、B 值設為多少?\n基礎知識\n(A)R= 255、G= 0、B= 0\n(B)R= 255、G= 255、B= 0\n(C)R= 1023、G= 0、B= 0\n(D)R= G= B= 128",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "L11 色彩學\nL112 色彩應用\n4\n8 位元RGB 數位色彩下,若想在螢幕中呈現紅色,應將R、G、B 值設為多少?\n基礎知識",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q012-01-ee7f1e7757.webp",
+          "alt": "色彩學／色彩度量學原卷第 12 題題目與選項",
+          "page": 4,
+          "rect": [
+            26,
+            94.02,
+            821.92,
+            195.77
+          ],
+          "role": "question",
+          "sha256": "54435de51c5245519d6adfb697e9af76b755f72d457dd6290f982f7830dc3327"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 4,
+          "rect": [
+            229.06,
+            95.764,
+            243.204,
+            113.22
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-1",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q13",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 13,
+      "printedNumber": 5,
+      "sectionLabel": "L112 色彩應用基礎知識",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=4",
+      "page": 4,
+      "promptText": "5\n新印象派的畫家秀拉運用何種原理達成點描畫法\n(A)迴轉混合\n(B)同時混合\n(C)並置混合\n(D)面積混合",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "新印象派的畫家秀拉運用何種原理達成點描畫法",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q013-01-382bb23119.webp",
+          "alt": "色彩學／色彩度量學原卷第 13 題題目與選項",
+          "page": 4,
+          "rect": [
+            26,
+            194.97,
+            821.92,
+            296.81
+          ],
+          "role": "question",
+          "sha256": "8a44b49d8ca5be31344ddbd78145c6278fdbcaa67af7a6c1afb806e6df7fbac4"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 4,
+          "rect": [
+            229.06,
+            196.834,
+            242.844,
+            214.29
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-1",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q14",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 14,
+      "printedNumber": 6,
+      "sectionLabel": "L112 色彩應用基礎知識",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=4",
+      "page": 4,
+      "promptText": "6\n數位影像內嵌色彩描述檔的目的為何?\n(A)可作為數位影像的一種壓縮格式\n(B)用來提升數位影像的解析度\n(C)可以保持數位影像原始檔案的獨立性,便於色彩管理\n(D)提供一個可以存取關於影像的備忘紀錄之空間",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "數位影像內嵌色彩描述檔的目的為何?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q014-01-86a658443a.webp",
+          "alt": "色彩學／色彩度量學原卷第 14 題題目與選項",
+          "page": 4,
+          "rect": [
+            26,
+            296.01,
+            821.92,
+            397.87
+          ],
+          "role": "question",
+          "sha256": "1c63f64d1029bcdcc02d2af000ce5f4761ffed4d75cca2bb1e718a88d3e93886"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 4,
+          "rect": [
+            229.06,
+            297.894,
+            242.844,
+            315.35
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-1",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q15",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 15,
+      "printedNumber": 7,
+      "sectionLabel": "L112 色彩應用基礎知識",
+      "multiple": false,
+      "answer": "A",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=4",
+      "page": 4,
+      "promptText": "7\n下列何者不屬於數位色彩成像輸出設備?\n(A)掃描機\n(B)單槍投影機\n(C)彩色顯示器\n(D)彩色印表機",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "下列何者不屬於數位色彩成像輸出設備?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q015-01-c886188141.webp",
+          "alt": "色彩學／色彩度量學原卷第 15 題題目與選項",
+          "page": 4,
+          "rect": [
+            26,
+            397.07,
+            821.92,
+            498.82
+          ],
+          "role": "question",
+          "sha256": "ff65e7ad0e2222180fcffc6424f8a556c5c48e269bf913872cc6523110bd29f1"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 4,
+          "rect": [
+            229.06,
+            398.814,
+            243.204,
+            416.27
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-1",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q16",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 16,
+      "printedNumber": 8,
+      "sectionLabel": "L112 色彩應用基礎知識",
+      "multiple": false,
+      "answer": "D",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=5",
+      "page": 5,
+      "promptText": "L11 色彩學\nL112 色彩應用\n8\n下列名詞中,何者無法描述顯示器發射高純度綠光的色彩特性?\n基礎知識\n(A)光譜功率分布\n(B)CIE u’v’色度值\n(C)CIE xy 色度值\n(D)色溫",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "L11 色彩學\nL112 色彩應用\n8\n下列名詞中,何者無法描述顯示器發射高純度綠光的色彩特性?\n基礎知識",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q016-01-34192ddb91.webp",
+          "alt": "色彩學／色彩度量學原卷第 16 題題目與選項",
+          "page": 5,
+          "rect": [
+            26,
+            94.02,
+            821.92,
+            195.77
+          ],
+          "role": "question",
+          "sha256": "cad5ab79b61127a02756975478a93cfce5f7a058bd31968bdf2f25a3a966ee67"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 5,
+          "rect": [
+            229.06,
+            95.764,
+            243.924,
+            113.22
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-1",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q17",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 17,
+      "printedNumber": 1,
+      "sectionLabel": "L113 色彩感覺",
+      "multiple": false,
+      "answer": "D",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=5",
+      "page": 5,
+      "promptText": "L113 色彩感覺\n1\n對於色彩的視覺現象,下列敘述何者正確?\n(A)直視紅色的卡片約30 秒,當卡片移開後產生黃色的殘像,這現象稱為「補色殘像」\n(B)我們感覺色彩時,除了視覺外,不會受到記憶與經驗的影響\n(C)從明亮處進到電影院或暗房時,要3-5 分鐘才能看清楚,這現象稱為「色適應」\n(D)白色紙張在黃色燈光照射下,雖然受到影響而成為黃色,但我們仍覺得是白紙,這現象稱\n為「色彩恆常性」",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "L113 色彩感覺\n1\n對於色彩的視覺現象,下列敘述何者正確?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q017-01-700bcb56d7.webp",
+          "alt": "色彩學／色彩度量學原卷第 17 題題目與選項",
+          "page": 5,
+          "rect": [
+            26,
+            194.97,
+            821.92,
+            316.87
+          ],
+          "role": "question",
+          "sha256": "ca21221793652fc7934f6b9873d26d5dff48dbf39d9fe4edbfb441c7603b553a"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 5,
+          "rect": [
+            229.06,
+            196.834,
+            243.924,
+            214.29
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-1",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q18",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 18,
+      "printedNumber": 2,
+      "sectionLabel": "L113 色彩感覺",
+      "multiple": false,
+      "answer": "A",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=5",
+      "page": 5,
+      "promptText": "2\n下列何者不是評估一視覺顯示的可視度的理想方式?\n(A)由設計師根據自身經驗自行判斷\n(B)執行可視度實驗,測量其反應時間與正確率\n(C)利用測色儀器評量背景色與目標樣本之間的色差大小\n(D)執行視覺搜尋實驗,以搜尋效率作為可視度指標",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "下列何者不是評估一視覺顯示的可視度的理想方式?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q018-01-38985d8557.webp",
+          "alt": "色彩學／色彩度量學原卷第 18 題題目與選項",
+          "page": 5,
+          "rect": [
+            26,
+            316.07,
+            821.92,
+            417.79
+          ],
+          "role": "question",
+          "sha256": "5c5b3be62d867b6f6eeae297806183abe23b0148f024e78801e9132322817c62"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 5,
+          "rect": [
+            229.06,
+            317.814,
+            243.204,
+            335.27
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-1",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q19",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 19,
+      "printedNumber": 3,
+      "sectionLabel": "L113 色彩感覺",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=5",
+      "page": 5,
+      "promptText": "3\n下列哪一組的配色的色差最大?\n(A)L*a*b* = (50, 0, 0)、L*a*b* = (60, 0, 0)\n(B)L*a*b* = (30, 10, 0)、L*a*b* = (30, 0, 10)\n(C) L*a*b* = (20, 30, 0)、L*a*b* = (60, 0, 30)\n(D)L*a*b* = (50, 20, 20)、L*a*b* = (50,10, 20)",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "下列哪一組的配色的色差最大?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q019-01-5ec984daa4.webp",
+          "alt": "色彩學／色彩度量學原卷第 19 題題目與選項",
+          "page": 5,
+          "rect": [
+            26,
+            416.99,
+            821.92,
+            518.86
+          ],
+          "role": "question",
+          "sha256": "b66b38c3acfdda85e00b3ac45d4a66b5ed5e42b843d1dbdda0096b5177e65a61"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 5,
+          "rect": [
+            229.06,
+            418.884,
+            242.844,
+            436.34
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-1",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q20",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 20,
+      "printedNumber": 4,
+      "sectionLabel": "L113 色彩感覺",
+      "multiple": false,
+      "answer": "D",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=6",
+      "page": 6,
+      "promptText": "L11 色彩學\nL113 色彩感覺\n4\n關於色彩命名,下列觀念何者有誤?\n(A)固有色名即傳統色名\n(B)設計實務上,設計師可以自行將特定色彩命名,成為該品牌之特色\n(C)色彩命名會隨著語言之不同而有差異\n(D)使用系統色名比起固有色名在溝通色彩上更不易精確",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "L11 色彩學\nL113 色彩感覺\n4\n關於色彩命名,下列觀念何者有誤?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q020-01-92fb954498.webp",
+          "alt": "色彩學／色彩度量學原卷第 20 題題目與選項",
+          "page": 6,
+          "rect": [
+            26,
+            94.02,
+            821.92,
+            195.77
+          ],
+          "role": "question",
+          "sha256": "072cdb0aec29ddc20b4224ae7d672eb69f432e4a13e6eb241096b32d69b815d1"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 6,
+          "rect": [
+            229.06,
+            95.764,
+            243.924,
+            113.22
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-1",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q21",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 21,
+      "printedNumber": 5,
+      "sectionLabel": "L113 色彩感覺",
+      "multiple": false,
+      "answer": "B",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=6",
+      "page": 6,
+      "promptText": "5\n關於色彩同化現象上,下列何者錯誤?\n(A)英文為Color Assimilation\n(B)發生於大面積的色塊,被不同色彩的色塊所包圍而產生\n(C)在鄰近鮮豔色彩時會提升彼此的對比\n(D)主要成因是人眼所見的色彩面積很細小且並列時所產生的色彩間互相影響、趨近的現象",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "關於色彩同化現象上,下列何者錯誤?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q021-01-b2c0caaea1.webp",
+          "alt": "色彩學／色彩度量學原卷第 21 題題目與選項",
+          "page": 6,
+          "rect": [
+            26,
+            194.97,
+            821.92,
+            296.81
+          ],
+          "role": "question",
+          "sha256": "a17b7c45596f21a4c0ec1d3e06ffda6a301da71e6f07f38358f99950c7d3ee05"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 6,
+          "rect": [
+            229.06,
+            196.834,
+            242.244,
+            214.29
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-1",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q22",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 22,
+      "printedNumber": 6,
+      "sectionLabel": "L113 色彩感覺",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=6",
+      "page": 6,
+      "promptText": "6\n下列何者屬於使色塊看起更接近人眼的「前進色」?\n(A)綠色\n(B)藍色\n(C)紅色\n(D)灰色",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "下列何者屬於使色塊看起更接近人眼的「前進色」?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q022-01-8f6b833c43.webp",
+          "alt": "色彩學／色彩度量學原卷第 22 題題目與選項",
+          "page": 6,
+          "rect": [
+            26,
+            296.01,
+            821.92,
+            397.87
+          ],
+          "role": "question",
+          "sha256": "ce804d7dd0844004a319b9181639f50334bd4afcc324b56960bdd3bb41d0e6d3"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 6,
+          "rect": [
+            229.06,
+            297.894,
+            242.844,
+            315.35
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-1",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q23",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 23,
+      "printedNumber": 7,
+      "sectionLabel": "L113 色彩感覺",
+      "multiple": false,
+      "answer": "B",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=6",
+      "page": 6,
+      "promptText": "7\n以下色對中,何者色差最小?\n(A)5R 4/6 與2.5PB 3/5\n(B)S2005-Y80R 與S2000-N\n(C)2R-4.5-9S 與2R-4.5-1S\n(D)RAL 260 30 35 與RAL 130 30 35",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "以下色對中,何者色差最小?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q023-01-4566df493e.webp",
+          "alt": "色彩學／色彩度量學原卷第 23 題題目與選項",
+          "page": 6,
+          "rect": [
+            26,
+            397.07,
+            821.92,
+            498.82
+          ],
+          "role": "question",
+          "sha256": "5d6a31ea0b289067cb9e45045582cebe2b0e87a1a178d39cb0f66bf964955bd5"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 6,
+          "rect": [
+            229.06,
+            398.814,
+            242.244,
+            416.27
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-1",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q24",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 24,
+      "printedNumber": 8,
+      "sectionLabel": "L113 色彩感覺",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=7",
+      "page": 7,
+      "promptText": "L11 色彩學\nL113 色彩感覺\n8\n人眼哪一組對立色通道的解像力最高?\n(A)黃/藍\n(B)紅/綠\n(C)黑/白\n(D)一樣高(沒有差別)",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "L11 色彩學\nL113 色彩感覺\n8\n人眼哪一組對立色通道的解像力最高?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q024-01-7b5a877294.webp",
+          "alt": "色彩學／色彩度量學原卷第 24 題題目與選項",
+          "page": 7,
+          "rect": [
+            26,
+            94.02,
+            821.92,
+            195.77
+          ],
+          "role": "question",
+          "sha256": "22a6244bbd90cc2d0f4869797aff265c28c107f600fc85822964288fcfa0cbfb"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 7,
+          "rect": [
+            229.06,
+            95.764,
+            242.844,
+            113.22
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-1",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q25",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 25,
+      "printedNumber": 1,
+      "sectionLabel": "L114 配色的基本法則",
+      "multiple": false,
+      "answer": "D",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=7",
+      "page": 7,
+      "promptText": "L114 配色的基\n1\n一幅將各種不一的由飽和到不飽和排列的紫色調色塊所構成的抽象畫作品,其所引發的視覺\n本法則\n美感最適合以下何個造型原則來描述?\n(A)對稱\n(B)重複\n(C)對比\n(D)漸變",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "L114 配色的基\n1\n一幅將各種不一的由飽和到不飽和排列的紫色調色塊所構成的抽象畫作品,其所引發的視覺\n本法則\n美感最適合以下何個造型原則來描述?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q025-01-1fc537a5f4.webp",
+          "alt": "色彩學／色彩度量學原卷第 25 題題目與選項",
+          "page": 7,
+          "rect": [
+            26,
+            194.97,
+            821.92,
+            316.87
+          ],
+          "role": "question",
+          "sha256": "d7ff752b1f2a7ba3b5d85f268e8c51e03c8c5966aae1dec1ad10023cd41cccc1"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 7,
+          "rect": [
+            229.06,
+            196.834,
+            243.924,
+            214.29
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-1",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q26",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 26,
+      "printedNumber": 2,
+      "sectionLabel": "L114 配色的基本法則",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=7",
+      "page": 7,
+      "promptText": "2\n以下何種配色屬於強色相對比的配色?\n(A)深綠配淺綠\n(B)橘紅色配橘黃色\n(C)藍配黃\n(D)灰色配粉紅色",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "以下何種配色屬於強色相對比的配色?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q026-01-a427c87f4b.webp",
+          "alt": "色彩學／色彩度量學原卷第 26 題題目與選項",
+          "page": 7,
+          "rect": [
+            26,
+            316.07,
+            821.92,
+            417.79
+          ],
+          "role": "question",
+          "sha256": "f71641e548aeb6ac6ae6523f8ce43c634286bfe9670ccf4f8fd555a5dc78f7f8"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 7,
+          "rect": [
+            229.06,
+            317.814,
+            242.844,
+            335.27
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-1",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q27",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 27,
+      "printedNumber": 3,
+      "sectionLabel": "L114 配色的基本法則",
+      "multiple": false,
+      "answer": "B",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=7",
+      "page": 7,
+      "promptText": "3\n以下關於色相差配色法的敘述何者正確?\n(A)色相差配色法將鄰近的多色以「不同色相、不同色調」呈現\n(B)色相差異的大小對配色的結果有非常大的影響\n(C)色相角度差異達120 度以上,稱為弱色相對比\n(D)兩色色相角度差異介於10 度~60 度之間,稱為中色相對比",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "以下關於色相差配色法的敘述何者正確?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q027-01-f231c02c47.webp",
+          "alt": "色彩學／色彩度量學原卷第 27 題題目與選項",
+          "page": 7,
+          "rect": [
+            26,
+            416.99,
+            821.92,
+            518.86
+          ],
+          "role": "question",
+          "sha256": "220dc61da16278c63ca556a5ad1d3b5b4f3975496b4fd039f88a5113689f08a2"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 7,
+          "rect": [
+            229.06,
+            418.884,
+            242.244,
+            436.34
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-1",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q28",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 28,
+      "printedNumber": 4,
+      "sectionLabel": "L114 配色的基本法則",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=8",
+      "page": 8,
+      "promptText": "關於色彩的敘述下列何者有誤?\nL11 色彩學\nL114 配色的基\n4\n(A)色彩調和(Color Harmony)目的,在於追求兩色或兩色以上的搭配組合,能給予人愉悅的視\n本法則\n覺經驗\n(B)為了達到配色美觀的目的,就需從色彩三屬性著手\n(C)色彩三屬性為色調、飽和度以及色相\n(D)色彩三屬性為獨立的,感覺上不會互相影響的心理向度",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "關於色彩的敘述下列何者有誤?\nL11 色彩學\nL114 配色的基\n4",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q028-01-8a9a90da4e.webp",
+          "alt": "色彩學／色彩度量學原卷第 28 題題目與選項",
+          "page": 8,
+          "rect": [
+            26,
+            94.02,
+            821.92,
+            210.77
+          ],
+          "role": "question",
+          "sha256": "702d99ff9623d6dfd6515adced5c20ade73f67b24b49e4103714682a9a84551e"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 8,
+          "rect": [
+            229.06,
+            95.764,
+            242.844,
+            113.22
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-1",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q29",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 29,
+      "printedNumber": 5,
+      "sectionLabel": "L114 配色的基本法則",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=8",
+      "page": 8,
+      "promptText": "關於PCCS 色調之敘述,何者有誤?\n5\n(A)色調的概念經常在色彩計畫中使用\n(B)色調指的是明度與彩度的綜合\n(C)PCCS 色彩系統將無彩色的色調區分為亮色調和暗色調兩階\n(D)PCCS 系統將有彩度色的色調分為12 種,鮮豔、明亮、強、深、淺、柔、鈍、暗、灰白、\n亮灰、灰與暗灰色調",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "關於PCCS 色調之敘述,何者有誤?\n5",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q029-01-2fb437f133.webp",
+          "alt": "色彩學／色彩度量學原卷第 29 題題目與選項",
+          "page": 8,
+          "rect": [
+            26,
+            209.97,
+            821.92,
+            326.83
+          ],
+          "role": "question",
+          "sha256": "1419548740980a74be401d5e7259030556d338c9ea922f06579e2018624b282a"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 8,
+          "rect": [
+            229.06,
+            211.834,
+            242.844,
+            229.29
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-1",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q30",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 30,
+      "printedNumber": 6,
+      "sectionLabel": "L114 配色的基本法則",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=8",
+      "page": 8,
+      "promptText": "下列何者為暖色調的色彩?\n6\n(A)S 2030-B10G\n(B)L*a*b* = (60, -30, -40)\n(C)5YR 6/8\n(D)L*C*h = (40, 50, 260)",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "下列何者為暖色調的色彩?\n6",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q030-01-00a61b7144.webp",
+          "alt": "色彩學／色彩度量學原卷第 30 題題目與選項",
+          "page": 8,
+          "rect": [
+            26,
+            326.03,
+            821.92,
+            423.79
+          ],
+          "role": "question",
+          "sha256": "136ec69851a5f9bd723ea768b95b5a7cf834abac5fd418d595c8f8920755f1d2"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 8,
+          "rect": [
+            229.06,
+            327.894,
+            242.844,
+            345.35
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-1",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q31",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 31,
+      "printedNumber": 7,
+      "sectionLabel": "L114 配色的基本法則",
+      "multiple": false,
+      "answer": "A",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=8",
+      "page": 8,
+      "promptText": "以下何者屬於「相同彩度」的配色?\n7\n(A)S2070-Y90R 與S2070-Y60R\n(B)5PB 8/4 與5PB 7/6\n(C)S1030-R80B 與S2020-R80B\n(D) 10Y 8/4 與5BG 9/6",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "以下何者屬於「相同彩度」的配色?\n7",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q031-01-80dff36229.webp",
+          "alt": "色彩學／色彩度量學原卷第 31 題題目與選項",
+          "page": 8,
+          "rect": [
+            26,
+            422.99,
+            821.92,
+            520.9
+          ],
+          "role": "question",
+          "sha256": "69644b5957f21de8edb7da498eae919a38b609c7245ace8409f2ead42c76420d"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 8,
+          "rect": [
+            229.06,
+            424.884,
+            243.204,
+            442.34
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-1",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q32",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 32,
+      "printedNumber": 8,
+      "sectionLabel": "L114 配色的基本法則",
+      "multiple": false,
+      "answer": "A",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=9",
+      "page": 9,
+      "promptText": "L11 色彩學\nL114 配色的基\n8\n下列哪一種色立體,在同一層水平切面上,所有色彩的明度是一致的?\n本法則\n(A)孟塞爾色彩體系\n(B)NCS 自然色彩體系\n(C)HSV\n(D)RGB",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "L11 色彩學\nL114 配色的基\n8\n下列哪一種色立體,在同一層水平切面上,所有色彩的明度是一致的?\n本法則",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q032-01-4d7e8d28b7.webp",
+          "alt": "色彩學／色彩度量學原卷第 32 題題目與選項",
+          "page": 9,
+          "rect": [
+            26,
+            94.02,
+            821.92,
+            195.77
+          ],
+          "role": "question",
+          "sha256": "c3edc92c025cefff31d1c49647769ca7ae3525bd43e9f0069c826d858675144a"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 9,
+          "rect": [
+            229.06,
+            95.764,
+            243.204,
+            113.22
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-1",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q33",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 33,
+      "printedNumber": 1,
+      "sectionLabel": "L131 CIE 表色系統",
+      "multiple": false,
+      "answer": "D",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=10",
+      "page": 10,
+      "promptText": "L13 色彩度量\nL131 CIE 表色\n1\n下列電磁波何者波長最長?\n學\n系統\n(A)可見光\n(B)紫外線\n(C)X 射線\n(D)紅外線",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "L13 色彩度量\nL131 CIE 表色\n1\n下列電磁波何者波長最長?\n學\n系統",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q033-01-2cdc74bc1a.webp",
+          "alt": "色彩學／色彩度量學原卷第 33 題題目與選項",
+          "page": 10,
+          "rect": [
+            26,
+            112.02,
+            821.92,
+            213.77
+          ],
+          "role": "question",
+          "sha256": "6aa0b2c84cb6a77fac29bc33fb47bdf9cc6a32189e22443cb4a4ff4131c0ea75"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 10,
+          "rect": [
+            229.06,
+            113.764,
+            243.924,
+            131.22
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-3",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "historicalNote": "原樣題科目為「色彩度量學」，本站對照至色彩管理相關主題。"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q34",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 34,
+      "printedNumber": 2,
+      "sectionLabel": "L131 CIE 表色系統",
+      "multiple": false,
+      "answer": "B",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=10",
+      "page": 10,
+      "promptText": "2\nCIE 標準光源的符號代表什麼意義?\n(A)大寫D 代表日光\n(B)D75 符號中的75 代表演色指數\n(C)大寫F 代表螢光燈\n(D)以上皆正確",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "CIE 標準光源的符號代表什麼意義?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q034-01-9778c338e4.webp",
+          "alt": "色彩學／色彩度量學原卷第 34 題題目與選項",
+          "page": 10,
+          "rect": [
+            26,
+            212.97,
+            821.92,
+            314.83
+          ],
+          "role": "question",
+          "sha256": "5a592ace8a311186a1914196182f2a9d0fd315b6d8e5bfc708b1c065a8e690e3"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 10,
+          "rect": [
+            229.06,
+            214.834,
+            242.244,
+            232.29
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-3",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "historicalNote": "原樣題科目為「色彩度量學」，本站對照至色彩管理相關主題。"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q35",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 35,
+      "printedNumber": 3,
+      "sectionLabel": "L131 CIE 表色系統",
+      "multiple": false,
+      "answer": "B",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=10",
+      "page": 10,
+      "promptText": "3\n關於CIE 1931 XYZ 色刺激值的敘述,何者錯誤?\n(A) (x̅, y̅, z̅ )色匹配函數全部都是正值\n(B) 取代(r̅, g̅, b̅ )色匹配函數的原因是因為(r̅, g̅, b̅ )在光譜的橘色區域會算出負值\n(C) y̅與光譜光視效率函數V(λ)相同,因此算出的Y 值與亮度線性相關\n(D)Z 值大致代表藍光的刺激強度",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "關於CIE 1931 XYZ 色刺激值的敘述,何者錯誤?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q035-01-a5434a09f9.webp",
+          "alt": "色彩學／色彩度量學原卷第 35 題題目與選項",
+          "page": 10,
+          "rect": [
+            26,
+            314.03,
+            821.92,
+            415.87
+          ],
+          "role": "question",
+          "sha256": "8926748a894beea28b18dee34bfa84e0f9a13b81a26c906034d9b9b4838eeb47"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 10,
+          "rect": [
+            229.06,
+            315.894,
+            242.244,
+            333.35
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-3",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "historicalNote": "原樣題科目為「色彩度量學」，本站對照至色彩管理相關主題。"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q36",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 36,
+      "printedNumber": 4,
+      "sectionLabel": "L131 CIE 表色系統",
+      "multiple": false,
+      "answer": "D",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=10",
+      "page": 10,
+      "promptText": "4\n相同瓦特(Watt)數的雷射筆,綠光雷射筆比紅光雷射筆看起來亮很多,其主要原因為何?\n(A)綠光的消耗功率較高\n(B)綠色光波長較短\n(C)綠色光的能量較高\n(D)人眼對綠光的敏感度較高",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "相同瓦特(Watt)數的雷射筆,綠光雷射筆比紅光雷射筆看起來亮很多,其主要原因為何?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q036-01-40623cbb57.webp",
+          "alt": "色彩學／色彩度量學原卷第 36 題題目與選項",
+          "page": 10,
+          "rect": [
+            26,
+            415.07,
+            821.92,
+            516.82
+          ],
+          "role": "question",
+          "sha256": "d435e7b54454b98303aea7fdfa9477644293b8ffee4fb36e7dcaca294038bd8b"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 10,
+          "rect": [
+            229.06,
+            416.844,
+            243.924,
+            434.3
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-3",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "historicalNote": "原樣題科目為「色彩度量學」，本站對照至色彩管理相關主題。"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q37",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 37,
+      "printedNumber": 5,
+      "sectionLabel": "L131 CIE 表色系統",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=11",
+      "page": 11,
+      "promptText": "5\n國際照明委員會1960 年代推薦的演色指數(Color Rendering Index)計算中採用的參考色票是\nL13 色彩度量\nL131 CIE 表色\n取自下列何者色彩系統的色票?\n學\n系統\n(A)彩通Pantone\n(B)自然色彩體系NCS\n(C)孟塞爾Munsell\n(D)日本色研PCCS",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "國際照明委員會1960 年代推薦的演色指數(Color Rendering Index)計算中採用的參考色票是\nL13 色彩度量\nL131 CIE 表色\n取自下列何者色彩系統的色票?\n學\n系統",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q037-01-8479f34a9b.webp",
+          "alt": "色彩學／色彩度量學原卷第 37 題題目與選項",
+          "page": 11,
+          "rect": [
+            26,
+            112.02,
+            821.92,
+            227.81
+          ],
+          "role": "question",
+          "sha256": "60ed58929a25a0bb01917f5cc184eac38b89c17622a7f22f7fba325221fa6cf8"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 11,
+          "rect": [
+            229.06,
+            113.764,
+            242.844,
+            131.22
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-3",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "historicalNote": "原樣題科目為「色彩度量學」，本站對照至色彩管理相關主題。"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q38",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 38,
+      "printedNumber": 6,
+      "sectionLabel": "L131 CIE 表色系統",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=11",
+      "page": 11,
+      "promptText": "6\n下列波長的電磁輻射波,哪一個能夠產生視覺明亮反應?\n(A)500 μm\n(B)500 cm\n(C)500 nm\n(D)500 mm",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "下列波長的電磁輻射波,哪一個能夠產生視覺明亮反應?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q038-01-26ca253e7b.webp",
+          "alt": "色彩學／色彩度量學原卷第 38 題題目與選項",
+          "page": 11,
+          "rect": [
+            26,
+            227.01,
+            821.92,
+            324.79
+          ],
+          "role": "question",
+          "sha256": "48d719ef09200dd0ada25ae719dc6f58aa5333fd4226cbcc273859c3fe251b06"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 11,
+          "rect": [
+            229.06,
+            228.874,
+            242.844,
+            246.33
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-3",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "historicalNote": "原樣題科目為「色彩度量學」，本站對照至色彩管理相關主題。"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q39",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 39,
+      "printedNumber": 7,
+      "sectionLabel": "L131 CIE 表色系統",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=11",
+      "page": 11,
+      "promptText": "7\n已知一物體色的CIE 三刺激值X,Y,Z 分別為(45, 90, 15),則此色的色度座標 (x, y) = ?\n(A)(45, 90)\n(B)(0.45, 0.9)\n(C)(0.3, 0.6)\n(D)(0.15, 0.45)",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "已知一物體色的CIE 三刺激值X,Y,Z 分別為(45, 90, 15),則此色的色度座標 (x, y) = ?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q039-01-ed226281f7.webp",
+          "alt": "色彩學／色彩度量學原卷第 39 題題目與選項",
+          "page": 11,
+          "rect": [
+            26,
+            323.99,
+            821.92,
+            421.87
+          ],
+          "role": "question",
+          "sha256": "eb02b0bb715ffb4f4e9998f37e5d13266192245459e5621c7ce4c3f862ccbeef"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 11,
+          "rect": [
+            229.06,
+            325.854,
+            242.844,
+            343.31
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-3",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "historicalNote": "原樣題科目為「色彩度量學」，本站對照至色彩管理相關主題。"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q40",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 40,
+      "printedNumber": 8,
+      "sectionLabel": "L131 CIE 表色系統",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=11",
+      "page": 11,
+      "promptText": "8\nCIE 於1964 年時提出標準照明 D65 ,其中下標的 65 代表下列何種數值?\n(A)入射角為 65o\n(B)波長650 nm\n(C)色溫6500K\n(D)演色指數為 65",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "CIE 於1964 年時提出標準照明 D65 ,其中下標的 65 代表下列何種數值?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q040-01-340e8882bf.webp",
+          "alt": "色彩學／色彩度量學原卷第 40 題題目與選項",
+          "page": 11,
+          "rect": [
+            26,
+            421.07,
+            821.92,
+            518.86
+          ],
+          "role": "question",
+          "sha256": "d5e085dbcb88ce82e67af0708b77fb31967f0b8bcd708c5349852382a327ff88"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 11,
+          "rect": [
+            229.06,
+            422.844,
+            242.844,
+            440.3
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-3",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "historicalNote": "原樣題科目為「色彩度量學」，本站對照至色彩管理相關主題。"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q41",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 41,
+      "printedNumber": 1,
+      "sectionLabel": "L132 色彩量測",
+      "multiple": false,
+      "answer": "B",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=12",
+      "page": 12,
+      "promptText": "L13 色彩度量\nL132 色彩量測\n1\n標準電腦顯示器表示階調複製曲線Gamma 值最接近下列何者?\n學\n(A)1.2\n(B)2.2\n(C)3.2\n(D)4.0",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "L13 色彩度量\nL132 色彩量測\n1\n標準電腦顯示器表示階調複製曲線Gamma 值最接近下列何者?\n學",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q041-01-0b4016e88a.webp",
+          "alt": "色彩學／色彩度量學原卷第 41 題題目與選項",
+          "page": 12,
+          "rect": [
+            26,
+            112.02,
+            821.92,
+            213.77
+          ],
+          "role": "question",
+          "sha256": "c74965577f0913f34c6d1d08f6c729edbb2ba64c22b29a374caf3f4fd3dcc95b"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 12,
+          "rect": [
+            229.06,
+            113.764,
+            242.244,
+            131.22
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-3",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "historicalNote": "原樣題科目為「色彩度量學」，本站對照至色彩管理相關主題。"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q42",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 42,
+      "printedNumber": 2,
+      "sectionLabel": "L132 色彩量測",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=12",
+      "page": 12,
+      "promptText": "2\n關於量測表面色的色彩量測儀器,下列敘述何者正確?\n(A)儀器內部不需要設置光源\n(B)一定要在暗室內才能使用\n(C)使用前需要作白板校正\n(D)無法量測色樣本的光譜反射率",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "關於量測表面色的色彩量測儀器,下列敘述何者正確?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q042-01-1cec3c4100.webp",
+          "alt": "色彩學／色彩度量學原卷第 42 題題目與選項",
+          "page": 12,
+          "rect": [
+            26,
+            212.97,
+            821.92,
+            314.83
+          ],
+          "role": "question",
+          "sha256": "9985395420f73f7a8a69a1c1590294aec044df36148b3c49b038c5de4c6a6fe2"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 12,
+          "rect": [
+            229.06,
+            214.834,
+            242.844,
+            232.29
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-3",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "historicalNote": "原樣題科目為「色彩度量學」，本站對照至色彩管理相關主題。"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q43",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 43,
+      "printedNumber": 3,
+      "sectionLabel": "L132 色彩量測",
+      "multiple": false,
+      "answer": "A",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=12",
+      "page": 12,
+      "promptText": "3\n實務上,在CIELAB 色彩空間中,以下哪一個不是常用的參考白CIE 標準光源?\n(A)D90\n(B)D55\n(C)D65\n(D)D50",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "實務上,在CIELAB 色彩空間中,以下哪一個不是常用的參考白CIE 標準光源?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q043-01-2b8c850a03.webp",
+          "alt": "色彩學／色彩度量學原卷第 43 題題目與選項",
+          "page": 12,
+          "rect": [
+            26,
+            314.03,
+            821.92,
+            415.87
+          ],
+          "role": "question",
+          "sha256": "cb45e5b23c9701b9048a29803734eee9be2926275b5d10944ab9c1790a1306ad"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 12,
+          "rect": [
+            229.06,
+            315.894,
+            243.204,
+            333.35
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-3",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "historicalNote": "原樣題科目為「色彩度量學」，本站對照至色彩管理相關主題。"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q44",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 44,
+      "printedNumber": 4,
+      "sectionLabel": "L132 色彩量測",
+      "multiple": false,
+      "answer": "D",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=12",
+      "page": 12,
+      "promptText": "下列何者不屬於同色異譜 (matamerism) 的應用?\n4\n(A)CIE 的色匹配實驗;\n(B)利用色彩管理系統使顯示器與印表機色彩一致;\n(C)印表機用黑墨取代頻譜反射率不平的CMY 三色墨,確保灰色在不同光源下不容易偏色;\n(D)在暗環境顯示影像,將gamma 值調高,使影像視覺與亮環境一致。",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "下列何者不屬於同色異譜 (matamerism) 的應用?\n4",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q044-01-dee0c1fe88.webp",
+          "alt": "色彩學／色彩度量學原卷第 44 題題目與選項",
+          "page": 12,
+          "rect": [
+            26,
+            415.07,
+            821.92,
+            512.86
+          ],
+          "role": "question",
+          "sha256": "20cff22baf7bfdee624a836b6a2a20189d0b88f8264598dbd2d9e2623d583567"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 12,
+          "rect": [
+            229.06,
+            416.844,
+            243.924,
+            434.3
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-3",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "historicalNote": "原樣題科目為「色彩度量學」，本站對照至色彩管理相關主題。"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q45",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 45,
+      "printedNumber": 5,
+      "sectionLabel": "L132 色彩量測",
+      "multiple": false,
+      "answer": "B",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=13",
+      "page": 13,
+      "promptText": "在CIELAB 色彩空間,人眼恰可察覺的ΔE00 色差值大約是多少?\nL13 色彩度量\nL132 色彩量測\n5\n(A)0.1~0.5\n學\n(B)1~3\n(C)8~10\n(D)10~20",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "在CIELAB 色彩空間,人眼恰可察覺的ΔE00 色差值大約是多少?\nL13 色彩度量\nL132 色彩量測\n5",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q045-01-cdb9d29580.webp",
+          "alt": "色彩學／色彩度量學原卷第 45 題題目與選項",
+          "page": 13,
+          "rect": [
+            26,
+            94.02,
+            821.92,
+            191.81
+          ],
+          "role": "question",
+          "sha256": "280a413617e14dd8e98c44fe1369604294d1448078955ed2b5c2a97111d13152"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 13,
+          "rect": [
+            229.06,
+            95.764,
+            242.244,
+            113.22
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-3",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "historicalNote": "原樣題科目為「色彩度量學」，本站對照至色彩管理相關主題。"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q46",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 46,
+      "printedNumber": 6,
+      "sectionLabel": "L132 色彩量測",
+      "multiple": false,
+      "answer": "D",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=13",
+      "page": 13,
+      "promptText": "針對色彩裝置之色彩管理,其ICC 色彩管理標準的組成部分主要有以下四種,下列哪一個跟\n6\n不同色彩複製目的下的色域對映選項有關?\n(A)PCS - Profile Connection Space\n(B)Color Profile\n(C)CMM - Color Management Module\n(D)Rendering Intent",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "針對色彩裝置之色彩管理,其ICC 色彩管理標準的組成部分主要有以下四種,下列哪一個跟\n6\n不同色彩複製目的下的色域對映選項有關?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q046-01-97da2a536c.webp",
+          "alt": "色彩學／色彩度量學原卷第 46 題題目與選項",
+          "page": 13,
+          "rect": [
+            26,
+            191.01,
+            821.92,
+            306.77
+          ],
+          "role": "question",
+          "sha256": "8459beec3177ef847a3ff94cf0ce4605f5fa7a6b40676350e8dc75f4541ddc97"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 13,
+          "rect": [
+            229.06,
+            192.874,
+            243.924,
+            210.33
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-3",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "historicalNote": "原樣題科目為「色彩度量學」，本站對照至色彩管理相關主題。"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q47",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 47,
+      "printedNumber": 7,
+      "sectionLabel": "L132 色彩量測",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=13",
+      "page": 13,
+      "promptText": "配墨時採用分光光度儀量測色樣,保留分光光譜反射率(spectral reflectance)資料的好處,何\n7\n者正確?\n(A)可計算出相關色溫\n(B)可計算出色匹配函數\n(C)可計算出色樣的同色異譜指數\n(D)可計算出平均演色指數",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "配墨時採用分光光度儀量測色樣,保留分光光譜反射率(spectral reflectance)資料的好處,何\n7\n者正確?",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q047-01-8af816c79f.webp",
+          "alt": "色彩學／色彩度量學原卷第 47 題題目與選項",
+          "page": 13,
+          "rect": [
+            26,
+            305.97,
+            821.92,
+            421.87
+          ],
+          "role": "question",
+          "sha256": "c8da207e8f489b86ea427864cc30329f164db1a4074ab9cd6cb8f151d187bd03"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 13,
+          "rect": [
+            229.06,
+            307.854,
+            242.844,
+            325.31
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-3",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "historicalNote": "原樣題科目為「色彩度量學」，本站對照至色彩管理相關主題。"
+    },
+    {
+      "id": "cpm-junior-sample-f217eab6df34-q48",
+      "certId": "cpm",
+      "levelId": "junior",
+      "paperId": "cpm-junior-sample-f217eab6df34",
+      "subjectName": "色彩學／色彩度量學",
+      "number": 48,
+      "printedNumber": 8,
+      "sectionLabel": "L132 色彩量測",
+      "multiple": false,
+      "answer": "C",
+      "sourceKind": "official-sample",
+      "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf#page=13",
+      "page": 13,
+      "promptText": "關於Adobe RGB 色彩標準的描述下列何者正確?\n8\n(A)Gamma 標準值為1.8\n(B)為了涵蓋印刷設備無法在標準顯示器上呈現的黃色區域而設計\n(C)擴大了三原色中綠色的色域\n(D)色域面積比sRGB 小",
+      "promptTextKind": "pdf-text-extraction",
+      "stem": "關於Adobe RGB 色彩標準的描述下列何者正確?\n8",
+      "stemKind": "pdf-text-preview",
+      "images": [
+        {
+          "path": "assets/questions/official/cpm-junior-sample-f217eab6df34/q048-01-cb0f7368a1.webp",
+          "alt": "色彩學／色彩度量學原卷第 48 題題目與選項",
+          "page": 13,
+          "rect": [
+            26,
+            421.07,
+            821.92,
+            518.86
+          ],
+          "role": "question",
+          "sha256": "ebeaa757883c0a811b19012bd66befa77d9e13ef9f85031d4022eae3470b4d28"
+        }
+      ],
+      "sourcePdfSha256": "6340f4d14202bbcba49f1dd8d17545e901fde3a9feea4570f5ff835e1a2d09c5",
+      "answerHidden": true,
+      "maskRects": [
+        {
+          "page": 13,
+          "rect": [
+            229.06,
+            422.844,
+            242.844,
+            440.3
+          ]
+        }
+      ],
+      "subjectId": "cpm-junior-3",
+      "paperTitle": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "source": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)",
+      "historicalNote": "原樣題科目為「色彩度量學」，本站對照至色彩管理相關主題。"
+    },
+    {
+      "id": "practice-cpm-junior-2-001",
+      "certId": "cpm",
+      "levelId": "junior",
+      "subjectId": "cpm-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "依導引表，若移除所有文字與圖形，只留下區域顏色，最主要的可用性風險是？",
+      "options": {
+        "A": "色覺差異或灰階呈現時難以辨識",
+        "B": "任何使用者都會把灰色視為緊急狀態",
+        "C": "所有區域的視覺層級必定更清楚",
+        "D": "只要色相不同就無需任何識別測試"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "顏色不宜是唯一資訊線索；表中的文字與形狀提供可辨識的第二通道。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/cpm-junior-2/figure-01.svg",
+          "alt": "醫院導引：樓層與訊息層級。欄位依序為：區域、主色、冗餘辨識。急診：紅色：急診文字＋十字圖形；門診：藍色：門診文字＋圓形；行政：灰色：行政文字＋方形。導引須在一般彩色與灰階列印中都可辨識。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "W3C WCAG：不只依賴顏色傳達資訊",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html"
+        },
+        {
+          "title": "W3C WCAG：文字對比",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+        },
+        {
+          "title": "ICC 色彩管理與設定檔說明",
+          "url": "https://www.color.org/faqs/"
+        },
+        {
+          "title": "官方考科範圍；非本題來源：色彩計畫實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/CPM/115年度色彩規劃管理師能力鑑定簡章(初級)_0623_20260624145855.pdf"
+        }
+      ],
+      "topic": "醫院導引：樓層與訊息層級",
+      "practicalPreparation": true,
+      "historical": false
+    },
+    {
+      "id": "practice-cpm-junior-2-002",
+      "certId": "cpm",
+      "levelId": "junior",
+      "subjectId": "cpm-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "同一醫院新設復健區，要沿用既有導引系統，哪項決策最合理？",
+      "options": {
+        "A": "每張牌自行選不同的藍色",
+        "B": "同時訂定區域色、文字與圖形規則",
+        "C": "只把所有區域都改成紅色",
+        "D": "取消既有樓層訊息層級"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "一致的辨識規則便於跨樓層理解；不能只新增一個色名而忽略冗餘標示。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/cpm-junior-2/figure-01.svg",
+          "alt": "醫院導引：樓層與訊息層級。欄位依序為：區域、主色、冗餘辨識。急診：紅色：急診文字＋十字圖形；門診：藍色：門診文字＋圓形；行政：灰色：行政文字＋方形。導引須在一般彩色與灰階列印中都可辨識。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "W3C WCAG：不只依賴顏色傳達資訊",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html"
+        },
+        {
+          "title": "W3C WCAG：文字對比",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+        },
+        {
+          "title": "ICC 色彩管理與設定檔說明",
+          "url": "https://www.color.org/faqs/"
+        },
+        {
+          "title": "官方考科範圍；非本題來源：色彩計畫實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/CPM/115年度色彩規劃管理師能力鑑定簡章(初級)_0623_20260624145855.pdf"
+        }
+      ],
+      "topic": "醫院導引：樓層與訊息層級",
+      "practicalPreparation": true,
+      "historical": false
+    },
+    {
+      "id": "practice-cpm-junior-2-003",
+      "certId": "cpm",
+      "levelId": "junior",
+      "subjectId": "cpm-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "若急診指標必須能被遠距離快速辨識，第一輪實地驗證應優先測什麼？",
+      "options": {
+        "A": "工作人員是否偏愛紅色",
+        "B": "設計者是否使用最多色相",
+        "C": "代表性使用者能否找到急診方向",
+        "D": "色票在設計螢幕上是否完全等面積"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "導引成效應以找路任務驗證，並納入距離、照明與使用者差異。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/cpm-junior-2/figure-01.svg",
+          "alt": "醫院導引：樓層與訊息層級。欄位依序為：區域、主色、冗餘辨識。急診：紅色：急診文字＋十字圖形；門診：藍色：門診文字＋圓形；行政：灰色：行政文字＋方形。導引須在一般彩色與灰階列印中都可辨識。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "W3C WCAG：不只依賴顏色傳達資訊",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html"
+        },
+        {
+          "title": "W3C WCAG：文字對比",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+        },
+        {
+          "title": "ICC 色彩管理與設定檔說明",
+          "url": "https://www.color.org/faqs/"
+        },
+        {
+          "title": "官方考科範圍；非本題來源：色彩計畫實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/CPM/115年度色彩規劃管理師能力鑑定簡章(初級)_0623_20260624145855.pdf"
+        }
+      ],
+      "topic": "醫院導引：樓層與訊息層級",
+      "practicalPreparation": true,
+      "historical": false
+    },
+    {
+      "id": "practice-cpm-junior-2-004",
+      "certId": "cpm",
+      "levelId": "junior",
+      "subjectId": "cpm-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "依表中亮度，標題與背景的對比值約為多少？",
+      "options": {
+        "A": "3.00：1",
+        "B": "9.00：1",
+        "C": "1.58：1",
+        "D": "6.33：1"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "(0.90＋0.05)÷(0.10＋0.05)＝6.33；須用亮度加0.05，而非直接除RGB數字。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/cpm-junior-2/figure-02.svg",
+          "alt": "海報版面與明度資料。欄位依序為：項目、面積比例、相對亮度 L。背景：70%：0.90；標題深色：10%：0.10；說明深灰：15%：0.30；強調色：5%：0.50。對比公式：(較亮 L＋0.05) ÷ (較暗 L＋0.05)。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "W3C WCAG：不只依賴顏色傳達資訊",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html"
+        },
+        {
+          "title": "W3C WCAG：文字對比",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+        },
+        {
+          "title": "ICC 色彩管理與設定檔說明",
+          "url": "https://www.color.org/faqs/"
+        },
+        {
+          "title": "官方考科範圍；非本題來源：色彩計畫實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/CPM/115年度色彩規劃管理師能力鑑定簡章(初級)_0623_20260624145855.pdf"
+        }
+      ],
+      "topic": "海報版面與明度資料",
+      "practicalPreparation": true,
+      "historical": false
+    },
+    {
+      "id": "practice-cpm-junior-2-005",
+      "certId": "cpm",
+      "levelId": "junior",
+      "subjectId": "cpm-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "說明文字與背景的對比約2.71：1。若以一般尺寸文字至少4.5：1為檢核條件，應如何處理？",
+      "options": {
+        "A": "調整文字或背景亮度以提高對比",
+        "B": "只增加文字區的面積比例",
+        "C": "只提高文字顏色飽和度且維持原亮度",
+        "D": "改成更多相近色的文字"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "面積不會改變這組亮度的對比；需調整色彩亮度或另選符合條件的呈現。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/cpm-junior-2/figure-02.svg",
+          "alt": "海報版面與明度資料。欄位依序為：項目、面積比例、相對亮度 L。背景：70%：0.90；標題深色：10%：0.10；說明深灰：15%：0.30；強調色：5%：0.50。對比公式：(較亮 L＋0.05) ÷ (較暗 L＋0.05)。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "W3C WCAG：不只依賴顏色傳達資訊",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html"
+        },
+        {
+          "title": "W3C WCAG：文字對比",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+        },
+        {
+          "title": "ICC 色彩管理與設定檔說明",
+          "url": "https://www.color.org/faqs/"
+        },
+        {
+          "title": "官方考科範圍；非本題來源：色彩計畫實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/CPM/115年度色彩規劃管理師能力鑑定簡章(初級)_0623_20260624145855.pdf"
+        }
+      ],
+      "topic": "海報版面與明度資料",
+      "practicalPreparation": true,
+      "historical": false
+    },
+    {
+      "id": "practice-cpm-junior-2-006",
+      "certId": "cpm",
+      "levelId": "junior",
+      "subjectId": "cpm-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "強調色只佔5%版面，想維持其焦點功能，哪項更動最可能削弱視覺層級？",
+      "options": {
+        "A": "減少非必要的裝飾色",
+        "B": "把所有說明文字也改成強調色",
+        "C": "讓主標題位置保持一致",
+        "D": "保留大面積背景留白"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "強調色若大量擴散，原本少量使用的相對突出效果會降低。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/cpm-junior-2/figure-02.svg",
+          "alt": "海報版面與明度資料。欄位依序為：項目、面積比例、相對亮度 L。背景：70%：0.90；標題深色：10%：0.10；說明深灰：15%：0.30；強調色：5%：0.50。對比公式：(較亮 L＋0.05) ÷ (較暗 L＋0.05)。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "W3C WCAG：不只依賴顏色傳達資訊",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html"
+        },
+        {
+          "title": "W3C WCAG：文字對比",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+        },
+        {
+          "title": "ICC 色彩管理與設定檔說明",
+          "url": "https://www.color.org/faqs/"
+        },
+        {
+          "title": "官方考科範圍；非本題來源：色彩計畫實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/CPM/115年度色彩規劃管理師能力鑑定簡章(初級)_0623_20260624145855.pdf"
+        }
+      ],
+      "topic": "海報版面與明度資料",
+      "practicalPreparation": true,
+      "historical": false
+    },
+    {
+      "id": "practice-cpm-junior-2-007",
+      "certId": "cpm",
+      "levelId": "junior",
+      "subjectId": "cpm-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "打樣在暖色燈下看偏黃，在另一燈下較接近核准樣。應先確認什麼？",
+      "options": {
+        "A": "先假定是油墨濃度不一致",
+        "B": "先把原稿整體減少黃色",
+        "C": "觀看光源與觀察條件是否一致",
+        "D": "先把螢幕色溫調到與燈光相反"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "觀看光源會影響印刷色外觀；必須先控制觀察條件，才適合判斷製程偏差。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/cpm-junior-2/figure-03.svg",
+          "alt": "品牌印刷打樣流程。欄位依序為：步驟、記錄。1：設計檔指定 RGB 來源設定檔；2：依實際紙材與印機選輸出設定檔；3：標準觀看條件下比對打樣；4：留存核准色樣與印製條件。螢幕色塊不是實體色票；此圖呈現工作流程。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "W3C WCAG：不只依賴顏色傳達資訊",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html"
+        },
+        {
+          "title": "W3C WCAG：文字對比",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+        },
+        {
+          "title": "ICC 色彩管理與設定檔說明",
+          "url": "https://www.color.org/faqs/"
+        },
+        {
+          "title": "官方考科範圍；非本題來源：色彩計畫實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/CPM/115年度色彩規劃管理師能力鑑定簡章(初級)_0623_20260624145855.pdf"
+        }
+      ],
+      "topic": "品牌印刷打樣流程",
+      "practicalPreparation": true,
+      "historical": false
+    },
+    {
+      "id": "practice-cpm-junior-2-008",
+      "certId": "cpm",
+      "levelId": "junior",
+      "subjectId": "cpm-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "設計檔換到另一部螢幕後看起來不同，哪項說法最正確？",
+      "options": {
+        "A": "相同RGB值在任何螢幕必定同色",
+        "B": "只要用PNG就不需要色彩管理",
+        "C": "提高解析度即可保證顏色一致",
+        "D": "需要確認各裝置校正與設定檔"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "RGB值須結合色彩空間與裝置特性解讀；解析度本身不能校正顏色。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/cpm-junior-2/figure-03.svg",
+          "alt": "品牌印刷打樣流程。欄位依序為：步驟、記錄。1：設計檔指定 RGB 來源設定檔；2：依實際紙材與印機選輸出設定檔；3：標準觀看條件下比對打樣；4：留存核准色樣與印製條件。螢幕色塊不是實體色票；此圖呈現工作流程。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "W3C WCAG：不只依賴顏色傳達資訊",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html"
+        },
+        {
+          "title": "W3C WCAG：文字對比",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+        },
+        {
+          "title": "ICC 色彩管理與設定檔說明",
+          "url": "https://www.color.org/faqs/"
+        },
+        {
+          "title": "官方考科範圍；非本題來源：色彩計畫實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/CPM/115年度色彩規劃管理師能力鑑定簡章(初級)_0623_20260624145855.pdf"
+        }
+      ],
+      "topic": "品牌印刷打樣流程",
+      "practicalPreparation": true,
+      "historical": false
+    },
+    {
+      "id": "practice-cpm-junior-2-009",
+      "certId": "cpm",
+      "levelId": "junior",
+      "subjectId": "cpm-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "圖中輸出設定檔應配合哪一組實際條件？",
+      "options": {
+        "A": "印表裝置、墨材與承印紙材",
+        "B": "只配合設計螢幕的來源色域",
+        "C": "只配合影像的像素尺寸",
+        "D": "只配合輸出檔案的壓縮品質"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "輸出裝置與材料決定可再現的色域和階調，不能以任意設定檔取代。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/cpm-junior-2/figure-03.svg",
+          "alt": "品牌印刷打樣流程。欄位依序為：步驟、記錄。1：設計檔指定 RGB 來源設定檔；2：依實際紙材與印機選輸出設定檔；3：標準觀看條件下比對打樣；4：留存核准色樣與印製條件。螢幕色塊不是實體色票；此圖呈現工作流程。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "W3C WCAG：不只依賴顏色傳達資訊",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html"
+        },
+        {
+          "title": "W3C WCAG：文字對比",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+        },
+        {
+          "title": "ICC 色彩管理與設定檔說明",
+          "url": "https://www.color.org/faqs/"
+        },
+        {
+          "title": "官方考科範圍；非本題來源：色彩計畫實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/CPM/115年度色彩規劃管理師能力鑑定簡章(初級)_0623_20260624145855.pdf"
+        }
+      ],
+      "topic": "品牌印刷打樣流程",
+      "practicalPreparation": true,
+      "historical": false
+    },
+    {
+      "id": "practice-cpm-junior-2-010",
+      "certId": "cpm",
+      "levelId": "junior",
+      "subjectId": "cpm-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "核准一批包裝色後，最有助於下次追溯色差的紀錄是？",
+      "options": {
+        "A": "只保存一張手機自動曝光照片",
+        "B": "核准色樣、觀看條件與印製條件",
+        "C": "只記錄當天印製總張數",
+        "D": "只留下未嵌入設定檔的縮圖"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "色樣與製程、觀察條件共同建立追溯基準；手機照片不能完整代表實體色。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/cpm-junior-2/figure-03.svg",
+          "alt": "品牌印刷打樣流程。欄位依序為：步驟、記錄。1：設計檔指定 RGB 來源設定檔；2：依實際紙材與印機選輸出設定檔；3：標準觀看條件下比對打樣；4：留存核准色樣與印製條件。螢幕色塊不是實體色票；此圖呈現工作流程。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "W3C WCAG：不只依賴顏色傳達資訊",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html"
+        },
+        {
+          "title": "W3C WCAG：文字對比",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+        },
+        {
+          "title": "ICC 色彩管理與設定檔說明",
+          "url": "https://www.color.org/faqs/"
+        },
+        {
+          "title": "官方考科範圍；非本題來源：色彩計畫實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/CPM/115年度色彩規劃管理師能力鑑定簡章(初級)_0623_20260624145855.pdf"
+        }
+      ],
+      "topic": "品牌印刷打樣流程",
+      "practicalPreparation": true,
+      "historical": false
+    },
+    {
+      "id": "practice-cpm-junior-3-001",
+      "certId": "cpm",
+      "levelId": "junior",
+      "subjectId": "cpm-junior-3",
+      "sourceKind": "original-practice",
+      "stem": "依圖，PCS的主要功能是什麼？",
+      "options": {
+        "A": "直接擴張所有裝置的實體色域",
+        "B": "提供連接不同裝置描述檔的共同色彩表示",
+        "C": "讓所有來源與目的裝置共享相同RGB數值",
+        "D": "讓不同螢幕不必描述色彩特性"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "PCS使來源與目的設定檔能透過共同座標銜接，並非保證每種顏色皆可再現。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/cpm-junior-3/figure-01.svg",
+          "alt": "ICC 色彩轉換路徑。欄位依序為：階段、資料。來源：RGB 數值＋來源 ICC；連接：PCS：CIEXYZ 或 CIELAB；目的：目的 ICC＋印表裝置數值。此為 ICC.1 架構；PCS 採 D50 參考。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "ICC 色彩管理與設定檔說明",
+          "url": "https://www.color.org/faqs/"
+        },
+        {
+          "title": "ICC：D50 與設定檔連接空間",
+          "url": "https://www.color.org/whyd50/"
+        },
+        {
+          "title": "W3C WCAG：文字對比",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+        },
+        {
+          "title": "官方考科範圍；非本題來源：色彩管理",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/CPM/115年度色彩規劃管理師能力鑑定簡章(初級)_0623_20260624145855.pdf"
+        }
+      ],
+      "topic": "ICC 色彩轉換路徑",
+      "practicalPreparation": false,
+      "historical": false
+    },
+    {
+      "id": "practice-cpm-junior-3-002",
+      "certId": "cpm",
+      "levelId": "junior",
+      "subjectId": "cpm-junior-3",
+      "sourceKind": "original-practice",
+      "stem": "把一張已標示sRGB的影像直接「指派」為另一RGB色域而不轉換數值，可能發生什麼？",
+      "options": {
+        "A": "自動保留所有原本外觀不變",
+        "B": "只改變像素數而不影響顏色解讀",
+        "C": "同一組數值被重新解釋而改變外觀",
+        "D": "等同完成保留外觀的色域轉換"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "指派改變數值的解讀方式；保留外觀通常需要依來源與目的描述檔做色彩轉換。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/cpm-junior-3/figure-01.svg",
+          "alt": "ICC 色彩轉換路徑。欄位依序為：階段、資料。來源：RGB 數值＋來源 ICC；連接：PCS：CIEXYZ 或 CIELAB；目的：目的 ICC＋印表裝置數值。此為 ICC.1 架構；PCS 採 D50 參考。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "ICC 色彩管理與設定檔說明",
+          "url": "https://www.color.org/faqs/"
+        },
+        {
+          "title": "ICC：D50 與設定檔連接空間",
+          "url": "https://www.color.org/whyd50/"
+        },
+        {
+          "title": "W3C WCAG：文字對比",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+        },
+        {
+          "title": "官方考科範圍；非本題來源：色彩管理",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/CPM/115年度色彩規劃管理師能力鑑定簡章(初級)_0623_20260624145855.pdf"
+        }
+      ],
+      "topic": "ICC 色彩轉換路徑",
+      "practicalPreparation": false,
+      "historical": false
+    },
+    {
+      "id": "practice-cpm-junior-3-003",
+      "certId": "cpm",
+      "levelId": "junior",
+      "subjectId": "cpm-junior-3",
+      "sourceKind": "original-practice",
+      "stem": "D50在此圖中代表什麼？",
+      "options": {
+        "A": "所有顯示器都必須只能發出5000K光",
+        "B": "所有RGB來源設定檔均以D50作實際顯示白點",
+        "C": "輸出紙白在任何光源下都必須量得同一光譜",
+        "D": "ICC.1 PCS的參考白點／觀察基準"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "D50是此架構的共同參考；不等於所有設備的物理白點均相同。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/cpm-junior-3/figure-01.svg",
+          "alt": "ICC 色彩轉換路徑。欄位依序為：階段、資料。來源：RGB 數值＋來源 ICC；連接：PCS：CIEXYZ 或 CIELAB；目的：目的 ICC＋印表裝置數值。此為 ICC.1 架構；PCS 採 D50 參考。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "ICC 色彩管理與設定檔說明",
+          "url": "https://www.color.org/faqs/"
+        },
+        {
+          "title": "ICC：D50 與設定檔連接空間",
+          "url": "https://www.color.org/whyd50/"
+        },
+        {
+          "title": "W3C WCAG：文字對比",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+        },
+        {
+          "title": "官方考科範圍；非本題來源：色彩管理",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/CPM/115年度色彩規劃管理師能力鑑定簡章(初級)_0623_20260624145855.pdf"
+        }
+      ],
+      "topic": "ICC 色彩轉換路徑",
+      "practicalPreparation": false,
+      "historical": false
+    },
+    {
+      "id": "practice-cpm-junior-3-004",
+      "certId": "cpm",
+      "levelId": "junior",
+      "subjectId": "cpm-junior-3",
+      "sourceKind": "original-practice",
+      "stem": "依指定ΔE*ab公式，樣品甲與標準的色差是多少？",
+      "options": {
+        "A": "5",
+        "B": "7",
+        "C": "25",
+        "D": "3"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "ΔL*=3、Δa*=4、Δb*=0，因此√(9＋16)＝5。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/cpm-junior-3/figure-02.svg",
+          "alt": "量測色樣：CIELAB 座標。欄位依序為：樣品、L*、a*、b*。標準：50：10：20；樣品甲：53：14：20；樣品乙：50：10：26。本題指定使用 ΔE*ab＝√(ΔL*²＋Δa*²＋Δb*²)，不是 ΔE00。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "ICC 色彩管理與設定檔說明",
+          "url": "https://www.color.org/faqs/"
+        },
+        {
+          "title": "ICC：D50 與設定檔連接空間",
+          "url": "https://www.color.org/whyd50/"
+        },
+        {
+          "title": "W3C WCAG：文字對比",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+        },
+        {
+          "title": "官方考科範圍；非本題來源：色彩管理",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/CPM/115年度色彩規劃管理師能力鑑定簡章(初級)_0623_20260624145855.pdf"
+        }
+      ],
+      "topic": "量測色樣：CIELAB 座標",
+      "practicalPreparation": false,
+      "historical": false
+    },
+    {
+      "id": "practice-cpm-junior-3-005",
+      "certId": "cpm",
+      "levelId": "junior",
+      "subjectId": "cpm-junior-3",
+      "sourceKind": "original-practice",
+      "stem": "依同一公式，甲、乙哪一個離標準較近？",
+      "options": {
+        "A": "乙，6小於5",
+        "B": "甲，5小於6",
+        "C": "兩者都是5",
+        "D": "無法由完整三軸座標比較"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "乙僅b*相差6，色差為6；在題目指定的度量下，甲為5。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/cpm-junior-3/figure-02.svg",
+          "alt": "量測色樣：CIELAB 座標。欄位依序為：樣品、L*、a*、b*。標準：50：10：20；樣品甲：53：14：20；樣品乙：50：10：26。本題指定使用 ΔE*ab＝√(ΔL*²＋Δa*²＋Δb*²)，不是 ΔE00。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "ICC 色彩管理與設定檔說明",
+          "url": "https://www.color.org/faqs/"
+        },
+        {
+          "title": "ICC：D50 與設定檔連接空間",
+          "url": "https://www.color.org/whyd50/"
+        },
+        {
+          "title": "W3C WCAG：文字對比",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+        },
+        {
+          "title": "官方考科範圍；非本題來源：色彩管理",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/CPM/115年度色彩規劃管理師能力鑑定簡章(初級)_0623_20260624145855.pdf"
+        }
+      ],
+      "topic": "量測色樣：CIELAB 座標",
+      "practicalPreparation": false,
+      "historical": false
+    },
+    {
+      "id": "practice-cpm-junior-3-006",
+      "certId": "cpm",
+      "levelId": "junior",
+      "subjectId": "cpm-junior-3",
+      "sourceKind": "original-practice",
+      "stem": "甲的L*比標準大3，單就L*這一軸表示什麼？",
+      "options": {
+        "A": "甲必定有較大的b*",
+        "B": "甲的色相必為藍色",
+        "C": "甲的明度較高",
+        "D": "甲的飽和度必定為零"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "CIELAB中L*表示明度；不能只由L*差推定完整色相或彩度變化。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/cpm-junior-3/figure-02.svg",
+          "alt": "量測色樣：CIELAB 座標。欄位依序為：樣品、L*、a*、b*。標準：50：10：20；樣品甲：53：14：20；樣品乙：50：10：26。本題指定使用 ΔE*ab＝√(ΔL*²＋Δa*²＋Δb*²)，不是 ΔE00。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "ICC 色彩管理與設定檔說明",
+          "url": "https://www.color.org/faqs/"
+        },
+        {
+          "title": "ICC：D50 與設定檔連接空間",
+          "url": "https://www.color.org/whyd50/"
+        },
+        {
+          "title": "W3C WCAG：文字對比",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+        },
+        {
+          "title": "官方考科範圍；非本題來源：色彩管理",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/CPM/115年度色彩規劃管理師能力鑑定簡章(初級)_0623_20260624145855.pdf"
+        }
+      ],
+      "topic": "量測色樣：CIELAB 座標",
+      "practicalPreparation": false,
+      "historical": false
+    },
+    {
+      "id": "practice-cpm-junior-3-007",
+      "certId": "cpm",
+      "levelId": "junior",
+      "subjectId": "cpm-junior-3",
+      "sourceKind": "original-practice",
+      "stem": "對超出目的色域的攝影作品，若希望保留整體色彩關係，通常優先比較哪種轉換意圖？",
+      "options": {
+        "A": "絕對色度式，優先模擬來源紙白",
+        "B": "相對色度式，僅依色域內色準作選擇",
+        "C": "飽和度式，優先保持鮮豔而非整體色彩關係",
+        "D": "感知式"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "感知式會考慮目的色域調整整體再現；仍需用實際影像及輸出驗證效果。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/cpm-junior-3/figure-03.svg",
+          "alt": "輸出工作單。欄位依序為：項目、設定。色域：來源有部分高彩度色超出印刷色域；目的：攝影作品整體色彩關係；限制：不得讓軟體與驅動程式重複轉換；驗證：以量測儀器及控制色塊檢查。顯示器校正、建立描述檔、驗證是不同工作。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "ICC 色彩管理與設定檔說明",
+          "url": "https://www.color.org/faqs/"
+        },
+        {
+          "title": "ICC：D50 與設定檔連接空間",
+          "url": "https://www.color.org/whyd50/"
+        },
+        {
+          "title": "W3C WCAG：文字對比",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+        },
+        {
+          "title": "官方考科範圍；非本題來源：色彩管理",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/CPM/115年度色彩規劃管理師能力鑑定簡章(初級)_0623_20260624145855.pdf"
+        }
+      ],
+      "topic": "輸出工作單",
+      "practicalPreparation": false,
+      "historical": false
+    },
+    {
+      "id": "practice-cpm-junior-3-008",
+      "certId": "cpm",
+      "levelId": "junior",
+      "subjectId": "cpm-junior-3",
+      "sourceKind": "original-practice",
+      "stem": "應用程式已完成到印表機色域的轉換，驅動又執行相同色彩管理，主要風險是？",
+      "options": {
+        "A": "重複轉換造成非預期色偏",
+        "B": "兩次轉換必然抵銷所有誤差",
+        "C": "所有超色域顏色都必定完整保留",
+        "D": "來源描述檔會自動變成目的描述檔"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "同一工作鏈若未協調轉換責任，可能被再轉一次，結果偏離原設計。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/cpm-junior-3/figure-03.svg",
+          "alt": "輸出工作單。欄位依序為：項目、設定。色域：來源有部分高彩度色超出印刷色域；目的：攝影作品整體色彩關係；限制：不得讓軟體與驅動程式重複轉換；驗證：以量測儀器及控制色塊檢查。顯示器校正、建立描述檔、驗證是不同工作。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "ICC 色彩管理與設定檔說明",
+          "url": "https://www.color.org/faqs/"
+        },
+        {
+          "title": "ICC：D50 與設定檔連接空間",
+          "url": "https://www.color.org/whyd50/"
+        },
+        {
+          "title": "W3C WCAG：文字對比",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+        },
+        {
+          "title": "官方考科範圍；非本題來源：色彩管理",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/CPM/115年度色彩規劃管理師能力鑑定簡章(初級)_0623_20260624145855.pdf"
+        }
+      ],
+      "topic": "輸出工作單",
+      "practicalPreparation": false,
+      "historical": false
+    },
+    {
+      "id": "practice-cpm-junior-3-009",
+      "certId": "cpm",
+      "levelId": "junior",
+      "subjectId": "cpm-junior-3",
+      "sourceKind": "original-practice",
+      "stem": "顯示器「校正」與「建立描述檔」何者正確？",
+      "options": {
+        "A": "校正僅記錄特性；描述檔負責調整硬體狀態",
+        "B": "校正調整狀態；描述檔描述該狀態的色彩特性",
+        "C": "描述檔必然改變所有硬體設定",
+        "D": "校正可以完全省略後續驗證"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "先建立穩定裝置狀態，再描述與驗證；三者角色不同。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/cpm-junior-3/figure-03.svg",
+          "alt": "輸出工作單。欄位依序為：項目、設定。色域：來源有部分高彩度色超出印刷色域；目的：攝影作品整體色彩關係；限制：不得讓軟體與驅動程式重複轉換；驗證：以量測儀器及控制色塊檢查。顯示器校正、建立描述檔、驗證是不同工作。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "ICC 色彩管理與設定檔說明",
+          "url": "https://www.color.org/faqs/"
+        },
+        {
+          "title": "ICC：D50 與設定檔連接空間",
+          "url": "https://www.color.org/whyd50/"
+        },
+        {
+          "title": "W3C WCAG：文字對比",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+        },
+        {
+          "title": "官方考科範圍；非本題來源：色彩管理",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/CPM/115年度色彩規劃管理師能力鑑定簡章(初級)_0623_20260624145855.pdf"
+        }
+      ],
+      "topic": "輸出工作單",
+      "practicalPreparation": false,
+      "historical": false
+    },
+    {
+      "id": "practice-cpm-junior-3-010",
+      "certId": "cpm",
+      "levelId": "junior",
+      "subjectId": "cpm-junior-3",
+      "sourceKind": "original-practice",
+      "stem": "換紙材後沿用舊描述檔，量測發現灰階偏色。最合理的處理是？",
+      "options": {
+        "A": "只更改描述檔標籤而不量測新紙材",
+        "B": "只靠調整螢幕白點補償印刷偏色",
+        "C": "依新輸出條件重新確認描述檔並驗證",
+        "D": "認定任何同型印表機都必須同色"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "紙材會改變輸出特性，描述檔是否適用需要重新確認，不能靠命名修正。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/cpm-junior-3/figure-03.svg",
+          "alt": "輸出工作單。欄位依序為：項目、設定。色域：來源有部分高彩度色超出印刷色域；目的：攝影作品整體色彩關係；限制：不得讓軟體與驅動程式重複轉換；驗證：以量測儀器及控制色塊檢查。顯示器校正、建立描述檔、驗證是不同工作。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "ICC 色彩管理與設定檔說明",
+          "url": "https://www.color.org/faqs/"
+        },
+        {
+          "title": "ICC：D50 與設定檔連接空間",
+          "url": "https://www.color.org/whyd50/"
+        },
+        {
+          "title": "W3C WCAG：文字對比",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+        },
+        {
+          "title": "官方考科範圍；非本題來源：色彩管理",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/CPM/115年度色彩規劃管理師能力鑑定簡章(初級)_0623_20260624145855.pdf"
+        }
+      ],
+      "topic": "輸出工作單",
+      "practicalPreparation": false,
+      "historical": false
+    }
+  ]
+}

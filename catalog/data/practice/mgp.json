@@ -1,0 +1,887 @@
+{
+  "version": 1,
+  "certId": "mgp",
+  "updatedAt": "2026-10-01",
+  "questions": [
+    {
+      "id": "practice-mgp-junior-1-001",
+      "certId": "mgp",
+      "levelId": "junior",
+      "subjectId": "mgp-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "固定每幀移動0.1單位時，甲一秒移動多少？",
+      "options": {
+        "A": "0.1單位",
+        "B": "30單位",
+        "C": "3單位",
+        "D": "0.3單位"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "30幀×0.1=3單位。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mgp-junior-1/figure-01.svg",
+          "alt": "兩裝置的更新頻率。欄位依序為：裝置、幀率／每幀固定移動。甲：30fps／0.1單位；乙：60fps／0.1單位；需求：角色速度應為3單位／秒。比較固定每幀距離與依deltaTime移動。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Unity：時間與更新頻率",
+          "url": "https://docs.unity3d.com/Manual/managing-time-and-frame-rate.html"
+        },
+        {
+          "title": "Unity：碰撞原理",
+          "url": "https://docs.unity3d.com/Manual/CollidersOverview.html"
+        },
+        {
+          "title": "Unity：記憶體管理",
+          "url": "https://docs.unity3d.com/Manual/performance-memory-overview.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動遊戲開發概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=75b3f022-ca80-4e9c-a19e-5d856cbf2abd_112年初級行動遊戲程式設計師能力鑑定簡章_0926.pdf&fileno=23eee16a-6077-4b33-9de9-d06383306736&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "兩裝置的更新頻率",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mgp-junior-1-002",
+      "certId": "mgp",
+      "levelId": "junior",
+      "subjectId": "mgp-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "相同程式在乙一秒移動多少？",
+      "options": {
+        "A": "3單位",
+        "B": "0.1單位",
+        "C": "60單位",
+        "D": "6單位"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "60幀×0.1=6，顯示固定每幀位移會讓速度依賴幀率。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mgp-junior-1/figure-01.svg",
+          "alt": "兩裝置的更新頻率。欄位依序為：裝置、幀率／每幀固定移動。甲：30fps／0.1單位；乙：60fps／0.1單位；需求：角色速度應為3單位／秒。比較固定每幀距離與依deltaTime移動。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Unity：時間與更新頻率",
+          "url": "https://docs.unity3d.com/Manual/managing-time-and-frame-rate.html"
+        },
+        {
+          "title": "Unity：碰撞原理",
+          "url": "https://docs.unity3d.com/Manual/CollidersOverview.html"
+        },
+        {
+          "title": "Unity：記憶體管理",
+          "url": "https://docs.unity3d.com/Manual/performance-memory-overview.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動遊戲開發概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=75b3f022-ca80-4e9c-a19e-5d856cbf2abd_112年初級行動遊戲程式設計師能力鑑定簡章_0926.pdf&fileno=23eee16a-6077-4b33-9de9-d06383306736&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "兩裝置的更新頻率",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mgp-junior-1-003",
+      "certId": "mgp",
+      "levelId": "junior",
+      "subjectId": "mgp-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "要讓兩裝置皆約3單位／秒，應採何式？",
+      "options": {
+        "A": "每次位移=3×該次deltaTime",
+        "B": "每次位移=3",
+        "C": "每次位移=3÷deltaTime",
+        "D": "每次位移=3×目前fps"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "速度乘經過時間得到距離，可降低更新頻率不同造成的速度差異。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mgp-junior-1/figure-01.svg",
+          "alt": "兩裝置的更新頻率。欄位依序為：裝置、幀率／每幀固定移動。甲：30fps／0.1單位；乙：60fps／0.1單位；需求：角色速度應為3單位／秒。比較固定每幀距離與依deltaTime移動。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Unity：時間與更新頻率",
+          "url": "https://docs.unity3d.com/Manual/managing-time-and-frame-rate.html"
+        },
+        {
+          "title": "Unity：碰撞原理",
+          "url": "https://docs.unity3d.com/Manual/CollidersOverview.html"
+        },
+        {
+          "title": "Unity：記憶體管理",
+          "url": "https://docs.unity3d.com/Manual/performance-memory-overview.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動遊戲開發概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=75b3f022-ca80-4e9c-a19e-5d856cbf2abd_112年初級行動遊戲程式設計師能力鑑定簡章_0926.pdf&fileno=23eee16a-6077-4b33-9de9-d06383306736&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "兩裝置的更新頻率",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mgp-junior-1-004",
+      "certId": "mgp",
+      "levelId": "junior",
+      "subjectId": "mgp-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "A貼圖原始像素資料約占多少MiB？",
+      "options": {
+        "A": "1 MiB",
+        "B": "4 MiB",
+        "C": "8 MiB",
+        "D": "16 MiB"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "1024×1024×4=4,194,304 bytes=4MiB。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mgp-junior-1/figure-02.svg",
+          "alt": "原始RGBA8貼圖記憶體。欄位依序為：貼圖、尺寸／每像素。A：1024×1024／4 bytes；B：2048×2048／4 bytes；假設：未壓縮、不含mipmap與額外開銷。1 MiB = 1024×1024 bytes；磁碟壓縮檔大小不等同解碼後大小。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Unity：時間與更新頻率",
+          "url": "https://docs.unity3d.com/Manual/managing-time-and-frame-rate.html"
+        },
+        {
+          "title": "Unity：碰撞原理",
+          "url": "https://docs.unity3d.com/Manual/CollidersOverview.html"
+        },
+        {
+          "title": "Unity：記憶體管理",
+          "url": "https://docs.unity3d.com/Manual/performance-memory-overview.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動遊戲開發概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=75b3f022-ca80-4e9c-a19e-5d856cbf2abd_112年初級行動遊戲程式設計師能力鑑定簡章_0926.pdf&fileno=23eee16a-6077-4b33-9de9-d06383306736&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "原始RGBA8貼圖記憶體",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mgp-junior-1-005",
+      "certId": "mgp",
+      "levelId": "junior",
+      "subjectId": "mgp-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "B的像素記憶體相對A是多少倍？",
+      "options": {
+        "A": "2倍",
+        "B": "8倍",
+        "C": "4倍",
+        "D": "相同"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "寬高各2倍，像素總數為4倍，兩者像素格式相同。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mgp-junior-1/figure-02.svg",
+          "alt": "原始RGBA8貼圖記憶體。欄位依序為：貼圖、尺寸／每像素。A：1024×1024／4 bytes；B：2048×2048／4 bytes；假設：未壓縮、不含mipmap與額外開銷。1 MiB = 1024×1024 bytes；磁碟壓縮檔大小不等同解碼後大小。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Unity：時間與更新頻率",
+          "url": "https://docs.unity3d.com/Manual/managing-time-and-frame-rate.html"
+        },
+        {
+          "title": "Unity：碰撞原理",
+          "url": "https://docs.unity3d.com/Manual/CollidersOverview.html"
+        },
+        {
+          "title": "Unity：記憶體管理",
+          "url": "https://docs.unity3d.com/Manual/performance-memory-overview.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動遊戲開發概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=75b3f022-ca80-4e9c-a19e-5d856cbf2abd_112年初級行動遊戲程式設計師能力鑑定簡章_0926.pdf&fileno=23eee16a-6077-4b33-9de9-d06383306736&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "原始RGBA8貼圖記憶體",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mgp-junior-1-006",
+      "certId": "mgp",
+      "levelId": "junior",
+      "subjectId": "mgp-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "只看PNG磁碟檔很小便推定執行時記憶體也相同，問題為何？",
+      "options": {
+        "A": "所有PNG永遠占4GiB",
+        "B": "壓縮檔大小等同執行時像素緩衝大小",
+        "C": "解析度與像素數無關",
+        "D": "檔案壓縮與解碼／GPU格式不同"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "執行時格式、mipmap與壓縮方式影響資源占用，不能直接用檔案大小代替。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mgp-junior-1/figure-02.svg",
+          "alt": "原始RGBA8貼圖記憶體。欄位依序為：貼圖、尺寸／每像素。A：1024×1024／4 bytes；B：2048×2048／4 bytes；假設：未壓縮、不含mipmap與額外開銷。1 MiB = 1024×1024 bytes；磁碟壓縮檔大小不等同解碼後大小。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Unity：時間與更新頻率",
+          "url": "https://docs.unity3d.com/Manual/managing-time-and-frame-rate.html"
+        },
+        {
+          "title": "Unity：碰撞原理",
+          "url": "https://docs.unity3d.com/Manual/CollidersOverview.html"
+        },
+        {
+          "title": "Unity：記憶體管理",
+          "url": "https://docs.unity3d.com/Manual/performance-memory-overview.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動遊戲開發概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=75b3f022-ca80-4e9c-a19e-5d856cbf2abd_112年初級行動遊戲程式設計師能力鑑定簡章_0926.pdf&fileno=23eee16a-6077-4b33-9de9-d06383306736&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "原始RGBA8貼圖記憶體",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mgp-junior-1-007",
+      "certId": "mgp",
+      "levelId": "junior",
+      "subjectId": "mgp-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "角色生命降至0時，Playing應轉往哪個狀態？",
+      "options": {
+        "A": "GameOver",
+        "B": "Paused",
+        "C": "Menu且必定清除存檔",
+        "D": "仍Playing且無任何處理"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "依圖中規則，生命0觸發GameOver。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mgp-junior-1/figure-03.svg",
+          "alt": "遊戲狀態與事件。欄位依序為：目前狀態、允許轉移。Menu：開始 → Playing；Playing：暫停 → Paused；生命0 → GameOver；Paused：繼續 → Playing；GameOver：重開 → Playing。Pause狀態下不應繼續接受一般戰鬥操作。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Unity：時間與更新頻率",
+          "url": "https://docs.unity3d.com/Manual/managing-time-and-frame-rate.html"
+        },
+        {
+          "title": "Unity：碰撞原理",
+          "url": "https://docs.unity3d.com/Manual/CollidersOverview.html"
+        },
+        {
+          "title": "Unity：記憶體管理",
+          "url": "https://docs.unity3d.com/Manual/performance-memory-overview.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動遊戲開發概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=75b3f022-ca80-4e9c-a19e-5d856cbf2abd_112年初級行動遊戲程式設計師能力鑑定簡章_0926.pdf&fileno=23eee16a-6077-4b33-9de9-d06383306736&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "遊戲狀態與事件",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mgp-junior-1-008",
+      "certId": "mgp",
+      "levelId": "junior",
+      "subjectId": "mgp-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "Paused仍能連續攻擊造成傷害，應優先檢查什麼？",
+      "options": {
+        "A": "只提高渲染幀率即可停用攻擊",
+        "B": "戰鬥輸入與更新是否受遊戲狀態控制",
+        "C": "只暫停音效就能停止傷害計算",
+        "D": "只隱藏角色即可阻擋所有戰鬥事件"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "暫停規則須涵蓋相關系統，不只是顯示暫停字樣。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mgp-junior-1/figure-03.svg",
+          "alt": "遊戲狀態與事件。欄位依序為：目前狀態、允許轉移。Menu：開始 → Playing；Playing：暫停 → Paused；生命0 → GameOver；Paused：繼續 → Playing；GameOver：重開 → Playing。Pause狀態下不應繼續接受一般戰鬥操作。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Unity：時間與更新頻率",
+          "url": "https://docs.unity3d.com/Manual/managing-time-and-frame-rate.html"
+        },
+        {
+          "title": "Unity：碰撞原理",
+          "url": "https://docs.unity3d.com/Manual/CollidersOverview.html"
+        },
+        {
+          "title": "Unity：記憶體管理",
+          "url": "https://docs.unity3d.com/Manual/performance-memory-overview.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動遊戲開發概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=75b3f022-ca80-4e9c-a19e-5d856cbf2abd_112年初級行動遊戲程式設計師能力鑑定簡章_0926.pdf&fileno=23eee16a-6077-4b33-9de9-d06383306736&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "遊戲狀態與事件",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mgp-junior-1-009",
+      "certId": "mgp",
+      "levelId": "junior",
+      "subjectId": "mgp-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "GameOver後重開，哪類資料應明確重設？",
+      "options": {
+        "A": "所有玩家永久成就必須刪除",
+        "B": "所有資源快取都必須清空後重下載",
+        "C": "本局生命、分數與敵人狀態",
+        "D": "所有遊戲設定都必須回復預設"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "本局狀態與永久進度應區分，重開不能殘留上一局狀態。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mgp-junior-1/figure-03.svg",
+          "alt": "遊戲狀態與事件。欄位依序為：目前狀態、允許轉移。Menu：開始 → Playing；Playing：暫停 → Paused；生命0 → GameOver；Paused：繼續 → Playing；GameOver：重開 → Playing。Pause狀態下不應繼續接受一般戰鬥操作。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Unity：時間與更新頻率",
+          "url": "https://docs.unity3d.com/Manual/managing-time-and-frame-rate.html"
+        },
+        {
+          "title": "Unity：碰撞原理",
+          "url": "https://docs.unity3d.com/Manual/CollidersOverview.html"
+        },
+        {
+          "title": "Unity：記憶體管理",
+          "url": "https://docs.unity3d.com/Manual/performance-memory-overview.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動遊戲開發概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=75b3f022-ca80-4e9c-a19e-5d856cbf2abd_112年初級行動遊戲程式設計師能力鑑定簡章_0926.pdf&fileno=23eee16a-6077-4b33-9de9-d06383306736&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "遊戲狀態與事件",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mgp-junior-1-010",
+      "certId": "mgp",
+      "levelId": "junior",
+      "subjectId": "mgp-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "同一幀同時收到暫停與生命0事件，應如何設計？",
+      "options": {
+        "A": "讓結果永遠依不明順序隨機決定",
+        "B": "只增加幀率即可消除所有衝突",
+        "C": "把兩個狀態合成任意字串",
+        "D": "定義狀態轉移優先順序並測試"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "明確事件優先與合法轉移可避免競態與不可重現結果。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mgp-junior-1/figure-03.svg",
+          "alt": "遊戲狀態與事件。欄位依序為：目前狀態、允許轉移。Menu：開始 → Playing；Playing：暫停 → Paused；生命0 → GameOver；Paused：繼續 → Playing；GameOver：重開 → Playing。Pause狀態下不應繼續接受一般戰鬥操作。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Unity：時間與更新頻率",
+          "url": "https://docs.unity3d.com/Manual/managing-time-and-frame-rate.html"
+        },
+        {
+          "title": "Unity：碰撞原理",
+          "url": "https://docs.unity3d.com/Manual/CollidersOverview.html"
+        },
+        {
+          "title": "Unity：記憶體管理",
+          "url": "https://docs.unity3d.com/Manual/performance-memory-overview.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動遊戲開發概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=75b3f022-ca80-4e9c-a19e-5d856cbf2abd_112年初級行動遊戲程式設計師能力鑑定簡章_0926.pdf&fileno=23eee16a-6077-4b33-9de9-d06383306736&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "遊戲狀態與事件",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-mgp-junior-2-001",
+      "certId": "mgp",
+      "levelId": "junior",
+      "subjectId": "mgp-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "經過本步時間後，x座標為何？",
+      "options": {
+        "A": "4",
+        "B": "1.5",
+        "C": "0.5",
+        "D": "2.5"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "1＋3×0.5=2.5。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mgp-junior-2/figure-01.svg",
+          "alt": "二維移動計算。欄位依序為：量、數值。初始位置：(1, 2)；速度：(3, −4) 單位／秒；本步時間：0.5秒。使用p_new=p_old+v×dt；本題不含加速度。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Unity：時間與更新頻率",
+          "url": "https://docs.unity3d.com/Manual/managing-time-and-frame-rate.html"
+        },
+        {
+          "title": "Unity：碰撞原理",
+          "url": "https://docs.unity3d.com/Manual/CollidersOverview.html"
+        },
+        {
+          "title": "Unity：物件池",
+          "url": "https://docs.unity3d.com/ScriptReference/Pool.ObjectPool_1.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動遊戲程式設計實作",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=75b3f022-ca80-4e9c-a19e-5d856cbf2abd_112年初級行動遊戲程式設計師能力鑑定簡章_0926.pdf&fileno=23eee16a-6077-4b33-9de9-d06383306736&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "二維移動計算",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-mgp-junior-2-002",
+      "certId": "mgp",
+      "levelId": "junior",
+      "subjectId": "mgp-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "經過本步時間後，y座標為何？",
+      "options": {
+        "A": "0",
+        "B": "−2",
+        "C": "4",
+        "D": "1"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "2＋(−4)×0.5=0。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mgp-junior-2/figure-01.svg",
+          "alt": "二維移動計算。欄位依序為：量、數值。初始位置：(1, 2)；速度：(3, −4) 單位／秒；本步時間：0.5秒。使用p_new=p_old+v×dt；本題不含加速度。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Unity：時間與更新頻率",
+          "url": "https://docs.unity3d.com/Manual/managing-time-and-frame-rate.html"
+        },
+        {
+          "title": "Unity：碰撞原理",
+          "url": "https://docs.unity3d.com/Manual/CollidersOverview.html"
+        },
+        {
+          "title": "Unity：物件池",
+          "url": "https://docs.unity3d.com/ScriptReference/Pool.ObjectPool_1.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動遊戲程式設計實作",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=75b3f022-ca80-4e9c-a19e-5d856cbf2abd_112年初級行動遊戲程式設計師能力鑑定簡章_0926.pdf&fileno=23eee16a-6077-4b33-9de9-d06383306736&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "二維移動計算",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-mgp-junior-2-003",
+      "certId": "mgp",
+      "levelId": "junior",
+      "subjectId": "mgp-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "速度向量長度是多少？",
+      "options": {
+        "A": "7單位／秒",
+        "B": "5單位／秒",
+        "C": "1單位／秒",
+        "D": "25單位／秒"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "√(3²＋(−4)²)=5；不能直接把帶符號分量相加當速率。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mgp-junior-2/figure-01.svg",
+          "alt": "二維移動計算。欄位依序為：量、數值。初始位置：(1, 2)；速度：(3, −4) 單位／秒；本步時間：0.5秒。使用p_new=p_old+v×dt；本題不含加速度。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Unity：時間與更新頻率",
+          "url": "https://docs.unity3d.com/Manual/managing-time-and-frame-rate.html"
+        },
+        {
+          "title": "Unity：碰撞原理",
+          "url": "https://docs.unity3d.com/Manual/CollidersOverview.html"
+        },
+        {
+          "title": "Unity：物件池",
+          "url": "https://docs.unity3d.com/ScriptReference/Pool.ObjectPool_1.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動遊戲程式設計實作",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=75b3f022-ca80-4e9c-a19e-5d856cbf2abd_112年初級行動遊戲程式設計師能力鑑定簡章_0926.pdf&fileno=23eee16a-6077-4b33-9de9-d06383306736&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "二維移動計算",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-mgp-junior-2-004",
+      "certId": "mgp",
+      "levelId": "junior",
+      "subjectId": "mgp-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "池中有20顆，12顆正在作用且未額外建立，閒置幾顆？",
+      "options": {
+        "A": "12顆",
+        "B": "20顆",
+        "C": "8顆",
+        "D": "32顆"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "20−12=8。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mgp-junior-2/figure-02.svg",
+          "alt": "子彈物件池狀態。欄位依序為：項目、設定。預先建立：20顆；同時作用上限：12顆；取出：重設位置、速度與壽命；回收：停用並歸還池，不重複歸還。每次射擊都建立與銷毀物件，可能增加配置與回收負擔。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Unity：時間與更新頻率",
+          "url": "https://docs.unity3d.com/Manual/managing-time-and-frame-rate.html"
+        },
+        {
+          "title": "Unity：碰撞原理",
+          "url": "https://docs.unity3d.com/Manual/CollidersOverview.html"
+        },
+        {
+          "title": "Unity：物件池",
+          "url": "https://docs.unity3d.com/ScriptReference/Pool.ObjectPool_1.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動遊戲程式設計實作",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=75b3f022-ca80-4e9c-a19e-5d856cbf2abd_112年初級行動遊戲程式設計師能力鑑定簡章_0926.pdf&fileno=23eee16a-6077-4b33-9de9-d06383306736&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "子彈物件池狀態",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-mgp-junior-2-005",
+      "certId": "mgp",
+      "levelId": "junior",
+      "subjectId": "mgp-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "回收後再取出的子彈沒有重設壽命，可能發生什麼？",
+      "options": {
+        "A": "自動產生新的永久存檔",
+        "B": "保證壽命永久增加",
+        "C": "必定讓所有敵人重生",
+        "D": "沿用前次剩餘壽命而提早消失"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "物件重用也重用記憶體狀態，取出時需重設本次作用所需欄位。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mgp-junior-2/figure-02.svg",
+          "alt": "子彈物件池狀態。欄位依序為：項目、設定。預先建立：20顆；同時作用上限：12顆；取出：重設位置、速度與壽命；回收：停用並歸還池，不重複歸還。每次射擊都建立與銷毀物件，可能增加配置與回收負擔。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Unity：時間與更新頻率",
+          "url": "https://docs.unity3d.com/Manual/managing-time-and-frame-rate.html"
+        },
+        {
+          "title": "Unity：碰撞原理",
+          "url": "https://docs.unity3d.com/Manual/CollidersOverview.html"
+        },
+        {
+          "title": "Unity：物件池",
+          "url": "https://docs.unity3d.com/ScriptReference/Pool.ObjectPool_1.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動遊戲程式設計實作",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=75b3f022-ca80-4e9c-a19e-5d856cbf2abd_112年初級行動遊戲程式設計師能力鑑定簡章_0926.pdf&fileno=23eee16a-6077-4b33-9de9-d06383306736&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "子彈物件池狀態",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-mgp-junior-2-006",
+      "certId": "mgp",
+      "levelId": "junior",
+      "subjectId": "mgp-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "同一子彈被回收兩次，應如何處理？",
+      "options": {
+        "A": "以作用狀態或池檢查避免重複歸還",
+        "B": "把池計數無條件增加兩次",
+        "C": "再次建立相同識別的子彈",
+        "D": "把所有子彈永久刪除"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "重複歸還可能讓同一物件被多次取出，需維持池的所有權與唯一狀態。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mgp-junior-2/figure-02.svg",
+          "alt": "子彈物件池狀態。欄位依序為：項目、設定。預先建立：20顆；同時作用上限：12顆；取出：重設位置、速度與壽命；回收：停用並歸還池，不重複歸還。每次射擊都建立與銷毀物件，可能增加配置與回收負擔。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Unity：時間與更新頻率",
+          "url": "https://docs.unity3d.com/Manual/managing-time-and-frame-rate.html"
+        },
+        {
+          "title": "Unity：碰撞原理",
+          "url": "https://docs.unity3d.com/Manual/CollidersOverview.html"
+        },
+        {
+          "title": "Unity：物件池",
+          "url": "https://docs.unity3d.com/ScriptReference/Pool.ObjectPool_1.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動遊戲程式設計實作",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=75b3f022-ca80-4e9c-a19e-5d856cbf2abd_112年初級行動遊戲程式設計師能力鑑定簡章_0926.pdf&fileno=23eee16a-6077-4b33-9de9-d06383306736&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "子彈物件池狀態",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-mgp-junior-2-007",
+      "certId": "mgp",
+      "levelId": "junior",
+      "subjectId": "mgp-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "同一敵人死亡回呼重複兩次但只應加分一次，最適合的保護是？",
+      "options": {
+        "A": "每次回呼都加分再事後猜測扣回",
+        "B": "死亡狀態轉移只允許首次觸發加分",
+        "C": "依目前fps決定是否加分",
+        "D": "用敵人顏色當唯一死亡旗標"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "將一次性副作用綁定alive→dead有效轉移，避免回呼重複造成多加分。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mgp-junior-2/figure-03.svg",
+          "alt": "碰撞與得分規則。欄位依序為：物件／事件、規則。子彈命中敵人：敵人扣1生命；子彈回收；敵人生命由1降到0：只加分一次；同幀重複碰撞回呼：已失效物件不得再造成傷害。每個命中／死亡事件需有明確狀態，避免重複副作用。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Unity：時間與更新頻率",
+          "url": "https://docs.unity3d.com/Manual/managing-time-and-frame-rate.html"
+        },
+        {
+          "title": "Unity：碰撞原理",
+          "url": "https://docs.unity3d.com/Manual/CollidersOverview.html"
+        },
+        {
+          "title": "Unity：物件池",
+          "url": "https://docs.unity3d.com/ScriptReference/Pool.ObjectPool_1.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動遊戲程式設計實作",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=75b3f022-ca80-4e9c-a19e-5d856cbf2abd_112年初級行動遊戲程式設計師能力鑑定簡章_0926.pdf&fileno=23eee16a-6077-4b33-9de9-d06383306736&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "碰撞與得分規則",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-mgp-junior-2-008",
+      "certId": "mgp",
+      "levelId": "junior",
+      "subjectId": "mgp-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "子彈已回收仍處理下一個碰撞回呼，應先檢查什麼？",
+      "options": {
+        "A": "只檢查貼圖是否仍可見而忽略作用狀態",
+        "B": "只檢查碰撞音效是否播放完",
+        "C": "子彈是否仍為有效作用狀態",
+        "D": "只檢查池容量是否仍大於零"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "回呼可能在相近時刻抵達，作用旗標或世代可阻擋失效物件的副作用。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mgp-junior-2/figure-03.svg",
+          "alt": "碰撞與得分規則。欄位依序為：物件／事件、規則。子彈命中敵人：敵人扣1生命；子彈回收；敵人生命由1降到0：只加分一次；同幀重複碰撞回呼：已失效物件不得再造成傷害。每個命中／死亡事件需有明確狀態，避免重複副作用。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Unity：時間與更新頻率",
+          "url": "https://docs.unity3d.com/Manual/managing-time-and-frame-rate.html"
+        },
+        {
+          "title": "Unity：碰撞原理",
+          "url": "https://docs.unity3d.com/Manual/CollidersOverview.html"
+        },
+        {
+          "title": "Unity：物件池",
+          "url": "https://docs.unity3d.com/ScriptReference/Pool.ObjectPool_1.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動遊戲程式設計實作",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=75b3f022-ca80-4e9c-a19e-5d856cbf2abd_112年初級行動遊戲程式設計師能力鑑定簡章_0926.pdf&fileno=23eee16a-6077-4b33-9de9-d06383306736&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "碰撞與得分規則",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-mgp-junior-2-009",
+      "certId": "mgp",
+      "levelId": "junior",
+      "subjectId": "mgp-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "要驗證只加分一次，哪個測試最有針對性？",
+      "options": {
+        "A": "只測一次非致命命中",
+        "B": "只測單一敵人滿血初始化",
+        "C": "只測本局初始分數為零",
+        "D": "對同敵人連續觸發兩次死亡路徑並檢查總分"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "測試應包含重複事件這個失效條件，確認防重邏輯而非只有一般流程。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mgp-junior-2/figure-03.svg",
+          "alt": "碰撞與得分規則。欄位依序為：物件／事件、規則。子彈命中敵人：敵人扣1生命；子彈回收；敵人生命由1降到0：只加分一次；同幀重複碰撞回呼：已失效物件不得再造成傷害。每個命中／死亡事件需有明確狀態，避免重複副作用。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Unity：時間與更新頻率",
+          "url": "https://docs.unity3d.com/Manual/managing-time-and-frame-rate.html"
+        },
+        {
+          "title": "Unity：碰撞原理",
+          "url": "https://docs.unity3d.com/Manual/CollidersOverview.html"
+        },
+        {
+          "title": "Unity：物件池",
+          "url": "https://docs.unity3d.com/ScriptReference/Pool.ObjectPool_1.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動遊戲程式設計實作",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=75b3f022-ca80-4e9c-a19e-5d856cbf2abd_112年初級行動遊戲程式設計師能力鑑定簡章_0926.pdf&fileno=23eee16a-6077-4b33-9de9-d06383306736&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "碰撞與得分規則",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-mgp-junior-2-010",
+      "certId": "mgp",
+      "levelId": "junior",
+      "subjectId": "mgp-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "子彈速度很快，單步穿過薄牆卻沒被離散碰撞捕捉，應評估什麼？",
+      "options": {
+        "A": "連續碰撞偵測或適當時間步長與碰撞設定",
+        "B": "只增加碰撞後的得分檢查次數",
+        "C": "只增加可視貼圖而不改碰撞體",
+        "D": "只延長子彈壽命而不改偵測方式"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "高速移動可能在相鄰取樣位置之間穿越障礙，需依物理引擎能力改善偵測。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/mgp-junior-2/figure-03.svg",
+          "alt": "碰撞與得分規則。欄位依序為：物件／事件、規則。子彈命中敵人：敵人扣1生命；子彈回收；敵人生命由1降到0：只加分一次；同幀重複碰撞回呼：已失效物件不得再造成傷害。每個命中／死亡事件需有明確狀態，避免重複副作用。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Unity：時間與更新頻率",
+          "url": "https://docs.unity3d.com/Manual/managing-time-and-frame-rate.html"
+        },
+        {
+          "title": "Unity：碰撞原理",
+          "url": "https://docs.unity3d.com/Manual/CollidersOverview.html"
+        },
+        {
+          "title": "Unity：物件池",
+          "url": "https://docs.unity3d.com/ScriptReference/Pool.ObjectPool_1.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：行動遊戲程式設計實作",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=75b3f022-ca80-4e9c-a19e-5d856cbf2abd_112年初級行動遊戲程式設計師能力鑑定簡章_0926.pdf&fileno=23eee16a-6077-4b33-9de9-d06383306736&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "碰撞與得分規則",
+      "practicalPreparation": true,
+      "historical": true
+    }
+  ]
+}

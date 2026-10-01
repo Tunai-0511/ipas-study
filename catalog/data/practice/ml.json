@@ -1,0 +1,887 @@
+{
+  "version": 1,
+  "certId": "ml",
+  "updatedAt": "2026-10-01",
+  "questions": [
+    {
+      "id": "practice-ml-junior-1-001",
+      "certId": "ml",
+      "levelId": "junior",
+      "subjectId": "ml-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "此模型的accuracy為何？",
+      "options": {
+        "A": "75%",
+        "B": "30%",
+        "C": "66.7%",
+        "D": "90%"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "(TP＋TN)/總數=(30＋45)/100=75%。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/ml-junior-1/figure-01.svg",
+          "alt": "二元分類混淆矩陣。欄位依序為：實際類別、預測正／預測負。實際正：30／10；實際負：15／45。正類表示需追蹤個案，共100筆；本題不涉及醫療判斷。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "scikit-learn：模型評估指標",
+          "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
+        },
+        {
+          "title": "scikit-learn：資料洩漏與前處理",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "scikit-learn：交叉驗證",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：機器學習概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ebb7db53-7ac9-4378-8021-134c25a2715c_113年度機器學習工程師能力鑑定簡章(初級)_11305.pdf&fileno=d9b15aa0-291c-405f-bad7-4f9f8c131b3b&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "二元分類混淆矩陣",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-ml-junior-1-002",
+      "certId": "ml",
+      "levelId": "junior",
+      "subjectId": "ml-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "正類recall為何？",
+      "options": {
+        "A": "66.7%",
+        "B": "75%",
+        "C": "30%",
+        "D": "90%"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "TP/(TP＋FN)=30/(30＋10)=75%，關注實際正類有多少被找出。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/ml-junior-1/figure-01.svg",
+          "alt": "二元分類混淆矩陣。欄位依序為：實際類別、預測正／預測負。實際正：30／10；實際負：15／45。正類表示需追蹤個案，共100筆；本題不涉及醫療判斷。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "scikit-learn：模型評估指標",
+          "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
+        },
+        {
+          "title": "scikit-learn：資料洩漏與前處理",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "scikit-learn：交叉驗證",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：機器學習概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ebb7db53-7ac9-4378-8021-134c25a2715c_113年度機器學習工程師能力鑑定簡章(初級)_11305.pdf&fileno=d9b15aa0-291c-405f-bad7-4f9f8c131b3b&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "二元分類混淆矩陣",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-ml-junior-1-003",
+      "certId": "ml",
+      "levelId": "junior",
+      "subjectId": "ml-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "正類precision約為何？",
+      "options": {
+        "A": "75%",
+        "B": "45%",
+        "C": "66.7%",
+        "D": "85.7%"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "TP/(TP＋FP)=30/(30＋15)=2/3，約66.7%。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/ml-junior-1/figure-01.svg",
+          "alt": "二元分類混淆矩陣。欄位依序為：實際類別、預測正／預測負。實際正：30／10；實際負：15／45。正類表示需追蹤個案，共100筆；本題不涉及醫療判斷。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "scikit-learn：模型評估指標",
+          "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
+        },
+        {
+          "title": "scikit-learn：資料洩漏與前處理",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "scikit-learn：交叉驗證",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：機器學習概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ebb7db53-7ac9-4378-8021-134c25a2715c_113年度機器學習工程師能力鑑定簡章(初級)_11305.pdf&fileno=d9b15aa0-291c-405f-bad7-4f9f8c131b3b&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "二元分類混淆矩陣",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-ml-junior-1-004",
+      "certId": "ml",
+      "levelId": "junior",
+      "subjectId": "ml-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "丙模型最明顯的問題是？",
+      "options": {
+        "A": "訓練誤差過高的欠擬合",
+        "B": "驗證資料完全相同於訓練資料",
+        "C": "沒有使用任何特徵",
+        "D": "過度擬合"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "訓練0%但驗證35%顯示訓練擬合很好，泛化表現卻差。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/ml-junior-1/figure-02.svg",
+          "alt": "模型複雜度與錯誤率。欄位依序為：模型、訓練／驗證錯誤率。甲：過簡單：30%／32%；乙：適中：10%／12%；丙：極複雜：0%／35%。三者使用相同切割與同一錯誤率定義。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "scikit-learn：模型評估指標",
+          "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
+        },
+        {
+          "title": "scikit-learn：資料洩漏與前處理",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "scikit-learn：交叉驗證",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：機器學習概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ebb7db53-7ac9-4378-8021-134c25a2715c_113年度機器學習工程師能力鑑定簡章(初級)_11305.pdf&fileno=d9b15aa0-291c-405f-bad7-4f9f8c131b3b&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "模型複雜度與錯誤率",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-ml-junior-1-005",
+      "certId": "ml",
+      "levelId": "junior",
+      "subjectId": "ml-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "若只依這次驗證錯誤率選模型，應選哪個？",
+      "options": {
+        "A": "乙",
+        "B": "甲",
+        "C": "丙",
+        "D": "三者同分"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "乙的12%是三者最低；正式選擇仍應考慮穩定度與部署限制。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/ml-junior-1/figure-02.svg",
+          "alt": "模型複雜度與錯誤率。欄位依序為：模型、訓練／驗證錯誤率。甲：過簡單：30%／32%；乙：適中：10%／12%；丙：極複雜：0%／35%。三者使用相同切割與同一錯誤率定義。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "scikit-learn：模型評估指標",
+          "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
+        },
+        {
+          "title": "scikit-learn：資料洩漏與前處理",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "scikit-learn：交叉驗證",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：機器學習概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ebb7db53-7ac9-4378-8021-134c25a2715c_113年度機器學習工程師能力鑑定簡章(初級)_11305.pdf&fileno=d9b15aa0-291c-405f-bad7-4f9f8c131b3b&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "模型複雜度與錯誤率",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-ml-junior-1-006",
+      "certId": "ml",
+      "levelId": "junior",
+      "subjectId": "ml-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "對甲模型的高訓練與驗證誤差，哪項較值得檢查？",
+      "options": {
+        "A": "再把模型固定輸出同一類別",
+        "B": "模型表達能力或特徵是否不足",
+        "C": "只增加正則化到無限大",
+        "D": "只將驗證標籤複製給模型"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "兩集合錯誤都高較符合欠擬合，需檢查特徵、表示能力與資料品質。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/ml-junior-1/figure-02.svg",
+          "alt": "模型複雜度與錯誤率。欄位依序為：模型、訓練／驗證錯誤率。甲：過簡單：30%／32%；乙：適中：10%／12%；丙：極複雜：0%／35%。三者使用相同切割與同一錯誤率定義。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "scikit-learn：模型評估指標",
+          "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
+        },
+        {
+          "title": "scikit-learn：資料洩漏與前處理",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "scikit-learn：交叉驗證",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：機器學習概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ebb7db53-7ac9-4378-8021-134c25a2715c_113年度機器學習工程師能力鑑定簡章(初級)_11305.pdf&fileno=d9b15aa0-291c-405f-bad7-4f9f8c131b3b&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "模型複雜度與錯誤率",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-ml-junior-1-007",
+      "certId": "ml",
+      "levelId": "junior",
+      "subjectId": "ml-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "房租預測最直接是哪類任務？",
+      "options": {
+        "A": "非監督式分群",
+        "B": "固定規則排序",
+        "C": "監督式迴歸",
+        "D": "監督式二元分類"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "目標是有標籤的連續租金數值，適合以迴歸描述。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/ml-junior-1/figure-03.svg",
+          "alt": "學習任務與資料。欄位依序為：任務、可取得資料。A：房租預測：房屋特徵與實際租金；B：顧客分群：行為特徵，無群組標籤；C：垃圾郵件：文字特徵與垃圾／正常標籤。依目標與標籤判斷任務，不以資料大小命名方法。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "scikit-learn：模型評估指標",
+          "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
+        },
+        {
+          "title": "scikit-learn：資料洩漏與前處理",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "scikit-learn：交叉驗證",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：機器學習概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ebb7db53-7ac9-4378-8021-134c25a2715c_113年度機器學習工程師能力鑑定簡章(初級)_11305.pdf&fileno=d9b15aa0-291c-405f-bad7-4f9f8c131b3b&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "學習任務與資料",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-ml-junior-1-008",
+      "certId": "ml",
+      "levelId": "junior",
+      "subjectId": "ml-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "沒有群組標籤的顧客分群，通常屬於？",
+      "options": {
+        "A": "監督式迴歸",
+        "B": "只依正確答案分類",
+        "C": "必定是強化學習",
+        "D": "非監督式學習"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "分群根據特徵相似度探索結構，不需既有群組標籤。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/ml-junior-1/figure-03.svg",
+          "alt": "學習任務與資料。欄位依序為：任務、可取得資料。A：房租預測：房屋特徵與實際租金；B：顧客分群：行為特徵，無群組標籤；C：垃圾郵件：文字特徵與垃圾／正常標籤。依目標與標籤判斷任務，不以資料大小命名方法。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "scikit-learn：模型評估指標",
+          "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
+        },
+        {
+          "title": "scikit-learn：資料洩漏與前處理",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "scikit-learn：交叉驗證",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：機器學習概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ebb7db53-7ac9-4378-8021-134c25a2715c_113年度機器學習工程師能力鑑定簡章(初級)_11305.pdf&fileno=d9b15aa0-291c-405f-bad7-4f9f8c131b3b&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "學習任務與資料",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-ml-junior-1-009",
+      "certId": "ml",
+      "levelId": "junior",
+      "subjectId": "ml-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "垃圾郵件模型只用郵件編號，可能缺少哪種資訊？",
+      "options": {
+        "A": "與內容或行為相關且可泛化的特徵",
+        "B": "更多隨機編號的位數",
+        "C": "每封郵件的測試答案欄",
+        "D": "只有訓練資料的列位置"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "任意識別碼通常不代表垃圾郵件概念；需有可在推論時使用的相關特徵。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/ml-junior-1/figure-03.svg",
+          "alt": "學習任務與資料。欄位依序為：任務、可取得資料。A：房租預測：房屋特徵與實際租金；B：顧客分群：行為特徵，無群組標籤；C：垃圾郵件：文字特徵與垃圾／正常標籤。依目標與標籤判斷任務，不以資料大小命名方法。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "scikit-learn：模型評估指標",
+          "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
+        },
+        {
+          "title": "scikit-learn：資料洩漏與前處理",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "scikit-learn：交叉驗證",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：機器學習概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ebb7db53-7ac9-4378-8021-134c25a2715c_113年度機器學習工程師能力鑑定簡章(初級)_11305.pdf&fileno=d9b15aa0-291c-405f-bad7-4f9f8c131b3b&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "學習任務與資料",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-ml-junior-1-010",
+      "certId": "ml",
+      "levelId": "junior",
+      "subjectId": "ml-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "把評估資料的正確標籤放入輸入欄位，會造成什麼？",
+      "options": {
+        "A": "合理增加模型無監督能力",
+        "B": "目標洩漏，使評估失真",
+        "C": "必定降低accuracy到0",
+        "D": "等同一般特徵縮放"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "模型取得本應預測的答案，結果無法代表未知樣本的實際能力。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/ml-junior-1/figure-03.svg",
+          "alt": "學習任務與資料。欄位依序為：任務、可取得資料。A：房租預測：房屋特徵與實際租金；B：顧客分群：行為特徵，無群組標籤；C：垃圾郵件：文字特徵與垃圾／正常標籤。依目標與標籤判斷任務，不以資料大小命名方法。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "scikit-learn：模型評估指標",
+          "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
+        },
+        {
+          "title": "scikit-learn：資料洩漏與前處理",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "scikit-learn：交叉驗證",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：機器學習概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ebb7db53-7ac9-4378-8021-134c25a2715c_113年度機器學習工程師能力鑑定簡章(初級)_11305.pdf&fileno=d9b15aa0-291c-405f-bad7-4f9f8c131b3b&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "學習任務與資料",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-ml-junior-2-001",
+      "certId": "ml",
+      "levelId": "junior",
+      "subjectId": "ml-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "先對完整資料fit標準化，再交叉驗證，問題為何？",
+      "options": {
+        "A": "每折使用不同資料筆數不合法",
+        "B": "驗證折資訊進入前處理",
+        "C": "縮放一定使資料非線性",
+        "D": "fit與transform必須永遠作用在同一列"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "前處理參數也是學習結果，應只從每折訓練部分取得。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/ml-junior-2/figure-01.svg",
+          "alt": "建模管線的正確邊界。欄位依序為：階段、行動。資料切割：先分訓練與測試；fit：只在訓練資料學補值、縮放與模型；transform／predict：將已學參數套用測試資料。交叉驗證時，每個訓練折內也要獨立擬合前處理。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "scikit-learn：資料洩漏與前處理",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "scikit-learn：模型評估指標",
+          "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
+        },
+        {
+          "title": "scikit-learn：交叉驗證",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：機器學習資料解析與建模",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ebb7db53-7ac9-4378-8021-134c25a2715c_113年度機器學習工程師能力鑑定簡章(初級)_11305.pdf&fileno=d9b15aa0-291c-405f-bad7-4f9f8c131b3b&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "建模管線的正確邊界",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-ml-junior-2-002",
+      "certId": "ml",
+      "levelId": "junior",
+      "subjectId": "ml-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "使用包含補值與模型的Pipeline進行交叉驗證，主要好處是？",
+      "options": {
+        "A": "使所有模型自動達到100%準確",
+        "B": "免除檢查資料分布",
+        "C": "讓各折以前處理的正確fit邊界訓練",
+        "D": "測試標籤會自動變成特徵"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "Pipeline把前處理與模型一起納入折內擬合流程，降低洩漏風險。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/ml-junior-2/figure-01.svg",
+          "alt": "建模管線的正確邊界。欄位依序為：階段、行動。資料切割：先分訓練與測試；fit：只在訓練資料學補值、縮放與模型；transform／predict：將已學參數套用測試資料。交叉驗證時，每個訓練折內也要獨立擬合前處理。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "scikit-learn：資料洩漏與前處理",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "scikit-learn：模型評估指標",
+          "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
+        },
+        {
+          "title": "scikit-learn：交叉驗證",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：機器學習資料解析與建模",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ebb7db53-7ac9-4378-8021-134c25a2715c_113年度機器學習工程師能力鑑定簡章(初級)_11305.pdf&fileno=d9b15aa0-291c-405f-bad7-4f9f8c131b3b&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "建模管線的正確邊界",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-ml-junior-2-003",
+      "certId": "ml",
+      "levelId": "junior",
+      "subjectId": "ml-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "線上推論缺少訓練時必要欄位，應優先怎麼辦？",
+      "options": {
+        "A": "任意把另一欄改名替代",
+        "B": "重新用這一列fit全部模型",
+        "C": "假定欄位順序總能自動修復",
+        "D": "依已定schema與缺漏策略處理或拒絕"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "推論需遵守特徵契約，不能默默改變欄位語意。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/ml-junior-2/figure-01.svg",
+          "alt": "建模管線的正確邊界。欄位依序為：階段、行動。資料切割：先分訓練與測試；fit：只在訓練資料學補值、縮放與模型；transform／predict：將已學參數套用測試資料。交叉驗證時，每個訓練折內也要獨立擬合前處理。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "scikit-learn：資料洩漏與前處理",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "scikit-learn：模型評估指標",
+          "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
+        },
+        {
+          "title": "scikit-learn：交叉驗證",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：機器學習資料解析與建模",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ebb7db53-7ac9-4378-8021-134c25a2715c_113年度機器學習工程師能力鑑定簡章(初級)_11305.pdf&fileno=d9b15aa0-291c-405f-bad7-4f9f8c131b3b&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "建模管線的正確邊界",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-ml-junior-2-004",
+      "certId": "ml",
+      "levelId": "junior",
+      "subjectId": "ml-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "門檻0.5時，哪個實際正類被漏掉？",
+      "options": {
+        "A": "乙",
+        "B": "甲",
+        "C": "丙",
+        "D": "丁"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "乙的0.45低於0.5，因此預測負而實際正。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/ml-junior-2/figure-02.svg",
+          "alt": "機率與分類門檻。欄位依序為：樣本／實際、預測正類機率。甲／正：0.80；乙／正：0.45；丙／負：0.40；丁／負：0.10。預測規則：機率大於或等於門檻為正。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "scikit-learn：資料洩漏與前處理",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "scikit-learn：模型評估指標",
+          "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
+        },
+        {
+          "title": "scikit-learn：交叉驗證",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：機器學習資料解析與建模",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ebb7db53-7ac9-4378-8021-134c25a2715c_113年度機器學習工程師能力鑑定簡章(初級)_11305.pdf&fileno=d9b15aa0-291c-405f-bad7-4f9f8c131b3b&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "機率與分類門檻",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-ml-junior-2-005",
+      "certId": "ml",
+      "levelId": "junior",
+      "subjectId": "ml-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "門檻降至0.4後，TP與FP分別為何？",
+      "options": {
+        "A": "TP=1、FP=0",
+        "B": "TP=2、FP=1",
+        "C": "TP=2、FP=2",
+        "D": "TP=1、FP=1"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "甲乙預測正且實際正；丙0.40符合門檻而形成FP；丁仍負。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/ml-junior-2/figure-02.svg",
+          "alt": "機率與分類門檻。欄位依序為：樣本／實際、預測正類機率。甲／正：0.80；乙／正：0.45；丙／負：0.40；丁／負：0.10。預測規則：機率大於或等於門檻為正。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "scikit-learn：資料洩漏與前處理",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "scikit-learn：模型評估指標",
+          "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
+        },
+        {
+          "title": "scikit-learn：交叉驗證",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：機器學習資料解析與建模",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ebb7db53-7ac9-4378-8021-134c25a2715c_113年度機器學習工程師能力鑑定簡章(初級)_11305.pdf&fileno=d9b15aa0-291c-405f-bad7-4f9f8c131b3b&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "機率與分類門檻",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-ml-junior-2-006",
+      "certId": "ml",
+      "levelId": "junior",
+      "subjectId": "ml-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "此例降低門檻的主要取捨是？",
+      "options": {
+        "A": "recall和false positive都必定降為0",
+        "B": "accuracy一定上升",
+        "C": "提高recall但增加false positive",
+        "D": "所有機率本身會重新變成1"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "門檻改變分類決策，不改變已算機率；本例多找回乙，也誤報丙。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/ml-junior-2/figure-02.svg",
+          "alt": "機率與分類門檻。欄位依序為：樣本／實際、預測正類機率。甲／正：0.80；乙／正：0.45；丙／負：0.40；丁／負：0.10。預測規則：機率大於或等於門檻為正。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "scikit-learn：資料洩漏與前處理",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "scikit-learn：模型評估指標",
+          "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
+        },
+        {
+          "title": "scikit-learn：交叉驗證",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：機器學習資料解析與建模",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ebb7db53-7ac9-4378-8021-134c25a2715c_113年度機器學習工程師能力鑑定簡章(初級)_11305.pdf&fileno=d9b15aa0-291c-405f-bad7-4f9f8c131b3b&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "機率與分類門檻",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-ml-junior-2-007",
+      "certId": "ml",
+      "levelId": "junior",
+      "subjectId": "ml-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "欲評估新人泛化能力，最合適的切割單位為何？",
+      "options": {
+        "A": "把同一人的每一天隨機分散",
+        "B": "依資料列奇偶分組",
+        "C": "依預測分數高低分組",
+        "D": "人員ID分組"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "同一人的資料應放在同一側，避免記住個人特徵而高估泛化。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/ml-junior-2/figure-03.svg",
+          "alt": "重複量測資料。欄位依序為：人員、紀錄。P1：第1、2、3天，各一列；P2：第1、2、3天，各一列；評估目標：預測未曾參與訓練的新人的類別。同一人的紀錄高度相似；ID不是預測目標。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "scikit-learn：資料洩漏與前處理",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "scikit-learn：模型評估指標",
+          "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
+        },
+        {
+          "title": "scikit-learn：交叉驗證",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：機器學習資料解析與建模",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ebb7db53-7ac9-4378-8021-134c25a2715c_113年度機器學習工程師能力鑑定簡章(初級)_11305.pdf&fileno=d9b15aa0-291c-405f-bad7-4f9f8c131b3b&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "重複量測資料",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-ml-junior-2-008",
+      "certId": "ml",
+      "levelId": "junior",
+      "subjectId": "ml-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "同一人記錄跨訓練與測試，分數偏高最可能代表什麼？",
+      "options": {
+        "A": "存在群組洩漏風險",
+        "B": "模型已證明適用所有新人",
+        "C": "不再需要獨立測試集",
+        "D": "模型一定沒有使用任何特徵"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "高度相似紀錄跨集合可能讓模型間接認出人，而非學得新人可用規則。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/ml-junior-2/figure-03.svg",
+          "alt": "重複量測資料。欄位依序為：人員、紀錄。P1：第1、2、3天，各一列；P2：第1、2、3天，各一列；評估目標：預測未曾參與訓練的新人的類別。同一人的紀錄高度相似；ID不是預測目標。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "scikit-learn：資料洩漏與前處理",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "scikit-learn：模型評估指標",
+          "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
+        },
+        {
+          "title": "scikit-learn：交叉驗證",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：機器學習資料解析與建模",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ebb7db53-7ac9-4378-8021-134c25a2715c_113年度機器學習工程師能力鑑定簡章(初級)_11305.pdf&fileno=d9b15aa0-291c-405f-bad7-4f9f8c131b3b&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "重複量測資料",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-ml-junior-2-009",
+      "certId": "ml",
+      "levelId": "junior",
+      "subjectId": "ml-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "只有兩位人員時，評估新人的不確定性為何要特別說明？",
+      "options": {
+        "A": "每天三列必然代表六個獨立新人",
+        "B": "可代表的獨立人員太少",
+        "C": "人員ID一定不能保存",
+        "D": "群組切割會產生六個新類別"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "重複量測增加列數，不等於增加同等數量的獨立個體。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/ml-junior-2/figure-03.svg",
+          "alt": "重複量測資料。欄位依序為：人員、紀錄。P1：第1、2、3天，各一列；P2：第1、2、3天，各一列；評估目標：預測未曾參與訓練的新人的類別。同一人的紀錄高度相似；ID不是預測目標。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "scikit-learn：資料洩漏與前處理",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "scikit-learn：模型評估指標",
+          "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
+        },
+        {
+          "title": "scikit-learn：交叉驗證",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：機器學習資料解析與建模",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ebb7db53-7ac9-4378-8021-134c25a2715c_113年度機器學習工程師能力鑑定簡章(初級)_11305.pdf&fileno=d9b15aa0-291c-405f-bad7-4f9f8c131b3b&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "重複量測資料",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-ml-junior-2-010",
+      "certId": "ml",
+      "levelId": "junior",
+      "subjectId": "ml-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "完成分組切割後，補值平均數應從哪裡估計？",
+      "options": {
+        "A": "所有人的全部紀錄",
+        "B": "只從測試人員資料",
+        "C": "只從訓練組人員的資料",
+        "D": "從測試標籤的平均數"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "群組切割與前處理邊界都要遵守，不能在後續補值再次洩漏。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/ml-junior-2/figure-03.svg",
+          "alt": "重複量測資料。欄位依序為：人員、紀錄。P1：第1、2、3天，各一列；P2：第1、2、3天，各一列；評估目標：預測未曾參與訓練的新人的類別。同一人的紀錄高度相似；ID不是預測目標。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "scikit-learn：資料洩漏與前處理",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "scikit-learn：模型評估指標",
+          "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
+        },
+        {
+          "title": "scikit-learn：交叉驗證",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：機器學習資料解析與建模",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ebb7db53-7ac9-4378-8021-134c25a2715c_113年度機器學習工程師能力鑑定簡章(初級)_11305.pdf&fileno=d9b15aa0-291c-405f-bad7-4f9f8c131b3b&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "重複量測資料",
+      "practicalPreparation": false,
+      "historical": true
+    }
+  ]
+}

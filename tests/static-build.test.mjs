@@ -14,6 +14,7 @@ test('a checkout inside a hidden worktree builds pages without publishing develo
   try {
     for (const path of ['index.html', 'admin/index.html', 'assets/logo.svg', 'media/hero.jpg',
       'supabase-setup.sql', '.env', 'README.md', 'assets/.secret', 'catalog/index.html', 'catalog/data/certifications.json', 'catalog/.secret']) await put(path);
+    await put('catalog/data/practice-index.json', JSON.stringify({complete:true,totals:{subjects:100}}));
     for (const app of ['junior', 'intermediate', 'bi', 'aiot']) {
       for (const path of ['index.html', 'manifest.webmanifest', 'service-worker.js',
         'assets/js/app.js', 'data/content.js', 'netlify/functions/ai-proxy.js']) await put(`${app}/${path}`);
@@ -29,5 +30,7 @@ test('a checkout inside a hidden worktree builds pages without publishing develo
       'junior/netlify/functions/ai-proxy.js', 'scripts/build-static.mjs', 'catalog/.secret']) {
       await assert.rejects(access(join(root, 'dist', path)), { code: 'ENOENT' });
     }
+    await put('catalog/data/practice-index.json', JSON.stringify({complete:false,totals:{subjects:99}}));
+    assert.throws(()=>execFileSync(process.execPath,[join(root,'scripts/build-static.mjs')],{stdio:'pipe'}),/Complete and validate all practice subjects/);
   } finally { await rm(root, { recursive: true, force: true }); }
 });

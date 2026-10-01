@@ -1,0 +1,807 @@
+{
+  "version": 1,
+  "certId": "iots",
+  "updatedAt": "2026-10-01",
+  "questions": [
+    {
+      "id": "practice-iots-junior-1-001",
+      "certId": "iots",
+      "levelId": "junior",
+      "subjectId": "iots-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "依兩點資料，感測靈敏度是多少？",
+      "options": {
+        "A": "2V/°C",
+        "B": "50V/°C",
+        "C": "0.02V/°C",
+        "D": "0.005V/°C"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "(2.50－0.50)÷(100－0)＝0.02V/°C，靈敏度是輸出對輸入的斜率。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/iots-junior-1/figure-01.svg",
+          "alt": "兩點線性校正。欄位依序為：溫度°C、量測電壓V。0：0.50；100：2.50；未知樣本：1.70。本教學感測器假定在此範圍線性；不外推到範圍外。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Analog Devices：理想 ADC 與量化",
+          "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-001.pdf"
+        },
+        {
+          "title": "Analog Devices：取樣與奈奎斯特條件",
+          "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-002.pdf"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：感測器原理與應用",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=f52bef2c-22e3-453d-9106-6f36b610df7b_114年度感知系統整合應用工程師能力鑑定簡章(初級)_114.05版.pdf&fileno=8246bfe2-13c3-4a86-8d4b-2d18bad95e0b&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "兩點線性校正",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-iots-junior-1-002",
+      "certId": "iots",
+      "levelId": "junior",
+      "subjectId": "iots-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "未知樣本1.70V對應多少溫度？",
+      "options": {
+        "A": "85°C",
+        "B": "34°C",
+        "C": "120°C",
+        "D": "60°C"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "(1.70－0.50)÷0.02＝60°C；必須扣除零點偏移。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/iots-junior-1/figure-01.svg",
+          "alt": "兩點線性校正。欄位依序為：溫度°C、量測電壓V。0：0.50；100：2.50；未知樣本：1.70。本教學感測器假定在此範圍線性；不外推到範圍外。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Analog Devices：理想 ADC 與量化",
+          "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-001.pdf"
+        },
+        {
+          "title": "Analog Devices：取樣與奈奎斯特條件",
+          "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-002.pdf"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：感測器原理與應用",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=f52bef2c-22e3-453d-9106-6f36b610df7b_114年度感知系統整合應用工程師能力鑑定簡章(初級)_114.05版.pdf&fileno=8246bfe2-13c3-4a86-8d4b-2d18bad95e0b&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "兩點線性校正",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-iots-junior-1-003",
+      "certId": "iots",
+      "levelId": "junior",
+      "subjectId": "iots-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "若直接將此線性式推到300°C而沒有其他資料，最主要問題是？",
+      "options": {
+        "A": "超出已確認量測範圍，線性假設未必成立",
+        "B": "電壓單位會自動變成安培",
+        "C": "所有感測器都不能高於100°C",
+        "D": "校正斜率必定等於零"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "校正區間外的關係需另驗證；不能把本題假設當全溫域特性。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/iots-junior-1/figure-01.svg",
+          "alt": "兩點線性校正。欄位依序為：溫度°C、量測電壓V。0：0.50；100：2.50；未知樣本：1.70。本教學感測器假定在此範圍線性；不外推到範圍外。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Analog Devices：理想 ADC 與量化",
+          "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-001.pdf"
+        },
+        {
+          "title": "Analog Devices：取樣與奈奎斯特條件",
+          "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-002.pdf"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：感測器原理與應用",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=f52bef2c-22e3-453d-9106-6f36b610df7b_114年度感知系統整合應用工程師能力鑑定簡章(初級)_114.05版.pdf&fileno=8246bfe2-13c3-4a86-8d4b-2d18bad95e0b&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "兩點線性校正",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-iots-junior-1-004",
+      "certId": "iots",
+      "levelId": "junior",
+      "subjectId": "iots-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "三次讀值接近彼此卻偏離25°C參考，最恰當描述是？",
+      "options": {
+        "A": "完全準確且沒有偏差",
+        "B": "重複性較好但存在系統偏差",
+        "C": "三次結果彼此差20°C",
+        "D": "數位儀器不可能有偏差"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "讀值集中在27°C附近，分散小，但平均相對參考約高2°C。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/iots-junior-1/figure-02.svg",
+          "alt": "量測指標對照。欄位依序為：重複測量、讀值°C。真值參考：25.0；第1次：27.0；第2次：27.1；第3次：26.9。同一條件下三次讀值；暫不計參考標準的不確定度。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Analog Devices：理想 ADC 與量化",
+          "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-001.pdf"
+        },
+        {
+          "title": "Analog Devices：取樣與奈奎斯特條件",
+          "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-002.pdf"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：感測器原理與應用",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=f52bef2c-22e3-453d-9106-6f36b610df7b_114年度感知系統整合應用工程師能力鑑定簡章(初級)_114.05版.pdf&fileno=8246bfe2-13c3-4a86-8d4b-2d18bad95e0b&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "量測指標對照",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-iots-junior-1-005",
+      "certId": "iots",
+      "levelId": "junior",
+      "subjectId": "iots-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "三次讀值的平均值是多少？",
+      "options": {
+        "A": "25.0°C",
+        "B": "26.0°C",
+        "C": "27.0°C",
+        "D": "27.3°C"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "(27.0＋27.1＋26.9)÷3＝27.0°C。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/iots-junior-1/figure-02.svg",
+          "alt": "量測指標對照。欄位依序為：重複測量、讀值°C。真值參考：25.0；第1次：27.0；第2次：27.1；第3次：26.9。同一條件下三次讀值；暫不計參考標準的不確定度。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Analog Devices：理想 ADC 與量化",
+          "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-001.pdf"
+        },
+        {
+          "title": "Analog Devices：取樣與奈奎斯特條件",
+          "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-002.pdf"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：感測器原理與應用",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=f52bef2c-22e3-453d-9106-6f36b610df7b_114年度感知系統整合應用工程師能力鑑定簡章(初級)_114.05版.pdf&fileno=8246bfe2-13c3-4a86-8d4b-2d18bad95e0b&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "量測指標對照",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-iots-junior-1-006",
+      "certId": "iots",
+      "levelId": "junior",
+      "subjectId": "iots-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "只增加相同條件下的重複量測次數，能保證消除約2°C偏移嗎？",
+      "options": {
+        "A": "可以，任何固定偏移都會自動平均為零",
+        "B": "可以，只要剛好量100次",
+        "C": "不能，因為平均值完全無意義",
+        "D": "不能，需查校正或系統誤差來源"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "重複平均可降低部分隨機變動影響，但固定偏差不會因此消失。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/iots-junior-1/figure-02.svg",
+          "alt": "量測指標對照。欄位依序為：重複測量、讀值°C。真值參考：25.0；第1次：27.0；第2次：27.1；第3次：26.9。同一條件下三次讀值；暫不計參考標準的不確定度。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Analog Devices：理想 ADC 與量化",
+          "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-001.pdf"
+        },
+        {
+          "title": "Analog Devices：取樣與奈奎斯特條件",
+          "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-002.pdf"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：感測器原理與應用",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=f52bef2c-22e3-453d-9106-6f36b610df7b_114年度感知系統整合應用工程師能力鑑定簡章(初級)_114.05版.pdf&fileno=8246bfe2-13c3-4a86-8d4b-2d18bad95e0b&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "量測指標對照",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-iots-junior-1-007",
+      "certId": "iots",
+      "levelId": "junior",
+      "subjectId": "iots-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "對200Hz基頻訊號，方案甲300 samples/s為何有風險？",
+      "options": {
+        "A": "不滿足基頻取樣率高於兩倍最高頻率的條件",
+        "B": "取樣率未與感測器輸出振幅相等",
+        "C": "每秒樣本數必須等於訊號頻率",
+        "D": "只要300高於200就完全沒有混疊風險"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "理想最低門檻需超過400 samples/s，且實務還需濾波過渡帶餘裕。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/iots-junior-1/figure-03.svg",
+          "alt": "振動取樣設定。欄位依序為：項目、數值。欲觀察最高頻率：200Hz；方案甲取樣率：300 samples/s；方案乙取樣率：1,000 samples/s；類比前端：取樣前需控制頻外訊號。以基頻低通取樣情境討論，不採帶通欠取樣。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Analog Devices：理想 ADC 與量化",
+          "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-001.pdf"
+        },
+        {
+          "title": "Analog Devices：取樣與奈奎斯特條件",
+          "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-002.pdf"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：感測器原理與應用",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=f52bef2c-22e3-453d-9106-6f36b610df7b_114年度感知系統整合應用工程師能力鑑定簡章(初級)_114.05版.pdf&fileno=8246bfe2-13c3-4a86-8d4b-2d18bad95e0b&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "振動取樣設定",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-iots-junior-1-008",
+      "certId": "iots",
+      "levelId": "junior",
+      "subjectId": "iots-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "方案乙的相鄰樣本間隔是多少？",
+      "options": {
+        "A": "10ms",
+        "B": "1ms",
+        "C": "0.1s",
+        "D": "1s"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "Δt＝1/1000秒＝1ms；取樣間隔與取樣率互為倒數。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/iots-junior-1/figure-03.svg",
+          "alt": "振動取樣設定。欄位依序為：項目、數值。欲觀察最高頻率：200Hz；方案甲取樣率：300 samples/s；方案乙取樣率：1,000 samples/s；類比前端：取樣前需控制頻外訊號。以基頻低通取樣情境討論，不採帶通欠取樣。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Analog Devices：理想 ADC 與量化",
+          "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-001.pdf"
+        },
+        {
+          "title": "Analog Devices：取樣與奈奎斯特條件",
+          "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-002.pdf"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：感測器原理與應用",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=f52bef2c-22e3-453d-9106-6f36b610df7b_114年度感知系統整合應用工程師能力鑑定簡章(初級)_114.05版.pdf&fileno=8246bfe2-13c3-4a86-8d4b-2d18bad95e0b&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "振動取樣設定",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-iots-junior-1-009",
+      "certId": "iots",
+      "levelId": "junior",
+      "subjectId": "iots-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "為何不能只在取樣後用數位濾波消除所有混疊？",
+      "options": {
+        "A": "數位濾波一定不能處理訊號",
+        "B": "取樣後提高樣本位數就能分離所有原頻率",
+        "C": "混疊後不同類比頻率可能已映成相同數位頻率",
+        "D": "把300 samples/s重採樣成1000就一定可還原"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "取樣前超出頻帶的成分可能折疊入帶內，之後難以與真正帶內訊號區分。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/iots-junior-1/figure-03.svg",
+          "alt": "振動取樣設定。欄位依序為：項目、數值。欲觀察最高頻率：200Hz；方案甲取樣率：300 samples/s；方案乙取樣率：1,000 samples/s；類比前端：取樣前需控制頻外訊號。以基頻低通取樣情境討論，不採帶通欠取樣。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Analog Devices：理想 ADC 與量化",
+          "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-001.pdf"
+        },
+        {
+          "title": "Analog Devices：取樣與奈奎斯特條件",
+          "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-002.pdf"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：感測器原理與應用",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=f52bef2c-22e3-453d-9106-6f36b610df7b_114年度感知系統整合應用工程師能力鑑定簡章(初級)_114.05版.pdf&fileno=8246bfe2-13c3-4a86-8d4b-2d18bad95e0b&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "振動取樣設定",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-iots-junior-1-010",
+      "certId": "iots",
+      "levelId": "junior",
+      "subjectId": "iots-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "欲分析瞬時衝擊，除了取樣率外還應檢查哪項？",
+      "options": {
+        "A": "只需檢查輸出資料的小數位數",
+        "B": "只需確認記錄檔是否使用無損壓縮",
+        "C": "只需確認顯示器更新率高於200Hz",
+        "D": "感測器與前端頻寬及是否飽和"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "取樣快不代表感測器能響應衝擊，也不代表動態範圍足以避免削波。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/iots-junior-1/figure-03.svg",
+          "alt": "振動取樣設定。欄位依序為：項目、數值。欲觀察最高頻率：200Hz；方案甲取樣率：300 samples/s；方案乙取樣率：1,000 samples/s；類比前端：取樣前需控制頻外訊號。以基頻低通取樣情境討論，不採帶通欠取樣。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Analog Devices：理想 ADC 與量化",
+          "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-001.pdf"
+        },
+        {
+          "title": "Analog Devices：取樣與奈奎斯特條件",
+          "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-002.pdf"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：感測器原理與應用",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=f52bef2c-22e3-453d-9106-6f36b610df7b_114年度感知系統整合應用工程師能力鑑定簡章(初級)_114.05版.pdf&fileno=8246bfe2-13c3-4a86-8d4b-2d18bad95e0b&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "振動取樣設定",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-iots-junior-2-001",
+      "certId": "iots",
+      "levelId": "junior",
+      "subjectId": "iots-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "依電阻值，理想非反相增益是多少？",
+      "options": {
+        "A": "9",
+        "B": "0.1",
+        "C": "100",
+        "D": "10"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "1＋90/10＝10；非反相公式含加1，不能只用Rf/Rg。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/iots-junior-2/figure-01.svg",
+          "alt": "理想非反相放大器。欄位依序為：參數、設定。輸入範圍：0～0.20V；回授電阻Rf：90kΩ；接地電阻Rg：10kΩ；理想增益：1＋Rf/Rg。假定放大器供電與輸入共模、輸出擺幅皆容許本題訊號。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Analog Devices：理想 ADC 與量化",
+          "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-001.pdf"
+        },
+        {
+          "title": "Analog Devices：取樣與奈奎斯特條件",
+          "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-002.pdf"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：感測器信號調節實務應用",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=f52bef2c-22e3-453d-9106-6f36b610df7b_114年度感知系統整合應用工程師能力鑑定簡章(初級)_114.05版.pdf&fileno=8246bfe2-13c3-4a86-8d4b-2d18bad95e0b&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "理想非反相放大器",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-iots-junior-2-002",
+      "certId": "iots",
+      "levelId": "junior",
+      "subjectId": "iots-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "輸入0.15V時，未飽和的理想輸出是多少？",
+      "options": {
+        "A": "1.5V",
+        "B": "0.015V",
+        "C": "15V",
+        "D": "0.135V"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "輸出＝增益10×0.15V＝1.5V，題目已假定操作範圍可容許。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/iots-junior-2/figure-01.svg",
+          "alt": "理想非反相放大器。欄位依序為：參數、設定。輸入範圍：0～0.20V；回授電阻Rf：90kΩ；接地電阻Rg：10kΩ；理想增益：1＋Rf/Rg。假定放大器供電與輸入共模、輸出擺幅皆容許本題訊號。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Analog Devices：理想 ADC 與量化",
+          "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-001.pdf"
+        },
+        {
+          "title": "Analog Devices：取樣與奈奎斯特條件",
+          "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-002.pdf"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：感測器信號調節實務應用",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=f52bef2c-22e3-453d-9106-6f36b610df7b_114年度感知系統整合應用工程師能力鑑定簡章(初級)_114.05版.pdf&fileno=8246bfe2-13c3-4a86-8d4b-2d18bad95e0b&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "理想非反相放大器",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-iots-junior-2-003",
+      "certId": "iots",
+      "levelId": "junior",
+      "subjectId": "iots-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "若輸出被電源軌限制而削平，提高ADC位數能否還原被削去波形？",
+      "options": {
+        "A": "能，位數每增加1就補回整個波形",
+        "B": "不能，前端已經遺失振幅資訊",
+        "C": "能，對飽和數值作線性插值必可精確重建",
+        "D": "能，取樣位數增加就等於擴大前端輸出擺幅"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "削波發生在量化之前，增加解析度無法重建已被前端截斷的訊息。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/iots-junior-2/figure-01.svg",
+          "alt": "理想非反相放大器。欄位依序為：參數、設定。輸入範圍：0～0.20V；回授電阻Rf：90kΩ；接地電阻Rg：10kΩ；理想增益：1＋Rf/Rg。假定放大器供電與輸入共模、輸出擺幅皆容許本題訊號。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Analog Devices：理想 ADC 與量化",
+          "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-001.pdf"
+        },
+        {
+          "title": "Analog Devices：取樣與奈奎斯特條件",
+          "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-002.pdf"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：感測器信號調節實務應用",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=f52bef2c-22e3-453d-9106-6f36b610df7b_114年度感知系統整合應用工程師能力鑑定簡章(初級)_114.05版.pdf&fileno=8246bfe2-13c3-4a86-8d4b-2d18bad95e0b&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "理想非反相放大器",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-iots-junior-2-004",
+      "certId": "iots",
+      "levelId": "junior",
+      "subjectId": "iots-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "20mA流過250Ω時，電阻兩端電壓是多少？",
+      "options": {
+        "A": "0.08V",
+        "B": "0.005V",
+        "C": "5V",
+        "D": "50V"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "0.020A×250Ω＝5V；與ADC 3.3V上限相比已超範圍。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/iots-junior-2/figure-02.svg",
+          "alt": "4–20mA電流迴路轉電壓。欄位依序為：元件／狀態、數值。取樣電阻：250Ω；量測下限：4mA；量測上限：20mA；ADC容許範圍：0～3.3V。以V＝IR計算，需另檢查電阻功率與裝置能力。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Analog Devices：理想 ADC 與量化",
+          "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-001.pdf"
+        },
+        {
+          "title": "Analog Devices：取樣與奈奎斯特條件",
+          "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-002.pdf"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：感測器信號調節實務應用",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=f52bef2c-22e3-453d-9106-6f36b610df7b_114年度感知系統整合應用工程師能力鑑定簡章(初級)_114.05版.pdf&fileno=8246bfe2-13c3-4a86-8d4b-2d18bad95e0b&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "4–20mA電流迴路轉電壓",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-iots-junior-2-005",
+      "certId": "iots",
+      "levelId": "junior",
+      "subjectId": "iots-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "直接把此電阻上限電壓送入0～3.3V ADC，應如何判斷？",
+      "options": {
+        "A": "一定安全，因電流小於1A",
+        "B": "ADC位數高便可承受任何電壓",
+        "C": "把軟體除以2即可避免硬體過壓",
+        "D": "需重新設計縮放或保護，不能直接超範圍輸入"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "數值縮放不能改變接腳承受的電壓，需在硬體端符合規格。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/iots-junior-2/figure-02.svg",
+          "alt": "4–20mA電流迴路轉電壓。欄位依序為：元件／狀態、數值。取樣電阻：250Ω；量測下限：4mA；量測上限：20mA；ADC容許範圍：0～3.3V。以V＝IR計算，需另檢查電阻功率與裝置能力。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Analog Devices：理想 ADC 與量化",
+          "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-001.pdf"
+        },
+        {
+          "title": "Analog Devices：取樣與奈奎斯特條件",
+          "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-002.pdf"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：感測器信號調節實務應用",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=f52bef2c-22e3-453d-9106-6f36b610df7b_114年度感知系統整合應用工程師能力鑑定簡章(初級)_114.05版.pdf&fileno=8246bfe2-13c3-4a86-8d4b-2d18bad95e0b&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "4–20mA電流迴路轉電壓",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-iots-junior-2-006",
+      "certId": "iots",
+      "levelId": "junior",
+      "subjectId": "iots-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "若希望20mA對應不超過3.0V，理想取樣電阻最大為多少？",
+      "options": {
+        "A": "150Ω",
+        "B": "250Ω",
+        "C": "600Ω",
+        "D": "15Ω"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "R＝3.0÷0.020＝150Ω；實際設計仍須考慮容差、功耗與裕量。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/iots-junior-2/figure-02.svg",
+          "alt": "4–20mA電流迴路轉電壓。欄位依序為：元件／狀態、數值。取樣電阻：250Ω；量測下限：4mA；量測上限：20mA；ADC容許範圍：0～3.3V。以V＝IR計算，需另檢查電阻功率與裝置能力。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Analog Devices：理想 ADC 與量化",
+          "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-001.pdf"
+        },
+        {
+          "title": "Analog Devices：取樣與奈奎斯特條件",
+          "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-002.pdf"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：感測器信號調節實務應用",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=f52bef2c-22e3-453d-9106-6f36b610df7b_114年度感知系統整合應用工程師能力鑑定簡章(初級)_114.05版.pdf&fileno=8246bfe2-13c3-4a86-8d4b-2d18bad95e0b&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "4–20mA電流迴路轉電壓",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-iots-junior-2-007",
+      "certId": "iots",
+      "levelId": "junior",
+      "subjectId": "iots-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "依ADC規格，理想1 LSB大小為多少？",
+      "options": {
+        "A": "10mV",
+        "B": "1mV",
+        "C": "0.1V",
+        "D": "4.096mV"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "4.096V÷4096＝0.001V＝1mV。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/iots-junior-2/figure-03.svg",
+          "alt": "ADC前端調節鏈。欄位依序為：階段、功能。感測橋：輸出小差動電壓；儀表放大器：放大差動訊號；類比低通濾波：控制取樣前高頻成分；ADC：0～4.096V、12-bit。理想量化步階採滿刻度範圍÷4096；另有誤差需實測。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Analog Devices：理想 ADC 與量化",
+          "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-001.pdf"
+        },
+        {
+          "title": "Analog Devices：取樣與奈奎斯特條件",
+          "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-002.pdf"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：感測器信號調節實務應用",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=f52bef2c-22e3-453d-9106-6f36b610df7b_114年度感知系統整合應用工程師能力鑑定簡章(初級)_114.05版.pdf&fileno=8246bfe2-13c3-4a86-8d4b-2d18bad95e0b&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "ADC前端調節鏈",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-iots-junior-2-008",
+      "certId": "iots",
+      "levelId": "junior",
+      "subjectId": "iots-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "低通濾波器放在ADC前的主要理由是？",
+      "options": {
+        "A": "讓所有直流訊號必定變成交流",
+        "B": "把量化誤差全部限制在高頻而不影響訊號",
+        "C": "在取樣之前限制可能混疊的高頻成分",
+        "D": "用來自動提高ADC的取樣頻率"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "抗混疊需要在取樣前處理，取樣後已折入帶內的成分通常不可逆。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/iots-junior-2/figure-03.svg",
+          "alt": "ADC前端調節鏈。欄位依序為：階段、功能。感測橋：輸出小差動電壓；儀表放大器：放大差動訊號；類比低通濾波：控制取樣前高頻成分；ADC：0～4.096V、12-bit。理想量化步階採滿刻度範圍÷4096；另有誤差需實測。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Analog Devices：理想 ADC 與量化",
+          "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-001.pdf"
+        },
+        {
+          "title": "Analog Devices：取樣與奈奎斯特條件",
+          "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-002.pdf"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：感測器信號調節實務應用",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=f52bef2c-22e3-453d-9106-6f36b610df7b_114年度感知系統整合應用工程師能力鑑定簡章(初級)_114.05版.pdf&fileno=8246bfe2-13c3-4a86-8d4b-2d18bad95e0b&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "ADC前端調節鏈",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-iots-junior-2-009",
+      "certId": "iots",
+      "levelId": "junior",
+      "subjectId": "iots-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "感測橋兩端都帶有相近的共模干擾，應重視放大器哪項能力？",
+      "options": {
+        "A": "輸出短路電流",
+        "B": "數位資料位元率",
+        "C": "輸出端容性負載上限",
+        "D": "共模拒斥能力"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "差動量測應抑制共模成分，但實際共模範圍、CMRR與頻率特性仍需查規格。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/iots-junior-2/figure-03.svg",
+          "alt": "ADC前端調節鏈。欄位依序為：階段、功能。感測橋：輸出小差動電壓；儀表放大器：放大差動訊號；類比低通濾波：控制取樣前高頻成分；ADC：0～4.096V、12-bit。理想量化步階採滿刻度範圍÷4096；另有誤差需實測。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Analog Devices：理想 ADC 與量化",
+          "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-001.pdf"
+        },
+        {
+          "title": "Analog Devices：取樣與奈奎斯特條件",
+          "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-002.pdf"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：感測器信號調節實務應用",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=f52bef2c-22e3-453d-9106-6f36b610df7b_114年度感知系統整合應用工程師能力鑑定簡章(初級)_114.05版.pdf&fileno=8246bfe2-13c3-4a86-8d4b-2d18bad95e0b&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "ADC前端調節鏈",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-iots-junior-2-010",
+      "certId": "iots",
+      "levelId": "junior",
+      "subjectId": "iots-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "只用一個校正點能否分別估出零點偏移與增益誤差？",
+      "options": {
+        "A": "一般不能，兩個未知參數至少需足夠獨立條件",
+        "B": "一定可以，任何單點都代表全範圍",
+        "C": "一定可以，只要ADC是12-bit",
+        "D": "不能，因為線性模型完全不能校正"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "線性校正通常需至少兩個獨立已知輸入，才能分別估計斜率與截距。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/iots-junior-2/figure-03.svg",
+          "alt": "ADC前端調節鏈。欄位依序為：階段、功能。感測橋：輸出小差動電壓；儀表放大器：放大差動訊號；類比低通濾波：控制取樣前高頻成分；ADC：0～4.096V、12-bit。理想量化步階採滿刻度範圍÷4096；另有誤差需實測。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Analog Devices：理想 ADC 與量化",
+          "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-001.pdf"
+        },
+        {
+          "title": "Analog Devices：取樣與奈奎斯特條件",
+          "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-002.pdf"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：感測器信號調節實務應用",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=f52bef2c-22e3-453d-9106-6f36b610df7b_114年度感知系統整合應用工程師能力鑑定簡章(初級)_114.05版.pdf&fileno=8246bfe2-13c3-4a86-8d4b-2d18bad95e0b&filetype=plfno&type=5"
+        }
+      ],
+      "topic": "ADC前端調節鏈",
+      "practicalPreparation": true,
+      "historical": true
+    }
+  ]
+}

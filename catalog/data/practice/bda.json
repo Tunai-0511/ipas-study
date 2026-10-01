@@ -1,0 +1,1727 @@
+{
+  "version": 1,
+  "certId": "bda",
+  "updatedAt": "2026-10-01",
+  "questions": [
+    {
+      "id": "practice-bda-junior-1-001",
+      "certId": "bda",
+      "levelId": "junior",
+      "subjectId": "bda-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "執行圖中的Python程式後，ys為何？",
+      "options": {
+        "A": "[2, 4, 0]",
+        "B": "[2, 4]",
+        "C": "[2, None, 4, 0]",
+        "D": "[0]"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "條件明確排除None，並不排除數值0。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/bda-junior-1/figure-01.svg",
+          "alt": "Python 缺漏資料處理。欄位依序為：程式位置、內容。輸入：xs = [2, None, 4, 0]；有效值：ys = [x for x in xs if x is not None]；結果：total = sum(ys)。None 表示缺漏；0 是有效觀測值。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Python：資料結構",
+          "url": "https://docs.python.org/3/tutorial/datastructures.html"
+        },
+        {
+          "title": "PostgreSQL：資料表連接",
+          "url": "https://www.postgresql.org/docs/current/tutorial-join.html"
+        },
+        {
+          "title": "pandas：合併與連接資料",
+          "url": "https://pandas.pydata.org/docs/user_guide/merging.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：資料導向程式設計",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=51b2335f-4657-4047-a886-764af9593082_112年初級巨量資料分析師能力鑑定簡章_1230.pdf&type=10"
+        }
+      ],
+      "topic": "Python 缺漏資料處理",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-bda-junior-1-002",
+      "certId": "bda",
+      "levelId": "junior",
+      "subjectId": "bda-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "圖中total的值為何？",
+      "options": {
+        "A": "3",
+        "B": "6",
+        "C": "2",
+        "D": "None"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "有效值相加為2＋4＋0＝6；sum不會除以資料筆數。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/bda-junior-1/figure-01.svg",
+          "alt": "Python 缺漏資料處理。欄位依序為：程式位置、內容。輸入：xs = [2, None, 4, 0]；有效值：ys = [x for x in xs if x is not None]；結果：total = sum(ys)。None 表示缺漏；0 是有效觀測值。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Python：資料結構",
+          "url": "https://docs.python.org/3/tutorial/datastructures.html"
+        },
+        {
+          "title": "PostgreSQL：資料表連接",
+          "url": "https://www.postgresql.org/docs/current/tutorial-join.html"
+        },
+        {
+          "title": "pandas：合併與連接資料",
+          "url": "https://pandas.pydata.org/docs/user_guide/merging.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：資料導向程式設計",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=51b2335f-4657-4047-a886-764af9593082_112年初級巨量資料分析師能力鑑定簡章_1230.pdf&type=10"
+        }
+      ],
+      "topic": "Python 缺漏資料處理",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-bda-junior-1-003",
+      "certId": "bda",
+      "levelId": "junior",
+      "subjectId": "bda-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "若改用if x取代if x is not None，會產生什麼差異？",
+      "options": {
+        "A": "None保留且0排除",
+        "B": "所有整數都被排除",
+        "C": "有效的0也被排除",
+        "D": "只有4被排除"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "Python中0為假值，if x不等同只檢查缺漏。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/bda-junior-1/figure-01.svg",
+          "alt": "Python 缺漏資料處理。欄位依序為：程式位置、內容。輸入：xs = [2, None, 4, 0]；有效值：ys = [x for x in xs if x is not None]；結果：total = sum(ys)。None 表示缺漏；0 是有效觀測值。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Python：資料結構",
+          "url": "https://docs.python.org/3/tutorial/datastructures.html"
+        },
+        {
+          "title": "PostgreSQL：資料表連接",
+          "url": "https://www.postgresql.org/docs/current/tutorial-join.html"
+        },
+        {
+          "title": "pandas：合併與連接資料",
+          "url": "https://pandas.pydata.org/docs/user_guide/merging.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：資料導向程式設計",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=51b2335f-4657-4047-a886-764af9593082_112年初級巨量資料分析師能力鑑定簡章_1230.pdf&type=10"
+        }
+      ],
+      "topic": "Python 缺漏資料處理",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-bda-junior-1-004",
+      "certId": "bda",
+      "levelId": "junior",
+      "subjectId": "bda-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "依圖資料執行INNER JOIN，輸出有幾列？",
+      "options": {
+        "A": "1列",
+        "B": "3列",
+        "C": "4列",
+        "D": "2列"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "訂單1匹配兩筆客戶7；訂單2沒有匹配而不輸出，共2列。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/bda-junior-1/figure-02.svg",
+          "alt": "訂單與客戶資料。欄位依序為：資料表、資料列。orders：(id=1, customer=7), (id=2, customer=9)；customers：(id=7, name=甲), (id=7, name=乙)；連接條件：orders.customer = customers.id。此客戶表刻意含重複鍵，用於檢查連接基數。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Python：資料結構",
+          "url": "https://docs.python.org/3/tutorial/datastructures.html"
+        },
+        {
+          "title": "PostgreSQL：資料表連接",
+          "url": "https://www.postgresql.org/docs/current/tutorial-join.html"
+        },
+        {
+          "title": "pandas：合併與連接資料",
+          "url": "https://pandas.pydata.org/docs/user_guide/merging.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：資料導向程式設計",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=51b2335f-4657-4047-a886-764af9593082_112年初級巨量資料分析師能力鑑定簡章_1230.pdf&type=10"
+        }
+      ],
+      "topic": "訂單與客戶資料",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-bda-junior-1-005",
+      "certId": "bda",
+      "levelId": "junior",
+      "subjectId": "bda-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "同一條件改成LEFT JOIN，輸出有幾列？",
+      "options": {
+        "A": "3列",
+        "B": "2列",
+        "C": "1列",
+        "D": "4列"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "訂單1仍有兩個匹配，訂單2保留一列且右側欄位NULL，共3列。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/bda-junior-1/figure-02.svg",
+          "alt": "訂單與客戶資料。欄位依序為：資料表、資料列。orders：(id=1, customer=7), (id=2, customer=9)；customers：(id=7, name=甲), (id=7, name=乙)；連接條件：orders.customer = customers.id。此客戶表刻意含重複鍵，用於檢查連接基數。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Python：資料結構",
+          "url": "https://docs.python.org/3/tutorial/datastructures.html"
+        },
+        {
+          "title": "PostgreSQL：資料表連接",
+          "url": "https://www.postgresql.org/docs/current/tutorial-join.html"
+        },
+        {
+          "title": "pandas：合併與連接資料",
+          "url": "https://pandas.pydata.org/docs/user_guide/merging.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：資料導向程式設計",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=51b2335f-4657-4047-a886-764af9593082_112年初級巨量資料分析師能力鑑定簡章_1230.pdf&type=10"
+        }
+      ],
+      "topic": "訂單與客戶資料",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-bda-junior-1-006",
+      "certId": "bda",
+      "levelId": "junior",
+      "subjectId": "bda-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "若業務要求每張訂單只能對應一位客戶，應優先修正什麼？",
+      "options": {
+        "A": "把LEFT JOIN換成CROSS JOIN",
+        "B": "確認並建立customers.id唯一性",
+        "C": "以SUM消除所有文字欄位",
+        "D": "把訂單編號改成浮點數"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "重複維度鍵造成一對多擴張；應查清資料規則，不能隨意取第一列掩蓋問題。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/bda-junior-1/figure-02.svg",
+          "alt": "訂單與客戶資料。欄位依序為：資料表、資料列。orders：(id=1, customer=7), (id=2, customer=9)；customers：(id=7, name=甲), (id=7, name=乙)；連接條件：orders.customer = customers.id。此客戶表刻意含重複鍵，用於檢查連接基數。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Python：資料結構",
+          "url": "https://docs.python.org/3/tutorial/datastructures.html"
+        },
+        {
+          "title": "PostgreSQL：資料表連接",
+          "url": "https://www.postgresql.org/docs/current/tutorial-join.html"
+        },
+        {
+          "title": "pandas：合併與連接資料",
+          "url": "https://pandas.pydata.org/docs/user_guide/merging.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：資料導向程式設計",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=51b2335f-4657-4047-a886-764af9593082_112年初級巨量資料分析師能力鑑定簡章_1230.pdf&type=10"
+        }
+      ],
+      "topic": "訂單與客戶資料",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-bda-junior-1-007",
+      "certId": "bda",
+      "levelId": "junior",
+      "subjectId": "bda-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "customer_id轉成整數12再輸出，違反哪項要求？",
+      "options": {
+        "A": "會使amount無法加總",
+        "B": "讓order_id必然重複",
+        "C": "遺失識別碼前導零",
+        "D": "增加日期時區偏差"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "識別碼不是計算量，0012的字串表示需保留。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/bda-junior-1/figure-03.svg",
+          "alt": "CSV 欄位清理規則。欄位依序為：原始欄位、指定規則。customer_id：字串；保留前導零，如 0012；amount：去空白後轉數值；空白視為缺漏；order_id：交易唯一鍵；重送應去重。原始列：order_id=R8, customer_id=0012, amount=\" 10.5 \"。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Python：資料結構",
+          "url": "https://docs.python.org/3/tutorial/datastructures.html"
+        },
+        {
+          "title": "PostgreSQL：資料表連接",
+          "url": "https://www.postgresql.org/docs/current/tutorial-join.html"
+        },
+        {
+          "title": "pandas：合併與連接資料",
+          "url": "https://pandas.pydata.org/docs/user_guide/merging.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：資料導向程式設計",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=51b2335f-4657-4047-a886-764af9593082_112年初級巨量資料分析師能力鑑定簡章_1230.pdf&type=10"
+        }
+      ],
+      "topic": "CSV 欄位清理規則",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-bda-junior-1-008",
+      "certId": "bda",
+      "levelId": "junior",
+      "subjectId": "bda-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "amount依指定規則清理後應為何？",
+      "options": {
+        "A": "字串\" 10.5 \"",
+        "B": "數值105",
+        "C": "缺漏值",
+        "D": "數值10.5"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "去除首尾空白後解析小數，得到10.5。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/bda-junior-1/figure-03.svg",
+          "alt": "CSV 欄位清理規則。欄位依序為：原始欄位、指定規則。customer_id：字串；保留前導零，如 0012；amount：去空白後轉數值；空白視為缺漏；order_id：交易唯一鍵；重送應去重。原始列：order_id=R8, customer_id=0012, amount=\" 10.5 \"。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Python：資料結構",
+          "url": "https://docs.python.org/3/tutorial/datastructures.html"
+        },
+        {
+          "title": "PostgreSQL：資料表連接",
+          "url": "https://www.postgresql.org/docs/current/tutorial-join.html"
+        },
+        {
+          "title": "pandas：合併與連接資料",
+          "url": "https://pandas.pydata.org/docs/user_guide/merging.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：資料導向程式設計",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=51b2335f-4657-4047-a886-764af9593082_112年初級巨量資料分析師能力鑑定簡章_1230.pdf&type=10"
+        }
+      ],
+      "topic": "CSV 欄位清理規則",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-bda-junior-1-009",
+      "certId": "bda",
+      "levelId": "junior",
+      "subjectId": "bda-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "同一R8交易重送兩次，避免營收重複計算的依據是？",
+      "options": {
+        "A": "使用order_id作去重鍵",
+        "B": "依amount相同就刪除所有交易",
+        "C": "依customer_id每天只留一筆",
+        "D": "依資料列位置每隔一列刪除"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "相同金額或客戶可有不同交易，需採交易唯一鍵辨認重送。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/bda-junior-1/figure-03.svg",
+          "alt": "CSV 欄位清理規則。欄位依序為：原始欄位、指定規則。customer_id：字串；保留前導零，如 0012；amount：去空白後轉數值；空白視為缺漏；order_id：交易唯一鍵；重送應去重。原始列：order_id=R8, customer_id=0012, amount=\" 10.5 \"。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Python：資料結構",
+          "url": "https://docs.python.org/3/tutorial/datastructures.html"
+        },
+        {
+          "title": "PostgreSQL：資料表連接",
+          "url": "https://www.postgresql.org/docs/current/tutorial-join.html"
+        },
+        {
+          "title": "pandas：合併與連接資料",
+          "url": "https://pandas.pydata.org/docs/user_guide/merging.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：資料導向程式設計",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=51b2335f-4657-4047-a886-764af9593082_112年初級巨量資料分析師能力鑑定簡章_1230.pdf&type=10"
+        }
+      ],
+      "topic": "CSV 欄位清理規則",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-bda-junior-1-010",
+      "certId": "bda",
+      "levelId": "junior",
+      "subjectId": "bda-junior-1",
+      "sourceKind": "original-practice",
+      "stem": "清理時把空白amount一律補0，最可能掩蓋什麼？",
+      "options": {
+        "A": "前導零一定增加的問題",
+        "B": "未知金額與實際零元的差異",
+        "C": "唯一交易鍵必定失效",
+        "D": "文字編碼一定轉成ASCII"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "缺漏與實際為0具有不同語意，補值應有明確分析理由。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/bda-junior-1/figure-03.svg",
+          "alt": "CSV 欄位清理規則。欄位依序為：原始欄位、指定規則。customer_id：字串；保留前導零，如 0012；amount：去空白後轉數值；空白視為缺漏；order_id：交易唯一鍵；重送應去重。原始列：order_id=R8, customer_id=0012, amount=\" 10.5 \"。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Python：資料結構",
+          "url": "https://docs.python.org/3/tutorial/datastructures.html"
+        },
+        {
+          "title": "PostgreSQL：資料表連接",
+          "url": "https://www.postgresql.org/docs/current/tutorial-join.html"
+        },
+        {
+          "title": "pandas：合併與連接資料",
+          "url": "https://pandas.pydata.org/docs/user_guide/merging.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：資料導向程式設計",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=51b2335f-4657-4047-a886-764af9593082_112年初級巨量資料分析師能力鑑定簡章_1230.pdf&type=10"
+        }
+      ],
+      "topic": "CSV 欄位清理規則",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-bda-junior-2-001",
+      "certId": "bda",
+      "levelId": "junior",
+      "subjectId": "bda-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "甲組的平均數是多少？",
+      "options": {
+        "A": "3",
+        "B": "4",
+        "C": "5",
+        "D": "8"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "(2＋3＋3＋4＋8)÷5＝4。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/bda-junior-2/figure-01.svg",
+          "alt": "兩組日需求量。欄位依序為：資料組、由小到大數值。甲：2, 3, 3, 4, 8；乙：2, 3, 3, 4, 80。每組5筆；比較平均數、中位數與離群值敏感度。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Python：統計函式與資料定義",
+          "url": "https://docs.python.org/3/library/statistics.html"
+        },
+        {
+          "title": "scikit-learn：資料洩漏與前處理",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：資料處理與分析概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=51b2335f-4657-4047-a886-764af9593082_112年初級巨量資料分析師能力鑑定簡章_1230.pdf&type=10"
+        }
+      ],
+      "topic": "兩組日需求量",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-bda-junior-2-002",
+      "certId": "bda",
+      "levelId": "junior",
+      "subjectId": "bda-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "甲組和乙組的中位數分別為何？",
+      "options": {
+        "A": "4與18.4",
+        "B": "3與4",
+        "C": "3與3",
+        "D": "4與4"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "排序後5筆的中間第3筆皆為3，不受末端8改80影響。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/bda-junior-2/figure-01.svg",
+          "alt": "兩組日需求量。欄位依序為：資料組、由小到大數值。甲：2, 3, 3, 4, 8；乙：2, 3, 3, 4, 80。每組5筆；比較平均數、中位數與離群值敏感度。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Python：統計函式與資料定義",
+          "url": "https://docs.python.org/3/library/statistics.html"
+        },
+        {
+          "title": "scikit-learn：資料洩漏與前處理",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：資料處理與分析概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=51b2335f-4657-4047-a886-764af9593082_112年初級巨量資料分析師能力鑑定簡章_1230.pdf&type=10"
+        }
+      ],
+      "topic": "兩組日需求量",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-bda-junior-2-003",
+      "certId": "bda",
+      "levelId": "junior",
+      "subjectId": "bda-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "哪個敘述最符合將8改為80的影響？",
+      "options": {
+        "A": "平均數不變而中位數改變",
+        "B": "兩者都一定不變",
+        "C": "平均數一定下降",
+        "D": "平均數改變而中位數不變"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "平均由4變18.4，中位仍3；極端值可顯著影響平均。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/bda-junior-2/figure-01.svg",
+          "alt": "兩組日需求量。欄位依序為：資料組、由小到大數值。甲：2, 3, 3, 4, 8；乙：2, 3, 3, 4, 80。每組5筆；比較平均數、中位數與離群值敏感度。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Python：統計函式與資料定義",
+          "url": "https://docs.python.org/3/library/statistics.html"
+        },
+        {
+          "title": "scikit-learn：資料洩漏與前處理",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：資料處理與分析概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=51b2335f-4657-4047-a886-764af9593082_112年初級巨量資料分析師能力鑑定簡章_1230.pdf&type=10"
+        }
+      ],
+      "topic": "兩組日需求量",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-bda-junior-2-004",
+      "certId": "bda",
+      "levelId": "junior",
+      "subjectId": "bda-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "僅使用已回報的營收估計平均，結果是多少？",
+      "options": {
+        "A": "50千元",
+        "B": "33.33千元",
+        "C": "100千元",
+        "D": "60千元"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "有效營收是100與0，共兩筆；平均50，不把缺漏當0。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/bda-junior-2/figure-02.svg",
+          "alt": "門市資料缺漏。欄位依序為：門市、營收／客流。A：100／10；B：缺漏／20；C：0／0。缺漏代表未回報；0代表確認後的零。營收單位為千元。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Python：統計函式與資料定義",
+          "url": "https://docs.python.org/3/library/statistics.html"
+        },
+        {
+          "title": "scikit-learn：資料洩漏與前處理",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：資料處理與分析概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=51b2335f-4657-4047-a886-764af9593082_112年初級巨量資料分析師能力鑑定簡章_1230.pdf&type=10"
+        }
+      ],
+      "topic": "門市資料缺漏",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-bda-junior-2-005",
+      "certId": "bda",
+      "levelId": "junior",
+      "subjectId": "bda-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "要判斷客流與營收的關係，B門市缺漏應怎麼處理？",
+      "options": {
+        "A": "直接當0且不註記",
+        "B": "先調查缺漏機制並記錄處理方法",
+        "C": "用客流20直接填成營收20",
+        "D": "刪除整個客流欄避免缺漏"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "缺漏是否隨系統或門市表現發生會影響估計，需透明記錄。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/bda-junior-2/figure-02.svg",
+          "alt": "門市資料缺漏。欄位依序為：門市、營收／客流。A：100／10；B：缺漏／20；C：0／0。缺漏代表未回報；0代表確認後的零。營收單位為千元。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Python：統計函式與資料定義",
+          "url": "https://docs.python.org/3/library/statistics.html"
+        },
+        {
+          "title": "scikit-learn：資料洩漏與前處理",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：資料處理與分析概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=51b2335f-4657-4047-a886-764af9593082_112年初級巨量資料分析師能力鑑定簡章_1230.pdf&type=10"
+        }
+      ],
+      "topic": "門市資料缺漏",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-bda-junior-2-006",
+      "certId": "bda",
+      "levelId": "junior",
+      "subjectId": "bda-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "C門市的人均消費0÷0應如何表示？",
+      "options": {
+        "A": "0元且無需註記",
+        "B": "無限大元",
+        "C": "未定義／不可計算並說明原因",
+        "D": "1元"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "分母為0無法計算有效比率；0÷0不是0。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/bda-junior-2/figure-02.svg",
+          "alt": "門市資料缺漏。欄位依序為：門市、營收／客流。A：100／10；B：缺漏／20；C：0／0。缺漏代表未回報；0代表確認後的零。營收單位為千元。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Python：統計函式與資料定義",
+          "url": "https://docs.python.org/3/library/statistics.html"
+        },
+        {
+          "title": "scikit-learn：資料洩漏與前處理",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：資料處理與分析概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=51b2335f-4657-4047-a886-764af9593082_112年初級巨量資料分析師能力鑑定簡章_1230.pdf&type=10"
+        }
+      ],
+      "topic": "門市資料缺漏",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-bda-junior-2-007",
+      "certId": "bda",
+      "levelId": "junior",
+      "subjectId": "bda-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "測試值200依圖中規則轉換，z為何？",
+      "options": {
+        "A": "2",
+        "B": "0.3",
+        "C": "20",
+        "D": "3"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "(200−170)÷10＝3；用訓練所得參數套用測試資料。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/bda-junior-2/figure-03.svg",
+          "alt": "模型前處理分工。欄位依序為：資料集、身高觀測值(cm)。訓練集：160, 170, 180；測試集：200；訓練縮放規則：z=(x−170)/10。題目指定訓練平均170、尺度10；不要重算尺度。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Python：統計函式與資料定義",
+          "url": "https://docs.python.org/3/library/statistics.html"
+        },
+        {
+          "title": "scikit-learn：資料洩漏與前處理",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：資料處理與分析概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=51b2335f-4657-4047-a886-764af9593082_112年初級巨量資料分析師能力鑑定簡章_1230.pdf&type=10"
+        }
+      ],
+      "topic": "模型前處理分工",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-bda-junior-2-008",
+      "certId": "bda",
+      "levelId": "junior",
+      "subjectId": "bda-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "先把測試200加入計算平均再訓練，主要問題是？",
+      "options": {
+        "A": "測試資訊洩漏到前處理",
+        "B": "訓練資料筆數必須為偶數",
+        "C": "標準化必然變成分類問題",
+        "D": "所有測試值都會變成缺漏"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "測試集應保留作泛化評估，前處理參數應只從訓練資料學得。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/bda-junior-2/figure-03.svg",
+          "alt": "模型前處理分工。欄位依序為：資料集、身高觀測值(cm)。訓練集：160, 170, 180；測試集：200；訓練縮放規則：z=(x−170)/10。題目指定訓練平均170、尺度10；不要重算尺度。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Python：統計函式與資料定義",
+          "url": "https://docs.python.org/3/library/statistics.html"
+        },
+        {
+          "title": "scikit-learn：資料洩漏與前處理",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：資料處理與分析概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=51b2335f-4657-4047-a886-764af9593082_112年初級巨量資料分析師能力鑑定簡章_1230.pdf&type=10"
+        }
+      ],
+      "topic": "模型前處理分工",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-bda-junior-2-009",
+      "certId": "bda",
+      "levelId": "junior",
+      "subjectId": "bda-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "若另一欄所有訓練值皆為5，直接除以標準差會遇到什麼？",
+      "options": {
+        "A": "平均數必定不存在",
+        "B": "尺度為0，需處理常數欄",
+        "C": "資料必須轉成字串",
+        "D": "測試集不能含5"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "常數欄變異為0，需依工具規則移除或安全處理，避免除零。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/bda-junior-2/figure-03.svg",
+          "alt": "模型前處理分工。欄位依序為：資料集、身高觀測值(cm)。訓練集：160, 170, 180；測試集：200；訓練縮放規則：z=(x−170)/10。題目指定訓練平均170、尺度10；不要重算尺度。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Python：統計函式與資料定義",
+          "url": "https://docs.python.org/3/library/statistics.html"
+        },
+        {
+          "title": "scikit-learn：資料洩漏與前處理",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：資料處理與分析概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=51b2335f-4657-4047-a886-764af9593082_112年初級巨量資料分析師能力鑑定簡章_1230.pdf&type=10"
+        }
+      ],
+      "topic": "模型前處理分工",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-bda-junior-2-010",
+      "certId": "bda",
+      "levelId": "junior",
+      "subjectId": "bda-junior-2",
+      "sourceKind": "original-practice",
+      "stem": "模型上線時收到身高200，最一致的轉換方式是？",
+      "options": {
+        "A": "用該單筆200作新的平均",
+        "B": "每次都用測試集重新擬合",
+        "C": "沿用已保存的訓練縮放參數",
+        "D": "把所有高於180的值改為缺漏"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "部署需與訓練相同轉換；分布漂移另行監測，不任意更動推論尺度。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/bda-junior-2/figure-03.svg",
+          "alt": "模型前處理分工。欄位依序為：資料集、身高觀測值(cm)。訓練集：160, 170, 180；測試集：200；訓練縮放規則：z=(x−170)/10。題目指定訓練平均170、尺度10；不要重算尺度。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Python：統計函式與資料定義",
+          "url": "https://docs.python.org/3/library/statistics.html"
+        },
+        {
+          "title": "scikit-learn：資料洩漏與前處理",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：資料處理與分析概論",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=51b2335f-4657-4047-a886-764af9593082_112年初級巨量資料分析師能力鑑定簡章_1230.pdf&type=10"
+        }
+      ],
+      "topic": "模型前處理分工",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-bda-intermediate-1-001",
+      "certId": "bda",
+      "levelId": "intermediate",
+      "subjectId": "bda-intermediate-1",
+      "sourceKind": "original-practice",
+      "stem": "B相較A的購買率增加多少百分點？",
+      "options": {
+        "A": "20百分點",
+        "B": "0.2百分點",
+        "C": "2百分點",
+        "D": "120百分點"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "A=10%、B=12%，相減為2百分點；相對提升則為20%。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/bda-intermediate-1/figure-01.svg",
+          "alt": "隨機A/B實驗觀測。欄位依序為：組別、人數／完成購買。A：1000／100；B：1000／120。隨機分派；各人只計一次。以下百分點只描述樣本，不自動代表顯著。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NIST：平均數信賴區間",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm"
+        },
+        {
+          "title": "scikit-learn：交叉驗證",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        },
+        {
+          "title": "scikit-learn：模型評估指標",
+          "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：資料分析與資料科學",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=d61cea7b-6293-4f2f-8627-cc88384d1d1c_112年中級巨量資料分析師能力鑑定簡章_0427.pdf&type=10"
+        }
+      ],
+      "topic": "隨機A/B實驗觀測",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-bda-intermediate-1-002",
+      "certId": "bda",
+      "levelId": "intermediate",
+      "subjectId": "bda-intermediate-1",
+      "sourceKind": "original-practice",
+      "stem": "相對於A，B購買率的相對提升為何？",
+      "options": {
+        "A": "2%",
+        "B": "12%",
+        "C": "200%",
+        "D": "20%"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "(12%−10%)÷10%=20%；應區分相對百分比與百分點。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/bda-intermediate-1/figure-01.svg",
+          "alt": "隨機A/B實驗觀測。欄位依序為：組別、人數／完成購買。A：1000／100；B：1000／120。隨機分派；各人只計一次。以下百分點只描述樣本，不自動代表顯著。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NIST：平均數信賴區間",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm"
+        },
+        {
+          "title": "scikit-learn：交叉驗證",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        },
+        {
+          "title": "scikit-learn：模型評估指標",
+          "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：資料分析與資料科學",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=d61cea7b-6293-4f2f-8627-cc88384d1d1c_112年中級巨量資料分析師能力鑑定簡章_0427.pdf&type=10"
+        }
+      ],
+      "topic": "隨機A/B實驗觀測",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-bda-intermediate-1-003",
+      "certId": "bda",
+      "levelId": "intermediate",
+      "subjectId": "bda-intermediate-1",
+      "sourceKind": "original-practice",
+      "stem": "只看100與120就宣稱B必然較佳，缺少什麼關鍵工作？",
+      "options": {
+        "A": "評估抽樣不確定性與實驗設計",
+        "B": "將兩組人數相加作單一轉換率即可",
+        "C": "把未購買者從分母移除",
+        "D": "改用購買人數當分母"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "樣本差異可能受隨機波動影響，還需估計區間或適當檢定及檢查隨機化。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/bda-intermediate-1/figure-01.svg",
+          "alt": "隨機A/B實驗觀測。欄位依序為：組別、人數／完成購買。A：1000／100；B：1000／120。隨機分派；各人只計一次。以下百分點只描述樣本，不自動代表顯著。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NIST：平均數信賴區間",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm"
+        },
+        {
+          "title": "scikit-learn：交叉驗證",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        },
+        {
+          "title": "scikit-learn：模型評估指標",
+          "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：資料分析與資料科學",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=d61cea7b-6293-4f2f-8627-cc88384d1d1c_112年中級巨量資料分析師能力鑑定簡章_0427.pdf&type=10"
+        }
+      ],
+      "topic": "隨機A/B實驗觀測",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-bda-intermediate-1-004",
+      "certId": "bda",
+      "levelId": "intermediate",
+      "subjectId": "bda-intermediate-1",
+      "sourceKind": "original-practice",
+      "stem": "依指定公式，區間為何？",
+      "options": {
+        "A": "48～52",
+        "B": "46.08～53.92",
+        "C": "40.2～59.8",
+        "D": "49.02～50.98"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "1.96×2=3.92，所以50±3.92。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/bda-intermediate-1/figure-02.svg",
+          "alt": "平均值信賴區間練習。欄位依序為：項目、已知值。樣本平均：50；平均數標準誤SE：2；本題近似公式：平均 ± 1.96×SE。以題目指定的常態近似計算；實務須檢查假設。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NIST：平均數信賴區間",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm"
+        },
+        {
+          "title": "scikit-learn：交叉驗證",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        },
+        {
+          "title": "scikit-learn：模型評估指標",
+          "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：資料分析與資料科學",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=d61cea7b-6293-4f2f-8627-cc88384d1d1c_112年中級巨量資料分析師能力鑑定簡章_0427.pdf&type=10"
+        }
+      ],
+      "topic": "平均值信賴區間練習",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-bda-intermediate-1-005",
+      "certId": "bda",
+      "levelId": "intermediate",
+      "subjectId": "bda-intermediate-1",
+      "sourceKind": "original-practice",
+      "stem": "其他條件相同，樣本數增為4倍，SE約如何變化？",
+      "options": {
+        "A": "增為4倍",
+        "B": "降為原來四分之一",
+        "C": "降為原來一半",
+        "D": "完全不變"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "獨立同分布且變異固定時，平均數SE與1/√n成比例。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/bda-intermediate-1/figure-02.svg",
+          "alt": "平均值信賴區間練習。欄位依序為：項目、已知值。樣本平均：50；平均數標準誤SE：2；本題近似公式：平均 ± 1.96×SE。以題目指定的常態近似計算；實務須檢查假設。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NIST：平均數信賴區間",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm"
+        },
+        {
+          "title": "scikit-learn：交叉驗證",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        },
+        {
+          "title": "scikit-learn：模型評估指標",
+          "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：資料分析與資料科學",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=d61cea7b-6293-4f2f-8627-cc88384d1d1c_112年中級巨量資料分析師能力鑑定簡章_0427.pdf&type=10"
+        }
+      ],
+      "topic": "平均值信賴區間練習",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-bda-intermediate-1-006",
+      "certId": "bda",
+      "levelId": "intermediate",
+      "subjectId": "bda-intermediate-1",
+      "sourceKind": "original-practice",
+      "stem": "頻率學派95%信賴區間最合適的解讀是？",
+      "options": {
+        "A": "本次95%的個體數值都在區間內",
+        "B": "母數每次抽樣都隨機改變",
+        "C": "區間內任一數值必定等可能",
+        "D": "重複同法抽樣所得區間約95%涵蓋固定母數"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "信賴水準描述建構程序的長期涵蓋率，不是個體資料的涵蓋率。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/bda-intermediate-1/figure-02.svg",
+          "alt": "平均值信賴區間練習。欄位依序為：項目、已知值。樣本平均：50；平均數標準誤SE：2；本題近似公式：平均 ± 1.96×SE。以題目指定的常態近似計算；實務須檢查假設。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NIST：平均數信賴區間",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm"
+        },
+        {
+          "title": "scikit-learn：交叉驗證",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        },
+        {
+          "title": "scikit-learn：模型評估指標",
+          "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：資料分析與資料科學",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=d61cea7b-6293-4f2f-8627-cc88384d1d1c_112年中級巨量資料分析師能力鑑定簡章_0427.pdf&type=10"
+        }
+      ],
+      "topic": "平均值信賴區間練習",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-bda-intermediate-1-007",
+      "certId": "bda",
+      "levelId": "intermediate",
+      "subjectId": "bda-intermediate-1",
+      "sourceKind": "original-practice",
+      "stem": "退款狀態為何不宜作取消前模型的特徵？",
+      "options": {
+        "A": "預測當下尚未可知，造成目標洩漏",
+        "B": "二元資料不能用於任何模型",
+        "C": "退款欄必定含小數",
+        "D": "資料量會因新增欄位變少"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "即使歷史表有值，也須確認特徵在實際預測時間可取得。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/bda-intermediate-1/figure-03.svg",
+          "alt": "訂閱取消預測時間線。欄位依序為：資料階段、時間／可取得資訊。訓練：1～6月當時可觀測特徵；驗證：7月；最終測試：8月；禁用特徵：取消後才產生的退款狀態。目標是在取消之前預警。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NIST：平均數信賴區間",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm"
+        },
+        {
+          "title": "scikit-learn：交叉驗證",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        },
+        {
+          "title": "scikit-learn：模型評估指標",
+          "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：資料分析與資料科學",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=d61cea7b-6293-4f2f-8627-cc88384d1d1c_112年中級巨量資料分析師能力鑑定簡章_0427.pdf&type=10"
+        }
+      ],
+      "topic": "訂閱取消預測時間線",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-bda-intermediate-1-008",
+      "certId": "bda",
+      "levelId": "intermediate",
+      "subjectId": "bda-intermediate-1",
+      "sourceKind": "original-practice",
+      "stem": "7月驗證集最適合用於哪項工作？",
+      "options": {
+        "A": "作8月之後才生成特徵的來源",
+        "B": "選模型與超參數",
+        "C": "取代所有訓練資料",
+        "D": "每次報告只挑分數最高的測試結果"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "驗證資料用於開發選擇，最終測試應保留獨立性。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/bda-intermediate-1/figure-03.svg",
+          "alt": "訂閱取消預測時間線。欄位依序為：資料階段、時間／可取得資訊。訓練：1～6月當時可觀測特徵；驗證：7月；最終測試：8月；禁用特徵：取消後才產生的退款狀態。目標是在取消之前預警。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NIST：平均數信賴區間",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm"
+        },
+        {
+          "title": "scikit-learn：交叉驗證",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        },
+        {
+          "title": "scikit-learn：模型評估指標",
+          "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：資料分析與資料科學",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=d61cea7b-6293-4f2f-8627-cc88384d1d1c_112年中級巨量資料分析師能力鑑定簡章_0427.pdf&type=10"
+        }
+      ],
+      "topic": "訂閱取消預測時間線",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-bda-intermediate-1-009",
+      "certId": "bda",
+      "levelId": "intermediate",
+      "subjectId": "bda-intermediate-1",
+      "sourceKind": "original-practice",
+      "stem": "把1～8月所有列隨機混合切割，對此時間預測可能造成什麼？",
+      "options": {
+        "A": "必定使所有評估值為0",
+        "B": "完全消除季節性風險",
+        "C": "未來模式進入訓練而高估未來表現",
+        "D": "必定保持時間因果順序"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "時間切割較貼近先訓練後預測的部署場景。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/bda-intermediate-1/figure-03.svg",
+          "alt": "訂閱取消預測時間線。欄位依序為：資料階段、時間／可取得資訊。訓練：1～6月當時可觀測特徵；驗證：7月；最終測試：8月；禁用特徵：取消後才產生的退款狀態。目標是在取消之前預警。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NIST：平均數信賴區間",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm"
+        },
+        {
+          "title": "scikit-learn：交叉驗證",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        },
+        {
+          "title": "scikit-learn：模型評估指標",
+          "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：資料分析與資料科學",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=d61cea7b-6293-4f2f-8627-cc88384d1d1c_112年中級巨量資料分析師能力鑑定簡章_0427.pdf&type=10"
+        }
+      ],
+      "topic": "訂閱取消預測時間線",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-bda-intermediate-1-010",
+      "certId": "bda",
+      "levelId": "intermediate",
+      "subjectId": "bda-intermediate-1",
+      "sourceKind": "original-practice",
+      "stem": "同一使用者多筆高度相似紀錄分散在訓練與測試，應額外檢查什麼？",
+      "options": {
+        "A": "類別名稱是否依字母排序",
+        "B": "訓練與測試欄位是否刻意不同",
+        "C": "是否把所有使用者ID當目標",
+        "D": "使用者群組洩漏與評估目標"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "若目標為新使用者泛化，需按使用者分組切割，避免近乎重複資料跨集合。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/bda-intermediate-1/figure-03.svg",
+          "alt": "訂閱取消預測時間線。欄位依序為：資料階段、時間／可取得資訊。訓練：1～6月當時可觀測特徵；驗證：7月；最終測試：8月；禁用特徵：取消後才產生的退款狀態。目標是在取消之前預警。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NIST：平均數信賴區間",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm"
+        },
+        {
+          "title": "scikit-learn：交叉驗證",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        },
+        {
+          "title": "scikit-learn：模型評估指標",
+          "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：資料分析與資料科學",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=d61cea7b-6293-4f2f-8627-cc88384d1d1c_112年中級巨量資料分析師能力鑑定簡章_0427.pdf&type=10"
+        }
+      ],
+      "topic": "訂閱取消預測時間線",
+      "practicalPreparation": false,
+      "historical": true
+    },
+    {
+      "id": "practice-bda-intermediate-2-001",
+      "certId": "bda",
+      "levelId": "intermediate",
+      "subjectId": "bda-intermediate-2",
+      "sourceKind": "original-practice",
+      "stem": "此工作只有一個任務特別久，最符合哪種現象？",
+      "options": {
+        "A": "每個分區完全均衡",
+        "B": "全域資料量只有900筆",
+        "C": "所有節點都缺少同一欄位",
+        "D": "資料傾斜"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "P0處理900萬筆，遠大於其他分區，單一慢任務會拖延整體完成。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/bda-intermediate-2/figure-01.svg",
+          "alt": "分散式聚合的分區負載。欄位依序為：分區、輸入筆數。P0：900萬；P1：30萬；P2：30萬；P3：40萬。各分區平均每筆運算量相近；P0主要來自同一熱門鍵。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Apache Spark：SQL 效能調整",
+          "url": "https://spark.apache.org/docs/latest/sql-performance-tuning.html"
+        },
+        {
+          "title": "PostgreSQL：資料表連接",
+          "url": "https://www.postgresql.org/docs/current/tutorial-join.html"
+        },
+        {
+          "title": "pandas：合併與連接資料",
+          "url": "https://pandas.pydata.org/docs/user_guide/merging.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：巨量資料分析實作",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=d61cea7b-6293-4f2f-8627-cc88384d1d1c_112年中級巨量資料分析師能力鑑定簡章_0427.pdf&type=10"
+        }
+      ],
+      "topic": "分散式聚合的分區負載",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-bda-intermediate-2-002",
+      "certId": "bda",
+      "levelId": "intermediate",
+      "subjectId": "bda-intermediate-2",
+      "sourceKind": "original-practice",
+      "stem": "對可分解的SUM聚合，哪項策略較可能緩解熱門鍵瓶頸？",
+      "options": {
+        "A": "先加鹽分散局部聚合，再按原鍵合併",
+        "B": "把所有資料coalesce到1個分區",
+        "C": "每筆都collect到driver逐筆相加",
+        "D": "刪掉所有熱門鍵資料"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "分散部分聚合後再合併可降低單一鍵集中負載，但要保證聚合語意正確。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/bda-intermediate-2/figure-01.svg",
+          "alt": "分散式聚合的分區負載。欄位依序為：分區、輸入筆數。P0：900萬；P1：30萬；P2：30萬；P3：40萬。各分區平均每筆運算量相近；P0主要來自同一熱門鍵。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Apache Spark：SQL 效能調整",
+          "url": "https://spark.apache.org/docs/latest/sql-performance-tuning.html"
+        },
+        {
+          "title": "PostgreSQL：資料表連接",
+          "url": "https://www.postgresql.org/docs/current/tutorial-join.html"
+        },
+        {
+          "title": "pandas：合併與連接資料",
+          "url": "https://pandas.pydata.org/docs/user_guide/merging.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：巨量資料分析實作",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=d61cea7b-6293-4f2f-8627-cc88384d1d1c_112年中級巨量資料分析師能力鑑定簡章_0427.pdf&type=10"
+        }
+      ],
+      "topic": "分散式聚合的分區負載",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-bda-intermediate-2-003",
+      "certId": "bda",
+      "levelId": "intermediate",
+      "subjectId": "bda-intermediate-2",
+      "sourceKind": "original-practice",
+      "stem": "只增加工作節點，卻不改熱門鍵分配，為何可能收益有限？",
+      "options": {
+        "A": "節點越多資料一定越少",
+        "B": "熱門鍵仍集中在單一任務",
+        "C": "SUM不能平行運算",
+        "D": "所有網路傳輸都會自動消失"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "瓶頸在資料分配，新增閒置資源不會自動拆開同一熱點任務。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/bda-intermediate-2/figure-01.svg",
+          "alt": "分散式聚合的分區負載。欄位依序為：分區、輸入筆數。P0：900萬；P1：30萬；P2：30萬；P3：40萬。各分區平均每筆運算量相近；P0主要來自同一熱門鍵。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Apache Spark：SQL 效能調整",
+          "url": "https://spark.apache.org/docs/latest/sql-performance-tuning.html"
+        },
+        {
+          "title": "PostgreSQL：資料表連接",
+          "url": "https://www.postgresql.org/docs/current/tutorial-join.html"
+        },
+        {
+          "title": "pandas：合併與連接資料",
+          "url": "https://pandas.pydata.org/docs/user_guide/merging.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：巨量資料分析實作",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=d61cea7b-6293-4f2f-8627-cc88384d1d1c_112年中級巨量資料分析師能力鑑定簡章_0427.pdf&type=10"
+        }
+      ],
+      "topic": "分散式聚合的分區負載",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-bda-intermediate-2-004",
+      "certId": "bda",
+      "levelId": "intermediate",
+      "subjectId": "bda-intermediate-2",
+      "sourceKind": "original-practice",
+      "stem": "適當條件下，廣播商品維度的主要好處是？",
+      "options": {
+        "A": "把500GB交易表全部載入driver",
+        "B": "讓商品鍵不需唯一也不影響列數",
+        "C": "減少大交易表為連接而跨網路重新分配",
+        "D": "自動修正缺漏product_id"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "小表複製到執行器可讓大表就地匹配，是否適用仍取決於大小與記憶體。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/bda-intermediate-2/figure-02.svg",
+          "alt": "交易表與商品維度。欄位依序為：資料集、大小／鍵。交易表：500GB／product_id可重複；商品維度：5MB／product_id唯一；操作：以product_id連接後按類別彙總。可評估廣播小表；仍需確認執行器記憶體與執行計畫。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Apache Spark：SQL 效能調整",
+          "url": "https://spark.apache.org/docs/latest/sql-performance-tuning.html"
+        },
+        {
+          "title": "PostgreSQL：資料表連接",
+          "url": "https://www.postgresql.org/docs/current/tutorial-join.html"
+        },
+        {
+          "title": "pandas：合併與連接資料",
+          "url": "https://pandas.pydata.org/docs/user_guide/merging.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：巨量資料分析實作",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=d61cea7b-6293-4f2f-8627-cc88384d1d1c_112年中級巨量資料分析師能力鑑定簡章_0427.pdf&type=10"
+        }
+      ],
+      "topic": "交易表與商品維度",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-bda-intermediate-2-005",
+      "certId": "bda",
+      "levelId": "intermediate",
+      "subjectId": "bda-intermediate-2",
+      "sourceKind": "original-practice",
+      "stem": "商品維度的某鍵出現兩次，連接後營收加倍，應先查什麼？",
+      "options": {
+        "A": "交易表是否需要全部排序",
+        "B": "所有金額是否改成整數",
+        "C": "是否禁止使用任何JOIN",
+        "D": "維度唯一鍵違反造成多重匹配"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "一對多匹配可把同一交易複製；先修正維度資料與業務規則。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/bda-intermediate-2/figure-02.svg",
+          "alt": "交易表與商品維度。欄位依序為：資料集、大小／鍵。交易表：500GB／product_id可重複；商品維度：5MB／product_id唯一；操作：以product_id連接後按類別彙總。可評估廣播小表；仍需確認執行器記憶體與執行計畫。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Apache Spark：SQL 效能調整",
+          "url": "https://spark.apache.org/docs/latest/sql-performance-tuning.html"
+        },
+        {
+          "title": "PostgreSQL：資料表連接",
+          "url": "https://www.postgresql.org/docs/current/tutorial-join.html"
+        },
+        {
+          "title": "pandas：合併與連接資料",
+          "url": "https://pandas.pydata.org/docs/user_guide/merging.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：巨量資料分析實作",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=d61cea7b-6293-4f2f-8627-cc88384d1d1c_112年中級巨量資料分析師能力鑑定簡章_0427.pdf&type=10"
+        }
+      ],
+      "topic": "交易表與商品維度",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-bda-intermediate-2-006",
+      "certId": "bda",
+      "levelId": "intermediate",
+      "subjectId": "bda-intermediate-2",
+      "sourceKind": "original-practice",
+      "stem": "分析者對500GB結果呼叫collect，主要風險是？",
+      "options": {
+        "A": "將資料集中到driver造成記憶體不足",
+        "B": "自動建立高可用備援",
+        "C": "保證所有計算都在資料節點完成",
+        "D": "自動把結果縮為5MB"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "collect回傳全部結果到driver，應先彙總、限制或分散式寫出。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/bda-intermediate-2/figure-02.svg",
+          "alt": "交易表與商品維度。欄位依序為：資料集、大小／鍵。交易表：500GB／product_id可重複；商品維度：5MB／product_id唯一；操作：以product_id連接後按類別彙總。可評估廣播小表；仍需確認執行器記憶體與執行計畫。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Apache Spark：SQL 效能調整",
+          "url": "https://spark.apache.org/docs/latest/sql-performance-tuning.html"
+        },
+        {
+          "title": "PostgreSQL：資料表連接",
+          "url": "https://www.postgresql.org/docs/current/tutorial-join.html"
+        },
+        {
+          "title": "pandas：合併與連接資料",
+          "url": "https://pandas.pydata.org/docs/user_guide/merging.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：巨量資料分析實作",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=d61cea7b-6293-4f2f-8627-cc88384d1d1c_112年中級巨量資料分析師能力鑑定簡章_0427.pdf&type=10"
+        }
+      ],
+      "topic": "交易表與商品維度",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-bda-intermediate-2-007",
+      "certId": "bda",
+      "levelId": "intermediate",
+      "subjectId": "bda-intermediate-2",
+      "sourceKind": "original-practice",
+      "stem": "重試相同batch時，以event_id做upsert的主要目的為何？",
+      "options": {
+        "A": "保證每次重試營收都增加一倍",
+        "B": "維持冪等性，避免同事件重複新增",
+        "C": "把所有缺漏欄位改成0",
+        "D": "讓schema檢查失效"
+      },
+      "answer": "B",
+      "multiple": false,
+      "explanation": "重試後目標狀態應與成功執行一次一致。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/bda-intermediate-2/figure-03.svg",
+          "alt": "每日匯入管線。欄位依序為：階段、規則。來源：batch_id=20261001，每列有event_id；暫存：驗證schema與唯一event_id；目標：依event_id更新或插入；重試：允許相同batch_id再次執行。設計需確保重試不重複累加。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Apache Spark：SQL 效能調整",
+          "url": "https://spark.apache.org/docs/latest/sql-performance-tuning.html"
+        },
+        {
+          "title": "PostgreSQL：資料表連接",
+          "url": "https://www.postgresql.org/docs/current/tutorial-join.html"
+        },
+        {
+          "title": "pandas：合併與連接資料",
+          "url": "https://pandas.pydata.org/docs/user_guide/merging.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：巨量資料分析實作",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=d61cea7b-6293-4f2f-8627-cc88384d1d1c_112年中級巨量資料分析師能力鑑定簡章_0427.pdf&type=10"
+        }
+      ],
+      "topic": "每日匯入管線",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-bda-intermediate-2-008",
+      "certId": "bda",
+      "levelId": "intermediate",
+      "subjectId": "bda-intermediate-2",
+      "sourceKind": "original-practice",
+      "stem": "來源amount從數值改成帶貨幣符號文字，應採何作法？",
+      "options": {
+        "A": "直接將解析失敗全部當0且不記錄",
+        "B": "只調高重試次數但不改解析規則",
+        "C": "偵測schema變更並驗證解析規則",
+        "D": "刪除batch_id避免重試"
+      },
+      "answer": "C",
+      "multiple": false,
+      "explanation": "格式漂移可能悄悄損失金額，應隔離或明確轉換並記錄錯誤率。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/bda-intermediate-2/figure-03.svg",
+          "alt": "每日匯入管線。欄位依序為：階段、規則。來源：batch_id=20261001，每列有event_id；暫存：驗證schema與唯一event_id；目標：依event_id更新或插入；重試：允許相同batch_id再次執行。設計需確保重試不重複累加。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Apache Spark：SQL 效能調整",
+          "url": "https://spark.apache.org/docs/latest/sql-performance-tuning.html"
+        },
+        {
+          "title": "PostgreSQL：資料表連接",
+          "url": "https://www.postgresql.org/docs/current/tutorial-join.html"
+        },
+        {
+          "title": "pandas：合併與連接資料",
+          "url": "https://pandas.pydata.org/docs/user_guide/merging.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：巨量資料分析實作",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=d61cea7b-6293-4f2f-8627-cc88384d1d1c_112年中級巨量資料分析師能力鑑定簡章_0427.pdf&type=10"
+        }
+      ],
+      "topic": "每日匯入管線",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-bda-intermediate-2-009",
+      "certId": "bda",
+      "levelId": "intermediate",
+      "subjectId": "bda-intermediate-2",
+      "sourceKind": "original-practice",
+      "stem": "尚未寫完全部資料就標記batch成功，可能導致什麼？",
+      "options": {
+        "A": "必然使所有金額重複兩次",
+        "B": "自動回補缺漏紀錄",
+        "C": "自動修正所有schema",
+        "D": "重跑被略過，留下不完整批次"
+      },
+      "answer": "D",
+      "multiple": false,
+      "explanation": "成功標記應與資料提交一致；避免標記先行造成半套成果。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/bda-intermediate-2/figure-03.svg",
+          "alt": "每日匯入管線。欄位依序為：階段、規則。來源：batch_id=20261001，每列有event_id；暫存：驗證schema與唯一event_id；目標：依event_id更新或插入；重試：允許相同batch_id再次執行。設計需確保重試不重複累加。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Apache Spark：SQL 效能調整",
+          "url": "https://spark.apache.org/docs/latest/sql-performance-tuning.html"
+        },
+        {
+          "title": "PostgreSQL：資料表連接",
+          "url": "https://www.postgresql.org/docs/current/tutorial-join.html"
+        },
+        {
+          "title": "pandas：合併與連接資料",
+          "url": "https://pandas.pydata.org/docs/user_guide/merging.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：巨量資料分析實作",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=d61cea7b-6293-4f2f-8627-cc88384d1d1c_112年中級巨量資料分析師能力鑑定簡章_0427.pdf&type=10"
+        }
+      ],
+      "topic": "每日匯入管線",
+      "practicalPreparation": true,
+      "historical": true
+    },
+    {
+      "id": "practice-bda-intermediate-2-010",
+      "certId": "bda",
+      "levelId": "intermediate",
+      "subjectId": "bda-intermediate-2",
+      "sourceKind": "original-practice",
+      "stem": "驗證匯入完整性時，哪組指標較有用？",
+      "options": {
+        "A": "來源與目標筆數、唯一鍵數及金額核對",
+        "B": "只比較壓縮後檔案大小",
+        "C": "只確認有任一列成功",
+        "D": "只檢查第一個event_id"
+      },
+      "answer": "A",
+      "multiple": false,
+      "explanation": "多層對帳能發現遺漏、重複與轉換差異，單一抽樣不能代表整批完整。",
+      "images": [
+        {
+          "path": "assets/questions/specialist/bda-intermediate-2/figure-03.svg",
+          "alt": "每日匯入管線。欄位依序為：階段、規則。來源：batch_id=20261001，每列有event_id；暫存：驗證schema與唯一event_id；目標：依event_id更新或插入；重試：允許相同batch_id再次執行。設計需確保重試不重複累加。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Apache Spark：SQL 效能調整",
+          "url": "https://spark.apache.org/docs/latest/sql-performance-tuning.html"
+        },
+        {
+          "title": "PostgreSQL：資料表連接",
+          "url": "https://www.postgresql.org/docs/current/tutorial-join.html"
+        },
+        {
+          "title": "pandas：合併與連接資料",
+          "url": "https://pandas.pydata.org/docs/user_guide/merging.html"
+        },
+        {
+          "title": "歷史考科範圍索引（舊網址可能失效）：巨量資料分析實作",
+          "url": "https://www.ipas.org.tw/DownloadFile.ashx?filename=d61cea7b-6293-4f2f-8627-cc88384d1d1c_112年中級巨量資料分析師能力鑑定簡章_0427.pdf&type=10"
+        }
+      ],
+      "topic": "每日匯入管線",
+      "practicalPreparation": true,
+      "historical": true
+    }
+  ]
+}

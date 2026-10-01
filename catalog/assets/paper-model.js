@@ -20,7 +20,15 @@
     Object.keys(b.drafts || {}).forEach(function (id) {
       if (!drafts[id] || (b.drafts[id].updatedAt || '') > (drafts[id].updatedAt || '')) drafts[id] = b.drafts[id];
     });
-    return { version: 1, attempts: Array.from(attempts.values()).sort(function (x, y) { return String(x.finishedAt).localeCompare(String(y.finishedAt)); }).slice(-400), drafts: drafts };
+    var result = { version: 1, attempts: Array.from(attempts.values()).sort(function (x, y) { return String(x.finishedAt).localeCompare(String(y.finishedAt)); }).slice(-400), drafts: drafts };
+    ['practice', 'favorites'].forEach(function (key) {
+      var records = Object.assign({}, a[key] || {});
+      Object.keys(b[key] || {}).forEach(function (id) {
+        if (!records[id] || (b[key][id].updatedAt || '') > (records[id].updatedAt || '')) records[id] = b[key][id];
+      });
+      if (Object.keys(records).length) result[key] = records;
+    });
+    return result;
   }
   function asset(path, extension) {
     return typeof path === 'string' && /^assets\/papers\/(?:[a-z0-9_-]+\/)*[a-z0-9_.-]+$/i.test(path) && !path.includes('..') && extension.test(path) ? path : '';
