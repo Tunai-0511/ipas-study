@@ -5,7 +5,7 @@ import { join, relative } from 'node:path';
 const root = fileURLToPath(new URL('../', import.meta.url));
 const output = join(root, 'dist');
 const publicPaths = ['index.html', 'admin/index.html', 'assets', 'media'];
-for (const app of ['junior', 'intermediate', 'bi']) {
+for (const app of ['junior', 'intermediate', 'bi', 'aiot']) {
   for (const entry of ['index.html', 'manifest.webmanifest', 'service-worker.js', 'assets', 'data']) {
     publicPaths.push(`${app}/${entry}`);
   }

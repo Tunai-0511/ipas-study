@@ -11,7 +11,7 @@ function loadBank(app) {
 
 test('question text does not contain known imported page headers or source-code debris', () => {
   const contamination = /第一科：人工智慧基礎概論|第二科：生成式 AI 應用與規劃|114 年第四次AI 應用規劃師-初級能力鑑定【公告試題】|答案題目|《以下空白》|";}$/;
-  for (const app of ['junior', 'intermediate', 'bi']) {
+  for (const app of ['junior', 'intermediate', 'bi', 'aiot']) {
     for (const question of loadBank(app)) {
       for (const [field, text] of Object.entries({ stem: question.stem, ...question.options })) {
         assert.doesNotMatch(text, contamination, `${app}: ${question.id} ${field}`);

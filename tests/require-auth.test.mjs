@@ -162,7 +162,7 @@ test('the bundled SDK keeps an unexpired saved login usable offline without fetc
   await h.client.auth.stopAutoRefresh();
 });
 
-for (const app of ['junior', 'intermediate', 'bi']) {
+for (const app of ['junior', 'intermediate', 'bi', 'aiot']) {
   test(`${app}: its real bootstrap cannot render or bind study controls before login`, async () => {
     const html = readFileSync(new URL(`../${app}/index.html`, import.meta.url), 'utf8');
     assert.match(html, /<html[^>]+data-auth-pending/);

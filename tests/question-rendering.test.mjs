@@ -49,7 +49,7 @@ const baseQuestion = {
   answer: 'B', explanation: '第一段解析\n\n第二段解析',
 };
 
-for (const app of ['junior', 'intermediate', 'bi']) {
+for (const app of ['junior', 'intermediate', 'bi', 'aiot']) {
   test(`${app}: Enter keeps links and buttons native while quiz shortcuts still work`, () => {
     const h = createQuiz(app, baseQuestion);
     const initial = h.mount.innerHTML;

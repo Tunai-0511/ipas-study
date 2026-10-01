@@ -14,7 +14,7 @@ test('a checkout inside a hidden worktree builds pages without publishing develo
   try {
     for (const path of ['index.html', 'admin/index.html', 'assets/logo.svg', 'media/hero.jpg',
       'supabase-setup.sql', '.env', 'README.md', 'assets/.secret']) await put(path);
-    for (const app of ['junior', 'intermediate', 'bi']) {
+    for (const app of ['junior', 'intermediate', 'bi', 'aiot']) {
       for (const path of ['index.html', 'manifest.webmanifest', 'service-worker.js',
         'assets/js/app.js', 'data/content.js', 'netlify/functions/ai-proxy.js']) await put(`${app}/${path}`);
     }
@@ -22,7 +22,7 @@ test('a checkout inside a hidden worktree builds pages without publishing develo
     await copyFile(new URL('../scripts/build-static.mjs', import.meta.url), join(root, 'scripts/build-static.mjs'));
     execFileSync(process.execPath, [join(root, 'scripts/build-static.mjs')]);
     for (const path of ['index.html', 'admin/index.html', 'junior/index.html',
-      'intermediate/assets/js/app.js', 'bi/data/content.js', 'assets/logo.svg', 'media/hero.jpg']) {
+      'intermediate/assets/js/app.js', 'bi/data/content.js', 'aiot/index.html', 'aiot/data/content.js', 'assets/logo.svg', 'media/hero.jpg']) {
       assert.equal(await readFile(join(root, 'dist', path), 'utf8'), path);
     }
     for (const path of ['supabase-setup.sql', '.env', 'README.md', 'assets/.secret',

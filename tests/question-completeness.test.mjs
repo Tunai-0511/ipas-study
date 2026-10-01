@@ -11,7 +11,7 @@ function load(app) {
   return [...context.window.APP_CONTENT.questions, ...context.window.APP_BANK];
 }
 
-for (const app of ['junior', 'intermediate', 'bi']) {
+for (const app of ['junior', 'intermediate', 'bi', 'aiot']) {
   test(`${app}: answerable questions have complete choices and available local figures`, () => {
     const questions = load(app);
     assert.equal(new Set(questions.map(q => q.id)).size, questions.length);

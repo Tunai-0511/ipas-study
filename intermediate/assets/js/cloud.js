@@ -1,6 +1,6 @@
 /* ============================================================
    cloud.js — Supabase 信箱登入＋雲端同步
-   同一份檔案供 junior / intermediate / bi 使用（依路徑自動判斷 app id）。
+   同一份檔案供 junior / intermediate / bi / aiot 使用（依路徑自動判斷 app id）。
    資料表：user_state(user_id, app, data jsonb, updated_at)，RLS 限本人。
    同步策略：登入/開機 pull→Store.importAll(merge)→push；
    之後 Store.persist 觸發 debounce push；分頁隱藏時強制 push。
@@ -9,8 +9,9 @@
   "use strict";
   var SB_URL = "https://mugrltimxkvlqyksymjq.supabase.co";
   var SB_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im11Z3JsdGlteGt2bHF5a3N5bWpxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODM2NTY0MDgsImV4cCI6MjA5OTIzMjQwOH0.OfJpNubw7WNF4ca56LZT_oWawiJlZm10Fm1l7rbRI8s";
-  var APP_ID = location.pathname.indexOf("/bi/") >= 0 ? "bi" :
-    (location.pathname.indexOf("/intermediate/") >= 0 ? "intermediate" : "junior");
+  var APP_ID = location.pathname.indexOf("/aiot/") >= 0 ? "aiot" :
+    (location.pathname.indexOf("/bi/") >= 0 ? "bi" :
+    (location.pathname.indexOf("/intermediate/") >= 0 ? "intermediate" : "junior"));
   var sb = null, pushTimer = null, syncPromise = null, lastEmail = "";
 
   function el(id) { return document.getElementById(id); }

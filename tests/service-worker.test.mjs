@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import vm from 'node:vm';
 
-const prefixes = { junior: 'ipas-jr-v', intermediate: 'aipsc-v', bi: 'ipas-bi-v' };
+const prefixes = { junior: 'ipas-jr-v', intermediate: 'aipsc-v', bi: 'ipas-bi-v', aiot: 'ipas-aiot-v' };
 
 function setupFetch(app) {
   const handlers = new Map(), cached = new Map(), writes = [];
@@ -71,7 +71,7 @@ for (const [app, prefix] of Object.entries(prefixes)) {
   test(`${app}: activating an update removes only its own old caches`, async () => {
     const handlers = new Map(), deleted = [];
     const keys = new Set([
-      ...Object.values(prefixes).flatMap((value) => [value + '1', value + '2']),
+      ...Object.values(prefixes).flatMap((value) => [value + 'old1', value + 'old2']),
       'other-app-cache', 'user-offline-files',
     ]);
     let claimed = false, activation;
@@ -87,10 +87,10 @@ for (const [app, prefix] of Object.entries(prefixes)) {
     });
     vm.runInContext(readFileSync(new URL(`../${app}/service-worker.js`, import.meta.url), 'utf8'), context);
     keys.add(context.CACHE);
-    const expected = [...keys].filter((key) => key !== prefix + '1' && key !== prefix + '2');
+    const expected = [...keys].filter((key) => key !== prefix + 'old1' && key !== prefix + 'old2');
     handlers.get('activate')({ waitUntil: (promise) => { activation = promise; } });
     await activation;
-    assert.deepEqual(deleted.sort(), [prefix + '1', prefix + '2']);
+    assert.deepEqual(deleted.sort(), [prefix + 'old1', prefix + 'old2']);
     assert.deepEqual([...keys].sort(), expected.sort());
     assert.equal(keys.has(context.CACHE), true);
     assert.equal(claimed, true);

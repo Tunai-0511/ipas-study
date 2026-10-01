@@ -5,8 +5,8 @@
 <h1 align="center">iPAS 備考學院</h1>
 
 <p align="center">
-  <b>一站搞定 iPAS 三張證照的備考</b><br/>
-  AI 應用規劃師（初級・中級）× 營運智慧分析師 BI（初級）<br/>
+  <b>一站搞定 iPAS 四個備考入口的備考</b><br/>
+  AI 應用規劃師（初級・中級）× 營運智慧分析師 BI（初級）× AIoT 應用工程師（初級・物聯網類）<br/>
   <i>Practice smarter. Pass faster.</i>
 </p>
 
@@ -28,25 +28,26 @@
 
 **iPAS 備考學院**是一個為台灣 iPAS 產業人才能力鑑定打造的線上刷題平台。把散落各處的官方歷屆題與網路題庫，整理成一個**乾淨、快速、能離線用、跨裝置同步**的練習系統——而且**零廣告、零安裝、開網頁就能用**。
 
-一套程式碼、三張證照，開箱即用：
+一套程式碼、四個備考入口，開箱即用：
 
 | 認證 | 級別 | 路徑 |
 |---|---|---|
 | AI 應用規劃師 | 初級 | [`/junior`](https://ipas.tun9i.com/junior/) |
 | AI 應用規劃師 | 中級 | [`/intermediate`](https://ipas.tun9i.com/intermediate/) |
 | 營運智慧分析師（BI） | 初級 | [`/bi`](https://ipas.tun9i.com/bi/) |
+| AIoT 應用工程師 | 初級・物聯網類 | [`/aiot`](https://ipas.tun9i.com/aiot/) |
 
 ---
 
 ## ✨ 特色
 
-- 📚 **官方＋網路雙題庫** — 官方歷屆題與網路蒐集題**嚴格分桶**：模擬考可只考官方歷屆，平時練習可全都來。每題標示出處。
-- 📝 **多種練習模式** — 題庫練習（作答即看解析）、**模擬考**（比照官方 50 題 / 75 分鐘）、錯題複習、收藏複習。
+- 📚 **來源分類題庫** — AI 應用規劃師的官方歷屆與擴充題分開；AIoT 提供指引自評與延伸練習兩種自編題。每題標示來源。
+- 📝 **多種練習模式** — 題庫練習（作答即看解析）、**計時練習**（站內設定 50 題 / 75 分鐘，不以練習成績判定證照通過）、錯題複習、收藏複習。
 - 🧠 **每題內建解析** — 不需要自己再去查，答完立刻懂。
 - 📊 **成績判讀** — 各科正確率、最需加強的主題、個人化加強建議。
 - 📈 **成長曲線** — 題目加權的平均正確率、累積作答量、近期趨勢（不被單場難度誤導）。
 - 🔌 **PWA 離線可用** — 加到主畫面像 App 一樣用，已有未到期登入狀態時可離線刷題；首次登入或登入過期時需連線。
-- 👤 **登入即有名稱** — 信箱驗證碼登入使用 Email 的 `@` 前綴；登入資料已有 `full_name`／`name` 時優先採用。點側欄名稱即可更改，三站與雲端保留自訂名稱，不必新增使用者。
+- 👤 **登入即有名稱** — 信箱驗證碼登入使用 Email 的 `@` 前綴；登入資料已有 `full_name`／`name` 時優先採用。點側欄名稱即可更改，四站與雲端保留自訂名稱，不必新增使用者。
 - 🔑 **Google／信箱登入** — Google provider 啟用後，首頁顯示「使用 Google 登入」；也可使用信箱驗證碼。訪客瀏覽暫時關閉，進入備考站須先登入。Google 登入只使用基本個人資料與 Email，不要求 Gmail 存取權。
 - ☁️ **跨裝置雲端同步** — 登入後手機、電腦進度自動同步（Supabase）。
 - 🌗 **深淺色主題** — 全站主題感應，跨認證同步。
@@ -64,7 +65,7 @@
 - **動畫**：GSAP + Lottie（在地化，離線可用）
 - **雲端**：Supabase（Auth + Postgres，跨裝置同步、RLS 保護）
 - **部署**：Cloudflare Workers，Worker 名稱 `ipas-study`，自訂網域 `ipas.tun9i.com`
-- **載入**：官方題庫先載入，擴充題庫延遲載入；圖片與影片依頁面需要下載
+- **載入**：既有站的擴充題庫延遲載入；AIoT 同步載入兩種題源，確保兩科首次進入都有題目；圖片與影片依頁面需要下載
 
 ---
 
@@ -74,17 +75,17 @@
 GitHub (main)  ──手動部署──▶  Cloudflare Worker ipas-study  ──▶  ipas.tun9i.com
                                                      │
                      ┌───────────────┬───────────────┼───────────────┐
-                  Portal          junior        intermediate         bi
-                （入口）      （AI 初級）      （AI 中級）      （BI 初級）
+                  Portal          junior        intermediate         bi / aiot
+                （入口）      （AI 初級）      （AI 中級）      （BI / AIoT 初級）
                      └───────────────┴───────────────┴───────────────┘
                                  每個 app = 同構 PWA SPA
    殼：index.html / style.css / service-worker.js
    執行層：app.js（路由）· quiz.js · analysis.js · charts.js
-   資料層：content-api.js  ──▶  content.js（官方題）＋ bank.js（網路題）
+   資料層：content-api.js  ──▶  content.js（主題庫）＋ bank.js（延伸題）
    儲存：store.js → localStorage  │  cloud.js → Supabase（背景同步）
 ```
 
-**資料分離原則**：官方歷屆題放 `content.js`（無 `generated` 標記）；網路蒐集題放 `bank.js`（自動標 `generated:true` 並附出處）。兩者永不混用，讓「只考官方歷屆」成為可靠選項。
+**資料分離原則**：AI 應用規劃師的官方歷屆題放 `content.js`；擴充題放 `bank.js`（內部標記 `generated:true` 並附出處）。AIoT 兩個檔案均為本站自編題，分別標示「指引自評題」與「延伸練習題」，不提供或宣稱官方考古題。
 
 ---
 
@@ -115,12 +116,12 @@ npx serve .
 
 1. 在 Supabase SQL Editor 以專案管理者身分執行根目錄的 `supabase-setup.sql`。此檔包含 `user_state`、本人資料 RLS、兩個管理報表函式與必要授權，可重複執行且不刪除現有紀錄。
 2. 若要更換管理者，修改 SQL 內**兩個**函式的 `admins` 信箱陣列後重新執行；不要移除函式中的授權檢查。
-3. 若建立新 Supabase 專案，更新根目錄 `index.html`、`admin/index.html` 及三站 `assets/js/cloud.js` 的 `SB_URL`、`SB_KEY`。前端只可使用公開 publishable／anon key，不能放 `service_role` 或 secret key。
+3. 若建立新 Supabase 專案，更新根目錄 `index.html`、`admin/index.html` 及四站 `assets/js/cloud.js` 的 `SB_URL`、`SB_KEY`。前端只可使用公開 publishable／anon key，不能放 `service_role` 或 secret key。
 4. 啟用 Email 登入，將正式網域及需要的登入返回網址加入 Supabase Auth 的 Site URL／Redirect URLs；本機驗證時另加入本機來源。寄信與 OTP 範本需在 Supabase Auth 設定，SQL 不會設定寄信服務。
 
 ### 啟用 Google 登入
 
-**正式站實測（2026-09-17）：** Google 按鈕已顯示；以一個既有帳號完成 Google → Supabase → 首頁登入、重新整理保留登入，以及登出返回登入畫面。登入後網址的 token 已清除，沿用原 Supabase 使用者並正常還原既有學習紀錄，三站均保留既有自訂名稱。取消授權後會顯示中文訊息，Google 重試與信箱登入仍可操作。此紀錄未涵蓋全新帳號或所有裝置。
+**正式站實測（2026-09-17）：** Google 按鈕已顯示；以一個既有帳號完成 Google → Supabase → 首頁登入、重新整理保留登入，以及登出返回登入畫面。登入後網址的 token 已清除，沿用原 Supabase 使用者並正常還原既有學習紀錄，當時的三站均保留既有自訂名稱。取消授權後會顯示中文訊息，Google 重試與信箱登入仍可操作。此紀錄未涵蓋全新帳號或所有裝置。
 
 Google Audience 目前仍為 **Testing**，未加入測試使用者，已利用下述基本登入 scopes 例外完成無測試警告的真實登入。**自訂品牌驗證尚未完成**，Google 授權畫面目前顯示 Supabase 專案網域。
 
@@ -132,7 +133,7 @@ Google Audience 目前仍為 **Testing**，未加入測試使用者，已利用�
 
 首頁會透過 Supabase 公開 `/auth/v1/settings` 確認 `external.google === true` 才顯示可點擊的 Google 按鈕；未啟用或查詢失敗時仍保留信箱登入入口，寄送與驗證需要網路連線。這項檢查僅代表 provider 已啟用，不代表 Client ID、Secret 或 Google 授權畫面已實際驗證成功。
 
-訪客入口與舊版 `ipas_guest` 狀態已停用；直接開啟三個備考站時，頁面也會先檢查登入狀態。這是網站使用流程的限制，題庫等靜態檔案仍由公開資產服務提供，個人雲端資料持續由 Supabase RLS 保護。
+訪客入口與舊版 `ipas_guest` 狀態已停用；直接開啟四個備考站時，頁面也會先檢查登入狀態。這是網站使用流程的限制，題庫等靜態檔案仍由公開資產服務提供，個人雲端資料持續由 Supabase RLS 保護。
 
 Google 按鈕沿用現有 Supabase client 的 `signInWithOAuth` 隱式流程，回到目前首頁路徑；不要求額外 scopes 或離線 Google 存取，也不另外擷取或保存 Google provider token。取消／失敗會顯示中文訊息，瀏覽器返回後可重試；登入成功後既有跨站同步與自訂名稱規則照常使用。更換不同 Google 帳號不保證會接續原本另一個信箱帳號的雲端紀錄。
 
@@ -180,3 +181,9 @@ npm run deploy
 本專案程式碼為個人作品。**題庫內容之著作權另屬原出處**（iPAS 官方公告試題／各網路來源），僅供學習研究使用，請勿作商業用途。
 
 <p align="center"><sub>Made with ☕ &amp; Vanilla JS · <a href="https://ipas.tun9i.com">ipas.tun9i.com</a></sub></p>
+
+### AIoT 內容範圍
+
+`/aiot/` 涵蓋 115 年度初級物聯網類的兩門學科：AIoT 基礎概論、物聯網系統與應用；不包含另外兩門術科的實作測驗。教材與自編題依據官方評鑑主題及學習指引編寫，並非官方歷屆試題。50 題、75 分鐘為站內計時練習設定，不能視為官方題數、配分或證照通過判定。來源、校核與排除紀錄見 [AIoT 來源說明](docs/aiot-sources.md)。
+
+AIoT 使用獨立本機資料鍵 `ipasaiot_v1` 與雲端 app `aiot`；登入、名稱與主題沿用跨站共用設定。既有 Supabase `user_state` 的複合主鍵支援此命名，無須修改資料表。

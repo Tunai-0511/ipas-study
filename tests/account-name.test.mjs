@@ -21,7 +21,7 @@ function setup(app, { account = user, rows = [], storage = {}, state, pull } = {
   const rootKey = /var ROOT = "([^"]+)"/.exec(storeCode)[1];
   if (state) localStorage.setItem(rootKey, JSON.stringify(state));
   const labels = { userNameLabel: {}, userAvatar: {} };
-  const writes = [], events = [], timers = new Map();
+  const writes = [], filters = [], events = [], timers = new Map();
   let authHandler, timerId = 0, reads = 0;
   const client = {
     auth: {
@@ -30,7 +30,7 @@ function setup(app, { account = user, rows = [], storage = {}, state, pull } = {
       onAuthStateChange: (fn) => { authHandler = fn; },
     },
     from: () => ({
-      select: () => ({ in: async () => { reads++; return pull ? pull() : { data: rows }; } }),
+      select: () => ({ in: async (column, apps) => { filters.push([column, [...apps]]); reads++; return pull ? pull() : { data: rows }; } }),
       upsert: async (data) => { writes.push(JSON.parse(JSON.stringify(data))); return {}; },
     }),
   };
@@ -54,14 +54,14 @@ function setup(app, { account = user, rows = [], storage = {}, state, pull } = {
   vm.runInContext(storeCode, context);
   vm.runInContext(readFileSync(new URL(`../${app}/assets/js/cloud.js`, import.meta.url), 'utf8'), context);
   return {
-    context, localStorage, labels, writes, events, timers,
+    context, localStorage, labels, writes, filters, events, timers,
     get reads() { return reads; },
     auth: (event) => authHandler(event),
     async sync() { await context.Cloud.syncNow(); await new Promise(setImmediate); },
   };
 }
 
-for (const app of ['junior', 'intermediate', 'bi']) {
+for (const app of ['junior', 'intermediate', 'bi', 'aiot']) {
   test(`${app}: first email login names the existing profile and persists the account name`, async () => {
     const h = setup(app);
     const id = h.context.Store.currentId();
@@ -201,3 +201,18 @@ for (const app of ['junior', 'intermediate', 'bi']) {
     assert.equal(h.reads, 1);
   });
 }
+
+
+test('AIoT cloud sync reads and writes only its own progress and shared preferences', async () => {
+  const oldKeys = { ipasjr_v1: JSON.stringify(saved('AI 既有')), aipsc_v1: JSON.stringify(saved('中級既有')), ipasbi_v1: JSON.stringify(saved('BI 既有')) };
+  const h = setup('aiot', { storage: oldKeys, rows: [
+    { app: 'aiot', data: saved('AIoT 雲端') },
+    { app: 'shared', data: { name: '我的名字', nameSource: 'custom' } },
+  ] });
+  await h.sync();
+  assert.deepEqual(h.filters[0], ['app', ['aiot', 'shared']]);
+  assert.deepEqual(h.writes.at(-1).map(row => row.app).sort(), ['aiot', 'shared']);
+  for (const [key, value] of Object.entries(oldKeys)) assert.equal(h.localStorage.getItem(key), value);
+  assert.equal(h.context.Store.attempts()[0].id, 'old-attempt');
+  assert.equal(h.context.Store.current().name, '我的名字');
+});
