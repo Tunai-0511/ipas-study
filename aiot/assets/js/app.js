@@ -190,7 +190,7 @@
         '<div class="hero-inner">' +
           '<div class="hero-eyebrow">iPAS · AIoT 應用工程師 · 初級・物聯網類</div>' +
           '<h1 class="hero-title">' + (ov.count ? '歡迎回來，' + esc(u.name) : esc(u.name) + '，開始備考吧') + '</h1>' +
-          '<p class="hero-sub">' + cnts.official + ' 題指引自評題、' + cnts.generated + ' 題延伸練習題，依章節練習並追蹤學習進度。</p>' +
+          '<p class="hero-sub">' + cnts.guide + ' 題官方指引、' + cnts.legacy + ' 題舊制歷屆、' + cnts.generated + ' 題自編練習。共 ' + cnts.answerable + ' 題可作答；另 ' + cnts.review + ' 題保留疑義說明。</p>' +
           '<div class="hero-cta">' +
             '<button class="btn btn-primary btn-lg" data-act="mock">開始計時練習</button>' +
             '<button class="btn btn-glass btn-lg" data-goto="learn">瀏覽教材</button>' +
@@ -240,7 +240,7 @@
       '<p>內容核對日期：' + esc(exam.verifiedAt || Content.meta.updatedAt) + '。最新考試安排請以官方公告為準。</p>' +
       '<ul>' + Content.meta.sources.map(function (source) { return '<li><a href="' + esc(source.url) + '" target="_blank" rel="noopener noreferrer">' + esc(source.name) + '</a></li>'; }).join('') + '</ul></details>';
     main.innerHTML =
-      hero + '<div class="callout aiot-scope"><div>本區涵蓋物聯網類的「AIoT 基礎概論」與「物聯網系統與應用」兩學科，不含術科。題目依官方評鑑主題與學習指引自行編寫，分為指引自評題與延伸練習題，非官方試題。</div></div>' + examDetails + statsGrid +
+      hero + '<div class="callout aiot-scope"><div>本區涵蓋物聯網類的「AIoT 基礎概論」與「物聯網系統與應用」兩學科，不含術科。題庫區分官方指引、舊制物聯網歷屆試題與自編練習。舊制題目保留原年度與考科，供新版範圍對照參考。</div></div>' + examDetails + reviewDetails() + statsGrid +
       '<div class="section-title">兩學科 <span class="tag">點擊開始練習</span></div>' +
       '<div class="grid grid-3">' + subjectsCards + '</div>' +
       '<div class="section-title">快速開始</div>' + quick +
@@ -259,7 +259,7 @@
       '<div class="mc-name">' + esc(name) + '</div><div class="mc-desc">' + esc(desc) + '</div></button>';
   }
   function handleAction(act) {
-    if (act === "mock" || act === "exam") { quizCfg.mode = "mock"; if (!quizCfg.subject) quizCfg.subject = (Content.subjects()[0] || {}).code || ""; quizCfg.onlyOfficial = false; quizCfg.onlyNetwork = false; go("quiz"); }
+    if (act === "mock" || act === "exam") { quizCfg.mode = "mock"; if (!quizCfg.subject) quizCfg.subject = (Content.subjects()[0] || {}).code || ""; quizCfg.onlyOfficial = false; quizCfg.onlyNetwork = false; quizCfg.sourceKind = ""; go("quiz"); }
     else if (act === "bookmark") startQuiz({ mode: "bookmark", subjectName: "收藏複習" });
     else if (act === "wrong") startQuiz({ mode: "wrong", subjectName: "錯題複習" });
     else if (act === "generate") go("generate");
@@ -332,22 +332,32 @@
   };
 
   /* ---- 測驗設定 ---- */
-  var quizCfg = { mode: "official", subject: "", topic: "", count: 15, onlyOfficial: false, onlyNetwork: false };
+  var quizCfg = { mode: "official", subject: "", topic: "", count: 15, onlyOfficial: false, onlyNetwork: false, sourceKind: "" };
   function limitSecOf() {
     return quizCfg.mode === "mock" ? MOCK_LIMIT_SEC : 0;   // 計時練習固定 75 分鐘，其餘不限時
   }
+  function sourceLabel() {
+    return quizCfg.sourceKind === "official-guide" ? "官方指引練習題" : quizCfg.sourceKind === "legacy-exam" ? "舊制物聯網歷屆題" : quizCfg.onlyNetwork ? "自編練習題" : "全部來源";
+  }
   function sourceGroup() {
     return '<div class="opt-group"><span class="og-label">題目來源</span><div class="chip-row">' +
-      '<button class="chip ' + (!quizCfg.onlyOfficial && !quizCfg.onlyNetwork ? "on" : "") + '" data-src="all">全部（指引自評＋延伸）</button>' +
-      '<button class="chip ' + (quizCfg.onlyOfficial ? "on" : "") + '" data-src="official">只考指引自評題</button>' +
-      '<button class="chip ' + (quizCfg.onlyNetwork ? "on" : "") + '" data-src="network">只考延伸練習題</button>' +
-      '</div></div>';
+      [{id:"all",label:"全部來源"},{id:"official-guide",label:"官方指引"},{id:"legacy-exam",label:"舊制歷屆"},{id:"network",label:"自編練習"}].map(function (source) {
+        var selected = quizCfg.sourceKind || (quizCfg.onlyNetwork ? "network" : "all");
+        return '<button class="chip ' + (selected === source.id ? "on" : "") + '" data-src="' + source.id + '">' + source.label + '</button>';
+      }).join("") + '</div></div>';
+  }
+  function reviewDetails() {
+    var questions = Content.reviewQuestions();
+    if (!questions.length) return "";
+    return '<details class="aiot-exam-info"><summary>疑義與不計分題 ' + questions.length + ' 題（不列入作答與評分）</summary><p>以下保留原文與原公布答案，另列官方給分公告或本站查核說明。本站提出的疑義不代表官方勘誤。</p>' + questions.map(function (q) {
+      return '<details class="review-source"><summary>' + esc(q.source || "官方指引") + ' · ' + esc(q.stem) + '</summary><div class="q-stem">' + esc(q.stem) + '</div><ol type="A">' + Object.keys(q.options).map(function (key) { return '<li>' + esc(q.options[key]) + '</li>'; }).join("") + '</ol><p>原公布答案：' + esc(q.originalAnswer || q.answer) + '</p><p class="review-reason">查核說明：' + esc(q.reviewReason) + '</p><a href="' + esc(q.srcUrl || q.sourceUrl) + '" target="_blank" rel="noopener noreferrer">' + (q.sourceKind === 'legacy-exam' ? '原卷保存來源' : '對照官方原頁') + ' ↗</a>' + (q.sourceFile ? '<p>' + esc(q.sourceFile.split(/[\\/]/).pop()) + (q.page ? ' · PDF 第 ' + esc(q.page) + ' 頁' : '') + '</p>' : '') + '</details>';
+    }).join("") + '</details>';
   }
   function poolSize() {
     if (quizCfg.mode === "mock") return quizCfg.subject
-      ? Content.questions({ subject: quizCfg.subject, includeContext: false, onlyOfficial: quizCfg.onlyOfficial, onlyGenerated: quizCfg.onlyNetwork }).length
-      : Content.allOfficial(false, quizCfg.onlyOfficial, quizCfg.onlyNetwork).length;
-    if (quizCfg.mode === "official") return Content.questions({ subject: quizCfg.subject || null, topic: quizCfg.topic || null, includeContext: false, onlyOfficial: quizCfg.onlyOfficial, onlyGenerated: quizCfg.onlyNetwork }).length;
+      ? Content.questions({ subject: quizCfg.subject, includeContext: false, onlyOfficial: quizCfg.onlyOfficial, onlyGenerated: quizCfg.onlyNetwork, sourceKind: quizCfg.sourceKind }).length
+      : Content.allOfficial(false, quizCfg.onlyOfficial, quizCfg.onlyNetwork, quizCfg.sourceKind).length;
+    if (quizCfg.mode === "official") return Content.questions({ subject: quizCfg.subject || null, topic: quizCfg.topic || null, includeContext: false, onlyOfficial: quizCfg.onlyOfficial, onlyGenerated: quizCfg.onlyNetwork, sourceKind: quizCfg.sourceKind }).length;
     if (quizCfg.mode === "ai") return Store.aiQuestions().length;
     if (quizCfg.mode === "wrong") return Quiz.buildQuestions({ mode: "wrong" }).length;
     if (quizCfg.mode === "bookmark") return Quiz.buildQuestions({ mode: "bookmark" }).length;
@@ -402,7 +412,7 @@
       row("模式", Quiz.MODES[quizCfg.mode].name) +
       ((quizCfg.mode === "official" || quizCfg.mode === "ai") ? row("科目", quizCfg.subject ? Content.subjectName(quizCfg.subject) : "全部科目") + row("章節", quizCfg.topic ? Content.chapterTitle(quizCfg.topic) : "全部章節") : "") +
       (isMock ? row("科目", quizCfg.subject ? Content.subjectName(quizCfg.subject) : "請選擇一科") : "") +
-      ((quizCfg.mode === "official" || isMock) ? row("來源", quizCfg.onlyOfficial ? "只考指引自評題" : quizCfg.onlyNetwork ? "只考延伸練習題" : "全部（指引自評＋延伸）") : "") +
+      ((quizCfg.mode === "official" || isMock) ? row("來源", sourceLabel()) : "") +
       (isMock ? (row("題數", MOCK_COUNT + " 題") + row("限時", "75 分鐘"))
               : row("題數", quizCfg.mode === "wrong" ? "全部錯題" : (quizCfg.count === 0 ? "全部" : quizCfg.count + " 題"))) +
       row("可用題目", pool + " 題" + (
@@ -427,20 +437,20 @@
 
     $$("[data-mode]").forEach(function (b) { b.onclick = function () {
       quizCfg.mode = b.getAttribute("data-mode");
-      if (quizCfg.mode === "mock") { if (!quizCfg.subject) quizCfg.subject = (Content.subjects()[0] || {}).code || ""; quizCfg.onlyOfficial = false; quizCfg.onlyNetwork = false; }
+      if (quizCfg.mode === "mock") { if (!quizCfg.subject) quizCfg.subject = (Content.subjects()[0] || {}).code || ""; quizCfg.onlyOfficial = false; quizCfg.onlyNetwork = false; quizCfg.sourceKind = ""; }
       VIEWS.quiz();
     }; });
     $$("[data-subj-chip]").forEach(function (b) { b.onclick = function () { quizCfg.subject = b.getAttribute("data-subj-chip"); quizCfg.topic = ""; VIEWS.quiz(); }; });
     var chapSel = $("#qzChap"); if (chapSel) chapSel.onchange = function () { quizCfg.topic = chapSel.value; VIEWS.quiz(); };
     $$("[data-count]").forEach(function (c) { c.onclick = function () { var v = c.getAttribute("data-count"); quizCfg.count = v === "all" ? 0 : +v; VIEWS.quiz(); }; });
-    $$("[data-src]").forEach(function (c) { c.onclick = function () { var v = c.getAttribute("data-src"); quizCfg.onlyOfficial = v === "official"; quizCfg.onlyNetwork = v === "network"; VIEWS.quiz(); }; });
+    $$("[data-src]").forEach(function (c) { c.onclick = function () { var v = c.getAttribute("data-src"); quizCfg.onlyOfficial = false; quizCfg.onlyNetwork = v === "network"; quizCfg.sourceKind = ["official-guide", "legacy-exam"].indexOf(v) >= 0 ? v : ""; VIEWS.quiz(); }; });
     $("#qzStart").onclick = function () {
       var name = quizCfg.mode === "mock"
         ? (quizCfg.subject ? Content.subjectName(quizCfg.subject) + " 計時練習" : "綜合計時練習")
         : quizCfg.topic ? Content.chapterTitle(quizCfg.topic) : quizCfg.subject ? Content.subjectName(quizCfg.subject) : Quiz.MODES[quizCfg.mode].name;
       var allMode = quizCfg.mode === "wrong" || quizCfg.mode === "bookmark";
       var cnt = quizCfg.mode === "mock" ? MOCK_COUNT : (allMode ? 0 : quizCfg.count);
-      startQuiz({ mode: quizCfg.mode, subject: quizCfg.subject, topic: quizCfg.mode === "mock" ? "" : quizCfg.topic, count: cnt, onlyOfficial: quizCfg.onlyOfficial, onlyGenerated: quizCfg.onlyNetwork, limitSec: limitSecOf(), subjectName: name });
+      startQuiz({ mode: quizCfg.mode, subject: quizCfg.subject, topic: quizCfg.mode === "mock" ? "" : quizCfg.topic, count: cnt, onlyOfficial: quizCfg.onlyOfficial, onlyGenerated: quizCfg.onlyNetwork, sourceKind: quizCfg.sourceKind, limitSec: limitSecOf(), subjectName: name });
     };
     if (global.Interactions && Interactions.mountQuizAnim) Interactions.mountQuizAnim();
   };

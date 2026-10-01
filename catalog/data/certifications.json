@@ -1,0 +1,3003 @@
+{
+  "updatedAt": "2026-10-01",
+  "sourceUrl": "https://ipd.nat.gov.tw/ipas/",
+  "scopeNote": "現行名單依 115 年官方首頁 17 項鑑定；歷史項目另標 legacy，不能視為本年度可報考。考科以查核時年度簡章為準。",
+  "certifications": [
+    {
+      "id": "ant",
+      "officialCode": "ANT",
+      "name": "天線設計工程師",
+      "category": "電子通訊類",
+      "status": "active",
+      "effectiveYear": 2026,
+      "officialUrl": "https://ipd.nat.gov.tw/ipas/certification/ANT/news",
+      "examInfoUrl": "https://ipd.nat.gov.tw/ipas/certification/ANT/exam-info",
+      "resourcesUrl": "https://ipd.nat.gov.tw/ipas/certification/ANT/learning-resources",
+      "levels": [
+        {
+          "id": "junior",
+          "name": "初級",
+          "subjects": [
+            {
+              "id": "ant-junior-1",
+              "name": "天線概論",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf",
+              "order": 1
+            },
+            {
+              "id": "ant-junior-2",
+              "name": "天線設計實務",
+              "type": "mixed",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf",
+              "order": 2
+            }
+          ],
+          "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf",
+          "effectiveYear": 2026,
+          "selectionNote": "科目一為電腦單選；科目二為實作及紙筆說明題。"
+        },
+        {
+          "id": "intermediate",
+          "name": "中級",
+          "subjects": [
+            {
+              "id": "ant-intermediate-1",
+              "name": "天線系統工程",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf",
+              "order": 1
+            },
+            {
+              "id": "ant-intermediate-2",
+              "name": "天線系統整合設計實務",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf",
+              "order": 2
+            }
+          ],
+          "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf",
+          "effectiveYear": 2026,
+          "selectionNote": "科目一為電腦單選；科目二為紙本申論，並非術科實作。"
+        }
+      ],
+      "resources": [
+        {
+          "title": "115年度天線設計工程師能力鑑定簡章(初級、中級)_0410.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ANT/115年度天線設計工程師能力鑑定簡章(初級、中級)_0410_20260410121218.pdf",
+          "kind": "syllabus",
+          "sourceKind": "official-syllabus",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/ANT/exam-info",
+          "year": 2026
+        },
+        {
+          "title": "天線設計工程師初級能力鑑定-實作考科指引-114版.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/天線設計工程師初級能力鑑定-實作考科指引-114版_20251216133226.pdf",
+          "kind": "guide",
+          "sourceKind": "official-sample",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/ANT/learning-resources",
+          "level": "junior",
+          "publishedAt": "2025-12-16"
+        },
+        {
+          "title": "115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版).pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次中級天線設計工程師_第一科_天線系統工程_公告試題(疑義題釋覆版)_20260504115115.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/ANT/learning-resources",
+          "level": "intermediate",
+          "publishedAt": "2026-05-04",
+          "subject": "ant-intermediate-1",
+          "year": 2026
+        },
+        {
+          "title": "115年第一次中級天線設計工程師_第二科_天線系統整合設計實務_公告試題.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次中級天線設計工程師_第二科_天線系統整合設計實務_公告試題_20260512155051.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/ANT/learning-resources",
+          "level": "intermediate",
+          "publishedAt": "2026-05-12",
+          "subject": "ant-intermediate-2",
+          "year": 2026
+        },
+        {
+          "title": "115年第一次初級天線設計工程師_第一科_天線概論_公告試題.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b64497e7535840d9a87a482b8cf52d04/115年第一次初級天線設計工程師_第一科_天線概論_公告試題_20260615142923.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/ANT/learning-resources",
+          "level": "junior",
+          "publishedAt": "2026-06-15",
+          "subject": "ant-junior-1",
+          "year": 2026
+        },
+        {
+          "title": "天線設計工程師初級能力鑑定-實作考科操作示範",
+          "url": "https://collegeplus.itri.org.tw/course/1876",
+          "kind": "course",
+          "sourceKind": "official-course",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/ANT/learning-resources"
+        },
+        {
+          "title": "數位轉型下的天線時代",
+          "url": "https://collegeplus.itri.org.tw/course/1144#/",
+          "kind": "course",
+          "sourceKind": "official-course",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/ANT/learning-resources"
+        },
+        {
+          "title": "智慧行動終端多天線設計",
+          "url": "https://collegeplus.itri.org.tw/course/1327#/",
+          "kind": "course",
+          "sourceKind": "official-course",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/ANT/learning-resources"
+        }
+      ],
+      "resourceNote": "資源依官方學習資源頁及下載頁列出；樣題、學習指引與正式歷屆試題分開標示。列入教材或原卷連結不代表已轉為可計分練習。"
+    },
+    {
+      "id": "pcb",
+      "officialCode": "PCB",
+      "name": "電路板製程工程師",
+      "category": "電子通訊類",
+      "status": "active",
+      "effectiveYear": 2026,
+      "officialUrl": "https://ipd.nat.gov.tw/ipas/certification/PCB/news",
+      "examInfoUrl": "https://ipd.nat.gov.tw/ipas/certification/PCB/exam-info",
+      "resourcesUrl": "https://ipd.nat.gov.tw/ipas/certification/PCB/learning-resources",
+      "levels": [
+        {
+          "id": "junior",
+          "name": "初級",
+          "subjects": [
+            {
+              "id": "pcb-junior-1",
+              "name": "電路板產業概論",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/PCB/115年度電路板製程工程師能力鑑定簡章(初級、中級)_0410_20260410161233.pdf",
+              "order": 1
+            },
+            {
+              "id": "pcb-junior-2",
+              "name": "電路板製造概論",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/PCB/115年度電路板製程工程師能力鑑定簡章(初級、中級)_0410_20260410161233.pdf",
+              "order": 2
+            },
+            {
+              "id": "pcb-junior-3",
+              "name": "電路板製造及切片分析實務",
+              "type": "mixed",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/PCB/115年度電路板製程工程師能力鑑定簡章(初級、中級)_0410_20260410161233.pdf",
+              "order": 3
+            }
+          ],
+          "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/PCB/115年度電路板製程工程師能力鑑定簡章(初級、中級)_0410_20260410161233.pdf",
+          "effectiveYear": 2026,
+          "selectionNote": "科目一必考；科目二、三擇一。"
+        },
+        {
+          "id": "intermediate",
+          "name": "中級",
+          "subjects": [
+            {
+              "id": "pcb-intermediate-1",
+              "name": "電路板品管概論",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/PCB/115年度電路板製程工程師能力鑑定簡章(初級、中級)_0410_20260410161233.pdf",
+              "order": 1
+            },
+            {
+              "id": "pcb-intermediate-2",
+              "name": "軟性電路板製程概論",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/PCB/115年度電路板製程工程師能力鑑定簡章(初級、中級)_0410_20260410161233.pdf",
+              "order": 2
+            },
+            {
+              "id": "pcb-intermediate-3",
+              "name": "硬式電路板製程概論",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/PCB/115年度電路板製程工程師能力鑑定簡章(初級、中級)_0410_20260410161233.pdf",
+              "order": 3
+            }
+          ],
+          "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/PCB/115年度電路板製程工程師能力鑑定簡章(初級、中級)_0410_20260410161233.pdf",
+          "effectiveYear": 2026,
+          "selectionNote": "科目一必考；科目二、三擇一。"
+        }
+      ],
+      "resources": [
+        {
+          "title": "115年度電路板製程工程師能力鑑定簡章(初級、中級)_0410.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/PCB/115年度電路板製程工程師能力鑑定簡章(初級、中級)_0410_20260410161233.pdf",
+          "kind": "syllabus",
+          "sourceKind": "official-syllabus",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/PCB/exam-info",
+          "year": 2026
+        },
+        {
+          "title": "考科1_電路板產業概論",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/51b163ceca6d4207a4cc1131b683cbe9/電路板製程工程師(初級)學習指引_考科1_電路板產業概論_20260202104133.pdf",
+          "kind": "guide",
+          "sourceKind": "official-guide",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/PCB/learning-resources",
+          "level": "junior",
+          "subject": "pcb-junior-1"
+        },
+        {
+          "title": "考科2_電路板製造概論",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/51b163ceca6d4207a4cc1131b683cbe9/電路板製程工程師(初級)學習指引_考科2_電路板製造概論_20260202104150.pdf",
+          "kind": "guide",
+          "sourceKind": "official-guide",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/PCB/learning-resources",
+          "level": "junior",
+          "subject": "pcb-junior-2"
+        },
+        {
+          "title": "114年初級電路板製程工程師能力鑑定-01電路板產業概論(當次試題公告114.11.10).pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/51b163ceca6d4207a4cc1131b683cbe9/114年初級電路板製程工程師能力鑑定-01電路板產業概論(當次試題公告114_20251223142716.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/PCB/learning-resources",
+          "level": "junior",
+          "publishedAt": "2025-12-23",
+          "subject": "pcb-junior-1",
+          "year": 2025
+        },
+        {
+          "title": "114年初級電路板製程工程師能力鑑定-02電路板製造概論(當次試題公告114.11.10).pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/51b163ceca6d4207a4cc1131b683cbe9/114年初級電路板製程工程師能力鑑定-02電路板製造概論(當次試題公告114_20251223142859.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/PCB/learning-resources",
+          "level": "junior",
+          "publishedAt": "2025-12-23",
+          "subject": "pcb-junior-2",
+          "year": 2025
+        },
+        {
+          "title": "115年第一次中級電路板製程工程師_第一科_電路板品管概論_公告試題.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/51b163ceca6d4207a4cc1131b683cbe9/115年第一次中級電路板製程工程師_第一科_電路板品管概論_公告試題_20260921123212.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/PCB/learning-resources",
+          "level": "intermediate",
+          "publishedAt": "2026-09-21",
+          "subject": "pcb-intermediate-1",
+          "year": 2026
+        },
+        {
+          "title": "115年第一次中級電路板製程工程師_第二科_軟性電路板製程概論_公告試題.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/51b163ceca6d4207a4cc1131b683cbe9/115年第一次中級電路板製程工程師_第二科_軟性電路板製程概論_公告試題_20260921123250.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/PCB/learning-resources",
+          "level": "intermediate",
+          "publishedAt": "2026-09-21",
+          "subject": "pcb-intermediate-2",
+          "year": 2026
+        },
+        {
+          "title": "115年第一次中級電路板製程工程師_第三科_硬式電路板製程概論_公告試題.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/51b163ceca6d4207a4cc1131b683cbe9/115年第一次中級電路板製程工程師_第三科_硬式電路板製程概論_公告試題_20260921123304.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/PCB/learning-resources",
+          "level": "intermediate",
+          "publishedAt": "2026-09-21",
+          "subject": "pcb-intermediate-3",
+          "year": 2026
+        }
+      ],
+      "resourceNote": "資源依官方學習資源頁及下載頁列出；樣題、學習指引與正式歷屆試題分開標示。列入教材或原卷連結不代表已轉為可計分練習。"
+    },
+    {
+      "id": "emc",
+      "officialCode": "EMC",
+      "name": "電磁相容工程師",
+      "category": "電子通訊類",
+      "status": "active",
+      "effectiveYear": 2026,
+      "officialUrl": "https://ipd.nat.gov.tw/ipas/certification/EMC/news",
+      "examInfoUrl": "https://ipd.nat.gov.tw/ipas/certification/EMC/exam-info",
+      "resourcesUrl": "https://ipd.nat.gov.tw/ipas/certification/EMC/learning-resources",
+      "levels": [
+        {
+          "id": "junior",
+          "name": "初級",
+          "subjects": [
+            {
+              "id": "emc-junior-1",
+              "name": "電磁相容概論",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/EMC/115年度電磁相容工程師能力鑑定簡章(初級、中級)_0410_20260410122503.pdf",
+              "order": 1
+            },
+            {
+              "id": "emc-junior-2",
+              "name": "電磁相容量測原理",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/EMC/115年度電磁相容工程師能力鑑定簡章(初級、中級)_0410_20260410122503.pdf",
+              "order": 2
+            }
+          ],
+          "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/EMC/115年度電磁相容工程師能力鑑定簡章(初級、中級)_0410_20260410122503.pdf",
+          "effectiveYear": 2026
+        },
+        {
+          "id": "intermediate",
+          "name": "中級",
+          "subjects": [
+            {
+              "id": "emc-intermediate-1",
+              "name": "高速數位電路設計",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/EMC/115年度電磁相容工程師能力鑑定簡章(初級、中級)_0410_20260410122503.pdf",
+              "order": 1
+            },
+            {
+              "id": "emc-intermediate-2",
+              "name": "數位無線系統整合設計實務",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/EMC/115年度電磁相容工程師能力鑑定簡章(初級、中級)_0410_20260410122503.pdf",
+              "order": 2
+            }
+          ],
+          "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/EMC/115年度電磁相容工程師能力鑑定簡章(初級、中級)_0410_20260410122503.pdf",
+          "effectiveYear": 2026
+        }
+      ],
+      "resources": [
+        {
+          "title": "115年度電磁相容工程師能力鑑定簡章(初級、中級)_0410.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/EMC/115年度電磁相容工程師能力鑑定簡章(初級、中級)_0410_20260410122503.pdf",
+          "kind": "syllabus",
+          "sourceKind": "official-syllabus",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/EMC/exam-info",
+          "year": 2026
+        },
+        {
+          "title": "115年第一次中級電磁相容工程師_第一科_高速數位電路設計_公告試題.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/99d472be9b9845feb724ce021c968ae7/115年第一次中級電磁相容工程師_第一科_高速數位電路設計_公告試題_20260504114445.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/EMC/learning-resources",
+          "level": "intermediate",
+          "publishedAt": "2026-05-04",
+          "subject": "emc-intermediate-1",
+          "year": 2026
+        },
+        {
+          "title": "115年第一次中級電磁相容工程師_第二科_數位無線系統整合設計實務_公告試題.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/99d472be9b9845feb724ce021c968ae7/115年第一次中級電磁相容工程師_第二科_數位無線系統整合設計實務_公告試題_20260504114515.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/EMC/learning-resources",
+          "level": "intermediate",
+          "publishedAt": "2026-05-04",
+          "subject": "emc-intermediate-2",
+          "year": 2026
+        },
+        {
+          "title": "115年第一次初級電磁相容工程師_第一科_電磁相容概論_公告試題.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/99d472be9b9845feb724ce021c968ae7/115年第一次初級電磁相容工程師_第一科_電磁相容概論_公告試題_20260615143358.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/EMC/learning-resources",
+          "level": "junior",
+          "publishedAt": "2026-06-15",
+          "subject": "emc-junior-1",
+          "year": 2026
+        },
+        {
+          "title": "115年第一次初級電磁相容工程師_第二科_電磁相容量測原理_公告試題.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/99d472be9b9845feb724ce021c968ae7/115年第一次初級電磁相容工程師_第二科_電磁相容量測原理_公告試題_20260615143423.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/EMC/learning-resources",
+          "level": "junior",
+          "publishedAt": "2026-06-15",
+          "subject": "emc-junior-2",
+          "year": 2026
+        },
+        {
+          "title": "電磁相容概論",
+          "url": "https://collegeplus.itri.org.tw/course/1175#/",
+          "kind": "course",
+          "sourceKind": "official-course",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/EMC/learning-resources",
+          "subject": "emc-junior-1"
+        },
+        {
+          "title": "電磁相容量測原理",
+          "url": "https://collegeplus.itri.org.tw/course/1174#/",
+          "kind": "course",
+          "sourceKind": "official-course",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/EMC/learning-resources",
+          "subject": "emc-junior-2"
+        }
+      ],
+      "resourceNote": "資源依官方學習資源頁及下載頁列出；樣題、學習指引與正式歷屆試題分開標示。列入教材或原卷連結不代表已轉為可計分練習。"
+    },
+    {
+      "id": "aiot",
+      "officialCode": "AIOT",
+      "name": "AIoT應用工程師",
+      "category": "電子通訊類",
+      "status": "active",
+      "effectiveYear": 2026,
+      "officialUrl": "https://ipd.nat.gov.tw/ipas/certification/AIOT/news",
+      "examInfoUrl": "https://ipd.nat.gov.tw/ipas/certification/AIOT/exam-info",
+      "resourcesUrl": "https://ipd.nat.gov.tw/ipas/certification/AIOT/learning-resources",
+      "levels": [
+        {
+          "id": "junior",
+          "name": "初級",
+          "subjects": [
+            {
+              "id": "aiot-junior-1",
+              "name": "AIoT基礎概論",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/AIOT/115年度AIoT應用工程師能力鑑定簡章(初級)_1150410_20260410114755.pdf",
+              "order": 1
+            },
+            {
+              "id": "aiot-junior-2",
+              "name": "物聯網系統與應用",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/AIOT/115年度AIoT應用工程師能力鑑定簡章(初級)_1150410_20260410114755.pdf",
+              "order": 2
+            },
+            {
+              "id": "aiot-junior-3",
+              "name": "機器聯網基礎應用實作",
+              "type": "practical",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/AIOT/115年度AIoT應用工程師能力鑑定簡章(初級)_1150410_20260410114755.pdf",
+              "order": 3
+            },
+            {
+              "id": "aiot-junior-4",
+              "name": "感測器信號調節實務應用",
+              "type": "practical",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/AIOT/115年度AIoT應用工程師能力鑑定簡章(初級)_1150410_20260410114755.pdf",
+              "order": 4
+            }
+          ],
+          "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/AIOT/115年度AIoT應用工程師能力鑑定簡章(初級)_1150410_20260410114755.pdf",
+          "effectiveYear": 2026,
+          "selectionNote": "物聯網類：科目一＋二；機器聯網類：科目一＋三；感知系統類：科目一＋四。本站既有 AIoT 練習站涵蓋物聯網類兩學科。",
+          "existingApp": "/aiot/"
+        }
+      ],
+      "resources": [
+        {
+          "title": "115年度AIoT應用工程師能力鑑定簡章(初級)_1150410.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/AIOT/115年度AIoT應用工程師能力鑑定簡章(初級)_1150410_20260410114755.pdf",
+          "kind": "syllabus",
+          "sourceKind": "official-syllabus",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/AIOT/exam-info",
+          "year": 2026
+        },
+        {
+          "title": "科目一：AIoT基礎概論",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/33454d0f6a944794a82cee435c427a6d/AIoT應用工程師(初級)-學習指引-科目1_AIoT基礎概論_20260528092813.pdf",
+          "kind": "guide",
+          "sourceKind": "official-guide",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/AIOT/learning-resources",
+          "level": "junior",
+          "subject": "aiot-junior-1"
+        },
+        {
+          "title": "物聯網系統與應用",
+          "url": "https://collegeplus.itri.org.tw/course/1146#/",
+          "kind": "course",
+          "sourceKind": "official-course",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/AIOT/learning-resources",
+          "subject": "aiot-junior-2"
+        },
+        {
+          "title": "機器聯網基礎應用實作",
+          "url": "https://collegeplus.itri.org.tw/course/1541#/",
+          "kind": "course",
+          "sourceKind": "official-course",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/AIOT/learning-resources",
+          "subject": "aiot-junior-3"
+        },
+        {
+          "title": "感測器信號調節實務應用",
+          "url": "https://collegeplus.itri.org.tw/course/1147#/",
+          "kind": "course",
+          "sourceKind": "official-course",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/AIOT/learning-resources",
+          "subject": "aiot-junior-4"
+        },
+        {
+          "title": "AIoT應用工程師-初級考試科目抵免說明_1150319.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_attachment/71c81ee7595c4296834aab225d257e92/AIoT應用工程師-初級考試科目抵免說明_1150319_20260319180428.pdf",
+          "kind": "syllabus",
+          "sourceKind": "official-syllabus",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/AIOT/downloads"
+        }
+      ],
+      "existingApp": "/aiot/",
+      "resourceNote": "截至查核日，新版 AIoT 官方頁尚未列正式歷屆試題。本站 AIoT 區收錄 80 題官方指引自評題、1,050 題舊物聯網正式考題與 130 題自編練習；舊題保留原鑑定、年份及適用範圍，疑義題另列並排除評分。"
+    },
+    {
+      "id": "ise",
+      "officialCode": "ISE",
+      "name": "資訊安全工程師",
+      "category": "資訊類",
+      "status": "active",
+      "effectiveYear": 2026,
+      "officialUrl": "https://ipd.nat.gov.tw/ipas/certification/ISE/news",
+      "examInfoUrl": "https://ipd.nat.gov.tw/ipas/certification/ISE/exam-info",
+      "resourcesUrl": "https://ipd.nat.gov.tw/ipas/certification/ISE/learning-resources",
+      "levels": [
+        {
+          "id": "junior",
+          "name": "初級",
+          "subjects": [
+            {
+              "id": "ise-junior-1",
+              "name": "資訊安全管理概論",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/ISE/115年度資訊安全工程師能力鑑定簡章(初、中級)_1150410_20260410115218.pdf",
+              "order": 1
+            },
+            {
+              "id": "ise-junior-2",
+              "name": "資訊安全技術概論",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/ISE/115年度資訊安全工程師能力鑑定簡章(初、中級)_1150410_20260410115218.pdf",
+              "order": 2
+            }
+          ],
+          "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/ISE/115年度資訊安全工程師能力鑑定簡章(初、中級)_1150410_20260410115218.pdf",
+          "effectiveYear": 2026
+        },
+        {
+          "id": "intermediate",
+          "name": "中級",
+          "subjects": [
+            {
+              "id": "ise-intermediate-1",
+              "name": "資訊安全規劃實務",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/ISE/115年度資訊安全工程師能力鑑定簡章(初、中級)_1150410_20260410115218.pdf",
+              "order": 1
+            },
+            {
+              "id": "ise-intermediate-2",
+              "name": "資訊安全防護實務",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/ISE/115年度資訊安全工程師能力鑑定簡章(初、中級)_1150410_20260410115218.pdf",
+              "order": 2
+            }
+          ],
+          "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/ISE/115年度資訊安全工程師能力鑑定簡章(初、中級)_1150410_20260410115218.pdf",
+          "effectiveYear": 2026
+        }
+      ],
+      "resources": [
+        {
+          "title": "115年度資訊安全工程師能力鑑定簡章(初、中級)_1150410.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/ISE/115年度資訊安全工程師能力鑑定簡章(初、中級)_1150410_20260410115218.pdf",
+          "kind": "syllabus",
+          "sourceKind": "official-syllabus",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/ISE/exam-info",
+          "year": 2026
+        },
+        {
+          "title": "資訊安全管理概論",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/f7ae889e26b0417fb041f79e2b21cc13/第一科：資訊安全管理概論-學習指引(20260420更)_20260420165909.pdf",
+          "kind": "guide",
+          "sourceKind": "official-guide",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/ISE/learning-resources",
+          "level": "junior",
+          "subject": "ise-junior-1"
+        },
+        {
+          "title": "資訊安全技術概論",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/f7ae889e26b0417fb041f79e2b21cc13/第二科：資訊安全技術概論-學習指引(20260420更)_20260420165916.pdf",
+          "kind": "guide",
+          "sourceKind": "official-guide",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/ISE/learning-resources",
+          "level": "junior",
+          "subject": "ise-junior-2"
+        },
+        {
+          "title": "115-2公告試題_資訊安全規劃實務(115.09.04)",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/f7ae889e26b0417fb041f79e2b21cc13/115-2公告試題_I21-5101 資訊安全規劃實務_20260904145219.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/ISE/learning-resources",
+          "level": "intermediate",
+          "publishedAt": "2026-09-04",
+          "subject": "ise-intermediate-1"
+        },
+        {
+          "title": "115-2公告試題_資訊安全防護實務(115.09.04)",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/f7ae889e26b0417fb041f79e2b21cc13/115-2公告試題_I22-5101 資訊安全防護實務_20260904145255.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/ISE/learning-resources",
+          "level": "intermediate",
+          "publishedAt": "2026-09-04",
+          "subject": "ise-intermediate-2"
+        },
+        {
+          "title": "115-1公告試題_資訊安全管理概論(115.06.05)",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/f7ae889e26b0417fb041f79e2b21cc13/115-1公告試題_I11-5101 資訊安全管理概論_20260605175724.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/ISE/learning-resources",
+          "level": "junior",
+          "publishedAt": "2026-06-05",
+          "subject": "ise-junior-1"
+        },
+        {
+          "title": "115-1公告試題_資訊安全技術概論(115.06.11)",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/f7ae889e26b0417fb041f79e2b21cc13/115-1公告試題_I12-5101 資訊安全技術概論(0611更)_20260611161120.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/ISE/learning-resources",
+          "level": "junior",
+          "publishedAt": "2026-06-11",
+          "subject": "ise-junior-2"
+        },
+        {
+          "title": "資訊安全簡介",
+          "url": "https://collegeplus.itri.org.tw/course/1137#/",
+          "kind": "course",
+          "sourceKind": "official-course",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/ISE/learning-resources"
+        },
+        {
+          "title": "【初級】資訊安全管理概論",
+          "url": "https://collegeplus.itri.org.tw/course/1151#/",
+          "kind": "course",
+          "sourceKind": "official-course",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/ISE/learning-resources",
+          "subject": "ise-junior-1"
+        },
+        {
+          "title": "【初級】資訊安全技術概論",
+          "url": "https://collegeplus.itri.org.tw/course/1150#/",
+          "kind": "course",
+          "sourceKind": "official-course",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/ISE/learning-resources",
+          "subject": "ise-junior-2"
+        },
+        {
+          "title": "【中級】資訊安全規劃實務",
+          "url": "https://collegeplus.itri.org.tw/course/1152#/",
+          "kind": "course",
+          "sourceKind": "official-course",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/ISE/learning-resources",
+          "subject": "ise-intermediate-1"
+        },
+        {
+          "title": "【中級】資訊安全防護實務",
+          "url": "https://collegeplus.itri.org.tw/course/1153#/",
+          "kind": "course",
+          "sourceKind": "official-course",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/ISE/learning-resources",
+          "subject": "ise-intermediate-2"
+        }
+      ],
+      "resourceNote": "資源依官方學習資源頁及下載頁列出；樣題、學習指引與正式歷屆試題分開標示。列入教材或原卷連結不代表已轉為可計分練習。"
+    },
+    {
+      "id": "oia",
+      "officialCode": "OIA",
+      "name": "營運智慧分析師",
+      "category": "資訊類",
+      "status": "active",
+      "effectiveYear": 2026,
+      "officialUrl": "https://ipd.nat.gov.tw/ipas/certification/OIA/news",
+      "examInfoUrl": "https://ipd.nat.gov.tw/ipas/certification/OIA/exam-info",
+      "resourcesUrl": "https://ipd.nat.gov.tw/ipas/certification/OIA/learning-resources",
+      "levels": [
+        {
+          "id": "junior",
+          "name": "初級",
+          "subjects": [
+            {
+              "id": "oia-junior-1",
+              "name": "營運智慧概論",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/OIA/115年度營運智慧分析師能力鑑定簡章(初級)_1150410_20260410115359.pdf",
+              "order": 1
+            },
+            {
+              "id": "oia-junior-2",
+              "name": "經營管理數位化概論",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/OIA/115年度營運智慧分析師能力鑑定簡章(初級)_1150410_20260410115359.pdf",
+              "order": 2
+            }
+          ],
+          "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/OIA/115年度營運智慧分析師能力鑑定簡章(初級)_1150410_20260410115359.pdf",
+          "effectiveYear": 2026,
+          "existingApp": "/bi/"
+        }
+      ],
+      "resources": [
+        {
+          "title": "115年度營運智慧分析師能力鑑定簡章(初級)_1150410.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/OIA/115年度營運智慧分析師能力鑑定簡章(初級)_1150410_20260410115359.pdf",
+          "kind": "syllabus",
+          "sourceKind": "official-syllabus",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/OIA/exam-info",
+          "year": 2026
+        },
+        {
+          "title": "營運智慧概論",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b38bd86260a546a3aa41289eea23c765/1128（華筑）考科1_營運智慧概論_20251212112207.pdf",
+          "kind": "guide",
+          "sourceKind": "official-guide",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/OIA/learning-resources",
+          "level": "junior",
+          "subject": "oia-junior-1"
+        },
+        {
+          "title": "經營管理數位化概論",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/b38bd86260a546a3aa41289eea23c765/1128（華筑）考科2_經營管理數位化概論_20251212131032.pdf",
+          "kind": "guide",
+          "sourceKind": "official-guide",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/OIA/learning-resources",
+          "level": "junior",
+          "subject": "oia-junior-2"
+        },
+        {
+          "title": "營運智慧概論",
+          "url": "https://collegeplus.itri.org.tw/course/1519#/",
+          "kind": "course",
+          "sourceKind": "official-course",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/OIA/learning-resources",
+          "subject": "oia-junior-1"
+        },
+        {
+          "title": "經營管理數位化概論",
+          "url": "https://collegeplus.itri.org.tw/course/1520#/",
+          "kind": "course",
+          "sourceKind": "official-course",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/OIA/learning-resources",
+          "subject": "oia-junior-2"
+        }
+      ],
+      "existingApp": "/bi/",
+      "resourceNote": "資源依官方學習資源頁及下載頁列出；樣題、學習指引與正式歷屆試題分開標示。列入教材或原卷連結不代表已轉為可計分練習。"
+    },
+    {
+      "id": "3dp",
+      "officialCode": "3DP",
+      "name": "3D列印積層製造工程師",
+      "category": "智慧機械類",
+      "status": "active",
+      "effectiveYear": 2026,
+      "officialUrl": "https://ipd.nat.gov.tw/ipas/certification/3DP/news",
+      "examInfoUrl": "https://ipd.nat.gov.tw/ipas/certification/3DP/exam-info",
+      "resourcesUrl": "https://ipd.nat.gov.tw/ipas/certification/3DP/learning-resources",
+      "levels": [
+        {
+          "id": "junior",
+          "name": "初級",
+          "subjects": [
+            {
+              "id": "3dp-junior-1",
+              "name": "3D列印概論",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf",
+              "order": 1
+            },
+            {
+              "id": "3dp-junior-2",
+              "name": "3D列印製程與材料概論",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf",
+              "order": 2
+            },
+            {
+              "id": "3dp-junior-3",
+              "name": "3D列印製程實務：材料擠製成型",
+              "type": "practical",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf",
+              "order": 3
+            },
+            {
+              "id": "3dp-junior-4",
+              "name": "3D列印製程實務：光聚合固化",
+              "type": "practical",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf",
+              "order": 4
+            }
+          ],
+          "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf",
+          "effectiveYear": 2026,
+          "selectionNote": "科目一必考；科目二、三、四擇一。術科僅第二梯次開放，日期另行公告。"
+        },
+        {
+          "id": "intermediate",
+          "name": "中級",
+          "subjects": [
+            {
+              "id": "3dp-intermediate-1",
+              "name": "3D列印材料與製程優化",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf",
+              "order": 1
+            },
+            {
+              "id": "3dp-intermediate-2",
+              "name": "3D列印進階製程實務：材料擠製成型",
+              "type": "practical",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf",
+              "order": 2
+            },
+            {
+              "id": "3dp-intermediate-3",
+              "name": "3D列印進階製程實務：光聚合固化",
+              "type": "practical",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf",
+              "order": 3
+            }
+          ],
+          "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf",
+          "effectiveYear": 2026,
+          "selectionNote": "科目一必考；科目二、三擇一。科目一為紙筆問答，科目二、三為術科實作。"
+        }
+      ],
+      "resources": [
+        {
+          "title": "115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/3DP/115年度3D列印積層製造工程師能力鑑定簡章(初、中級)_0508_20260508182625.pdf",
+          "kind": "syllabus",
+          "sourceKind": "official-syllabus",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/3DP/exam-info",
+          "year": 2026
+        },
+        {
+          "title": "考科1_3D列印概論",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/811c18f088184802bd71dc2da6831aa4/3D列印概論(111年版)_20251223102010.pdf",
+          "kind": "guide",
+          "sourceKind": "official-guide",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/3DP/learning-resources",
+          "level": "junior",
+          "subject": "3dp-junior-1"
+        },
+        {
+          "title": "考科2_3D列印製程與材料概論",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/811c18f088184802bd71dc2da6831aa4/3D列印製程與材料概論(111年版)_20251223102116.pdf",
+          "kind": "guide",
+          "sourceKind": "official-guide",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/3DP/learning-resources",
+          "level": "junior",
+          "subject": "3dp-junior-2"
+        },
+        {
+          "title": "115年第一次初級3D列印積層製造工程師_第一科_3D列印概論.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/811c18f088184802bd71dc2da6831aa4/115年第一次初級3D列印積層製造工程師_第一科_3D列印概論_20260615163054.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/3DP/learning-resources",
+          "level": "junior",
+          "publishedAt": "2026-06-15",
+          "subject": "3dp-junior-1",
+          "year": 2026
+        },
+        {
+          "title": "115年第一次初級3D列印積層製造工程師_第二科_3D製程與材料概論.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/811c18f088184802bd71dc2da6831aa4/115年第一次初級3D列印積層製造工程師_第二科_3D製程與材料概論_20260615163153.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/3DP/learning-resources",
+          "level": "junior",
+          "publishedAt": "2026-06-15",
+          "year": 2026
+        },
+        {
+          "title": "數位製造：3D列印概論",
+          "url": "https://collegeplus.itri.org.tw/course/1171",
+          "kind": "course",
+          "sourceKind": "official-course",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/3DP/learning-resources",
+          "subject": "3dp-junior-1"
+        },
+        {
+          "title": "數位製造：3D列印製程與材料概論",
+          "url": "https://collegeplus.itri.org.tw/course/1172",
+          "kind": "course",
+          "sourceKind": "official-course",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/3DP/learning-resources",
+          "subject": "3dp-junior-2"
+        },
+        {
+          "title": "數位製造：3D列印製程實務",
+          "url": "https://collegeplus.itri.org.tw/course/1999",
+          "kind": "course",
+          "sourceKind": "official-course",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/3DP/learning-resources"
+        }
+      ],
+      "resourceNote": "資源依官方學習資源頁及下載頁列出；樣題、學習指引與正式歷屆試題分開標示。列入教材或原卷連結不代表已轉為可計分練習。"
+    },
+    {
+      "id": "mdmt",
+      "officialCode": "MDMT",
+      "name": "工具機機械設計工程師",
+      "category": "智慧機械類",
+      "status": "active",
+      "effectiveYear": 2026,
+      "officialUrl": "https://ipd.nat.gov.tw/ipas/certification/MDMT/news",
+      "examInfoUrl": "https://ipd.nat.gov.tw/ipas/certification/MDMT/exam-info",
+      "resourcesUrl": "https://ipd.nat.gov.tw/ipas/certification/MDMT/learning-resources",
+      "levels": [
+        {
+          "id": "junior",
+          "name": "初級",
+          "subjects": [
+            {
+              "id": "mdmt-junior-1",
+              "name": "工具機機械設計概論",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/MDMT/115年度工具機機械設計工程師能力鑑定簡章(初級)_0410_20260410112702.pdf",
+              "order": 1
+            },
+            {
+              "id": "mdmt-junior-2",
+              "name": "機械製圖(含工具機實例)",
+              "type": "mixed",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/MDMT/115年度工具機機械設計工程師能力鑑定簡章(初級)_0410_20260410112702.pdf",
+              "order": 2
+            }
+          ],
+          "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/MDMT/115年度工具機機械設計工程師能力鑑定簡章(初級)_0410_20260410112702.pdf",
+          "effectiveYear": 2026,
+          "selectionNote": "科目二為非選擇題（含實體繪製），以繪製實作及紙筆測驗進行。"
+        }
+      ],
+      "resources": [
+        {
+          "title": "115年度工具機機械設計工程師能力鑑定簡章(初級)_0410.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/MDMT/115年度工具機機械設計工程師能力鑑定簡章(初級)_0410_20260410112702.pdf",
+          "kind": "syllabus",
+          "sourceKind": "official-syllabus",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/MDMT/exam-info",
+          "year": 2026
+        },
+        {
+          "title": "114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114.11.10).pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/fd76487d209c4f1fa3c9a975ac8594eb/114年第一次初級工具機-L11工具機機械設計概論-正式版考題(當次試題公告114_20251226182536.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/MDMT/learning-resources",
+          "level": "junior",
+          "publishedAt": "2025-12-26",
+          "subject": "mdmt-junior-1",
+          "year": 2025
+        },
+        {
+          "title": "114年第一次初級工具機-L12機械製圖-正式版考題(當次試題公告114.11.10).pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/fd76487d209c4f1fa3c9a975ac8594eb/114年第一次初級工具機-L12機械製圖-正式版考題(當次試題公告114_20251226182521.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/MDMT/learning-resources",
+          "level": "junior",
+          "publishedAt": "2025-12-26",
+          "year": 2025
+        },
+        {
+          "title": "工具機機械設計概論",
+          "url": "https://collegeplus.itri.org.tw/course/4147",
+          "kind": "course",
+          "sourceKind": "official-course",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/MDMT/learning-resources",
+          "subject": "mdmt-junior-1"
+        }
+      ],
+      "resourceNote": "資源依官方學習資源頁及下載頁列出；樣題、學習指引與正式歷屆試題分開標示。列入教材或原卷連結不代表已轉為可計分練習。"
+    },
+    {
+      "id": "spe",
+      "officialCode": "SPE",
+      "name": "智慧生產工程師",
+      "category": "智慧機械類",
+      "status": "active",
+      "effectiveYear": 2026,
+      "officialUrl": "https://ipd.nat.gov.tw/ipas/certification/SPE/news",
+      "examInfoUrl": "https://ipd.nat.gov.tw/ipas/certification/SPE/exam-info",
+      "resourcesUrl": "https://ipd.nat.gov.tw/ipas/certification/SPE/learning-resources",
+      "levels": [
+        {
+          "id": "junior",
+          "name": "初級",
+          "subjects": [
+            {
+              "id": "spe-junior-1",
+              "name": "生產與作業管理基礎",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/SPE/115年度智慧生產工程師能力鑑定簡章(初、中級)_0410_20260410140735.pdf",
+              "order": 1
+            },
+            {
+              "id": "spe-junior-2",
+              "name": "智慧製造生產線管理基礎",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/SPE/115年度智慧生產工程師能力鑑定簡章(初、中級)_0410_20260410140735.pdf",
+              "order": 2
+            },
+            {
+              "id": "spe-junior-3",
+              "name": "智慧生產與管理實務",
+              "type": "mixed",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/SPE/115年度智慧生產工程師能力鑑定簡章(初、中級)_0410_20260410140735.pdf",
+              "order": 3
+            }
+          ],
+          "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/SPE/115年度智慧生產工程師能力鑑定簡章(初、中級)_0410_20260410140735.pdf",
+          "effectiveYear": 2026,
+          "selectionNote": "科目一必考；科目二、三擇一。科目三術科僅上半年辦理。"
+        },
+        {
+          "id": "intermediate",
+          "name": "中級",
+          "subjects": [
+            {
+              "id": "spe-intermediate-1",
+              "name": "智慧製造生產與作業管理之實務應用",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/SPE/115年度智慧生產工程師能力鑑定簡章(初、中級)_0410_20260410140735.pdf",
+              "order": 1
+            },
+            {
+              "id": "spe-intermediate-2",
+              "name": "智慧製造之設備與製程管理之實務應用",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/SPE/115年度智慧生產工程師能力鑑定簡章(初、中級)_0410_20260410140735.pdf",
+              "order": 2
+            }
+          ],
+          "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/SPE/115年度智慧生產工程師能力鑑定簡章(初、中級)_0410_20260410140735.pdf",
+          "effectiveYear": 2026
+        }
+      ],
+      "resources": [
+        {
+          "title": "115年度智慧生產工程師能力鑑定簡章(初、中級)_0410.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/SPE/115年度智慧生產工程師能力鑑定簡章(初、中級)_0410_20260410140735.pdf",
+          "kind": "syllabus",
+          "sourceKind": "official-syllabus",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/SPE/exam-info",
+          "year": 2026
+        },
+        {
+          "title": "考科3.智慧生產與管理實務-實作器材及評分標準與說明題答題撰寫原則公告版 (1).pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/4ee7f4184b654a3495f586fc869054fd/考科3_20251224152750.pdf",
+          "kind": "guide",
+          "sourceKind": "official-sample",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/SPE/learning-resources",
+          "level": "junior",
+          "publishedAt": "2025-12-24",
+          "subject": "spe-junior-3"
+        },
+        {
+          "title": "115年第一次初級智慧生產_L11_生產與作業管理基礎_公告試題.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/4ee7f4184b654a3495f586fc869054fd/115-01-初級智慧生產_L11_生產與作業管理基礎_公告試題_20260608113807.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/SPE/learning-resources",
+          "level": "junior",
+          "publishedAt": "2026-06-08",
+          "subject": "spe-junior-1",
+          "year": 2026
+        },
+        {
+          "title": "115年第一次初級智慧生產_L12_智慧製造生產線管理基礎_公告試題.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/4ee7f4184b654a3495f586fc869054fd/115-01-初級智慧生產_L12_智慧製造生產線管理基礎_公告試題_20260608113824.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/SPE/learning-resources",
+          "level": "junior",
+          "publishedAt": "2026-06-08",
+          "subject": "spe-junior-2",
+          "year": 2026
+        },
+        {
+          "title": "115年第一次中級智慧生產_L21製造生產與作業管理之實務應用_公告試題.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/4ee7f4184b654a3495f586fc869054fd/115年第一次中級智慧生產_第一科_智慧製造生產與作業管理之實務應用_公告試題_20260729142554.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/SPE/learning-resources",
+          "level": "intermediate",
+          "publishedAt": "2026-07-29",
+          "year": 2026
+        },
+        {
+          "title": "115年第一次中級智慧生產_L22智慧製造之設備與製程管理之實務應用_公告試題.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/4ee7f4184b654a3495f586fc869054fd/115年第一次中級智慧生產_第二科_智慧製造之設備與製程管理之實務應用_公告試題_20260422152024.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/SPE/learning-resources",
+          "level": "intermediate",
+          "publishedAt": "2026-04-22",
+          "subject": "spe-intermediate-2",
+          "year": 2026
+        }
+      ],
+      "resourceNote": "資源依官方學習資源頁及下載頁列出；樣題、學習指引與正式歷屆試題分開標示。列入教材或原卷連結不代表已轉為可計分練習。"
+    },
+    {
+      "id": "pmae",
+      "officialCode": "PMAE",
+      "name": "塑膠材料應用工程師",
+      "category": "綠能科技類",
+      "status": "active",
+      "effectiveYear": 2026,
+      "officialUrl": "https://ipd.nat.gov.tw/ipas/certification/PMAE/news",
+      "examInfoUrl": "https://ipd.nat.gov.tw/ipas/certification/PMAE/exam-info",
+      "resourcesUrl": "https://ipd.nat.gov.tw/ipas/certification/PMAE/learning-resources",
+      "levels": [
+        {
+          "id": "junior",
+          "name": "初級",
+          "subjects": [
+            {
+              "id": "pmae-junior-1",
+              "name": "高分子化性與物性概論",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/PMAE/115年度塑膠材料應用工程師能力鑑定簡章(初、中級)_20251230213934.pdf",
+              "order": 1
+            },
+            {
+              "id": "pmae-junior-2",
+              "name": "高分子材料特性與加工概論",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/PMAE/115年度塑膠材料應用工程師能力鑑定簡章(初、中級)_20251230213934.pdf",
+              "order": 2
+            }
+          ],
+          "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/PMAE/115年度塑膠材料應用工程師能力鑑定簡章(初、中級)_20251230213934.pdf",
+          "effectiveYear": 2026
+        },
+        {
+          "id": "intermediate",
+          "name": "中級",
+          "subjects": [
+            {
+              "id": "pmae-intermediate-1",
+              "name": "高分子材料應用技術",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/PMAE/115年度塑膠材料應用工程師能力鑑定簡章(初、中級)_20251230213934.pdf",
+              "order": 1
+            },
+            {
+              "id": "pmae-intermediate-2",
+              "name": "塑膠材料成型加工與檢測分析",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/PMAE/115年度塑膠材料應用工程師能力鑑定簡章(初、中級)_20251230213934.pdf",
+              "order": 2
+            },
+            {
+              "id": "pmae-intermediate-3",
+              "name": "常見塑膠材料檢測儀器的功能及數據判讀",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/PMAE/115年度塑膠材料應用工程師能力鑑定簡章(初、中級)_20251230213934.pdf",
+              "order": 3
+            }
+          ],
+          "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/PMAE/115年度塑膠材料應用工程師能力鑑定簡章(初、中級)_20251230213934.pdf",
+          "effectiveYear": 2026,
+          "selectionNote": "三科皆列入授證條件。科目三為紙筆簡答，非電腦選擇題。"
+        }
+      ],
+      "resources": [
+        {
+          "title": "115年度塑膠材料應用工程師能力鑑定簡章(初、中級).pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/PMAE/115年度塑膠材料應用工程師能力鑑定簡章(初、中級)_20251230213934.pdf",
+          "kind": "syllabus",
+          "sourceKind": "official-syllabus",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/PMAE/exam-info",
+          "year": 2026
+        },
+        {
+          "title": "考科1_高分子化性與物性概論學習指引",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/533efbe78ef849a99428642a034720a9/考科1_高分子化性與物性概論學習指引F_20260128170936.pdf",
+          "kind": "guide",
+          "sourceKind": "official-guide",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/PMAE/learning-resources",
+          "level": "junior",
+          "subject": "pmae-junior-1"
+        },
+        {
+          "title": "考科2_高分子材料特性與加工概論學習指引",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/533efbe78ef849a99428642a034720a9/考科2_高分子材料特性與加工概論學習指引F_20260128170959.pdf",
+          "kind": "guide",
+          "sourceKind": "official-guide",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/PMAE/learning-resources",
+          "level": "junior",
+          "subject": "pmae-junior-2"
+        },
+        {
+          "title": "考科一高分子化性與物性模擬試題.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/533efbe78ef849a99428642a034720a9/考科一高分子化性與物性模擬試題_20251229150206.pdf",
+          "kind": "guide",
+          "sourceKind": "official-sample",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/PMAE/learning-resources",
+          "level": "junior",
+          "publishedAt": "2025-12-29"
+        },
+        {
+          "title": "考科二高分子材料特性與加工概論模擬試題.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/533efbe78ef849a99428642a034720a9/考科二高分子材料特性與加工概論模擬試題_20251229150258.pdf",
+          "kind": "guide",
+          "sourceKind": "official-sample",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/PMAE/learning-resources",
+          "level": "junior",
+          "publishedAt": "2025-12-29",
+          "subject": "pmae-junior-2"
+        },
+        {
+          "title": "中級塑膠材料應用工程師樣題.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/533efbe78ef849a99428642a034720a9/中級塑膠材料應用工程師樣題_20251229150237.pdf",
+          "kind": "guide",
+          "sourceKind": "official-sample",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/PMAE/learning-resources",
+          "level": "intermediate",
+          "publishedAt": "2025-12-29"
+        },
+        {
+          "title": "115年第一梯次初級塑膠材料應用工程師第一科高分子化性與物性概論(115.6.15).pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/533efbe78ef849a99428642a034720a9/115年第一梯次初級塑膠材料應用工程師第一科高分子化性與物性概論(115_20260615170300.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/PMAE/learning-resources",
+          "level": "junior",
+          "publishedAt": "2026-06-15",
+          "subject": "pmae-junior-1",
+          "year": 2026
+        },
+        {
+          "title": "115年第一梯次初級塑膠材料應用工程師第二科高分子材料特性與加工概論(115.6.15).pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/533efbe78ef849a99428642a034720a9/115年第一梯次初級塑膠材料應用工程師第二科高分子材料特性與加工概論(115_20260615170511.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/PMAE/learning-resources",
+          "level": "junior",
+          "publishedAt": "2026-06-15",
+          "subject": "pmae-junior-2",
+          "year": 2026
+        },
+        {
+          "title": "115年中級塑膠材料應用工程師考科一高分子材料應用技術(115.8.22).pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/533efbe78ef849a99428642a034720a9/115年中級塑膠材料應用工程師考科一高分子材料應用技術(115_20260921114522.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/PMAE/learning-resources",
+          "level": "intermediate",
+          "publishedAt": "2026-09-21",
+          "subject": "pmae-intermediate-1",
+          "year": 2026
+        },
+        {
+          "title": "115年中級塑膠材料應用工程師考科二塑膠材料成型加工與檢測分析(115.8.22).pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/533efbe78ef849a99428642a034720a9/115年中級塑膠材料應用工程師考科二塑膠材料成型加工與檢測分析(115_20260921114530.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/PMAE/learning-resources",
+          "level": "intermediate",
+          "publishedAt": "2026-09-21",
+          "subject": "pmae-intermediate-2",
+          "year": 2026
+        },
+        {
+          "title": "附錄七、初級塑膠材料應用工程師-細部評鑑內容.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_attachment/c793d5b155bb41a3920c05a6027c9429/附錄七、初級塑膠材料應用工程師-細部評鑑內容_20251231091016.pdf",
+          "kind": "syllabus",
+          "sourceKind": "official-syllabus",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/PMAE/downloads"
+        },
+        {
+          "title": "附錄八、中級塑膠材料應用工程師-細部評鑑內容.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_attachment/c793d5b155bb41a3920c05a6027c9429/附錄八、中級塑膠材料應用工程師-細部評鑑內容_20251231091022.pdf",
+          "kind": "syllabus",
+          "sourceKind": "official-syllabus",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/PMAE/downloads"
+        }
+      ],
+      "resourceNote": "資源依官方學習資源頁及下載頁列出；樣題、學習指引與正式歷屆試題分開標示。列入教材或原卷連結不代表已轉為可計分練習。"
+    },
+    {
+      "id": "evm",
+      "officialCode": "EVM",
+      "name": "電動車機電整合工程師",
+      "category": "綠能科技類",
+      "status": "active",
+      "effectiveYear": 2026,
+      "officialUrl": "https://ipd.nat.gov.tw/ipas/certification/EVM/news",
+      "examInfoUrl": "https://ipd.nat.gov.tw/ipas/certification/EVM/exam-info",
+      "resourcesUrl": "https://ipd.nat.gov.tw/ipas/certification/EVM/learning-resources",
+      "levels": [
+        {
+          "id": "junior",
+          "name": "初級",
+          "subjects": [
+            {
+              "id": "evm-junior-1",
+              "name": "電動車概論",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/EVM/115年度電動車機電整合工程師能力鑑定簡章(初級、中級)_0410_20260410121908.pdf",
+              "order": 1
+            },
+            {
+              "id": "evm-junior-2",
+              "name": "電動車機電整合概論",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/EVM/115年度電動車機電整合工程師能力鑑定簡章(初級、中級)_0410_20260410121908.pdf",
+              "order": 2
+            }
+          ],
+          "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/EVM/115年度電動車機電整合工程師能力鑑定簡章(初級、中級)_0410_20260410121908.pdf",
+          "effectiveYear": 2026
+        },
+        {
+          "id": "intermediate",
+          "name": "中級",
+          "subjects": [
+            {
+              "id": "evm-intermediate-1",
+              "name": "電動車電能系統應用實務",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/EVM/115年度電動車機電整合工程師能力鑑定簡章(初級、中級)_0410_20260410121908.pdf",
+              "order": 1
+            },
+            {
+              "id": "evm-intermediate-2",
+              "name": "電動車動力與控制系統整合",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/EVM/115年度電動車機電整合工程師能力鑑定簡章(初級、中級)_0410_20260410121908.pdf",
+              "order": 2
+            },
+            {
+              "id": "evm-intermediate-3",
+              "name": "電動車機電整合實務",
+              "type": "mixed",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/EVM/115年度電動車機電整合工程師能力鑑定簡章(初級、中級)_0410_20260410121908.pdf",
+              "order": 3
+            }
+          ],
+          "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/EVM/115年度電動車機電整合工程師能力鑑定簡章(初級、中級)_0410_20260410121908.pdf",
+          "effectiveYear": 2026,
+          "selectionNote": "三科必考；科目三含 45 分鐘單選題及另排梯次的 60 分鐘實作。"
+        }
+      ],
+      "resources": [
+        {
+          "title": "115年度電動車機電整合工程師能力鑑定簡章(初級、中級)_0410.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/EVM/115年度電動車機電整合工程師能力鑑定簡章(初級、中級)_0410_20260410121908.pdf",
+          "kind": "syllabus",
+          "sourceKind": "official-syllabus",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/EVM/exam-info",
+          "year": 2026
+        },
+        {
+          "title": "(中級)電動車機電整合工程師_科目3電動車機電整合實務_實作題指引",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/5e2ad290a6794c608bec6499bd8368e7/中級考科3_20251217152430.pdf",
+          "kind": "guide",
+          "sourceKind": "official-guide",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/EVM/learning-resources",
+          "level": "intermediate",
+          "subject": "evm-intermediate-3"
+        },
+        {
+          "title": "(中級)電動車機電整合工程師_科目3電動車機電整合實務_實作題操作示範",
+          "url": "https://collegeplus.itri.org.tw/course/1877#/",
+          "kind": "course",
+          "sourceKind": "official-course",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/EVM/learning-resources",
+          "level": "intermediate",
+          "subject": "evm-intermediate-3"
+        },
+        {
+          "title": "(初級)學習指引-電動車機電整合工程師_科目1電動車概論",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/5e2ad290a6794c608bec6499bd8368e7/電動車機電整合工程師(初級)_學習指引_科目1_電動車概論_20260930150238.pdf",
+          "kind": "guide",
+          "sourceKind": "official-guide",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/EVM/learning-resources",
+          "level": "junior",
+          "subject": "evm-junior-1"
+        },
+        {
+          "title": "(初級)學習指引-電動車機電整合工程師_科目2電動車機電整合概論",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/5e2ad290a6794c608bec6499bd8368e7/電動車機電整合工程師(初級)_學習指引_科目2_電動車機電整合概論_20260930150302.pdf",
+          "kind": "guide",
+          "sourceKind": "official-guide",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/EVM/learning-resources",
+          "level": "junior",
+          "subject": "evm-junior-2"
+        },
+        {
+          "title": "iPAS電動車機電整合工程師中級能力鑑定-考試樣題114.07版.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/5e2ad290a6794c608bec6499bd8368e7/iPAS電動車機電整合工程師中級能力鑑定-考試樣題114_20251217152053.pdf",
+          "kind": "guide",
+          "sourceKind": "official-sample",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/EVM/learning-resources",
+          "level": "intermediate",
+          "publishedAt": "2025-12-17"
+        },
+        {
+          "title": "115年第一次初級電動車機電整合工程師_第一科_電動車概論_公告試題.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/5e2ad290a6794c608bec6499bd8368e7/115年第一次初級電動車機電整合工程師_第一科_電動車概論_公告試題_20260615143738.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/EVM/learning-resources",
+          "level": "junior",
+          "publishedAt": "2026-06-15",
+          "subject": "evm-junior-1",
+          "year": 2026
+        },
+        {
+          "title": "115年第一次初級電動車機電整合工程師_第二科_電動車機電整合概論_公告試題.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/5e2ad290a6794c608bec6499bd8368e7/115年第一次初級電動車機電整合工程師_第二科_電動車機電整合概論_公告試題_20260615143807.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/EVM/learning-resources",
+          "level": "junior",
+          "publishedAt": "2026-06-15",
+          "subject": "evm-junior-2",
+          "year": 2026
+        },
+        {
+          "title": "115年第一次中級電動車機電整合工程師_第一科_電動車電能系統應用實務_公告試題.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/5e2ad290a6794c608bec6499bd8368e7/115年第一次中級電動車機電整合工程師_第一科_電動車電能系統應用實務_公告試題_20260921123414.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/EVM/learning-resources",
+          "level": "intermediate",
+          "publishedAt": "2026-09-21",
+          "subject": "evm-intermediate-1",
+          "year": 2026
+        },
+        {
+          "title": "115年第一次中級電動車機電整合工程師_第二科_電動車動力與控制系統整合_公告試題.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/5e2ad290a6794c608bec6499bd8368e7/115年第一次中級電動車機電整合工程師_第二科_電動車動力與控制系統整合_公告試題_20260921125233.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/EVM/learning-resources",
+          "level": "intermediate",
+          "publishedAt": "2026-09-21",
+          "subject": "evm-intermediate-2",
+          "year": 2026
+        },
+        {
+          "title": "115年第一次中級電動車機電整合工程師_第三科_電動車機電整合實務_公告試題.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/5e2ad290a6794c608bec6499bd8368e7/115年第一次中級電動車機電整合工程師_第三科_電動車機電整合實務_公告試題_20260921123500.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/EVM/learning-resources",
+          "level": "intermediate",
+          "publishedAt": "2026-09-21",
+          "subject": "evm-intermediate-3",
+          "year": 2026
+        },
+        {
+          "title": "數位時代之電動車解密",
+          "url": "https://collegeplus.itri.org.tw/course/1142#/",
+          "kind": "course",
+          "sourceKind": "official-course",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/EVM/learning-resources"
+        },
+        {
+          "title": "電動車-微處理機與周邊介面",
+          "url": "https://collegeplus.itri.org.tw/course/6257#/",
+          "kind": "course",
+          "sourceKind": "official-course",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/EVM/learning-resources"
+        }
+      ],
+      "resourceNote": "資源依官方學習資源頁及下載頁列出；樣題、學習指引與正式歷屆試題分開標示。列入教材或原卷連結不代表已轉為可計分練習。"
+    },
+    {
+      "id": "fqa",
+      "officialCode": "FQA",
+      "name": "食品品保工程師",
+      "category": "生技醫藥類",
+      "status": "active",
+      "effectiveYear": 2026,
+      "officialUrl": "https://ipd.nat.gov.tw/ipas/certification/FQA/news",
+      "examInfoUrl": "https://ipd.nat.gov.tw/ipas/certification/FQA/exam-info",
+      "resourcesUrl": "https://ipd.nat.gov.tw/ipas/certification/FQA/learning-resources",
+      "levels": [
+        {
+          "id": "junior",
+          "name": "初級",
+          "subjects": [
+            {
+              "id": "fqa-junior-1",
+              "name": "食品品保概論",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/FQA/115年度食品品保工程師簡章(初、中級)__公告版_20251229103504.pdf",
+              "order": 1
+            },
+            {
+              "id": "fqa-junior-2",
+              "name": "食品科學概論",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/FQA/115年度食品品保工程師簡章(初、中級)__公告版_20251229103504.pdf",
+              "order": 2
+            }
+          ],
+          "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/FQA/115年度食品品保工程師簡章(初、中級)__公告版_20251229103504.pdf",
+          "effectiveYear": 2026
+        },
+        {
+          "id": "intermediate",
+          "name": "中級",
+          "subjects": [
+            {
+              "id": "fqa-intermediate-1",
+              "name": "食品品保管理",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/FQA/115年度食品品保工程師簡章(初、中級)__公告版_20251229103504.pdf",
+              "order": 1
+            },
+            {
+              "id": "fqa-intermediate-2",
+              "name": "食品工廠管理",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/FQA/115年度食品品保工程師簡章(初、中級)__公告版_20251229103504.pdf",
+              "order": 2
+            },
+            {
+              "id": "fqa-intermediate-3",
+              "name": "統計製程品管",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/FQA/115年度食品品保工程師簡章(初、中級)__公告版_20251229103504.pdf",
+              "order": 3
+            }
+          ],
+          "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/FQA/115年度食品品保工程師簡章(初、中級)__公告版_20251229103504.pdf",
+          "effectiveYear": 2026
+        }
+      ],
+      "resources": [
+        {
+          "title": "115年度食品品保工程師簡章(初、中級)__公告版.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/FQA/115年度食品品保工程師簡章(初、中級)__公告版_20251229103504.pdf",
+          "kind": "syllabus",
+          "sourceKind": "official-syllabus",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/FQA/exam-info",
+          "year": 2026
+        },
+        {
+          "title": "食品品保初級工程師能力鑑定公告樣題10503.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/4a5b584b19c545e2b37af377a4ce7241/食品品保初級工程師能力鑑定公告樣題10503_20251229172833.pdf",
+          "kind": "guide",
+          "sourceKind": "official-sample",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/FQA/learning-resources",
+          "level": "junior",
+          "publishedAt": "2025-12-29"
+        },
+        {
+          "title": "歷屆考古題",
+          "url": "https://mms.firdi.org.tw/viewdetail/context/29",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/FQA/learning-resources",
+          "resourceType": "collection",
+          "note": "官方入口涵蓋初級與中級，含 105–115 年題卷及疑義更正；不是單份試卷。"
+        },
+        {
+          "title": "食品品保工程師考前充電站-食品品保概論",
+          "url": "https://mms.firdi.org.tw/product/detail/2025010001",
+          "kind": "course",
+          "sourceKind": "official-course",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/FQA/learning-resources",
+          "subject": "fqa-junior-1"
+        },
+        {
+          "title": "食品品保工程師考前充電站-食品科學概論",
+          "url": "https://mms.firdi.org.tw/product/detail/2025010002",
+          "kind": "course",
+          "sourceKind": "official-course",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/FQA/learning-resources",
+          "subject": "fqa-junior-2"
+        }
+      ],
+      "resourceNote": "食品所的歷屆題庫入口含初、中級與歷年題卷，並有逐題疑義更正公告；計分時必須併用更正公告。樣題與歷屆正式題卷分開標示。"
+    },
+    {
+      "id": "cpm",
+      "officialCode": "CPM",
+      "name": "色彩規劃管理師",
+      "category": "跨領域",
+      "status": "active",
+      "effectiveYear": 2026,
+      "officialUrl": "https://ipd.nat.gov.tw/ipas/certification/CPM/news",
+      "examInfoUrl": "https://ipd.nat.gov.tw/ipas/certification/CPM/exam-info",
+      "resourcesUrl": "https://ipd.nat.gov.tw/ipas/certification/CPM/learning-resources",
+      "levels": [
+        {
+          "id": "junior",
+          "name": "初級",
+          "subjects": [
+            {
+              "id": "cpm-junior-1",
+              "name": "色彩學",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/CPM/115年度色彩規劃管理師能力鑑定簡章(初級)_0623_20260624145855.pdf",
+              "order": 1
+            },
+            {
+              "id": "cpm-junior-2",
+              "name": "色彩計畫實務",
+              "type": "practical",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/CPM/115年度色彩規劃管理師能力鑑定簡章(初級)_0623_20260624145855.pdf",
+              "order": 2
+            },
+            {
+              "id": "cpm-junior-3",
+              "name": "色彩管理",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/CPM/115年度色彩規劃管理師能力鑑定簡章(初級)_0623_20260624145855.pdf",
+              "order": 3
+            }
+          ],
+          "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/CPM/115年度色彩規劃管理師能力鑑定簡章(初級)_0623_20260624145855.pdf",
+          "effectiveYear": 2026,
+          "selectionNote": "色彩計畫類：科目一＋二；色彩管理類：科目一＋三。科目二、三可分別報考取得雙證書；115 年起科目二實作改為電腦作答，搭配紙本試題與實體色票。"
+        }
+      ],
+      "resources": [
+        {
+          "title": "115年度色彩規劃管理師能力鑑定簡章(初級)_0623.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/CPM/115年度色彩規劃管理師能力鑑定簡章(初級)_0623_20260624145855.pdf",
+          "kind": "syllabus",
+          "sourceKind": "official-syllabus",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/CPM/exam-info",
+          "year": 2026
+        },
+        {
+          "title": "色彩規劃管理師(初級)_學習指引_科目1_色彩學",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/色彩-色彩學_20260529143605.pdf",
+          "kind": "guide",
+          "sourceKind": "official-guide",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/CPM/learning-resources",
+          "level": "junior",
+          "subject": "cpm-junior-1"
+        },
+        {
+          "title": "色彩規劃管理師(初級)_學習指引_科目2_色彩計畫實務",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/色彩-色彩計畫實務_20260529144305.pdf",
+          "kind": "guide",
+          "sourceKind": "official-guide",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/CPM/learning-resources",
+          "level": "junior",
+          "subject": "cpm-junior-2"
+        },
+        {
+          "title": "色彩規劃管理師(初級)_學習指引_科目3_色彩管理",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/色彩規劃管理師(初級)_學習指引_科目3_色彩管理(1150624更新)_20260624161414.pdf",
+          "kind": "guide",
+          "sourceKind": "official-guide",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/CPM/learning-resources",
+          "level": "junior",
+          "subject": "cpm-junior-3"
+        },
+        {
+          "title": "iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年).pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/0a155c41779c4e36917ae51bf4387468/iPAS+色彩規劃管理師初級能力鑑定考試樣題(114年)_20251222084117.pdf",
+          "kind": "guide",
+          "sourceKind": "official-sample",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/CPM/learning-resources",
+          "level": "junior",
+          "publishedAt": "2025-12-22",
+          "year": 2025
+        },
+        {
+          "title": "數位色彩軟體應用(一)",
+          "url": "https://collegeplus.itri.org.tw/course/1292#/",
+          "kind": "course",
+          "sourceKind": "official-course",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/CPM/learning-resources"
+        },
+        {
+          "title": "數位色彩軟體應用(二)",
+          "url": "https://collegeplus.itri.org.tw/course/1297#/",
+          "kind": "course",
+          "sourceKind": "official-course",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/CPM/learning-resources"
+        }
+      ],
+      "resourceNote": "資源依官方學習資源頁及下載頁列出；樣題、學習指引與正式歷屆試題分開標示。列入教材或原卷連結不代表已轉為可計分練習。"
+    },
+    {
+      "id": "nz",
+      "officialCode": "NZ",
+      "name": "淨零碳規劃管理師",
+      "category": "跨領域",
+      "status": "active",
+      "effectiveYear": 2026,
+      "officialUrl": "https://ipd.nat.gov.tw/ipas/certification/NZ/news",
+      "examInfoUrl": "https://ipd.nat.gov.tw/ipas/certification/NZ/exam-info",
+      "resourcesUrl": "https://ipd.nat.gov.tw/ipas/certification/NZ/learning-resources",
+      "levels": [
+        {
+          "id": "junior",
+          "name": "初級",
+          "subjects": [
+            {
+              "id": "nz-junior-1",
+              "name": "淨零碳規劃管理基礎概論",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/NZ/115年度淨零碳規劃管理師能力鑑定簡章(初、中級)_0410_20260410153528.pdf",
+              "order": 1
+            },
+            {
+              "id": "nz-junior-2",
+              "name": "淨零碳盤查規範與程序概要",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/NZ/115年度淨零碳規劃管理師能力鑑定簡章(初、中級)_0410_20260410153528.pdf",
+              "order": 2
+            }
+          ],
+          "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/NZ/115年度淨零碳規劃管理師能力鑑定簡章(初、中級)_0410_20260410153528.pdf",
+          "effectiveYear": 2026
+        },
+        {
+          "id": "intermediate",
+          "name": "中級",
+          "subjects": [
+            {
+              "id": "nz-intermediate-1",
+              "name": "節能減碳技術實務",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/NZ/115年度淨零碳規劃管理師能力鑑定簡章(初、中級)_0410_20260410153528.pdf",
+              "order": 1
+            },
+            {
+              "id": "nz-intermediate-2",
+              "name": "碳管理制度實務",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/NZ/115年度淨零碳規劃管理師能力鑑定簡章(初、中級)_0410_20260410153528.pdf",
+              "order": 2
+            }
+          ],
+          "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/NZ/115年度淨零碳規劃管理師能力鑑定簡章(初、中級)_0410_20260410153528.pdf",
+          "effectiveYear": 2026
+        }
+      ],
+      "resources": [
+        {
+          "title": "115年度淨零碳規劃管理師能力鑑定簡章(初、中級)_0410.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/NZ/115年度淨零碳規劃管理師能力鑑定簡章(初、中級)_0410_20260410153528.pdf",
+          "kind": "syllabus",
+          "sourceKind": "official-syllabus",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/NZ/exam-info",
+          "year": 2026
+        },
+        {
+          "title": "淨零碳規劃管理師能力鑑定學習指引(考科一)_114.04",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/ca7c798fe06a4ec8a97d5b72cd741963/考科1淨零碳規劃管理基礎概論114_20251226025706.pdf",
+          "kind": "guide",
+          "sourceKind": "official-guide",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/NZ/learning-resources",
+          "level": "junior"
+        },
+        {
+          "title": "淨零碳規劃管理師能力鑑定學習指引(考科二)_114.04",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/ca7c798fe06a4ec8a97d5b72cd741963/考科2溫室氣體盤查規範與程序概要114_20251226025824.pdf",
+          "kind": "guide",
+          "sourceKind": "official-guide",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/NZ/learning-resources",
+          "level": "junior"
+        },
+        {
+          "title": "淨零碳規劃管理師能力鑑定學習指引(考科一)節能減碳技術實務_115.02",
+          "url": "https://drive.google.com/file/d/1b2-76j8KoZw5WOc_DL028g8TeQWigavS/view?usp=sharing",
+          "kind": "guide",
+          "sourceKind": "official-guide",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/NZ/learning-resources",
+          "level": "intermediate",
+          "subject": "nz-intermediate-1"
+        },
+        {
+          "title": "淨零碳規劃管理師能力鑑定學習指引(考科二)碳管理制度實務_115.02",
+          "url": "https://drive.google.com/file/d/1CAyqNszr7NzNc7cLsqqjIt0W--81Tvt7/view?usp=drive_link",
+          "kind": "guide",
+          "sourceKind": "official-guide",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/NZ/learning-resources",
+          "level": "intermediate",
+          "subject": "nz-intermediate-2"
+        },
+        {
+          "title": "iPAS淨零碳規劃管理師（中級能力鑑定）學習指引勘誤表",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/ca7c798fe06a4ec8a97d5b72cd741963/iPAS淨零碳規劃管理師（中級能力鑑定）學習指引勘誤表_20260327151611.pdf",
+          "kind": "guide",
+          "sourceKind": "official-guide",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/NZ/learning-resources",
+          "level": "intermediate"
+        },
+        {
+          "title": "115年第一次中級淨零碳_第一科_節能減碳技術實務_公告試題.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/ca7c798fe06a4ec8a97d5b72cd741963/115年第一次中級淨零碳_第一科_節能減碳技術實務_公告試題_20260729141952.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/NZ/learning-resources",
+          "level": "intermediate",
+          "publishedAt": "2026-07-29",
+          "subject": "nz-intermediate-1",
+          "year": 2026
+        },
+        {
+          "title": "115年第一次中級淨零碳_第二科_碳管理制度實務_公告試題.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/ca7c798fe06a4ec8a97d5b72cd741963/115年第一次中級淨零碳_第二科_碳管理制度實務_公告試題_20260729142006.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/NZ/learning-resources",
+          "level": "intermediate",
+          "publishedAt": "2026-07-29",
+          "subject": "nz-intermediate-2",
+          "year": 2026
+        },
+        {
+          "title": "115年第二次中級淨零碳_第一科_節能減碳技術實務_公告試題.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/ca7c798fe06a4ec8a97d5b72cd741963/115年第二次中級淨零碳_第一科_節能減碳技術實務_公告試題_20260831153347.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/NZ/learning-resources",
+          "level": "intermediate",
+          "publishedAt": "2026-08-31",
+          "subject": "nz-intermediate-1",
+          "year": 2026
+        },
+        {
+          "title": "115年第二次中級淨零碳_第二科_碳管理制度實務_公告試題.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/ca7c798fe06a4ec8a97d5b72cd741963/115年第二次中級淨零碳_第二科_碳管理制度實務_公告試題_20260831153425.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/NZ/learning-resources",
+          "level": "intermediate",
+          "publishedAt": "2026-08-31",
+          "subject": "nz-intermediate-2",
+          "year": 2026
+        },
+        {
+          "title": "115年第一次初級淨零碳_第一科_淨零碳規劃管理基礎概論_公告試題",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/ca7c798fe06a4ec8a97d5b72cd741963/115-01-初級淨零碳_L11_淨零碳規劃管理基礎概論_公告試題_20260729142039.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/NZ/learning-resources",
+          "level": "junior",
+          "publishedAt": "2026-07-29",
+          "subject": "nz-junior-1",
+          "year": 2026
+        },
+        {
+          "title": "115年第一次初級淨零碳_第二科_淨零碳盤查規範與程序概要_公告試題",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/ca7c798fe06a4ec8a97d5b72cd741963/115-01-初級淨零碳_L12_淨零碳盤查規範與程序概要_公告試題_20260729142047.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/NZ/learning-resources",
+          "level": "junior",
+          "publishedAt": "2026-07-29",
+          "subject": "nz-junior-2",
+          "year": 2026
+        },
+        {
+          "title": "115年第二次初級淨零碳_第一科_淨零碳規劃管理基礎概論_公告試題.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/ca7c798fe06a4ec8a97d5b72cd741963/115年第二次初級淨零碳_第一科_淨零碳規劃管理基礎概論_公告試題_20260831152902.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/NZ/learning-resources",
+          "level": "junior",
+          "publishedAt": "2026-08-31",
+          "subject": "nz-junior-1",
+          "year": 2026
+        },
+        {
+          "title": "115年第二次初級淨零碳_第二科_淨零碳盤查規範與程序概要_公告試題.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/ca7c798fe06a4ec8a97d5b72cd741963/115年第二次初級淨零碳_第二科_淨零碳盤查規範與程序概要_公告試題_20260831152909.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/NZ/learning-resources",
+          "level": "junior",
+          "publishedAt": "2026-08-31",
+          "subject": "nz-junior-2",
+          "year": 2026
+        },
+        {
+          "title": "工研院淨零永續學校淨零知識",
+          "url": "https://college.itri.org.tw/nzschool/knowledge.html",
+          "kind": "course",
+          "sourceKind": "official-course",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/NZ/learning-resources"
+        },
+        {
+          "title": "經濟部產業發展署產業節能減碳資訊網活動影片與教材",
+          "url": "https://sdd.nat.gov.tw/ghg/CVData/",
+          "kind": "course",
+          "sourceKind": "official-course",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/NZ/learning-resources"
+        }
+      ],
+      "resourceNote": "資源依官方學習資源頁及下載頁列出；樣題、學習指引與正式歷屆試題分開標示。列入教材或原卷連結不代表已轉為可計分練習。",
+      "coverageNote": "頁首仍保留中級尚未公告的舊提示，但同頁已列 115 年中級科目、場次並提供現行簡章，採現行簡章。"
+    },
+    {
+      "id": "cv",
+      "officialCode": "CV",
+      "name": "無形資產評價管理師",
+      "category": "跨領域",
+      "status": "active",
+      "effectiveYear": 2026,
+      "officialUrl": "https://ipd.nat.gov.tw/ipas/certification/CV/news",
+      "examInfoUrl": "https://ipd.nat.gov.tw/ipas/certification/CV/exam-info",
+      "resourcesUrl": "https://ipd.nat.gov.tw/ipas/certification/CV/learning-resources",
+      "levels": [
+        {
+          "id": "junior",
+          "name": "初級",
+          "subjects": [
+            {
+              "id": "cv-junior-1",
+              "name": "無形資產評價概論(一)",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/CV/9_20260716161626.pdf",
+              "order": 1
+            },
+            {
+              "id": "cv-junior-2",
+              "name": "智慧財產概論及評價職業道德",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/CV/9_20260716161626.pdf",
+              "order": 2
+            }
+          ],
+          "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/CV/9_20260716161626.pdf",
+          "effectiveYear": 2026
+        },
+        {
+          "id": "intermediate",
+          "name": "中級",
+          "subjects": [
+            {
+              "id": "cv-intermediate-1",
+              "name": "評價概論及評價準則",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/CV/9_20260716161626.pdf",
+              "order": 1
+            },
+            {
+              "id": "cv-intermediate-2",
+              "name": "智慧財產權法",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/CV/9_20260716161626.pdf",
+              "order": 2
+            },
+            {
+              "id": "cv-intermediate-3",
+              "name": "無形資產評價概論(二)",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/CV/9_20260716161626.pdf",
+              "order": 3
+            }
+          ],
+          "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/CV/9_20260716161626.pdf",
+          "effectiveYear": 2026
+        },
+        {
+          "id": "advanced",
+          "name": "高級",
+          "subjects": [
+            {
+              "id": "cv-advanced-1",
+              "name": "無形資產評價方法之整合應用",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/CV/9_20260716161626.pdf",
+              "order": 1
+            },
+            {
+              "id": "cv-advanced-2",
+              "name": "無形資產評價實作",
+              "type": "practical",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/CV/9_20260716161626.pdf",
+              "order": 2
+            },
+            {
+              "id": "cv-advanced-3",
+              "name": "智慧財產權法",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/CV/9_20260716161626.pdf",
+              "order": 3
+            }
+          ],
+          "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/CV/9_20260716161626.pdf",
+          "effectiveYear": 2026,
+          "selectionNote": "依 115.07 版最新簡章列三科；智慧財產權法可依簡章申請抵免。網頁摘要另列口試，與最新版簡章不一致，口試不列為本年度新增考科。"
+        }
+      ],
+      "resources": [
+        {
+          "title": "9.115年度無形資產評價管理師能力鑑定簡章(初、中、高級)_11507版.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/CV/9_20260716161626.pdf",
+          "kind": "syllabus",
+          "sourceKind": "official-syllabus",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/CV/exam-info",
+          "year": 2026
+        },
+        {
+          "title": "無形資產評價管理師初級能力鑑定學習指引-無形資產評價概論(一)",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/9487e7ddc2ac4036809e0793a105a5a4/無形資產評價概論(一) (6)_20251224162029.pdf",
+          "kind": "guide",
+          "sourceKind": "official-guide",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/CV/learning-resources",
+          "level": "junior",
+          "subject": "cv-junior-1"
+        },
+        {
+          "title": "無形資產評價管理師初級能力鑑定學習指引-智慧財產概論及評價職業道德",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/9487e7ddc2ac4036809e0793a105a5a4/智慧財產概論及評價職業道德 (2)_20251224162124.pdf",
+          "kind": "guide",
+          "sourceKind": "official-guide",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/CV/learning-resources",
+          "level": "junior",
+          "subject": "cv-junior-2"
+        },
+        {
+          "title": "115年第一次初級無形資產評價管理師能力鑑定-01無形資產評價概論(一)(當次試題公告115.06.15).pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/9487e7ddc2ac4036809e0793a105a5a4/115年第一次初級無形資產評價管理師能力鑑定-01無形資產評價概論(一)(當次試題公告115_20260527114350.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/CV/learning-resources",
+          "level": "junior",
+          "publishedAt": "2026-05-27",
+          "subject": "cv-junior-1",
+          "year": 2026
+        },
+        {
+          "title": "115年第一次初級無形資產評價管理師能力鑑定-02智慧財產概論及評價職業道德(當次試題公告115.06.15).pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/9487e7ddc2ac4036809e0793a105a5a4/115年第一次初級無形資產評價管理師能力鑑定-02智慧財產概論及評價職業道德(當次試題公告115_20260527110302.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/CV/learning-resources",
+          "level": "junior",
+          "publishedAt": "2026-05-27",
+          "subject": "cv-junior-2",
+          "year": 2026
+        },
+        {
+          "title": "115年第一次中級無形資產評價管理師能力鑑定-01評價概論與評價準則(當次試題公告115.09).pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/9487e7ddc2ac4036809e0793a105a5a4/115年第一次中級無形資產評價管理師能力鑑定-01評價概論與評價準則(當次試題公告115_20260907160829.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/CV/learning-resources",
+          "level": "intermediate",
+          "publishedAt": "2026-09-07",
+          "year": 2026
+        },
+        {
+          "title": "115年第一次中級無形資產評價管理師能力鑑定-02智慧財產權法(當次試題公告115.09).pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/9487e7ddc2ac4036809e0793a105a5a4/115年第一次中級無形資產評價管理師能力鑑定-02智慧財產權法(當次試題公告115_20260907160856.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/CV/learning-resources",
+          "level": "intermediate",
+          "publishedAt": "2026-09-07",
+          "subject": "cv-intermediate-2",
+          "year": 2026
+        },
+        {
+          "title": "115年第一次中級無形資產評價管理師能力鑑定-03無形資產評價概論(二)(當次試題公告115.09).pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/9487e7ddc2ac4036809e0793a105a5a4/115年第一次中級無形資產評價管理師能力鑑定-03無形資產評價概論(二)(當次試題公告115_20260907160922.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/CV/learning-resources",
+          "level": "intermediate",
+          "publishedAt": "2026-09-07",
+          "subject": "cv-intermediate-3",
+          "year": 2026
+        }
+      ],
+      "resourceNote": "資源依官方學習資源頁及下載頁列出；樣題、學習指引與正式歷屆試題分開標示。列入教材或原卷連結不代表已轉為可計分練習。",
+      "coverageNote": "高級考試以 115.07 版簡章為準；exam-info 頁口試摘要疑為未同步資料，未納入本年度考科。"
+    },
+    {
+      "id": "aiap",
+      "officialCode": "AIAP",
+      "name": "AI應用規劃師",
+      "category": "跨領域",
+      "status": "active",
+      "effectiveYear": 2026,
+      "officialUrl": "https://ipd.nat.gov.tw/ipas/certification/AIAP/news",
+      "examInfoUrl": "https://ipd.nat.gov.tw/ipas/certification/AIAP/exam-info",
+      "resourcesUrl": "https://ipd.nat.gov.tw/ipas/certification/AIAP/learning-resources",
+      "levels": [
+        {
+          "id": "junior",
+          "name": "初級",
+          "subjects": [
+            {
+              "id": "aiap-junior-1",
+              "name": "人工智慧基礎概論",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/AIAP/115年度AI應用規劃師能力鑑定簡章(初、中級)_0410_20260410115646_20260901165208.pdf",
+              "order": 1
+            },
+            {
+              "id": "aiap-junior-2",
+              "name": "生成式AI應用與規劃",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/AIAP/115年度AI應用規劃師能力鑑定簡章(初、中級)_0410_20260410115646_20260901165208.pdf",
+              "order": 2
+            }
+          ],
+          "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/AIAP/115年度AI應用規劃師能力鑑定簡章(初、中級)_0410_20260410115646_20260901165208.pdf",
+          "effectiveYear": 2026,
+          "existingApp": "/junior/"
+        },
+        {
+          "id": "intermediate",
+          "name": "中級",
+          "subjects": [
+            {
+              "id": "aiap-intermediate-1",
+              "name": "人工智慧技術應用與規劃",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/AIAP/115年度AI應用規劃師能力鑑定簡章(初、中級)_0410_20260410115646_20260901165208.pdf",
+              "order": 1
+            },
+            {
+              "id": "aiap-intermediate-2",
+              "name": "大數據處理分析與應用",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/AIAP/115年度AI應用規劃師能力鑑定簡章(初、中級)_0410_20260410115646_20260901165208.pdf",
+              "order": 2
+            },
+            {
+              "id": "aiap-intermediate-3",
+              "name": "機器學習技術與應用",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/AIAP/115年度AI應用規劃師能力鑑定簡章(初、中級)_0410_20260410115646_20260901165208.pdf",
+              "order": 3
+            }
+          ],
+          "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/AIAP/115年度AI應用規劃師能力鑑定簡章(初、中級)_0410_20260410115646_20260901165208.pdf",
+          "effectiveYear": 2026,
+          "selectionNote": "數據分析類：科目一＋二；機器學習類：科目一＋三。",
+          "existingApp": "/intermediate/"
+        }
+      ],
+      "resources": [
+        {
+          "title": "115年度AI應用規劃師能力鑑定簡章(初、中級)_0410_20260410115646.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification/AIAP/115年度AI應用規劃師能力鑑定簡章(初、中級)_0410_20260410115646_20260901165208.pdf",
+          "kind": "syllabus",
+          "sourceKind": "official-syllabus",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/AIAP/exam-info",
+          "year": 2026
+        },
+        {
+          "title": "AI應用規劃師(初級)_學習指引_科目1_人工智慧基礎概論",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/bf93f438f7be48d295c1b40a34d79f3d/AI應用規劃師(初級)-學習指引-科目1_人工智慧基礎概論1141203_20251222172144.pdf",
+          "kind": "guide",
+          "sourceKind": "official-guide",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/AIAP/learning-resources",
+          "level": "junior",
+          "subject": "aiap-junior-1"
+        },
+        {
+          "title": "AI應用規劃師(初級)-學習指引-科目2生成式AI應用與規劃",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/bf93f438f7be48d295c1b40a34d79f3d/AI應用規劃師(初級)-學習指引-科目2_生成式AI應用與規劃114123_20251222172159.pdf",
+          "kind": "guide",
+          "sourceKind": "official-guide",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/AIAP/learning-resources",
+          "level": "junior",
+          "subject": "aiap-junior-2"
+        },
+        {
+          "title": "AI應用規劃師(中級)-學習指引-科目1_人工智慧技術應用規劃",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/bf93f438f7be48d295c1b40a34d79f3d/AI應用規劃師(中級)-學習指引-科目1人工智慧技術應用規劃_20251222101833.pdf",
+          "kind": "guide",
+          "sourceKind": "official-guide",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/AIAP/learning-resources",
+          "level": "intermediate"
+        },
+        {
+          "title": "AI應用規劃師(中級)-學習指引-科目2大數據處理分析與應用",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/bf93f438f7be48d295c1b40a34d79f3d/AI應用規劃師(中級)-學習指引-科目2大數據處理分析與應用_20251222101850.pdf",
+          "kind": "guide",
+          "sourceKind": "official-guide",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/AIAP/learning-resources",
+          "level": "intermediate",
+          "subject": "aiap-intermediate-2"
+        },
+        {
+          "title": "AI應用規劃師(中級)-學習指引-科目3機器學習技術與應用",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/bf93f438f7be48d295c1b40a34d79f3d/AI應用規劃師(中級)-學習指引-科目3機器學習技術與應用_20251222101907.pdf",
+          "kind": "guide",
+          "sourceKind": "official-guide",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/AIAP/learning-resources",
+          "level": "intermediate",
+          "subject": "aiap-intermediate-3"
+        },
+        {
+          "title": "AI應用規劃師(初級)學習指引勘誤表",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/bf93f438f7be48d295c1b40a34d79f3d/AI應用規劃師(初級)學習指引勘誤表11404_20251222101819.pdf",
+          "kind": "guide",
+          "sourceKind": "official-guide",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/AIAP/learning-resources",
+          "level": "junior"
+        },
+        {
+          "title": "AI應用規劃師(中級)學習指引勘誤表",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/bf93f438f7be48d295c1b40a34d79f3d/AI應用規劃師(中級)_學習指引勘誤表_1150410_20260410150331.pdf",
+          "kind": "guide",
+          "sourceKind": "official-guide",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/AIAP/learning-resources",
+          "level": "intermediate"
+        },
+        {
+          "title": "114年第四梯次初級AI應用規劃師第一科人工智慧基礎概論(當次試題公告114.11.20).pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/bf93f438f7be48d295c1b40a34d79f3d/114年第四梯次初級AI應用規劃師第一科人工智慧基礎概論(當次試題公告114_20251226000442.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/AIAP/learning-resources",
+          "level": "junior",
+          "publishedAt": "2025-12-26",
+          "subject": "aiap-junior-1",
+          "year": 2025
+        },
+        {
+          "title": "114年第四梯次初級AI應用規劃師第二科生成式AI應用與規劃(當次試題公告114.11.20).pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/bf93f438f7be48d295c1b40a34d79f3d/114年第四梯次初級AI應用規劃師第二科生成式AI應用與規劃(當次試題公告114_20251226000507.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/AIAP/learning-resources",
+          "level": "junior",
+          "publishedAt": "2025-12-26",
+          "subject": "aiap-junior-2",
+          "year": 2025
+        },
+        {
+          "title": "115年第一次初級AI應用規劃師_第一科_人工智慧基礎概論_公告試題.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/bf93f438f7be48d295c1b40a34d79f3d/115年第一次初級AI應用規劃師_第一科_人工智慧基礎概論_公告試題_20260410164304.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/AIAP/learning-resources",
+          "level": "junior",
+          "publishedAt": "2026-04-10",
+          "subject": "aiap-junior-1",
+          "year": 2026
+        },
+        {
+          "title": "115年第一次初級AI應用規劃師_第二科_生成式AI應用與規劃_公告試題.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/bf93f438f7be48d295c1b40a34d79f3d/115年第一次初級AI應用規劃師_第二科_生成式AI應用與規劃_公告試題_20260410164328.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/AIAP/learning-resources",
+          "level": "junior",
+          "publishedAt": "2026-04-10",
+          "subject": "aiap-junior-2",
+          "year": 2026
+        },
+        {
+          "title": "115年第二次初級AI應用規劃師_第一科_人工智慧基礎概論_公告試題.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/bf93f438f7be48d295c1b40a34d79f3d/115年第二次初級AI應用規劃師_第一科_人工智慧基礎概論_公告試題_20260604212644.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/AIAP/learning-resources",
+          "level": "junior",
+          "publishedAt": "2026-06-04",
+          "subject": "aiap-junior-1",
+          "year": 2026
+        },
+        {
+          "title": "115年第二次初級AI應用規劃師_第二科_生成式AI應用與規劃_公告試題.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/bf93f438f7be48d295c1b40a34d79f3d/115年第二次初級AI應用規劃師_第二科_生成式AI應用與規劃_公告試題_20260604212719.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/AIAP/learning-resources",
+          "level": "junior",
+          "publishedAt": "2026-06-04",
+          "subject": "aiap-junior-2",
+          "year": 2026
+        },
+        {
+          "title": "115年第三次初級AI應用規劃師_第一科_人工智慧基礎概論_公告試題.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/bf93f438f7be48d295c1b40a34d79f3d/115年第三次初級AI應用規劃師_第一科_人工智慧基礎概論_公告試題_20260906220418.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/AIAP/learning-resources",
+          "level": "junior",
+          "publishedAt": "2026-09-06",
+          "subject": "aiap-junior-1",
+          "year": 2026
+        },
+        {
+          "title": "115年第三次初級AI應用規劃師_第二科_生成式AI應用與規劃_公告試題.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/bf93f438f7be48d295c1b40a34d79f3d/115年第三次初級AI應用規劃師_第二科_生成式AI應用與規劃_公告試題_20260906220452.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/AIAP/learning-resources",
+          "level": "junior",
+          "publishedAt": "2026-09-06",
+          "subject": "aiap-junior-2",
+          "year": 2026
+        },
+        {
+          "title": "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114.11.20).pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/bf93f438f7be48d295c1b40a34d79f3d/114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114_20251226000616.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/AIAP/learning-resources",
+          "level": "intermediate",
+          "publishedAt": "2025-12-26",
+          "subject": "aiap-intermediate-1",
+          "year": 2025
+        },
+        {
+          "title": "114年第二梯次中級AI應用規劃師第二科大數據處理分析與應用(當次試題公告114.11.20).pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/bf93f438f7be48d295c1b40a34d79f3d/114年第二梯次中級AI應用規劃師第二科大數據處理分析與應用(當次試題公告114_20251226000634.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/AIAP/learning-resources",
+          "level": "intermediate",
+          "publishedAt": "2025-12-26",
+          "subject": "aiap-intermediate-2",
+          "year": 2025
+        },
+        {
+          "title": "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114.11.20).pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/bf93f438f7be48d295c1b40a34d79f3d/114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114_20251226000650.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/AIAP/learning-resources",
+          "level": "intermediate",
+          "publishedAt": "2025-12-26",
+          "subject": "aiap-intermediate-3",
+          "year": 2025
+        },
+        {
+          "title": "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/bf93f438f7be48d295c1b40a34d79f3d/115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/AIAP/learning-resources",
+          "level": "intermediate",
+          "publishedAt": "2026-06-15",
+          "subject": "aiap-intermediate-1",
+          "year": 2026
+        },
+        {
+          "title": "115年第一次中級AI應用規劃師_第二科_大數據處理分析與應用_公告試題.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/bf93f438f7be48d295c1b40a34d79f3d/115年第一次中級AI應用規劃師_第二科_大數據處理分析與應用_公告試題_20260615003417.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/AIAP/learning-resources",
+          "level": "intermediate",
+          "publishedAt": "2026-06-15",
+          "subject": "aiap-intermediate-2",
+          "year": 2026
+        },
+        {
+          "title": "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_resource/bf93f438f7be48d295c1b40a34d79f3d/115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf",
+          "kind": "past-paper",
+          "sourceKind": "official-past",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/AIAP/learning-resources",
+          "level": "intermediate",
+          "publishedAt": "2026-06-15",
+          "subject": "aiap-intermediate-3",
+          "year": 2026
+        },
+        {
+          "title": "製造業AI升級引擎",
+          "url": "https://eii.nat.gov.tw/aimfg/ai_learning",
+          "kind": "course",
+          "sourceKind": "official-course",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/AIAP/learning-resources"
+        },
+        {
+          "title": "中小企業網路大學校",
+          "url": "https://www.smelearning.org.tw/classes_zone.php?zid=45",
+          "kind": "course",
+          "sourceKind": "official-course",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/AIAP/learning-resources"
+        },
+        {
+          "title": "115年度AI應用規劃師能力鑑定(中級科目抵免辦法)_11501版.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_attachment/8039a24c849c4fb4a6dd7f942576d4f8/115年度AI應用規劃師能力鑑定(中級科目抵免辦法)_11501版_20260101234950.pdf",
+          "kind": "syllabus",
+          "sourceKind": "official-syllabus",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/AIAP/downloads",
+          "year": 2026
+        },
+        {
+          "title": "AI應用規劃師能力鑑定_評鑑內容範圍參考_11506.pdf",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_attachment/8039a24c849c4fb4a6dd7f942576d4f8/AI應用規劃師能力鑑定_評鑑內容範圍參考_11506_20260602161501.pdf",
+          "kind": "syllabus",
+          "sourceKind": "official-syllabus",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/AIAP/downloads"
+        }
+      ],
+      "existingApp": "/junior/",
+      "resourceNote": "資源依官方學習資源頁及下載頁列出；樣題、學習指引與正式歷屆試題分開標示。列入教材或原卷連結不代表已轉為可計分練習。"
+    },
+    {
+      "id": "aoc",
+      "officialCode": "aoc",
+      "name": "品牌企劃師",
+      "category": "跨領域",
+      "status": "active",
+      "effectiveYear": 2026,
+      "officialUrl": "https://aoc-ipas.org.tw/home.jsp",
+      "examInfoUrl": "https://aoc-ipas.org.tw/web/assessment/exam_brochure.jsp",
+      "resourcesUrl": "https://aoc-ipas.org.tw/web/assessment/exam_questions.jsp",
+      "levels": [
+        {
+          "id": "junior",
+          "name": "初級",
+          "subjects": [
+            {
+              "id": "aoc-junior-1",
+              "name": "品牌管理概論",
+              "type": "written",
+              "sourceUrl": "https://aoc-ipas.org.tw/uploads/brochure/tw/115年度品牌企劃師能力鑑定簡章.pdf",
+              "order": 1
+            },
+            {
+              "id": "aoc-junior-2",
+              "name": "行銷企劃實務",
+              "type": "written",
+              "sourceUrl": "https://aoc-ipas.org.tw/uploads/brochure/tw/115年度品牌企劃師能力鑑定簡章.pdf",
+              "order": 2
+            }
+          ],
+          "sourceUrl": "https://aoc-ipas.org.tw/uploads/brochure/tw/115年度品牌企劃師能力鑑定簡章.pdf",
+          "effectiveYear": 2026
+        }
+      ],
+      "resources": [
+        {
+          "title": "115年度品牌企劃師能力鑑定簡章",
+          "url": "https://aoc-ipas.org.tw/uploads/brochure/tw/115年度品牌企劃師能力鑑定簡章.pdf",
+          "kind": "syllabus",
+          "sourceKind": "official-syllabus",
+          "sourceUrl": "https://aoc-ipas.org.tw/web/assessment/exam_brochure.jsp",
+          "year": 2026
+        },
+        {
+          "title": "115年品牌企劃師(初級)能力鑑定_品牌管理概論樣題",
+          "url": "https://aoc-ipas.org.tw/uploads/exam_questions_download/tw/115年品牌企劃師 (初級)能力鑑定_品牌管理概論樣題.pdf",
+          "kind": "guide",
+          "sourceKind": "official-sample",
+          "sourceUrl": "https://aoc-ipas.org.tw/web/assessment/exam_questions.jsp",
+          "level": "junior",
+          "subject": "aoc-junior-1",
+          "year": 2026
+        },
+        {
+          "title": "115年品牌企劃師(初級)能力鑑定_行銷企劃實務樣題",
+          "url": "https://aoc-ipas.org.tw/uploads/exam_questions_download/tw/115年品牌企劃師 (初級)能力鑑定_行銷企劃實務樣題.pdf",
+          "kind": "guide",
+          "sourceKind": "official-sample",
+          "sourceUrl": "https://aoc-ipas.org.tw/web/assessment/exam_questions.jsp",
+          "level": "junior",
+          "subject": "aoc-junior-2",
+          "year": 2026
+        },
+        {
+          "title": "114年品牌企劃師(初級)能力鑑定_品牌管理概論_輔導教材",
+          "url": "https://drive.google.com/file/d/1oeQ1aBF7PE3Dn7gs5szvTy-jixU2YhWQ/view?usp=sharing",
+          "kind": "guide",
+          "sourceKind": "official-guide",
+          "sourceUrl": "https://aoc-ipas.org.tw/web/assessment/exam_questions.jsp",
+          "level": "junior",
+          "subject": "aoc-junior-1",
+          "year": 2025
+        },
+        {
+          "title": "114年品牌企劃師(初級)能力鑑定_行銷企劃實務_輔導教材",
+          "url": "https://drive.google.com/file/d/1eitOvlZuEffmPlCCv0jaScy-Qj7ND7or/view?usp=sharing",
+          "kind": "guide",
+          "sourceKind": "official-guide",
+          "sourceUrl": "https://aoc-ipas.org.tw/web/assessment/exam_questions.jsp",
+          "level": "junior",
+          "subject": "aoc-junior-2",
+          "year": 2025
+        },
+        {
+          "title": "114年品牌企劃師(初級)能力鑑定_品牌管理概論樣題",
+          "url": "https://aoc-ipas.org.tw/uploads/exam_questions_download/tw/114年品牌企劃師 (初級)能力鑑定_品牌管理概論樣題.pdf",
+          "kind": "guide",
+          "sourceKind": "official-sample",
+          "sourceUrl": "https://aoc-ipas.org.tw/web/assessment/exam_questions.jsp",
+          "level": "junior",
+          "subject": "aoc-junior-1",
+          "year": 2025
+        },
+        {
+          "title": "114年品牌企劃師(初級)能力鑑定_行銷企劃實務樣題",
+          "url": "https://aoc-ipas.org.tw/uploads/exam_questions_download/tw/114年品牌企劃師 (初級)能力鑑定_行銷企劃實務樣題.pdf",
+          "kind": "guide",
+          "sourceKind": "official-sample",
+          "sourceUrl": "https://aoc-ipas.org.tw/web/assessment/exam_questions.jsp",
+          "level": "junior",
+          "subject": "aoc-junior-2",
+          "year": 2025
+        }
+      ],
+      "resourceNote": "資源依官方學習資源頁及下載頁列出；樣題、學習指引與正式歷屆試題分開標示。列入教材或原卷連結不代表已轉為可計分練習。"
+    },
+    {
+      "id": "iota",
+      "officialCode": "IOTA",
+      "name": "物聯網應用工程師",
+      "category": "資訊類",
+      "status": "legacy",
+      "effectiveYear": 2024,
+      "retiredAt": "2026-01-01",
+      "officialUrl": "https://www.ipas.org.tw/IOTA",
+      "examInfoUrl": "https://www.ipas.org.tw/AbilityPageContent.aspx?ablno=80b8b420-21e3-45eb-8762-dfea9a0af224&pgeno=ffd92760-b6b8-4f82-89b4-03623a873080",
+      "resourcesUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_attachment/71c81ee7595c4296834aab225d257e92/AIoT應用工程師-初級考試科目抵免說明_1150319_20260319180428.pdf",
+      "statusSourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_attachment/71c81ee7595c4296834aab225d257e92/AIoT應用工程師-初級考試科目抵免說明_1150319_20260319180428.pdf",
+      "statusNote": "自2026-01-01起停止辦理。原鑑定部分成績可依官方規定抵免AIoT應用工程師初級。",
+      "coverageNote": "歷史考科依官方舊頁／舊簡章的搜尋索引核對；舊版 DownloadFile.ashx 與 ASPX 頁於查核時已無法下載，來源網址保留供追溯，不視為現行報考資訊。",
+      "sourceAvailability": "archived-index",
+      "levels": [
+        {
+          "id": "junior",
+          "name": "初級",
+          "subjects": [
+            {
+              "id": "iota-junior-1",
+              "name": "物聯網基礎架構概論",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/AbilityPageContent.aspx?ablno=80b8b420-21e3-45eb-8762-dfea9a0af224&pgeno=ffd92760-b6b8-4f82-89b4-03623a873080",
+              "order": 1
+            },
+            {
+              "id": "iota-junior-2",
+              "name": "物聯網系統與應用",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/AbilityPageContent.aspx?ablno=80b8b420-21e3-45eb-8762-dfea9a0af224&pgeno=ffd92760-b6b8-4f82-89b4-03623a873080",
+              "order": 2
+            }
+          ],
+          "sourceUrl": "https://www.ipas.org.tw/AbilityPageContent.aspx?ablno=80b8b420-21e3-45eb-8762-dfea9a0af224&pgeno=ffd92760-b6b8-4f82-89b4-03623a873080",
+          "effectiveYear": 2024
+        },
+        {
+          "id": "intermediate",
+          "name": "中級",
+          "subjects": [
+            {
+              "id": "iota-intermediate-1",
+              "name": "物聯網整合應用與雲端平台設計實務",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/AbilityPageContent.aspx?ablno=80b8b420-21e3-45eb-8762-dfea9a0af224&pgeno=ffd92760-b6b8-4f82-89b4-03623a873080",
+              "order": 1
+            },
+            {
+              "id": "iota-intermediate-2",
+              "name": "物聯網應用實作",
+              "type": "practical",
+              "sourceUrl": "https://www.ipas.org.tw/AbilityPageContent.aspx?ablno=80b8b420-21e3-45eb-8762-dfea9a0af224&pgeno=ffd92760-b6b8-4f82-89b4-03623a873080",
+              "order": 2
+            }
+          ],
+          "sourceUrl": "https://www.ipas.org.tw/AbilityPageContent.aspx?ablno=80b8b420-21e3-45eb-8762-dfea9a0af224&pgeno=ffd92760-b6b8-4f82-89b4-03623a873080",
+          "effectiveYear": 2024
+        }
+      ],
+      "resources": [
+        {
+          "title": "AIoT應用工程師初級考試科目抵免說明（含原鑑定停止辦理說明）",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_attachment/71c81ee7595c4296834aab225d257e92/AIoT應用工程師-初級考試科目抵免說明_1150319_20260319180428.pdf",
+          "kind": "syllabus",
+          "sourceKind": "official-syllabus",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/AIOT/downloads"
+        }
+      ],
+      "successorId": "aiot"
+    },
+    {
+      "id": "m2m",
+      "officialCode": "M2M",
+      "name": "智慧聯網與工控資安整合應用工程師",
+      "category": "智慧機械類",
+      "status": "legacy",
+      "effectiveYear": 2025,
+      "retiredAt": "2026-01-01",
+      "officialUrl": "https://www.ipas.org.tw/M2M",
+      "examInfoUrl": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ff892391-2933-4f3e-a474-0f6add7a692e_114年度智慧聯網與工控資安整合應用工程師能力鑑定簡章(初級)_1140520.pdf&fileno=dea274b1-198d-401b-9272-ea30265f9b46&filetype=plfno&type=5",
+      "resourcesUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_attachment/71c81ee7595c4296834aab225d257e92/AIoT應用工程師-初級考試科目抵免說明_1150319_20260319180428.pdf",
+      "statusSourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_attachment/71c81ee7595c4296834aab225d257e92/AIoT應用工程師-初級考試科目抵免說明_1150319_20260319180428.pdf",
+      "statusNote": "自2026-01-01起停止辦理。原鑑定部分成績可依官方規定抵免AIoT應用工程師初級。",
+      "coverageNote": "歷史考科依官方舊頁／舊簡章的搜尋索引核對；舊版 DownloadFile.ashx 與 ASPX 頁於查核時已無法下載，來源網址保留供追溯，不視為現行報考資訊。 同一官方 M2M 代碼早期名稱為機器聯網與應用工程師；111 年曾列中級，該早期中級科目尚未完整取得，本列僅呈現 114 年已核對的初級考制。",
+      "sourceAvailability": "archived-index",
+      "levels": [
+        {
+          "id": "junior",
+          "name": "初級",
+          "subjects": [
+            {
+              "id": "m2m-junior-1",
+              "name": "智慧聯網與工控資安整合概論",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ff892391-2933-4f3e-a474-0f6add7a692e_114年度智慧聯網與工控資安整合應用工程師能力鑑定簡章(初級)_1140520.pdf&fileno=dea274b1-198d-401b-9272-ea30265f9b46&filetype=plfno&type=5",
+              "order": 1
+            },
+            {
+              "id": "m2m-junior-2",
+              "name": "工控資訊安全技術",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ff892391-2933-4f3e-a474-0f6add7a692e_114年度智慧聯網與工控資安整合應用工程師能力鑑定簡章(初級)_1140520.pdf&fileno=dea274b1-198d-401b-9272-ea30265f9b46&filetype=plfno&type=5",
+              "order": 2
+            },
+            {
+              "id": "m2m-junior-3",
+              "name": "智慧聯網基礎應用實作",
+              "type": "practical",
+              "sourceUrl": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ff892391-2933-4f3e-a474-0f6add7a692e_114年度智慧聯網與工控資安整合應用工程師能力鑑定簡章(初級)_1140520.pdf&fileno=dea274b1-198d-401b-9272-ea30265f9b46&filetype=plfno&type=5",
+              "order": 3
+            }
+          ],
+          "sourceUrl": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ff892391-2933-4f3e-a474-0f6add7a692e_114年度智慧聯網與工控資安整合應用工程師能力鑑定簡章(初級)_1140520.pdf&fileno=dea274b1-198d-401b-9272-ea30265f9b46&filetype=plfno&type=5",
+          "effectiveYear": 2025,
+          "selectionNote": "114 年歷史考制：科目一＋二為工控資安類；科目一＋三為智慧聯網類。"
+        }
+      ],
+      "resources": [
+        {
+          "title": "AIoT應用工程師初級考試科目抵免說明（含原鑑定停止辦理說明）",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_attachment/71c81ee7595c4296834aab225d257e92/AIoT應用工程師-初級考試科目抵免說明_1150319_20260319180428.pdf",
+          "kind": "syllabus",
+          "sourceKind": "official-syllabus",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/AIOT/downloads"
+        }
+      ],
+      "successorId": "aiot",
+      "aliases": [
+        "機器聯網與應用工程師"
+      ]
+    },
+    {
+      "id": "iots",
+      "officialCode": "IOTS",
+      "name": "感知系統整合應用工程師",
+      "category": "智慧機械類",
+      "status": "legacy",
+      "effectiveYear": 2025,
+      "retiredAt": "2026-01-01",
+      "officialUrl": "https://www.ipas.org.tw/IOTS",
+      "examInfoUrl": "https://www.ipas.org.tw/DownloadFile.ashx?filename=f52bef2c-22e3-453d-9106-6f36b610df7b_114年度感知系統整合應用工程師能力鑑定簡章(初級)_114.05版.pdf&fileno=8246bfe2-13c3-4a86-8d4b-2d18bad95e0b&filetype=plfno&type=5",
+      "resourcesUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_attachment/71c81ee7595c4296834aab225d257e92/AIoT應用工程師-初級考試科目抵免說明_1150319_20260319180428.pdf",
+      "statusSourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_attachment/71c81ee7595c4296834aab225d257e92/AIoT應用工程師-初級考試科目抵免說明_1150319_20260319180428.pdf",
+      "statusNote": "自2026-01-01起停止辦理。原鑑定部分成績可依官方規定抵免AIoT應用工程師初級。",
+      "coverageNote": "歷史考科依官方舊頁／舊簡章的搜尋索引核對；舊版 DownloadFile.ashx 與 ASPX 頁於查核時已無法下載，來源網址保留供追溯，不視為現行報考資訊。",
+      "sourceAvailability": "archived-index",
+      "levels": [
+        {
+          "id": "junior",
+          "name": "初級",
+          "subjects": [
+            {
+              "id": "iots-junior-1",
+              "name": "感測器原理與應用",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/DownloadFile.ashx?filename=f52bef2c-22e3-453d-9106-6f36b610df7b_114年度感知系統整合應用工程師能力鑑定簡章(初級)_114.05版.pdf&fileno=8246bfe2-13c3-4a86-8d4b-2d18bad95e0b&filetype=plfno&type=5",
+              "order": 1
+            },
+            {
+              "id": "iots-junior-2",
+              "name": "感測器信號調節實務應用",
+              "type": "practical",
+              "sourceUrl": "https://www.ipas.org.tw/DownloadFile.ashx?filename=f52bef2c-22e3-453d-9106-6f36b610df7b_114年度感知系統整合應用工程師能力鑑定簡章(初級)_114.05版.pdf&fileno=8246bfe2-13c3-4a86-8d4b-2d18bad95e0b&filetype=plfno&type=5",
+              "order": 2
+            }
+          ],
+          "sourceUrl": "https://www.ipas.org.tw/DownloadFile.ashx?filename=f52bef2c-22e3-453d-9106-6f36b610df7b_114年度感知系統整合應用工程師能力鑑定簡章(初級)_114.05版.pdf&fileno=8246bfe2-13c3-4a86-8d4b-2d18bad95e0b&filetype=plfno&type=5",
+          "effectiveYear": 2025
+        }
+      ],
+      "resources": [
+        {
+          "title": "AIoT應用工程師初級考試科目抵免說明（含原鑑定停止辦理說明）",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_attachment/71c81ee7595c4296834aab225d257e92/AIoT應用工程師-初級考試科目抵免說明_1150319_20260319180428.pdf",
+          "kind": "syllabus",
+          "sourceKind": "official-syllabus",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/AIOT/downloads"
+        }
+      ],
+      "successorId": "aiot"
+    },
+    {
+      "id": "bda",
+      "officialCode": "BDA",
+      "name": "巨量資料分析師",
+      "category": "資訊類",
+      "status": "legacy",
+      "effectiveYear": 2023,
+      "retiredAt": "2025",
+      "officialUrl": "https://www.ipas.org.tw/BDA",
+      "examInfoUrl": "https://www.ipas.org.tw/DownloadFile.ashx?filename=080bdeb4-fad5-4a8c-8a93-c70f024dbed9_113年初、中級巨量資料分析師能力鑑定簡章_1130122.pdf&type=10",
+      "resourcesUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_attachment/8039a24c849c4fb4a6dd7f942576d4f8/115年度AI應用規劃師能力鑑定(中級科目抵免辦法)_11501版_20260101234950.pdf",
+      "statusSourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_attachment/8039a24c849c4fb4a6dd7f942576d4f8/115年度AI應用規劃師能力鑑定(中級科目抵免辦法)_11501版_20260101234950.pdf",
+      "statusNote": "自2025起停止辦理。原鑑定部分成績可依官方規定抵免AI應用規劃師中級。",
+      "coverageNote": "歷史考科依官方舊頁／舊簡章的搜尋索引核對；舊版 DownloadFile.ashx 與 ASPX 頁於查核時已無法下載，來源網址保留供追溯，不視為現行報考資訊。 本列完整考科取自 112 年簡章；113 年另有初、中級簡章，未將其不可下載之全文視為已核對。",
+      "sourceAvailability": "archived-index",
+      "levels": [
+        {
+          "id": "junior",
+          "name": "初級",
+          "subjects": [
+            {
+              "id": "bda-junior-1",
+              "name": "資料導向程式設計",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/DownloadFile.ashx?filename=51b2335f-4657-4047-a886-764af9593082_112年初級巨量資料分析師能力鑑定簡章_1230.pdf&type=10",
+              "order": 1
+            },
+            {
+              "id": "bda-junior-2",
+              "name": "資料處理與分析概論",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/DownloadFile.ashx?filename=51b2335f-4657-4047-a886-764af9593082_112年初級巨量資料分析師能力鑑定簡章_1230.pdf&type=10",
+              "order": 2
+            }
+          ],
+          "sourceUrl": "https://www.ipas.org.tw/DownloadFile.ashx?filename=51b2335f-4657-4047-a886-764af9593082_112年初級巨量資料分析師能力鑑定簡章_1230.pdf&type=10",
+          "effectiveYear": 2023
+        },
+        {
+          "id": "intermediate",
+          "name": "中級",
+          "subjects": [
+            {
+              "id": "bda-intermediate-1",
+              "name": "資料分析與資料科學",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/DownloadFile.ashx?filename=d61cea7b-6293-4f2f-8627-cc88384d1d1c_112年中級巨量資料分析師能力鑑定簡章_0427.pdf&type=10",
+              "order": 1
+            },
+            {
+              "id": "bda-intermediate-2",
+              "name": "巨量資料分析實作",
+              "type": "practical",
+              "sourceUrl": "https://www.ipas.org.tw/DownloadFile.ashx?filename=d61cea7b-6293-4f2f-8627-cc88384d1d1c_112年中級巨量資料分析師能力鑑定簡章_0427.pdf&type=10",
+              "order": 2
+            }
+          ],
+          "sourceUrl": "https://www.ipas.org.tw/DownloadFile.ashx?filename=d61cea7b-6293-4f2f-8627-cc88384d1d1c_112年中級巨量資料分析師能力鑑定簡章_0427.pdf&type=10",
+          "effectiveYear": 2023
+        }
+      ],
+      "resources": [
+        {
+          "title": "AI應用規劃師中級考試科目抵免說明（含原鑑定停止辦理說明）",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_attachment/8039a24c849c4fb4a6dd7f942576d4f8/115年度AI應用規劃師能力鑑定(中級科目抵免辦法)_11501版_20260101234950.pdf",
+          "kind": "syllabus",
+          "sourceKind": "official-syllabus",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/AIAP/downloads"
+        }
+      ],
+      "successorId": "aiap"
+    },
+    {
+      "id": "ml",
+      "officialCode": "ML",
+      "name": "機器學習工程師",
+      "category": "資訊類",
+      "status": "legacy",
+      "effectiveYear": 2024,
+      "retiredAt": "2025",
+      "officialUrl": "https://www.ipas.org.tw/ML",
+      "examInfoUrl": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ebb7db53-7ac9-4378-8021-134c25a2715c_113年度機器學習工程師能力鑑定簡章(初級)_11305.pdf&fileno=d9b15aa0-291c-405f-bad7-4f9f8c131b3b&filetype=plfno&type=5",
+      "resourcesUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_attachment/8039a24c849c4fb4a6dd7f942576d4f8/115年度AI應用規劃師能力鑑定(中級科目抵免辦法)_11501版_20260101234950.pdf",
+      "statusSourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification_attachment/8039a24c849c4fb4a6dd7f942576d4f8/115年度AI應用規劃師能力鑑定(中級科目抵免辦法)_11501版_20260101234950.pdf",
+      "statusNote": "自2025起停止辦理。原鑑定部分成績可依官方規定抵免AI應用規劃師中級。",
+      "coverageNote": "歷史考科依官方舊頁／舊簡章的搜尋索引核對；舊版 DownloadFile.ashx 與 ASPX 頁於查核時已無法下載，來源網址保留供追溯，不視為現行報考資訊。",
+      "sourceAvailability": "archived-index",
+      "levels": [
+        {
+          "id": "junior",
+          "name": "初級",
+          "subjects": [
+            {
+              "id": "ml-junior-1",
+              "name": "機器學習概論",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ebb7db53-7ac9-4378-8021-134c25a2715c_113年度機器學習工程師能力鑑定簡章(初級)_11305.pdf&fileno=d9b15aa0-291c-405f-bad7-4f9f8c131b3b&filetype=plfno&type=5",
+              "order": 1
+            },
+            {
+              "id": "ml-junior-2",
+              "name": "機器學習資料解析與建模",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ebb7db53-7ac9-4378-8021-134c25a2715c_113年度機器學習工程師能力鑑定簡章(初級)_11305.pdf&fileno=d9b15aa0-291c-405f-bad7-4f9f8c131b3b&filetype=plfno&type=5",
+              "order": 2
+            }
+          ],
+          "sourceUrl": "https://www.ipas.org.tw/DownloadFile.ashx?filename=ebb7db53-7ac9-4378-8021-134c25a2715c_113年度機器學習工程師能力鑑定簡章(初級)_11305.pdf&fileno=d9b15aa0-291c-405f-bad7-4f9f8c131b3b&filetype=plfno&type=5",
+          "effectiveYear": 2024
+        }
+      ],
+      "resources": [
+        {
+          "title": "AI應用規劃師中級考試科目抵免說明（含原鑑定停止辦理說明）",
+          "url": "https://www.ipas.org.tw/api/proxy/uploads/certification_attachment/8039a24c849c4fb4a6dd7f942576d4f8/115年度AI應用規劃師能力鑑定(中級科目抵免辦法)_11501版_20260101234950.pdf",
+          "kind": "syllabus",
+          "sourceKind": "official-syllabus",
+          "sourceUrl": "https://ipd.nat.gov.tw/ipas/certification/AIAP/downloads"
+        }
+      ],
+      "successorId": "aiap"
+    },
+    {
+      "id": "map",
+      "officialCode": "MAP",
+      "name": "行動應用企劃師",
+      "category": "資訊類",
+      "status": "legacy",
+      "effectiveYear": 2023,
+      "retiredAt": "2024-01-01",
+      "officialUrl": "https://www.ipas.org.tw/MAP",
+      "examInfoUrl": "https://www.ipas.org.tw/DownloadFile.ashx?filename=df16cd6f-6c9c-4def-afbb-86b899bbaf0f_112年初級行動應用企劃師能力鑑定簡章_0420.pdf&type=10",
+      "resourcesUrl": "https://www.ipas.org.tw/DownloadFile.ashx?filename=df16cd6f-6c9c-4def-afbb-86b899bbaf0f_112年初級行動應用企劃師能力鑑定簡章_0420.pdf&type=10",
+      "statusSourceUrl": "https://www.ipas.org.tw/DownloadFile.ashx?filename=df16cd6f-6c9c-4def-afbb-86b899bbaf0f_112年初級行動應用企劃師能力鑑定簡章_0420.pdf&type=10",
+      "statusNote": "自2024-01-01起停止辦理。保留補換證機制。",
+      "coverageNote": "歷史考科依官方舊頁／舊簡章的搜尋索引核對；舊版 DownloadFile.ashx 與 ASPX 頁於查核時已無法下載，來源網址保留供追溯，不視為現行報考資訊。",
+      "sourceAvailability": "archived-index",
+      "levels": [
+        {
+          "id": "junior",
+          "name": "初級",
+          "subjects": [
+            {
+              "id": "map-junior-1",
+              "name": "行動應用企劃概論",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/DownloadFile.ashx?filename=df16cd6f-6c9c-4def-afbb-86b899bbaf0f_112年初級行動應用企劃師能力鑑定簡章_0420.pdf&type=10",
+              "order": 1
+            },
+            {
+              "id": "map-junior-2",
+              "name": "行動應用企劃實務",
+              "type": "practical",
+              "sourceUrl": "https://www.ipas.org.tw/DownloadFile.ashx?filename=df16cd6f-6c9c-4def-afbb-86b899bbaf0f_112年初級行動應用企劃師能力鑑定簡章_0420.pdf&type=10",
+              "order": 2
+            }
+          ],
+          "sourceUrl": "https://www.ipas.org.tw/DownloadFile.ashx?filename=df16cd6f-6c9c-4def-afbb-86b899bbaf0f_112年初級行動應用企劃師能力鑑定簡章_0420.pdf&type=10",
+          "effectiveYear": 2023,
+          "selectionNote": "歷史科目二為 90 分鐘實作題，以紙筆測驗。"
+        }
+      ],
+      "resources": []
+    },
+    {
+      "id": "mad",
+      "officialCode": "MAD",
+      "name": "行動裝置程式設計師",
+      "category": "資訊類",
+      "status": "legacy",
+      "effectiveYear": 2023,
+      "retiredAt": "2024-01-01",
+      "officialUrl": "https://www.ipas.org.tw/MAD",
+      "examInfoUrl": "https://www.ipas.org.tw/DownloadFile.ashx?filename=c6aaa228-6539-4626-839a-fa65c5ff5fbe_112年初級行動裝置程式設計師能力鑑定簡章_0926.pdf&fileno=f12a2378-c4c4-436a-b0c9-de3413a7b59a&filetype=plfno&type=5",
+      "resourcesUrl": "https://www.ipas.org.tw/DownloadFile.ashx?filename=c6aaa228-6539-4626-839a-fa65c5ff5fbe_112年初級行動裝置程式設計師能力鑑定簡章_0926.pdf&fileno=f12a2378-c4c4-436a-b0c9-de3413a7b59a&filetype=plfno&type=5",
+      "statusSourceUrl": "https://www.ipas.org.tw/DownloadFile.ashx?filename=c6aaa228-6539-4626-839a-fa65c5ff5fbe_112年初級行動裝置程式設計師能力鑑定簡章_0926.pdf&fileno=f12a2378-c4c4-436a-b0c9-de3413a7b59a&filetype=plfno&type=5",
+      "statusNote": "自2024-01-01起停止辦理。保留補換證機制。",
+      "coverageNote": "歷史考科依官方舊頁／舊簡章的搜尋索引核對；舊版 DownloadFile.ashx 與 ASPX 頁於查核時已無法下載，來源網址保留供追溯，不視為現行報考資訊。",
+      "sourceAvailability": "archived-index",
+      "levels": [
+        {
+          "id": "junior",
+          "name": "初級",
+          "subjects": [
+            {
+              "id": "mad-junior-1",
+              "name": "行動裝置概論",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/DownloadFile.ashx?filename=c6aaa228-6539-4626-839a-fa65c5ff5fbe_112年初級行動裝置程式設計師能力鑑定簡章_0926.pdf&fileno=f12a2378-c4c4-436a-b0c9-de3413a7b59a&filetype=plfno&type=5",
+              "order": 1
+            },
+            {
+              "id": "mad-junior-2",
+              "name": "行動裝置程式開發-Android程式設計",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/DownloadFile.ashx?filename=c6aaa228-6539-4626-839a-fa65c5ff5fbe_112年初級行動裝置程式設計師能力鑑定簡章_0926.pdf&fileno=f12a2378-c4c4-436a-b0c9-de3413a7b59a&filetype=plfno&type=5",
+              "order": 2
+            },
+            {
+              "id": "mad-junior-3",
+              "name": "行動裝置程式開發-iOS程式設計",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/DownloadFile.ashx?filename=c6aaa228-6539-4626-839a-fa65c5ff5fbe_112年初級行動裝置程式設計師能力鑑定簡章_0926.pdf&fileno=f12a2378-c4c4-436a-b0c9-de3413a7b59a&filetype=plfno&type=5",
+              "order": 3
+            }
+          ],
+          "sourceUrl": "https://www.ipas.org.tw/DownloadFile.ashx?filename=c6aaa228-6539-4626-839a-fa65c5ff5fbe_112年初級行動裝置程式設計師能力鑑定簡章_0926.pdf&fileno=f12a2378-c4c4-436a-b0c9-de3413a7b59a&filetype=plfno&type=5",
+          "effectiveYear": 2023,
+          "selectionNote": "歷史考制：科目一必考；Android 與 iOS 科目擇一。"
+        },
+        {
+          "id": "intermediate",
+          "name": "中級",
+          "subjects": [
+            {
+              "id": "mad-intermediate-1",
+              "name": "行動裝置應用開發實務",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/DownloadFile.ashx?filename=b93bef96-8d9e-4ba9-8d62-76f949139ccf_112年中級行動裝置程式設計師能力鑑定簡章_0303.pdf&type=10",
+              "order": 1
+            },
+            {
+              "id": "mad-intermediate-2",
+              "name": "行動裝置程式設計實作-Android開發實務",
+              "type": "practical",
+              "sourceUrl": "https://www.ipas.org.tw/DownloadFile.ashx?filename=b93bef96-8d9e-4ba9-8d62-76f949139ccf_112年中級行動裝置程式設計師能力鑑定簡章_0303.pdf&type=10",
+              "order": 2
+            },
+            {
+              "id": "mad-intermediate-3",
+              "name": "行動裝置程式設計實作-iOS開發實務",
+              "type": "practical",
+              "sourceUrl": "https://www.ipas.org.tw/DownloadFile.ashx?filename=b93bef96-8d9e-4ba9-8d62-76f949139ccf_112年中級行動裝置程式設計師能力鑑定簡章_0303.pdf&type=10",
+              "order": 3
+            }
+          ],
+          "sourceUrl": "https://www.ipas.org.tw/DownloadFile.ashx?filename=b93bef96-8d9e-4ba9-8d62-76f949139ccf_112年中級行動裝置程式設計師能力鑑定簡章_0303.pdf&type=10",
+          "effectiveYear": 2023,
+          "selectionNote": "歷史考制：科目一必考；Android 與 iOS 科目擇一。"
+        }
+      ],
+      "resources": []
+    },
+    {
+      "id": "mgp",
+      "officialCode": "MGP",
+      "name": "行動遊戲程式設計師",
+      "category": "資訊類",
+      "status": "legacy",
+      "effectiveYear": 2023,
+      "retiredAt": "2024-01-01",
+      "officialUrl": "https://www.ipas.org.tw/MGP",
+      "examInfoUrl": "https://www.ipas.org.tw/DownloadFile.ashx?filename=75b3f022-ca80-4e9c-a19e-5d856cbf2abd_112年初級行動遊戲程式設計師能力鑑定簡章_0926.pdf&fileno=23eee16a-6077-4b33-9de9-d06383306736&filetype=plfno&type=5",
+      "resourcesUrl": "https://www.ipas.org.tw/DownloadFile.ashx?filename=75b3f022-ca80-4e9c-a19e-5d856cbf2abd_112年初級行動遊戲程式設計師能力鑑定簡章_0926.pdf&fileno=23eee16a-6077-4b33-9de9-d06383306736&filetype=plfno&type=5",
+      "statusSourceUrl": "https://www.ipas.org.tw/DownloadFile.ashx?filename=75b3f022-ca80-4e9c-a19e-5d856cbf2abd_112年初級行動遊戲程式設計師能力鑑定簡章_0926.pdf&fileno=23eee16a-6077-4b33-9de9-d06383306736&filetype=plfno&type=5",
+      "statusNote": "自2024-01-01起停止辦理。保留補換證機制。",
+      "coverageNote": "歷史考科依官方舊頁／舊簡章的搜尋索引核對；舊版 DownloadFile.ashx 與 ASPX 頁於查核時已無法下載，來源網址保留供追溯，不視為現行報考資訊。",
+      "sourceAvailability": "archived-index",
+      "levels": [
+        {
+          "id": "junior",
+          "name": "初級",
+          "subjects": [
+            {
+              "id": "mgp-junior-1",
+              "name": "行動遊戲開發概論",
+              "type": "written",
+              "sourceUrl": "https://www.ipas.org.tw/DownloadFile.ashx?filename=75b3f022-ca80-4e9c-a19e-5d856cbf2abd_112年初級行動遊戲程式設計師能力鑑定簡章_0926.pdf&fileno=23eee16a-6077-4b33-9de9-d06383306736&filetype=plfno&type=5",
+              "order": 1
+            },
+            {
+              "id": "mgp-junior-2",
+              "name": "行動遊戲程式設計實作",
+              "type": "practical",
+              "sourceUrl": "https://www.ipas.org.tw/DownloadFile.ashx?filename=75b3f022-ca80-4e9c-a19e-5d856cbf2abd_112年初級行動遊戲程式設計師能力鑑定簡章_0926.pdf&fileno=23eee16a-6077-4b33-9de9-d06383306736&filetype=plfno&type=5",
+              "order": 2
+            }
+          ],
+          "sourceUrl": "https://www.ipas.org.tw/DownloadFile.ashx?filename=75b3f022-ca80-4e9c-a19e-5d856cbf2abd_112年初級行動遊戲程式設計師能力鑑定簡章_0926.pdf&fileno=23eee16a-6077-4b33-9de9-d06383306736&filetype=plfno&type=5",
+          "effectiveYear": 2023
+        }
+      ],
+      "resources": []
+    }
+  ]
+}

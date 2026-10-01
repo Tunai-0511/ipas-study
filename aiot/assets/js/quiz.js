@@ -50,6 +50,17 @@
         '<span class="q-fig-hint">附圖 ' + (i + 1) + '・點擊查看原圖</span></a></figure>';
     }).join("");
   }
+  function sourceLink(q) {
+    var url = q.srcUrl || q.sourceUrl || "";
+    var notes = [];
+    if (q.syllabusAlignment === "lower") notes.push("與新版大綱關聯較低：" + (q.syllabusNote || "可作舊制延伸參考"));
+    if (q.historicalNote) notes.push(q.historicalNote);
+    var label = q.sourceKind === "legacy-exam" ? "原卷保存來源" : "題目原始來源";
+    var file = q.sourceKind === "legacy-exam" && q.sourceFile ? q.sourceFile.split(/[\\/]/).pop() : "";
+    return '<div class="q-source-link">' + (notes.length ? '<p>' + notes.map(esc).join("<br>") + '</p>' : '') +
+      (file ? '<p>' + esc(file) + (q.page ? ' · PDF 第 ' + esc(q.page) + ' 頁' : '') + '</p>' : '') +
+      (/^https:\/\//.test(url) ? '<a href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">' + label + ' ↗</a>' : '') + '</div>';
+  }
   function pad2(n){ return n < 10 ? "0" + n : "" + n; }
   function fmtTime(sec){
     sec = Math.max(0, Math.floor(sec || 0));
@@ -58,7 +69,7 @@
   }
 
   var MODES = {
-    official: { name: "題庫", icon: "bookOpen", desc: "依科目／章節練習指引自評題與延伸題，作答即對答與解析", immediate: true },
+    official: { name: "題庫", icon: "bookOpen", desc: "依科目／章節及官方、歷屆、自編來源練習，作答即對答", immediate: true },
     mock:     { name: "計時練習",   icon: "target", desc: "單科 50 題／75 分鐘；題數與配分為本站練習設定", immediate: false },
     wrong:    { name: "錯題複習", icon: "loop", desc: "重做你之前答錯的題目，鞏固弱點", immediate: true },
     bookmark: { name: "收藏複習", icon: "flag", desc: "重做你按★收藏標記的題目", immediate: true }
@@ -71,12 +82,12 @@
   function buildQuestions(config) {
     var qs = [];
     if (config.mode === "official") {
-      qs = Content.questions({ subject: config.subject || null, topic: config.topic || null, includeContext: false, onlyOfficial: config.onlyOfficial, onlyGenerated: config.onlyGenerated });
+      qs = Content.questions({ subject: config.subject || null, topic: config.topic || null, includeContext: false, onlyOfficial: config.onlyOfficial, onlyGenerated: config.onlyGenerated, sourceKind: config.sourceKind });
     } else if (config.mode === "mock") {
       // 本站計時練習：單一科目。未指定科目時退回跨科（相容舊入口）
       qs = config.subject
-        ? Content.questions({ subject: config.subject, includeContext: false, onlyOfficial: config.onlyOfficial, onlyGenerated: config.onlyGenerated })
-        : Content.allOfficial(false, config.onlyOfficial, config.onlyGenerated);
+        ? Content.questions({ subject: config.subject, includeContext: false, onlyOfficial: config.onlyOfficial, onlyGenerated: config.onlyGenerated, sourceKind: config.sourceKind })
+        : Content.allOfficial(false, config.onlyOfficial, config.onlyGenerated, config.sourceKind);
     } else if (config.mode === "ai") {
       qs = Store.aiQuestions().filter(function (q) {
         if (config.subject && q.subject !== config.subject) return false;
@@ -95,14 +106,14 @@
       });
       Object.keys(wrongStats).map(function (id) {
         var s = wrongStats[id], q = Content.question(id) || aimap[id];
-        if (!q || q.needsContext || (Store.isHidden && Store.isHidden(id)) || !s.wrong) return null;
+        if (!q || q.needsContext || q.needsReview || (Store.isHidden && Store.isHidden(id)) || !s.wrong) return null;
         var recency = s.lastWrong ? s.lastWrong / 86400000 : 0;
         return { q: q, score: s.wrong * 4 - s.correct + recency };
       }).filter(Boolean).sort(function (a, b) { return b.score - a.score; }).forEach(function (x) { qs.push(x.q); });
     } else if (config.mode === "bookmark") {
       var amap = aiQuestionMap();
       Store.getBookmarks().forEach(function (id) {
-        var q = Content.question(id) || amap[id]; if (q && !q.needsContext) qs.push(q);
+        var q = Content.question(id) || amap[id]; if (q && !q.needsContext && !q.needsReview) qs.push(q);
       });
     }
     if (config.mode !== "wrong") qs = shuffle(qs);
@@ -113,7 +124,7 @@
   /* ---- 執行器 ---- */
   function launch(config, mount, opts) {
     opts = opts || {};
-    var questions = config.questions || buildQuestions(config);
+    var questions = (config.questions || buildQuestions(config)).filter(function (q) { return !q.needsReview && !q.needsContext; });
     var mode = MODES[config.mode] || MODES.official;
     if (!questions.length) {
       mount.innerHTML = emptyState(config.mode);
@@ -164,7 +175,7 @@
             '</div>' +
             contextBlock(q) +
             '<div class="q-stem">' + formatText(q.stem) + '</div>' +
-            figBlock(q) +
+            figBlock(q) + sourceLink(q) +
             '<div class="options">' +
               LETTERS.map(function (k) {
                 if (!q.options[k]) return "";
@@ -303,7 +314,7 @@
           '<div class="ri-head"><span class="ri-status ' + (ok ? "ok" : "no") + '">' + (ok ? "✓" : "✕") + '</span>' +
           '<span class="ri-stem">' + (i + 1) + '. ' + formatText(q.stem) + '</span></div>' +
           contextBlock(q) +
-          figBlock(q) +
+          figBlock(q) + sourceLink(q) +
           '<div class="ri-detail">你的答案：<b style="color:' + (ok ? "var(--ok)" : "var(--danger)") + '">' + yourTxt + '</b>' +
           (ok ? "" : '<br>正確答案：<b>' + q.answer + ". " + formatText(q.options[q.answer] || "") + '</b>') + '</div>' +
           '<div class="ri-detail" data-exwrap="' + i + '">' +

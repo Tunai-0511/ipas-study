@@ -884,3 +884,6 @@ body[data-theme="dark"] .user-menu{ background:rgba(24,27,40,.97) !important; }
 .aiot-exam-info{margin:0 0 24px;padding:16px 20px;border:1px solid var(--border);border-radius:16px;background:var(--surface);color:var(--text-soft);line-height:1.8;font-size:14px;overflow-wrap:anywhere}
 .aiot-exam-info summary{cursor:pointer;font-weight:700;color:var(--text)}
 .aiot-exam-info p{margin:12px 0}.aiot-exam-info ul{padding-left:20px}.aiot-exam-info a{color:var(--primary)}
+
+.q-source-link{font-size:13px;margin:12px 0;overflow-wrap:anywhere}.q-source-link a{color:var(--accent)}
+.review-source{padding:14px 0;border-top:1px solid var(--border)}.review-source summary{font-size:14px;line-height:1.7}.review-source ol{padding-left:24px;line-height:1.8;white-space:pre-wrap}.review-reason{color:var(--text);padding:12px;border-left:3px solid #d89220;white-space:pre-wrap}
