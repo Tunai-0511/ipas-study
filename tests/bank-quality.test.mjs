@@ -11,7 +11,7 @@ function loadBank(app) {
 
 test('question text does not contain known imported page headers or source-code debris', () => {
   const contamination = /第一科：人工智慧基礎概論|第二科：生成式 AI 應用與規劃|114 年第四次AI 應用規劃師-初級能力鑑定【公告試題】|答案題目|《以下空白》|";}$/;
-  for (const app of ['junior', 'intermediate', 'bi', 'aiot']) {
+  for (const app of ['junior', 'intermediate', 'bi', 'aiot', 'ise']) {
     for (const question of loadBank(app)) {
       for (const [field, text] of Object.entries({ stem: question.stem, ...question.options })) {
         assert.doesNotMatch(text, contamination, `${app}: ${question.id} ${field}`);
@@ -37,7 +37,7 @@ test('source-verified Python questions retain code lines and separate explanator
 
 // 網路題庫匯入時曾把換行吃掉：程式碼擠成一行、子敘述 A～F 或 (1)～(n) 接在同一行，難以閱讀。
 test('statement lists and code in question stems stay on separate lines', () => {
-  const files = { junior: ['content', 'bank'], intermediate: ['content', 'bank'], bi: ['content', 'bank'], aiot: ['content', 'bank', 'official-guide', 'legacy-bank'] };
+  const files = { junior: ['content', 'bank'], intermediate: ['content', 'bank'], bi: ['content', 'bank'], ise: ['content', 'bank'], aiot: ['content', 'bank', 'official-guide', 'legacy-bank'] };
   const marker = /(?:^|[\s。；，？?])(?:原因\s?|程式碼\s?|事件\s?|描述\s?|敘述\s?)?[A-F](?:[：:]|\.\s)/g;
   const numbered = /[（(][1-9][)）]/g;
   const assignedCall = /\b\w+\s*=\s*[\w.]+\(/g;

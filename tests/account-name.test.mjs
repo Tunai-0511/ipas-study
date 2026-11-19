@@ -61,7 +61,7 @@ function setup(app, { account = user, rows = [], storage = {}, state, pull } = {
   };
 }
 
-for (const app of ['junior', 'intermediate', 'bi', 'aiot']) {
+for (const app of ['junior', 'intermediate', 'bi', 'aiot', 'ise']) {
   test(`${app}: first email login names the existing profile and persists the account name`, async () => {
     const h = setup(app);
     const id = h.context.Store.currentId();

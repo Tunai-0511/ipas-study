@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import vm from 'node:vm';
 
-const prefixes = { junior: 'ipas-jr-v', intermediate: 'aipsc-v', bi: 'ipas-bi-v', aiot: 'ipas-aiot-v' };
+const prefixes = { junior: 'ipas-jr-v', intermediate: 'aipsc-v', bi: 'ipas-bi-v', aiot: 'ipas-aiot-v', ise: 'ipas-ise-v' };
 
 function setupFetch(app) {
   const handlers = new Map(), cached = new Map(), writes = [];

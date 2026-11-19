@@ -49,7 +49,7 @@ const baseQuestion = {
   answer: 'B', explanation: '第一段解析\n\n第二段解析',
 };
 
-for (const app of ['junior', 'intermediate', 'bi', 'aiot']) {
+for (const app of ['junior', 'intermediate', 'bi', 'aiot', 'ise']) {
   test(`${app}: Enter keeps links and buttons native while quiz shortcuts still work`, () => {
     const h = createQuiz(app, baseQuestion);
     const initial = h.mount.innerHTML;
@@ -142,3 +142,28 @@ for (const app of ['junior', 'intermediate', 'bi', 'aiot']) {
     }
   });
 }
+
+// 資訊安全工程師中級有複選題：可多選、按確認才鎖定，全對才算答對。
+test('ise: multiple-answer questions toggle choices, confirm, and score only an exact match', () => {
+  const question = { ...baseQuestion, id: 'multi-fixture', multiple: true, answer: 'AC', explanation: '複選解析' };
+  const right = createQuiz('ise', question);
+  assert.match(right.mount.innerHTML, /<span class="q-badge">複選<\/span>/);
+  right.options[0].onclick();
+  assert.match(right.mount.innerHTML, /id="qzConfirm"/);
+  assert.doesNotMatch(right.mount.innerHTML, /複選解析/, 'choosing one option must not lock a multiple-answer question');
+  right.options[2].onclick();
+  right.options[2].onclick();
+  right.options[2].onclick();
+  right.mount.querySelector('#qzConfirm').onclick();
+  assert.match(right.mount.innerHTML, /正解：A、C/);
+  assert.match(right.mount.innerHTML, /複選解析/);
+  right.mount.querySelector('#qzNext').onclick();
+  assert.match(right.mount.innerHTML, /ri-status ok/);
+
+  const partial = createQuiz('ise', question);
+  partial.options[0].onclick();
+  partial.mount.querySelector('#qzConfirm').onclick();
+  partial.mount.querySelector('#qzNext').onclick();
+  assert.match(partial.mount.innerHTML, /ri-status no/);
+  assert.match(partial.mount.innerHTML, /正確答案：<b>A\. [\s\S]*<br>C\. /);
+});

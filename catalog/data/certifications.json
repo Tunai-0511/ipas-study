@@ -530,6 +530,7 @@
       "name": "資訊安全工程師",
       "category": "資訊類",
       "status": "active",
+      "existingApp": "/ise/",
       "effectiveYear": 2026,
       "officialUrl": "https://ipd.nat.gov.tw/ipas/certification/ISE/news",
       "examInfoUrl": "https://ipd.nat.gov.tw/ipas/certification/ISE/exam-info",
@@ -555,7 +556,8 @@
             }
           ],
           "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/ISE/115年度資訊安全工程師能力鑑定簡章(初、中級)_1150410_20260410115218.pdf",
-          "effectiveYear": 2026
+          "effectiveYear": 2026,
+          "existingApp": "/ise/"
         },
         {
           "id": "intermediate",
@@ -577,7 +579,8 @@
             }
           ],
           "sourceUrl": "https://www.ipas.org.tw/api/proxy/uploads/certification/ISE/115年度資訊安全工程師能力鑑定簡章(初、中級)_1150410_20260410115218.pdf",
-          "effectiveYear": 2026
+          "effectiveYear": 2026,
+          "existingApp": "/ise/"
         }
       ],
       "resources": [

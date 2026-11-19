@@ -15,7 +15,7 @@ test('a checkout inside a hidden worktree builds pages without publishing develo
     for (const path of ['index.html', 'admin/index.html', 'assets/logo.svg', 'media/hero.jpg',
       'supabase-setup.sql', '.env', 'README.md', 'assets/.secret', 'catalog/index.html', 'catalog/data/certifications.json', 'catalog/.secret']) await put(path);
     await put('catalog/data/practice-index.json', JSON.stringify({complete:true,totals:{subjects:100}}));
-    for (const app of ['junior', 'intermediate', 'bi', 'aiot']) {
+    for (const app of ['junior', 'intermediate', 'bi', 'aiot', 'ise']) {
       for (const path of ['index.html', 'manifest.webmanifest', 'service-worker.js',
         'assets/js/app.js', 'data/content.js', 'netlify/functions/ai-proxy.js']) await put(`${app}/${path}`);
     }
@@ -23,7 +23,7 @@ test('a checkout inside a hidden worktree builds pages without publishing develo
     await copyFile(new URL('../scripts/build-static.mjs', import.meta.url), join(root, 'scripts/build-static.mjs'));
     execFileSync(process.execPath, [join(root, 'scripts/build-static.mjs')]);
     for (const path of ['index.html', 'admin/index.html', 'junior/index.html',
-      'intermediate/assets/js/app.js', 'bi/data/content.js', 'aiot/index.html', 'aiot/data/content.js', 'assets/logo.svg', 'media/hero.jpg', 'catalog/index.html', 'catalog/data/certifications.json']) {
+      'intermediate/assets/js/app.js', 'bi/data/content.js', 'aiot/index.html', 'aiot/data/content.js', 'ise/index.html', 'ise/data/content.js', 'assets/logo.svg', 'media/hero.jpg', 'catalog/index.html', 'catalog/data/certifications.json']) {
       assert.equal(await readFile(join(root, 'dist', path), 'utf8'), path);
     }
     for (const path of ['supabase-setup.sql', '.env', 'README.md', 'assets/.secret',

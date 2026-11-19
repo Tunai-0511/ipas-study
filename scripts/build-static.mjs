@@ -7,7 +7,7 @@ const output = join(root, 'dist');
 const practiceIndex = JSON.parse(await readFile(join(root, 'catalog/data/practice-index.json'), 'utf8'));
 if (!practiceIndex.complete || practiceIndex.totals.subjects !== 100) throw new Error('Complete and validate all practice subjects before building a release.');
 const publicPaths = ['index.html', 'admin/index.html', 'assets', 'media', 'catalog'];
-for (const app of ['junior', 'intermediate', 'bi', 'aiot']) {
+for (const app of ['junior', 'intermediate', 'bi', 'aiot', 'ise']) {
   for (const entry of ['index.html', 'manifest.webmanifest', 'service-worker.js', 'assets', 'data']) {
     publicPaths.push(`${app}/${entry}`);
   }

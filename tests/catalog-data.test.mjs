@@ -138,10 +138,11 @@ test('catalog preserves existing study app routes separately from official HTTPS
       routes.add(owner.existingApp);
     }
   }
-  assert.deepEqual([...routes].sort(), ['/aiot/', '/bi/', '/intermediate/', '/junior/']);
+  assert.deepEqual([...routes].sort(), ['/aiot/', '/bi/', '/intermediate/', '/ise/', '/junior/']);
   const aiap = certs.find(cert => cert.id === 'aiap');
   assert.equal(aiap.levels.find(level => level.id === 'junior').existingApp, '/junior/');
   assert.equal(aiap.levels.find(level => level.id === 'intermediate').existingApp, '/intermediate/');
   assert.equal(certs.find(cert => cert.id === 'oia').existingApp, '/bi/');
   assert.equal(certs.find(cert => cert.id === 'aiot').existingApp, '/aiot/');
+  assert.equal(certs.find(cert => cert.id === 'ise').existingApp, '/ise/');
 });

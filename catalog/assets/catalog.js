@@ -9,7 +9,7 @@
     return safe ? '<a class="' + (cls || '') + '" href="' + esc(safe) + '" target="_blank" rel="noopener noreferrer">' + esc(text) + ' ↗</a>' : '';
   }
   function localLink(url, text, cls) {
-    return /^\/(?:junior|intermediate|bi|aiot)\/(?:#\w+)?$/.test(url || '') ? '<a class="' + (cls || 'button primary') + '" href="' + esc(url) + '">' + esc(text) + '</a>' : '';
+    return /^\/(?:junior|intermediate|bi|aiot|ise)\/(?:#\w+)?$/.test(url || '') ? '<a class="' + (cls || 'button primary') + '" href="' + esc(url) + '">' + esc(text) + '</a>' : '';
   }
   function navigate(id) {
     var url = new URL(location.href);

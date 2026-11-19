@@ -6,7 +6,7 @@
 
 <p align="center">
   <b>iPAS 全科圖文刷題與官方原卷研讀</b><br/>
-  AI 應用規劃師（初級・中級）× 營運智慧分析師 BI（初級）× AIoT 應用工程師（初級・物聯網類）<br/>
+  AI 應用規劃師（初級・中級）× 營運智慧分析師 BI（初級）× AIoT 應用工程師（初級・物聯網類）× 資訊安全工程師（初級・中級）<br/>
   <i>Practice smarter. Pass faster.</i>
 </p>
 
@@ -28,7 +28,7 @@
 
 **iPAS 備考學院**是一個為台灣 iPAS 產業人才能力鑑定打造的線上刷題平台。把散落各處的官方歷屆題與網路題庫，整理成一個**乾淨、快速、能離線用、跨裝置同步**的練習系統——而且**零廣告、零安裝、開網頁就能用**。
 
-現行 17 項鑑定、30 個級別、75 門級別考科均可在 [全部考科目錄](https://ipas.tun9i.com/catalog/) 搜尋與逐題練習；另保留 8 項歷史鑑定的 25 科題庫並標示舊制。共用刷題支援科目／級別／來源篩選、隨機練習、收藏、錯題複習與帳號進度。原有四個章節學習區入口如下：
+現行 17 項鑑定、30 個級別、75 門級別考科均可在 [全部考科目錄](https://ipas.tun9i.com/catalog/) 搜尋與逐題練習；另保留 8 項歷史鑑定的 25 科題庫並標示舊制。共用刷題支援科目／級別／來源篩選、隨機練習、收藏、錯題複習與帳號進度。五個章節學習區入口如下：
 
 | 認證 | 級別 | 路徑 |
 |---|---|---|
@@ -36,6 +36,7 @@
 | AI 應用規劃師 | 中級 | [`/intermediate`](https://ipas.tun9i.com/intermediate/) |
 | 營運智慧分析師（BI） | 初級 | [`/bi`](https://ipas.tun9i.com/bi/) |
 | AIoT 應用工程師 | 初級・物聯網類 | [`/aiot`](https://ipas.tun9i.com/aiot/) |
+| 資訊安全工程師 | 初級・中級 | [`/ise`](https://ipas.tun9i.com/ise/) |
 
 ---
 
@@ -47,7 +48,7 @@
 - 📊 **成績判讀** — 各科正確率、最需加強的主題、個人化加強建議。
 - 📈 **成長曲線** — 題目加權的平均正確率、累積作答量、近期趨勢（不被單場難度誤導）。
 - 🔌 **PWA 離線可用** — 加到主畫面像 App 一樣用，已有未到期登入狀態時可離線刷題；首次登入或登入過期時需連線。
-- 👤 **登入即有名稱** — 信箱驗證碼登入使用 Email 的 `@` 前綴；登入資料已有 `full_name`／`name` 時優先採用。點側欄名稱即可更改，四站與雲端保留自訂名稱，不必新增使用者。
+- 👤 **登入即有名稱** — 信箱驗證碼登入使用 Email 的 `@` 前綴；登入資料已有 `full_name`／`name` 時優先採用。點側欄名稱即可更改，各站與雲端保留自訂名稱，不必新增使用者。
 - 🔑 **Google／信箱登入** — Google provider 啟用後，首頁顯示「使用 Google 登入」；也可使用信箱驗證碼。訪客瀏覽暫時關閉，進入備考站須先登入。Google 登入只使用基本個人資料與 Email，不要求 Gmail 存取權。
 - ☁️ **跨裝置雲端同步** — 登入後手機、電腦進度自動同步（Supabase）。
 - 🌗 **深淺色主題** — 全站主題感應，跨認證同步。
@@ -75,8 +76,8 @@
 GitHub (main)  ──手動部署──▶  Cloudflare Worker ipas-study  ──▶  ipas.tun9i.com
                                                      │
                      ┌───────────────┬───────────────┼───────────────┐
-                  Portal          junior        intermediate         bi / aiot
-                （入口）      （AI 初級）      （AI 中級）      （BI / AIoT 初級）
+                  Portal          junior        intermediate      bi / aiot / ise
+                （入口）      （AI 初級）      （AI 中級）   （BI／AIoT 初級、資安初中級）
                      └───────────────┴───────────────┴───────────────┘
                                  每個 app = 同構 PWA SPA
    殼：index.html / style.css / service-worker.js
@@ -120,7 +121,7 @@ npx serve .
 
 1. 在 Supabase SQL Editor 以專案管理者身分執行根目錄的 `supabase-setup.sql`。此檔包含 `user_state`、本人資料 RLS、兩個管理報表函式與必要授權，可重複執行且不刪除現有紀錄。
 2. 若要更換管理者，修改 SQL 內**兩個**函式的 `admins` 信箱陣列後重新執行；不要移除函式中的授權檢查。
-3. 若建立新 Supabase 專案，更新根目錄 `index.html`、`admin/index.html` 及四站 `assets/js/cloud.js` 的 `SB_URL`、`SB_KEY`。前端只可使用公開 publishable／anon key，不能放 `service_role` 或 secret key。
+3. 若建立新 Supabase 專案，更新根目錄 `index.html`、`admin/index.html` 及五站 `assets/js/cloud.js` 的 `SB_URL`、`SB_KEY`。前端只可使用公開 publishable／anon key，不能放 `service_role` 或 secret key。
 4. 啟用 Email 登入，將正式網域及需要的登入返回網址加入 Supabase Auth 的 Site URL／Redirect URLs；本機驗證時另加入本機來源。寄信與 OTP 範本需在 Supabase Auth 設定，SQL 不會設定寄信服務。
 
 ### 啟用 Google 登入
@@ -137,7 +138,7 @@ Google Audience 目前仍為 **Testing**，未加入測試使用者，已利用�
 
 首頁會透過 Supabase 公開 `/auth/v1/settings` 確認 `external.google === true` 才顯示可點擊的 Google 按鈕；未啟用或查詢失敗時仍保留信箱登入入口，寄送與驗證需要網路連線。這項檢查僅代表 provider 已啟用，不代表 Client ID、Secret 或 Google 授權畫面已實際驗證成功。
 
-訪客入口與舊版 `ipas_guest` 狀態已停用；直接開啟四個備考站時，頁面也會先檢查登入狀態。這是網站使用流程的限制，題庫等靜態檔案仍由公開資產服務提供，個人雲端資料持續由 Supabase RLS 保護。
+訪客入口與舊版 `ipas_guest` 狀態已停用；直接開啟五個備考站時，頁面也會先檢查登入狀態。這是網站使用流程的限制，題庫等靜態檔案仍由公開資產服務提供，個人雲端資料持續由 Supabase RLS 保護。
 
 Google 按鈕沿用現有 Supabase client 的 `signInWithOAuth` 隱式流程，回到目前首頁路徑；不要求額外 scopes 或離線 Google 存取，也不另外擷取或保存 Google provider token。取消／失敗會顯示中文訊息，瀏覽器返回後可重試；登入成功後既有跨站同步與自訂名稱規則照常使用。更換不同 Google 帳號不保證會接續原本另一個信箱帳號的雲端紀錄。
 
